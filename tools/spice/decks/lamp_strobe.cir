@@ -1,0 +1,83 @@
+Lamp matrix with the real WPC strobe timing (FreeWPC lamp.c / pinwiki: column strobe every 2 ms, 8 columns = 16 ms frame): column 1 = IRFR5305 P-DPAK carrying 8 #555 lamps, the other 7 columns as a lumped 7-lamp load on +18V; row 1 = IRLR024N + 0.22R sense carrying its lamp in every column (8 lamps of row 1 lit). Lamps are thermal filaments (7 ohm cold -> ~25 ohm at 1.6 W, tau 15 ms). A second "1993" lamp path with the TIP107/TIP102 Darlington drops (1.2 V + 1.0 V) gives the RMS lamp voltage of the original board for comparison.
+.include ../models.lib
+VCC vcc 0 5
+V18 v18 0 18
+* ---- column 1 strobe: on for 2 ms every 16 ms; TBD62083A sink -> 1k/1.5k divider -> IRFR5305
+Vstb colin 0 PULSE(0 5 1m 50n 50n 2m 16m)
+XU19 colin ulnout TBD62083CH
+Rser ulnout cg 1k
+Rgs cg v18 1.5k
+XQC col cg v18 IRFR5305
+Vcol col colx 0
+* ---- lamp A: row 1 / column 1 through the row MOSFET ; thermal filament model
+Blamp colx row I = v(colx,row) / (7 + 18*min(max(v(ta),0)/1.6, 1.6))
+Bpa 0 ta I = v(colx,row)*v(colx,row) / (7 + 18*min(max(v(ta),0)/1.6, 1.6))
+Cta ta 0 15m
+Rta ta 0 1
+* ---- lamps 2-8 of column 1 (7 lamps to their own rows, rows modelled as 0.3 ohm sinks incl. 0.22 R sense) ; one shared thermal state
+Blamp7 colx rl7 I = 7 * v(colx,rl7) / (7 + 18*min(max(v(tb),0)/1.6, 1.6))
+Rrow7 rl7 0 0.043
+Bpb 0 tb I = v(colx,rl7)*v(colx,rl7) / (7 + 18*min(max(v(tb),0)/1.6, 1.6))
+Ctb tb 0 15m
+Rtb tb 0 1
+* ---- columns 2-8 (strobed in turn): row 1's lamp in each -> the row MOSFET carries a lamp during every 2 ms slot ; other columns' P-FET drop lumped as 0.12 V
+VCOLn coln_ctl 0 PULSE(0 5 3m 50n 50n 14m 16m)
+Scoln v18d rown coln_ctl 0 SWL
+Vdrop v18 v18d 0.12
+Blampn rown row I = v(rown,row) / (7 + 18*min(max(v(tc),0)/1.6, 1.6))
+Bpc 0 tc I = v(rown,row)*v(rown,row) / (7 + 18*min(max(v(tc),0)/1.6, 1.6))
+Ctc tc 0 15m
+Rtc tc 0 1
+.model SWL SW(Ron=0.01 Roff=1e9 Vt=2.5 Vh=0.1)
+* ---- row 1: 74HCT74 Q high (row enabled) -> 100R -> IRLR024N, 0.22R sense, 1k/100n -> LM339 vs 1.4 V ref
+Vq q 0 4.6
+Rg q g 100
+Rpd g 0 10k
+XQR row g e IRLR024N
+Vs e es 0
+Rs es 0 0.22
+R1K e s 1k
+Cs s 0 100n
+R162 vcc ref 1k
+D33 ref n1 D1N4148
+D34 n1 0 D1N4148
+XCMP ref s clr_n LM339
+R10K clr_n vcc 10k
+* ---- 1993 reference path: same thermal lamp behind 1.2 V (TIP107 Darlington) + 1.0 V (TIP102) + 0.22 R, strobed like column 1
+Sold v18o rowo colin 0 SWL
+Vdo v18 v18o 2.2
+Blampo rowo rowo2 I = v(rowo,rowo2) / (7 + 18*min(max(v(td),0)/1.6, 1.6))
+Rso rowo2 0 0.22
+Bpd 0 td I = v(rowo,rowo2)*v(rowo,rowo2) / (7 + 18*min(max(v(td),0)/1.6, 1.6))
+Ctd td 0 15m
+Rtd td 0 1
+.tran 5u 400m
+.control
+run
+let icol = i(Vcol)
+let irow = i(Vs)
+let vlamp = v(colx)-v(row)
+let vlampo = v(rowo)-v(rowo2)
+let vcd = v(v18)-v(col)
+let pcol = vcd*icol
+let prow = v(row)*irow
+meas tran icol_peak MAX icol from=350m to=400m
+meas tran icol_avg AVG icol from=350m to=400m
+meas tran vcol_drop MAX vcd from=385.2m to=386.9m
+meas tran pcol_avg AVG pcol from=350m to=400m
+meas tran irow_peak MAX irow from=350m to=400m
+meas tran irow_avg AVG irow from=350m to=400m
+meas tran prow_avg AVG prow from=350m to=400m
+meas tran vsense_max MAX v(s) from=350m to=400m
+meas tran clr_min MIN v(clr_n) from=100m to=400m
+meas tran vlamp_rms RMS vlamp from=352m to=400m
+meas tran vlamp_old_rms RMS vlampo from=352m to=400m
+meas tran ilamp_first MAX irow from=1m to=3m
+* as-routed DPAK copper (tab pad only): datasheet minimum-footprint Rth(j-a) 110 C/W (IRFR5305 / IRLR024N: 50 C/W on a 1 in2 pad)
+let tj_rise_col = pcol_avg * 110
+let tj_rise_row = prow_avg * 110
+print tj_rise_col
+print tj_rise_row
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/lamp_strobe.csv v(col) icol irow v(s) vlamp vlampo
+.endc
+.end

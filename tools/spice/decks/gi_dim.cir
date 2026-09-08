@@ -1,0 +1,119 @@
+G.I. dimming at machine level with the cost board's own zero-cross detector (half-wave sample of the fused 9 VAC leg on U6A +, 0.26 V reference, no hysteresis -> 60 Hz square wave as the A-12697): the 9 VAC winding / GBU8J / C5 10000 uF at 3 A; firmware model as in the modern suite: after every ZC edge the string is re-armed L x 1.024 ms later (L = 0 / 3 / 7 in successive 50 ms windows), string 1 = gate held until the next edge, string 2 = 8 us gate pulse (FreeWPC triac_rtt style, PinMAME 'first write in the half-cycle'); BTA16-600C (50 mA Q-IV Igt) in the return leg of an 18-lamp 6.8 VAC string (1.4 R)
+.include ../models.lib
+VCC vcc 0 5
+* ---- 9 VAC (+5 V) winding, F113 side = leg A (sa), GBU8J, C5 10000 uF, 3 A buck load
+V9 s1 s2 SIN(0 12.7 60)
+Rs1 s1 sa 0.05
+Rs2 s2 sb 0.05
+DS1 sa vraw DSCH20100
+DS2 sb vraw DSCH20100
+DS3 0 sa DSCH20100
+DS4 0 sb DSCH20100
+C5 vraw 0 10000u
+Rraw vraw 0 2.7
+Eac acd 0 s1 s2 1
+* ---- zero-cross detector (cost board): R197 10k from the fused leg, R254 1.5k, C21 10n -> U6A (+); 27k/1.5k reference -> U6A (-); 1.5k pull-up
+R197 sa smp 10k
+R254 smp 0 1.5k
+C21 smp 0 10n
+R206 vcc zref 27k
+R255 zref 0 1.5k
+XU6A smp zref zc LM339
+R256 zc vcc 1.5k
+Czc zc 0 100p
+* ---- ASIC/firmware model: input threshold 2.5 V, edge detector (RC-delayed copy of the squared level), time-since-edge ramp, level schedule
+Bzl zl 0 V = (v(zc) > 2.5) ? 5 : 0
+Rzd zl zcd 10k
+Czd zcd 0 10n
+Bedge edge 0 V = (abs(v(zl) - v(zcd)) > 2.0) ? 1 : 0
+Bt 0 ts I = 1u
+Cts ts 0 1u
+Rts ts 0 1e9
+Sres ts 0 edge 0 SWR
+.model SWR SW(Ron=1 Roff=1e9 Vt=0.5 Vh=0.1)
+.ic v(ts)=0
+Blvl lvl 0 V = (time < 50m) ? 0 : (time < 100m) ? 3 : 7
+* string 1: latch bit set from the delay until the next edge (gate held)
+Bg1 latch1 0 V = (v(ts) > v(lvl) * 1.024m) ? 4.6 : 0
+* string 2: level 0 = held, otherwise an 8 us pulse at the delay
+Bg2 latch2 0 V = (v(lvl) < 0.5) ? 4.6 : ((v(ts) > v(lvl) * 1.024m) && (v(ts) < v(lvl) * 1.024m + 8u)) ? 4.6 : 0
+* ---- gate drivers (74HCT574 Q 4.6 V / 40 R -> 470 R -> MMBT4401 emitter follower -> 27 R -> gate), triac macro fires at 50 mA
+.subckt GIDRV latch e
+RL latch a 40
+Rb a b 470
+Rpd b 0 10k
+Q1 vcc b e QMMBT4401
+Vcc vcc 0 5
+.ends
+.model DGATE D(Is=1e-9 n=2 Rs=5)
+XD1 latch1 e1 GIDRV
+Vg1 e1 eg1 0
+R27a eg1 g1 27
+Dg1 g1 0 DGATE
+Rgk1 g1 0 200
+XD2 latch2 e2 GIDRV
+Vg2 e2 eg2 0
+R27b eg2 g2 27
+Dg2 g2 0 DGATE
+Rgk2 g2 0 200
+* triac 1
+Vmt1 mt2a mt2ai 0
+Btri1 mt2ai 0 I = v(mt2ai) * ( max((abs(i(Vg1)) > 0.05), (v(on1) > 0.5)) > 0.5 ? 20 : 1e-6 )
+Bon1 onr1 0 V = (abs(i(Vmt1)) > 0.05) ? 1 : 0
+Ron1 onr1 on1 1
+Con1 on1 0 0.5u
+* triac 2
+Vmt2 mt2b mt2bi 0
+Btri2 mt2bi 0 I = v(mt2bi) * ( max((abs(i(Vg2)) > 0.05), (v(on2) > 0.5)) > 0.5 ? 20 : 1e-6 )
+Bon2 onr2 0 V = (abs(i(Vmt2)) > 0.05) ? 1 : 0
+Ron2 onr2 on2 1
+Con2 on2 0 0.5u
+* ---- two 6.8 VAC strings (9.6 V peak, in phase with the 9 VAC winding), 18 x #44 = 1.4 R hot
+Vac1 ac1 0 SIN(0 9.6 60)
+Vstr1 ac1 acs1 0
+Rstr1 acs1 mt2a 1.4
+Vac2 ac2 0 SIN(0 9.6 60)
+Vstr2 ac2 acs2 0
+Rstr2 acs2 mt2b 1.4
+.options reltol=0.005 method=gear
+.tran 2u 150m 0 2u
+.control
+run
+let i1 = i(Vstr1)
+let i2 = i(Vstr2)
+let i1sq = i1*i1
+let i2sq = i2*i2
+let ig1 = i(Vg1)
+meas tran zc_r1 WHEN v(zc)=2.5 RISE=1 from=60m
+meas tran zc_r2 WHEN v(zc)=2.5 RISE=2 from=60m
+meas tran zc_f1 WHEN v(zc)=2.5 FALL=1 from=60m
+meas tran zc_r1_10 WHEN v(zc)=0.5 RISE=1 from=60m
+meas tran zc_r1_90 WHEN v(zc)=4.5 RISE=1 from=60m
+meas tran zc_high MAX v(zc) from=60m to=100m
+meas tran zc_low MIN v(zc) from=60m to=100m
+meas tran tz1 WHEN v(acd)=0 CROSS=1 from=60m
+meas tran tz2 WHEN v(acd)=0 CROSS=2 from=60m
+meas tran tz3 WHEN v(acd)=0 CROSS=3 from=60m
+meas tran ig_pk MAX ig1 from=0 to=150m
+meas tran l0_max MAX i1 from=20m to=50m
+meas tran l0_min MIN i1 from=20m to=50m
+meas tran l0_avg AVG i1 from=16.667m to=50m
+meas tran l0_rms_sq AVG i1sq from=16.667m to=50m
+meas tran l3h_max MAX i1 from=70m to=100m
+meas tran l3h_min MIN i1 from=70m to=100m
+meas tran l3h_avg AVG i1 from=66.667m to=100m
+meas tran l3h_rms_sq AVG i1sq from=66.667m to=100m
+meas tran l3p_max MAX i2 from=70m to=100m
+meas tran l3p_min MIN i2 from=70m to=100m
+meas tran l3p_avg AVG i2 from=66.667m to=100m
+meas tran l3p_rms_sq AVG i2sq from=66.667m to=100m
+meas tran l7h_max MAX i1 from=120m to=150m
+meas tran l7h_min MIN i1 from=120m to=150m
+meas tran l7h_avg AVG i1 from=116.667m to=150m
+meas tran l7h_rms_sq AVG i1sq from=116.667m to=150m
+meas tran l7p_max MAX i2 from=120m to=150m
+meas tran l7p_min MIN i2 from=120m to=150m
+meas tran l7p_rms_sq AVG i2sq from=116.667m to=150m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/gi_dim.csv v(acd) v(zc) v(ts) i1 i2 ig1 v(latch1) v(latch2)
+.endc
+.end

@@ -1,0 +1,282 @@
+{
+  "board": {
+    "design_settings": {
+      "defaults": {
+        "board_outline_line_width": 0.1,
+        "copper_line_width": 0.2,
+        "copper_text_size_h": 1.5,
+        "copper_text_size_v": 1.5,
+        "copper_text_thickness": 0.3,
+        "silk_line_width": 0.15,
+        "silk_text_size_h": 1.0,
+        "silk_text_size_v": 1.0,
+        "silk_text_thickness": 0.15
+      },
+      "rules": {
+        "min_clearance": 0.2,
+        "min_copper_edge_clearance": 0.5,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.5,
+        "min_microvia_diameter": 0.2,
+        "min_microvia_drill": 0.1,
+        "min_resolved_spokes": 0,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.5,
+        "min_track_width": 0.25,
+        "min_via_annular_width": 0.15,
+        "min_via_diameter": 0.6,
+        "solder_mask_to_copper_clearance": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "copper_layer_count": 4,
+      "track_widths": [
+        0.0,
+        0.3,
+        0.5,
+        1.0,
+        2.0,
+        3.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 1.2,
+          "drill": 0.6
+        },
+        {
+          "diameter": 1.8,
+          "drill": 1.0
+        }
+      ],
+      "drc_exclusions": [],
+      "diff_pair_dimensions": [],
+      "rule_severities": {
+        "lib_footprint_issues": "ignore",
+        "lib_footprint_mismatch": "ignore",
+        "silk_overlap": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_edge_clearance": "ignore",
+        "footprint_type_mismatch": "ignore",
+        "solder_mask_bridge": "ignore",
+        "hole_to_hole": "warning"
+      }
+    }
+  },
+  "boards": [],
+  "cvpcb": {
+    "equivalence_files": []
+  },
+  "libraries": {
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
+  },
+  "meta": {
+    "filename": "wpc_power_driver_cost.kicad_pro",
+    "version": 3
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.2,
+        "track_width": 0.4,
+        "via_diameter": 1.2,
+        "via_drill": 0.6,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "bus_width": 12,
+        "wire_width": 6,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647
+      },
+      {
+        "name": "Power",
+        "clearance": 0.2,
+        "track_width": 1.0,
+        "via_diameter": 1.8,
+        "via_drill": 1.0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "bus_width": 12,
+        "wire_width": 6,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0
+      },
+      {
+        "name": "HV",
+        "clearance": 0.4,
+        "track_width": 1.6,
+        "via_diameter": 1.8,
+        "via_drill": 1.0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "bus_width": 12,
+        "wire_width": 6,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0
+      },
+      {
+        "name": "Drive",
+        "clearance": 0.3,
+        "track_width": 1.0,
+        "via_diameter": 1.8,
+        "via_drill": 1.0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "bus_width": 12,
+        "wire_width": 6,
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1
+      }
+    ],
+    "meta": {
+      "version": 4
+    },
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+5V*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+12V*"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "+18V"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "+20V"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "+50V*"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "AC*"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "GI*_IN"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "GI*_OUT"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "GI*_RET*"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "FLIP_?_AC"
+      },
+      {
+        "netclass": "HV",
+        "pattern": "/Power_Supply/AC*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power_Supply/+5V_RAW"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power_Supply/U2?_SW"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "/GI_Triacs/*"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "SOL[0-9]*"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "COL[0-9]"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "ROW[0-9]"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "ROW[0-9]_E"
+      },
+      {
+        "netclass": "Drive",
+        "pattern": "/Sol_*/S*_D"
+      }
+    ]
+  },
+  "pcbnew": {
+    "last_paths": {
+      "gencad": "",
+      "idf": "",
+      "netlist": "",
+      "plot": "",
+      "pos_files": "",
+      "specctra_dsn": "",
+      "step": "",
+      "svg": "",
+      "vrml": ""
+    },
+    "page_layout_descr_file": ""
+  },
+  "erc": {
+    "rule_severities": {
+      "lib_symbol_issues": "ignore",
+      "footprint_link_issues": "ignore",
+      "endpoint_off_grid": "warning"
+    }
+  },
+  "schematic": {
+    "drawing": {
+      "default_line_thickness": 6.0,
+      "default_text_size": 50.0,
+      "label_size_ratio": 0.375,
+      "pin_symbol_size": 25.0,
+      "text_offset_ratio": 0.15
+    },
+    "legacy_lib_dir": "",
+    "legacy_lib_list": [],
+    "meta": {
+      "version": 1
+    }
+  },
+  "sheets": [],
+  "text_variables": {}
+}

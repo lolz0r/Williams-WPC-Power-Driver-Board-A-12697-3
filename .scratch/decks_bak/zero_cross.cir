@@ -1,0 +1,36 @@
+Modern zero-cross detector / +12VU: 9.8VAC winding, GBU4J + 2200uF (only the LED/test point load now), legs summed 10k/10k into LM339 vs 0.26V ref
+.include ../models.lib
+VCC vcc 0 5
+Vac acA acB SIN(0 13.86 60)
+Rw1 acA a1 0.05
+Rw2 acB a2 0.05
+D1 a1 vu D1N4004
+D2 a2 vu D1N4004
+D3 0 a1 D1N4004
+D4 0 a2 D1N4004
+C30 vu 0 2200u
+Rload vu 0 120
+R197 a1 smp 10k
+R198 a2 smp 10k
+R254 smp 0 1.5k
+C21 smp 0 10n
+R206 vcc zref 27k
+R255 zref 0 1.5k
+XU6A smp zref zc LM339
+Eac acd 0 acA acB 1
+R256 zc vcc 1.5k
+.tran 20u 100m
+.control
+run
+meas tran vu_avg AVG v(vu) from=60m to=100m
+meas tran vu_ripple PP v(vu) from=60m to=100m
+meas tran zc_low MIN v(zc) from=60m to=100m
+meas tran smp_min MIN v(smp) from=60m to=100m
+meas tran smp_max MAX v(smp) from=60m to=100m
+meas tran t1 WHEN v(zc)=2.5 FALL=1 from=60m
+meas tran t2 WHEN v(zc)=2.5 FALL=2 from=60m
+meas tran t1r WHEN v(zc)=2.5 RISE=1 from=64m
+meas tran tz WHEN v(acd)=0 CROSS=1 from=60m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/zero_cross.csv v(acd) v(smp) v(zc) v(vu)
+.endc
+.end

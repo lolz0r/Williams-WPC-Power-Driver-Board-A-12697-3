@@ -1,0 +1,1592 @@
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STPS20M100S Datasheet - D2PAK rectifier | STMicroelectronics</title>
+
+<meta name="description" content="STPS20M100S is Power Schottky rectifier manufactured by STMicroelectronics. Package: D2PAK, Mount Type: Surface Mount, Max Output Current: 20A, Terminals: 2, Reverse Standoff Voltage: 100V, Forward Voltage: 850mV.">
+
+<meta http-equiv="content-language" content="en-us" />
+<link rel="canonical" href="https://datasheet4u.com/datasheets/ST-Microelectronics/STPS20M100S/644066">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "STPS20M100S Datasheet – Power Schottky rectifier",
+  "description": "View STPS20M100S datasheet PDF, technical specifications, features, and  information from STMicroelectronics.",
+  "image": [
+    "https://datasheet4u.com/pdfhtml/0966/644066/page-000001.png"
+  ],
+  "author": {
+    "@type": "Organization",
+    "name": "STMicroelectronics"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Datasheet4U",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://datasheet4u.com/img/logo-0pdf.gif"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://datasheet4u.com/datasheets/ST-Microelectronics/STPS20M100S/644066"
+  },
+  "keywords": "STPS20M100S Datasheet, STPS20M100S PDF, Power Schottky rectifier, STMicroelectronics"
+}
+</script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://datasheet4u.com/"
+    }
+    ,
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "STMicroelectronics",
+      "item": "https://datasheet4u.com/Manufacturer/STMicroelectronics.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "STPS20M100S Datasheet",
+      "item": "https://datasheet4u.com/datasheets/ST-Microelectronics/STPS20M100S/644066"
+    }
+  ]
+}
+</script>
+
+<meta property="og:title" content="STPS20M100S Datasheet | STMicroelectronics">
+<meta property="og:description" content="STPS20M100S Power Schottky rectifier datasheet by STMicroelectronics. View pinout, features, specifications.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datasheet4u.com/datasheets/ST-Microelectronics/STPS20M100S/644066">
+<meta property="og:image" content="https://datasheet4u.com/pdfhtml/0966/644066/page-000001.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+<style>
+body.dark {
+  background:#121212;
+  color:#e5e5e5;
+}
+
+body.dark table { background:#1e1e1e; }
+body.dark thead th { background:#2a2a2a; color:#f1f1f1; }
+body.dark td { color:#e5e5e5; }
+
+body.dark .similar-links h2 {
+  color: #f1f1f1;
+}
+
+body.dark figcaption {
+  color: #aaa !important;
+}
+
+
+body.dark p[style*="color:#666"] {
+  color: #999 !important;
+}
+
+body.dark a {
+  color: #93c5fd;
+}
+body.dark a:visited {
+  color: #a5b4fc;
+}
+body.dark td a[style*="color: #000"] {
+  color: #e5e7eb !important;
+}
+
+
+body.dark .datasheet-header h1 {
+  color: #e5e7eb !important;
+}
+
+body.dark .datasheet-header h1 span {
+  color: #cbd5e1 !important;
+}
+
+body.dark .datasheet-header .manufacturer {
+  color: #d1d5db !important;
+}
+
+body.dark .datasheet-header .manufacturer span {
+  color: #8ab4f8 !important;
+}
+
+body.dark .top-overview p {
+  color: #f0f0f0 !important;
+}
+
+body.dark .parent p[style*="color:#666"] { color:#bdbdbd !important; }
+
+
+body.dark #sf_ad_4u,
+body.dark #idAD2 {
+  background-color: #121212;
+  border-radius: 6px;
+}
+
+
+.dark .preview-thumbs {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+.dark .qv-image {
+  filter: brightness(0.85) contrast(1.1);
+}
+
+.dark .brand-logo {
+    filter: brightness(0.85) contrast(1.1);
+}
+
+  table.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F7F7F7;
+  }
+
+  table.styled-table th,
+  table.styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+
+
+body {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    font-style: normal;
+    color: #000000;
+    font-size: 1rem;
+}
+
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:link { color: #369; }
+a:visited { color: purple; }
+
+    h1 {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+	h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+	h3 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    @media screen and (max-width: 768px) {
+        h1, h2, h3 {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        h1, h2, h3 {
+            font-size: 18px;
+        }
+    }
+
+.h3-label {
+  font-size: 18px;
+  color: #0056b3;
+  margin: 15px 0 -5px 0;
+}
+
+.p-value {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+
+.parent {
+  text-align: center;
+}
+.child {
+  display: inline-block;
+}
+
+
+  .parentend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 24px;
+    background-color: #333;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+	margin-top: 10px;
+  }
+
+  .childend.logo {
+    flex-shrink: 0;
+  }
+
+  .childend.logo img {
+    max-height: 40px;
+    height: auto;
+    width: auto;
+  }
+
+  .childend.text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .childend.text span {
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+
+  .childend.text a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 6px;
+    white-space: nowrap;
+  }
+
+  .childend.text a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .parentend {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .childend.text {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    .childend.text span {
+      margin: 0 0 6px 0;
+    }
+
+    .childend.text a {
+      margin: 0;
+    }
+  }
+
+
+  .datasheet-header {
+    display: flex;
+	position: relative;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8px 12px 12px;
+  }
+
+  .datasheet-text {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  .datasheet-text h1,
+  .datasheet-text h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    .datasheet-header {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+	  border-bottom: 1px solid #ccc;
+      gap: 2px;
+    }
+
+    .datasheet-text h1 {
+      font-size: 20px;
+    }
+
+    .datasheet-text h2 {
+      font-size: 18px;
+      margin-top: 2px;
+    }
+  }
+
+.similar-links {
+  max-width: 1000px;
+  margin: 50px auto 50px;
+}
+
+.similar-links h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.similar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+
+}
+
+.similar-table th,
+.similar-table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+}
+.similar-table th {
+  background: #f5f5f5;
+  text-align: left;
+}
+.similar-table a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+@media (max-width: 640px) {
+  .similar-table thead {
+    display: none;
+  }
+  .similar-table tr {
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+  }
+  .similar-table td {
+    display: block;
+    border: none;
+    padding: 8px 10px;
+  }
+  .similar-table td::before {
+    content: attr(data-label);
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.related-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+
+}
+
+.related-table th,
+.related-table td {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+}
+.related-table th {
+  background: #f5f5f5;
+  text-align: left;
+}
+.related-table a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+@media (max-width: 640px) {
+  .related-table thead {
+    display: none;
+  }
+  .related-table tr {
+    display: block;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+  }
+  .related-table td {
+    display: block;
+    border: none;
+    padding: 8px 10px;
+  }
+  .related-table td::before {
+    content: attr(data-label);
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+  .ad-container {
+    position: relative;
+    overflow: hidden;
+    margin: 8px auto;
+    width: 750px;
+    height: 350px;
+    max-width: 100%;
+  }
+  @media (max-width: 750px) {
+  .ad-container {
+    width: 100%;
+    height: calc(100vw * 350 / 750);
+  }
+}
+
+  .ad-inner {
+    width: 100%;
+    height: 100%;
+    transform-origin: top left;
+    transition: transform 0.2s ease;
+  }
+
+
+
+    :root {
+        --primary-color: #004791;
+        --secondary-color: #007bff;
+        --bg-color: #f9fbfd;
+        --text-main: #333;
+        --text-muted: #666;
+        --shadow-card: 0 15px 35px rgba(0,0,0,0.1);
+        --transition: all 0.3s ease;
+    }
+
+    .datasheet-text-section {
+        flex: 0 0 450px;
+        top: 20px;
+    }
+
+
+    .datasheet-header {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .datasheet-content {
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+
+    @media (max-width: 768px) {
+        .datasheet-text-section {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .datasheet-header {
+            padding-bottom: 1px;
+            margin-bottom: 2px;
+        }
+
+    }
+
+.datasheet-content {
+  position: relative;
+}
+
+.qv-table{
+  border-collapse:collapse;
+  width:auto;
+  min-width:200px;
+  font-size:16px;
+  line-height:2.2;
+}
+
+.qv-table th,
+.qv-table td{
+  padding:5px 0;
+  text-align:left;
+  vertical-align:top;
+  border:0;
+  background:transparent !important;
+}
+
+.qv-table th{
+  font-weight:400;
+  white-space:nowrap;
+  padding-right:8px;
+  color:#666 !important;
+}
+
+.qv-table td{
+  color:#222 !important;
+}
+
+.qv-table td a{
+
+  text-decoration:underline;
+}
+
+@media (max-width: 768px) {
+  .datasheet-header {
+    display: block !important;
+  }
+
+  .datasheet-text h1 {
+    font-size: 22px !important;
+    line-height: 1.25 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .datasheet-header {
+    border-bottom: none !important;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .main-search form {
+    gap:6px;
+  }
+}
+
+
+body.dark .quick-view{
+  background:#1d1f21 !important;
+  border-color:#34383c !important;
+}
+
+body.dark .qv-table{
+  background:#1d1f21 !important;
+}
+
+body.dark .qv-table th,
+body.dark .qv-table td{
+  background:transparent !important;
+}
+
+body.dark .qv-table th{
+  color:#aeb4ba !important;
+}
+
+body.dark .qv-table td{
+  color:#f1f3f5 !important;
+}
+
+body.dark .qv-table td a{
+  color:#8fc7ff !important;
+}
+
+body.dark .qv-info p{
+  color:#c9ced3 !important;
+}
+
+body.dark .qv-image img{
+  border-color:#454a4f !important;
+}
+
+
+
+.Source-links th {
+  background:#f1f3f5;
+  color:#111;
+  border-bottom:1px solid #ddd;
+}
+
+body.dark .Source-links th,
+.dark .Source-links th {
+  background:#1f2937;
+  color:#f9fafb;
+  border-bottom:1px solid #374151;
+}
+
+
+@media (max-width: 600px) {
+  table.Source-links,
+  table.Source-links thead,
+  table.Source-links tbody,
+  table.Source-links tr,
+  table.Source-links th,
+  table.Source-links td {
+    display: block;
+    width: 100%;
+  }
+
+  table.Source-links thead {
+    display: none;
+  }
+
+table.Source-links tr {
+  border: 1px solid #ddd;
+  margin-bottom: 14px;
+  padding: 10px;
+}
+
+  table.Source-links td {
+    padding: 5px 0 !important;
+    text-align: left;
+  }
+
+  table.Source-links td:before {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  table.Source-links td:nth-child(1):before {
+    content: "Seller / Part";
+  }
+
+  table.Source-links td:nth-child(2):before {
+    content: "Stock";
+  }
+
+  table.Source-links td:nth-child(3):before {
+    content: "Unit Price";
+  }
+
+  table.Source-links td:nth-child(4):before {
+    content: "Source";
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tbl{
+  width:100%;
+  border-collapse:collapse;
+  font-size:14px;
+}
+
+.tbl th,
+.tbl td{
+  padding:10px 12px;
+  border-bottom:1px solid #eee;
+  text-align:left;
+}
+
+.tbl th{
+  background:#fafbfc;
+  font-weight:600;
+  color:#333;
+}
+
+.tbl td{
+  color:#222;
+}
+
+.tbl tr:hover td{
+  background:#f9fbff;
+}
+
+.tbl .num{
+  text-align:center;
+  font-family:monospace;
+}
+
+.tbl a{
+  color:#0b56b3;
+  font-weight:500;
+  text-decoration:none;
+}
+
+.tbl a:hover{
+  text-decoration:underline;
+}
+
+body.dark .tbl th{
+  background:#252525;
+  color:#ddd;
+}
+
+body.dark .tbl td{
+  color:#ccc;
+  border-bottom:1px solid #333;
+}
+
+body.dark .tbl tr:hover td{
+  background:#2a2a2a;
+}
+
+body.dark .tbl a{
+  color:#6ea8ff;
+}
+
+body.dark #item-box {
+  background-color: #1e293b !important;
+  color: #e5e7eb !important;
+  border-left-color: #60a5fa !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.related-parts {
+  max-width: 1000px;
+  margin: 70px auto 50px;
+}
+
+.related-parts h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.preview-thumbs{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:10px;
+  max-width:340px;
+  margin:20px 0 30px;
+}
+
+.preview-thumbs img{
+  width:100%;
+  height:auto;
+  border:1px solid #ddd;
+  border-radius:8px;
+}
+
+.ds4u-overview {
+  margin-top: 50px;
+  max-width:1000px;
+  margin:10px auto;
+}
+
+
+
+
+.qv-wrap{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+}
+.qv-image{
+    width:320px;
+    flex-shrink:0;
+}
+
+.qv-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+.qv-info{
+    flex:1;
+    min-width:0;
+}
+@media (max-width:768px){
+    .qv-wrap{
+        flex-direction:column;
+    }
+    .qv-image{
+        width:70%;
+        max-width:260px;
+        margin:0 auto 15px;
+    }
+}
+
+
+
+
+
+.ds4u-specs {
+  max-width:1000px;
+  margin:10px auto 20px;
+}
+.ds4u-specs h2 {
+  font-size:18px;
+  margin: 0 0 10px 0;
+}
+.specs-list {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0 0 4px 0;
+  line-height: 1.35;
+}
+
+.specs-list li {
+  margin: 0 0 2px 0;
+  padding: 0;
+}
+
+/* PC only */
+@media (min-width: 768px) {
+  .specs-list {
+    columns: 3;
+    column-gap: 40px;
+  }
+
+  .specs-list li {
+    break-inside: avoid;
+  }
+}
+
+
+
+
+
+
+
+
+.error{
+  max-width:1000px;
+  margin:18px auto;
+  padding:12px 14px;
+  background:#fff4f4;
+  border:1px solid #e7b3b3;
+  border-left:4px solid #c9302c;
+  color:#a94442;
+  font-size:14px;
+  line-height:1.6;
+  border-radius:6px;
+}
+
+
+.specs a{
+  color:#0b56b3;
+  text-decoration:none;
+}
+
+.specs a:hover{
+  text-decoration:underline;
+}
+
+
+
+.breadcrumb {
+  max-width:1000px;
+  margin:10px auto;
+  padding:8px 10px;
+  font-size:14px;
+  background:#f8f9fa;
+  border:1px solid #e5e7eb;
+  border-radius:6px;
+  color:#333;
+  box-sizing:border-box;
+}
+
+.breadcrumb a {
+  color:#000;
+  text-decoration:underline;
+}
+
+.breadcrumb span {
+  color:#555;
+}
+body.dark .breadcrumb {
+  background:#f8f9fa;
+  color:#333;
+}
+
+body.dark .breadcrumb a {
+  color:#000;
+}
+
+body.dark .breadcrumb span {
+  color:#555;
+}
+
+@media (max-width:600px){
+  #pdfFrame{
+    height:600px;
+  }
+}
+
+@media (max-width:600px){
+  .preview-thumbs{
+    grid-template-columns:1fr !important;
+        width:70%;
+        max-width:260px;
+        margin:0 auto 15px;
+  }
+}
+
+
+.info-ad-wrap {
+  max-width: 1000px;
+  margin: 0 auto 10px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.info-ad-wrap .quick-view {
+  flex: 1;
+  margin: 10px 0 0 0;
+}
+
+.info-ad-wrap .ad-container {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+
+@media (max-width: 850px) {
+  .info-ad-wrap {
+    display: block;
+  }
+
+  .info-ad-wrap .quick-view {
+    margin-bottom: 10px;
+  }
+
+  .info-ad-wrap .ad-container {
+    width: 100%;
+  }
+}
+
+  .fixed-top-bar {
+    width: 100%;
+    position: static;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 1px;
+    margin: 0 auto 15px;
+    background-image: linear-gradient(#1679C6, #409BDF);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+ .logo-link {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   text-decoration: none;
+  }
+ .logo-img {
+    height: 66px;
+    display: block;
+    margin-bottom: 0;
+  }
+.logo-text {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+#darkToggle {
+  margin-left: auto;
+  margin-right: 18px;
+  height: 36px;
+  width: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  font-size: 18px;
+  line-height: 36px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+#darkToggle:hover {
+  background: rgba(255,255,255,0.25);
+}
+</style>
+</head>
+
+
+<body style="margin: 0 5px;">
+
+<div class="fixed-top-bar">
+  <div class="logo-container">
+    <a href="https://datasheet4u.com/" class="logo-link" aria-label="Datasheet4U Home">
+      <img class="logo-img" alt="Datasheet4U Logo" src="/img/logo-pdf.gif" width="180" height="66">
+    </a>
+    <button id="darkToggle" type="button" aria-label="Toggle dark mode">&#127769;</button>
+  </div>
+</div>
+
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <a href="/">Home</a> ›
+  <a href='/Manufacturer/STMicroelectronics.html' style='color:#000; text-decoration: underline;'>STMicroelectronics</a> ›
+  <span>STPS20M100S Datasheet</span>
+</nav>
+
+<script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const btn = document.getElementById('darkToggle');
+  if (btn) {
+    btn.onclick = function () {
+      document.body.classList.toggle('dark');
+      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    };
+  }
+</script>
+
+
+
+
+
+
+
+<div id="sf_ad_4u" class="ad-container">
+  <div id="idAD2" class="ad-inner">
+    <div id="DS4U_725x323_PDF"></div>
+  </div>
+</div>
+
+
+<header>
+<h1 style="max-width:980px; font-size:20px; line-height:1.2; margin:10px auto 5px;">
+STPS20M100S Datasheet | STMicroelectronics</h1>
+</header>
+
+<main>
+<div class="part-overview">
+
+
+
+<section id="item-box"
+         style="max-width:980px;
+                margin:0 auto;
+                padding:1px 10px;
+                background:#f9f9f9;
+                border-left:5px solid #337ab7;
+                border-radius:5px;
+                line-height:1.6;
+                margin-bottom:20px;">
+
+<p style="max-width:980px; margin-bottom:10px;">
+
+STPS20M100S Description: <br>the STPS20M100S is intended to be used in notebook, game station and desktop adaptors, providing in these applications a good efficiency at both low and high load.</p>
+
+</section>
+
+
+<div class="info-ad-wrap">
+<section class="quick-view" style="border-radius:12px; padding:10px; border:1px solid #eef0f2;">
+
+<div class="qv-wrap">
+
+<div class="qv-image">
+  <a href="/download/644066/STPS20M100S.html"
+     target="_blank"
+     rel="noopener"
+     aria-label="View STPS20M100S datasheet download page"
+     title="View STPS20M100S Datasheet"
+     style="display:block;">
+
+    <img src="/pdfhtml/0966/644066/page-000001.png"
+         alt="STPS20M100S datasheet page 1 preview">
+  </a>
+</div>
+
+
+
+
+<div class="qv-info">
+
+      <table class="qv-table">
+        <tr>
+          <th>Part No.:</th>
+          <td><strong>STPS20M100S</strong></td>
+        </tr>
+
+		<tr>
+          <th>Brand:</th>
+          <td><div style='
+      display:inline-flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:5px;
+    '>
+	<img src='/logo/STMicroelectronics.gif' alt='STMicroelectronics Logo' class='brand-logo' width='140' height='36' style='width:140px;
+             height:36px;
+             object-fit:contain;
+             border:1px solid #ddd;
+             border-radius:4px;
+             background:#fff;'><span>STMicroelectronics</span></div></td>
+        </tr>
+
+        <tr>
+          <th>Unit Price:</th>
+          <td>
+            2.16 
+USD                      </td>
+        </tr>
+
+        <tr>
+          <th>Buy:</th>
+          <td>
+            <a href="/stock/price.php?item=STPS20M100S" target="_blank" rel="nofollow noopener"
+          style="display:inline-block; padding:4px 10px; border:1px solid #275887; background:#275887; color:#fff; font-size:14px; font-weight:600; border-radius:4px; text-decoration:none;">
+       Stock & Price
+		    </a>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Datasheet:</th>
+          <td>
+            <a href="/download/644066/STPS20M100S.html" target="_blank" rel="noopener">
+              STPS20M100S Datasheet
+            </a>
+          </td>
+        </tr>
+
+      </table>
+
+</div>
+
+    </div>
+
+</section>
+</div>
+</div>
+
+
+
+
+
+<section class="ds4u-overview">
+  <div style="margin-bottom:10px; margin-top:20px;">
+    <h2 style="margin:0;">
+      STPS20M100S Specifications
+    </h2>
+  </div>
+
+  <ul class="specs-list">
+    <li>Package : D2PAK</li>
+<li>Mount Type : Surface Mount</li>
+<li>Max Output Current : 20A</li>
+<li>Terminals : 2</li>
+<li>Reverse Standoff Voltage : 100V</li>
+<li>Forward Voltage : 850mV</li>
+<li>Max Forward Surge : 350A</li>
+<li>Max Operating Temp : 150°C</li>
+<li>Min Operating Temp : -65°C</li>  </ul>
+
+  <div style="
+      text-align:right;
+      font-size:12px;
+      font-weight:normal;
+      margin-top:6px;
+  ">
+    Source:
+    <a href="https://octopart.com"
+       target="_blank"
+       rel="noopener noreferrer">Octopart</a>
+  </div>
+</section>
+
+
+
+
+<section class="main-search" style="max-width:600px; margin:20px auto; padding:0 10px;">
+  <form action="/share_search.php" method="get" 
+        style="display:flex; align-items:center; gap:8px;">
+
+    <input type="text"
+           name="sWord"
+           value="STPS20M100S"
+           placeholder="Search datasheet..."
+           style="flex:1; padding:10px 12px;
+                  font-size:15px;
+                  border-radius:6px;
+                  border:1px solid #ccc;
+                  box-sizing:border-box;">
+
+    <button type="submit"
+            style="padding:10px 16px;
+                   font-size:14px;
+                   border-radius:6px;
+                   background:#337ab7;
+                   color:#fff;
+                   border:none;
+                   cursor:pointer;">
+&#128269;
+    </button>
+  </form>
+</section>
+
+
+
+
+
+<section aria-label="Advertisement" role="complementary" style="text-align: center; overflow: auto; margin-top: 20px;">
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<div id="div-gpt-ad-main" style="width:728px; height:90px; margin:0 auto;"></div>
+</section>
+
+
+
+
+<div class="preview-thumbs" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; max-width:1000px; margin:20px auto 80px;">
+
+  <img src="/pdfhtml/0966/644066/page-000002.png"
+       loading="lazy"
+       alt="STPS20M100S datasheet preview"
+       style="width:100%; height:auto; border:1px solid #ddd; border-radius:8px;">
+
+  <img src="/pdfhtml/0966/644066/page-000003.png"
+       loading="lazy"
+       alt="STPS20M100S datasheet preview"
+       style="width:100%; height:auto; border:1px solid #ddd; border-radius:8px;">
+
+</div>
+
+
+
+
+
+
+
+
+<section class="similar-links">
+<h2>STPS20M100S Similar Parts</h2>
+<table class="similar-table" style="width:100%; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="text-align:left; padding:8px; border-bottom:1px solid #ddd;">Part Number</th>
+      <th style="text-align:left; padding:8px; border-bottom:1px solid #ddd;">Manufacturer</th>
+      <th style="text-align:left; padding:8px; border-bottom:1px solid #ddd;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/datasheets/INCHANGE/STPS20M100SG-TR/1483007">STPS20M100SG-TR</a></td>
+      <td>Inchange Semiconductor</td>
+      <td>Schottky Barrier Rectifier</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+
+
+
+
+<nav class="related-parts" aria-label="Related parts" style="max-width:1000px; margin:70px auto 50px;">
+  <h2>STPS20M100S Related Parts</h2>
+<table class="related-table" style="width:100%; border-collapse:collapse;">
+  <thead>
+    <tr>
+      <th style="text-align:left; padding:8px; border-bottom:1px solid #ddd;">Part Number</th>
+      <th style="text-align:left; padding:8px; border-bottom:1px solid #ddd;">Manufacturer</th>
+      <th style="text-align:left; padding:8px; border-bottom:1px solid #ddd;">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+		<tr>
+      <td><a href="/datasheets/ST-Microelectronics/STPS20H100/503803">STPS20H100</a></td>
+      <td>STMicroelectronics</td>
+      <td>HIGH VOLTAGE POWER SCHOTTKY RECTIFIER</td>
+    </tr>
+    	<tr>
+      <td><a href="/datasheets/STMicroelectronics/STPS340/1495675">STPS340</a></td>
+      <td>STMicroelectronics</td>
+      <td>3A power Schottky rectifier</td>
+    </tr>
+    	<tr>
+      <td><a href="/datasheets/ST-Microelectronics/STPS2045CT/643888">STPS2045CT</a></td>
+      <td>STMicroelectronics</td>
+      <td>POWER SCHOTTKY RECTIFIER</td>
+    </tr>
+    	<tr>
+      <td><a href="/datasheets/STMicroelectronics/STPS20H100CT/644041">STPS20H100CT</a></td>
+      <td>STMicroelectronics</td>
+      <td>HIGH VOLTAGE POWER SCHOTTKY RECTIFIER</td>
+    </tr>
+    	<tr>
+      <td><a href="/datasheets/STMicroelectronics/STPS20120CT/1459174">STPS20120CT</a></td>
+      <td>STMicroelectronics</td>
+      <td>power Schottky rectifier</td>
+    </tr>
+    	<tr>
+      <td><a href="/datasheets/ST-Microelectronics/STPS61H100CW/558995">STPS61H100CW</a></td>
+      <td>STMicroelectronics</td>
+      <td>HIGH VOLTAGE POWER SCHOTTKY RECTIFIER</td>
+    </tr>
+    	<tr>
+      <td><a href="/datasheets/ST-Microelectronics/STPS20170CT/503807">STPS20170CT</a></td>
+      <td>STMicroelectronics</td>
+      <td>High voltage power Schottky rectifier</td>
+    </tr>
+      </tbody>
+</table>
+</nav>
+
+
+</main>
+
+
+
+
+
+
+
+
+<div style="max-width:400px; margin:50px auto 50px; display:flex; flex-wrap:wrap; justify-content:center; gap:3px; align-items:flex-start;">
+  <section aria-label="Bottom Advertisement" role="complementary" style="text-align:center;">
+    <div id="div-gpt-ad-main-300x250" style="width:300px; height:250px; margin:0 auto; display:none;"></div>
+  </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function updateAdZoom() {
+    const sfAd = document.getElementById("sf_ad_4u");
+    const adInner = document.getElementById("idAD2");
+    const maxWidth = 750;
+
+    const ww = window.innerWidth;
+    const zoom = ww < maxWidth ? ww / maxWidth : 1;
+
+    sfAd.style.height = (zoom * 350) + "px";
+    sfAd.style.width = zoom < 1 ? "100%" : maxWidth + "px";
+    adInner.style.transform = `scale(${zoom})`;
+  }
+
+  window.addEventListener("resize", updateAdZoom);
+  document.addEventListener("DOMContentLoaded", updateAdZoom);
+</script>
+
+<script>
+  (function () {
+    const adRenderLocation = 'DS4U_725x323_PDF';
+    const zoneId = 673;
+    const term = 'STPS20M100S';
+    const m3_r = Math.floor(Math.random() * 99999999999);
+    const m3_u = 'https://ads.supplyframe.com/openads/www/delivery/ajs.php';
+
+    let url = `${m3_u}?zoneid=${zoneId}`;
+    if (document.MAX_used && document.MAX_used !== ',') url += '&exclude=' + document.MAX_used;
+    if (document.charset || document.characterSet)
+      url += '&charset=' + (document.charset || document.characterSet);
+    url += '&loc=' + encodeURIComponent(window.location.href);
+    if (document.referrer) url += '&referer=' + encodeURIComponent(document.referrer);
+    if (document.context) url += '&context=' + encodeURIComponent(document.context);
+    if (document.mmm_fo) url += '&mmm_fo=1';
+    url += '&n=' + m3_r + '&term=' + encodeURIComponent(term) + '&adRenderElement=' + adRenderLocation;
+
+    try {
+      const adScript = document.createElement("script");
+      adScript.src = url;
+      adScript.type = "text/javascript";
+      adScript.async = true;
+      document.body.appendChild(adScript);
+    } catch (e) {
+      const el = document.getElementById(adRenderLocation);
+      if (el) el.remove();
+    }
+  })();
+</script>
+
+
+
+
+
+
+<script>
+    window.googletag = window.googletag || { cmd: [] };
+
+    googletag.cmd.push(function() {
+
+      googletag.pubads().enableLazyLoad({
+        fetchMarginPercent: 50,
+        renderMarginPercent: 200,
+        mobileScaling: 2.0
+      });
+
+
+      const slot1 = googletag.defineSlot('/4250/Datasheet4u/main', [728, 90], 'div-gpt-ad-main')
+        .addService(googletag.pubads());
+
+
+      const slot2 = googletag.defineSlot('/4250/Datasheet4u/main', [300, 250], 'div-gpt-ad-main-300x250')
+        .addService(googletag.pubads());
+
+      googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+        if (event.slot === slot1 && !event.isEmpty) {
+          document.getElementById('div-gpt-ad-main').style.display = 'inline-block';
+        }
+        if (event.slot === slot2 && !event.isEmpty) {
+          document.getElementById('div-gpt-ad-main-300x250').style.display = 'inline-block';
+        }
+      });
+
+      googletag.enableServices();
+      googletag.display('div-gpt-ad-main');
+      googletag.display('div-gpt-ad-main-300x250');
+    });
+</script>
+
+
+
+
+
+<section class="main-search" style="max-width:600px; margin:20px auto; padding:0 10px;">
+  <form action="/share_search.php" method="get" 
+        style="display:flex; align-items:center; gap:8px;">
+
+    <a href="/" aria-label="Home"
+       style="display:flex; align-items:center; justify-content:center;
+              width:36px; height:36px;
+              border:1px solid #ccc;
+              border-radius:6px;
+              text-decoration:none;
+              font-size:18px;">
+&#127968;
+    </a>
+
+    <input type="text"
+           name="sWord"
+           placeholder="Search datasheet..."
+           style="flex:1; padding:10px 12px;
+                  font-size:15px;
+                  border-radius:6px;
+                  border:1px solid #ccc;
+                  box-sizing:border-box;">
+
+    <button type="submit"
+            style="padding:10px 16px;
+                   font-size:14px;
+                   border-radius:6px;
+                   background:#337ab7;
+                   color:#fff;
+                   border:none;
+                   cursor:pointer;">
+&#128269;
+    </button>
+
+  </form>
+</section>
+
+
+
+
+<footer class="parentend">
+  <div class="childend logo">
+    <a href="https://datasheet4u.com/">
+      <img alt="Datasheet4U Logo" src="/img/logo-0pdf.gif" loading="lazy" class="logo">
+    </a>
+  </div>
+  <div class="childend text">
+    <span>Since 2006. D4U Semicon.</span>
+    <a href="https://datasheet4u.com/about.html">About Datasheet4U</a>
+    <a href="/contact.html">Contact Us</a>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/alphabetical/">Sitemap</a>
+    <a href="https://datasheet4u.com/stock/">Purchase of parts</a>
+  </div>
+</footer>
+
+
+
+<div class="cookies-eu-banner hidden" style='line-height:120%; padding:5px;'>
+      This website uses cookies or similar technologies, to enhance your browsing experience and provide personalized recommendations. <br>By continuing to use our website, you agree to our  <a style="color:#FFFFFF;" href="/privacy-policy.html">Privacy Policy</a>
+      <button>Accept</button><br><br>
+    </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var banner = document.querySelector(".cookies-eu-banner");
+  if (!banner) return;
+
+  var btn = banner.querySelector("button");
+  if (!btn) return;
+
+  if (localStorage.getItem("cookieAccepted") === "yes") {
+    banner.style.display = "none";
+    return;
+  }
+
+  banner.classList.remove("hidden");
+  banner.style.display = "block";
+
+  btn.addEventListener("click", function () {
+    localStorage.setItem("cookieAccepted", "yes");
+    banner.style.display = "none";
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+  net GI_RET: 2 -> 1 components, 1 links, 0.0 s
+  net GI1_OUT: 4 -> 1 components, 3 links, 0.0 s
+  net GI2_OUT: 4 -> 1 components, 3 links, 0.0 s
+  net GI5_OUT: 5 -> 1 components, 4 links, 0.1 s
+  net +50V_F103: 4 -> 1 components, 3 links, 0.1 s
+  net +50V_F104: 4 -> 1 components, 3 links, 0.0 s
+  net GI4_OUT: 4 -> 1 components, 3 links, 0.1 s
+  net +50V_F105: 4 -> 1 components, 3 links, 0.1 s
+  net GI3_OUT: 4 -> 1 components, 3 links, 0.6 s
+  net AC16_A_F: 5 -> 1 components, 4 links, 0.1 s
+  net AC16_B: 5 -> 1 components, 4 links, 0.1 s
+  net ACSOL_A_F: 5 -> 1 components, 4 links, 0.2 s
+  net ACSOL_B: 5 -> 1 components, 4 links, 0.2 s
+  net +12VU: 2 -> 1 components, 1 links, 0.0 s
+  net +20V: 11 -> 1 components, 9 links, 2.1 s
+  net +18V: 4 -> 1 components, 3 links, 0.5 s
+  rip-up #1: +5V crosses ['CLK_LAMP_ROW'] (1 items removed)
+  rip-up #2: +5V crosses ['D4'] (4 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusS (neck-down)
+  +5V: routed with class BusS (neck-down)
+  rip-up #3: +5V crosses ['ROWCLR8'] (1 items removed)
+  rip-up #4: +5V crosses [] (0 items removed)
+  rip-up #5: +5V crosses [] (0 items removed)
+  rip-up #6: +5V crosses [] (0 items removed)
+  rip-up #7: +5V round 0: 182 errors, 53 open (non-GND), 0 GND open
+    shorting_items | Track [Net-(LED5-Pad2)] on F.Cu, length  / Pad 2 [Net-(LED5-A)] of LED5 on F.Cu
+    shorting_items | Track [Net-(Q96-Pad1)] on F.Cu, length 0 / Pad 2 [Net-(Q96-G)] of R186 on F.Cu
+    shorting_items | Track [Net-(Q96-Pad1)] on F.Cu, length 3 / Pad 1 [Net-(Q96-G)] of Q96 on F.Cu
+    shorting_items | Track [Net-(Q96-Pad1)] on F.Cu, length 0 / Pad 2 [Net-(Q96-G)] of R186 on F.Cu
+    shorting_items | Track [Net-(Q96-Pad1)] on F.Cu, length 0 / Pad 2 [Net-(Q96-G)] of R187 on F.Cu
+    shorting_items | Track [Net-(Q96-Pad1)] on F.Cu, length 0 / Pad 1 [Net-(Q96-G)] of Q96 on F.Cu
+    open: PTH pad 1 [SOL25] of J123 @137.1,247.7 / Track [SOL25] on F.Cu, length 13.0000 mm @145.0,250.8
+    open: Track [SOL26] on In2.Cu, length 14.6000  @155.6,250.8 / PTH pad 3 [SOL26] of J123 @129.2,247.7
+    open: Track [SOL27] on B.Cu, length 3.2000 mm @140.2,252.4 / PTH pad 4 [SOL27] of J123 @125.2,247.7
+    open: PTH pad 5 [SOL28] of J123 @121.3,247.7 / Track [SOL28] on F.Cu, length 7.2000 mm @140.2,252.4
+    open: Track [D0] on F.Cu, length 0.6000 mm @392.6,144.2 / Track [D0] on F.Cu, length 0.2000 mm @392.8,147.8
+    open: Track [D4] on F.Cu, length 0.7423 mm @356.0,148.2 / Track [D4] on F.Cu, length 2.2000 mm @369.8,144.8
+    open: Track [SOL12] on In2.Cu, length 1.5963 m @253.0,246.2 / PTH pad 5 [SOL12] of J129 @262.2,265.3
+    open: PTH pad 9 [SOL08] of J130 @290.6,247.7 / PTH pad 5 [SOL08] of J131 @298.5,265.3
+    open: Track [SOL09] on F.Cu, length 1.5840 mm @268.8,246.2 / PTH pad 1 [SOL09] of J129 @278.0,265.3
+    open: Track [SOL14] on In2.Cu, length 1.7282 m @244.8,246.0 / PTH pad 2 [SOL14] of J128 @248.9,265.3
+    open: PTH pad 2 [GI2_RET] of J121 @95.1,265.3 / Track [GI2_RET] on F.Cu, length 1.6137 m @106.6,246.2
+    open: Track [SOL10] on In2.Cu, length 1.6236 m @261.0,246.2 / PTH pad 2 [SOL10] of J129 @274.1,265.3
+CK *', no destructor found.
+   routed 119 links in 232.7 s, 20 rip-ups (34 items), failed: ['D4', 'D6']
+round 1: 52 errors, 83 open (non-GND), 2 GND open
+    shorting_items | Pad 11 [CLK_LAMP_ROW] of U13 on F.Cu / Track [+5V] on F.Cu, length 0.4000 mm
+    clearance | Track [+5V] on F.Cu, length 0.7567 mm / Pad 13 [ROWCLR7] of U10 on F.Cu
+    clearance | Track [+5V] on F.Cu, length 3.4000 mm / Pad 13 [ROWCLR7] of U10 on F.Cu
+    clearance | Pad 19 [SOL01_L] of U5 on F.Cu / Track [+5V] on F.Cu, length 0.2645 mm
+    shorting_items | Track [+5V] on F.Cu, length 8.8000 mm / Pad 13 [ROWCLR3] of U12 on F.Cu
+    shorting_items | Pad 19 [SOL09_L] of U4 on F.Cu / Track [+5V] on F.Cu, length 1.4000 mm
+    open: PTH pad 1 [SOL25] of J122 @144.3,265.3 / Track [SOL25] on F.Cu, length 6.0000 mm @145.0,254.4
+    open: Track [SOL25] on F.Cu, length 6.0000 mm @145.0,254.4 / PTH pad 1 [SOL25] of J124 @160.8,247.7
+    open: PTH pad 1 [SOL25] of J124 @160.8,247.7 / Pad 2 [SOL25] of D8 on F.Cu @166.8,235.4
+    open: Pad 2 [SOL25] of D8 on F.Cu @166.8,235.4 / Pad 2 [SOL25] of Q26 on F.Cu @165.7,226.5
+    open: Track [SOL26] on In2.Cu, length 4.0000 m @141.0,256.4 / PTH pad 2 [SOL26] of J122 @140.4,265.3
+    open: Track [SOL26] on In2.Cu, length 4.0000 m @141.0,256.4 / PTH pad 2 [SOL26] of J124 @156.9,247.7
+    open: PTH pad 2 [SOL26] of J124 @156.9,247.7 / Pad 2 [SOL26] of D7 on F.Cu @166.8,209.0
+    open: Pad 2 [SOL26] of D7 on F.Cu @166.8,209.0 / Pad 2 [SOL26] of Q24 on F.Cu @165.7,200.1
+    open: Track [SOL27] on B.Cu, length 6.0000 mm @137.0,252.8 / PTH pad 3 [SOL27] of J122 @136.4,265.3
+    open: Track [SOL27] on B.Cu, length 6.0000 mm @137.0,252.8 / PTH pad 3 [SOL27] of J124 @152.9,247.7
+    open: PTH pad 3 [SOL27] of J124 @152.9,247.7 / Pad 2 [SOL27] of D6 on F.Cu @166.8,182.6
+    open: Pad 2 [SOL27] of D6 on F.Cu @166.8,182.6 / Pad 2 [SOL27] of Q22 on F.Cu @165.7,173.7
+nd.
+   routed 111 links in 133.0 s, 18 rip-ups (50 items), failed: ['Net-(U6B--)']
+round 2: 132 errors, 34 open (non-GND), 2 GND open
+    tracks_crossing | Track [SOL26] on F.Cu, length 1.8000 mm / Track [SOL25] on F.Cu, length 14.4000 mm
+    shorting_items | Via [SOL26] on F.Cu - B.Cu / Track [SOL28] on F.Cu, length 2.4000 mm
+    shorting_items | Track [SOL26] on F.Cu, length 0.4000 mm / Track [SOL28] on F.Cu, length 2.4000 mm
+    shorting_items | Track [SOL26] on F.Cu, length 0.6000 mm / Track [SOL28] on F.Cu, length 2.4000 mm
+    tracks_crossing | Track [SOL26] on F.Cu, length 0.2000 mm / Track [SOL28] on F.Cu, length 2.4000 mm
+    tracks_crossing | Track [SOL26] on In2.Cu, length 14.6000  / Track [SOL25] on In2.Cu, length 1.4000 m
+    open: Track [SOL26] on In2.Cu, length 14.6000  @141.0,250.8 / Track [SOL26] on In2.Cu, length 9.2000 m @139.8,250.8
+    open: Track [SOL27] on In2.Cu, length 0.8000 m @131.0,252.4 / Track [SOL27] on B.Cu, length 6.0000 mm @137.0,252.8
+    open: Track [SOL27] on B.Cu, length 5.2000 mm @137.8,254.2 / Track [SOL27] on In2.Cu, length 2.0000 m @135.8,254.2
+    open: Track [D0] on F.Cu, length 0.2000 mm @389.6,147.0 / Track [D0] on In2.Cu, length 3.2000 mm @392.8,143.4
+    open: Track [D1] on F.Cu, length 0.2000 mm @185.0,175.6 / Via [D1] on F.Cu - B.Cu @182.4,174.2
+    open: Track [GI4_OUT] on F.Cu, length 3.2000 m @74.2,236.8 / Track [GI4_OUT] on F.Cu, length 11.4000  @74.4,243.6
+    open: Track [GI4_OUT] on F.Cu, length 3.2000 m @74.2,236.8 / Track [GI4_OUT] on B.Cu, length 4.0000 m @89.8,240.2
+    open: Track [GI4_OUT] on F.Cu, length 11.4000  @74.4,243.6 / Track [GI4_OUT] on B.Cu, length 1.7204 m @74.2,246.0
+    open: Track [GI2_OUT] on B.Cu, length 19.0000  @82.0,251.8 / Track [GI2_OUT] on F.Cu, length 1.0000 m @63.0,251.8
+    open: Track [GI2_OUT] on F.Cu, length 2.4000 m @79.2,236.6 / Track [GI2_OUT] on B.Cu, length 3.0000 m @79.2,236.6
+    open: Track [GI2_OUT] on F.Cu, length 1.1436 m @81.6,219.2 / Track [GI2_OUT] on F.Cu, length 2.4000 m @79.2,236.6
+    open: Track [GI2_OUT] on B.Cu, length 32.4000  @91.4,151.0 / Track [GI2_OUT] on F.Cu, length 1.1193 m @89.8,217.6
+ctor found.
+   routed 73 links in 164.0 s, 20 rip-ups (61 items), failed: ['/CPU_Interface/BLK_REF', 'Net-(U6B--)']
+round 3: 149 errors, 17 open (non-GND), 2 GND open
+    shorting_items | Track [+5V] on F.Cu, length 3.2000 mm / Track [GI3_OUT] on F.Cu, length 0.2000 m
+    tracks_crossing | Track [GI5_OUT] on B.Cu, length 0.2000 m / Track [GI2_OUT] on B.Cu, length 3.0000 m
+    clearance | Pad 9 [/Lamp_Rows/ROW1_Q] of U13 on F.Cu / Track [+5V] on F.Cu, length 0.2000 mm
+    shorting_items | Track [+5V] on F.Cu, length 0.2000 mm / Pad 9 [/Lamp_Rows/ROW1_Q] of U13 on F.Cu
+    clearance | Pad 9 [/Lamp_Rows/ROW1_Q] of U13 on F.Cu / Track [+5V] on F.Cu, length 0.2000 mm
+    shorting_items | Track [+5V] on F.Cu, length 0.2000 mm / Via [/Lamp_Rows/ROW1_Q] on F.Cu - B.Cu
+    open: Track [SOL28] on F.Cu, length 2.6000 mm @141.4,248.8 / Track [SOL28] on F.Cu, length 0.2000 mm @141.2,251.2
+    open: Pad 9 [/Lamp_Rows/ROW1_Q] of U13 on F.Cu @391.3,152.2 / Via [/Lamp_Rows/ROW1_Q] on F.Cu - B.Cu @389.2,152.2
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 0.4 @338.0,150.2 / Track [CLK_LAMP_ROW] on In2.Cu, length 1 @338.4,149.0
+    open: Track [+12VU] on B.Cu, length 13.4000 mm @29.6,251.8 / Track [+12VU] on F.Cu, length 11.4000 mm @23.8,251.8
+    open: Track [ZERO_CROSS] on B.Cu, length 1.800 @94.4,76.4 / Track [ZERO_CROSS] on F.Cu, length 0.400 @95.4,78.4
+    open: Track [GI1_OUT] on F.Cu, length 1.7134 m @86.2,246.0 / Track [GI1_OUT] on F.Cu, length 8.4000 m @66.6,251.8
+    open: Track [GI2_OUT] on F.Cu, length 0.6000 m @82.8,237.4 / Track [GI2_OUT] on B.Cu, length 1.7148 m @82.2,246.0
+    open: PTH pad 1 [unconnected-(F102-Pad1)] of F @180.5,53.2 / PTH pad 1 [unconnected-(F102-Pad1)] of F @180.5,59.9
+    open: Track [/CPU_Interface/ZC_SAMPLE] on F.Cu @90.2,72.6 / Track [/CPU_Interface/ZC_SAMPLE] on In2. @94.6,74.4
+    open: Track [Net-(U6B--)] on B.Cu, length 0.60 @86.8,73.8 / Track [Net-(U6B--)] on F.Cu, length 0.20 @86.0,73.6
+    open: Track [Net-(U6B--)] on B.Cu, length 6.20 @87.6,65.6 / Track [Net-(U6B--)] on F.Cu, length 0.20 @88.0,71.4
+    open: Track [Net-(U6B--)] on F.Cu, length 0.20 @88.0,71.4 / Track [Net-(U6B--)] on F.Cu, length 0.20 @87.8,68.8
+== repair done rc=0
+ length 0.2000 mm / Track [/Lamp_Rows/ROW1_Q] on F.Cu, lengt
+    clearance | Track [+5V] on F.Cu, length 0.2000 mm / Track [/Lamp_Rows/ROW1_Q] on F.Cu, lengt
+    shorting_items | Pad 11 [CLK_LAMP_ROW] of U13 on F.Cu / Track [+5V] on F.Cu, length 0.2000 mm
+    open: Track [SOL25] on F.Cu, length 3.6000 mm @145.0,254.4 / Track [SOL25] on In2.Cu, length 4.4000 m @142.4,249.0
+    open: Track [SOL25] on F.Cu, length 3.6000 mm @145.0,254.4 / Track [SOL25] on In2.Cu, length 2.0000 m @159.4,250.8
+    open: Track [SOL26] on In2.Cu, length 0.4000 m @155.6,249.0 / Track [SOL26] on In2.Cu, length 5.6000 m @141.0,256.4
+    open: Track [+5V] on F.Cu, length 2.4000 mm @91.6,75.4 / Track [+5V] on F.Cu, length 0.2000 mm @92.2,73.2
+    open: Track [ZERO_CROSS] on B.Cu, length 1.800 @94.4,76.4 / Track [ZERO_CROSS] on F.Cu, length 0.400 @95.4,78.4
+    open: Track [ZERO_CROSS] on B.Cu, length 0.600 @101.2,67.2 / Track [ZERO_CROSS] on In2.Cu, length 9.0 @100.6,67.2
+    open: Track [GI2_RET] on F.Cu, length 1.5037 m @105.0,248.8 / Track [GI2_RET] on F.Cu, length 12.6000  @95.6,251.2
+    open: Track [/CPU_Interface/ZC_REF] on F.Cu, l @90.4,71.2 / Track [/CPU_Interface/ZC_REF] on F.Cu, l @91.6,68.8
+    open: Track [GI1_OUT] on F.Cu, length 19.6000  @86.2,243.6 / Track [GI1_OUT] on F.Cu, length 3.0000 m @66.6,248.8
+    open: Track [GI4_OUT] on F.Cu, length 9.2000 m @63.0,243.6 / Track [GI4_OUT] on B.Cu, length 5.0000 m @55.8,259.0
+    open: Track [GI4_OUT] on F.Cu, length 0.2000 m @74.2,236.8 / Track [GI4_OUT] on F.Cu, length 2.4000 m @62.8,236.6
+    open: Via [GI2_OUT] on F.Cu - B.Cu @63.0,251.8 / Track [GI2_OUT] on F.Cu, length 8.2000 m @71.2,255.4
+ found.
+   routed 59 links in 148.8 s, 20 rip-ups (88 items), failed: ['/CPU_Interface/BLK_REF', '/CPU_Interface/ZC_REF', 'Net-(U6B--)']
+round 2: 303 errors, 7 open (non-GND), 2 GND open
+    clearance | PTH pad 2 [SOL26] of J124 / Track [SOL25] on F.Cu, length 0.2000 mm
+    clearance | Track [SOL25] on F.Cu, length 0.2000 mm / PTH pad 2 [SOL26] of J124
+    clearance | PTH pad 2 [SOL26] of J124 / Track [SOL25] on F.Cu, length 2.2000 mm
+    clearance | PTH pad 2 [SOL26] of J124 / Track [SOL25] on F.Cu, length 0.2000 mm
+    tracks_crossing | Track [ACSOL_B] on B.Cu, length 15.2000  / Track [AC16_B] on B.Cu, length 2.6000 mm
+    shorting_items | Via [/CPU_Interface/ZC_SAMPLE] on F.Cu - / Via [/CPU_Interface/ZC_REF] on F.Cu - B.
+    open: Track [/CPU_Interface/ZC_REF] on F.Cu, l @85.0,71.4 / Track [/CPU_Interface/ZC_REF] on In2.Cu, @85.2,71.8
+    open: PTH pad 1 [unconnected-(F102-Pad1)] of F @180.5,53.2 / PTH pad 1 [unconnected-(F102-Pad1)] of F @180.5,59.9
+    open: Track [Net-(U6B--)] on F.Cu, length 0.80 @86.0,71.0 / Track [Net-(U6B--)] on F.Cu, length 0.20 @87.8,68.8
+    open: Track [Net-(U6B--)] on B.Cu, length 0.60 @86.8,73.8 / Track [Net-(U6B--)] on F.Cu, length 0.20 @86.0,73.6
+    open: Track [Net-(U6B--)] on F.Cu, length 0.20 @88.0,71.4 / Track [Net-(U6B--)] on B.Cu, length 6.20 @87.6,65.6
+    open: Track [/CPU_Interface/BLK_REF] on F.Cu,  @73.4,70.0 / Track [/CPU_Interface/BLK_REF] on B.Cu,  @73.4,73.2
+    open: PTH pad 1 [unconnected-(F101-Pad1)] of F @165.1,53.2 / PTH pad 1 [unconnected-(F101-Pad1)] of F @165.1,59.9
+o destructor found.
+   routed 58 links in 198.8 s, 20 rip-ups (80 items), failed: ['/CPU_Interface/BLK_REF', 'Net-(U6B--)']
+round 3: 112 errors, 5 open (non-GND), 2 GND open
+    shorting_items | Track [SOL25] on F.Cu, length 3.6000 mm / Track [GI5_OUT] on F.Cu, length 15.0000 
+    clearance | Track [SOL25] on F.Cu, length 0.4000 mm / Track [GI5_OUT] on F.Cu, length 0.2000 m
+    clearance | Track [GI5_OUT] on F.Cu, length 15.0000  / Track [SOL25] on F.Cu, length 1.7065 mm
+    shorting_items | Track [SOL25] on F.Cu, length 1.6193 mm / Track [GI5_OUT] on F.Cu, length 11.6000 
+    shorting_items | Track [SOL25] on F.Cu, length 0.8000 mm / Track [GI5_OUT] on F.Cu, length 11.6000 
+    shorting_items | Track [GI5_OUT] on F.Cu, length 0.2000 m / Track [SOL25] on F.Cu, length 2.0000 mm
+    open: PTH pad 1 [unconnected-(F102-Pad1)] of F @180.5,53.2 / PTH pad 1 [unconnected-(F102-Pad1)] of F @180.5,59.9
+    open: Track [Net-(U6B--)] on F.Cu, length 0.20 @86.0,73.6 / Track [Net-(U6B--)] on B.Cu, length 0.60 @86.8,73.8
+    open: Track [Net-(U6B--)] on F.Cu, length 0.20 @88.0,73.6 / Track [Net-(U6B--)] on B.Cu, length 0.60 @87.8,73.4
+    open: Track [/CPU_Interface/BLK_REF] on F.Cu,  @73.4,70.0 / Track [/CPU_Interface/BLK_REF] on B.Cu,  @73.4,73.2
+    open: PTH pad 1 [unconnected-(F101-Pad1)] of F @165.1,53.2 / PTH pad 1 [unconnected-(F101-Pad1)] of F @165.1,59.9
+== repair done rc=0

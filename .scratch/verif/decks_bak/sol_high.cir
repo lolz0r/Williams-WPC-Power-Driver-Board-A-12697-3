@@ -1,0 +1,34 @@
+Cost-board high-power solenoid driver (sol 1-8) in the machine: 74HCT574 -> 100R -> IRLR3110Z DPAK (10k pull-down) -> AE-23-800 coil (4.2 ohm, 12 mH) on the real "+50V" rail (~70 V DC), S3M tie-back, 40 ms pulse
+.include ../models.lib
+V50 v50 0 70
+VL latch 0 PULSE(0 4.6 1m 20n 20n 40m 100m)
+RL latch a 40
+Rg a g 100
+Rpd g 0 10k
+Vdr out outd 0
+XQ outd g 0 IRLR3110Z
+Vcoil v50 v50c 0
+Lc out cl 12m
+Rc cl v50c 4.2
+Dfb out v50 DS3M
+.tran 5u 60m
+.control
+run
+let icoil = i(Vcoil)
+let ifet = i(Vdr)
+let pfet = v(outd)*ifet
+meas tran icoil_max MAX icoil from=1m to=41m
+meas tran vout_on AVG v(outd) from=30m to=40m
+meas tran vout_peak MAX v(out) from=41m to=60m
+meas tran p_fet AVG pfet from=30m to=40m
+meas tran e_pulse INTEG pfet from=1m to=41.5m
+meas tran icoil_off MAX icoil from=56m to=60m
+let tj_rise_pulse = e_pulse / 0.04 * 0.6
+print tj_rise_pulse
+let p_avg_20pct = p_fet * 0.2
+let tj_rise_20pct = p_avg_20pct * 50
+print p_avg_20pct
+print tj_rise_20pct
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/sol_high.csv v(out) icoil ifet v(g)
+.endc
+.end

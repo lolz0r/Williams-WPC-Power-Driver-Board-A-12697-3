@@ -1,0 +1,37 @@
+Modern G.I. gate drive: 74HCT574 -> 470R -> MMBT4401 emitter follower (10k pull-down) -> 27R -> BTA16-600C gate (macro fires at 50 mA = worst-case Q IV Igt)
+.include ../models.lib
+VCC vcc 0 5
+VL latch 0 PULSE(0 4.6 2m 20n 20n 60m 100m)
+RL latch a 40
+Rb a b 470
+Rpd b 0 10k
+Q1 vcc b e QMMBT4401
+Vg e eg 0
+R27 eg g 27
+Dg g 0 DGATE
+Rgk g 0 200
+.model DGATE D(Is=1e-9 n=2 Rs=5)
+Vmt mt2 mt2i 0
+Btri mt2i 0 I = v(mt2i) * ( max((abs(i(Vg)) > 0.05), (v(on) > 0.5)) > 0.5 ? 20 : 1e-6 )
+Bon onr 0 V = (abs(i(Vmt)) > 0.05) ? 1 : 0
+Ron onr on 1
+Con on 0 0.5u
+Vac ac 0 SIN(0 8.9 60)
+Vstr ac acs 0
+Rstr acs mt2 1.4
+.tran 20u 80m
+.control
+run
+let ig = i(Vg)
+let istr = i(Vstr)
+let istr_abs = abs(istr)
+let pnpn = (v(vcc)-v(e))*ig
+meas tran ig_peak MAX ig from=2m to=60m
+meas tran istr_off MAX istr_abs from=0 to=2m
+meas tran istr_on MAX istr_abs from=20m to=60m
+meas tran istr_after MAX istr_abs from=70m to=80m
+meas tran p_npn AVG pnpn from=20m to=60m
+meas tran i_latch MIN i(VL) from=2m to=60m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/gi_gate.csv v(ac) v(mt2) istr ig
+.endc
+.end

@@ -1,0 +1,870 @@
+"""WPC Power Driver Board - COST-OPTIMISED variant of the modern re-implementation (same outline, connectors, fuse / bridge /
+capacitor positions and function as A-12697-3; derived from design_modern.py of ../wpc_power_driver_modern).
+
+Changes versus the modern board (see README.md):
+ * all 28 solenoid / flasher outputs: IRLB4030 TO-220 -> Infineon IRLR3110Z DPAK (100 V, 14 mOhm, logic level); same 100 R gate /
+   10 k pull-down / SMA-SMC tie-back circuit, still driven straight from the 74HCT574 latches
+ * lamp rows: IRLZ44N -> IRLR024N DPAK (55 V, 65 mOhm); lamp columns: IRF9Z34N -> IRFR5305 P-channel DPAK (-55 V, 65 mOhm)
+ * bridges: BR3 (+50 V) stays a GBPC3510W block (6224BG basket heatsink); the four low-voltage bridges are DISCRETE Schottky bridges since the
+   2026-09-07 thermal review (a GBJ1510 dissipates 15 W at full lamp load and cannot be heat-sinked on the board): four ST STPS20M100SG-TR
+   (100 V, 20 A, D2PAK) per rail - D101-D104 (+18 V, was BR1), D105-D108 (+5 V raw, BR2), D109-D112 (+20 V, BR4), D113-D116 (+12 V power, BR5),
+   cooled by the copper of their cathode / AC pours (docs/THERMAL_AND_PROTECTION.md section 1)
+ * electrolytics: the 15000 uF / 35 V snap-ins become 10000 uF / 25 V (Rubycon USC, 25 x 25 mm) - C5, C6, C7, C11 and C30; 2 x 2200 uF / 100 V on +50 V kept
+ * buck converters: TPS54560B (5 A) -> TPS54360B (3.5 A, same HSOP-8 pin-out); feedback / RT / compensation recomputed for the
+   TPS54360B (gm(ps) 12 A/V) with the 2 x 330 uF + 10 uF electrolytic output filter; +5 V rated 3 A, +12 V 2 A
+ * fuses: 3AG -> 5 x 20 mm (Littelfuse 239 Slo-Blo / 217 fast) in Keystone 3517 clips, each fuse centred on the original 3AG position
+ * test points: Keystone 5000 -> plain 2.0 mm plated pads (no purchased part)
+ * everything else (logic, comparators, TBD62083A, triacs + MMBT4401 drive, connectors, SMD passives, LEDs, relay option DNP) unchanged
+
+Interface corrections after the machine-level review against the WPC schematic manual 16-9834.2 (docs/WPC_INTERFACE_FINDINGS.md):
+ * J113 ribbon: real A-12697 pin-out (7 /LMP ROW, 8 /LMP COL, 9 /SOL 2 -> sol 17-24, 10 /SOL 4 -> sol 1-8, 11 /SOL 3 -> sol 9-16,
+   12 /SOL 1 -> sol 25-28, 13 /TRIAC, 15..29 odd = D7..D0, 31 BLANKING, 34 ZERO CROSS); 1/3/5/32/33 (-1 board flipper sense) and 2 N/C
+ * the CPU board drives the ribbon data through a 74LS240, i.e. the data is ACTIVE LOW: U9 (74HCT240) re-inverts it on this board so that a
+   register bit written as 1 still turns an output on; SR2 (4.7 k) pulls the ribbon data lines up, SR1 (4.7 k) the strobes and BLANKING
+ * zero cross (corrected 2026-09-06, docs/VERIFICATION_MATRIX.md): the A-12697 puts the D38 half-wave sample of the F113-fused 9 VAC leg on
+   U6A pin 7 (+) against the 0.45 V reference on pin 6 (-) (sheet 1, pin numbers readable at 600 dpi; U6C on the other leg is redundant) and a real
+   TP4 measures ~8.1 ms high pulses at 60 Hz (Pinside 'WPC Zero Cross point not working - Solved', Arduino pulse timer): ZERO CROSS is a
+   60 Hz SQUARE WAVE with one edge per mains zero crossing, HIGH while the fused 9 VAC leg is positive - NOT a 120 Hz pulse. U6A now samples
+   that leg (R197 from AC9_AF, R198 DNP) on its + input with the 0.26 V reference on -, so the board reproduces the OEM waveform
+ * J104 carries the F112-fused 51 VAC leg (pins 1/2) and the F111-fused 16 VAC leg (pins 4/5) like the A-12697 (sheet 1), not the raw winding
+ * +12 V: the regulated rail (U21, F115) comes from the +18 V lamp supply and only feeds J114 ("+12 V digital"); J116/J117/J118 pin 2 carry
+   the UNREGULATED +12 V ("+12 V power": motors, optos, coin door, DMD) from BR5 (GBU8J) / C30 (10000 uF), fused by F116 as on the original
+ * G.I.: triac MT1 terminals go to the transformer return pins of J115 (7, 8, 10, 11, 12) on a GI_RET net that is tied to logic ground by
+   the 0 R link W1 (OEM: J115-1 "GND REF"), so the string return current does not flow through the logic ground plane
+ * +50 V is really ~70 V DC (51 VAC winding): bleeder R259 || R260 (2 x 15 k, 2512), S3M tie-backs on sol 9-16 / 25-28 (PWM-held coils),
+   TP6 = +50 V and TP8 = +18 V as on the factory schematic; J111 carries the G.I. latch spare bits T5-T7 (GPIO) as on the original
+ * connector parity audit 2026-09-07 (docs/INTERFACE_PARITY.md, docs/ASSEMBLY_NOTES.md): J103-3/4 grounded, J105 = copy of J104, J107-5 = +20V,
+   J108 = F103/F104/F105 branches, J120/J121 wired in parallel (all five strings on both), J123 = sol 25-28 (key 2), J125 key pin 4 (sol 20 on 5),
+   J126-10..13 = sol 21-24 tie-back cathodes (their diodes no longer clamp to +20V on the board), new J128/J129/J131/J132 (5-pin copies of
+   J127/J130) - every key pin taken from the silkscreen film / a photographed board
+"""
+import math
+import kicad_sch as K
+from kicad_sch import Sheet, SymDef, POWER
+from sexp import find, find_all
+from sourcing import SRC, r0805, r0805b, r2512
+
+# ---------------------------------------------------------------- symbols
+R = SymDef('Device', 'R'); C = SymDef('Device', 'C'); CP = SymDef('Device', 'C_Polarized'); L = SymDef('Device', 'L')
+LED = SymDef('Device', 'LED'); FUSE = SymDef('Device', 'Fuse'); RNET = SymDef('Device', 'R_Network09'); TP = SymDef('Connector', 'TestPoint')
+BRIDGE = SymDef('Device', 'D_Bridge_+-AA')      # 1 +, 2 -, 3/4 AC   (KBPC/GBPC block)
+GBU = SymDef('Diode_Bridge', 'GBU4J')           # 1 +, 2 ~, 3 ~, 4 -
+GBU8 = SymDef('Diode_Bridge', 'GBU8J')          # same pin-out
+DREC = SymDef('Diode', '1N4007')                # 1 K, 2 A  (used for S1M / S3M with SMA/SMC footprints)
+DSS = SymDef('Diode', '1N4148W')                # 1 K, 2 A
+DSCH = SymDef('Device', 'D_Schottky')
+NFET = SymDef('Transistor_FET', 'Q_NMOS_GDS')   # 1 G, 2 D, 3 S
+PFET = SymDef('Transistor_FET', 'Q_PMOS_GDS')
+NPN = SymDef('Transistor_BJT', 'Q_NPN_BEC')     # 1 B, 2 E, 3 C
+TRIAC = SymDef('Triac_Thyristor', 'BTA16-600C') # 1 A1, 2 A2, 3 G
+DRV8 = SymDef('Transistor_Array', 'ULN2803A')   # TBD62083A is pin compatible
+HCT574 = SymDef('74xx', '74HCT574'); HCT74 = SymDef('74xx', '74HCT74'); LM339 = SymDef('Comparator', 'LM339')
+HCT240 = SymDef('74xx', '74HCT240')   # 1/19 = /OE, inputs 2,4,6,8 / 17,15,13,11, outputs 18,16,14,12 / 3,5,7,9
+BUCK = SymDef('Regulator_Switching', 'TPS54360DDA')   # same pin-out as TPS54560BDDA
+RELAY = SymDef('Relay', 'G2RL-2')
+CONN = {n: SymDef('Connector_Generic', f'Conn_01x{n:02d}') for n in [3, 4, 5, 6, 7, 9, 11, 12, 13]}
+CONN34 = SymDef('Connector_Generic', 'Conn_02x17_Odd_Even')
+MH = SymDef('Mechanical', 'MountingHole')
+
+# ---------------------------------------------------------------- footprints
+FP_R = 'Resistor_SMD:R_0805_2012Metric'
+FP_R2512 = 'Resistor_SMD:R_2512_6332Metric'
+FP_SIP10 = 'Resistor_THT:R_Array_SIP10'
+FP_C = 'Capacitor_SMD:C_0805_2012Metric'
+FP_C1210 = 'Capacitor_SMD:C_1210_3225Metric'
+FP_C10000 = 'Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn'   # Rubycon 25USC10000MEFCSN25X25 is 25 x 25 mm
+FP_C2200_100 = 'Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn'
+FP_C2200_25 = 'Capacitor_THT:CP_Radial_D12.5mm_P5.00mm'
+FP_C330 = 'Capacitor_THT:CP_Radial_D10.0mm_P5.00mm'
+FP_C100 = 'Capacitor_THT:CP_Radial_D6.3mm_P2.50mm'
+FP_SMA = 'Diode_SMD:D_SMA'; FP_SMC = 'Diode_SMD:D_SMC'; FP_SOD123 = 'Diode_SMD:D_SOD-123'
+FP_TO220 = 'Package_TO_SOT_THT:TO-220-3_Vertical'   # triacs only
+FP_DPAK = 'Package_TO_SOT_SMD:TO-252-2'             # all MOSFETs (pad 1 G, pad 2 = tab = D, pad 3 S)
+FP_D2PAK = 'wpc_cost:D2PAK_Schottky_AKA'           # discrete Schottky bridge diodes D101-D116: project footprint = TO-263-2 with pad 1 = tab = K, pads 2 = both leads = A (ST 'A K A')
+FP_SOT23 = 'Package_TO_SOT_SMD:SOT-23'
+FP_BRIDGE = 'Diode_THT:Diode_Bridge_28.6x28.6x7.3mm_P18.0mm_P11.6mm'
+FP_GBU = 'Diode_THT:Diode_Bridge_Vishay_GBU'
+FP_GBJ = 'wpc_cost:Diode_Bridge_GBJ'                 # project footprint (footprints/wpc_cost.pretty), Diodes DS21221 outline
+FP_SOIC20 = 'Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm'; FP_SOIC14 = 'Package_SO:SOIC-14_3.9x8.7mm_P1.27mm'
+FP_SOIC18 = 'Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm'
+FP_HSOP8 = 'Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm'
+FP_L = 'Inductor_SMD:L_Bourns_SRP1245A'      # same land pattern family as SRP1265A
+FP_KK = lambda n: f'Connector_Molex:Molex_KK-396_A-41791-00{n:02d}_1x{n:02d}_P3.96mm_Vertical'
+FP_HDR2x17 = 'Connector_IDC:IDC-Header_2x17_P2.54mm_Vertical'
+FP_KK254 = lambda n: f'Connector_Molex:Molex_KK-254_AE-6410-{n:02d}A_1x{n:02d}_P2.54mm_Vertical'
+FP_FUSE = 'Fuse:Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal'   # pad centroid = fuse centre, like the 3AG clip footprint
+FP_LED = 'LED_SMD:LED_0805_2012Metric'
+FP_TP = 'TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm'
+TPSRC = dict(mfr='', mpn='', desc='Test point: 2.0 mm plated pad with 1.0 mm hole (no purchased part)', link='', price=0.0, price100=0.0)
+FP_RELAY = 'Relay_THT:Relay_DPDT_Omron_G2RL-2'
+FP_MH = 'MountingHole:MountingHole_4.3mm_M4'
+
+PARTS = {}
+
+def _src(src):
+    if src is None: return {}
+    return SRC[src] if isinstance(src, str) else src
+
+class B:
+    """Sheet builder with part registry and sourcing fields."""
+    def __init__(self, sheet):
+        self.s = sheet
+        self.placed = {}
+    def part(self, ref, sdef, x, y, rot=0, mirror=None, unit=1, value='', fp='', dnp=False, desc='', src=None, **kw):
+        sr = _src(src)
+        desc = desc or sr.get('desc', '')
+        if ref not in PARTS:
+            PARTS[ref] = dict(ref=ref, value=value, fp=fp, dnp=dnp, desc=desc, pn=sr.get('mpn', ''), mfr=sr.get('mfr', ''),
+                              link=sr.get('link', ''), price=sr.get('price'), price_est=sr.get('price_est'), price100=sr.get('price100'),
+                              lib_id=sdef.lib_id, sheet=self.s.name)
+        fields = {}
+        if sr:
+            fields = {'MPN': sr['mpn'], 'Manufacturer': sr['mfr'], 'Link': sr['link'],
+                      'Price': '' if sr.get('price') is None else f"{sr['price']:.2f}",
+                      'Price100': '' if sr.get('price100') is None else f"{sr['price100']:.2f}", 'Description': desc}
+        elif desc:
+            fields = {'Description': desc}
+        self.placed[(ref, unit)] = (sdef, rot, mirror)
+        self.s.symbol(ref, sdef, x, y, rot, mirror, unit, value, fp, dnp, fields=fields or None, **kw)
+    def pin(self, ref, num, unit=None):
+        return self.s.pin(ref, num, unit)
+    def stub(self, ref, num, length=5.08, unit=1):
+        """(pin point, outer point, glabel rotation) for a stub drawn outward from a pin."""
+        sdef, rot, mirror = self.placed[(ref, unit)] if (ref, unit) in self.placed else self.placed[(ref, 1)]
+        key = (unit, str(num)) if (unit, str(num)) in sdef.pins else (0, str(num))
+        lx, ly, ang, _, _ = sdef.pins[key]
+        dx, dy = math.cos(math.radians(ang)), math.sin(math.radians(ang))
+        sx, sy = K.rot_pt(dx, dy, rot, mirror)         # direction from pin end toward body, sheet coords
+        ox, oy = -round(sx), -round(sy)
+        p = self.pin(ref, num, unit)
+        q = (K.r2(p[0] + ox * length), K.r2(p[1] + oy * length))
+        grot = {(-1, 0): 180, (1, 0): 0, (0, -1): 90, (0, 1): 270}[(ox, oy)]
+        return p, q, grot
+    def w(self, *pts): self.s.path(*pts)
+    def hv(self, a, b):
+        if a[0] != b[0] and a[1] != b[1]: self.s.path(a, (b[0], a[1]), b)
+        else: self.s.wire(a, b)
+    def vh(self, a, b):
+        if a[0] != b[0] and a[1] != b[1]: self.s.path(a, (a[0], b[1]), b)
+        else: self.s.wire(a, b)
+    def j(self, p): self.s.junction(p)
+    def gl(self, name, p, rot=0, shape='passive'): self.s.glabel(name, p, rot, shape)
+    def lbl(self, name, p, rot=0): self.s.label(name, p, rot)
+    def pwr(self, net, p, rot=0): self.s.power(net, p, rot)
+    def gnd(self, p): self.s.power('GND', p, 0)
+    def flag(self, p): self.s.pwr_flag(p)
+    def nc(self, p): self.s.noconnect(p)
+    def text(self, t, p, size=1.5, bold=False): self.s.text(t, p, size, bold)
+
+    def pin_net(self, ref, num, net, length=5.08, unit=1, shape='passive'):
+        """Stub from a pin to a net: power symbol, GND, global label (UPPER-CASE names with '_' or digits) or local label."""
+        p, q, grot = self.stub(ref, num, length, unit)
+        if net == 'GND':
+            self.w(p, q); self.gnd(q)
+        elif net in POWER:
+            self.w(p, q); self.pwr(net, q, 0 if grot in (90, 0, 180) else 180)
+        elif net is None:
+            self.nc(p)
+        elif net.startswith('/'):
+            self.w(p, q); self.lbl(net[1:], q, grot)
+        else:
+            self.w(p, q); self.gl(net, q, grot, shape)
+        return q
+    def two(self, ref, sdef, x, y, value, fp, src, net1, net2, rot=0, desc='', dnp=False):
+        """Two-terminal part (vertical): pin 1 top -> net1, pin 2 bottom -> net2 (nets as in pin_net)."""
+        self.part(ref, sdef, x, y, rot, value=value, fp=fp, src=src, desc=desc, dnp=dnp)
+        self.pin_net(ref, 1, net1, 2.54); self.pin_net(ref, 2, net2, 2.54)
+    def conn_labels(self, ref, n, x, y, names, fp, src, desc, rot=0):
+        sd = CONN[n]
+        self.part(ref, sd, x, y, rot, value=desc, fp=fp, src=src, desc=desc)
+        for k in range(1, n + 1):
+            p = self.pin(ref, k)
+            nm = names.get(k)
+            if nm is None:
+                self.nc(p)
+            elif nm == 'GND':
+                q = (p[0] - 5.08, p[1]); self.w(p, q); self.gnd(q)
+            else:
+                q = (p[0] - 7.62, p[1]); self.w(p, q); self.gl(nm, q, 180)
+
+def RV(val, code=None, watt=None):
+    """0805 1 % resistor sourcing entry for a display value like '1.5K' (Yageo code '1K5')."""
+    code = code or val.replace('.', 'K') if 'K' in val and '.' in val else (code or (val + 'R' if val[-1].isdigit() else val))
+    return r0805(code)
+
+# resistor codes used (display -> Yageo code)
+RC = {'100': '100R', '470': '470R', '270': '270R', '1K': '1K', '1.5K': '1K5', '2K': '2K', '2.2K': '2K2', '4.7K': '4K7', '10K': '10K',
+      '10.5K': '10K5', '20K': '20K', '27K': '27K', '28K': '28K', '100K': '100K', '150K': '150K', '240K': '240K', '8.06K': '8K06', '1.2K': '1K2',
+      '118K': '118K', '29.4K': '29K4', '130K': '130K', '33.2K': '33K2', '42.2K': '42K2', '15K': '15K', '11.3K': '11K3', '2.1K': '2K1'}
+def RS(val): return r0805(RC[val])
+
+# ======================================================================
+# Driver templates
+# ======================================================================
+def fet_driver(b, ox, oy, n, q, rg, rpd, diode, fet, tie_net, in_net, out_net, kind, hp=False, big_diode=False):
+    """74HCT574 output (high = ON) -> 100 R -> logic-level MOSFET; 10 k gate pull-down; tie-back diode to the supply."""
+    b.part(q, NFET, ox, oy, value=SRC[fet]['mpn'], fp=FP_DPAK, src=fet)
+    b.part(rg, R, ox - 12.7, oy, 90, value='100', fp=FP_R, src=RS('100'))
+    b.part(rpd, R, ox - 7.62, oy + 7.62, value='10K', fp=FP_R, src=RS('10K'))
+    dsrc = 'S3M' if (hp or big_diode) else 'S1M'      # S3M (SMC) on the coil groups: a PWM-held coil freewheels through the tie-back
+    b.part(diode, DREC, ox + 2.54, oy - 15.24, 270, value=SRC[dsrc]['mpn'], fp=FP_SMC if (hp or big_diode) else FP_SMA, src=dsrc,
+           desc=SRC[dsrc]['desc'] + ' (tie-back)')
+    g = b.pin(q, 1); d = b.pin(q, 2); s = b.pin(q, 3)
+    b.w(b.pin(rg, 2), g)
+    top = b.pin(rpd, 1); b.w(top, (top[0], g[1])); b.j((top[0], g[1])); b.gnd(b.pin(rpd, 2))
+    b.lbl(f'S{n:02d}_G', g)
+    b.gl(in_net, b.pin(rg, 1), 180, 'input')
+    b.gnd(s)
+    dA, dK = b.pin(diode, 2), b.pin(diode, 1)
+    out = (d[0], oy - 10.16)
+    b.w(d, dA); b.j(out)
+    b.w(out, (out[0] + 7.62, out[1])); b.gl(out_net, (out[0] + 7.62, out[1]), 0, 'output')
+    if tie_net.startswith('+'):
+        b.pwr(tie_net, dK)
+    else:
+        b.w(dK, (dK[0], dK[1] - 2.54)); b.gl(tie_net, (dK[0], dK[1] - 2.54), 90, 'output')
+    b.text(f'Sol {n} ({kind})', (ox - 30, oy - 25), 1.6, True)
+
+def latch574(b, ref, x, y, clk_net, out_nets, in_nets=None, desc='Octal D latch'):
+    b.part(ref, HCT574, x, y, value='74HCT574', fp=FP_SOIC20, src='HCT574', desc=desc)
+    ins = in_nets or [f'D{i}' for i in range(8)]
+    for i in range(8):
+        b.pin_net(ref, str(2 + i), ins[i], shape='input')
+        b.pin_net(ref, str(19 - i), out_nets[i], shape='output')
+    b.pin_net(ref, '11', clk_net, shape='input')
+    b.pin_net(ref, '1', 'BLANKING', shape='input')
+    b.pwr('+5V', b.pin(ref, '20')); b.gnd(b.pin(ref, '10'))
+
+def bypass(b, ref, x, y):
+    b.part(ref, C, x, y, value='100nF', fp=FP_C, src='C100N', desc='Bypass 100 nF 50 V X7R 0805')
+    b.pwr('+5V', b.pin(ref, 1)); b.gnd(b.pin(ref, 2))
+
+# ======================================================================
+# Solenoid sheets (same ref numbering as the original board where a part has a counterpart)
+# ======================================================================
+SOL_Q = {1: 82, 2: 80, 3: 78, 4: 76, 5: 64, 6: 66, 7: 68, 8: 70, 9: 58, 10: 56, 11: 54, 12: 52, 13: 50, 14: 48,
+         15: 46, 16: 44, 17: 42, 18: 40, 19: 38, 20: 36, 21: 28, 22: 30, 23: 34, 24: 32, 25: 26, 26: 24, 27: 22, 28: 20}
+DIO = {20: 5, 22: 6, 24: 7, 26: 8, 28: 9, 30: 10, 32: 11, 34: 12, 36: 1, 38: 2, 40: 3, 42: 38,
+       44: 17, 46: 18, 48: 19, 50: 20, 52: 21, 54: 22, 56: 23, 58: 24}
+def lp_parts(qt):
+    k = (qt - 20) // 2; r = 22 + 4 * k
+    return dict(q=f'Q{qt}', rg=f'R{r}', rpd=f'R{r + 1}', diode=f'D{DIO[qt]}')
+HP_PARTS = {  # sol -> (MOSFET (old TIP36C ref), Rg (old 470), Rpd (old 4.7K), diode)
+    1: ('Q82', 'R141', 'R140', 'D32'), 2: ('Q80', 'R139', 'R138', 'D31'), 3: ('Q78', 'R137', 'R136', 'D30'), 4: ('Q76', 'R135', 'R134', 'D29'),
+    5: ('Q64', 'R127', 'R126', 'D25'), 6: ('Q66', 'R129', 'R128', 'D26'), 7: ('Q68', 'R131', 'R130', 'D27'), 8: ('Q70', 'R133', 'R132', 'D28')}
+
+def sheet_sol_high():
+    s = Sheet('Sol_HighPower', 'sol_highpower.kicad_sch', 'A2', 'Solenoids 1-8 (high power, IRLR3110Z)')
+    b = B(s)
+    for i, n in enumerate(range(1, 9)):
+        col, row = i % 4, i // 4
+        ox, oy = 60 + col * 70, 60 + row * 60
+        q, rg, rpd, dio = HP_PARTS[n]
+        fet_driver(b, ox, oy, n, q, rg, rpd, dio, 'IRLR3110Z', '+50V', f'SOL{n:02d}_L', f'SOL{n:02d}', 'high power', hp=True)
+    latch574(b, 'U5', 60, 210, 'CLK_SOL_HIGH', [f'SOL{n:02d}_L' for n in range(1, 9)], desc='Solenoid 1-8 latch')
+    bypass(b, 'B5', 110, 195)
+    b.conn_labels('J130', 9, 300, 200, {1: 'SOL01', 2: 'SOL02', 3: None, 4: 'SOL03', 5: 'SOL04', 6: 'SOL05', 7: 'SOL06', 8: 'SOL07', 9: 'SOL08'},
+                  FP_KK(9), 'KK9', 'J130 Sol 1-8 drive (playfield)')
+    # J132 (B.B.) / J131 (CAB): 5-pin copies of J130 as on A-12697 sheet 3 (N/C in the STTNG harness) - docs/INTERFACE_PARITY.md
+    b.conn_labels('J132', 5, 360, 200, {1: 'SOL01', 2: 'SOL02', 3: 'SOL03', 4: None, 5: 'SOL04'}, FP_KK(5), 'KK5', 'J132 Sol 1-4 drive (backbox, parallel to J130; N/C on STTNG)')
+    b.conn_labels('J131', 5, 360, 235, {1: 'SOL05', 2: None, 3: 'SOL06', 4: 'SOL07', 5: 'SOL08'}, FP_KK(5), 'KK5', 'J131 Sol 5-8 drive (cabinet, parallel to J130; N/C on STTNG)')
+    b.text('High power solenoid drivers (sol. 1-8): IRLR3110Z DPAK (100 V, 14 mOhm, 16 mOhm at 4.5 V) driven directly by latch U5 (74HCT574, output HIGH = ON,\n'
+           'outputs tri-stated by BLANKING -> gate pull-downs hold every driver OFF). SMC 3 A tie-back diodes return to +50V (the "+50V" rail of a WPC\n'
+           'machine is ~70 V DC: 51 VAC winding, 72-78 V peak). U5 is clocked by /SOL 4 (J113-10). Output connectors J130 (playfield, key pin 3), J132 (backbox, sol 1-4, key 4)\n'
+           'and J131 (cabinet, sol 5-8, key 2) as on the A-12697. Supply +50V via F105 on J107-3.', (20, 15), 2.0)
+    return s
+
+def sheet_sol_low():
+    s = Sheet('Sol_LowPower', 'sol_lowpower.kicad_sch', 'A2', 'Solenoids 9-16 (low power, IRLR3110Z)')
+    b = B(s)
+    for i, n in enumerate(range(9, 17)):
+        col, row = i % 4, i // 4
+        ox, oy = 60 + col * 70, 55 + row * 55
+        fet_driver(b, ox, oy, n, fet='IRLR3110Z', tie_net='+50V', in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='low power', big_diode=True, **lp_parts(SOL_Q[n]))
+    latch574(b, 'U4', 60, 200, 'CLK_SOL_LOW', [f'SOL{n:02d}_L' for n in range(9, 17)], desc='Solenoid 9-16 latch')
+    bypass(b, 'B4', 110, 185)
+    b.conn_labels('J127', 9, 300, 190, {1: 'SOL09', 2: None, 3: 'SOL10', 4: 'SOL11', 5: 'SOL12', 6: 'SOL13', 7: 'SOL14', 8: 'SOL15', 9: 'SOL16'},
+                  FP_KK(9), 'KK9', 'J127 Sol 9-16 drive (playfield)')
+    # J129 (B.B.) / J128 (CAB): 5-pin copies of J127 as on A-12697 sheet 3 (N/C in the STTNG harness) - docs/INTERFACE_PARITY.md
+    b.conn_labels('J129', 5, 360, 190, {1: 'SOL09', 2: 'SOL10', 3: None, 4: 'SOL11', 5: 'SOL12'}, FP_KK(5), 'KK5', 'J129 Sol 9-12 drive (backbox, parallel to J127; N/C on STTNG)')
+    b.conn_labels('J128', 5, 360, 225, {1: 'SOL13', 2: 'SOL14', 3: 'SOL15', 4: None, 5: 'SOL16'}, FP_KK(5), 'KK5', 'J128 Sol 13-16 drive (cabinet, parallel to J127; N/C on STTNG)')
+    b.text('Low power solenoid drivers (sol. 9-16): IRLR3110Z logic-level DPAK MOSFETs (14 mOhm), latch U4 output HIGH = ON, clocked by /SOL 3 (J113-11).\n'
+           'Tie-back diodes S3M (SMC, 3 A) to +50V (~70 V DC in the machine): coils in this group can be PWM-held by the firmware, the diode then carries the freewheel current.\n'
+           'Output connectors J127 (playfield, key pin 2), J129 (backbox, sol 9-12, key 3) and J128 (cabinet, sol 13-16, key 4) as on the A-12697. Supply +50V via F104 on J107-2.', (20, 15), 2.0)
+    return s
+
+def sheet_sol_flash():
+    s = Sheet('Sol_Flashers', 'sol_flashers.kicad_sch', 'A2', 'Solenoids 17-24 (flashlamps, IRLR3110Z)')
+    b = B(s)
+    for i, n in enumerate(range(17, 25)):
+        col, row = i % 4, i // 4
+        ox, oy = 60 + col * 70, 55 + row * 55
+        # sol 21-24: tie-back cathodes go to J126-10..13 only (A-12697 D9-D12), NOT to +20V on the board - a harness may feed these loads from +50V
+        fet_driver(b, ox, oy, n, fet='IRLR3110Z', tie_net=(f'SOL{n:02d}_TB' if n >= 21 else '+20V'), in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='flasher', **lp_parts(SOL_Q[n]))
+    latch574(b, 'U3', 60, 200, 'CLK_SOL_FLASH', [f'SOL{n:02d}_L' for n in range(17, 25)], desc='Solenoid 17-24 latch')
+    bypass(b, 'B3', 110, 185)
+    b.conn_labels('J126', 13, 300, 180, {1: 'SOL17', 2: 'SOL18', 3: 'SOL19', 4: 'SOL20', 5: 'SOL21', 6: 'SOL22', 7: 'SOL23', 8: 'SOL24',
+                                         9: None, 10: 'SOL21_TB', 11: 'SOL22_TB', 12: 'SOL23_TB', 13: 'SOL24_TB'}, FP_KK(13), 'KK13',
+                  'J126 Sol 17-24 drive (playfield flashers) + tie-back cathodes of sol 21-24 on pins 10-13 (A-12697 D9-D12; N/C on STTNG)')
+    # J125 key = pin 4 (A-12697-1 silkscreen film, manual p.3-33 connector map and a photographed board all show the plug at position 4;
+    # the 16-9057 schematic symbol draws the KEY at pin 5) -> sol 20 sits on pin 5; the STTNG harness only uses pins 6 (sol 21) and 8 (sol 23)
+    b.conn_labels('J125', 9, 360, 180, {1: 'SOL17', 2: 'SOL18', 3: 'SOL19', 4: None, 5: 'SOL20', 6: 'SOL21', 7: 'SOL22', 8: 'SOL23', 9: 'SOL24'},
+                  FP_KK(9), 'KK9', 'J125 Sol 17-24 drive (backbox flashers)')
+    b.text('Flashlamp drivers (sol. 17-24): IRLR3110Z DPAK, latch U3 output HIGH = lamp ON, clocked by /SOL 2 (J113-9). Sol 17-20 keep an on-board S1M tie-back to +20V\n'
+           '(the A-12697 has none there); the sol 21-24 tie-back cathodes are brought out to J126-10..13 exactly like the A-12697 D9-D12, so the harness chooses the clamp rail.\n'
+           'On STTNG sol. 17/18 drive the 12 V gun motors (motor high side on the +12V power rail of J118) through this group.\n'
+           'Outputs on J126 (playfield, key pin 9) and J125 (backbox, key pin 4). Flasher supply +20V on J107-5/6 / J106-5.', (20, 15), 2.0)
+    return s
+
+def sheet_sol_gp():
+    s = Sheet('Sol_GeneralPurpose', 'sol_gp.kicad_sch', 'A2', 'Solenoids 25-28 (general purpose, IRLR3110Z)')
+    b = B(s)
+    for i, n in enumerate(range(25, 29)):
+        ox, oy = 60 + i * 70, 55
+        fet_driver(b, ox, oy, n, fet='IRLR3110Z', tie_net=f'SOL{n:02d}_TB', in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='gen. purpose', big_diode=True, **lp_parts(SOL_Q[n]))
+    latch574(b, 'U2', 60, 150, 'CLK_SOL_GEN', [f'SOL{n:02d}_L' for n in range(25, 29)] + [None] * 4, desc='Solenoid 25-28 latch')
+    bypass(b, 'B2', 110, 135)
+    b.conn_labels('J122', 9, 300, 140, {1: 'SOL25', 2: 'SOL26', 3: 'SOL27', 4: 'SOL28', 5: 'SOL25_TB', 6: 'SOL26_TB', 7: None, 8: 'SOL27_TB', 9: 'SOL28_TB'},
+                  FP_KK(9), 'KK9', 'J122 Sol 25-28 drive + tie-back (playfield)')
+    b.conn_labels('J124', 5, 360, 140, {1: 'SOL25', 2: 'SOL26', 3: 'SOL27', 4: None, 5: 'SOL28'}, FP_KK(5), 'KK5', 'J124 Sol 25-28 drive (backbox)')
+    # J123 (B.B.): sol 25-28 with the key on pin 2 (A-12697 sheet 3 + silkscreen film); N/C in the STTNG harness
+    b.conn_labels('J123', 5, 360, 190, {1: 'SOL25', 2: None, 3: 'SOL26', 4: 'SOL27', 5: 'SOL28'}, FP_KK(5), 'KK5', 'J123 Sol 25-28 drive (backbox, parallel to J122/J124; N/C on STTNG)')
+    b.text('General purpose drivers (sol. 25-28): IRLR3110Z DPAK, latch U2 output HIGH = ON, clocked by /SOL 1 (J113-12). S3M tie-back diode cathodes are brought out\n'
+           'to J122 pins 5,6,8,9 so the harness can tie them to the supply actually used (+50V coil or +20V flasher).\n'
+           'Outputs J122 (playfield, key pin 7), J123 (backbox, key pin 2) and J124 (cabinet, key pin 4) as on the A-12697. U2 bits 4-7 unused.', (20, 15), 2.0)
+    return s
+
+# ---------------------------------------------------------------- G.I.
+GI_PARTS = {  # string -> (fuse, NPN, triac, R gate 27R 2512, R base 470, R base pull-down 10k)
+    1: ('F110', 'Q17', 'Q18', 'R19', 'R20', 'R21'), 2: ('F109', 'Q9', 'Q10', 'R7', 'R8', 'R9'), 3: ('F108', 'Q13', 'Q14', 'R13', 'R14', 'R15'),
+    4: ('F107', 'Q15', 'Q16', 'R16', 'R17', 'R18'), 5: ('F106', 'Q11', 'Q12', 'R10', 'R11', 'R12')}
+GI_COLOR = {1: 'Wht-Brn / Brn', 2: 'Wht-Org / Org', 3: 'Wht-Yel / Yel', 4: 'Wht-Grn / Grn', 5: 'Wht-Vio / Vio'}
+
+def gi_driver(b, ox, oy, n):
+    fuse, qn, qt, rgate, rb, rpd = GI_PARTS[n]
+    b.part(qt, TRIAC, ox, oy, value='BTA16-600CRG', fp=FP_TO220, src='TRIAC')
+    b.part(rgate, R, ox - 12.7, oy + 2.54, 90, value='27', fp=FP_R2512, src=r2512('27R'), desc='Resistor 27 R 5% 1 W 2512 (triac gate)')
+    b.part(qn, NPN, ox - 22.86, oy - 2.54, value='MMBT4401', fp=FP_SOT23, src='NPN', desc='NPN emitter follower (triac gate drive)')
+    b.part(rb, R, ox - 35.56, oy - 2.54, 90, value='470', fp=FP_R, src=RS('470'))
+    b.part(rpd, R, ox - 30.48, oy + 5.08, value='10K', fp=FP_R, src=RS('10K'))
+    b.part(fuse, FUSE, ox + 25.4, oy - 5.08, value='5A S.B.', fp=FP_FUSE, src='F5A', desc=f'Fuse 5 A Slo-Blo 5x20 mm (Keystone 3517 clips), G.I. string #{n}')
+    g, a1, a2 = b.pin(qt, 3), b.pin(qt, 1), b.pin(qt, 2)
+    pB, pE, pC = b.pin(qn, 1), b.pin(qn, 2), b.pin(qn, 3)
+    b.hv(pE, b.pin(rgate, 1)); b.w(b.pin(rgate, 2), (g[0] - 1.27, g[1])) if False else b.hv(b.pin(rgate, 2), g)
+    b.w(pC, (pC[0], pC[1] - 2.54)); b.pwr('+5V', (pC[0], pC[1] - 2.54))
+    b.w(b.pin(rb, 2), pB)
+    top = b.pin(rpd, 1); b.w(top, (top[0], pB[1])); b.j((top[0], pB[1])); b.gnd(b.pin(rpd, 2))
+    b.gl(f'GI{n}_L', b.pin(rb, 1), 180, 'input')
+    b.lbl(f'GI{n}_G', g)
+    b.w(a1, (a1[0], a1[1] + 5.08)); b.gl('GI_RET', (a1[0], a1[1] + 5.08), 270, 'passive')     # MT1 -> transformer return pins (J115), not the logic ground
+    b.w(a2, (a2[0], a2[1] - 5.08)); b.gl(f'GI{n}_RET', (a2[0], a2[1] - 5.08), 90, 'input')
+    fa, fb = b.pin(fuse, 1), b.pin(fuse, 2)
+    b.w(fa, (fa[0], fa[1] - 2.54)); b.gl(f'GI{n}_IN', (fa[0], fa[1] - 2.54), 90, 'input')
+    b.w(fb, (fb[0], fb[1] + 2.54)); b.gl(f'GI{n}_OUT', (fb[0], fb[1] + 2.54), 270, 'output')
+    b.text(f'G.I. string #{n} ({GI_COLOR[n]})', (ox - 38, oy - 22), 1.6, True)
+
+def sheet_gi():
+    s = Sheet('GI_Triacs', 'gi_triacs.kicad_sch', 'A2', 'General Illumination triacs + flipper relay option')
+    b = B(s)
+    for i, n in enumerate(range(1, 6)):
+        gi_driver(b, 60 + i * 85, 60, n)
+    latch574(b, 'U1', 60, 150, 'CLK_GI', ['GI1_L', 'GI2_L', 'GI3_L', 'GI4_L', 'GI5_L', 'GI_BIT5', 'GI_BIT6', 'FLIP_RLY_L'], desc='G.I. / relay latch')
+    bypass(b, 'B1', 110, 135)
+    b.conn_labels('J115', 12, 300, 140, {1: 'GND', 2: 'GI1_IN', 3: 'GI4_IN', 4: 'GI2_IN', 5: 'GI3_IN', 6: 'GI5_IN', 7: 'GI_RET', 8: 'GI_RET', 9: None, 10: 'GI_RET', 11: 'GI_RET', 12: 'GI_RET'},
+                  FP_KK(12), 'KK12', 'J115 G.I. 6.3VAC from transformer: 2-6 string hot ends (one fuse each), 7/8/10/11/12 winding return ends (triac MT1), 1 = GND REF')
+    b.two('W1', R, 240, 190, '0R', FP_R2512, r2512('0R'), 'GI_RET', 'GND', desc='0 R link 2512: G.I. return bus (triac MT1 / J115 returns) to the logic ground reference (OEM: J115-1 GND REF at the transformer)')
+    # J120 (PLFD) and J121 (B.B.) are wired in parallel on the A-12697 (sheet 1): all five strings on both, 7-11 hot / 1,2,3,5,6 return, key 4.
+    # The STTNG harness uses J120-2/3/8/9 (strings 2,3) and J121-1/5/6/7/10/11 (strings 1,4,5) only.
+    GI11 = {1: 'GI1_RET', 2: 'GI2_RET', 3: 'GI3_RET', 4: None, 5: 'GI4_RET', 6: 'GI5_RET', 7: 'GI1_OUT', 8: 'GI2_OUT', 9: 'GI3_OUT', 10: 'GI4_OUT', 11: 'GI5_OUT'}
+    b.conn_labels('J120', 11, 400, 140, GI11, FP_KK(11), 'KK11', 'J120 G.I. strings 1-5 (backbox harness uses strings 2,3)')
+    b.conn_labels('J121', 11, 480, 140, GI11, FP_KK(11), 'KK11', 'J121 G.I. strings 1-5 (playfield harness uses strings 1,4,5)')
+    b.conn_labels('J119', 3, 400, 200, {1: 'GI5_OUT', 2: None, 3: 'GI5_RET'}, FP_KK(3), 'KK3', 'J119 G.I. coin door (string 5)')
+    # ---- flipper enable relay option (DNP on Fliptronic II games) ----
+    ox, oy = 300, 250
+    b.part('RLY1', RELAY, ox, oy, value='G2RL-2 12V (DNP)', fp=FP_RELAY, src='RLY', dnp=True)
+    b.part('Q3', NFET, ox - 30.48, oy, value='IRLR3110ZTRPBF (DNP)', fp=FP_DPAK, src='IRLR3110Z', dnp=True, desc='Relay driver MOSFET (DNP)')
+    b.part('R202', R, ox - 43.18, oy, 90, value='100 (DNP)', fp=FP_R, src=RS('100'), dnp=True)
+    b.part('R209', R, ox - 38.1, oy + 7.62, value='10K (DNP)', fp=FP_R, src=RS('10K'), dnp=True)
+    b.part('D35', DREC, ox - 27.94, oy - 15.24, 270, value='S1M (DNP)', fp=FP_SMA, src='S1M', dnp=True, desc='Relay coil diode (DNP)')
+    g, d, sq = b.pin('Q3', 1), b.pin('Q3', 2), b.pin('Q3', 3)
+    b.w(b.pin('R202', 2), g); top = b.pin('R209', 1); b.w(top, (top[0], g[1])); b.j((top[0], g[1])); b.gnd(b.pin('R209', 2))
+    b.gl('FLIP_RLY_L', b.pin('R202', 1), 180, 'input'); b.gnd(sq)
+    dA, dK = b.pin('D35', 2), b.pin('D35', 1)
+    nodeC = (d[0], oy - 10.16); b.w(d, dA); b.j(nodeC)
+    coilA2, coilA1 = b.pin('RLY1', 'A2'), b.pin('RLY1', 'A1')
+    b.w(nodeC, (nodeC[0] + 5.08, nodeC[1])); b.vh((nodeC[0] + 5.08, nodeC[1]), coilA2)
+    b.lbl('RLY_COIL', nodeC)
+    top = (coilA1[0], dK[1] - 2.54)
+    b.w(coilA1, top); b.w(dK, (dK[0], dK[1] - 2.54)); b.w((dK[0], dK[1] - 2.54), top); b.j(top); b.pwr('+12V', top)
+    c11, c14, c21, c24 = b.pin('RLY1', '11'), b.pin('RLY1', '14'), b.pin('RLY1', '21'), b.pin('RLY1', '24')
+    b.w(c11, (c11[0], c11[1] + 5.08)); b.w(c21, (c21[0], c21[1] + 5.08)); b.w((c11[0], c11[1] + 5.08), (c21[0], c21[1] + 5.08))
+    b.j((c21[0], c21[1] + 5.08)); b.w((c21[0], c21[1] + 5.08), (c21[0] + 5.08, c21[1] + 5.08)); b.gl('ACSOL_A', (c21[0] + 5.08, c21[1] + 5.08), 0, 'input')
+    b.nc(b.pin('RLY1', '12')); b.nc(b.pin('RLY1', '22'))
+    b.part('F101', FUSE, c14[0], c14[1] - 10.16, value='no fuse (clips only)', fp=FP_FUSE, src='FUSECLIP', desc='Fuse clips only (left flipper fuse, not used on Fliptronic games)')
+    b.part('F102', FUSE, c24[0], c24[1] - 10.16, value='no fuse (clips only)', fp=FP_FUSE, src='FUSECLIP', desc='Fuse clips only (right flipper fuse, not used on Fliptronic games)')
+    b.w(c14, b.pin('F101', 2)); b.w(c24, b.pin('F102', 2))
+    f1t, f2t = b.pin('F101', 1), b.pin('F102', 1)
+    # The relay-switched outputs have no destination on the A-12697-3 interface: J105 is a parallel copy of J104 there (sheet 1),
+    # so the (DNP) relay option ends at the F101/F102 clip positions - docs/INTERFACE_PARITY.md
+    b.nc(f1t); b.nc(f2t)
+    b.conn_labels('J105', 5, 400, 240, {1: 'ACSOL_A_F', 2: 'ACSOL_B', 3: None, 4: 'AC16_A_F', 5: 'AC16_B'}, FP_KK(5), 'KK5',
+                  'J105 fused 51VAC (F112, pins 1/2) and fused 16VAC (F111, pins 4/5) to the playfield - parallel to J104 as on A-12697 sheet 1 (N/C on STTNG)')
+    b.text('General illumination: each 6.3VAC string is fused (F106-F110) on the hot side and switched by a triac in the RETURN path; MT1 of the five triacs form\n'
+           'the GI_RET bus that goes back to the transformer on J115-7/8/10/11/12 and is referenced to logic ground by W1 (OEM: J115-1 GND REF), so the 5 x 5 A\n'
+           'return current stays off the ground plane. Latch U1 (clocked by /TRIAC, J113-13) output HIGH = string ON. The gate is fed by an NPN emitter follower from +5V\n'
+           'through 27 R (~80 mA, positive gate current in quadrants I and IV -> 4-quadrant "C" grade triac; snubberless BW/CW types cannot fire in Q IV). 10 k base\n'
+           'pull-downs keep the strings OFF while the latch is tri-stated by BLANKING. Bits 5-7 (T5-T7) go to J111 (GPIO, CPU sheet); bit 7 also drives the optional flipper relay (DNP).', (20, 15), 2.0)
+    return s
+
+# ---------------------------------------------------------------- Lamp matrix
+def sheet_lamp_cols():
+    s = Sheet('Lamp_Columns', 'lamp_columns.kicad_sch', 'A2', 'Lamp matrix columns (IRFR5305 high side, +18V)')
+    b = B(s)
+    rgs = {1: 'R190', 2: 'R188', 3: 'R186', 4: 'R184', 5: 'R182', 6: 'R180', 7: 'R178', 8: 'R176'}
+    rser = {1: 'R191', 2: 'R189', 3: 'R187', 4: 'R185', 5: 'R183', 6: 'R181', 7: 'R179', 8: 'R177'}
+    for i, k in enumerate(range(1, 9)):
+        col, row = i % 4, i // 4
+        ox, oy = 80 + col * 70, 60 + row * 55
+        q = f'Q{99 - k}'
+        b.part(q, PFET, ox, oy, mirror='x', value='IRFR5305TRPBF', fp=FP_DPAK, src='IRFR5305')
+        b.part(rgs[k], R, ox - 5.08, oy - 7.62, value='1.5K', fp=FP_R, src=RS('1.5K'))
+        b.part(rser[k], R, ox - 12.7, oy, 90, value='1K', fp=FP_R, src=RS('1K'))
+        g, d, sq = b.pin(q, 1), b.pin(q, 2), b.pin(q, 3)      # mirror x: S on top, D at the bottom
+        rt, rb = b.pin(rgs[k], 1), b.pin(rgs[k], 2)
+        b.w(rb, g); b.j(g)
+        top = (sq[0], oy - 12.7)
+        b.w(sq, top); b.w(rt, (rt[0], top[1])); b.w((rt[0], top[1]), top); b.j(top); b.pwr('+18V', top)
+        b.w(b.pin(rser[k], 2), g)
+        b.gl(f'COLB{k}', b.pin(rser[k], 1), 180, 'input')
+        b.w(d, (d[0], d[1] + 5.08)); b.gl(f'COL{k}', (d[0], d[1] + 5.08), 270, 'output')
+        b.text(f'Lamp column {k}', (ox - 20, oy - 20), 1.6, True)
+    latch574(b, 'U18', 60, 200, 'CLK_LAMP_COL', [f'COLDRV{k}' for k in range(1, 9)], desc='Lamp column latch')
+    bypass(b, 'B18', 110, 185)
+    b.part('U19', DRV8, 180, 200, value='TBD62083AFWG', fp=FP_SOIC18, src='DRV8')
+    for k in range(1, 9):
+        b.pin_net('U19', str(k), f'COLDRV{k}', shape='input')
+        b.pin_net('U19', str(19 - k), f'COLB{k}', shape='output')
+    b.gnd(b.pin('U19', 9)); b.pin_net('U19', '10', '+18V')
+    bypass(b, 'B19', 230, 185)
+    colpins = {1: 'COL1', 2: 'COL2', 3: 'COL3', 4: 'COL4', 5: 'COL5', 6: 'COL6', 7: 'COL7', 8: None, 9: 'COL8'}
+    b.conn_labels('J137', 9, 300, 200, colpins, FP_KK(9), 'KK9', 'J137 lamp columns (playfield)')
+    b.conn_labels('J138', 9, 360, 200, colpins, FP_KK(9), 'KK9', 'J138 lamp columns (backbox)')
+    b.conn_labels('J136', 3, 372, 160, {1: None, 2: None, 3: 'COL8'}, FP_KK(3), 'KK3', 'J136 lamp column 8 (cabinet)')
+    b.text('Lamp matrix column drivers. Column strobe register 0x3FE5: bit(k-1)=1 selects column k, clocked by /LMP COL (J113-8). The TBD62083A inputs have an internal\n'
+           'pull-down (Toshiba usage note), so a tri-stated U18 (BLANKING) leaves every column OFF - the OEM 74LS374/ULN2803 pair behaves the same way.\n'
+           'U18 latches the data bus; the TBD62083A DMOS sink pulls the P-MOSFET gate down through 1 k against the 1.5 k gate-source resistor\n'
+           '(Vgs = -0.6 x V+18 = -8..-12 V) -> column high (+18V) with ~65 mOhm (IRFR5305 DPAK; TIP107 dropped ~1.2 V).\n'
+           'Column k = Q(99-k): col1=Q98 ... col8=Q91. Outputs J137/J138 pins 1-7,9 (key pin 8).', (20, 15), 2.0)
+    return s
+
+ROW_PARTS = {  # row -> (MOSFET, FF unit, comparator unit, R gate 100R (old 2.2K), R1K, R.22 2512, C 100n, R10K pull-up, R gate pull-down (new))
+    1: ('Q90', ('U13', 2), ('U16', 4), 'R171', 'R170', 'R175', 'C20', 'R149', 'R301'),
+    2: ('Q89', ('U13', 1), ('U16', 3), 'R169', 'R168', 'R173', 'C19', 'R148', 'R302'),
+    3: ('Q88', ('U12', 2), ('U16', 2), 'R167', 'R166', 'R174', 'C18', 'R147', 'R303'),
+    4: ('Q87', ('U12', 1), ('U16', 1), 'R165', 'R164', 'R172', 'C17', 'R146', 'R304'),
+    5: ('Q86', ('U11', 2), ('U15', 4), 'R161', 'R160', 'R153', 'C16', 'R145', 'R305'),
+    6: ('Q85', ('U11', 1), ('U15', 3), 'R159', 'R158', 'R151', 'C15', 'R144', 'R306'),
+    7: ('Q84', ('U10', 2), ('U15', 2), 'R157', 'R156', 'R152', 'C14', 'R143', 'R307'),
+    8: ('Q83', ('U10', 1), ('U15', 1), 'R155', 'R154', 'R150', 'C13', 'R142', 'R308'),
+}
+
+def sheet_lamp_rows():
+    s = Sheet('Lamp_Rows', 'lamp_rows.kicad_sch', 'A2', 'Lamp matrix rows (IRLR024N + over-current shutdown)')
+    b = B(s)
+    for i, k in enumerate(range(1, 9)):
+        col, row = i % 2, i // 2
+        ox, oy = 110 + col * 150, 60 + row * 55
+        qt, (ffref, ffu), (cref, cu), rg, r1k, rs, cap, r10k, rpd = ROW_PARTS[k]
+        b.part(ffref, HCT74, ox - 48.26, oy, unit=ffu, value='74HCT74', fp=FP_SOIC14, src='HCT74')
+        b.part(rg, R, ox - 33.02, oy + 2.54, 90, value='100', fp=FP_R, src=RS('100'))
+        b.part(rpd, R, ox - 27.94, oy + 10.16, value='10K', fp=FP_R, src=RS('10K'))
+        b.part(qt, NFET, ox - 21.59, oy + 2.54, value='IRLR024NTRPBF', fp=FP_DPAK, src='IRLR024N')
+        b.part(rs, R, ox - 19.05, oy + 16.51, value='0.22R', fp=FP_R2512, src='RS022')
+        b.part(r1k, R, ox - 13.97, oy + 10.16, 90, value='1K', fp=FP_R, src=RS('1K'))
+        b.part(cap, C, ox - 7.62, oy + 13.97, value='100nF', fp=FP_C, src='C100N')
+        b.part(cref, LM339, ox + 2.54, oy + 7.62, unit=cu, value='LM339DR', fp=FP_SOIC14, src='LM339')
+        b.part(r10k, R, ox + 12.7, oy + 1.27, value='10K', fp=FP_R, src=RS('10K'))
+        u = ffu
+        pR, pD, pCk, pS, pQ, pQn = (b.pin(ffref, n, u) for n in (['1', '2', '3', '4', '5', '6'] if u == 1 else ['13', '12', '11', '10', '9', '8']))
+        q = (pD[0] - 5.08, pD[1]); b.w(pD, q); b.gl(f'D{k - 1}', q, 180, 'input')
+        q = (pCk[0] - 5.08, pCk[1]); b.w(pCk, q); b.gl('CLK_LAMP_ROW', q, 180, 'input')
+        b.w(pS, (pS[0], pS[1] - 2.54)); b.pwr('+5V', (pS[0], pS[1] - 2.54))          # ~PRE tied high
+        b.w(pR, (pR[0], pR[1] + 2.54)); b.gl(f'ROWCLR{k}', (pR[0], pR[1] + 2.54), 270, 'input')
+        b.nc(pQn)
+        b.hv(pQ, b.pin(rg, 1)); b.lbl(f'ROW{k}_Q', pQ)
+        g = b.pin(qt, 1); b.w(b.pin(rg, 2), g)
+        top = b.pin(rpd, 1); b.w(top, (top[0], g[1])); b.j((top[0], g[1])); b.gnd(b.pin(rpd, 2))
+        d, sq = b.pin(qt, 2), b.pin(qt, 3)
+        b.w(d, (d[0], d[1] - 5.08)); b.gl(f'ROW{k}', (d[0], d[1] - 5.08), 90, 'output')
+        e_node = (sq[0], oy + 10.16)
+        b.w(sq, e_node); b.j(e_node)
+        b.w(e_node, b.pin(rs, 1)); b.gnd(b.pin(rs, 2))
+        b.w(e_node, b.pin(r1k, 1))
+        b.lbl(f'ROW{k}_E', e_node)
+        s_node = b.pin(r1k, 2)
+        ct, cb = b.pin(cap, 1), b.pin(cap, 2)
+        b.w(s_node, ct); b.j(ct); b.gnd(cb)
+        pm, pp, po = (b.pin(cref, n, cu) for n in {1: ('4', '5', '2'), 2: ('6', '7', '1'), 3: ('10', '11', '13'), 4: ('8', '9', '14')}[cu])
+        b.w(ct, pm); b.lbl(f'ROW{k}_S', ct)
+        b.w(pp, (pp[0] - 2.54, pp[1])); b.gl('REF_1V4', (pp[0] - 2.54, pp[1]), 180, 'input')
+        o_node = (po[0] + 2.54, po[1]); b.w(po, o_node); b.j(o_node)
+        b.w(o_node, (b.pin(r10k, 2)[0], o_node[1])); b.w((b.pin(r10k, 2)[0], o_node[1]), b.pin(r10k, 2)); b.pwr('+5V', b.pin(r10k, 1))
+        b.w(o_node, (o_node[0] + 5.08, o_node[1])); b.gl(f'ROWCLR{k}', (o_node[0] + 5.08, o_node[1]), 0, 'output')
+        b.text(f'Lamp row {k}', (ox - 55, oy - 15), 1.6, True)
+    for i, ref in enumerate(['U10', 'U11', 'U12', 'U13']):
+        b.part(ref, HCT74, 60 + i * 30, 265, unit=3, value='74HCT74', fp=FP_SOIC14, src='HCT74')
+        b.pwr('+5V', b.pin(ref, '14', 3)); b.gnd(b.pin(ref, '7', 3))
+        bypass(b, f'B{ref[1:]}', 60 + i * 30 + 12, 265)
+    for i, ref in enumerate(['U15', 'U16']):
+        b.part(ref, LM339, 200 + i * 30, 265, unit=5, value='LM339DR', fp=FP_SOIC14, src='LM339')
+        b.pwr('+5V', b.pin(ref, '3', 5)); b.gnd(b.pin(ref, '12', 5))
+        bypass(b, f'B{ref[1:]}', 200 + i * 30 + 12, 265)
+    ox, oy = 290, 255
+    b.part('R162', R, ox, oy - 10.16, value='1K', fp=FP_R, src=RS('1K'))
+    b.part('D33', DSS, ox, oy + 5.08, 90, value='1N4148W', fp=FP_SOD123, src='1N4148W')
+    b.part('D34', DSS, ox, oy + 15.24, 90, value='1N4148W', fp=FP_SOD123, src='1N4148W')
+    b.part('C31', C, ox + 10.16, oy + 5.08, value='100nF', fp=FP_C, src='C100N')
+    b.pwr('+5V', b.pin('R162', 1))
+    ref = (ox, oy)
+    b.w(b.pin('R162', 2), ref); b.w(ref, b.pin('D33', 2)); b.j(ref)
+    b.w(b.pin('D33', 1), b.pin('D34', 2)); b.gnd(b.pin('D34', 1))
+    b.w(ref, (b.pin('C31', 1)[0], ref[1])); b.w((b.pin('C31', 1)[0], ref[1]), b.pin('C31', 1)); b.gnd(b.pin('C31', 2))
+    b.w(ref, (ref[0] - 10.16, ref[1])); b.gl('REF_1V4', (ref[0] - 10.16, ref[1]), 180, 'output')
+    rowpins = {1: 'ROW1', 2: 'ROW2', 3: None, 4: 'ROW3', 5: 'ROW4', 6: 'ROW5', 7: 'ROW6', 8: 'ROW7', 9: 'ROW8'}
+    b.conn_labels('J135', 9, 330, 220, rowpins, FP_KK254(9), 'KK254_9', 'J135 lamp rows (playfield)')
+    b.conn_labels('J133', 9, 385, 220, rowpins, FP_KK254(9), 'KK254_9', 'J133 lamp rows (cabinet)')
+    b.conn_labels('J134', 9, 330, 170, rowpins, FP_KK254(9), 'KK254_9', 'J134 lamp rows (spare)')
+    b.text('Lamp matrix row drivers. Row register 0x3FE4: bit(k-1)=1 turns row k on, clocked by /LMP ROW (J113-7). The 74HCT74 latches the data bit (true after U9); Q high -> IRLR024N on\n'
+           '(row = ground, ~65-80 mOhm DPAK). Over-current: source sense 0.22 R -> 1k/100n -> LM339; above the 1.4 V reference (6 A) the open-collector\n'
+           'output pulls ~CLR low and the row is shut off until the next strobe. BLANKING pulls REF_1V4 low (CPU sheet) so all rows are forced off.\n'
+           'Row k = Q(91-k): row1=Q90 ... row8=Q83. Outputs J133/J135 (pins 1,2,4-9; key 3).', (20, 15), 2.0)
+    return s
+
+# ---------------------------------------------------------------- CPU interface
+def sheet_cpu():
+    s = Sheet('CPU_Interface', 'cpu_interface.kicad_sch', 'A2', 'CPU ribbon interface (J113), data inverter, zero-cross, blanking')
+    b = B(s)
+    b.part('J113', CONN34, 60, 100, value='34-pin ribbon to CPU J211', fp=FP_HDR2x17, src='IDC34', desc='J113 34-pin 2x17 box header (ribbon to CPU J211)')
+    # A-12697 pin-out per the WPC schematic manual 16-9834.2 (power driver board sheet 1 of 3 and CPU board J211), wire-traced on sheet 3:
+    # 7 /LMP ROW (U10-U13), 8 /LMP COL (U18), 9 /SOL 2 (U3, sol 17-24), 10 /SOL 4 (U5, sol 1-8), 11 /SOL 3 (U4, sol 9-16), 12 /SOL 1 (U2, sol 25-28),
+    # 13 /TRIAC (U1), 15..29 odd = D7..D0 (ACTIVE LOW: the CPU board drives them through a 74LS240), 31 BLANKING (high = all latches tri-stated),
+    # 34 ZERO CROSS (driver -> CPU); 1/3/5 (SW COL 1, SW ROW 1/2), 32/33 (SW J2/J1: flipper-opto sense of the -1 relay board) and 2 are N/C on the -3 board
+    J113 = {7: 'CLK_LAMP_ROW', 8: 'CLK_LAMP_COL', 9: 'CLK_SOL_FLASH', 10: 'CLK_SOL_HIGH', 11: 'CLK_SOL_LOW', 12: 'CLK_SOL_GEN', 13: 'CLK_GI',
+            15: 'D7_N', 17: 'D6_N', 19: 'D5_N', 21: 'D4_N', 23: 'D3_N', 25: 'D2_N', 27: 'D1_N', 29: 'D0_N', 31: 'BLANKING', 34: 'ZERO_CROSS'}
+    for k in range(1, 35):
+        p = b.pin('J113', k)
+        nm = J113.get(k)
+        if k in (1, 2, 3, 5, 32, 33):
+            b.nc(p); continue
+        shape = 'output' if nm == 'ZERO_CROSS' else 'input'
+        if k % 2 == 1:
+            q = (p[0] - 7.62, p[1]); b.w(p, q); b.gl(nm, q, 180, shape)
+        elif nm:
+            q = (p[0] + 5.08, p[1]); b.w(p, q); b.gl(nm, q, 0, shape)
+        else:
+            q = (p[0] + 5.08, p[1]); b.w(p, q); b.gnd(q)
+    # U9: the ribbon data is active low (CPU 74LS240 U12); re-invert it so that a register bit = 1 turns an output ON everywhere on this board
+    b.part('U9', HCT240, 170, 100, value='74HCT240', fp=FP_SOIC20, src='HCT240', desc='J113 data-bus inverter: the CPU board drives the ribbon data through a 74LS240 (active low)')
+    for i, (ipin, opin) in enumerate([('2', '18'), ('4', '16'), ('6', '14'), ('8', '12'), ('17', '3'), ('15', '5'), ('13', '7'), ('11', '9')]):
+        b.pin_net('U9', ipin, f'D{i}_N', shape='input'); b.pin_net('U9', opin, f'D{i}', shape='output')
+    b.pin_net('U9', '1', 'GND'); b.pin_net('U9', '19', 'GND')
+    b.pwr('+5V', b.pin('U9', '20')); b.gnd(b.pin('U9', '10'))
+    bypass(b, 'B9', 235, 110)
+    # pull-ups: strobes + BLANKING (SR1) and the ribbon data lines (SR2), 4.7 k (OEM: 470 R on the data lines, 1.5 k / 4.7 k on strobes / BLANKING;
+    # 4.7 k is enough for the HCT inputs and loads the ASIC strobe outputs with 1 mA only); ribbon unplugged -> BLANKING high = every output disabled
+    b.part('SR1', RNET, 215, 40, value='9x4.7K SIP', fp=FP_SIP10, src='RNET47K', desc='Pull-ups for the seven latch strobes and BLANKING')
+    b.pwr('+5V', b.pin('SR1', 1))
+    for i, nm in enumerate(['CLK_LAMP_COL', 'CLK_LAMP_ROW', 'CLK_SOL_GEN', 'CLK_SOL_HIGH', 'CLK_SOL_FLASH', 'CLK_SOL_LOW', 'CLK_GI', 'BLANKING']):
+        p = b.pin('SR1', i + 2); b.w(p, (p[0], p[1] + 2.54 + (i % 2) * 2.54)); b.gl(nm, (p[0], p[1] + 2.54 + (i % 2) * 2.54), 270, 'input')
+    b.nc(b.pin('SR1', 10))
+    b.part('SR2', RNET, 255, 40, value='9x4.7K SIP', fp=FP_SIP10, src='RNET47K', desc='Pull-ups for the ribbon data lines /D0-/D7 (driven by the CPU only during a write)')
+    b.pwr('+5V', b.pin('SR2', 1))
+    for i in range(8):
+        p = b.pin('SR2', i + 2); b.w(p, (p[0], p[1] + 2.54 + (i % 2) * 2.54)); b.gl(f'D{i}_N', (p[0], p[1] + 2.54 + (i % 2) * 2.54), 270, 'input')
+    b.nc(b.pin('SR2', 10))
+    bypass(b, 'B6', 215, 110)
+    # ---- zero-cross detector (U6A) ----
+    ox, oy = 300, 80
+    b.part('R197', R, ox - 30.48, oy, 90, value='10K', fp=FP_R, src=RS('10K'), desc='Resistor 10K 1% 0805 (ZC sample of the fused 9 VAC leg)')
+    b.part('R198', R, ox - 30.48, oy + 7.62, 90, value='10K', fp=FP_R, src=RS('10K'), dnp=True, desc='Resistor 10K 0805 - DNP (the A-12697 waveform is a half-wave sample of one leg; populating R198 would make a 120 Hz full-wave sample)')
+    b.part('R254', R, ox - 20.32, oy + 10.16, value='1.5K', fp=FP_R, src=RS('1.5K'))
+    b.part('U6', LM339, ox, oy + 2.54, unit=1, value='LM339DR', fp=FP_SOIC14, src='LM339')
+    b.part('R256', R, ox + 12.7, oy - 5.08, value='1.5K', fp=FP_R, src=RS('1.5K'))
+    b.part('R206', R, ox - 20.32, oy - 12.7, value='27K', fp=FP_R, src=RS('27K'), desc='Resistor 27K 1% 0805 (ZC threshold ~0.26 V)')
+    b.part('R255', R, ox - 20.32, oy - 2.54, value='1.5K', fp=FP_R, src=RS('1.5K'))
+    b.part('C21', C, ox - 12.7, oy + 10.16, value='10nF', fp=FP_C, src='C10N', desc='Capacitor 10 nF (ZC filter)')
+    smp = (ox - 22.86, oy + 5.08)
+    for rref, net in (('R197', 'AC9_AF'), ('R198', 'AC9_B')):
+        a = b.pin(rref, 1)
+        b.w(a, (a[0] - 2.54, a[1])); b.gl(net, (a[0] - 2.54, a[1]), 180, 'input')
+        b.w(b.pin(rref, 2), (b.pin(rref, 2)[0] + 1.27, b.pin(rref, 2)[1]))
+        b.vh((b.pin(rref, 2)[0] + 1.27, b.pin(rref, 2)[1]), smp)
+    b.j(smp)
+    b.w(smp, b.pin('R254', 1)); b.gnd(b.pin('R254', 2))
+    b.w(smp, (b.pin('C21', 1)[0], smp[1])); b.w((b.pin('C21', 1)[0], smp[1]), b.pin('C21', 1)); b.gnd(b.pin('C21', 2))
+    pm, pp, po = b.pin('U6', '4', 1), b.pin('U6', '5', 1), b.pin('U6', '2', 1)
+    # OEM polarity (16-9057 sheet 1, U6A pins 7 (+) / 6 (-), confirmed by a TP4 pulse-width measurement on a real machine): the half-wave sample of the
+    # F113-fused 9 VAC leg sits on the NON-INVERTING input, the reference on the inverting one -> the open-collector output is HIGH while that leg is
+    # positive (> ~2 V) and LOW for the rest of the cycle: a 60 Hz square wave (~7.7 ms high) with one edge per mains zero crossing, as on the A-12697
+    b.w(smp, (smp[0] + 3.81, smp[1])); b.vh((smp[0] + 3.81, smp[1]), pp)
+    b.lbl('ZC_SAMPLE', smp)
+    refn = (ox - 20.32, oy - 6.35)
+    b.pwr('+5V', b.pin('R206', 1)); b.w(b.pin('R206', 2), refn); b.w(refn, b.pin('R255', 1)); b.gnd(b.pin('R255', 2)); b.j(refn)
+    b.w(refn, (refn[0] + 6.35, refn[1])); b.w((refn[0] + 6.35, refn[1]), (refn[0] + 6.35, pm[1])); b.w((refn[0] + 6.35, pm[1]), pm)
+    b.lbl('ZC_REF', refn)
+    on = (po[0] + 2.54, po[1]); b.w(po, on); b.j(on)
+    b.w(on, (b.pin('R256', 2)[0], on[1])); b.w((b.pin('R256', 2)[0], on[1]), b.pin('R256', 2)); b.pwr('+5V', b.pin('R256', 1))
+    b.w(on, (on[0] + 7.62, on[1])); b.gl('ZERO_CROSS', (on[0] + 7.62, on[1]), 0, 'output')
+    b.part('TP4', TP, on[0] + 5.08, on[1] - 5.08, value='TP4 ZC', fp=FP_TP, src=TPSRC, desc='Test point ZC')
+    b.w(b.pin('TP4', 1), (on[0] + 5.08, on[1])); b.j((on[0] + 5.08, on[1]))
+    b.part('R253', R, ox + 30, oy + 2.54, 90, value='1.5K', fp=FP_R, src=RS('1.5K'))
+    b.part('LED3', LED, ox + 41, oy + 2.54, 0, value='LED red (ZC)', fp=FP_LED, src='LED', desc='LED red 0805, zero-cross activity')
+    b.w((on[0] + 7.62, on[1]), (on[0] + 7.62, oy + 2.54)); b.w((on[0] + 7.62, oy + 2.54), b.pin('R253', 1))
+    b.w(b.pin('R253', 2), b.pin('LED3', 1)); b.pwr('+5V', b.pin('LED3', 2))
+    # ---- blanking -> pulls the lamp 1.4V reference low (U6B) ----
+    oy2 = oy + 40
+    b.part('U6', LM339, ox, oy2, unit=2, value='LM339DR', fp=FP_SOIC14, src='LM339')
+    b.part('R3', R, ox - 20.32, oy2 - 12.7, value='10K', fp=FP_R, src=RS('10K'))
+    b.part('R4', R, ox - 20.32, oy2 - 2.54, value='10K', fp=FP_R, src=RS('10K'))
+    b.part('R6', R, ox - 30.48, oy2 + 2.54, 90, value='10K', fp=FP_R, src=RS('10K'))
+    pm, pp, po = b.pin('U6', '6', 2), b.pin('U6', '7', 2), b.pin('U6', '1', 2)
+    mid = (ox - 20.32, oy2 - 6.35)
+    b.pwr('+5V', b.pin('R3', 1)); b.w(b.pin('R3', 2), mid); b.w(mid, b.pin('R4', 1)); b.gnd(b.pin('R4', 2)); b.j(mid)
+    b.w(mid, (mid[0] + 5.08, mid[1])); b.vh((mid[0] + 5.08, mid[1]), pp)
+    b.lbl('BLK_REF', mid)
+    b.w(b.pin('R6', 2), pm); b.gl('BLANKING', b.pin('R6', 1), 180, 'input')
+    b.w(po, (po[0] + 5.08, po[1])); b.gl('REF_1V4', (po[0] + 5.08, po[1]), 0, 'output')
+    for u, pins in ((3, ('10', '11', '13')), (4, ('8', '9', '14'))):
+        b.part('U6', LM339, ox, oy2 + 25 + (u - 3) * 20, unit=u, value='LM339DR', fp=FP_SOIC14, src='LM339')
+        pm, pp, po = (b.pin('U6', n, u) for n in pins)
+        b.gnd(pp); b.w(pm, (pm[0] - 2.54, pm[1])); b.pwr('+5V', (pm[0] - 2.54, pm[1])); b.nc(po)
+    b.part('U6', LM339, ox + 60, oy2 + 30, unit=5, value='LM339DR', fp=FP_SOIC14, src='LM339')
+    b.pwr('+5V', b.pin('U6', '3', 5)); b.gnd(b.pin('U6', '12', 5))
+    b.conn_labels('J111', 5, 385, 60, {1: 'GI_BIT5', 2: 'GI_BIT6', 3: 'FLIP_RLY_L', 4: None, 5: 'GND'}, FP_KK254(5), 'KK254_5',
+                  'J111 G.I. latch spare bits T5-T7 (GPIO as on the original board, e.g. shot-clock drive; N/C on STTNG)')
+    b.text('CPU interface, pin-out from the WPC schematic manual 16-9834.2. J113: 7 /LMP ROW, 8 /LMP COL, 9 /SOL 2 (sol 17-24), 10 /SOL 4 (sol 1-8), 11 /SOL 3 (sol 9-16),\n'
+           '12 /SOL 1 (sol 25-28), 13 /TRIAC, 15..29 odd = /D7../D0, 31 BLANKING (HIGH = every latch tri-stated, open-collector from the CPU, pulled up here),\n'
+           '34 ZERO CROSS to the CPU; 1/3/5/32/33 (flipper-opto sense of the -1 relay board) and 2 are N/C on the A-12697-3; other even pins = ground.\n'
+           'The CPU board drives the data through a 74LS240, so the ribbon data is ACTIVE LOW: U9 (74HCT240) inverts it and every latch then takes the\n'
+           'true bus (register bit = 1 -> output ON, as PinMAME / FreeWPC write it). BLANKING tri-states every 74HCT574 (gate pull-downs -> all OFF) and pulls\n'
+           'the lamp-row 1.4 V reference low. Zero-cross: the F113-fused leg of the 9 VAC winding is sampled through R197 10K / R254 1.5K / C21 (R198 DNP)\n'
+           'into the + input of U6A against the 0.26 V reference on - -> ZERO CROSS is HIGH while that leg is positive: a 60 Hz square wave (~7.7 ms high)\n'
+           'with one edge per mains zero crossing - the waveform of the A-12697 (U6A pin 7 +, D38 sample; a real TP4 measures ~8.1 ms high pulses).', (20, 15), 2.0)
+    return s
+
+# ---------------------------------------------------------------- Power supplies
+BRIDGES = {  # kind -> (symbol, value, footprint, sourcing key)
+    'gbpc': (BRIDGE, 'GBPC3510', FP_BRIDGE, 'BR35'), 'gbj': (BRIDGE, 'GBJ1510', FP_GBJ, 'BR15GBJ'),
+    'gbu8': (GBU8, 'GBU8J', FP_GBU, 'BR8GBU'), 'gbu4': (GBU, 'GBU4J', FP_GBU, 'BR4V'),
+    'sch': (DSCH, 'STPS20M100S', FP_D2PAK, 'SCH20100')}   # four discrete D2PAK Schottky diodes instead of a block (thermal review 2026-09-07)
+
+def rect_block(b, ox, oy, name, fuse, frating, fsrc, ac_a, ac_b, bridge, capref, capval, capfp, capsrc, rail, led=None, ledres=None, ledval='1.5K', tp=None,
+               kind='gbpc', cap2=None, fused_gl=None, diodes=None):
+    """Fuse -> bridge -> filter capacitor(s) -> rail.  kind 'sch' builds the bridge from four discrete Schottky diodes (refs in `diodes`:
+    (AC_A -> +, AC_B -> +, GND -> AC_A, GND -> AC_B)); the AC / + / - nets keep exactly the names the block's pads had, so the rest of the
+    design is untouched: AC_A(fused) = the global net `fused_gl` or the local label `<ac_a>_F`, AC_B = `ac_b`, + = `rail` (or the local
+    label +5V_RAW of the +5 V raw supply), - = GND."""
+    b.part(fuse, FUSE, ox - 25.4, oy - 7.62, 90, value=frating, fp=FP_FUSE, src=fsrc, desc=f'Fuse {frating} 5x20 mm (Keystone 3517 clips), {name}')
+    sym, val, fp, src = BRIDGES[kind]
+    fa = b.pin(fuse, 1)
+    b.gl(ac_a, fa, 180, 'input')
+    if kind == 'sch':
+        fb = b.pin(fuse, 2)
+        b.w(fb, (fb[0], fb[1] - 5.08))    # the fused leg leaves the fuse as a label (global or local), the diodes pick it up by name
+        if fused_gl:
+            b.gl(fused_gl, (fb[0], fb[1] - 5.08), 90, 'output'); fnet = fused_gl
+        else:
+            b.lbl(f'{ac_a}_F', (fb[0], fb[1] - 5.08), 90); fnet = f'/{ac_a}_F'
+        plus = rail if rail else '/+5V_RAW'
+        da, db_, dc, dd = diodes
+        dsc = f'Schottky rectifier 100 V 20 A D2PAK - discrete bridge element {name.split(" (")[0]}'
+        # D_Schottky is horizontal at rot 0 (pin 1 K left, pin 2 A right; stubs end 6.35 mm from the centre): 25.4 mm column pitch keeps the stubs apart
+        b.two(da, sym, ox, oy - 2.54, val, fp, src, plus, fnet, desc=dsc + ', AC_A -> +')
+        b.two(db_, sym, ox + 25.4, oy - 2.54, val, fp, src, plus, ac_b, desc=dsc + ', AC_B -> +')
+        b.two(dc, sym, ox, oy + 10.16, val, fp, src, fnet, 'GND', desc=dsc + ', GND -> AC_A')
+        b.two(dd, sym, ox + 25.4, oy + 10.16, val, fp, src, ac_b, 'GND', desc=dsc + ', GND -> AC_B')
+        b.text(f'{bridge}: discrete Schottky bridge {da}-{dd} (D2PAK tabs = cathodes: {da}/{db_} on the {rail or "+5V_RAW"} pour, {dc}/{dd} on the AC pours)', (ox - 12, oy + 19), 1.3)
+        node = (ox + 45.72, oy - 7.62)
+        b.j(node)
+    else:
+        b.part(bridge, sym, ox, oy, value=val, fp=fp, src=src)
+        if sym is BRIDGE:   # D_Bridge_+-AA: 1 +, 2 -, 3/4 AC
+            brp, brm, br3, br4 = b.pin(bridge, 1), b.pin(bridge, 2), b.pin(bridge, 3), b.pin(bridge, 4)
+        else:               # GBU: 1 +, 2 ~, 3 ~, 4 -
+            brp, brm, br3, br4 = b.pin(bridge, 1), b.pin(bridge, 4), b.pin(bridge, 3), b.pin(bridge, 2)
+        fb = b.pin(fuse, 2)
+        b.vh(fb, br3)
+        if fused_gl:   # fused leg brought out as a global net (zero-cross sample, J104 as on the A-12697)
+            b.w(fb, (fb[0], fb[1] - 5.08)); b.gl(fused_gl, (fb[0], fb[1] - 5.08), 90, 'output')
+        else:
+            b.lbl(f'{ac_a}_F', fb)
+        b.w(br4, (br4[0] - 15.24, br4[1])); b.gl(ac_b, (br4[0] - 15.24, br4[1]), 180, 'input')
+        b.w(brm, (brm[0] - 2.54, brm[1])); b.gnd((brm[0] - 2.54, brm[1]))
+        node = (brp[0] + 5.08, brp[1])
+        b.w(brp, node); b.j(node)
+    b.part(capref, CP, node[0], node[1] + 6.35, value=capval, fp=capfp, src=capsrc)
+    b.w(node, b.pin(capref, 1)); b.gnd(b.pin(capref, 2))
+    b.w(node, (node[0] + 10.16, node[1])); b.j((node[0] + 10.16, node[1]))
+    if cap2:
+        b.part(cap2, CP, node[0] + 10.16, node[1] + 6.35, value=capval, fp=capfp, src=capsrc)
+        b.w((node[0] + 10.16, node[1]), b.pin(cap2, 1)); b.gnd(b.pin(cap2, 2))
+    if rail:
+        b.pwr(rail, (node[0] + 10.16, node[1] - 5.08)); b.w((node[0] + 10.16, node[1]), (node[0] + 10.16, node[1] - 5.08))
+        b.flag((node[0] + 12.7, node[1] - 5.08)); b.w((node[0] + 10.16, node[1] - 5.08), (node[0] + 12.7, node[1] - 5.08))
+    if led:
+        b.part(ledres, R, node[0] + 17.78, node[1] + 6.35, value=ledval, fp=FP_R, src=RS(ledval), desc=f'LED series resistor {ledval}')
+        b.part(led, LED, node[0] + 17.78, node[1] + 17.78, 270, value='LED red', fp=FP_LED, src='LED', desc=f'LED red 0805, {rail} indicator')
+        b.w((node[0] + 10.16, node[1]), (node[0] + 17.78, node[1])); b.w((node[0] + 17.78, node[1]), b.pin(ledres, 1))
+        b.w(b.pin(ledres, 2), b.pin(led, 2)); b.gnd(b.pin(led, 1)); b.j((node[0] + 17.78, node[1]))
+    if tp:
+        b.part(tp, TP, node[0] + 25.4, node[1] - 5.08, value=f'{tp} {rail}', fp=FP_TP, src=TPSRC, desc=f'Test point {rail}')
+        b.w((node[0] + 17.78 if led else node[0] + 10.16, node[1]), (node[0] + 25.4, node[1])); b.w((node[0] + 25.4, node[1]), b.pin(tp, 1))
+        b.j((node[0] + 25.4, node[1]))
+    b.text(name, (ox - 40, oy - 22), 1.8, True)
+    return node
+
+def buck(b, ref, x, y, vin_net, vout_net, vout, P, ren1, ren2, rfb1, en_desc, rc, cc, cp, iout, rfb2='2K', fbsrc=None):
+    """TPS54360B non-synchronous buck, 400 kHz, 10 uH, 2 x 330 uF + 10 uF out.  All nodes via local labels <ref>_*.
+    Compensation per TPS54360B datasheet 8.2.2.11 (gm(ps) 12 A/V, gm(ea) 350 uA/V, Vref 0.8 V): fp_mod = Iout/(2 pi Vout Cout),
+    fz_mod = 1/(2 pi Resr Cout), fco from eq. 47 = sqrt(fp_mod fsw/2) (eq. 46 = sqrt(fp fz) gives 1.2 kHz / 650 Hz with the 670 uF electrolytic
+    filter, which SPICE showed to be too slow for load steps - large-signal recovery of several ms), Rc = 2 pi fco Cout Vout/(gm_ps Vref gm_ea),
+    Cc = 1/(2 pi Rc fp_mod), Cp = max(Cout Resr/Rc, 1/(pi Rc fsw)).  With Cout = 670 uF, Resr = 22 mOhm:
+    +5 V/3 A: fp 142 Hz, fz 10.7 kHz, fco 5.3 kHz -> Rc 33.2 k, Cc 33 nF, Cp 470 pF;  +12 V/2 A: fp 40 Hz, fco 2.8 kHz -> Rc 42.2 k, Cc 100 nF, Cp 390 pF.
+    EN/UVLO (datasheet eq. 40/41, EN pin sources I1 = 1.2 uA below / 4.6 uA above the 1.2 V threshold): Vstart = Vena + R1 (Vena/R2 - 1.2 uA),
+    Vstop = Vena + R1 (Vena/R2 - 4.6 uA).  +5 V: 118 k / 29.4 k -> start 5.9 V / stop 5.5 V nominal (6.4 / 6.0 V at Vena = 1.3 V), chosen from
+    the brownout sweep (output/spice/uvlo_sweep.md): the raw rail bottoms at 6.48 V at 88 % mains and 3 A, so the stop level sits just below the
+    5.6 V the converter needs to regulate and the converter droops instead of shutting down in a deep brownout.  +12 V: 130 k / 20 k ->
+    start 8.8 V / stop 8.4 V (9.5 / 9.1 V worst case), far below the 11.3 V the +20 V rail keeps at 88 % mains with all flashers hot."""
+    n = lambda s: f'/{ref}_{s}'
+    b.part(ref, BUCK, x, y, value='TPS54360BDDAR', fp=FP_HSOP8, src='TPS54360', desc=f'{vout} {iout} buck converter')
+    for num, name in [('1', 'BOOT'), ('3', 'EN'), ('4', 'RT'), ('5', 'FB'), ('6', 'COMP'), ('8', 'SW')]:
+        b.pin_net(ref, num, n(name), 5.08)
+    p7, q7, _ = b.stub(ref, '7', 2.54); p9, q9, _ = b.stub(ref, '9', 2.54)     # GND pin + PowerPAD (pin 9) both to ground
+    b.w(p7, q7); b.w(p9, q9); b.w(q7, q9); b.j(q9); b.gnd(q9)
+    vin_lbl = vin_net if vin_net in POWER else '/' + vin_net
+    b.pin_net(ref, '2', vin_lbl, 5.08)
+    r = y + 25.4
+    b.two(P['cin1'], C, x - 60.96, r, '10uF', FP_C1210, 'C10U', vin_lbl, 'GND', desc='Input capacitor 10 uF 50 V X7R 1210')
+    b.two(P['cin2'], C, x - 50.8, r, '10uF', FP_C1210, 'C10U', vin_lbl, 'GND', desc='Input capacitor 10 uF 50 V X7R 1210')
+    b.two(P['ren1'], R, x - 40.64, r, ren1, FP_R, RS(ren1), vin_lbl, n('EN'), desc=f'EN/UVLO divider top {ren1} ({en_desc})')
+    b.two(P['ren2'], R, x - 30.48, r, ren2, FP_R, RS(ren2), n('EN'), 'GND', desc=f'EN/UVLO divider bottom {ren2}')
+    b.two(P['rt'], R, x - 20.32, r, '240K', FP_R, RS('240K'), n('RT'), 'GND', desc='RT/CLK 240K -> 405 kHz (Rt = 101756 x fsw^-1.008)')
+    b.two(P['cboot'], C, x - 10.16, r, '100nF', FP_C, 'C100N', n('BOOT'), n('SW'), desc='Bootstrap 100 nF')
+    b.two(P['d'], DSCH, x, r, 'B560C', FP_SMC, 'B560C', n('SW'), 'GND', rot=270, desc='Catch diode B560C 5 A 60 V Schottky SMC')
+    b.two(P['l'], L, x + 10.16, r, '10uH', FP_L, 'L10U', n('SW'), vout_net, desc='Inductor 10 uH 10 A (SRP1265A-100M)')
+    fsrc = (lambda v: fbsrc(RC[v])) if fbsrc else RS
+    b.two(P['rfb1'], R, x + 20.32, r, rfb1, FP_R, fsrc(rfb1), vout_net, n('FB'), desc=f'Feedback top {rfb1} (Vout = 0.8 V x (1 + Rtop/Rbot){", 0.1 % thin film" if fbsrc else ""})')
+    b.two(P['rfb2'], R, x + 30.48, r, rfb2, FP_R, fsrc(rfb2), n('FB'), 'GND', desc=f'Feedback bottom {rfb2}{", 0.1 % thin film" if fbsrc else ""}')
+    b.two(P['rc'], R, x + 40.64, r, rc, FP_R, RS(rc), n('COMP'), n('CC'), desc=f'Compensation Rc {rc} (TPS54360B eq. 48)')
+    b.two(P['cc'], C, x + 50.8, r, cc[0], FP_C, cc[1], n('CC'), 'GND', desc=f'Compensation Cc {cc[0]} (zero at the modulator pole, eq. 49)')
+    b.two(P['cp'], C, x + 60.96, r, cp[0], FP_C, cp[1], n('COMP'), 'GND', desc=f'Compensation Cp {cp[0]} (ESR-zero cancellation, eq. 50)')
+    b.two(P['cout1'], CP, x + 71.12, r, '330uF', FP_C330, 'C330U', vout_net, 'GND', desc='Output capacitor 330 uF 25 V low ESR')
+    b.two(P['cout2'], CP, x + 81.28, r, '330uF', FP_C330, 'C330U', vout_net, 'GND', desc='Output capacitor 330 uF 25 V low ESR')
+    b.two(P['cout3'], C, x + 91.44, r, '10uF', FP_C1210, 'C10U', vout_net, 'GND', desc='Output capacitor 10 uF 50 V X7R 1210')
+    # output node -> power rail + flag
+    o = (x + 101.6, r)
+    b.j((o[0] + 5.08, o[1]))
+    b.w((o[0] + 5.08, o[1]), (o[0] + 5.08, o[1] - 5.08)); b.pwr(vout_net, (o[0] + 5.08, o[1] - 5.08))
+    b.w((o[0] + 5.08, o[1]), (o[0] + 10.16, o[1])); b.flag((o[0] + 10.16, o[1]))
+    b.text(f'{ref}: {vin_net} -> {vout_net} ({vout}, {iout}) TPS54360B, 400 kHz, UVLO {en_desc}, Rc {rc} / Cc {cc[0]} / Cp {cp[0]}', (x - 60, y - 18), 1.8, True)
+    return o
+
+def sheet_power():
+    s = Sheet('Power_Supply', 'power_supply.kicad_sch', 'A1', 'Power supplies: +50V, +20V, +18V, +12VU, +5V/+12V buck converters, distribution')
+    b = B(s)
+    b.conn_labels('J101', 7, 60, 60, {1: 'AC9_A', 2: 'AC9_B', 3: None, 4: 'AC13_A', 5: 'AC13_A', 6: 'AC13_B', 7: 'AC13_B'}, FP_KK(7), 'KK7', 'J101 xformer 9VAC (Red) / 13VAC (Blu-Wht)')
+    b.conn_labels('J102', 9, 60, 110, {1: 'AC16_A', 2: 'AC16_A', 3: 'AC16_B', 4: 'AC16_B', 5: 'ACSOL_A', 6: 'ACSOL_A', 7: None, 8: 'ACSOL_B', 9: 'ACSOL_B'}, FP_KK(9), 'KK9', 'J102 xformer 16VAC (Wht-Red) / solenoid ~51VAC (Blk-Yel)')
+    b.conn_labels('J112', 5, 60, 165, {1: 'AC98_A', 2: 'AC98_A', 3: 'AC98_B', 4: None, 5: 'AC98_B'}, FP_KK(5), 'KK5', 'J112 xformer 9.8VAC (Wht-Grn)')
+    b.conn_labels('J104', 5, 60, 205, {1: 'ACSOL_A_F', 2: 'ACSOL_B', 3: None, 4: 'AC16_A_F', 5: 'AC16_B'}, FP_KK(5), 'KK5', 'J104 fused 51VAC (F112, pins 1/2) to Fliptronic II J901 and fused 16VAC (F111, pins 4/5), as A-12697 sheet 1')
+    b.conn_labels('J103', 4, 60, 240, {1: 'GND', 2: 'GND', 3: 'GND', 4: 'GND'}, FP_KK(4), 'KK4', 'J103 ground to 8-driver board (all four pins grounded as on A-12697 sheet 1, no key)')
+    b.gnd((35.56, 260)); b.flag((35.56, 257.46)); b.w((35.56, 257.46), (35.56, 260))
+    # --- rectifiers ---
+    n50 = rect_block(b, 180, 60, '+50V solenoid supply (51 VAC winding -> ~70 V DC, 78 V peak unloaded)', 'F112', '7A S.B.', 'F7A', 'ACSOL_A', 'ACSOL_B', 'BR3', 'C8', '2200uF 100V', FP_C2200_100, 'C2200U100', '+50V', tp='TP6', cap2='C32', fused_gl='ACSOL_A_F')
+    # bleeder: 2 x 15 k 2512 in parallel (7.5 k): 0.7 W at 72.7 V (0.35 W each), 0.8 W at 78 V; 4400 uF discharges to < 30 V in ~30 s
+    b.part('R260', R, n50[0] + 33.02, n50[1] + 6.35, value='15K', fp=FP_R2512, src=r2512('15K'), desc='Resistor 15K 1 W 2512 bleeder (R259 || R260 = 7.5 k on ~72 V)')
+    b.w((n50[0] + 25.4, n50[1]), (n50[0] + 33.02, n50[1])); b.w((n50[0] + 33.02, n50[1]), b.pin('R260', 1)); b.gnd(b.pin('R260', 2))
+    b.part('R259', R, n50[0] + 40.64, n50[1] + 6.35, value='15K', fp=FP_R2512, src=r2512('15K'), desc='Resistor 15K 1 W 2512 bleeder (parallel to R260)')
+    b.w((n50[0] + 33.02, n50[1]), (n50[0] + 40.64, n50[1])); b.w((n50[0] + 40.64, n50[1]), b.pin('R259', 1)); b.gnd(b.pin('R259', 2)); b.j((n50[0] + 33.02, n50[1]))
+    n20 = rect_block(b, 180, 130, '+20V flashlamp supply', 'F111', '5A S.B.', 'F5A', 'AC16_A', 'AC16_B', 'BR4', 'C11', '10000uF 25V', FP_C10000, 'C10000U25', '+20V', led='LED5', ledres='R194', tp='TP7', kind='sch', fused_gl='AC16_A_F', diodes=('D109', 'D110', 'D111', 'D112'))
+    n18 = rect_block(b, 180, 200, '+18V lamp matrix supply (13.3 VAC); also feeds the +12V digital buck U21', 'F114', '8A', 'F8A', 'AC13_A', 'AC13_B', 'BR1', 'C6', '10000uF 25V', FP_C10000, 'C10000U25', '+18V', led='LED6', ledres='R196', tp='TP8', cap2='C7', kind='sch', diodes=('D101', 'D102', 'D103', 'D104'))
+    n5 = rect_block(b, 180, 270, '+5V raw supply (9VAC)', 'F113', '5A S.B.', 'F5A', 'AC9_A', 'AC9_B', 'BR2', 'C5', '10000uF 25V', FP_C10000, 'C10000U25', None, kind='sch', fused_gl='AC9_AF', diodes=('D105', 'D106', 'D107', 'D108'))
+    b.lbl('+5V_RAW', (n5[0] + 10.16, n5[1]))
+    b.w((n5[0] + 10.16, n5[1]), (n5[0] + 20.32, n5[1])); b.gl('RAW5V_TP', (n5[0] + 20.32, n5[1]), 0) if False else None
+    b.part('TP9', TP, n5[0] + 20.32, n5[1] - 5.08, value='TP9 +5V_RAW', fp=FP_TP, src=TPSRC, desc='Test point +5V raw (buck input)')
+    b.w((n5[0] + 20.32, n5[1]), b.pin('TP9', 1)); b.j((n5[0] + 20.32, n5[1]))
+    b.w((n5[0] + 20.32, n5[1]), (n5[0] + 25.4, n5[1])); b.flag((n5[0] + 25.4, n5[1]))
+    n12 = rect_block(b, 180, 340, '+12V POWER (unregulated, 9.8VAC): motors, optos, coin door, DMD - J116/J117/J118', 'F116', '3A S.B.', 'F3A', 'AC98_A', 'AC98_B', 'BR5', 'C30', '10000uF 25V', FP_C10000, 'C10000U25', '+12VU', led='LED7', ledres='R250', tp='TP1', kind='sch', diodes=('D113', 'D114', 'D115', 'D116'))
+    # --- buck converters ---
+    # +5 V set point 5.10 V (11.3 k / 2.1 k, 0.1 % thin film): the CPU sees 5.10 - up to 3 A x (20 mOhm board + 60 mOhm harness) = 4.86 V nominal, 4.79 V worst case, above the 4.70 V maximum MC34064 reset threshold;
+    # with 5.00 V and 1 % parts the worst case was 4.61 V.  Maximum at the connector 5.17 V (< 5.20 V).  docs/THERMAL_AND_PROTECTION.md section 9
+    o5 = buck(b, 'U20', 420, 60, '+5V_RAW', '+5V', '+5.1 V', dict(cin1='C33', cin2='C34', ren1='R261', ren2='R262', rt='R263', cboot='C35', d='D36', l='L1', rfb1='R264', rfb2='R265', rc='R266', cc='C36', cp='C37', cout1='C4', cout2='C9', cout3='C38'),
+              '118K', '29.4K', '11.3K', 'start 5.9 V / stop 5.5 V', '33.2K', ('33nF', 'C33N'), ('470pF', 'C470P'), '3 A', rfb2='2.1K', fbsrc=r0805b)
+    b.part('R192', R, o5[0] + 20.32, o5[1] + 6.35, value='270', fp=FP_R, src=RS('270'), desc='LED series resistor 270')
+    b.part('LED4', LED, o5[0] + 20.32, o5[1] + 17.78, 270, value='LED red', fp=FP_LED, src='LED', desc='LED red 0805, +5V indicator')
+    b.w((o5[0] + 10.16, o5[1]), (o5[0] + 20.32, o5[1])); b.w((o5[0] + 20.32, o5[1]), b.pin('R192', 1)); b.j((o5[0] + 20.32, o5[1]))
+    b.w(b.pin('R192', 2), b.pin('LED4', 2)); b.gnd(b.pin('LED4', 1))
+    b.part('TP2', TP, o5[0] + 27.94, o5[1] - 5.08, value='TP2 +5V', fp=FP_TP, src=TPSRC, desc='Test point +5V')
+    b.w((o5[0] + 20.32, o5[1]), (o5[0] + 27.94, o5[1])); b.w((o5[0] + 27.94, o5[1]), b.pin('TP2', 1))
+    o12 = buck(b, 'U21', 420, 150, '+18V', '+12V', '+12.0 V', dict(cin1='C39', cin2='C40', ren1='R267', ren2='R268', rt='R269', cboot='C41', d='D37', l='L2', rfb1='R270', rfb2='R271', rc='R272', cc='C42', cp='C43', cout1='C2', cout2='C12', cout3='C44'),
+               '130K', '20K', '28K', 'start 8.8 V / stop 8.4 V', '42.2K', ('100nF', 'C100N'), ('390pF', 'C390P'), '2 A')
+    b.part('R193', R, o12[0] + 20.32, o12[1] + 6.35, value='1K', fp=FP_R, src=RS('1K'), desc='LED series resistor 1K')
+    b.part('LED1', LED, o12[0] + 20.32, o12[1] + 17.78, 270, value='LED red', fp=FP_LED, src='LED', desc='LED red 0805, +12V indicator')
+    b.w((o12[0] + 10.16, o12[1]), (o12[0] + 20.32, o12[1])); b.j((o12[0] + 20.32, o12[1])); b.w((o12[0] + 20.32, o12[1]), b.pin('R193', 1))
+    b.w(b.pin('R193', 2), b.pin('LED1', 2)); b.gnd(b.pin('LED1', 1))
+    b.part('TP3', TP, o12[0] + 27.94, o12[1] - 5.08, value='TP3 +12V', fp=FP_TP, src=TPSRC, desc='Test point +12V regulated')
+    b.w((o12[0] + 20.32, o12[1]), (o12[0] + 27.94, o12[1])); b.w((o12[0] + 27.94, o12[1]), b.pin('TP3', 1)); b.j((o12[0] + 27.94, o12[1]))
+    b.part('F115', FUSE, o12[0] + 38.1, o12[1], 90, value='3/4A S.B.', fp=FP_FUSE, src='F3/4A', desc='Fuse 3/4 A Slo-Blo 5x20 mm (Keystone 3517 clips), +12V switch matrix')
+    b.w((o12[0] + 27.94, o12[1]), b.pin('F115', 1))
+    fo = b.pin('F115', 2); b.w(fo, (fo[0] + 5.08, fo[1])); b.j((fo[0] + 5.08, fo[1]))
+    b.gl('+12V_F', (fo[0] + 5.08, fo[1]), 0, 'output')
+    b.part('R251', R, fo[0] + 5.08, fo[1] + 6.35, value='1.5K', fp=FP_R, src=RS('1.5K'), desc='LED series resistor 1.5K')
+    b.part('LED2', LED, fo[0] + 5.08, fo[1] + 17.78, 270, value='LED red', fp=FP_LED, src='LED', desc='LED red 0805, +12V fused indicator')
+    b.w((fo[0] + 5.08, fo[1]), b.pin('R251', 1)); b.w(b.pin('R251', 2), b.pin('LED2', 2)); b.gnd(b.pin('LED2', 1))
+    b.part('TP5', TP, 60, 300, value='TP5 GND', fp=FP_TP, src=TPSRC, desc='Test point GND'); b.gnd(b.pin('TP5', 1))
+    # --- +50V distribution fuses ---
+    for i, (f, dst, nm) in enumerate([('F103', 'J107-1 sol 25-28 / 8-driver', '+50V_F103'), ('F104', 'J107-2 sol 9-16', '+50V_F104'), ('F105', 'J107-3 sol 1-8', '+50V_F105')]):
+        x = 420; y = 260 + i * 15
+        b.part(f, FUSE, x, y, 90, value='3A S.B.', fp=FP_FUSE, src='F3A', desc=f'Fuse 3 A Slo-Blo 5x20 mm (Keystone 3517 clips), +50V to {dst}')
+        a, c = b.pin(f, 1), b.pin(f, 2)
+        b.w(a, (a[0] - 5.08, a[1])); b.pwr('+50V', (a[0] - 5.08, a[1] - 2.54)); b.w((a[0] - 5.08, a[1]), (a[0] - 5.08, a[1] - 2.54))
+        b.w(c, (c[0] + 5.08, c[1])); b.gl(nm, (c[0] + 5.08, c[1]), 0, 'output')
+    # J107-5 is tied to J107-6 (+20V) on the A-12697 (sheet 1); the STTNG harness has no wire on pin 5
+    b.conn_labels('J107', 6, 520, 260, {1: '+50V_F103', 2: '+50V_F104', 3: '+50V_F105', 4: None, 5: '+20V', 6: '+20V'}, FP_KK(6), 'KK6', 'J107 +50V (F103/F104/F105) and +20V (pins 5,6) to playfield')
+    # J106 pins 1-4 are left open: the 16-9057 schematic puts the F103/F104/F105 branches on 1/3/4 with the key on 2, but the silkscreen film,
+    # the connector map and a photographed board all have the plug key at pin 4 -> not reproducible without risking +50V on a keyed position
+    b.conn_labels('J106', 5, 520, 300, {1: None, 2: None, 3: None, 4: None, 5: '+20V'}, FP_KK(5), 'KK5', 'J106 +20V to backbox flashlamps (pins 1-4 open, key 4)')
+    b.conn_labels('J114', 7, 520, 340, {1: '+12V_F', 2: '+12V_F', 3: '+5V', 4: '+5V', 5: 'GND', 6: None, 7: 'GND'}, FP_KK(7), 'KK7', 'J114 +12V/+5V/GND to CPU J210, Fliptronic J904, 8-driver')
+    b.conn_labels('J116', 4, 520, 380, {1: None, 2: '+12VU', 3: 'GND', 4: '+5V'}, FP_KK(4), 'KK4', 'J116 +12V power (unregulated) / GND / +5V to coin door')
+    b.conn_labels('J117', 4, 520, 410, {1: None, 2: '+12VU', 3: 'GND', 4: '+5V'}, FP_KK(4), 'KK4', 'J117 +12V power (unregulated) / GND / +5V to DMD controller')
+    b.conn_labels('J118', 4, 520, 440, {1: None, 2: '+12VU', 3: 'GND', 4: '+5V'}, FP_KK(4), 'KK4', 'J118 +12V power (unregulated) / GND / +5V to playfield boards (optos, gun motors)')
+    # J108 (CAB): the three fused +50V branches as on A-12697 sheet 1 (no key); N/C in the STTNG harness
+    b.conn_labels('J108', 3, 620, 260, {1: '+50V_F103', 2: '+50V_F104', 3: '+50V_F105'}, FP_KK(3), 'KK3', 'J108 +50V (F103/F104/F105) to cabinet (N/C on STTNG)')
+    b.conn_labels('J109', 7, 620, 300, {k: None for k in range(1, 8)}, FP_KK(7), 'KK7', 'J109 spare (N/C)')
+    b.conn_labels('J110', 9, 620, 350, {k: None for k in range(1, 10)}, FP_KK(9), 'KK9', 'J110 spare (N/C)')
+    for i, (nm, rail) in enumerate([('+20V', '+20V'), ('+5V', '+5V'), ('GND', 'GND')]):
+        x = 420 + i * 20
+        b.gl(nm, (x, 470), 180); b.w((x, 470), (x + 5.08, 470)); b.pwr(rail, (x + 5.08, 470))
+    for i in range(1, 9):
+        b.part(f'H{i}', MH, 300 + i * 12, 480, value='M4', fp=FP_MH, desc='Mounting hole 4.3mm')
+    b.text('Power supplies (windings per manual/pinwiki: 9 VAC red -> +5V, 13.3 VAC blu-wht -> +18V, 16 VAC wht-red -> +20V, 51 VAC blk-yel -> "+50V" (~70 V DC),\n'
+           '9.8 VAC wht-grn -> +12V power). Each secondary is fused (F111-F114, F116, 5x20 mm) before its bridge: GBPC3510W block (BR3, 6224BG basket heatsink); the +18V (D101-D104),\n'
+           '+5V raw (D105-D108), +20V (D109-D112) and +12V power (D113-D116) bridges are four STPS20M100S 100 V / 20 A D2PAK Schottky diodes each, cooled by the pours under their tabs. +50V (2 x 2200uF/100V, bleeder R259||R260) feeds the coils through F103/F104/F105 (J107-1 also feeds the 8-driver board).\n'
+           '+20V (BR4/C11) feeds the flashlamps only (coin-door interlock kills +20V/+50V). +18V (BR1/C6/C7) feeds the lamp matrix AND the +12V digital buck U21 (2 A,\n'
+           'F115 3/4 A -> J114 to CPU J210 / Fliptronic J904 / 8-driver, as the original 7812 did). +12V power (BR5/C30 10000uF, unregulated, F116) -> J116/J117/J118 pin 2\n'
+           '(coin door, DMD controller, playfield optos and the STTNG gun motors). +5V: BR2 -> C5 -> TPS54360B U20 (3 A) -> J114/J116/J117/J118.\n'
+           'LED1 +12V digital, LED2 +12V after F115, LED4 +5V, LED5 +20V, LED6 +18V, LED7 +12V power. TP1 12V power, TP2 5V, TP3 12V digital, TP5 GND, TP6 50V, TP7 20V, TP8 18V, TP9 5V raw.', (20, 15), 2.0)
+    return s
+
+def sheet_root(subsheets):
+    s = Sheet('Root', 'wpc_power_driver_cost.kicad_sch', 'A3', 'WPC Power Driver Board - cost-optimised modern re-implementation')
+    s.is_root = True; s.subsheets = subsheets
+    s.text('WPC POWER DRIVER BOARD - COST-OPTIMISED MODERN VERSION - functional replacement for Williams A-12697-3 (same outline, connectors, fuses).\n'
+           'DPAK MOSFET solenoid/lamp drivers, TPS54360B buck regulators for +5V/+12V, 4-quadrant insulated triacs, SMD passives, 5x20 mm fuses.\n'
+           'Sheets: Power_Supply, CPU_Interface, Sol_HighPower (1-8), Sol_LowPower (9-16), Sol_Flashers (17-24), Sol_GeneralPurpose (25-28),\n'
+           'Lamp_Columns, Lamp_Rows, GI_Triacs.  Every part carries Manufacturer / MPN / DigiKey link / Price / Price100 fields (see BOM).  See README.md.', (20, 20), 2.2)
+    return s
+
+def build_all():
+    PARTS.clear()
+    sheets = [sheet_power(), sheet_cpu(), sheet_sol_high(), sheet_sol_low(), sheet_sol_flash(), sheet_sol_gp(), sheet_lamp_cols(), sheet_lamp_rows(), sheet_gi()]
+    return sheet_root(sheets), sheets

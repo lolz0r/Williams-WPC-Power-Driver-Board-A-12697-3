@@ -1,0 +1,634 @@
+                                                                                              PD - 91402A
+
+
+                                                                       IRFR/U5305
+                                                                     HEXFET® Power MOSFET
+l Ultra Low On-Resistance
+l Surface Mount (IRFR5305)                                       D
+                                                                                      VDSS = -55V
+l Straight Lead (IRFU5305)
+l Advanced Process Technology
+                                                                                 RDS(on) = 0.065Ω
+l Fast Switching
+                                                            G
+l Fully Avalanche Rated
+                                                                                       ID = -31A
+                                                                 S
+Description
+Fifth Generation HEXFETs from International Rectifier utilize
+advanced processing techniques to achieve extremely low
+on-resistance per silicon area. This benefit, combined with
+the fast switching speed and ruggedized device design that
+HEXFET® Power MOSFETs are well known for, provides
+the designer with an extremely efficient and reliable device
+for use in a wide variety of applications.
+
+The D-Pak is designed for surface mounting using vapor
+phase, infrared, or wave soldering techniques. The straight
+lead version (IRFU series) is for through-hole mounting           D-Pak              I-Pak
+applications. Power dissipation levels up to 1.5 watts are      IRFR5305          IRFU5305
+possible in typical surface mount applications.
+
+Absolute Maximum Ratings
+                                 Parameter                                Max.                     Units
+ID @ TC = 25°C      Continuous Drain Current, VGS @ -10V                    -31
+ID @ TC = 100°C     Continuous Drain Current, VGS @ -10V                    -22                      A
+IDM                 Pulsed Drain Current                                 -110
+PD @TC = 25°C       Power Dissipation                                       110                     W
+                    Linear Derating Factor                                 0.71                    W/°C
+VGS                 Gate-to-Source Voltage                                 ± 20                     V
+EAS                 Single Pulse Avalanche Energy                         280                    mJ
+IAR                 Avalanche Current                                     -16                     A
+EAR                 Repetitive Avalanche Energy                             11                    mJ
+dv/dt               Peak Diode Recovery dv/dt                            -5.0                    V/ns
+TJ                  Operating Junction and                             -55 to + 175
+TSTG                Storage Temperature Range                                                       °C
+                    Soldering Temperature, for 10 seconds       300 (1.6mm from case )
+                    Mounting torque, 6-32 or M3 srew              10 lbf•in (1.1N•m)
+
+Thermal Resistance
+                                 Parameter                      Typ.                   Max.        Units
+RθJC                Junction-to-Case                            –––                    1.4
+RθJA                Junction-to-Ambient (PCB mount)*            –––                    50          °C/W
+RθJA                Junction-to-Ambient**                       –––                    110
+
+                                                                                                          10/23/00
+IRFR/U5305
+Electrical Characteristics @ TJ = 25°C (unless otherwise specified)
+                              Parameter                  Min. Typ. Max. Units               Conditions
+ V(BR)DSS      Drain-to-Source Breakdown Voltage         -55  ––– –––     V   VGS = 0V, ID = -250µA
+ ∆V(BR)DSS/∆TJ Breakdown Voltage Temp. Coefficient       ––– -0.034 ––– V/°C Reference to 25°C, ID = -1mA
+ RDS(on)       Static Drain-to-Source On-Resistance      –––  ––– 0.065   Ω   VGS = -10V, ID = -16A 
+ VGS(th)       Gate Threshold Voltage                    -2.0 ––– -4.0    V   VDS = VGS, ID = -250µA
+ gfs           Forward Transconductance                  8.0  ––– –––     S   VDS = -25V, ID = -16A
+                                                         –––  ––– -25         VDS = -55V, VGS = 0V
+IDSS             Drain-to-Source Leakage Current                         µA
+                                                         –––  ––– -250        VDS = -44V, VGS = 0V, TJ = 150°C
+                 Gate-to-Source Forward Leakage          –––  ––– 100         VGS = 20V
+IGSS                                                                     nA
+                 Gate-to-Source Reverse Leakage          –––  ––– -100        VGS = -20V
+ Qg              Total Gate Charge                       –––  –––    63       ID = -16A
+ Qgs             Gate-to-Source Charge                   –––  –––    13  nC   VDS = -44V
+ Qgd             Gate-to-Drain ("Miller") Charge         –––  –––    29       VGS = -10V, See Fig. 6 and 13 
+ td(on)          Turn-On Delay Time                      –––   14   –––       VDD = -28V
+ tr              Rise Time                               –––   66   –––       ID = -16A
+                                                                         ns
+ td(off)         Turn-Off Delay Time                     –––   39   –––       RG = 6.8Ω
+ tf              Fall Time                               –––   63   –––       RD = 1.6Ω, See Fig. 10 
+                                                                                                               D
+                                                                              Between lead,
+ LD              Internal Drain Inductance               –––   4.5 –––
+                                                                              6mm (0.25in.)
+                                                                         nH                               G
+                                                                              from package
+ LS              Internal Source Inductance               –––  7.5 –––
+                                                                              and center of die contact        S
+
+ Ciss            Input Capacitance                       ––– 1200 –––         VGS = 0V
+ Coss            Output Capacitance                      –––  520 –––    pF   VDS = -25V
+ Crss            Reverse Transfer Capacitance            –––  250 –––         ƒ = 1.0MHz, See Fig. 5 
+
+Source-Drain Ratings and Characteristics
+                              Parameter                   Min. Typ. Max. Units                    Conditions
+ IS              Continuous Source Current                                          MOSFET symbol                   D
+
+                                                          –––   –––    -31
+                 (Body Diode)                                                       showing the
+                                                                              A
+ ISM             Pulsed Source Current                                              integral reverse        G
+                                                          –––   –––   -110
+                 (Body Diode)                                                      p-n junction diode.             S
+
+ VSD             Diode Forward Voltage                    –––   –––   -1.3     V    TJ = 25°C, IS = -16A, VGS = 0V 
+ trr             Reverse Recovery Time                    –––    71   110     ns    TJ = 25°C, IF = -16A
+ Qrr             Reverse RecoveryCharge                   –––   170   250     nC    di/dt = -100A/µs 
+
+Notes:
+ Repetitive rating; pulse width limited by            Pulse width ≤ 300µs; duty cycle ≤ 2%.
+      max. junction temperature. (See Fig. 11)          This is applied for I-PAK, LS of D-PAK is measured between
+ VDD = -25V, starting TJ = 25°C, L = 2.1mH            lead and center of die contact.
+      RG = 25Ω, IAS = -16A. (See Figure 12)            Uses IRF5305 data and test conditions.
+ ISD ≤ -16A, di/dt ≤ -280A/µs, VDD ≤ V(BR)DSS,
+   TJ ≤ 175°C
+* When mounted on 1" square PCB (FR-4 or G-10 Material).
+ For recommended footprint and soldering techniques refer to application note #AN-994.
+** Uses typical socket mount.
+
+
+   2                                                                                                    www.irf.com
+                                                                                                                                                                                                                          IRFR/U5305
+                                                1000                                                                                                                             1000                  VGS
+                                                                    VGS
+                                                           TO P    - 15V                                                                                                                       TOP    - 15V
+                                                                   - 10V                                                                                                                              - 10V
+                                                                   - 8.0V                                                                                                                             - 8.0V
+                                                                   - 7.0V                                                                                                                             - 7.0V
+
+
+
+
+-ID , D rain-to-S ou rc e C urre nt (A )                                                                                                      -ID , D rain-to-S ourc e C urrent (A )
+                                                                   - 6.0V                                                                                                                             - 6.0V
+                                                                   - 5.5V                                                                                                                             - 5.5V
+                                                                   - 5.0V                                                                                                                             - 5.0V
+                                                           BOT TOM - 4.5V                                                                                                                      BOTTOM - 4.5V
+                                                 100                                                                                                                                   100
+
+
+
+
+                                                  10                                                                                                                                    10
+
+                                                                                                                                                                                                                                    -4 .5 V
+                                                                                         -4.5 V
+
+                                                                                              2 0µ s P U LS E W ID TH                                                                                                                20 µ s P U L S E W ID T H
+                                                                                              T Jc = 2 5°C                                                                                                                           TCJ = 17 5°C
+                                                   1                                                                  A                                                                  1                                                                       A
+                                                       0.1                    1                   10                100                                                                      0.1                     1                    10                  100
+                                                                  -VD S , D rain-to-S ourc e V oltage (V )                                                                                                 -VD S , D rain-to-S ource V oltage (V )
+
+
+                                                Fig 1. Typical Output Characteristics                                                                                                    Fig 2. Typical Output Characteristics
+
+
+
+
+                                                100                                                                                                                                     2.0
+                                                                                                                                                                                                   I D = -27 A
+
+
+
+
+                                                                                                                                 R D S (on) , Drain-to-S ource O n Resistance
+
+
+
+
+    -I D , D rain-to -So urc e C urre nt (A )
+                                                                            TJ = 2 5°C
+                                                                                                                                                                                        1.5
+                                                                                             TJ = 17 5 °C
+
+
+
+                                                 10                                                                                                                                     1.0
+
+
+
+
+                                                                                                                                                (N orm alized)
+                                                                                                                                                                                        0.5
+
+
+
+                                                                                             V DS = -2 5 V
+                                                                                             2 0µ s P U L S E W ID TH                                                                                                                          V G S = -10 V
+                                                  1                                                                                                                                     0.0
+                                                                                                                             A                                                                                                                                      A
+                                                       4           5          6          7         8        9           10                                                                    -60    -40   -20   0   20   40   60    80   100 120 140 160 180
+                                                                  -V G S , G ate -to-Source Volta ge (V )                                                                                                  T J , Junction T em perature (°C )
+
+
+                                           Fig 3. Typical Transfer Characteristics                                                                                                                   Fig 4. Normalized On-Resistance
+                                                                                                                                                                                                             Vs. Temperature
+
+
+www.irf.com                                                                                                                                                                                                                                               3
+IRFR/U5305
+                                          2500                                                                                                                                                 20
+                                                                           V G S = 0V ,       f = 1MHz                                                                                                      I D = -1 6A
+                                                                           C iss = C g s + C g d , C d s S H O R TE D                                                                                                                V D S = -4 4V
+
+
+
+
+                                                                                                                                                      -V G S , G ate -to-S ou rc e V oltage (V )
+                                                                           C rs s = C g d                                                                                                                                            V D S = -2 8V
+                                          2000                             C o ss = C ds + C g d                                                                                               16
+                                                                   C iss
+
+
+
+
+C, C apacitanc e (pF )
+                                                                   C oss
+                                          1500                                                                                                                                                 12
+
+
+
+
+                                          1000                                                                                                                                                     8
+                                                                   C rss
+
+                                                       500                                                                                                                                         4
+
+
+                                                                                                                                                                                                                                           FO R TE S T C IR C U IT
+                                                                                                                                                                                                                                            S E E FIG U R E 1 3
+                                                         0                                                                    A                                                                    0                                                                          A
+                                                             1                           10                             100                                                                             0           10         20     30       40        50             60
+                                                                    -V D S , D rain-to-S ourc e V oltage (V )                                                                                                         Q G , Total G ate C harge (nC )
+
+
+                                                         Fig 5. Typical Capacitance Vs.                                                                                                                 Fig 6. Typical Gate Charge Vs.
+                                                             Drain-to-Source Voltage                                                                                                                        Gate-to-Source Voltage
+
+
+                                               1000                                                                                                                      1000
+                                                                                                                                                                                                                  O P E R A TIO N IN TH IS A R E A L IM ITE D
+
+
+
+
+                -IS D , R everse Drain C urrent (A )
+                                                                                                                                                                                                                                  B Y R D S (o n)
+
+
+
+
+                                                                                                                                  -ID , D rain C urrent (A )
+                                                                                                                                                                                      100
+
+
+
+                                                       100
+                                                                                                                                                                                                                                                                100µ s
+                                                                             TJ = 17 5 °C
+                                                                                                                                                                                                   10
+                                                                                                                                                                                                                                                                1m s
+                                                                                               TJ = 25 °C
+
+
+                                                                                                                                                                                                            T C = 25 °C                                         10m s
+                                                                                                                                                                                                            T J = 17 5°C
+                                                                                                              V G S = 0V                                                                                    S ing le P u lse
+                                                        10                                                                    A                                                                     1                                                                         A
+                                                             0.4           0.8           1.2            1.6             2.0                                                                             1                             10                                100
+                                                                     -VS D , S ourc e-to-D rain V oltage (V )                                                                                                       -VD S , D rain-to-S ourc e V oltage (V )
+
+
+                                                         Fig 7. Typical Source-Drain Diode                                                                                                         Fig 8. Maximum Safe Operating Area
+                                                                 Forward Voltage
+
+                      4                                                                                                                                                                                                                        www.irf.com
+                                                                                                                                  IRFR/U5305
+                                                                                                                                           RD
+                                                                                                                          VDS
+                             35
+                                                                                                                 VGS
+                                                                                                                                       D.U.T.
+                             30                                                                             RG                                               -
+                                                                                                                                                             + VDD
+
+
+
+
+  -ID , Drain Current (A)
+                             25
+                                                                                                              -10V
+                                                                                                            Pulse Width ≤ 1 µs
+                             20                                                                             Duty Factor ≤ 0.1 %
+
+
+                             15                                                                     Fig 10a. Switching Time Test Circuit
+
+                             10
+                                                                                                                 td(on)    tr               t d(off)   tf
+                                                                                                      VGS
+                              5
+                                                                                                      10%
+
+
+                              0
+                                   25          50    75    100         125    150     175
+                                                TC , Case Temperature ( ° C)
+                                                                                                      90%
+                                                                                                      VDS
+
+
+                               Fig 9. Maximum Drain Current Vs.                                     Fig 10b. Switching Time Waveforms
+                                       Case Temperature
+
+
+                             10
+
+
+
+
+Thermal Response (Z thJC )
+                              1
+                                    D = 0.50
+
+
+                                        0.20
+
+                                        0.10
+                                                                                                                                         P DM
+                             0.1        0.05
+                                                                                                                                                  t1
+                                        0.02                  SINGLE PULSE
+                                        0.01               (THERMAL RESPONSE)                                                                           t2
+
+                                                                                                                  Notes:
+                                                                                                                 1. Duty factor D = t 1 / t 2
+                                                                                                                 2. Peak T J = P DM x Z thJC + TC
+                         0.01
+                           0.00001                            0.0001                        0.001                               0.01                                 0.1
+                                                                             t1 , Rectangular Pulse Duration (sec)
+
+
+
+                                        Fig 11. Maximum Effective Transient Thermal Impedance, Junction-to-Case
+
+
+www.irf.com                                                                                                                                                           5
+IRFR/U5305
+             VDS                 L
+                                                                                                                           700
+                                                                                                                                                                                                 ID
+
+
+
+
+                                                                          E A S , S ingle Pulse Avalanc he E nergy (m J)
+                                                                                                                                                                              TO P              -6.6 A
+            RG             D .U .T                             +
+                                                               -   VD D                                                    600                                                                  -11 A
+                          IA S                                        A                                                                                                       BOTTOM            -1 6A
+            -2 0 V                          D R IV E R
+                     tp          0 .0 1 Ω                                                                                  500
+
+
+                                                                                                                           400
+
+
+                                                         15V                                                               300
+
+
+                                                                                                                           200
+     Fig 12a. Unclamped Inductive Test
+                  Circuit
+      IAS                                                                                                                  100
+
+                                                                                                                                  V D D = -2 5V
+                                                                                                                             0                                                                           A
+                                                                                                                                 25         50          75        100        125          150       175
+                                                                                                                                      S tarting T J , J unc tion T em perature (°C )
+
+
+                                                                                                                                 Fig 12c. Maximum Avalanche Energy
+                                                                                                                                          Vs. Drain Current
+                                 tp
+                                              V (BR)DSS
+
+Fig 12b. Unclamped Inductive Waveforms
+
+                                                                                                                                               Current Regulator
+                                                                                                                                             Same Type as D.U.T.
+
+
+                                                                                                                                                         50KΩ
+                                     QG                                                                                               12V        .2µF
+                                                                                                                                                               .3µF
+-10V                                                                                                                                                                                      -
+             QGS                  QGD                                                                                                                                        D.U.T.       +VDS
+
+
+                                                                                                                                       VGS
+     VG
+                                                                                                                                                         -3mA
+
+
+                                                                                                                                                                      IG        ID
+                                  Charge                                                                                                                     Current Sampling Resistors
+
+
+
+
+Fig 13a. Basic Gate Charge Waveform                                                                                              Fig 13b. Gate Charge Test Circuit
+
+
+
+
+ 6                                                                                                                                                                           www.irf.com
+                                                                                                    IRFR/U5305
+                                          Peak Diode Recovery dv/dt Test Circuit
+
+                                                        +          Circuit Layout Considerations
+                                D.U.T
+                                                                    • Low Stray Inductance
+                                                                    • Ground Plane
+                                                        
+                                                                    • Low Leakage Inductance
+                                                                      Current Transformer
+                                                        -
+
+                           +
+                          
+                                                                                    
+                                                                                -        +
+                           -
+
+
+
+                                                     **
+                              RG                            • dv/dt controlled by RG                        +
+                                                            • ISD controlled by Duty Factor "D"
+                                                                                                                  *
+                                                                                                                VDD
+                                                                                                            -
+                                                            • D.U.T. - Device Under Test
+              VGS*
+
+
+
+
+                       * Reverse Polarity for P-Channel
+                       ** Use P-Channel Driver for P-Channel Measurements
+
+
+                                 Driver Gate Drive
+                                                                                     P.W.
+                                                     Period                    D=
+                                        P.W.                                        Period
+
+
+                                                                                                  [VGS=10V ] ***
+
+
+                                 D.U.T. ISD Waveform
+
+                     Reverse
+                     Recovery                      Body Diode Forward
+                     Current                             Current
+                                                                 di/dt
+                                 D.U.T. VDS Waveform
+                                                        Diode Recovery
+                                                             dv/dt
+                                                                                                  [VDD]
+                 Re-Applied
+                 Voltage                           Body Diode       Forward Drop
+                                 Inductor Curent
+
+
+                                                   Ripple ≤ 5%                                    [ ISD ]
+
+
+                                *** VGS = 5.0V for Logic Level and 3V Drive Devices
+
+                                          Fig 14. For P-Channel HEXFETS
+www.irf.com                                                                                                           7
+IRFR/U5305
+
+D-Pak (TO-252AA) Package Outline
+Dimensions are shown in millimeters (inches)
+
+
+                                                                                                 2 .3 8 (.0 9 4 )
+                                 6 .7 3 (.2 6 5 )                                                2 .1 9 (.0 8 6 )
+                                 6 .3 5 (.2 5 0 )                                                                                   1 .1 4 (.0 4 5 )
+                                                                                                                                    0 .8 9 (.0 3 5 )
+                                     -A -
+      5 .4 6 (.2 1 5 )                                                  1 .2 7 (.0 5 0 )                                          0 .5 8 (.0 2 3 )
+      5 .2 1 (.2 0 5 )                                                  0 .8 8 (.0 3 5 )                                          0 .4 6 (.0 1 8 )
+
+                                        4
+
+                                                                                                                                     6 .4 5 (.2 4 5 )
+                                                                                                                                     5 .6 8 (.2 2 4 )
+                                                             6 .2 2 (.2 4 5 )
+                                                             5 .9 7 (.2 3 5 )                 1 0 .4 2 (.4 1 0 )
+1.0 2 (.0 4 0 )                                                                                 9 .4 0 (.3 7 0 )                                            L E A D A S S IG N M E N T S
+1.6 4 (.0 2 5 )              1          2           3
+                                                                                                                                                                   1 - GATE
+                                                                                                                                      0 .5 1 (.0 2 0 )            2 - D R A IN
+                                                                 -B -                                                                      M IN .                 3 - S OU R CE
+ 1 .5 2 (.0 6 0 )                                                                                                                                                 4 - D R A IN
+ 1 .1 5 (.0 4 5 )
+                                                           0 .8 9 (.0 3 5 )
+                                                        3X
+                                                           0 .6 4 (.0 2 5 )                                                       0 .5 8 (.0 2 3 )
+          1 .1 4 (.0 4 5 )                                                                                                        0 .4 6 (.0 1 8 )
+   2X                                                        0 .2 5 ( .0 1 0 )      M A M B
+          0 .7 6 (.0 3 0 )
+
+        2 .2 8 ( .0 9 0 )                                                                           N O TE S :
+                                                                                                         1 D IM E N S IO N IN G & T O L E R A N C IN G P E R A N S I Y 1 4 .5 M , 1 9 8 2 .
+                                                         4 .5 7 ( .1 8 0 )                               2 C O N T R O L L IN G D IM E N S IO N : IN C H .
+                                                                                                         3 C O N F O R M S T O J E D E C O U T L IN E T O -2 5 2 A A .
+                                                                                                         4 D IM E N S IO N S S H O W N A R E B E F O R E S O L D E R D IP ,
+                                                                                                             S O L D E R D IP M A X. + 0 .1 6 (.0 0 6 ) .
+
+
+
+
+D-Pak (TO-252AA) Part Marking Information
+
+
+
+
+  8                                                                                                                                                                www.irf.com
+                                                                                                                               IRFR/U5305
+
+ I-Pak (TO-251AA) Package Outline
+Dimensions are shown in millimeters (inches)
+
+
+
+
+                               6 .7 3 (.26 5 )                                              2 .3 8 (.0 9 4 )
+                               6 .3 5 (.25 0 )                                              2 .1 9 (.0 8 6 )
+                                   -A -
+                                                                     1 .2 7 ( .0 5 0 )       0 .5 8 (.0 2 3 )
+       5 .4 6 (.2 1 5 )
+                                                                     0 .8 8 ( .0 3 5 )       0 .4 6 (.0 1 8 )
+       5 .2 1 (.2 0 5 )
+                                                                                                                                 L E A D A S S IG N M E N T S
+                                     4                                                                                                 1 - GATE
+                                                                                                6 .4 5 (.2 4 5 )                       2 - D R A IN
+                                                                                                5 .6 8 (.2 2 4 )                       3 - SOURCE
+    1 .5 2 (.0 6 0 )                                      6 .2 2 ( .2 4 5 )                                                            4 - D R A IN
+    1 .1 5 (.0 4 5 )                                      5 .9 7 ( .2 3 5 )
+
+                           1         2           3
+
+
+      -B -                                                                                   N O TE S :
+                                                                                                 1 D IM E N S IO N IN G & TO L E R A N C IN G P E R A N S I Y 1 4 .5M , 19 8 2 .
+ 2.2 8 (.0 9 0)                                           9 .6 5 ( .3 8 0 )                      2 C O N T R O L L IN G D IM E N S IO N : IN C H .
+ 1.9 1 (.0 7 5)                                           8 .8 9 ( .3 5 0 )                      3 C O N F O R MS TO J E D E C O U T L IN E TO -2 5 2 A A .
+                                                                                                 4 D IM E N S IO N S S H O W N A R E B E F O R E S O L D E R D IP ,
+                                                                                                   S O L D E R D IP M A X. + 0.1 6 (.0 0 6 ).
+
+
+         1 .1 4 (.0 45 )                                                                     1 .1 4 ( .0 4 5 )
+    3X                                                     0 .8 9 (.0 35 )
+         0 .7 6 (.0 30 )                             3X                                      0 .8 9 ( .0 3 5 )
+                                                           0 .6 4 (.0 25 )
+
+       2 .28 (.0 9 0 )                               0 .2 5 (.0 1 0 )         M A M B    0 .5 8 (.0 2 3 )
+                                                                                         0 .4 6 (.0 1 8 )
+             2X
+
+
+
+
+I-Pak (TO-251AA) Part Marking Information
+
+
+
+
+www.irf.com                                                                                                                                                             9
+IRFR/U5305
+
+
+D-Pak (TO-252AA) Tape & Reel Information
+Dimensions are shown in millimeters (inches)
+
+                                             TR                                                      TRR      TR L
+
+
+
+                                                                1 6 .3 ( .6 4 1 )                                             1 6 .3 ( .64 1 )
+                                                                1 5 .7 ( .6 1 9 )                                             1 5 .7 ( .61 9 )
+
+
+
+            1 2 .1 ( .4 7 6 )                                                       8 .1 ( .3 18 )
+                                                      FE E D D IR E C TIO N                                          FE E D D IR E C T IO N
+            1 1 .9 ( .4 6 9 )                                                       7 .9 ( .3 12 )
+
+            N O T ES :
+            1 . C O N T R O L L IN G D IM EN S IO N : M IL L IM ET E R .
+            2 . AL L D IM EN SIO N S AR E SH O W N IN M IL L IM ET E R S ( IN C H E S ).
+            3 . O U TL IN E C O N F O R M S T O E IA -4 81 & E IA -54 1 .
+
+
+
+
+                                1 3 IN C H
+
+
+
+
+                                                                                                     16 m m
+             N O T ES :
+             1 . O U TL IN E C O N F O R M S T O E IA-4 8 1 .
+
+
+
+
+                    IR WORLD HEADQUARTERS: 233 Kansas St., El Segundo, California 90245, USA Tel: (310) 252-7105
+      IR EUROPEAN REGIONAL CENTRE: 439/445 Godstone Rd, Whyteleafe, Surrey CR3 OBL, UK Tel: ++ 44 (0)20 8645 8000
+                                           IR CANADA: 15 Lincoln Court, Brampton, Ontario L6T3Z2, Tel: (905) 453 2200
+                                     IR GERMANY: Saalburgstrasse 157, 61350 Bad Homburg Tel: ++ 49 (0) 6172 96590
+                                                 IR ITALY: Via Liguria 49, 10071 Borgaro, Torino Tel: ++ 39 011 451 0111
+                  IR JAPAN: K&H Bldg., 2F, 30-4 Nishi-Ikebukuro 3-Chome, Toshima-Ku, Tokyo 171 Tel: 81 (0)3 3983 0086
+ IR SOUTHEAST ASIA: 1 Kim Seng Promenade, Great World City West Tower, 13-11, Singapore 237994 Tel: ++ 65 (0)838 4630
+                       IR TAIWAN:16 Fl. Suite D. 207, Sec. 2, Tun Haw South Road, Taipei, 10673 Tel: 886-(0)2 2377 9936
+                                                           Data and specifications subject to change without notice. 10/00
+10                                                                                                                                               www.irf.com
+Note: For the most current drawings please refer to the IR website at:
+                   http://www.irf.com/package/
+

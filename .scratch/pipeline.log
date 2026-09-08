@@ -1,0 +1,13 @@
+== gen_project
+single-pin named nets: []
+== gen_pcb (plane only, 2 mm spacing)
+residual courtyard overlaps: 0 []
+wrote /home/lolz0r/tng/wpc_power_driver_cost/wpc_power_driver_cost.kicad_pcb footprints 397 nets 389
+== GND stitching
+placed 157 stitch vias; failed: []
+== fast router
+routed 1201 links in 2847.8 s, 400 rip-ups (1222 items), failed: ['/Power_Supply/U20_EN', '/Power_Supply/U21_EN', 'CLK_SOL_GEN', 'D0', 'D2', 'D3', 'D4_N', 'D5_N', 'FLIP_RLY_L', 'GI1_L', 'GI2_L', 'GI5_L', 'GI_BIT6', 'REF_1V4']
+== DRC repair loop
+round 0: 5 errors, 13 open (non-GND), 0 GND open
+  removed 19 track items around 9 error positions
+Done                       python3 -u $MOD/drc_repair.py .scratch/flow.kicad_pcb --rounds 6 --max-ripup 500 | cut -c1-300

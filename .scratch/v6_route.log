@@ -1,0 +1,87 @@
+  net AC98_B: 5 -> 1 components, 4 links, 0.1 s
+  net /Power_Supply/AC98_A_F: 5 -> 1 components, 4 links, 0.1 s
+  net /Power_Supply/AC13_A_F: 5 -> 1 components, 4 links, 0.1 s
+  /Power_Supply/+5V_RAW: routed with class BusN (neck-down)
+  rip-up #1: /Power_Supply/+5V_RAW crosses [] (0 items removed)
+  rip-up #2: /Power_Supply/+5V_RAW crosses [] (0 items removed)
+  rip-up #3: /Power_Supply/+5V_RAW crosses [] (0 items removed)
+  /Power_Supply/+5V_RAW: routed with class BusN (neck-down)
+  /Power_Supply/+5V_RAW: routed with class BusS (neck-down)
+  rip-up #4: /Power_Supply/+5V_RAW crosses ['SOL04_L'] (2 items removed)
+  net /Power_Supply/+5V_RAW: 8 -> 1 components, 6 links, 22.2 s
+  rip-up #5: AC13_B crosses ['/Power_Supply/AC13_A_F'] (2 items removed)
+  net AC13_B: 5 -> 1 components, 4 links, 4.1 s
+  net AC16_A_F: 7 -> 1 components, 6 links, 0.2 s
+  net AC16_B: 7 -> 1 components, 6 links, 0.2 s
+  net +12VU: 8 -> 1 components, 6 links, 1.6 s
+  rip-up #6: +20V crosses ['D0', 'SOL19_L'] (11 items removed)
+  rip-up #7: +20V crosses ['+12VU', 'CLK_LAMP_COL', 'D3_N'] (11 items removed)
+  +20V: routed with class BusN (neck-down)
+  net +20V: 12 -> 1 components, 11 links, 13.2 s
+  AC9_B: routed with class BusN (neck-down)
+  net AC9_B: 5 -> 1 components, 2 links, 5.6 s
+  rip-up #8: AC9_AF crosses ['+5V', 'D7'] (2 items removed)
+  rip-up #9: AC9_AF crosses ['D7'] (1 items removed)
+  AC9_AF: routed with class BusN (neck-down)
+  net AC9_AF: 6 -> 1 components, 5 links, 10.0 s
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  rip-up #10: +18V crosses [] (0 items removed)
+  rip-up #11: +18V crosses [] (0 items removed)
+  rip-up #12: +18V crosses [] (0 items removed)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusS (neck-down)
+  net +18V: 27 -> 1 components, 26 links, 58.7 s
+  net ROWCLR1: 3 -> 1 components, 2 links, 0.0 s
+  net CLK_LAMP_ROW: 3 -> 1 components, 2 links, 0.2 s
+  net SOL04_L: 2 -> 1 components, 1 links, 0.0 s
+  net /Power_Supply/AC13_A_F: 2 -> 1 components, 1 links, 0.0 s
+  net D0: 2 -> 1 components, 1 links, 0.2 s
+  rip-up #13: SOL19_L crosses ['D7'] (1 items removed)
+  net SOL19_L: 2 -> 1 components, 1 links, 5.5 s
+  rip-up #14: +12VU crosses ['+5V'] (1 items removed)
+  net +12VU: 2 -> 1 components, 1 links, 4.6 s
+  net CLK_LAMP_COL: 2 -> 1 components, 1 links, 0.1 s
+  net D3_N: 2 -> 1 components, 1 links, 0.2 s
+  rip-up #15: +5V crosses ['SOL02_L'] (1 items removed)
+  net +5V: 3 -> 1 components, 2 links, 9.9 s
+  net D7: 5 -> 1 components, 4 links, 0.7 s
+  net SOL02_L: 2 -> 1 components, 1 links, 0.0 s
+routed 102 links in 140.7 s, 15 rip-ups (32 items), failed: []
+== v6 reroute done
+round 0: 59 errors, 1 open (non-GND), 1 GND open
+    clearance | Track [+18V] on B.Cu, length 17.0000 mm / Track [COLB5] on B.Cu, length 1.6000 mm
+    shorting_items | Pad 2 [GND] of D108 on F.Cu / Via [D1_N] on F.Cu - B.Cu
+    clearance | Pad 2 [GND] of D108 on F.Cu / Track [D1_N] on F.Cu, length 0.4000 mm
+    shorting_items | Track [D1_N] on F.Cu, length 22.8000 mm / Pad 1 [AC9_AF] of D107 on F.Cu
+    shorting_items | Pad 1 [AC9_AF] of D107 on F.Cu / Track [D3_N] on F.Cu, length 24.0000 mm
+    clearance | Track [D3_N] on F.Cu, length 2.8000 mm / Pad 2 [GND] of D107 on F.Cu
+    open: Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7 / Track [+12VU] on F.Cu, length 2.4000 mm @38.4,63.2
+   routed 36 links in 92.2 s, 10 rip-ups (11 items), failed: ['CLK_LAMP_ROW']
+round 1: 2 errors, 2 open (non-GND), 0 GND open
+    courtyards_overlap | Footprint C30 / Footprint SR2
+    courtyards_overlap | Footprint B12 / Footprint B13
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 1.0 @384.6,148.2 / Track [CLK_LAMP_ROW] on In2.Cu, length 2 @384.6,148.2
+    open: Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7 / Track [+12VU] on F.Cu, length 2.4000 mm @38.4,63.2
+   routed 1 links in 25.4 s, 3 rip-ups (1 items), failed: ['CLK_LAMP_ROW']
+round 2: 2 errors, 2 open (non-GND), 0 GND open
+    courtyards_overlap | Footprint C30 / Footprint SR2
+    courtyards_overlap | Footprint B12 / Footprint B13
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 1.0 @384.6,148.2 / Track [CLK_LAMP_ROW] on In2.Cu, length 2 @384.6,148.2
+    open: Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7 / Track [+12VU] on F.Cu, length 2.4000 mm @38.4,63.2
+   routed 1 links in 25.4 s, 3 rip-ups (1 items), failed: ['CLK_LAMP_ROW']
+round 3: 2 errors, 2 open (non-GND), 0 GND open
+    courtyards_overlap | Footprint C30 / Footprint SR2
+    courtyards_overlap | Footprint B12 / Footprint B13
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 1.0 @384.6,148.2 / Track [CLK_LAMP_ROW] on In2.Cu, length 2 @384.6,148.2
+    open: Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7 / Track [+12VU] on F.Cu, length 2.4000 mm @38.4,63.2
+== v6 repair done rc=0

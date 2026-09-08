@@ -1,0 +1,17 @@
+XSPICE test
+Vclk clk 0 PULSE(0 5 100n 5n 5n 370n 1u)
+Vd d 0 PULSE(0 5 50n 5n 5n 600n 2u)
+.model adc adc_bridge(in_low=1.0 in_high=2.0)
+.model dac dac_bridge(out_low=0 out_high=5)
+.model dff d_dff(clk_delay=20n set_delay=20n reset_delay=20n ic=0 rise_delay=20n fall_delay=20n)
+Aadc [clk d] [dclk dd] adc
+Adff dd dclk NULL NULL dq NULL dff
+Adac [dq] [q] dac
+Rq q 0 1k
+.tran 1n 3u
+.control
+run
+meas tran q_max MAX v(q) from=0 to=3u
+meas tran q_at1 FIND v(q) AT=1u
+.endc
+.end

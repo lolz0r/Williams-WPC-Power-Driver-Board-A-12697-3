@@ -1,0 +1,193 @@
+# WPC Power Driver Board - cost-optimised modern version
+
+A cost-reduced variant of `../wpc_power_driver_modern/` (the modern-component functional replacement for the Williams WPC Power Driver
+Board **A-12697-3**).  Same 449.2 x 272.9 mm outline, every connector, fuse, bridge rectifier, big capacitor and mounting hole in its
+original position and with the original pin-outs, so it still drops into a WPC cabinet with the original harness.  The design goal was a
+**quantity-100 parts cost of about 105-115 USD** with **no Chinese-brand parts** (DigiKey/Mouser-stocked Infineon, TI, Nexperia, Vishay,
+Diodes Inc, Toshiba, ST, Rubycon, Nichicon, Panasonic, Molex, 3M, Littelfuse, Keystone, Bourns, Yageo, Samsung, Lite-On) and **robust
+margins kept** (SPICE-verified, see below).
+
+Everything is script-generated with the same tool-chain as the modern board: `python3 tools/gen_project.py` (schematics, `.kicad_pro`,
+netlist), `NO_ZONES=1 python3 tools/gen_pcb.py` (placed board), `python3 tools/bom_report.py` (BOM + cost roll-up),
+`flatpak run --command=python3 org.kicad.KiCad tools/spice/run_all.py` and `python3 tools/spice/compare.py` (SPICE suite + comparison).
+Design: `tools/design_cost.py`, sourcing table: `tools/sourcing.py`, placement: `tools/placement_cost.py`.
+
+## What changed versus the modern board, and why
+
+| block | modern board | cost board | why / effect |
+|---|---|---|---|
+| solenoid / flasher MOSFETs (28) | IRLB4030PBF TO-220 (100 V, 4.3 mOhm) | **Infineon IRLR3110ZTRPBF** DPAK (100 V, 14 mOhm @10 V / 16 mOhm @4.5 V, logic level), same 100 R gate / 10 k pull-down / SMA-SMC tie-back | reel-priced SMD part, ~40 % of the modern MOSFET cost; drop 0.23 V instead of 0.07 V at 12 A (still 7x better than the 1993 TIP36C) |
+| lamp rows (8) | IRLZ44NPBF TO-220 (22 mOhm) | **Infineon IRLR024NTRPBF** DPAK (55 V, 65 mOhm @10 V / 78 mOhm @5 V) | cheapest logic-level DPAK from an allowed brand that is in stock; row drop 0.62 V incl. the 0.22 R sense (was 0.51 V) |
+| lamp columns (8) | IRF9Z34NPBF TO-220 (100 mOhm) | **Infineon IRFR5305TRPBF** P-DPAK (-55 V, 65 mOhm @-10 V) | cheaper and lower Rds(on): column drop 0.12 V (was 0.20 V) |
+| bridges | 4 x GBPC3510 (35 A block) + GBU4J-BP (MCC) | BR3 +50 V: **GBPC3510-E4/51** kept; BR1 +18 V and BR4 +20 V: **Diodes GBJ1510-F** (15 A GBJ, project footprint `wpc_cost:Diode_Bridge_GBJ`); BR2 +5 V raw: **Vishay GBU8J-E3/51**; BR5: **Vishay GBU4J-E3/51** | GBJ/GBU are ~1/3 of the block price; BR5 changed only to replace the MCC part (Chinese brand) |
+| big electrolytics | 4 x 15000 uF / 35 V (Rubycon 25 x 45 mm) | C5, C6, C7, C11: **Rubycon 25USC10000MEFCSN25X25** (10000 uF / 25 V, 25 x 25 mm); C8/C32 2 x 2200 uF / 100 V kept | rails are 9-20 V so 25 V parts have the same 20-25 % margin the 35 V parts had at 20 V; one part number for all four |
+| +5 V / +12 V bucks | 2 x TPS54560BDDAR (5 A) | 2 x **TI TPS54360BDDAR** (60 V, 3.5 A, same HSOP-8 pin-out); +5 V rated 3 A, +12 V 2 A; same SRP1265A-100M / B560C | the CPU/DMD/sound loads are < 3 A; feedback (10.5 k / 28 k over 2 k, Vref 0.8 V), RT (240 k -> 405 kHz) and compensation recomputed from the TPS54360B datasheet (below) |
+| fuses | 3AG (6.3 x 32 mm), Littelfuse 313/312 + 102071 clips | **5 x 20 mm**: Littelfuse **239 series Slo-Blo** 0239007 / 0239005 / 0239003 / 0239.750 and **0217008** (8 A fast) in **Keystone 3517** clips; each fuse centred on the original 3AG position (see below) | clip + fuse cost roughly halves |
+| test points TP1-TP9 | Keystone 5000 | plain 2.0 mm plated pads (`TestPoint_THTPad_D2.0mm_Drill1.0mm`), no purchased part | -9 parts |
+| everything else | | unchanged: 74HCT574 / 74HCT74 / LM339 logic, TBD62083A column driver, BTA16-600CRG triacs with MMBT4401 emitter-follower drive, all connectors and pin-outs, 0805 / 2512 passives, SMA / SMC / SOD-123 diodes, LEDs, relay option (DNP), 4-layer stack, netclasses | |
+
+### Buck converter values (TPS54360B, datasheet SNVSB93 section 8.2.2)
+
+gm(ea) = 350 uA/V, gm(ps) = 12 A/V (TPS54560B: 17 A/V), Vref = 0.8 V, current limit 4.5 A minimum / 5.5 A typical, fsw = 405 kHz with
+RT = 240 k (Rt = 101756 x fsw^-1.008).  Output filter 2 x 330 uF Panasonic FR (45 mOhm each) + 10 uF = 670 uF / 22 mOhm.
+
+| | fp_mod = Iout / (2 pi Vout Cout) | fz_mod = 1 / (2 pi Resr Cout) | fco = sqrt(fp_mod x fsw/2) (eq. 47) | Rc (eq. 48) | Cc (eq. 49) | Cp (eq. 50) | EN/UVLO divider |
+|---|---|---|---|---|---|---|---|
+| +5 V, 3 A (U20) | 142 Hz | 10.7 kHz | 5.3 kHz | 33.2 k | 33 nF | 470 pF | 118 k / 29.4 k: start 5.9 V, stop 5.5 V nominal (see "UVLO thresholds" below) |
+| +12 V, 2 A (U21) | 40 Hz | 10.7 kHz | 2.8 kHz | 42.2 k | 100 nF | 390 pF | 130 k / 20 k: start 8.8 V, stop 8.4 V nominal |
+
+The datasheet's other crossover option (eq. 46, geometric mean of modulator pole and ESR zero: 1.2 kHz / 650 Hz) was simulated first: with the
+large electrolytic output filter it gave Rc 7.68 k / Cc 150 nF and 10 k / 470 nF, a 4.69 V dip on a 1 -> 3 A step and a +12 V rail that
+needed > 10 ms to reach its set point after soft-start.  Eq. 47 keeps the crossover below fsw/10 and between the modulator pole and the ESR
+zero, as the method requires, and gives 4.90 V / 11.82 V on the load steps.
+
+### UVLO thresholds (brownout analysis)
+
+TPS54360B EN pin: threshold Vena = 1.2 V (1.1-1.3 V), the pin *sources* 1.2 uA below and 4.6 uA above the threshold, so
+Vstart = Vena + R1 (Vena/R2 - 1.2 uA) and Vstop = Vena + R1 (Vena/R2 - 4.6 uA) (datasheet eq. 40/41).  The raw +5 V rail (9 VAC winding,
+GBU8J, C5 = 10000 uF) was swept with the averaged buck model (`tools/spice/uvlo_sweep.py`, table in `output/spice/uvlo_sweep.md`):
+
+| mains | 100 % | 90 % | 88 % | 85 % |
+|---|---|---|---|---|
+| raw minimum at 2 A (V) | 9.10 | 7.67 | 7.38 | 6.93 |
+| raw minimum at 3 A (V) | 8.34 | 6.80 | 6.48 | 5.98 |
+| raw ripple p-p at 3 A (V) | 1.03 | 1.17 | 1.20 | 1.26 |
+
+The converter regulates 5.0 V down to Vin = 5.6 V.  A divider like the modern board's first attempt (start 7.2 V) would switch the +5 V
+off in any brownout below ~92 % at 3 A; even the modern board's final 82 k / 20 k (stop 5.74 V nominal, 6.25 V at Vena = 1.3 V) leaves
+only 0.23 V worst-case margin at 88 % / 3 A because the cost board's raw rail is ~0.6 V lower (10000 uF, higher-Rs GBU8J).  Chosen: **118 k /
+29.4 k -> start 5.9 V / stop 5.5 V nominal (6.4 / 6.0 V at Vena = 1.3 V, 5.4 / 5.0 V at 1.1 V)**: the stop level sits just below the
+5.6 V regulation limit, so in a deep brownout the converter droops (Vout = 0.97 Vin - 0.5) instead of shutting down, and at 88 % / 3 A the raw
+minimum (6.48 V) is 1.0 V above the nominal and 0.5 V above the worst-case stop level; at 85 % / 3 A (5.98 V) it reaches the regulation
+limit anyway.  +12 V: **130 k / 20 k -> start 8.8 V / stop 8.4 V** (9.5 / 9.1 V worst case), well under the 11.35 V that the +20 V rail keeps at
+88 % mains with all eight flashers hot; the +12 V then droops to 10.5 V rather than dropping out.  The stress decks model both stop levels
+with a smooth 0.5 (1 + tanh((Vin - Vstop) 40)) factor (5.6 V / 8.5 V, i.e. the Vena = 1.22 V values).
+
+### Fuse position check
+
+`tools/gen_pcb.py` places every footprint by its pad centroid.  The Keystone 3517 footprint (pads at 0 / 6.76 / 16.35 / 23.11 mm, centroid
+11.555 mm) and the 3AG 102 clip footprint (0 / 7.62 / 26.59 / 34.21 mm, centroid 17.105 mm) both have their centroid at the fuse centre, so
+every 5 x 20 mm fuse sits centred on the original 3AG position; `.scratch/placed.json` of both projects agrees to <= 0.12 mm for all
+sixteen positions (F106-F108 moved 0.12 mm during the courtyard relaxation).  Fuses, bridges, connectors and the C5/C6/C7/C11/C30
+capacitors are now anchored (`fixed`) in the relaxation so they cannot drift.
+
+## Cost
+
+`output/bom/BOM-cost.md` (one DigiKey link per line item, qty-1 and qty-100 columns, cost by group) and `output/bom/bom_*.csv`
+(`kicad-cli sch export bom` with Reference, Value, Footprint, Manufacturer, MPN, Link, Price, Price100, Description).  Qty-1 prices are the
+DigiKey/Mouser single-unit prices seen during sourcing where they were visible (a `~` marks the 266 small parts - mostly 0805 passives -
+that carry an estimate so the roll-up is complete).  Qty-100 prices are estimates for buying 100 boards' worth (reel / 1000-piece breaks
+for the parts used 8-32 times per board, 100-piece breaks otherwise; where no break was visible: 0.55-0.7x qty-1 for semiconductors,
+0.3x passives, 0.6x connectors / electromechanical).  Fuse clips (32) and the five triac heatsinks are included as synthetic lines.
+
+| group | parts | per board, qty 1 (USD) | per board, qty 100 (USD) |
+|---|---|---|---|
+| MOSFETs (44 DPAK) | 44 | 77.20 | 32.48 |
+| Connectors (KK-396 / KK-254 / box header) | 34 | 28.16 | 18.24 |
+| Electrolytic capacitors | 7 | 20.20 | 12.45 |
+| Fuses + clips (16 positions) | 46 | 27.67 | 10.00 |
+| Buck converters (IC, inductor, diode) | 6 | 14.48 | 9.30 |
+| Bridge rectifiers | 5 | 16.25 | 8.90 |
+| Triacs + gate transistors + heatsinks | 15 | 10.60 | 6.75 |
+| Logic / comparators / driver | 14 | 8.67 | 4.83 |
+| SMD passives | 195 | 25.45 | 4.32 |
+| Diodes + LEDs | 37 | 9.62 | 3.55 |
+| Misc (SIP network, test points) | 13 | 2.48 | 1.20 |
+| **components per board** | **416** | **240.78** | **112.02** |
+
+The qty-100 total (**~112 USD**) lands inside the 105-115 USD target of `../wpc_power_driver_modern/output/bom/COST-ESTIMATE-Q100.md`.
+The biggest uncertainties are the 28 IRLR3110Z (0.78 USD assumed at reel quantity; every 0.10 USD moves the board by 2.80 USD) and the
+connectors (18 USD; the five N/C spare headers J108/J109/J110/J111/J123 could be omitted for another ~2.5 USD).  Not included: the bare
+4-layer PCB, assembly, the chassis heatsink / hardware for BR1-BR3, M4 hardware.
+
+## SPICE verification
+
+`flatpak run --command=python3 org.kicad.KiCad tools/spice/run_all.py` runs twelve ngspice decks (`tools/spice/decks/`, the modern suite incl. its `psu_maxload` / `psu_brownout` stress
+cases plus a new `buck_12v.cir`) and writes `output/spice/RESULTS.md` (**79 / 79 checks pass**) plus waveform CSVs; `python3 tools/spice/compare.py`
+writes `output/spice/COMPARISON.md` (modern vs cost).  Model changes: level-1 MOSFET fits to the DPAK datasheets (IRLR3110Z ~18 mOhm at the
+4.6 V HCT gate drive, IRLR024N ~80 mOhm at 4.6 V, IRFR5305 65 mOhm at -10 V), a TPS54360B behavioural peak-current-mode model (12 A/V,
+4.5 A minimum current limit, 400 kHz), bridge elements with a higher series resistance than the 35 A block (GBJ15 60 mOhm, GBU8 80 mOhm,
+Vf ~1.3 V modelled at rated current - pessimistic) and the 10000 uF capacitors with the new loads (+5 V 3 A / 1.67 ohm, +12 V 2 A / 6 ohm).
+Every limit in `run_all.py` carries its justification; the ones that changed:
+
+| check | modern | cost | limit and reason |
+|---|---|---|---|
+| high-power driver drop at 12 A | 0.07 V | **0.23 V** | <= 0.3 V = 25 mOhm, above the 16 mOhm datasheet maximum at 4.5 V incl. heating |
+| high-power driver dissipation during a 40 ms pulse | 0.9 W | **2.9 W** | <= 3.5 W: 0.1 J per pulse into the DPAK tab; at <= 10 % duty the average stays < 0.4 W, which a DPAK on 1 sq. in. of copper (~50 C/W) holds with a 20 C rise |
+| low-power driver drop / dissipation | 0.03 V / 0.18 W | **0.10 V / 0.57 W** | <= 0.2 V, <= 1 W (continuous DPAK limit on 1 sq. in. at 50 C rise) |
+| flasher driver drop | 0.006 V | 0.02 V | <= 0.1 V |
+| lamp row drop incl. 0.22 R sense | 0.51 V | **0.62 V** | <= 0.8 V keeps > 17 V on the 18 V lamp string |
+| lamp column drop | 0.20 V | 0.12 V (better) | <= 0.3 V |
+| lamp-row fault current before shutdown | 15.1 A | 8.4 A | >= 6.4 A trip; shutdown still 0.16 ms after the strobe, 2.5 mA afterwards |
+| +18 V average / ripple (5 ohm) | 13.9 V / 0.55 V | 14.0 V / **0.78 V** | >= 13 V, ripple <= 3 V (20 % of the rail, the largest 120 Hz brightness flicker acceptable) |
+| +5 V raw minimum at full load | 7.5 V at 5 A | **8.3 V at 3 A** | >= 6.5 V: TPS54360B needs 5.6 V for 5 V out, UVLO start 6.0 V + 0.5 V; ripple 1.0 V p-p |
+| +20 V minimum during a 4 A flasher burst | 15.7 V | **15.2 V** | >= 13.0 V: the +12 V buck needs Vout + Vf + Rds x Iout = 12.9 V to stay in regulation; +12 V stayed at 12.00 V |
+| +50 V during a 12 A pulse | 38.1 V avg / 32.0 V min | 38.1 V / 32.0 V | unchanged parts |
+| +5 V buck (switching model): ripple / 1 -> 3 A step / peak inductor current | 24 mV / 4.80 V (1 -> 5 A) / 6.5 A | 27 mV / **4.90 V** / **3.65 A** | undershoot >= 4.6 V (HCT / CPU-board minimum with margin); peak current 3.0-4.3 A must stay below the 4.5 A minimum current limit - this is the real capability limit of the smaller buck: 3 A continuous with a 0.9 A margin, not 5 A |
+| +12 V buck (new deck): 1 -> 2 A step / peak current | - | 11.82 V / 3.28 A | >= 11.4 V; below the 4.5 A limit |
+
+### Stress cases (everything on, brownout) vs the modern board
+
+| quantity (`psu_maxload` / `psu_brownout`) | modern | cost | limit and reason |
+|---|---|---|---|
+| +18 V minimum, all 64 lamps lit (2.5 ohm, 5.05 A average) | 12.19 V | **12.01 V** | >= 10 V, lamps stay usable |
+| +18 V GBJ1510 repetitive peak current | - | 17.7 A | <= 60 A (4 x the 15 A rating; surge rating 240 A) |
+| +5 V raw minimum, everything on (3 A vs 5 A) | 7.54 V | **8.34 V** | >= 6.0 V (worst-case UVLO stop) |
+| +5 V raw GBU8J repetitive peak current | - | 7.7 A | <= 32 A (4 x 8 A; surge 200 A) |
+| +20 V minimum during the 8-flasher cold inrush (50.9 A peak) | 12.29 V | **10.95 V** | >= 9.0 V (9.1 V worst-case UVLO stop of the +12 V buck) |
+| +20 V GBJ1510 peak current during the inrush | - | 32.0 A | <= 60 A repetitive guideline; the 240 A surge rating covers the first cycles |
+| +12 V minimum during the inrush | 11.43 V | **10.12 V** | >= 8 V: the buck droops but never shuts down |
+| +50 V average / minimum with 2 HP + 4 LP coils (31 A) fired together | 27.7 V / 14.4 V | 27.7 V / 14.4 V | informational, unchanged parts; bridge peak 60.9 A vs 400 A surge |
+| brownout 88 %: +5 V raw minimum (3 A; modern 3.5 A) | 6.59 V | **6.48 V** | >= 6.0 V worst-case UVLO stop; +5 V stays 5.00 V |
+| brownout 88 %: +20 V minimum, 8 flashers hot | 11.97 V | **11.35 V** | >= 9.5 V |
+| brownout 88 %: +12 V | 11.11 V | **10.51 V** | >= 10 V: droops (0.97 Vin - 0.5) when +20 V < 12.9 V; runs the switch matrix / opto loads and the CPU-board 5 V pre-regulators |
+
+What got worse, in one line: solenoid driver drops triple (0.07 -> 0.23 V at 12 A, still 7x better than the original TIP36C), lamp-row drop
++0.11 V, +18 V ripple +0.2 V, +20 V sag +0.5 V, +5 V continuous capability 5 A -> 3 A (3.65 A peak inductor current against a 4.5 A minimum
+current limit), the +5 V raw rail has 1.0 V ripple, and in the stress cases the +20 V rail sags 1.3 V (0.6 V in a brownout) further than on the modern board so the +12 V droops to 10.1-10.5 V there - all inside the limits above.  The +5 V raw minimum is actually higher than on the
+modern board because the buck now draws 3 A instead of 5 A.
+
+## Sourcing notes
+
+* **IRLR024NPBF** (tube) is out of stock at DigiKey with no back-orders; the tape-and-reel **IRLR024NTRPBF** (DigiKey 812549, "ships today";
+  Mouser 1.02 USD) is used.  Alternatives checked and rejected: IRLR2905 (3000-piece minimum / back-order), onsemi NTD/NVD5867NL (obsolete).
+* **IRFR5305PBF** (tube) is out of stock; **IRFR5305TRPBF** (DigiKey 811407, Mouser 1.98 USD) is used.
+* **Nichicon LGN1E682MELZ** does not exist at DigiKey; the 6800 uF / 25 V candidates that do (Nichicon LLS1E682MELZ 22 x 30 mm, Rubycon
+  25USC6800MEFCSN22X25) are both out of stock / back-order, so C5 uses the same in-stock **Rubycon 25USC10000MEFCSN25X25** as C6/C7/C11
+  (more capacitance on the buck input, one part number for four positions).
+* **VS-KBPC2510 / GBPC2510** for BR3: the Vishay GBPC2510-E4/51 is more expensive (8.35 USD) than the GBPC3510-E4/51 (6.36 USD, 4.26 USD at
+  100), the Diodes GBPC2510 is obsolete and the stocked KBPC2510 alternatives are Chinese brands (Comchip, SMC), so BR3 keeps the 35 A Vishay
+  block.  Diodes Inc **GBJ1510-F** (1.22 USD at 100) is used for BR1/BR4; the GBJ package has no KiCad library footprint, so
+  `footprints/wpc_cost.pretty/Diode_Bridge_GBJ.kicad_mod` was written from the Diodes DS21221 outline (30 x 20 x 4 mm, leads `+ ~ ~ -` at
+  10.0 / 7.5 / 7.5 mm, 1.3 mm drills) and registered in `fp-lib-table`.
+* **GBU4J-BP** (MCC) replaced by Vishay **GBU4J-E3/51** (2.67 USD at 1, Chinese-brand rule).
+* **Fuses**: the Littelfuse 218 series (IEC, 250 V) has no 7 A, 3 A or 3/4 A ratings (6.3 / 3.15 / 0.8 A only), so the UL **239 Slo-Blo**
+  series with the exact original ratings is used: 0239007.MXP (7 A, 125 V), 0239005.MXP (5 A, 125 V), 0239003.MXP (3 A, 250 V),
+  0239.750MXP (3/4 A, 250 V); the 8 A fast fuse is 0217008.MXP (217 series, 250 V).  125 V is ample for the <= 36 VAC / 50 VDC secondaries;
+  the 239 series is rated 10 kA interrupting at 125 V.  Clips: Keystone **3517** (0.32 USD at 1, 0.18 at 100, 0.13 at 5000) instead of the
+  Littelfuse 520-series clip (no PCB-clip part number could be verified).
+* **TPS54360BDDAR**: DigiKey 10434703, 4.52 USD at 1.
+* DigiKey product pages block automated fetches, so prices come from search-result snippets and distributor listings; qty-100 prices are
+  estimates (see `tools/sourcing.py` for the rule used per part).  Nothing on the BOM is from a Chinese brand.
+
+## Board
+
+* Same outline, stack-up (4-layer, In1.Cu GND plane), netclasses, mounting holes and keep-out drawings as the modern board.
+* `NO_ZONES=1 python3 tools/gen_pcb.py` writes the **placed, unrouted** board `wpc_power_driver_cost.kicad_pcb`; `kicad-cli pcb drc`
+  reports 0 violations and 499 unconnected items (`output/reports/drc_unrouted.json`); ERC: 0 errors, 0 warnings (`output/reports/erc.json`).
+* The DPAK MOSFETs keep the TO-220 spots, the GBJ bridges the GBPC block spots (they fit inside the old chassis-heatsink footprint), the
+  GBU8J the BR2 spot, the 25 x 25 mm capacitors the 25 mm snap-in spots.
+
+## Renders (`output/3d/`)
+
+`kicad-cli pcb render --quality high` of the placed board: `wpc_power_driver_cost-top-4k.png` (3840 x 2160, zoom 1.05),
+`wpc_power_driver_cost-perspective-4k.png` (`--perspective --rotate "-35,0,20" --zoom 1.15 --floor`), `wpc_power_driver_cost-bottom-4k.png`
+and `wpc_power_driver_cost-top-1080p.png`.  3D models: the project GBJ footprint carries the KiCad Diotec 32 x 17 mm bridge model scaled to the
+GBJ body (30 x 20 x 4 mm); four library footprints reference STEP files that are not shipped in this KiCad 3D package and get stand-ins in
+`tools/kicad_pcb.py` (render only): Keystone 3517 clips -> Schurter 0031.8201 open 5 x 20 mm holder (with fuse), SRP1245A -> Bourns SRR1260
+(scaled 1.04), Texas HSOP-8 -> generic HSOP-8-1EP, Omron G2RL-2 (DNP) -> G2RL.  The KK-396 headers use the KK-254 model scaled 1.56 as on the
+modern board.  Only the eight M4 mounting holes and the nine plated test pads have no model (nothing to show).
+
+**Not done: routing.**  Routing (Freerouting / `tools/satroute.py` / zones) was deliberately not run; the board is delivered placed and
+unrouted.  Also not verified: live DigiKey prices (see above), the GBJ footprint against a physical part (the coordinator's note quoted a 21.5 x 20 mm / 5 mm-pitch GBJ; Diodes DS21221, read directly, gives 30 x 20 x 4 mm with 10 / 7.5 / 7.5 mm lead gaps - the footprint follows the datasheet), the thermal behaviour of the DPAK
+solenoid drivers on the final copper (the SPICE limits assume ~1 sq. in. of copper per DPAK tab), and the TPS54360B loop on a first article.

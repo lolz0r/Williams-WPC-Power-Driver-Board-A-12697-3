@@ -1,0 +1,28 @@
+Cost-board low-power solenoid driver (sol 9-16): 74HCT574 (4.6 V / 40 R) -> 100R -> IRLR3110Z DPAK (10k pull-down) -> 9 ohm coil on +50V, S1M tie-back
+.include ../models.lib
+V50 v50 0 50
+VL latch 0 PULSE(0 4.6 1m 20n 20n 40m 100m)
+RL latch a 40
+Rg a g 100
+Rpd g 0 10k
+XQ col g 0 IRLR3110Z
+Vcoil v50 v50c 0
+Lc col cl 25m
+Rc cl v50c 9
+Dfb col v50 DS1M
+.tran 5u 60m
+.control
+run
+let icoil = i(Vcoil)
+let ilatch = -i(VL)
+let pfet = v(col)*icoil
+meas tran icoil_max MAX icoil from=1m to=41m
+meas tran vce_on AVG v(col) from=30m to=40m
+meas tran vcol_peak MAX v(col) from=41m to=60m
+meas tran i_latch AVG ilatch from=30m to=40m
+meas tran icoil_off MAX icoil from=56m to=60m
+meas tran vgs_on AVG v(g) from=30m to=40m
+meas tran p_fet AVG pfet from=30m to=40m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/sol_low.csv v(col) icoil v(latch) v(g)
+.endc
+.end

@@ -1,0 +1,32 @@
+round 0: 3 errors, 0 open (non-GND), 0 GND open
+    clearance | Pad 1 [+5V] of B13 on F.Cu / Track [D1] on F.Cu, length 1.8000 mm
+    clearance | Pad 1 [+5V] of B13 on F.Cu / Track [D1] on F.Cu, length 0.2000 mm
+    clearance | Track [+5V] on F.Cu, length 3.0000 mm / Pad 2 [GND] of B13 on F.Cu
+    removed 3
+   routed 4 links in 35.1 s, 3 rip-ups (5 items), failed: ['D1']
+round 1: 0 errors, 1 open (non-GND), 0 GND open
+    open: Track [D1] on F.Cu, length 1.8000 mm @385.0,143.2 / Track [D1] on F.Cu, length 0.8000 mm @384.8,146.8
+   routed 5 links in 24.1 s, 2 rip-ups (9 items), failed: []
+round 2: 0 errors, 0 open (non-GND), 0 GND open
+clean
+== v8 repair done
+== GND stitch vias
+placed 15 stitch vias; failed: ['D108-2', 'C21-2', 'B13-2']
+== rail pours
+rail pours: 24 zones added, 0 thermal vias (144 positions skipped: other-net copper underneath)
+== finish (dedupe, thermal vias, GND pours, refill, stub cleanup)
+.scratch/flow.kicad_pcb: removed 13 duplicate segments, 0 duplicate vias
+helper segments removed: 5
+thermal vias added: 8
+removed 3 colliding thermal vias
+final DRC: {('error', 'clearance'): 1, ('error', 'shorting_items'): 1, ('warning', 'track_dangling'): 109, ('warning', 'via_dangling'): 17, ('warning', 'isolated_copper'): 17, ('warning', 'npth_inside_courtyard'): 1, ('warning', 'hole_to_hole'): 7} unconnected 0
+   clearance Clearance violation (netclass 'Power' clearance 0.2000 mm; actual 0.0590 mm) ['Via [GND] on F.Cu - B.Cu', 'Track [ZERO_CROSS] on B.Cu, length 10.8000 mm']
+   shorting_items Items shorting two nets (nets /Power_Supply/U21_SW and GND) ['Track [/Power_Supply/U21_SW] on In2.Cu, length 4.6', 'Via [GND] on F.Cu - B.Cu']
+removed 415 items; unconnected 0->0, errors 2->2, dangling left 63
+== legend
+legend: 50 labels, 3 title/caution texts, fiducials FID1-3 at corners; board 449.3 x 273.0
+== final DRC
+{('error', 'clearance'): 1, ('error', 'shorting_items'): 1, ('warning', 'track_dangling'): 51, ('warning', 'via_dangling'): 12, ('warning', 'isolated_copper'): 16, ('warning', 'npth_inside_courtyard'): 1, ('warning', 'hole_to_hole'): 7} unconnected 0
+   clearance | Via [GND] on F.Cu - B.Cu @152.1,75.3 / Track [ZERO_CROSS] on B.Cu, length 10.8000 mm @147.6,76.0
+   shorting_items | Track [/Power_Supply/U21_SW] on In2.Cu, lengt @154.6,76.2 / Via [GND] on F.Cu - B.Cu @152.1,75.3
+== finalize done rc=0

@@ -1,0 +1,44 @@
++12V power rail (unregulated, J116/J117/J118): 9.8VAC winding -> F116 -> BR5 (GBU8J) -> C30 10000uF/25V. Case A: the STTNG transformer's measured 12.47 VAC unloaded (17.6 V peak, 0.25 ohm per leg) with 2.5 A of gun motors / optos / DMD / coin door (4.8 ohm) - minimum and ripple; case B: the same winding with only the LED load - maximum voltage on the 25 V capacitor; case C: the manual's nominal 9.8VAC (13.9 V peak) at 2.5 A - pessimistic bound
+.include ../models.lib
+V98a a1 a2 SIN(0 17.63 60)
+Ra1 a1 aa 0.25
+Ra2 a2 ab 0.25
+Vbra aa aab 0
+DA1 aab v12a DGBU8
+DA2 ab v12a DGBU8
+DA3 0 aab DGBU8
+DA4 0 ab DGBU8
+C30a v12a 0 10000u
+Rmota v12a 0 4.8
+V98b b1 b2 SIN(0 17.63 60)
+Rb1 b1 ba 0.25
+Rb2 b2 bb 0.25
+DB1 ba v12b DGBU8
+DB2 bb v12b DGBU8
+DB3 0 ba DGBU8
+DB4 0 bb DGBU8
+C30b v12b 0 10000u
+Rledb v12b 0 1.6k
+V98c c1 c2 SIN(0 13.86 60)
+Rc1 c1 ca 0.05
+Rc2 c2 cb 0.05
+DC1 ca v12c DGBU8
+DC2 cb v12c DGBU8
+DC3 0 ca DGBU8
+DC4 0 cb DGBU8
+C30c v12c 0 10000u
+Rmotc v12c 0 4.8
+.tran 50u 200m uic
+.control
+run
+let ibra = abs(i(Vbra))
+meas tran v12u_min MIN v(v12a) from=150m to=200m
+meas tran v12u_avg AVG v(v12a) from=150m to=200m
+meas tran v12u_ripple PP v(v12a) from=150m to=200m
+meas tran ibr5_peak MAX ibra from=150m to=200m
+meas tran ibr5_rms RMS ibra from=150m to=200m
+meas tran v12u_max_unloaded MAX v(v12b) from=150m to=200m
+meas tran v12u_min_nominal MIN v(v12c) from=150m to=200m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/psu_12vu.csv v(v12a) v(v12b) ibra
+.endc
+.end

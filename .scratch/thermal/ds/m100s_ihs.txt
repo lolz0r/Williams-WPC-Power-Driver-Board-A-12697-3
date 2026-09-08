@@ -1,0 +1,654 @@
+                                                                                                                           STPS20M100S
+
+                                                                                                                                          Datasheet
+
+                                                                                               100 V, 20 A power Schottky rectifier
+
+
+
+                   A
+                                               K
+                                                                 Features
+                   A
+                                                                 •   Low forward voltage drop meaning very small conduction losses
+           K                                                     •   Avalanche rated
+                                                                 •   Low frequency operation
+                               K
+                                   A                     K
+                                                          A
+                                                                 •   Insulated package TO-220FPAB:
+                                                     A
+                           A
+           TO-220AB                        TO-220FPAB
+                                                                     –    Insulating voltage = 2000 VRMS sine
+
+                               K
+                                                                 •   ECOPACK®2 compliant component for D²PAK on demand
+
+
+                                                 A
+                                                                 Applications
+                                               AK
+                                       I2PAK                     •   Switching diode
+                                               K
+               K
+                                                                 •   SMPS
+                                                                 •   DC/DC converter
+                               A                             A
+                       A                                 A
+                                                                 •   LED lighting
+                                       D2PAK
+                                                                 •   Adapter for notebook and game station
+
+
+                                                                 Description
+                                                                 This single Schottky rectifier is suited for high frequency switch mode power supply.
+                                                                 Packaged in TO-220AB, TO-220FPAB, D²PAK and I²PAK, the STPS20M100S is
+                                                                 intended to be used in notebook, game station and desktop adaptors, providing in
+                                                                 these applications a good efficiency at both low and high load.
+               Product status link
+
+                   STPS20M100S
+
+
+               Product summary
+
+         IF(AV)                                      20 A
+
+         VRRM                                      100 V
+
+       VF (typ.)                                   0.61 V
+
+       Tj (max.)                                   150 °C
+
+
+
+
+DS6169 - Rev 5 - February 2019                                                                                                                www.st.com
+For further information contact your local STMicroelectronics sales office.
+                                                                                                                                   STPS20M100S
+                                                                                                                                             Characteristics
+
+
+
+
+1                Characteristics
+
+                  Table 1. Absolute ratings (limiting values with anode terminals short circuited, at 25 °C unless otherwise
+                                                                   specified)
+
+                  Symbol                                                Parameter                                                            Value      Unit
+
+                   VRRM        Repetitive peak reverse voltage                                                                               100            V
+
+                   IF(RMS)     Forward rms current                                                                                            30            A
+
+                                                                                     TO-220AB
+                                                                                     D²PAK              TC = 130 °C
+                   IF(AV)      Average forward current δ = 0.5, square wave                                                                   20            A
+                                                                                     I²PAK
+
+                                                                                     TO-220FPAB         TC = 85 °C
+
+                    IFSM       Surge non repetitive forward current                                     tp = 10 ms sinusoidal                350            A
+
+                   PARM        Repetitive peak avalanche power                                          tp = 10 µs, Tj = 125 °C              1150        W
+
+                    Tstg       Storage temperature range                                                                                -65 to +175      °C
+
+                     Tj        Maximum operating junction temperature (1)                                                                    +150        °C
+
+                 1. (dPtot/dTj) < (1/Rth(j-a)) condition to avoid thermal runaway for a diode on its own heatsink.
+
+
+
+                                                            Table 2. Thermal resistance parameter
+
+                      Symbol                                             Parameter                                                 Value             Unit
+
+                                                                      TO-220AB, D²PAK, I²PAK                                           1.2
+                       Rth(j-c)       Junction to case                                                                                               °C/W
+                                                                      TO-220FPAB                                                       4
+
+
+
+
+                 For more information, please refer to the following application note :
+                 •    AN5088 : Rectifiers thermal management, handling and mounting recommendations
+
+
+                                       Table 3. Static electrical characteristics (anode terminals short circuited)
+
+                    Symbol                     Parameter                          Test conditions                     Min.      Typ.         Max.      Unit
+
+                                                                        Tj = 25 °C                                     -          5                     µA
+                                                                                             VR = 70 V
+                                                                        Tj = 125 °C                                    -          5                    mA
+                      IR (1)      Reverse leakage current
+                                                                        Tj = 25 °C                                     -          10          40        µA
+                                                                                             VR = 100 V
+                                                                        Tj = 125 °C                                    -          10          40       mA
+
+                                                                        Tj = 25 °C                                     -        550
+                                                                                             IF = 5 A
+                                                                        Tj = 125 °C                                    -        455
+
+                                                                        Tj = 25 °C                                     -        660           730
+                     VF (2)       Forward voltage drop                                       IF = 10 A                                                 mV
+                                                                        Tj = 125 °C                                    -        530           600
+
+                                                                        Tj = 25 °C                                     -        775           850
+                                                                                             IF = 20 A
+                                                                        Tj = 125 °C                                    -        610           690
+
+                 1. Pulse test: tp = 5 ms, δ < 2%
+                 2. Pulse test: tp = 380 µs, δ < 2%
+
+
+
+
+DS6169 - Rev 5                                                                                                                                       page 2/15
+                                                                                                                                                                                                         STPS20M100S
+                                                                                                                                                                                                   Characteristics (curves)
+
+
+
+
+                           To evaluate the conduction losses, use the following equation:
+                           P = 0.425 x IF(AV) + 0.0088 x IF 2 (RMS)
+                           For more information, please refer to the following application notes related to the power losses :
+                           •    AN604: Calculation of conduction losses in a power rectifier
+                           •    AN4021: Calculation of reverse losses on a power diode
+
+
+
+1.1                        Characteristics (curves)
+
+
+   Figure 1. Average forward power dissipation versus                                                                           Figure 2. Average forward current versus ambient
+ average forward current (anode terminals short circuited)                                                                    temperature (δ = 0.5, anode terminals short circuited)
+
+
+           PF(AV) (W)                                                                                                                IF(AV) (A)
+      20                                                                                                                        22
+                                                                                                                                                                    Rth(j-a) = Rth(j-c)       TO-220AB/I²PAK/D²PAK
+      18                                                                                                        δ=1
+                                                                                                                                20
+                                                                                           δ = 0.5
+
+      16                                                                                                                        18
+
+      14                                                      δ = 0.2                                                           16
+                                                                                                                                                                                      TO-220FPAB
+                                              δ = 0.1                                                                           14
+      12
+                               δ = 0.05
+                                                                                                                                12
+      10
+                                                                                                                                10                                                   Rth(j-a) = 15 °C/W
+      8
+                                                                                                                                 8
+      6
+                                                                                                            T                    6                  T
+      4
+                                                                                                                                 4
+      2                                                                 IF(AV) (A)                                                                                                   Tamb(°C)
+                                                                                                 δ = tp/T         tp             2       δ = tp/T        tp
+      0                                                                                                                          0
+           0      2        4    6         8       10         12   14       16    18        20    22    24        26     28           0              25         50               75                 100        125             150
+
+
+
+
+                                                                                                                             Figure 4. Reverse leakage current versus reverse voltage
+   Figure 3. Normalized avalanche power derating versus
+                                                                                                                                              applied (typical values)
+                pulse duration (Tj = 125 °C)
+
+                         PARM (t p )                                                                                                      IR(mA)
+                       PARM (10 µs)                                                                                             1.E+02
+                  1
+                                                                                                                                                                                Tj = 150 °C
+
+
+                                                                                                                                1.E+01
+                                                                                                                                                                             Tj = 125 °C
+
+
+                 0.1                                                                                                                                                         Tj = 100 °C
+                                                                                                                                1.E+00
+
+                                                                                                                                                                               Tj = 75 °C
+                                                                                                                                1.E-01
+                0.01                                                                                                                                                           Tj = 50 °C
+
+
+                                                                                                                                1.E-02
+                                                                                                                                                                               Tj = 25 °C
+
+                                                                                                      t p(µs)                                                                                                        VR(V)
+               0.001                                                                                                            1.E-03
+                       1                                10                           100                         1000                    0      10        20   30         40        50        60         70   80      90      100
+
+
+
+
+DS6169 - Rev 5                                                                                                                                                                                                               page 3/15
+                                                                                                                                                                                     STPS20M100S
+                                                                                                                                                                               Characteristics (curves)
+
+
+
+
+ Figure 5. Relative variation of thermal impedance junction Figure 6. Relative variation of thermal impedance junction
+  to case versus pulse duration (TO-220AB, D²PAK, I²PAK)           to case versus pulse duration (TO-220FPAB)
+
+                                                                                                                   Zth(j-c)/Rth(j-c)
+             Zth(j-c)/Rth(j-c)                                                                              1.0
+      1.0
+                                                                                                            0.9
+      0.9
+                                                                                                            0.8
+      0.8
+                                                                                                            0.7
+      0.7
+                                                                                                            0.6
+      0.6
+                                                                                                            0.5
+      0.5
+                                                                                                            0.4
+      0.4
+                                                                                                            0.3
+      0.3     Single pulse
+
+                                                                                                            0.2        Single pulse
+      0.2
+                                                                                                            0.1                                                                                  tP (s)
+      0.1                                                                    tP(s)
+                                                                                                            0.0
+      0.0
+                                                                                                              1.E-03                   1.E-02                   1.E-01               1.E+00                   1.E+01
+        1.E-03                    1.E-02                1.E-01                           1.E+00
+
+
+
+
+   Figure 7. Junction capacitance versus reverse voltage                                                  Figure 8. Forward voltage drop versus forward current
+                   applied (typical values)                                                                          (anode terminals short circuited)
+
+
+              C(pF)                                                                                               IF (A)
+     10000                                                                                                  40
+                                                                         F = 1 MHz
+                                                                      VOSC = 30 mVRMS                       35
+                                                                         Tj = 25 °C
+                                                                                                                                           Tj = 125 °C
+                                                                                                            30                          (Maximum values)
+
+                                                                                                            25
+                                                                                                                                                                                               Tj = 25 °C
+                                                                                                                                               Tj = 125 °C                                  (Maximum values)
+      1000                                                                                                  20                               (Typical values)
+
+                                                                                                            15
+
+                                                                                                            10
+
+                                                                                                            5
+                                                                                                                                                                                                     VF (V)
+                                                VR(V)
+                                                                                                            0
+      100
+                                                                                                                 0.0    0.1      0.2   0.3      0.4      0.5     0.6     0.7   0.8    0.9      1.0     1.1      1.2
+             1                             10                                             100
+
+
+
+
+                                 Figure 9. Thermal resistance junction to ambient versus copper surface under tab for D²PAK
+
+                                                                       Rth(j-a) (°C/W)
+                                                                 80
+                                                                                                                                                      D²PAK
+                                                                 70
+                                                                                           Epoxy printed board FR4, copper thickness = 35 µm
+
+                                                                 60
+
+                                                                 50
+
+                                                                 40
+
+                                                                 30
+
+                                                                 20
+
+                                                                 10
+                                                                                                                                                    SCu (cm²)
+                                                                 0
+                                                                      0          5           10      15          20           25        30            35          40
+
+
+
+
+DS6169 - Rev 5                                                                                                                                                                                                 page 4/15
+                                                                                                          STPS20M100S
+                                                                                                           Package information
+
+
+
+
+2                Package information
+
+                 In order to meet environmental requirements, ST offers these devices in different grades of ECOPACK®
+                 packages, depending on their level of environmental compliance. ECOPACK® specifications, grade definitions
+                 and product status are available at: www.st.com. ECOPACK® is an ST trademark.
+
+
+
+2.1              TO-220AB package information
+                 •    Epoxy meets UL 94,V0
+                 •    Cooling method: by conduction (C)
+                 •    Recommended torque value: 0.55 N·m
+                 •    Maximum torque value: 0.70 N·m
+
+                                                    Figure 10. TO-220AB package outline
+
+
+
+
+DS6169 - Rev 5                                                                                                         page 5/15
+                                                                                    STPS20M100S
+                                                                          TO-220AB package information
+
+
+
+
+                        Table 4. TO-220AB package mechanical data
+
+                                                         Dimensions
+
+                 Ref.              Millimeters                        Inches (for reference only)
+
+                           Min.                  Max.                 Min.                  Max.
+
+                  A        4.40                  4.60                 0.173                 0.181
+                  b        0.61                  0.88                 0.240                 0.035
+                 b1        1.14                  1.55                 0.045                 0.061
+                  c        0.48                  0.70                 0.019                 0.028
+                  D        15.25                 15.75                0.600                 0.620
+                 D1                 1.27 typ.                                 0.050 typ.
+                  E        10.00                 10.40                0.394                 0.409
+                  e        2.40                  2.70                 0.094                 0.106
+                 e1        4.95                  5.15                 0.195                 0.203
+                  F        1.23                  1.32                 0.048                 0.052
+                 H1        6.20                  6.60                 0.244                 0.260
+                 J1        2.40                  2.72                 0.094                 0.107
+                  L        13.00                 14.00                0.512                 0.551
+                 L1        3.50                  3.93                 0.138                 0.155
+                 L20               16.40 typ.                                 0.646 typ.
+                 L30               28.90 typ.                                 1.138 typ.
+                 θP        3.75                  3.85                 0.148                 0.152
+                  Q        2.65                  2.95                 0.104                 0.116
+
+
+
+
+DS6169 - Rev 5                                                                                      page 6/15
+                                                                                                  STPS20M100S
+                                                                                       TO-220FPAB package information
+
+
+
+
+2.2              TO-220FPAB package information
+                 •   Epoxy meets UL 94,V0
+                 •   Cooling method: by conduction (C)
+                 •   Recommended torque value: 0.55 N·m
+                 •   Maximum torque value: 0.70 N·m
+
+                                               Figure 11. TO-220FPAB package outline
+
+
+
+
+DS6169 - Rev 5                                                                                                page 7/15
+                                                                                      STPS20M100S
+                                                                         TO-220FPAB package information
+
+
+
+
+                        Table 5. TO-220FPAB package mechanical data
+
+                                                          Dimensions
+
+                 Ref.               Millimeters                         Inches (for reference only)
+
+                            Min.                  Max.                  Min.                  Max.
+
+                  A         4.40                  4.60                 0.1739                 0.1818
+                  B         2.50                  2.70                 0.0988                 0.1067
+                  D         2.50                  2.75                 0.0988                 0.1087
+                  E         0.45                  0.70                 0.0178                 0.0277
+                  F         0.75                  1.00                 0.0296                 0.0395
+                 F1         1.15                  1.70                 0.0455                 0.0672
+                 F2         1.15                  1.70                 0.0455                 0.0672
+                  G         4.95                  5.20                 0.1957                 0.2055
+                 G1         2.40                  2.70                 0.0949                 0.1067
+                  H         10.00                 10.40                0.3953                 0.4111
+                 L2                 16.00 typ.                                  0.6324 typ.
+                 L3         28.60                 30.60                1.1304                 1.2095
+                 L4         9.80                  10.60                0.3874                 0.4190
+                 L5         2.90                  3.60                 0.1146                 0.1423
+                 L6         15.90                 16.40                0.6285                 0.6482
+                 L7         9.00                  9.30                 0.3557                 0.3676
+                 Dia        3.00                  3.20                 0.1186                 0.1265
+
+
+
+
+DS6169 - Rev 5                                                                                        page 8/15
+                                                                                             STPS20M100S
+                                                                                        I²PAK package information
+
+
+
+
+2.3              I²PAK package information
+                 •   Epoxy meets UL 94,V0
+                 •   Cooling method: by conduction (C)
+
+                                                     Figure 12. I²PAK package outline
+
+
+
+
+DS6169 - Rev 5                                                                                           page 9/15
+                                                                                 STPS20M100S
+                                                                           I²PAK package information
+
+
+
+
+                        Table 6. I²PAK package mechanical data
+
+                                                      Dimensions
+
+                 Ref.           Millimeters                        Inches (for reference only)
+
+                         Min.                 Max.                 Min.                  Max.
+
+                  A      4.40                 4.60                 0.173                 0.181
+                 A1      2.40                 2.72                 0.094                 0.107
+                  b      0.61                 0.88                 0.024                 0.035
+                 b1      1.14                 1.70                 0.044                 0.067
+                  c      0.49                 0.70                 0.019                 0.028
+                 c2      1.23                 1.32                 0.048                 0.052
+                  D      8.95                 9.35                 0.352                 0.368
+                  e      2.40                 2.70                 0.094                 0.106
+                 e1      4.95                 5.15                 0.195                 0.203
+                  E     10.00                 10.40                0.394                 0.409
+                  L     13.00                 14.00                0.512                 0.551
+                 L1      3.50                 3.93                 0.138                 0.155
+                 L2      1.27                 1.40                 0.050                 0.055
+
+
+
+
+DS6169 - Rev 5                                                                               page 10/15
+                                                                                                             STPS20M100S
+                                                                                                       D²PAK package information
+
+
+
+
+2.4              D²PAK package information
+                 •    Epoxy meets UL94, V0
+                 •    Cooling method: by conduction (C)
+
+                                                       Figure 13. D²PAK package outline
+
+
+
+
+Note:            This package drawing may slightly differ from the physical package. However, all the specified dimensions are
+                 guaranteed.
+
+
+
+
+DS6169 - Rev 5                                                                                                           page 11/15
+                                                                                                  STPS20M100S
+                                                                                         D²PAK package information
+
+
+
+
+                                 Table 7. D²PAK package mechanical data
+
+                                                                  Dimensions
+
+                 Ref.                       Millimeters                         Inches (for reference only)
+
+                                   Min.                   Max.                  Min.                   Max.
+
+                  A                4.36                   4.60                  0.172                  0.181
+                 A1                0.00                   0.25                  0.000                  0.010
+                  b                0.70                   0.93                  0.028                  0.037
+                 b2                1.14                   1.70                  0.045                  0.067
+                  c                0.38                   0.69                  0.015                  0.027
+                 c2                1.19                   1.36                  0.047                  0.053
+                  D                8.60                   9.35                  0.339                  0.368
+                 D1                6.90                   8.00                  0.272                  0.311
+                 D2                1.10                   1.50                  0.043                  0.060
+                  E                10.00                  10.55                 0.394                  0.415
+                 E1                8.10                   8.90                  0.319                  0.346
+                 E2                6.85                   7.25                  0.266                  0.282
+                  e                          2.54 typ.                                         0.100
+                 e1                4.88                   5.28                  0.190                  0.205
+                  H                15.00                  15.85                 0.591                  0.624
+                 J1                2.49                   2.90                  0.097                  0.112
+                  L                1.90                   2.79                  0.075                  0.110
+                 L1                1.27                   1.65                  0.049                  0.065
+                 L2                1.30                   1.78                  0.050                  0.070
+                  R                           0.4 typ.                                         0.015
+                 V2                 0°                     8°                      0°                   8°
+
+
+
+
+                        Figure 14. D²PAK recommended footprint (dimensions in mm)
+
+
+                                                  16.90
+
+
+
+
+                        12.20                                                           5.08
+                                                                         2.54
+                                                                            1.60
+
+
+
+                                                                  3.50
+                                           9.75
+
+
+
+
+DS6169 - Rev 5                                                                                               page 12/15
+                                                                                            STPS20M100S
+                                                                                            Ordering information
+
+
+
+
+3                Ordering information
+
+                                             Table 8. Ordering information
+
+                      Order code       Marking          Package        Weight   Base qty.      Delivery mode
+
+                    STPS20M100ST     PS20M100ST         TO-220AB       1.95 g      50               Tube
+                    STPS20M100SFP    PS20M100SFP       TO-220FPAB      1.90 g      50               Tube
+                    STPS20M100SR     PS20M100SR           I²PAK        1.50 g      50               Tube
+                   STPS20M100SG-TR   PS20M100SG          D²PAK         1.48 g     1000          Tape and reel
+
+
+
+
+DS6169 - Rev 5                                                                                          page 13/15
+                                                                                                STPS20M100S
+
+
+
+
+Revision history
+
+                                     Table 9. Document revision history
+
+                    Date       Version                                     Changes
+
+                 25-Mar-2009     1       First issue.
+                 16-Apr-2010     2       Updated package graphic for TO-220AB on front page and in Table 5.
+                                         Updated cover page.
+                                         Complete Characteristics section update.
+                 24-May-2016     3
+                                         Updated Section 2.4: "D²PAK package information" and Table 9: "Ordering
+                                         information".
+                                         Updated cover page, Table 1. Absolute ratings (limiting values with anode
+                                         terminals short circuited, at 25 °C unless otherwise specified) and
+                                         Table 8. Ordering information.
+                 28-Sep-2018     4
+                                         Removed figure 1 and figure 11.
+                                         Minor text changes to improve readability.
+                 18-Feb-2019     5       Updated Table 1.
+
+
+
+
+DS6169 - Rev 5                                                                                               page 14/15
+                                                                                                                                       STPS20M100S
+
+
+
+
+                                                     IMPORTANT NOTICE – PLEASE READ CAREFULLY
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and improvements to ST
+products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on ST products before placing orders. ST
+products are sold pursuant to ST’s terms and conditions of sale in place at the time of order acknowledgement.
+Purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or the design of
+Purchasers’ products.
+No license, express or implied, to any intellectual property right is granted by ST herein.
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+ST and the ST logo are trademarks of ST. All other product or service names are the property of their respective owners.
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+                                                         © 2019 STMicroelectronics – All rights reserved
+
+
+
+
+DS6169 - Rev 5                                                                                                                                       page 15/15
+

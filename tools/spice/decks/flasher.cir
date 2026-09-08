@@ -1,0 +1,21 @@
+Cost-board flashlamp driver (sol 17-24): 74HCT574 -> 100R -> IRLR3110Z DPAK sink, #89 lamp on +20V (S1M tie-back)
+.include ../models.lib
+V20 v20 0 20
+VL latch 0 PULSE(0 4.6 1m 20n 20n 60m 100m)
+RL latch a 40
+Rg a g 100
+Rpd g 0 10k
+XQ lamp g 0 IRLR3110Z
+Vlamp v20 v20l 0
+Blamp v20l lamp I = v(v20l,lamp) / (3 + 15*(1-exp(-max(time-1m,0)/8m)))
+Dfb lamp v20 DS1M
+.tran 5u 80m
+.control
+run
+let ilamp = i(Vlamp)
+meas tran ilamp_inrush MAX ilamp from=1m to=3m
+meas tran ilamp_hot AVG ilamp from=50m to=60m
+meas tran vsat AVG v(lamp) from=50m to=60m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/flasher.csv v(lamp) ilamp
+.endc
+.end

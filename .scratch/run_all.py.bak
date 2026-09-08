@@ -1,0 +1,117 @@
+"""Run all SPICE verification decks through libngspice (inside the KiCad flatpak) and summarise measurements.
+Usage: flatpak run --command=python3 org.kicad.KiCad tools/spice/run_all.py"""
+import os, sys, json, glob
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ngspice_lib import NgSpice
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.abspath(os.path.join(HERE, '..', '..', 'output', 'spice'))
+os.makedirs(OUT, exist_ok=True)
+CHECKS = {  # deck -> list of (measurement, lo, hi, description)   [cost board - limits reflect the DPAK parts and the smaller filter capacitors]
+    'sol_low': [('icoil_max', 3.5, 6.0, 'coil current with 9 ohm coil on 50 V (A)'),
+                ('vce_on', 0.0, 0.2, 'IRLR3110Z Vds while ON at 4.6 V gate drive (V): 5.5 A x 18 mOhm = 0.1 V, limit = 2x model (36 mOhm, the datasheet max at 4.5 V is 16 mOhm)'),
+                ('vcol_peak', 49.0, 53.0, 'drain voltage clamped by the S1M tie-back diode at turn-off (V)'), ('i_latch', -0.001, 0.001, 'steady current drawn from the 74HCT574 output (A)'),
+                ('icoil_off', -0.01, 0.05, 'coil current 15 ms after turn-off (A)'), ('p_fet', 0.0, 1.0, 'MOSFET dissipation while ON (W): 1 W continuous is what a DPAK on 1 sq. in. of copper (~50 C/W) can hold at 50 C rise')],
+    'sol_high': [('icoil_max', 9.0, 13.5, 'coil current with 4 ohm coil on 50 V (A)'),
+                 ('vout_on', 0.0, 0.3, 'IRLR3110Z Vds while ON (V): 12 A x 18 mOhm = 0.22 V; 0.3 V = 25 mOhm, above the 4.5 V datasheet max incl. heating'),
+                 ('vout_peak', 49.0, 53.0, 'output clamped by the S3M tie-back diode (V)'),
+                 ('p_fet', 0.0, 3.5, 'MOSFET dissipation during the pulse (W): 2.6 W for 40 ms is 0.1 J into the DPAK die/tab (~0.2 C/J x 40 ms ... < 5 C rise); pulsed at <= 10 % duty the average stays < 0.4 W')],
+    'flasher': [('ilamp_inrush', 3.0, 8.0, 'cold-lamp inrush (A)'), ('ilamp_hot', 0.7, 1.4, 'hot lamp current (A)'), ('vsat', 0.0, 0.1, 'IRLR3110Z Vds with the lamp on (V): 1.1 A x 18 mOhm = 0.02 V')],
+    'lamp_matrix': [('irow_normal', 0.3, 3.5, 'row current, normal lamp incl. cold inrush (A)'), ('vsense_normal', 0.0, 1.3, 'sense voltage stays below the 1.4 V trip (V)'),
+                    ('vref', 1.2, 1.6, '1.4 V reference (V)'), ('vcol_drop', 0.0, 0.3, 'column IRFR5305 drop with the lamp on (V): ~2 A x 65 mOhm = 0.13 V; 0.3 V = 150 mOhm (hot, low Vgs)'),
+                    ('vrow_on', 0.0, 0.8, 'row driver drop incl. the 0.22 R sense resistor (V): 2 A x (0.22 + 0.08) = 0.6 V; 0.8 V keeps > 17 V on the 18 V lamp string'),
+                    ('clr_min', 3.0, 5.5, 'comparator never clears the row flip-flop in normal operation (V)'),
+                    ('vgs_col', -13.0, -7.0, 'column MOSFET Vgs from the 1k/1.5k divider (V): IRFR5305 needs <= -7 V for its rated 65 mOhm')],
+    'lamp_matrix_trip': [('irow_fault', 6.4, 80.0, 'shorted lamp: row current exceeds the 6.4 A trip (A)'),
+                    ('t_trip', 0.0330, 0.0332, 'row flip-flop cleared (s): short applied at 32.5 ms, column strobe (fault current) starts at 33.0 ms -> cleared within 0.2 ms'),
+                    ('irow_after', 0.0, 0.5, 'row current after shutdown until the next strobe (A)'), ('irow_next', 2.0, 80.0, 'fault current returns at the next strobe and trips again (A) - per-strobe shutdown as in the original')],
+    'zero_cross': [('vu_avg', 10.0, 16.0, '+12VU average (V) - only feeds the LED/test point'), ('vu_ripple', 0.0, 2.0, '+12VU ripple p-p (V)'),
+                   ('zc_low', 0.0, 0.5, 'ZC output low level (V)'), ('smp_min', -0.35, 0.3, 'sample node minimum (V, must stay > -0.3 for LM339)'), ('zc_width', 0.0003, 0.002, 'ZC low-pulse width (s)'), ('zc_center_err', -0.0005, 0.0005, 'pulse centre vs true zero crossing (s)')],
+    'gi_gate': [('ig_peak', 0.06, 0.13, 'triac gate current (A) - above the 50 mA worst-case Q IV Igt of the BTA16-600C'), ('istr_off', 0.0, 0.05, 'string current before trigger (A)'),
+                ('istr_on', 4.0, 8.0, 'string current while enabled (A peak)'), ('istr_after', 0.0, 0.3, 'string current after latch released (A)'),
+                ('p_npn', 0.0, 0.25, 'MMBT4401 dissipation (W, SOT-23 limit 0.31 W)'), ('i_latch', -0.004, -0.0001, 'base current sourced by the 74HCT574 (A, negative = out of the latch)')],
+    'psu': [('v18_avg', 13.0, 20.0, '+18V lamp rail average at 2.8 A / 5 ohm (V): the lamp matrix needs >= 13 V for full brightness'),
+            ('v18_ripple', 0.0, 3.0, '+18V ripple p-p with 2 x 10000 uF (V): 3 V = 20 % of the rail, the largest brightness flicker acceptable at 120 Hz'),
+            ('vin5_min', 6.5, 14.0, '+5V buck input minimum at 3 A output with 10000 uF (V): TPS54360B needs 5.6 V for 5 V out, the 6.0 V UVLO start + 0.5 V'),
+            ('vin5_ripple', 0.0, 3.5, '+5V raw ripple p-p (V): 10000 uF at ~3.9 A input current -> ~2.5 V; must stay below vin5_min - 5.6 V headroom'),
+            ('v5_min', 4.95, 5.05, '+5V minimum at 3 A load (V)'),
+            ('v50_idle', 45.0, 55.0, '+50V idle (V)'), ('v50_avg_pulse', 38.0, 50.0, '+50V average during a 12 A coil pulse with 4400 uF (V) - unchanged from the modern board'),
+            ('v50_min_pulse', 30.0, 50.0, '+50V minimum during the pulse (V)'), ('icoil_max', 9.0, 14.0, 'peak coil current (A)'),
+            ('v20_min', 13.0, 22.0, '+20V minimum during a 4 A flasher burst with 10000 uF (V): the +12V buck needs >= 12.9 V (Vout + Vf + Rds Iout) to stay in regulation'),
+            ('v20_ripple', 0.0, 3.0, '+20V ripple p-p during the burst (V)'),
+            ('v12_min', 11.95, 12.05, '+12V minimum during the flasher burst (V)'),
+            ('v12_max', 11.95, 12.05, '+12V maximum (V)')],
+    'psu_maxload': [('v18_min', 10.0, 20.0, '+18V minimum with all 64 lamps lit (2.5 ohm, ~5.5 A) and 2 x 10000 uF (V): lamps stay usable above ~10 V'),
+                    ('vin5_min', 6.0, 14.0, '+5V buck input minimum with everything on (V): converter needs 5.6 V, worst-case UVLO stop 6.0 V'),
+                    ('v5_min', 4.95, 5.05, '+5V minimum at 3 A with everything on (V)'),
+                    ('v20_min', 9.0, 22.0, '+20V minimum during the 8-flasher cold inrush with 10000 uF (V): must stay above the 8.5 V UVLO stop of the +12V buck (9.1 V worst case)'),
+                    ('iflash_peak', 20.0, 60.0, 'combined cold inrush of 8 flashers (A) - within the F111 5 A slow-blow 40 ms envelope'),
+                    ('v12_min', 8.0, 12.05, '+12V minimum during the flasher inrush (V): the buck droops (never shuts down) when +20V is below 12.9 V; 8 V keeps the CPU-board 5 V pre-regulators alive'),
+                    ('v50_avg_pulse', 20.0, 50.0, '+50V average with 2 HP + 4 LP coils fired together (V) - informational, an unrealistic firmware case; parts unchanged from the modern board'),
+                    ('itot50_max', 20.0, 60.0, 'total coil current, six coils at once (A)'),
+                    ('ibr50_peak', 0.0, 400.0, 'peak current through the +50V bridge (A): GBPC3510 surge rating 400 A (this is a single 40 ms event)'),
+                    ('ibr18_peak', 0.0, 60.0, 'repetitive peak current in the +18V GBJ1510 with all lamps lit (A): capacitor-input rectifiers run at 3-5 x Io, limit 4 x the 15 A rating; surge rating 240 A'),
+                    ('ibr20_peak', 0.0, 60.0, 'peak current in the +20V GBJ1510 during the flasher inrush (A): 4 x the 15 A rating for the repetitive part; the 240 A surge rating covers the first cycles'),
+                    ('ibr5_peak', 0.0, 32.0, 'repetitive peak current in the +5V-raw GBU8J at 3 A output (A): 4 x the 8 A rating; surge rating 200 A')],
+    'psu_brownout': [('vraw_min', 6.0, 12.0, '+5V buck input minimum at 88 % mains and the rated 3 A (V): must stay above the UVLO stop level - 5.5 V nominal, 6.0 V worst case (Vena 1.3 V) - so the converter keeps regulating (sweep: output/spice/uvlo_sweep.md)'),
+                     ('v5_min', 4.95, 5.05, '+5V holds through an 88 % brownout at 3 A (V) - the LM323K needed 7.5 V raw and would have dropped out'),
+                     ('v20_min', 9.5, 22.0, '+20V minimum at 88 % mains with 8 flashers hot and 10000 uF (V): above the 9.1 V worst-case UVLO stop of the +12V buck'),
+                     ('v12_min', 10.0, 12.05, '+12V at 88 % mains with flashers hot (V): droops (0.97 Vin - 0.5) when +20V is under 12.9 V; 10 V still runs the switch-matrix / opto loads and the CPU-board 5 V pre-regulators')],
+    'buck_5v': [('vout_ss', 4.9, 5.1, 'steady-state output at 1 A (V)'), ('vout_ripple', 0.0, 0.08, 'output ripple p-p at 1 A (V)'),
+                ('vout_step_min', 4.6, 5.1, 'undershoot on a 1 -> 3 A load step (V): 4.6 V is the 74HCT / CPU-board minimum with margin'),
+                ('vout_step_max', 4.9, 5.4, 'overshoot on the 3 -> 1 A step (V)'),
+                ('il_peak', 3.0, 4.3, 'peak inductor current at 3 A (A): must stay below the 4.5 A minimum current limit of the TPS54360B (SRP1265A-100M rated 10 A)'),
+                ('vout_3a', 4.9, 5.1, 'output at 3 A (V)'), ('iin_3a', -3.0, -1.5, 'input current at 3 A out from 8 V (A, negative = drawn from Vin)')],
+    'buck_12v': [('vout_ss', 11.8, 12.2, 'steady-state output at 1 A (V)'), ('vout_ripple', 0.0, 0.1, 'output ripple p-p at 1 A (V)'),
+                 ('vout_step_min', 11.4, 12.2, 'undershoot on a 1 -> 2 A load step (V): 11.4 V keeps the switch matrix / CPU +12V loads (LM7805 pre-regulators, opto emitters) happy'),
+                 ('vout_step_max', 11.8, 12.6, 'overshoot on the 2 -> 1 A step (V)'),
+                 ('il_peak', 2.0, 4.3, 'peak inductor current at 2 A from 15.7 V (A): below the 4.5 A minimum current limit'),
+                 ('vout_2a', 11.8, 12.2, 'output at 2 A (V)'), ('iin_2a', -2.2, -1.0, 'input current at 2 A out from 15.7 V (A)')],
+}
+
+def main():
+    ng = NgSpice()
+    summary = []
+    for deck in sorted(glob.glob(os.path.join(HERE, 'decks', '*.cir'))):
+        name = os.path.basename(deck)[:-4]
+        os.chdir(os.path.join(HERE, 'decks'))
+        ng.cmd('destroy all')
+        log = ng.run_deck(deck)
+        csv = os.path.join(OUT, name + '.csv')     # the 20 ns switching-model runs write > 100 MB: keep every 10th sample (measurements were taken on the full run)
+        if os.path.exists(csv) and os.path.getsize(csv) > 20e6:
+            rows = open(csv).read().split('\n'); open(csv, 'w').write('\n'.join(rows[::10]) + '\n')
+        meas = {}
+        errs = [l for l in log if 'stderr' in l and 'Warning' not in l]
+        for l in log:
+            if 'stdout' in l and '=' in l and ' at' not in l.split('=')[0] and 'Data Rows' not in l:
+                parts = l.replace('stdout', '').strip().split('=')
+                key = parts[0].strip()
+                try: meas[key] = float(parts[1].split()[0])
+                except Exception: pass
+        if 't1' in meas and 't1r' in meas:
+            meas['zc_width'] = meas['t1r'] - meas['t1']
+            meas['zc_center_err'] = (meas['t1'] + meas['t1r']) / 2 - meas.get('tz', 0)
+        results = []
+        for m, lo, hi, desc in CHECKS.get(name, []):
+            v = meas.get(m)
+            ok = v is not None and lo <= v <= hi
+            results.append((m, v, lo, hi, ok, desc))
+        summary.append((name, results, errs[:5]))
+        print(f'== {name}: ' + ', '.join(f'{k}={v:.4g}' for k, v in meas.items() if k != 'time'))
+        for e in errs[:5]: print('   ERR', e[:160])
+    lines = ['# SPICE verification results - cost-optimised board', '', 'ngspice (KiCad 10 bundled libngspice) transient runs of each circuit block; MOSFET/diode models in `tools/spice/models.lib` are level-1 fits to datasheet Rds(on)/Qg',
+             '(functional fidelity, not vendor-exact); the TPS54360B is a behavioural peak-current-mode model (12 A/V, 4.5 A minimum current limit, 400 kHz). Waveform CSVs are next to this file.',
+             'Each limit is explained in its description column (see also README.md).', '']
+    allok = True
+    for name, results, errs in summary:
+        lines.append(f'## {name}'); lines.append('')
+        lines.append('| measurement | value | expected | result |'); lines.append('|---|---|---|---|')
+        for m, v, lo, hi, ok, desc in results:
+            allok &= ok
+            lines.append(f'| {desc} (`{m}`) | {"n/a" if v is None else f"{v:.4g}"} | {lo:g} … {hi:g} | {"PASS" if ok else "FAIL"} |')
+        for e in errs: lines.append(f'* ngspice error: `{e.strip()[:160]}`')
+        lines.append('')
+    lines.append(f'**Overall: {"ALL CHECKS PASS" if allok else "SOME CHECKS FAILED"}**')
+    open(os.path.join(OUT, 'RESULTS.md'), 'w').write('\n'.join(lines) + '\n')
+    print('\n'.join(lines))
+if __name__ == '__main__':
+    main()

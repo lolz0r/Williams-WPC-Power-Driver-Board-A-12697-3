@@ -1,0 +1,81 @@
+helper segments removed: 0
+thermal vias added: 0
+removed 8 colliding thermal vias
+final DRC: {('warning', 'track_dangling'): 56, ('warning', 'via_dangling'): 7, ('warning', 'hole_to_hole'): 2} unconnected 1
+  open: ["Zone 'GND_F' [GND] on F.Cu, priority 0", "Zone 'GND_F' [GND] on F.Cu, priority 0"]
+round 0: 63 dangling items to process (0 nets excluded)
+  removed 53 trimmed 9 skipped 1
+round 1: previous removal broke connectivity -> restored; excluding nets ['D5', 'D5_N', 'D6_N', 'D7', 'FLIP_RLY_L', 'GND', 'ROWCLR1', 'SOL12_L']
+round 1: 38 dangling items to process (8 nets excluded)
+  removed 29 trimmed 8 skipped 1
+round 2: 27 dangling items to process (8 nets excluded)
+  removed 26 trimmed 0 skipped 1
+round 3: 24 dangling items to process (8 nets excluded)
+  removed 23 trimmed 0 skipped 1
+round 4: 20 dangling items to process (8 nets excluded)
+  removed 18 trimmed 1 skipped 1
+round 5: 18 dangling items to process (8 nets excluded)
+  removed 17 trimmed 0 skipped 1
+round 6: 18 dangling items to process (8 nets excluded)
+  removed 17 trimmed 0 skipped 1
+round 7: previous removal broke connectivity -> restored; excluding nets ['D3_N', 'GND']
+round 7: 16 dangling items to process (9 nets excluded)
+  removed 15 trimmed 0 skipped 1
+round 8: 14 dangling items to process (9 nets excluded)
+  removed 12 trimmed 1 skipped 1
+round 9: 12 dangling items to process (9 nets excluded)
+  removed 11 trimmed 0 skipped 1
+round 10: 10 dangling items to process (9 nets excluded)
+  removed 9 trimmed 0 skipped 1
+round 11: 9 dangling items to process (9 nets excluded)
+  removed 8 trimmed 0 skipped 1
+removed 269 items; unconnected 1->1, errors 0->0, dangling left 35
+installed as wpc_power_driver_cost.kicad_pcb
+== finish rc=0
+== ERC / DRC
+Saved ERC Report to /home/lolz0r/tng/wpc_power_driver_cost/output/reports/erc.rpt
+Found 1 unconnected items
+Saved DRC Report to /home/lolz0r/tng/wpc_power_driver_cost/output/reports/drc.rpt
+== Gerbers (RS-274X, Protel extensions)
+Plotted to '/home/lolz0r/tng/wpc_power_driver_cost/output/gerbers/wpc_power_driver_cost-B_Fab.gbr'.
+== Drill (Excellon + map)
+Done.
+== Position / assembly
+Wrote position data to '/home/lolz0r/tng/wpc_power_driver_cost/output/assembly/wpc_power_driver_cost-pos.csv'.
+Wrote position data to '/home/lolz0r/tng/wpc_power_driver_cost/output/assembly/wpc_power_driver_cost-pos-all-incl-dnp.csv'.
+Successfully created IPC-D-356 file
+== BOM
+Wrote bill of materials to '/home/lolz0r/tng/wpc_power_driver_cost/output/bom/wpc_power_driver_cost-bom-grouped.csv'.
+Wrote bill of materials to '/home/lolz0r/tng/wpc_power_driver_cost/output/bom/wpc_power_driver_cost-bom-flat.csv'.
+BOM: 84 line items, 419 parts, qty-1 247.11 USD (270 estimated), qty-100 115.43 USD, 0 unpriced
+  MOSFETs                                      44    77.20    32.48
+  Electrolytic capacitors                       7    21.70    13.65
+  Connectors                                   34    28.16    18.24
+  Bridge rectifiers                             5    15.28     8.70
+  Fuses + clips                                46    27.67    10.00
+  Buck converters (IC, inductor, diode)         6    14.48     9.30
+  Logic / comparators / driver                 15     9.42     5.25
+  SMD passives                                197    26.30     4.75
+  Diodes + LEDs                                37    13.82     5.11
+  Triacs + gate transistors + heatsinks        15    10.60     6.75
+  Misc / test points                           13     2.48     1.20
+== Schematic PDF / SVG
+Done.
+Done.
+== Board PDFs
+Done.
+Done.
+Done.
+Done.
+Done.
+Done.
+== 3D
+Export time 7.878 s
+Successfully created 3D render image
+Successfully created 3D render image
+Successfully created 3D render image
+== Netlist
+== Gerber job / zip
+-rw-rw-r-- 1 lolz0r lolz0r 2072235 Sep  6 21:58 wpc_power_driver_cost-gerbers.zip
+done
+== cost finish+export done

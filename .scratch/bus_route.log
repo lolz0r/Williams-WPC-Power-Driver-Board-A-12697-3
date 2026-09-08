@@ -1,0 +1,1256 @@
+  maps built in 2.4 s (2236x1355 cells x 3 layers x 8 classes)
+  GI_RET: routed with class Bus (neck-down)
+  GI_RET: routed with class Bus (neck-down)
+  GI_RET: routed with class Bus (neck-down)
+  GI_RET: routed with class Bus (neck-down)
+  GI_RET: routed with class Bus (neck-down)
+  net GI_RET: 11 -> 1 components, 9 links, 19.3 s
+  net GI5_IN: 3 -> 1 components, 2 links, 0.0 s
+  net AC98_A: 4 -> 1 components, 3 links, 0.0 s
+  net GI2_OUT: 3 -> 1 components, 2 links, 0.0 s
+  net GI4_IN: 3 -> 1 components, 2 links, 0.0 s
+  net +50V_F104: 3 -> 1 components, 2 links, 0.0 s
+  net GI1_OUT: 3 -> 1 components, 2 links, 0.0 s
+  net GI3_IN: 3 -> 1 components, 2 links, 0.0 s
+  net /Power_Supply/AC98_A_F: 3 -> 1 components, 2 links, 0.0 s
+  net AC98_B: 3 -> 1 components, 2 links, 0.0 s
+  net AC16_A: 4 -> 1 components, 3 links, 0.0 s
+  net +50V_F103: 3 -> 1 components, 2 links, 0.0 s
+  net GI5_OUT: 4 -> 1 components, 3 links, 0.0 s
+  net +50V_F105: 3 -> 1 components, 2 links, 0.0 s
+  net /Power_Supply/AC13_A_F: 3 -> 1 components, 2 links, 0.0 s
+  net AC9_A: 3 -> 1 components, 2 links, 0.0 s
+  net AC13_A: 4 -> 1 components, 3 links, 0.0 s
+  net GI4_OUT: 3 -> 1 components, 2 links, 0.0 s
+  net GI1_IN: 3 -> 1 components, 2 links, 0.0 s
+  net GI2_IN: 3 -> 1 components, 2 links, 0.0 s
+  net GI3_OUT: 3 -> 1 components, 2 links, 0.0 s
+  net AC13_B: 3 -> 1 components, 2 links, 0.1 s
+  maps built in 1.2 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #1: /Power_Supply/+5V_RAW crosses ['/Power_Supply/U20_EN', '/Power_Supply/U20_RT'] (5 items removed)
+  /Power_Supply/+5V_RAW: routed with class BusN (neck-down)
+  maps built in 1.2 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #2: /Power_Supply/+5V_RAW crosses ['/Power_Supply/U20_EN', '/Power_Supply/U20_RT'] (5 items removed)
+  /Power_Supply/+5V_RAW: routed with class BusS (neck-down)
+  net /Power_Supply/+5V_RAW: 7 -> 1 components, 6 links, 13.7 s
+  net AC16_A_F: 4 -> 1 components, 3 links, 0.1 s
+  net AC16_B: 4 -> 1 components, 3 links, 0.1 s
+  net ACSOL_A_F: 4 -> 1 components, 3 links, 0.2 s
+  net ACSOL_B: 6 -> 1 components, 5 links, 0.3 s
+  net FLIP_R_AC: 3 -> 1 components, 2 links, 0.1 s
+  maps built in 1.2 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #3: FLIP_L_AC crosses ['FLIP_R_AC'] (1 items removed)
+  net FLIP_L_AC: 3 -> 1 components, 2 links, 2.4 s
+  +12VU: routed with class BusN (neck-down)
+  net +12VU: 7 -> 1 components, 6 links, 4.2 s
+  maps built in 1.3 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #4: +50V crosses ['SOL15'] (3 items removed)
+  net +50V: 28 -> 1 components, 27 links, 6.8 s
+  maps built in 1.3 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #5: +20V crosses ['SOL20'] (1 items removed)
+  maps built in 1.3 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #6: +20V crosses ['SOL20_L'] (1 items removed)
+  +20V: routed with class BusN (neck-down)
+  net +20V: 14 -> 1 components, 13 links, 14.2 s
+  net ACSOL_A: 6 -> 1 components, 5 links, 0.4 s
+  AC9_AF: routed with class BusN (neck-down)
+  net AC9_AF: 4 -> 1 components, 3 links, 0.7 s
+  maps built in 1.3 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #7: AC9_B crosses ['FLIP_L_AC'] (2 items removed)
+  AC9_B: routed with class BusN (neck-down)
+  net AC9_B: 3 -> 1 components, 2 links, 8.0 s
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #8: +18V crosses ['COL6', 'COL7', 'COLB5'] (3 items removed)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #9: +18V crosses ['COLB2', 'Net-(Q95-Pad1)'] (4 items removed)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #10: +18V crosses [] (0 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #11: +18V crosses [] (0 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #12: +18V crosses [] (0 items removed)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusS (neck-down)
+  net +18V: 26 -> 1 components, 25 links, 63.8 s
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #13: +5V crosses ['/GI_Triacs/GI3_G'] (1 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #14: +5V crosses ['GI4_L'] (2 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #15: +5V crosses ['D2', 'D7'] (2 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #16: +5V crosses [] (0 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #17: +5V crosses [] (0 items removed)
+  +5V: routed with class BusS (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #18: +5V crosses ['/CPU_Interface/ZC_REF', 'D5'] (3 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #19: +5V crosses [] (0 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #20: +5V crosses [] (0 items removed)
+  +5V: routed with class BusS (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #21: +5V crosses ['+12V_F', 'CLK_SOL_GEN', 'D7'] (6 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #22: +5V crosses ['D0', 'D3', 'D4'] (5 items removed)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #23: +5V crosses ['D7', 'SOL09_L'] (3 items removed)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #24: +5V crosses ['D1', 'D6', 'D7'] (5 items removed)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #25: +5V crosses ['/Power_Supply/U20_COMP'] (1 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #26: +5V crosses [] (0 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #27: +5V crosses [] (0 items removed)
+  +5V: routed with class BusS (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #28: +5V crosses ['CLK_GI'] (2 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #29: +5V crosses ['CLK_SOL_LOW', 'D3_N', 'D7_N'] (9 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #30: +5V crosses ['/CPU_Interface/BLK_REF'] (5 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusS (neck-down)
+  +5V: routed with class BusS (neck-down)
+  +5V: routed with class BusS (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #31: +5V crosses ['ZERO_CROSS'] (6 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #32: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #33: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class Default (neck-down)
+  +5V: routed with class BusS (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #34: +5V crosses ['D6'] (4 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #35: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #36: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class Default (neck-down)
+  +5V: routed with class BusS (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #37: +5V crosses ['CLK_LAMP_ROW', 'D4'] (2 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #38: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #39: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #40: +5V crosses ['D3'] (1 items removed)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #41: +5V crosses [] (0 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #42: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #43: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusS (neck-down)
+  +5V: routed with class BusS (neck-down)
+  +5V: routed with class Default (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #44: +5V crosses ['CLK_LAMP_ROW', 'D2', 'ROWCLR3'] (18 items removed)
+  maps built in 1.4 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #45: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #46: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusS (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #47: +5V crosses ['ROWCLR1'] (2 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class Default (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #48: +5V crosses ['D0', 'D2', 'ROWCLR1'] (17 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #49: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #50: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #51: +5V crosses ['D1'] (1 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class Default (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class Default (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #52: +5V crosses ['ROWCLR2'] (1 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #53: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #54: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusN (neck-down)
+  +5V: routed with class BusS (neck-down)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #55: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #56: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #57: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #58: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #59: +5V crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #60: +5V crosses [] (0 items removed)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #61: +5V crosses ['GI2_IN'] (2 items removed)
+  net +5V: 71 -> 1 components, 69 links, 643.7 s
+  net /Power_Supply/U20_EN: 2 -> 1 components, 1 links, 0.0 s
+  net /Power_Supply/U20_RT: 3 -> 1 components, 2 links, 0.0 s
+  net FLIP_R_AC: 2 -> 1 components, 1 links, 0.1 s
+  net SOL15: 2 -> 1 components, 1 links, 0.0 s
+  net SOL20: 2 -> 1 components, 1 links, 0.0 s
+  net SOL20_L: 2 -> 1 components, 1 links, 0.0 s
+  net FLIP_L_AC: 2 -> 1 components, 1 links, 0.0 s
+  net COL6: 2 -> 1 components, 1 links, 0.0 s
+  net COL7: 2 -> 1 components, 1 links, 0.0 s
+  net COLB5: 2 -> 1 components, 1 links, 0.0 s
+  net COLB2: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #62: Net-(Q95-Pad1) crosses ['COLB4'] (1 items removed)
+  net Net-(Q95-Pad1): 3 -> 1 components, 1 links, 1.9 s
+  net /GI_Triacs/GI3_G: 2 -> 1 components, 1 links, 0.0 s
+  net GI4_L: 2 -> 1 components, 1 links, 0.0 s
+  net D2: 4 -> 1 components, 3 links, 0.2 s
+  net D7: 5 -> 1 components, 4 links, 0.5 s
+  net /CPU_Interface/ZC_REF: 2 -> 1 components, 1 links, 0.0 s
+  net D5: 3 -> 1 components, 2 links, 0.3 s
+  net +12V_F: 2 -> 1 components, 1 links, 0.5 s
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #63: D0 crosses ['+5V'] (5 items removed)
+  net D0: 4 -> 1 components, 3 links, 8.2 s
+  net D3: 5 -> 1 components, 3 links, 0.4 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #64: D4 crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #65: D4 crosses [] (0 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #66: D4 crosses [] (0 items removed)
+  no path D4: [('U11', '12'), (None, None)]
+  FAILED D4 (no routable pair left)
+  net D4: 3 -> 2 components, 1 links, 18.3 s
+  net SOL09_L: 2 -> 1 components, 1 links, 0.0 s
+  net D1: 3 -> 1 components, 2 links, 0.4 s
+  net D6: 5 -> 1 components, 4 links, 0.4 s
+  net /Power_Supply/U20_COMP: 2 -> 1 components, 1 links, 0.0 s
+  net CLK_GI: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #67: CLK_SOL_LOW crosses ['CLK_SOL_FLASH'] (1 items removed)
+  net CLK_SOL_LOW: 2 -> 1 components, 1 links, 5.8 s
+  net D3_N: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #68: D7_N crosses ['CLK_GI'] (1 items removed)
+  net D7_N: 2 -> 1 components, 1 links, 1.9 s
+  net /CPU_Interface/BLK_REF: 2 -> 1 components, 1 links, 0.0 s
+  net ZERO_CROSS: 2 -> 1 components, 1 links, 0.1 s
+  net CLK_LAMP_ROW: 3 -> 1 components, 2 links, 0.1 s
+  net ROWCLR3: 1 -> 1 components, 0 links, 0.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #69: ROWCLR1 crosses ['+5V'] (5 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  net ROWCLR2: 3 -> 1 components, 2 links, 0.0 s
+  net GI2_IN: 2 -> 1 components, 1 links, 0.0 s
+  net COLB4: 2 -> 1 components, 1 links, 0.0 s
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #70: +5V crosses ['D0'] (1 items removed)
+  +5V: routed with class BusN (neck-down)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #71: +5V crosses ['D0', 'D2'] (5 items removed)
+  net +5V: 4 -> 1 components, 3 links, 30.3 s
+  net CLK_SOL_FLASH: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #72: CLK_GI crosses ['D5_N'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 4.5 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #73: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 3 -> 1 components, 2 links, 7.4 s
+  net D2: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #74: D5_N crosses ['CLK_GI'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #75: ROWCLR1 crosses ['D0'] (5 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #76: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.6 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #77: CLK_GI crosses ['D5_N'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 4.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #78: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.6 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #79: D5_N crosses ['CLK_GI'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #80: ROWCLR1 crosses ['D0'] (3 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #81: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #82: CLK_GI crosses ['D5_N'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 4.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #83: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #84: D5_N crosses ['CLK_GI'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #85: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #86: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #87: CLK_GI crosses ['D5_N'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 4.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #88: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.7 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #89: D5_N crosses ['CLK_GI'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #90: ROWCLR1 crosses ['D0'] (3 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #91: CLK_GI crosses ['D5_N'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 4.6 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #92: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.7 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #93: D5_N crosses ['CLK_GI'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.8 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #94: ROWCLR1 crosses ['D0'] (6 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #95: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #96: CLK_GI crosses ['D5_N'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 4.6 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #97: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #98: D5_N crosses ['D7_N'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #99: ROWCLR1 crosses ['D0'] (1 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #100: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.6 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #101: D7_N crosses ['D5_N'] (1 items removed)
+  net D7_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #102: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #103: D5_N crosses ['D7_N'] (3 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #104: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #105: D7_N crosses ['D5_N'] (1 items removed)
+  net D7_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #106: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.6 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #107: D5_N crosses ['D7_N'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #108: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #109: D7_N crosses ['CLK_SOL_GEN'] (2 items removed)
+  net D7_N: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #110: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.7 s
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #111: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #112: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #113: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.7 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #114: ROWCLR1 crosses ['D0'] (1 items removed)
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #115: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #116: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 8.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #117: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #118: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #119: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.4 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #120: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #121: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #122: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #123: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.5 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #124: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #125: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.5 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #126: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #127: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.6 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #128: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #129: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.6 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #130: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #131: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.7 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #132: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #133: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #134: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #135: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 2.0 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #136: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #137: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #138: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #139: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #140: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #141: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #142: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #143: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.4 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #144: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.3 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #145: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #146: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #147: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #148: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #149: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #150: D0 crosses ['ROWCLR1'] (11 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.3 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #151: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #152: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #153: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #154: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #155: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #156: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #157: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.7 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #158: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #159: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #160: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #161: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #162: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #163: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.3 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #164: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #165: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #166: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #167: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #168: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #169: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #170: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #171: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #172: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #173: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #174: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #175: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #176: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.3 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #177: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #178: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #179: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #180: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #181: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #182: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #183: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #184: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #185: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #186: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #187: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #188: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #189: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #190: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #191: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #192: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #193: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #194: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.6 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #195: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.3 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #196: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.4 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #197: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #198: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #199: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.2 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #200: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #201: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.4 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #202: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #203: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.2 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #204: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #205: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #206: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #207: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #208: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.5 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #209: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.3 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #210: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #211: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #212: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #213: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.9 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #214: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #215: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #216: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #217: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #218: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.6 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #219: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #220: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.6 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #221: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #222: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.7 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #223: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #224: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.4 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #225: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #226: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #227: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.3 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #228: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.3 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #229: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.6 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #230: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #231: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #232: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #233: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #234: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #235: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #236: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #237: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #238: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #239: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #240: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #241: D0 crosses ['ROWCLR1'] (4 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #242: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #243: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #244: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #245: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #246: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #247: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #248: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #249: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #250: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 9.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #251: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #252: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 2.3 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #253: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 14.8 s
+  maps built in 2.1 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #254: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.6 s
+  maps built in 2.0 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #255: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 13.0 s
+  maps built in 2.0 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #256: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.4 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #257: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.3 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #258: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #259: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #260: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #261: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #262: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #263: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #264: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #265: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #266: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.4 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #267: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #268: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #269: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #270: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #271: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.5 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #272: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #273: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #274: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #275: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #276: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #277: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #278: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.4 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #279: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #280: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #281: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.3 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #282: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #283: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.3 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #284: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #285: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.2 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #286: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #287: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #288: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.3 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #289: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #290: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.5 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #291: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #292: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.9 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #293: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #294: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.1 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #295: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.6 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #296: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.3 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #297: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 12.0 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #298: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.3 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #299: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.6 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #300: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #301: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.5 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #302: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #303: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #304: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.6 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #305: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #306: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.4 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #307: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #308: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.7 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #309: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #310: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #311: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.3 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #312: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #313: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #314: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #315: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #316: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #317: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #318: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #319: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #320: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.3 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #321: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #322: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #323: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #324: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #325: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.7 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #326: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #327: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #328: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #329: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #330: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.2 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #331: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #332: D0 crosses ['ROWCLR1'] (6 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.2 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #333: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #334: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.4 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #335: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #336: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.6 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #337: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.5 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #338: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #339: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #340: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #341: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #342: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #343: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #344: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #345: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #346: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.4 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #347: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #348: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.6 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #349: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #350: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #351: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.6 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #352: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #353: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.3 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #354: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #355: D0 crosses ['ROWCLR1'] (10 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.7 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #356: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #357: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #358: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.4 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #359: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #360: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.8 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #361: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #362: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.7 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #363: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #364: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.4 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #365: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #366: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #367: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #368: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #369: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.6 s
+  maps built in 1.9 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #370: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #371: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #372: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #373: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #374: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #375: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #376: D0 crosses ['ROWCLR1'] (11 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #377: ROWCLR1 crosses ['D0'] (2 items removed)
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #378: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #379: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #380: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #381: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.5 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #382: ROWCLR1 crosses ['D0'] (2 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #383: D0 crosses ['ROWCLR1'] (9 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #384: ROWCLR1 crosses ['D0'] (6 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #385: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.2 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #386: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #387: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #388: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.9 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #389: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.1 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #390: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.4 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #391: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #392: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 3.6 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #393: D0 crosses ['ROWCLR1'] (7 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.5 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #394: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 1.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #395: D0 crosses ['ROWCLR1'] (3 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.7 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #396: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.2 s
+  maps built in 1.5 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #397: D0 crosses ['ROWCLR1'] (8 items removed)
+  net D0: 2 -> 1 components, 1 links, 10.9 s
+  maps built in 1.6 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #398: ROWCLR1 crosses ['D0'] (4 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.0 s
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #399: D0 crosses ['ROWCLR1'] (5 items removed)
+  net D0: 2 -> 1 components, 1 links, 11.5 s
+  maps built in 1.8 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #400: ROWCLR1 crosses ['D0'] (4 items removed)
+  maps built in 1.7 s (2236x1355 cells x 3 layers x 8 classes)
+  rip-up #401: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 4.0 s
+  no path D0: [('U13', '12'), (None, None)]
+  FAILED D0 (no routable pair left)
+  net D0: 2 -> 2 components, 0 links, 4.0 s
+routed 574 links in 2663.5 s, 401 rip-ups (1614 items), failed: ['D0', 'D4']
+== bus reroute done

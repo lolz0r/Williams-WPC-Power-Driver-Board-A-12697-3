@@ -1,0 +1,102 @@
+Cost board everything-on stress case: 64 lamps lit (2.5 ohm = ~5.5 A on +18V, GBJ1510 + 2 x 10000uF), 8 flashers with cold inrush on +20V (GBJ1510 + 10000uF), 2 HP + 4 LP coils fired together on +50V (GBPC3510 + 2 x 2200uF), +5V buck 3 A from GBU8J + 10000uF, +12V buck 2 A
+* (hot 1.1 A each, cold inrush at 40 ms), +50V with 2 high-power (4 ohm) + 4 low-power (9 ohm) coils fired together for 40 ms at 60 ms,
+* +5V buck at 3 A (1.667 ohm, eta 0.88), +12V buck at 2 A from the loaded +20V rail.  Same transformer models as psu.cir; UVLO stop levels 5.6 V / 8.5 V (118k/29.4k and 130k/20k dividers at Vena 1.22 V).
+.include ../models.lib
+* ---- +18V lamp supply, 13VAC, GBJ1510, 2 x 10000uF, all lamps lit
+V13 l1 l2 SIN(0 18.4 60)
+Rl1 l1 la 0.05
+Rl2 l2 lb 0.05
+Vbr18 la lab 0
+DL1 lab v18 DGBJ15
+DL2 lb v18 DGBJ15
+DL3 0 lab DGBJ15
+DL4 0 lb DGBJ15
+C6 v18 0 10000u
+C7 v18 0 10000u
+Rl18 v18 0 2.5
+* ---- +5V raw: 9VAC -> BR2 (GBU8J) -> 10000uF -> buck (3 A)
+V9 s1 s2 SIN(0 12.7 60)
+Rs1 s1 sa 0.05
+Rs2 s2 sb 0.05
+Vbr5 sa sab 0
+DS1 sab vraw DGBU8
+DS2 sb vraw DGBU8
+DS3 0 sab DGBU8
+DS4 0 sb DGBU8
+C5 vraw 0 10000u
+Bv5 v5 0 V = 0.5*(1+tanh((v(vraw)-5.6)*40)) * min(5.0, max(0.97*v(vraw) - 0.5, 0))
+R5 v5 0 1.667
+Bin5 vraw 0 I = (v(v5)*v(v5)/1.667) / (0.88*max(v(vraw),1))
+* ---- +20V flasher supply: 8 flashers on from t=40 ms (cold inrush), +12V buck at 2 A
+V16 f1 f2 SIN(0 22.6 60)
+Rf1 f1 fa 0.05
+Rf2 f2 fb 0.05
+Vbr20 fa fab 0
+DF1 fab v20 DGBJ15
+DF2 fb v20 DGBJ15
+DF3 0 fab DGBJ15
+DF4 0 fb DGBJ15
+C11 v20 0 10000u
+Vfl v20 v20f 0
+Bflash v20f 0 I = (time > 40m) ? 8 * v(v20f) / (3 + 15*(1-exp(-(time-40m)/8m))) : 0
+Bv12 v12 0 V = 0.5*(1+tanh((v(v20)-8.5)*40)) * min(12.0, max(0.97*v(v20) - 0.5, 0))
+R12 v12 0 6
+Bin12 v20 0 I = (v(v12)*v(v12)/6) / (0.88*max(v(v20),1))
+* ---- +50V: 36VAC, 2 x 2200uF/100V; 2 x 4-ohm + 4 x 9-ohm coils for 40 ms at 60 ms
+V36 h1 h2 SIN(0 51 60)
+Rh1 h1 ha 0.1
+Rh2 h2 hb 0.1
+Vbr ha hab 0
+DH1 hab v50 DGBPC35
+DH2 hb v50 DGBPC35
+DH3 0 hab DGBPC35
+DH4 0 hb DGBPC35
+C8 v50 0 2200u
+C32 v50 0 2200u
+R260 v50 0 10k
+Vctl ctl 0 PULSE(0 5 60m 1u 1u 40m 200m)
+.model SWS SW(Ron=0.02 Roff=1e9 Vt=2.5 Vh=0.1)
+Ssol v50 coils ctl 0 SWS
+Vsol v50 v50s 0
+* two high-power coils: 2 ohm / 6 mH lumped; four low-power: 2.25 ohm / 6.25 mH lumped
+Lhp coils hn 6m
+Rhp hn 0 2
+Llp coils ln 6.25m
+Rlp ln 0 2.25
+Dfb1 0 coils D1N4004
+Dfb2 coils v50 D1N4004
+.tran 20u 150m uic
+.control
+run
+let ihp = i(Lhp)
+let ilp = i(Llp)
+let itot50 = ihp + ilp
+let ibr50 = abs(i(Vbr))
+let ibr18 = abs(i(Vbr18))
+let ibr20 = abs(i(Vbr20))
+let ibr5 = abs(i(Vbr5))
+let i18 = v(v18)/2.5
+let iflash = i(Vfl)
+meas tran v18_avg AVG v(v18) from=80m to=120m
+meas tran v18_min MIN v(v18) from=80m to=120m
+meas tran i18_avg AVG i18 from=80m to=120m
+meas tran ibr18_peak MAX ibr18 from=80m to=120m
+meas tran ibr20_peak MAX ibr20 from=40m to=140m
+meas tran ibr5_peak MAX ibr5 from=80m to=140m
+meas tran vin5_min MIN v(vraw) from=80m to=140m
+meas tran v5_min MIN v(v5) from=80m to=140m
+meas tran v20_min MIN v(v20) from=40m to=140m
+meas tran v20_avg AVG v(v20) from=80m to=140m
+meas tran iflash_peak MAX iflash from=40m to=60m
+meas tran iflash_hot AVG iflash from=100m to=140m
+meas tran v12_min MIN v(v12) from=40m to=140m
+meas tran v50_idle AVG v(v50) from=40m to=60m
+meas tran v50_avg_pulse AVG v(v50) from=70m to=99m
+meas tran v50_min_pulse MIN v(v50) from=70m to=99m
+meas tran ihp_max MAX ihp from=60m to=100m
+meas tran ilp_max MAX ilp from=60m to=100m
+meas tran itot50_max MAX itot50 from=60m to=100m
+meas tran ibr50_peak MAX ibr50 from=60m to=100m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/psu_maxload.csv v(v18) v(vraw) v(v5) v(v20) v(v12) v(v50) ihp ilp iflash ibr50 ibr18 ibr20 ibr5
+.endc
+.end

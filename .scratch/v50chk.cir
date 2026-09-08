@@ -1,0 +1,21 @@
+idle +50V check
+.include /home/lolz0r/tng/wpc_power_driver_cost/tools/spice/models.lib
+V51 h1 h2 SIN(0 72.7 60)
+Rh1 h1 ha 0.6
+Rh2 h2 hb 0.6
+DH1 ha v50 DGBPC35
+DH2 hb v50 DGBPC35
+DH3 0 ha DGBPC35
+DH4 0 hb DGBPC35
+C8 v50 0 4400u
+R260 v50 0 7.5k
+.tran 20u 150m uic
+.control
+run
+meas tran vmax MAX v(v50) from=100m to=150m
+meas tran vmin MIN v(v50) from=100m to=150m
+meas tran vpk MAX v(h1) from=100m to=150m
+let vd = v(ha) - v(v50)
+meas tran vdmax MAX vd from=100m to=150m
+.endc
+.end

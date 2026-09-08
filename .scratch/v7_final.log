@@ -1,0 +1,84 @@
+round 0: 11 errors, 0 open (non-GND), 1 GND open
+    shorting_items | Pad 2 [GND] of B13 on F.Cu / Track [ROWCLR1] on F.Cu, length 4.8000 m
+    shorting_items | Pad 2 [GND] of B13 on F.Cu / Track [ROWCLR1] on F.Cu, length 12.8000 
+    shorting_items | Pad 1 [+5V] of B13 on F.Cu / Track [/Lamp_Rows/ROW2_Q] on F.Cu, lengt
+    shorting_items | Pad 1 [+5V] of B13 on F.Cu / Track [/Lamp_Rows/ROW2_Q] on F.Cu, lengt
+    shorting_items | Pad 1 [+5V] of B13 on F.Cu / Via [/Lamp_Rows/ROW2_Q] on F.Cu - B.Cu
+    clearance | Pad 2 [GND] of B13 on F.Cu / Via [D2] on F.Cu - B.Cu
+    removed 10
+   routed 15 links in 66.2 s, 8 rip-ups (25 items), failed: ['/Lamp_Rows/ROW2_Q', 'D2']
+round 1: 0 errors, 2 open (non-GND), 1 GND open
+    open: Track [D2] on F.Cu, length 1.2000 mm @380.8,151.0 / Track [D2] on B.Cu, length 3.6000 mm @384.4,153.4
+    open: Track [/Lamp_Rows/ROW2_Q] on B.Cu, lengt @382.8,173.8 / Track [/Lamp_Rows/ROW2_Q] on F.Cu, lengt @384.8,152.0
+== v7 repair done
+== GND stitch vias
+placed 15 stitch vias; failed: ['D108-2', 'C21-2', 'B13-2']
+== rail pours
+rail pours: 24 zones added, 144 thermal vias
+== finish (dedupe, thermal vias, GND pours, refill, stub cleanup)
+.scratch/flow.kicad_pcb: removed 14 duplicate segments, 0 duplicate vias
+helper segments removed: 7
+thermal vias added: 8
+removed 4 colliding thermal vias
+final DRC: {('error', 'shorting_items'): 32, ('error', 'clearance'): 3, ('warning', 'track_dangling'): 121, ('warning', 'via_dangling'): 83, ('warning', 'isolated_copper'): 4, ('warning', 'npth_inside_courtyard'): 1, ('warning', 'hole_to_hole'): 6} unconnected 3
+   shorting_items Items shorting two nets (nets SOL03_L and AC9_B) ['Track [SOL03_L] on B.Cu, length 62.8000 mm', 'Via [AC9_B] on F.Cu - B.Cu']
+   shorting_items Items shorting two nets (nets AC9_B and SOL03_L) ['Via [AC9_B] on F.Cu - B.Cu', 'Track [SOL03_L] on B.Cu, length 62.8000 mm']
+   shorting_items Items shorting two nets (nets AC9_B and SOL03_L) ['Via [AC9_B] on F.Cu - B.Cu', 'Track [SOL03_L] on B.Cu, length 62.8000 mm']
+   shorting_items Items shorting two nets (nets AC9_B and D3_N) ['Via [AC9_B] on F.Cu - B.Cu', 'Track [D3_N] on In2.Cu, length 21.6000 mm']
+   shorting_items Items shorting two nets (nets AC9_B and D3_N) ['Via [AC9_B] on F.Cu - B.Cu', 'Track [D3_N] on In2.Cu, length 21.6000 mm']
+   shorting_items Items shorting two nets (nets D3_N and AC9_B) ['Track [D3_N] on In2.Cu, length 21.6000 mm', 'Via [AC9_B] on F.Cu - B.Cu']
+   shorting_items Items shorting two nets (nets AC13_B and ACSOL_A_F) ['Via [AC13_B] on F.Cu - B.Cu', 'Track [ACSOL_A_F] on B.Cu, length 26.2000 mm']
+   shorting_items Items shorting two nets (nets AC16_A and +18V) ['Track [AC16_A] on B.Cu, length 28.6000 mm', 'Via [+18V] on F.Cu - B.Cu']
+   shorting_items Items shorting two nets (nets AC16_A and +18V) ['Track [AC16_A] on B.Cu, length 28.6000 mm', 'Via [+18V] on F.Cu - B.Cu']
+   shorting_items Items shorting two nets (nets AC16_A and +18V) ['Track [AC16_A] on B.Cu, length 28.6000 mm', 'Via [+18V] on F.Cu - B.Cu']
+  open: ["Zone 'GND_F' [GND] on F.Cu, priority 0", "Zone 'GND_F' [GND] on F.Cu, priority 0"]
+  open: ['Track [D2] on F.Cu, length 1.2000 mm', 'Track [D2] on B.Cu, length 3.6000 mm']
+  open: ['Track [/Lamp_Rows/ROW2_Q] on B.Cu, length 21.', 'Track [/Lamp_Rows/ROW2_Q] on F.Cu, length 1.0']
+round 0: 204 dangling items to process (0 nets excluded)
+  removed 183 trimmed 19 skipped 2
+round 1: previous removal broke connectivity -> restored; excluding nets ['+18V', '/Lamp_Rows/ROW2_Q', '/Power_Supply/+5V_RAW', '/Power_Supply/AC13_A_F', 'AC13_B', 'AC16_A', 'AC9_AF', 'AC9_B']
+round 1: 118 dangling items to process (25 nets excluded)
+  removed 104 trimmed 12 skipped 2
+round 2: 47 dangling items to process (25 nets excluded)
+  removed 38 trimmed 7 skipped 2
+round 3: previous removal broke connectivity -> restored; excluding nets ['+18V', '/Lamp_Rows/ROW2_Q', '/Power_Supply/+5V_RAW', '/Power_Supply/AC13_A_F', 'AC13_B', 'AC16_A', 'AC9_AF', 'AC9_B']
+round 3: 46 dangling items to process (26 nets excluded)
+  removed 37 trimmed 7 skipped 2
+round 4: 27 dangling items to process (26 nets excluded)
+  removed 24 trimmed 1 skipped 2
+round 5: 22 dangling items to process (26 nets excluded)
+  removed 18 trimmed 2 skipped 2
+round 6: 19 dangling items to process (26 nets excluded)
+  removed 16 trimmed 1 skipped 2
+round 7: 18 dangling items to process (26 nets excluded)
+  removed 15 trimmed 1 skipped 2
+round 8: 15 dangling items to process (26 nets excluded)
+  removed 13 trimmed 0 skipped 2
+round 9: previous removal broke connectivity -> restored; excluding nets ['+18V', '/Lamp_Rows/ROW2_Q', '/Lamp_Rows/ROW3_Q', '/Power_Supply/+5V_RAW', '/Power_Supply/AC13_A_F', 'AC13_B', 'AC16_A', 'AC9_AF']
+round 9: 14 dangling items to process (27 nets excluded)
+  removed 12 trimmed 0 skipped 2
+round 10: 13 dangling items to process (27 nets excluded)
+  removed 10 trimmed 1 skipped 2
+round 11: 12 dangling items to process (27 nets excluded)
+  removed 10 trimmed 0 skipped 2
+removed 555 items; unconnected 3->3, errors 35->35, dangling left 99
+== legend
+legend: 50 labels, 3 title/caution texts, fiducials FID1-3 at corners; board 449.3 x 273.0
+== final DRC
+{('error', 'shorting_items'): 29, ('error', 'clearance'): 9, ('error', 'courtyards_overlap'): 1, ('warning', 'track_dangling'): 62, ('warning', 'via_dangling'): 37, ('warning', 'isolated_copper'): 4, ('warning', 'npth_inside_courtyard'): 1, ('warning', 'hole_to_hole'): 6} unconnected 3
+   shorting_items | Via [+18V] on F.Cu - B.Cu @363.4,62.5 / Track [AC16_A] on B.Cu, length 28.6000 mm @371.0,61.4
+   shorting_items | Track [D3_N] on In2.Cu, length 21.6000 mm @303.0,125.8 / Via [AC9_B] on F.Cu - B.Cu @312.5,126.4
+   shorting_items | Via [AC9_B] on F.Cu - B.Cu @314.1,126.4 / Track [D3_N] on In2.Cu, length 21.6000 mm @303.0,125.8
+   shorting_items | Track [SOL03_L] on B.Cu, length 62.8000 mm @310.4,168.2 / Via [AC9_B] on F.Cu - B.Cu @310.9,128.0
+   shorting_items | Via [AC9_B] on F.Cu - B.Cu @310.9,129.6 / Track [SOL03_L] on B.Cu, length 62.8000 mm @310.4,168.2
+   shorting_items | Via [AC9_B] on F.Cu - B.Cu @310.9,126.4 / Track [SOL03_L] on B.Cu, length 62.8000 mm @310.4,168.2
+   shorting_items | Via [AC9_B] on F.Cu - B.Cu @310.9,126.4 / Track [D3_N] on In2.Cu, length 21.6000 mm @303.0,125.8
+   shorting_items | Via [AC13_B] on F.Cu - B.Cu @361.8,38.5 / Track [ACSOL_A_F] on B.Cu, length 26.2000 mm @371.0,37.8
+   shorting_items | Track [AC16_A] on B.Cu, length 28.6000 mm @371.0,61.4 / Via [+18V] on F.Cu - B.Cu @348.4,62.5
+   shorting_items | Track [AC16_A] on B.Cu, length 28.6000 mm @371.0,61.4 / Via [+18V] on F.Cu - B.Cu @365.0,60.9
+   shorting_items | Track [AC16_A] on B.Cu, length 28.6000 mm @371.0,61.4 / Via [+18V] on F.Cu - B.Cu @350.0,60.9
+   shorting_items | Track [AC16_A] on B.Cu, length 28.6000 mm @371.0,61.4 / Via [+18V] on F.Cu - B.Cu @350.0,62.5
+   open: Zone 'GND_F' [GND] on F.Cu, priority 0 / Zone 'GND_F' [GND] on F.Cu, priority 0
+   open: Track [D2] on F.Cu, length 1.2000 mm / Track [D2] on B.Cu, length 3.6000 mm
+   open: Track [/Lamp_Rows/ROW2_Q] on B.Cu, length 21. / Track [/Lamp_Rows/ROW2_Q] on F.Cu, length 1.0
+== finalize done rc=0

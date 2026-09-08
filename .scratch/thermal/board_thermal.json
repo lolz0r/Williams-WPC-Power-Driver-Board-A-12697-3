@@ -1,0 +1,2602 @@
+{
+ "placement": {
+  "BR1": {
+   "fp": "wpc_cost:Diode_Bridge_GBJ",
+   "x": 361.049,
+   "y": 71.328,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    358.27,
+    68.05,
+    363.82,
+    99.6
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "+18V",
+     "x": 361.05,
+     "y": 71.33
+    },
+    {
+     "num": "2",
+     "net": "GND",
+     "x": 361.05,
+     "y": 96.33
+    },
+    {
+     "num": "3",
+     "net": "/Power_Supply/AC13_A_F",
+     "x": 361.05,
+     "y": 81.33
+    },
+    {
+     "num": "4",
+     "net": "AC13_B",
+     "x": 361.05,
+     "y": 88.83
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "C7",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 5.48,
+     "crtyd": [
+      347.48,
+      105.09,
+      373.82,
+      130.64
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "R196",
+     "fp": "R_0805_2012Metric",
+     "gap": 13.57,
+     "crtyd": [
+      341.3,
+      92.08,
+      344.7,
+      94.03
+     ],
+     "value": "1.5K",
+     "side": "F"
+    },
+    {
+     "ref": "LED6",
+     "fp": "LED_0805_2012Metric",
+     "gap": 15.0,
+     "crtyd": [
+      341.24,
+      96.75,
+      343.28,
+      100.2
+     ],
+     "value": "LED red",
+     "side": "F"
+    },
+    {
+     "ref": "C8",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 18.99,
+     "crtyd": [
+      313.73,
+      79.9,
+      339.28,
+      106.24
+     ],
+     "value": "2200uF 100V",
+     "side": "F"
+    },
+    {
+     "ref": "C5",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 20.92,
+     "crtyd": [
+      311.81,
+      44.78,
+      337.36,
+      71.12
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "U9",
+     "fp": "SOIC-20W_7.5x12.8mm_P1.27mm",
+     "gap": 22.29,
+     "crtyd": [
+      330.4,
+      115.16,
+      342.31,
+      128.65
+     ],
+     "value": "74HCT240",
+     "side": "F"
+    },
+    {
+     "ref": "C6",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 22.89,
+     "crtyd": [
+      386.13,
+      104.75,
+      412.47,
+      130.3
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "B9",
+     "fp": "C_0805_2012Metric",
+     "gap": 23.85,
+     "crtyd": [
+      344.31,
+      120.25,
+      346.32,
+      123.69
+     ],
+     "value": "100nF",
+     "side": "F"
+    },
+    {
+     "ref": "F114",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 23.95,
+     "crtyd": [
+      387.77,
+      87.92,
+      414.13,
+      94.83
+     ],
+     "value": "8A",
+     "side": "F"
+    },
+    {
+     "ref": "F113",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 23.95,
+     "crtyd": [
+      387.77,
+      73.0,
+      414.13,
+      79.91
+     ],
+     "value": "5A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "F112",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 24.13,
+     "crtyd": [
+      387.77,
+      58.16,
+      414.13,
+      65.07
+     ],
+     "value": "7A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "R194",
+     "fp": "R_0805_2012Metric",
+     "gap": 28.12,
+     "crtyd": [
+      339.36,
+      42.65,
+      342.77,
+      44.6
+     ],
+     "value": "1.5K",
+     "side": "F"
+    }
+   ]
+  },
+  "BR2": {
+   "fp": "Diode_THT:Diode_Bridge_Vishay_GBU",
+   "x": 361.3,
+   "y": 18.702,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    358.73,
+    15.03,
+    363.18,
+    37.68
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "/Power_Supply/+5V_RAW",
+     "x": 361.3,
+     "y": 18.7
+    },
+    {
+     "num": "2",
+     "net": "AC9_B",
+     "x": 361.3,
+     "y": 23.78
+    },
+    {
+     "num": "3",
+     "net": "AC9_AF",
+     "x": 361.3,
+     "y": 28.86
+    },
+    {
+     "num": "4",
+     "net": "GND",
+     "x": 361.3,
+     "y": 33.94
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "R194",
+     "fp": "R_0805_2012Metric",
+     "gap": 16.71,
+     "crtyd": [
+      339.36,
+      42.65,
+      342.77,
+      44.6
+     ],
+     "value": "1.5K",
+     "side": "F"
+    },
+    {
+     "ref": "LED5",
+     "fp": "LED_0805_2012Metric",
+     "gap": 16.94,
+     "crtyd": [
+      339.74,
+      37.2,
+      341.78,
+      40.65
+     ],
+     "value": "LED red",
+     "side": "F"
+    },
+    {
+     "ref": "C11",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 21.2,
+     "crtyd": [
+      311.98,
+      7.9,
+      337.53,
+      34.23
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "C5",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 22.52,
+     "crtyd": [
+      311.81,
+      44.78,
+      337.36,
+      71.12
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "F111",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 25.18,
+     "crtyd": [
+      387.77,
+      43.07,
+      414.13,
+      49.98
+     ],
+     "value": "5A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "J105",
+     "fp": "Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical",
+     "gap": 27.0,
+     "crtyd": [
+      390.18,
+      27.9,
+      410.89,
+      38.96
+     ],
+     "value": "J105 flipper AC (relay switched, N/C on Fliptronic games)",
+     "side": "F"
+    },
+    {
+     "ref": "J104",
+     "fp": "Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical",
+     "gap": 27.0,
+     "crtyd": [
+      390.18,
+      5.26,
+      410.89,
+      16.32
+     ],
+     "value": "J104 fused 51VAC (F112, pins 1/2) to Fliptronic II J901 and fused 16VAC (F111, pins 4/5), as A-12697 sheet 1",
+     "side": "F"
+    }
+   ]
+  },
+  "BR3": {
+   "fp": "Diode_THT:Diode_Bridge_28.6x28.6x7.3mm_P18.0mm_P11.6mm",
+   "x": 254.588,
+   "y": 14.304,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    237.16,
+    8.48,
+    266.81,
+    38.13
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "+50V",
+     "x": 254.59,
+     "y": 14.3
+    },
+    {
+     "num": "2",
+     "net": "GND",
+     "x": 242.99,
+     "y": 14.3
+    },
+    {
+     "num": "3",
+     "net": "ACSOL_A_F",
+     "x": 242.99,
+     "y": 32.3
+    },
+    {
+     "num": "4",
+     "net": "ACSOL_B",
+     "x": 260.99,
+     "y": 32.3
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "J106",
+     "fp": "Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical",
+     "gap": 4.58,
+     "crtyd": [
+      211.87,
+      6.1,
+      232.58,
+      17.16
+     ],
+     "value": "J106 +20V to backbox flashlamps",
+     "side": "F"
+    },
+    {
+     "ref": "J107",
+     "fp": "Molex_KK-396_A-41791-0006_1x06_P3.96mm_Vertical",
+     "gap": 7.04,
+     "crtyd": [
+      205.45,
+      28.32,
+      230.12,
+      39.38
+     ],
+     "value": "J107 +50V (F103/F104/F105) and +20V to playfield",
+     "side": "F"
+    },
+    {
+     "ref": "R262",
+     "fp": "R_0805_2012Metric",
+     "gap": 13.41,
+     "crtyd": [
+      259.05,
+      51.54,
+      262.45,
+      53.49
+     ],
+     "value": "29.4K",
+     "side": "F"
+    },
+    {
+     "ref": "F105",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 14.84,
+     "crtyd": [
+      223.89,
+      51.54,
+      230.8,
+      77.9
+     ],
+     "value": "3A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "R263",
+     "fp": "R_0805_2012Metric",
+     "gap": 17.36,
+     "crtyd": [
+      257.9,
+      55.49,
+      261.31,
+      57.44
+     ],
+     "value": "240K",
+     "side": "F"
+    },
+    {
+     "ref": "C34",
+     "fp": "C_1210_3225Metric",
+     "gap": 17.45,
+     "crtyd": [
+      269.78,
+      55.33,
+      274.43,
+      58.58
+     ],
+     "value": "10uF",
+     "side": "F"
+    },
+    {
+     "ref": "R261",
+     "fp": "R_0805_2012Metric",
+     "gap": 18.5,
+     "crtyd": [
+      264.37,
+      56.63,
+      267.78,
+      58.58
+     ],
+     "value": "118K",
+     "side": "F"
+    },
+    {
+     "ref": "BR4",
+     "fp": "Diode_Bridge_GBJ",
+     "gap": 18.61,
+     "crtyd": [
+      285.43,
+      7.28,
+      290.98,
+      38.83
+     ],
+     "value": "GBJ1510",
+     "side": "F"
+    },
+    {
+     "ref": "C33",
+     "fp": "C_1210_3225Metric",
+     "gap": 20.47,
+     "crtyd": [
+      276.4,
+      56.22,
+      281.05,
+      59.47
+     ],
+     "value": "10uF",
+     "side": "F"
+    },
+    {
+     "ref": "L1",
+     "fp": "L_Bourns_SRP1245A",
+     "gap": 21.28,
+     "crtyd": [
+      246.64,
+      59.41,
+      259.69,
+      74.16
+     ],
+     "value": "10uH",
+     "side": "F"
+    },
+    {
+     "ref": "D36",
+     "fp": "D_SMC",
+     "gap": 22.41,
+     "crtyd": [
+      265.63,
+      60.54,
+      272.38,
+      70.43
+     ],
+     "value": "B560C",
+     "side": "F"
+    },
+    {
+     "ref": "U20",
+     "fp": "Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm",
+     "gap": 24.51,
+     "crtyd": [
+      274.37,
+      61.44,
+      280.01,
+      68.99
+     ],
+     "value": "TPS54360BDDAR",
+     "side": "F"
+    },
+    {
+     "ref": "F104",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 25.66,
+     "crtyd": [
+      208.38,
+      51.54,
+      215.29,
+      77.9
+     ],
+     "value": "3A S.B.",
+     "side": "F"
+    }
+   ]
+  },
+  "BR4": {
+   "fp": "wpc_cost:Diode_Bridge_GBJ",
+   "x": 288.202,
+   "y": 10.553,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    285.43,
+    7.28,
+    290.98,
+    38.83
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "+20V",
+     "x": 288.2,
+     "y": 10.55
+    },
+    {
+     "num": "2",
+     "net": "GND",
+     "x": 288.2,
+     "y": 35.55
+    },
+    {
+     "num": "3",
+     "net": "AC16_A_F",
+     "x": 288.2,
+     "y": 20.55
+    },
+    {
+     "num": "4",
+     "net": "AC16_B",
+     "x": 288.2,
+     "y": 28.05
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "C33",
+     "fp": "C_1210_3225Metric",
+     "gap": 17.93,
+     "crtyd": [
+      276.4,
+      56.22,
+      281.05,
+      59.47
+     ],
+     "value": "10uF",
+     "side": "F"
+    },
+    {
+     "ref": "BR3",
+     "fp": "Diode_Bridge_28.6x28.6x7.3mm_P18.0mm_P11.6mm",
+     "gap": 18.61,
+     "crtyd": [
+      237.16,
+      8.48,
+      266.81,
+      38.13
+     ],
+     "value": "GBPC3510",
+     "side": "F"
+    },
+    {
+     "ref": "TP9",
+     "fp": "TestPoint_THTPad_D2.0mm_Drill1.0mm",
+     "gap": 18.65,
+     "crtyd": [
+      306.76,
+      48.77,
+      309.81,
+      51.82
+     ],
+     "value": "TP9 +5V_RAW",
+     "side": "F"
+    },
+    {
+     "ref": "C34",
+     "fp": "C_1210_3225Metric",
+     "gap": 19.82,
+     "crtyd": [
+      269.78,
+      55.33,
+      274.43,
+      58.58
+     ],
+     "value": "10uF",
+     "side": "F"
+    },
+    {
+     "ref": "C11",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 21.0,
+     "crtyd": [
+      311.98,
+      7.9,
+      337.53,
+      34.23
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "C5",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 21.66,
+     "crtyd": [
+      311.81,
+      44.78,
+      337.36,
+      71.12
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "U20",
+     "fp": "Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm",
+     "gap": 23.26,
+     "crtyd": [
+      274.37,
+      61.44,
+      280.01,
+      68.99
+     ],
+     "value": "TPS54360BDDAR",
+     "side": "F"
+    },
+    {
+     "ref": "R261",
+     "fp": "R_0805_2012Metric",
+     "gap": 25.07,
+     "crtyd": [
+      264.37,
+      56.63,
+      267.78,
+      58.58
+     ],
+     "value": "118K",
+     "side": "F"
+    },
+    {
+     "ref": "D36",
+     "fp": "D_SMC",
+     "gap": 25.33,
+     "crtyd": [
+      265.63,
+      60.54,
+      272.38,
+      70.43
+     ],
+     "value": "B560C",
+     "side": "F"
+    },
+    {
+     "ref": "R262",
+     "fp": "R_0805_2012Metric",
+     "gap": 26.25,
+     "crtyd": [
+      259.05,
+      51.54,
+      262.45,
+      53.49
+     ],
+     "value": "29.4K",
+     "side": "F"
+    },
+    {
+     "ref": "R263",
+     "fp": "R_0805_2012Metric",
+     "gap": 29.31,
+     "crtyd": [
+      257.9,
+      55.49,
+      261.31,
+      57.44
+     ],
+     "value": "240K",
+     "side": "F"
+    }
+   ]
+  },
+  "BR5": {
+   "fp": "Diode_THT:Diode_Bridge_Vishay_GBU",
+   "x": 32.106,
+   "y": 19.624,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    29.53,
+    15.95,
+    33.98,
+    38.6
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "+12VU",
+     "x": 32.11,
+     "y": 19.62
+    },
+    {
+     "num": "2",
+     "net": "AC98_B",
+     "x": 32.11,
+     "y": 24.7
+    },
+    {
+     "num": "3",
+     "net": "/Power_Supply/AC98_A_F",
+     "x": 32.11,
+     "y": 29.78
+    },
+    {
+     "num": "4",
+     "net": "GND",
+     "x": 32.11,
+     "y": 34.86
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "C30",
+     "fp": "CP_Radial_D25.0mm_P10.00mm_SnapIn",
+     "gap": 9.87,
+     "crtyd": [
+      3.82,
+      48.47,
+      29.37,
+      74.81
+     ],
+     "value": "10000uF 25V",
+     "side": "F"
+    },
+    {
+     "ref": "LED7",
+     "fp": "LED_0805_2012Metric",
+     "gap": 14.36,
+     "crtyd": [
+      42.4,
+      50.23,
+      44.44,
+      53.68
+     ],
+     "value": "LED red",
+     "side": "F"
+    },
+    {
+     "ref": "J112",
+     "fp": "Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical",
+     "gap": 15.01,
+     "crtyd": [
+      48.99,
+      6.1,
+      69.7,
+      17.16
+     ],
+     "value": "J112 xformer 9.8VAC (Wht-Grn)",
+     "side": "F"
+    },
+    {
+     "ref": "H3",
+     "fp": "MountingHole_4.3mm_M4",
+     "gap": 19.03,
+     "crtyd": [
+      1.98,
+      1.98,
+      11.12,
+      11.12
+     ],
+     "value": "M4",
+     "side": "F"
+    },
+    {
+     "ref": "F116",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 19.82,
+     "crtyd": [
+      53.8,
+      27.48,
+      60.71,
+      53.84
+     ],
+     "value": "3A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "TP4",
+     "fp": "TestPoint_THTPad_D2.0mm_Drill1.0mm",
+     "gap": 24.27,
+     "crtyd": [
+      45.25,
+      60.09,
+      48.3,
+      63.14
+     ],
+     "value": "TP4 ZC",
+     "side": "F"
+    },
+    {
+     "ref": "R250",
+     "fp": "R_0805_2012Metric",
+     "gap": 24.79,
+     "crtyd": [
+      39.62,
+      62.73,
+      43.03,
+      64.69
+     ],
+     "value": "1.5K",
+     "side": "F"
+    }
+   ]
+  },
+  "Q10": {
+   "fp": "Package_TO_SOT_THT:TO-220-3_Vertical",
+   "x": 117.444,
+   "y": 207.45,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    115.92,
+    204.72,
+    120.87,
+    215.26
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "GI_RET",
+     "x": 117.44,
+     "y": 207.45
+    },
+    {
+     "num": "2",
+     "net": "GI2_RET",
+     "x": 117.44,
+     "y": 209.99
+    },
+    {
+     "num": "3",
+     "net": "/GI_Triacs/GI2_G",
+     "x": 117.44,
+     "y": 212.53
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "R7",
+     "fp": "R_2512_6332Metric",
+     "gap": 15.77,
+     "crtyd": [
+      136.64,
+      212.36,
+      144.35,
+      216.27
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "Q9",
+     "fp": "SOT-23",
+     "gap": 17.9,
+     "crtyd": [
+      138.77,
+      206.47,
+      142.22,
+      210.38
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "R9",
+     "fp": "R_0805_2012Metric",
+     "gap": 17.92,
+     "crtyd": [
+      138.79,
+      202.52,
+      142.2,
+      204.47
+     ],
+     "value": "10K",
+     "side": "F"
+    },
+    {
+     "ref": "R16",
+     "fp": "R_2512_6332Metric",
+     "gap": 18.88,
+     "crtyd": [
+      95.56,
+      186.79,
+      103.28,
+      190.7
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "Q15",
+     "fp": "SOT-23",
+     "gap": 24.79,
+     "crtyd": [
+      97.69,
+      180.9,
+      101.14,
+      184.81
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "F109",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 24.95,
+     "crtyd": [
+      64.61,
+      215.17,
+      90.97,
+      222.08
+     ],
+     "value": "5A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "J123",
+     "fp": "Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical",
+     "gap": 27.02,
+     "crtyd": [
+      118.83,
+      242.29,
+      139.53,
+      253.35
+     ],
+     "value": "J123 spare (N/C)",
+     "side": "F"
+    },
+    {
+     "ref": "J120",
+     "fp": "Molex_KK-396_A-41791-0011_1x11_P3.96mm_Vertical",
+     "gap": 27.25,
+     "crtyd": [
+      67.96,
+      242.29,
+      112.43,
+      253.35
+     ],
+     "value": "J120 G.I. backbox (strings 2,3)",
+     "side": "F"
+    },
+    {
+     "ref": "F110",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 28.85,
+     "crtyd": [
+      64.61,
+      229.76,
+      90.97,
+      236.67
+     ],
+     "value": "5A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "R18",
+     "fp": "R_0805_2012Metric",
+     "gap": 29.75,
+     "crtyd": [
+      97.72,
+      176.95,
+      101.12,
+      178.9
+     ],
+     "value": "10K",
+     "side": "F"
+    }
+   ]
+  },
+  "Q12": {
+   "fp": "Package_TO_SOT_THT:TO-220-3_Vertical",
+   "x": 38.393,
+   "y": 156.734,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    36.87,
+    154.0,
+    41.82,
+    164.55
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "GI_RET",
+     "x": 38.39,
+     "y": 156.73
+    },
+    {
+     "num": "2",
+     "net": "GI5_RET",
+     "x": 38.39,
+     "y": 159.27
+    },
+    {
+     "num": "3",
+     "net": "/GI_Triacs/GI5_G",
+     "x": 38.39,
+     "y": 161.81
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "R10",
+     "fp": "R_2512_6332Metric",
+     "gap": 14.52,
+     "crtyd": [
+      56.33,
+      162.48,
+      64.04,
+      166.39
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "Q11",
+     "fp": "SOT-23",
+     "gap": 16.65,
+     "crtyd": [
+      58.46,
+      156.57,
+      61.91,
+      160.48
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "R12",
+     "fp": "R_0805_2012Metric",
+     "gap": 16.67,
+     "crtyd": [
+      58.48,
+      152.67,
+      61.89,
+      154.62
+     ],
+     "value": "10K",
+     "side": "F"
+    },
+    {
+     "ref": "J114",
+     "fp": "Molex_KK-396_A-41791-0007_1x07_P3.96mm_Vertical",
+     "gap": 23.83,
+     "crtyd": [
+      1.98,
+      161.05,
+      13.04,
+      189.68
+     ],
+     "value": "J114 +12V/+5V/GND to CPU J210, Fliptronic J904, 8-driver",
+     "side": "F"
+    },
+    {
+     "ref": "H8",
+     "fp": "MountingHole_4.3mm_M4",
+     "gap": 25.89,
+     "crtyd": [
+      1.98,
+      142.12,
+      11.12,
+      151.28
+     ],
+     "value": "M4",
+     "side": "F"
+    },
+    {
+     "ref": "LED1",
+     "fp": "LED_0805_2012Metric",
+     "gap": 27.34,
+     "crtyd": [
+      18.51,
+      128.61,
+      20.55,
+      132.06
+     ],
+     "value": "LED red",
+     "side": "F"
+    }
+   ]
+  },
+  "Q14": {
+   "fp": "Package_TO_SOT_THT:TO-220-3_Vertical",
+   "x": 78.044,
+   "y": 129.909,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    76.52,
+    127.17,
+    81.47,
+    137.72
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "GI_RET",
+     "x": 78.04,
+     "y": 129.91
+    },
+    {
+     "num": "2",
+     "net": "GI3_RET",
+     "x": 78.04,
+     "y": 132.45
+    },
+    {
+     "num": "3",
+     "net": "/GI_Triacs/GI3_G",
+     "x": 78.04,
+     "y": 134.99
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "R13",
+     "fp": "R_2512_6332Metric",
+     "gap": 12.42,
+     "crtyd": [
+      93.89,
+      135.65,
+      101.6,
+      139.56
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "Q13",
+     "fp": "SOT-23",
+     "gap": 14.55,
+     "crtyd": [
+      96.02,
+      129.76,
+      99.47,
+      133.68
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "R15",
+     "fp": "R_0805_2012Metric",
+     "gap": 14.57,
+     "crtyd": [
+      96.04,
+      125.81,
+      99.45,
+      127.77
+     ],
+     "value": "10K",
+     "side": "F"
+    },
+    {
+     "ref": "R12",
+     "fp": "R_0805_2012Metric",
+     "gap": 20.91,
+     "crtyd": [
+      58.48,
+      152.67,
+      61.89,
+      154.62
+     ],
+     "value": "10K",
+     "side": "F"
+    },
+    {
+     "ref": "Q11",
+     "fp": "SOT-23",
+     "gap": 23.84,
+     "crtyd": [
+      58.46,
+      156.57,
+      61.91,
+      160.48
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "R10",
+     "fp": "R_2512_6332Metric",
+     "gap": 27.72,
+     "crtyd": [
+      56.33,
+      162.48,
+      64.04,
+      166.39
+     ],
+     "value": "27",
+     "side": "F"
+    }
+   ]
+  },
+  "Q16": {
+   "fp": "Package_TO_SOT_THT:TO-220-3_Vertical",
+   "x": 78.044,
+   "y": 182.302,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    76.52,
+    179.57,
+    81.47,
+    190.12
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "GI_RET",
+     "x": 78.04,
+     "y": 182.3
+    },
+    {
+     "num": "2",
+     "net": "GI4_RET",
+     "x": 78.04,
+     "y": 184.84
+    },
+    {
+     "num": "3",
+     "net": "/GI_Triacs/GI4_G",
+     "x": 78.04,
+     "y": 187.38
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "R16",
+     "fp": "R_2512_6332Metric",
+     "gap": 14.1,
+     "crtyd": [
+      95.56,
+      186.79,
+      103.28,
+      190.7
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "Q15",
+     "fp": "SOT-23",
+     "gap": 16.23,
+     "crtyd": [
+      97.69,
+      180.9,
+      101.14,
+      184.81
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "R18",
+     "fp": "R_0805_2012Metric",
+     "gap": 16.26,
+     "crtyd": [
+      97.72,
+      176.95,
+      101.12,
+      178.9
+     ],
+     "value": "10K",
+     "side": "F"
+    },
+    {
+     "ref": "R10",
+     "fp": "R_2512_6332Metric",
+     "gap": 18.14,
+     "crtyd": [
+      56.33,
+      162.48,
+      64.04,
+      166.39
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "Q11",
+     "fp": "SOT-23",
+     "gap": 24.03,
+     "crtyd": [
+      58.46,
+      156.57,
+      61.91,
+      160.48
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "F109",
+     "fp": "Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+     "gap": 25.05,
+     "crtyd": [
+      64.61,
+      215.17,
+      90.97,
+      222.08
+     ],
+     "value": "5A S.B.",
+     "side": "F"
+    },
+    {
+     "ref": "R12",
+     "fp": "R_0805_2012Metric",
+     "gap": 28.92,
+     "crtyd": [
+      58.48,
+      152.67,
+      61.89,
+      154.62
+     ],
+     "value": "10K",
+     "side": "F"
+    }
+   ]
+  },
+  "Q18": {
+   "fp": "Package_TO_SOT_THT:TO-220-3_Vertical",
+   "x": 128.341,
+   "y": 155.057,
+   "rot": -90.0,
+   "side": "F",
+   "crtyd": [
+    126.82,
+    152.32,
+    131.77,
+    162.87
+   ],
+   "body": null,
+   "pads": [
+    {
+     "num": "1",
+     "net": "GI_RET",
+     "x": 128.34,
+     "y": 155.06
+    },
+    {
+     "num": "2",
+     "net": "GI1_RET",
+     "x": 128.34,
+     "y": 157.6
+    },
+    {
+     "num": "3",
+     "net": "/GI_Triacs/GI1_G",
+     "x": 128.34,
+     "y": 160.14
+    }
+   ],
+   "neighbours": [
+    {
+     "ref": "R19",
+     "fp": "R_2512_6332Metric",
+     "gap": 4.88,
+     "crtyd": [
+      136.64,
+      160.8,
+      144.35,
+      164.71
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "Q17",
+     "fp": "SOT-23",
+     "gap": 7.0,
+     "crtyd": [
+      138.77,
+      154.91,
+      142.22,
+      158.82
+     ],
+     "value": "MMBT4401",
+     "side": "F"
+    },
+    {
+     "ref": "R21",
+     "fp": "R_0805_2012Metric",
+     "gap": 7.03,
+     "crtyd": [
+      138.79,
+      150.96,
+      142.2,
+      152.91
+     ],
+     "value": "10K",
+     "side": "F"
+    },
+    {
+     "ref": "R20",
+     "fp": "R_0805_2012Metric",
+     "gap": 21.22,
+     "crtyd": [
+      118.67,
+      129.68,
+      122.08,
+      131.63
+     ],
+     "value": "470",
+     "side": "F"
+    },
+    {
+     "ref": "R17",
+     "fp": "R_0805_2012Metric",
+     "gap": 25.06,
+     "crtyd": [
+      118.67,
+      125.77,
+      122.08,
+      127.72
+     ],
+     "value": "470",
+     "side": "F"
+    },
+    {
+     "ref": "Q20",
+     "fp": "TO-252-2",
+     "gap": 26.3,
+     "crtyd": [
+      158.02,
+      143.66,
+      169.17,
+      150.85
+     ],
+     "value": "IRLR3110ZTRPBF",
+     "side": "F"
+    },
+    {
+     "ref": "D5",
+     "fp": "D_SMC",
+     "gap": 26.65,
+     "crtyd": [
+      158.41,
+      152.83,
+      168.31,
+      159.58
+     ],
+     "value": "S3M-13-F",
+     "side": "F"
+    },
+    {
+     "ref": "Q22",
+     "fp": "TO-252-2",
+     "gap": 27.22,
+     "crtyd": [
+      158.02,
+      170.06,
+      169.17,
+      177.26
+     ],
+     "value": "IRLR3110ZTRPBF",
+     "side": "F"
+    },
+    {
+     "ref": "R13",
+     "fp": "R_2512_6332Metric",
+     "gap": 28.26,
+     "crtyd": [
+      93.89,
+      135.65,
+      101.6,
+      139.56
+     ],
+     "value": "27",
+     "side": "F"
+    },
+    {
+     "ref": "R14",
+     "fp": "R_0805_2012Metric",
+     "gap": 28.94,
+     "crtyd": [
+      118.67,
+      121.82,
+      122.08,
+      123.77
+     ],
+     "value": "470",
+     "side": "F"
+    },
+    {
+     "ref": "R18",
+     "fp": "R_0805_2012Metric",
+     "gap": 29.3,
+     "crtyd": [
+      97.72,
+      176.95,
+      101.12,
+      178.9
+     ],
+     "value": "10K",
+     "side": "F"
+    },
+    {
+     "ref": "R26",
+     "fp": "R_0805_2012Metric",
+     "gap": 29.91,
+     "crtyd": [
+      161.68,
+      162.34,
+      165.09,
+      164.29
+     ],
+     "value": "100",
+     "side": "F"
+    }
+   ]
+  }
+ },
+ "board": [
+  -0.05,
+  -0.05,
+  449.202,
+  272.96
+ ],
+ "dpak": {
+  "Q20": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL28",
+   "x": 164.44,
+   "y": 147.33,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 63.8,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 84.7,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q22": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL27",
+   "x": 164.44,
+   "y": 173.73,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 64.4,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 77.3,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q24": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL26",
+   "x": 164.44,
+   "y": 200.14,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 60.6,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 70.3,
+   "w50_other_layers": 3.7,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q26": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL25",
+   "x": 164.44,
+   "y": 226.54,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 56.6,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 92.8,
+   "w50_other_layers": 38.7,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q28": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL21",
+   "x": 197.97,
+   "y": 148.82,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 43.9,
+   "w25_other_layers": 14.0,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.2,
+   "w13_other_layers": 7.7,
+   "w13_vias": 1,
+   "w50_tab_layer": 43.9,
+   "w50_other_layers": 28.4,
+   "w50_vias": 2,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q3": {
+   "value": "IRLR3110ZTRPBF (DNP)",
+   "net": "/GI_Triacs/RLY_COIL",
+   "x": 77.17,
+   "y": 40.45,
+   "rot": -90.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 56.0,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 44.6,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 62.3,
+   "w50_other_layers": 7.2,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q30": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL22",
+   "x": 197.97,
+   "y": 175.23,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 43.9,
+   "w25_other_layers": 14.2,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.2,
+   "w13_other_layers": 7.7,
+   "w13_vias": 1,
+   "w50_tab_layer": 43.9,
+   "w50_other_layers": 29.4,
+   "w50_vias": 2,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q32": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL24",
+   "x": 197.97,
+   "y": 201.63,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 61.2,
+   "w25_other_layers": 9.1,
+   "w25_vias": 2,
+   "w13_tab_layer": 41.4,
+   "w13_other_layers": 7.7,
+   "w13_vias": 1,
+   "w50_tab_layer": 77.2,
+   "w50_other_layers": 9.1,
+   "w50_vias": 2,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q34": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL23",
+   "x": 197.97,
+   "y": 228.04,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 55.4,
+   "w25_other_layers": 9.1,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.2,
+   "w13_other_layers": 7.7,
+   "w13_vias": 1,
+   "w50_tab_layer": 82.5,
+   "w50_other_layers": 41.5,
+   "w50_vias": 2,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q36": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL20",
+   "x": 221.44,
+   "y": 148.82,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 56.8,
+   "w25_other_layers": 11.5,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.5,
+   "w13_other_layers": 10.7,
+   "w13_vias": 1,
+   "w50_tab_layer": 75.5,
+   "w50_other_layers": 11.5,
+   "w50_vias": 2,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q38": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL19",
+   "x": 221.44,
+   "y": 175.23,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 60.3,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 73.0,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q40": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL18",
+   "x": 221.44,
+   "y": 201.63,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 56.3,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 66.1,
+   "w50_other_layers": 3.6,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q42": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL17",
+   "x": 221.44,
+   "y": 228.04,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 52.3,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 77.3,
+   "w50_other_layers": 38.7,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q44": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL16",
+   "x": 245.16,
+   "y": 147.33,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 61.2,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 73.9,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q46": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL15",
+   "x": 245.16,
+   "y": 173.73,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 53.7,
+   "w25_other_layers": 8.3,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.2,
+   "w13_other_layers": 6.0,
+   "w13_vias": 1,
+   "w50_tab_layer": 55.2,
+   "w50_other_layers": 20.2,
+   "w50_vias": 3,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q48": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL14",
+   "x": 245.16,
+   "y": 200.14,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 51.9,
+   "w25_other_layers": 8.3,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.2,
+   "w13_other_layers": 6.0,
+   "w13_vias": 1,
+   "w50_tab_layer": 53.4,
+   "w50_other_layers": 20.2,
+   "w50_vias": 3,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q50": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL13",
+   "x": 245.16,
+   "y": 226.54,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 49.8,
+   "w25_other_layers": 8.3,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.2,
+   "w13_other_layers": 6.0,
+   "w13_vias": 1,
+   "w50_tab_layer": 67.1,
+   "w50_other_layers": 40.7,
+   "w50_vias": 2,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q52": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL12",
+   "x": 266.96,
+   "y": 147.33,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 51.1,
+   "w25_other_layers": 11.9,
+   "w25_vias": 1,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 51.1,
+   "w50_other_layers": 32.1,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q54": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL11",
+   "x": 266.96,
+   "y": 173.73,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 51.1,
+   "w25_other_layers": 15.3,
+   "w25_vias": 1,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 51.1,
+   "w50_other_layers": 28.0,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q56": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL10",
+   "x": 266.96,
+   "y": 200.14,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 51.1,
+   "w25_other_layers": 7.6,
+   "w25_vias": 1,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 51.1,
+   "w50_other_layers": 20.3,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q58": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL09",
+   "x": 266.96,
+   "y": 226.54,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 51.8,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 71.1,
+   "w50_other_layers": 38.7,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q64": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL05",
+   "x": 287.91,
+   "y": 150.97,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 60.4,
+   "w25_other_layers": 6.5,
+   "w25_vias": 2,
+   "w13_tab_layer": 38.8,
+   "w13_other_layers": 5.9,
+   "w13_vias": 1,
+   "w50_tab_layer": 75.2,
+   "w50_other_layers": 6.5,
+   "w50_vias": 2,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q66": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL06",
+   "x": 287.91,
+   "y": 176.53,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 58.8,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 71.5,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q68": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL07",
+   "x": 287.91,
+   "y": 202.11,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 55.2,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 67.9,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q70": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL08",
+   "x": 287.91,
+   "y": 227.68,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 51.8,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 67.8,
+   "w50_other_layers": 32.3,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q76": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL04",
+   "x": 312.48,
+   "y": 150.97,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 51.8,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 60.7,
+   "w50_other_layers": 4.6,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q78": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL03",
+   "x": 312.48,
+   "y": 176.53,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 55.1,
+   "w25_other_layers": 0.1,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 55.9,
+   "w50_other_layers": 12.7,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q80": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL02",
+   "x": 312.48,
+   "y": 202.11,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 54.3,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 63.2,
+   "w50_other_layers": 4.5,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q82": {
+   "value": "IRLR3110ZTRPBF",
+   "net": "SOL01",
+   "x": 312.48,
+   "y": 227.68,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 58.2,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 76.4,
+   "w50_other_layers": 38.7,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q83": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW8",
+   "x": 354.69,
+   "y": 181.4,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 43.6,
+   "w25_other_layers": 8.9,
+   "w25_vias": 1,
+   "w13_tab_layer": 42.8,
+   "w13_other_layers": 0.8,
+   "w13_vias": 0,
+   "w50_tab_layer": 43.6,
+   "w50_other_layers": 21.6,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q84": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW7",
+   "x": 354.51,
+   "y": 198.25,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 41.4,
+   "w25_other_layers": 8.7,
+   "w25_vias": 1,
+   "w13_tab_layer": 41.4,
+   "w13_other_layers": 2.4,
+   "w13_vias": 1,
+   "w50_tab_layer": 41.4,
+   "w50_other_layers": 21.4,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q85": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW6",
+   "x": 354.66,
+   "y": 215.13,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 38.2,
+   "w25_other_layers": 9.4,
+   "w25_vias": 1,
+   "w13_tab_layer": 38.2,
+   "w13_other_layers": 3.1,
+   "w13_vias": 1,
+   "w50_tab_layer": 38.2,
+   "w50_other_layers": 22.1,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q86": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW5",
+   "x": 354.51,
+   "y": 231.99,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 47.4,
+   "w25_other_layers": 4.2,
+   "w25_vias": 0,
+   "w13_tab_layer": 40.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 61.0,
+   "w50_other_layers": 12.1,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q87": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW4",
+   "x": 376.39,
+   "y": 181.44,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 49.1,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 42.7,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 75.2,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q88": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW3",
+   "x": 376.51,
+   "y": 198.26,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 49.3,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 42.9,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 73.7,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q89": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW2",
+   "x": 376.38,
+   "y": 215.09,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 44.3,
+   "w25_other_layers": 9.1,
+   "w25_vias": 1,
+   "w13_tab_layer": 42.7,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 44.3,
+   "w50_other_layers": 24.5,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q90": {
+   "value": "IRLR024NTRPBF",
+   "net": "ROW1",
+   "x": 376.51,
+   "y": 231.97,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 53.8,
+   "w25_other_layers": 5.1,
+   "w25_vias": 0,
+   "w13_tab_layer": 42.5,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 67.9,
+   "w50_other_layers": 14.8,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q91": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL8",
+   "x": 411.64,
+   "y": 181.48,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 49.0,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 42.6,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 76.2,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q92": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL7",
+   "x": 411.64,
+   "y": 198.34,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 49.4,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 43.0,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 71.1,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q93": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL6",
+   "x": 411.64,
+   "y": 215.22,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 54.8,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 43.0,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 67.5,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q94": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL5",
+   "x": 411.64,
+   "y": 232.06,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 50.4,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 42.3,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 69.9,
+   "w50_other_layers": 32.3,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q95": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL4",
+   "x": 433.44,
+   "y": 189.5,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 40.3,
+   "w25_other_layers": 10.3,
+   "w25_vias": 1,
+   "w13_tab_layer": 40.3,
+   "w13_other_layers": 4.0,
+   "w13_vias": 1,
+   "w50_tab_layer": 40.3,
+   "w50_other_layers": 23.0,
+   "w50_vias": 1,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q96": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL3",
+   "x": 433.44,
+   "y": 206.37,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 49.4,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 43.0,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 75.3,
+   "w50_other_layers": 0,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q97": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL2",
+   "x": 433.44,
+   "y": 223.22,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 49.4,
+   "w25_other_layers": 0,
+   "w25_vias": 0,
+   "w13_tab_layer": 43.0,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 79.9,
+   "w50_other_layers": 31.2,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  },
+  "Q98": {
+   "value": "IRFR5305TRPBF",
+   "net": "COL1",
+   "x": 433.51,
+   "y": 240.09,
+   "rot": 0.0,
+   "side": "F",
+   "tab_pad": 37.06,
+   "w25_tab_layer": 61.7,
+   "w25_other_layers": 26.6,
+   "w25_vias": 0,
+   "w13_tab_layer": 43.0,
+   "w13_other_layers": 0,
+   "w13_vias": 0,
+   "w50_tab_layer": 83.3,
+   "w50_other_layers": 59.8,
+   "w50_vias": 0,
+   "track_widths_tab_layer": [
+    1.0
+   ],
+   "zones_on_net": 0
+  }
+ },
+ "triac_pads": {
+  "Q10": {
+   "1": "GI_RET",
+   "2": "GI2_RET",
+   "3": "/GI_Triacs/GI2_G"
+  },
+  "Q12": {
+   "1": "GI_RET",
+   "2": "GI5_RET",
+   "3": "/GI_Triacs/GI5_G"
+  },
+  "Q14": {
+   "1": "GI_RET",
+   "2": "GI3_RET",
+   "3": "/GI_Triacs/GI3_G"
+  },
+  "Q16": {
+   "1": "GI_RET",
+   "2": "GI4_RET",
+   "3": "/GI_Triacs/GI4_G"
+  },
+  "Q18": {
+   "1": "GI_RET",
+   "2": "GI1_RET",
+   "3": "/GI_Triacs/GI1_G"
+  }
+ }
+}

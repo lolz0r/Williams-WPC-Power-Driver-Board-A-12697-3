@@ -1,0 +1,90 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-07T12:48:02",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Library symbol issue",
+            "key": "lib_symbol_issues"
+        },
+        {
+            "description": "Footprint link issue",
+            "key": "footprint_link_issues"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023",
+            "violations": []
+        },
+        {
+            "path": "/Power_Supply/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/ac2037f8-ca18-47bc-9f90-686ffe3b86d3",
+            "violations": []
+        },
+        {
+            "path": "/CPU_Interface/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/bc99fb6a-4a79-499d-bf16-4d7d907f31fe",
+            "violations": []
+        },
+        {
+            "path": "/Sol_HighPower/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/f816ced9-b0b8-4bb0-af9b-909d59149d81",
+            "violations": []
+        },
+        {
+            "path": "/Sol_LowPower/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/8a4f78fe-46eb-48a0-a7be-ca1aaf6d41fb",
+            "violations": []
+        },
+        {
+            "path": "/Sol_Flashers/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/6193a915-d12e-4338-bde9-3428c17d878f",
+            "violations": []
+        },
+        {
+            "path": "/Sol_GeneralPurpose/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/dec03d9f-a7ee-40fc-84a4-3822e8206296",
+            "violations": []
+        },
+        {
+            "path": "/Lamp_Columns/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/a7f85e59-ef6b-418e-945a-c24a79709105",
+            "violations": []
+        },
+        {
+            "path": "/Lamp_Rows/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/3ad70803-98b5-4f8f-9776-a1c67e7aa5b6",
+            "violations": []
+        },
+        {
+            "path": "/GI_Triacs/",
+            "uuid_path": "/7d5843b9-c384-45ee-a5ca-828dfb869023/e26b6e6e-c670-4524-8ee9-d9d18c87e84e",
+            "violations": []
+        }
+    ],
+    "source": "wpc_power_driver_cost.kicad_sch"
+}

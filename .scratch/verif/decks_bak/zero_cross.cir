@@ -1,0 +1,41 @@
+Zero-cross detector in the machine (active-HIGH pulse, OEM polarity): '9.8VAC' winding (12.47 VAC measured unloaded = 17.6 V peak, 0.25 ohm per leg) with BR5 (GBU8J) + C30 10000uF loaded by 2.5 A (motors/optos), legs summed 10k/10k into LM339 U6A - sample on the INVERTING input, 0.26 V reference on the non-inverting input, 1.5k pull-up -> output LOW while |Vac| is large, HIGH pulse around each crossing
+.include ../models.lib
+VCC vcc 0 5
+Vac acA acB SIN(0 17.63 60)
+Rw1 acA a1 0.25
+Rw2 acB a2 0.25
+D1 a1 vu DGBU8
+D2 a2 vu DGBU8
+D3 0 a1 DGBU8
+D4 0 a2 DGBU8
+C30 vu 0 10000u
+Rload vu 0 4.8
+R197 a1 smp 10k
+R198 a2 smp 10k
+R254 smp 0 1.5k
+C21 smp 0 10n
+R206 vcc zref 27k
+R255 zref 0 1.5k
+XU6A zref smp zc LM339
+Eac acd 0 acA acB 1
+R256 zc vcc 1.5k
+R253 zc ledk 1.5k
+Dled vcc ledk DLED
+.model DLED D(Is=1e-18 n=1.8)
+.tran 20u 200m uic
+.control
+run
+meas tran vu_avg AVG v(vu) from=160m to=200m
+meas tran vu_ripple PP v(vu) from=160m to=200m
+meas tran vu_min MIN v(vu) from=160m to=200m
+meas tran zc_high MAX v(zc) from=160m to=200m
+meas tran zc_low MIN v(zc) from=160m to=200m
+meas tran smp_min MIN v(smp) from=160m to=200m
+meas tran smp_max MAX v(smp) from=160m to=200m
+meas tran t1 WHEN v(zc)=2.5 RISE=1 from=160m
+meas tran t1r WHEN v(zc)=2.5 FALL=1 from=161m
+meas tran t2 WHEN v(zc)=2.5 RISE=2 from=160m
+meas tran tz WHEN v(acd)=0 CROSS=1 from=160m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/zero_cross.csv v(acd) v(smp) v(zc) v(vu)
+.endc
+.end

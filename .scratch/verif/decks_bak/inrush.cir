@@ -1,0 +1,106 @@
+Power-on inrush into the filter capacitors through the 5x20 mm fuses and the GBJ/GBU/GBPC bridges, switch-on at the mains peak (worst case, no inrush thermistor assumed). Transformer windings as voltage sources with the estimated short-circuit resistance (7-9 % regulation): 9VAC/0.15R, 13.3VAC/0.2R, 16VAC/0.3R, 9.8VAC/0.3R, 51.4VAC/1.2R; capacitor ESR 25 mOhm (10000uF Rubycon USC), 60 mOhm (2200uF/100V). Measures the peak current and the I2t (0..250 ms) through F113 (+5V raw, 239 5 A), F114 (+18V, 217 8 A fast), F111 (+20V, 239 5 A), F116 (+12V power, 239 3 A), F112 (+50V, 239 7 A) and the bridge peak currents.
+.include ../models.lib
+* switch-on at the peak: phase 90 deg
+V9 s1 s2 SIN(0 12.7 60 0 0 90)
+Rs1 s1 sa 0.075
+Rs2 s2 sb 0.075
+Vf113 sa saf 0
+DS1 saf vraw DGBU8
+DS2 sb vraw DGBU8
+DS3 0 saf DGBU8
+DS4 0 sb DGBU8
+C5 vraw c5e 10000u
+Resr5 c5e 0 0.025
+Rl5 vraw 0 100
+V13 l1 l2 SIN(0 18.8 60 0 0 90)
+Rl1 l1 la 0.1
+Rl2 l2 lb 0.1
+Vf114 la laf 0
+DL1 laf v18 DGBJ15
+DL2 lb v18 DGBJ15
+DL3 0 laf DGBJ15
+DL4 0 lb DGBJ15
+C6 v18 c6e 10000u
+Resr6 c6e 0 0.025
+C7 v18 c7e 10000u
+Resr7 c7e 0 0.025
+Rl18 v18 0 100
+V16 f1 f2 SIN(0 22.6 60 0 0 90)
+Rf1 f1 fa 0.15
+Rf2 f2 fb 0.15
+Vf111 fa faf 0
+DF1 faf v20 DGBJ15
+DF2 fb v20 DGBJ15
+DF3 0 faf DGBJ15
+DF4 0 fb DGBJ15
+C11 v20 c11e 10000u
+Resr11 c11e 0 0.025
+Rl20 v20 0 100
+V98 u1 u2 SIN(0 13.86 60 0 0 90)
+Ru1 u1 ua 0.15
+Ru2 u2 ub 0.15
+Vf116 ua uaf 0
+DU1 uaf v12u DGBU8
+DU2 ub v12u DGBU8
+DU3 0 uaf DGBU8
+DU4 0 ub DGBU8
+C30 v12u c30e 10000u
+Resr30 c30e 0 0.025
+Rl12 v12u 0 100
+V51 h1 h2 SIN(0 72.7 60 0 0 90)
+Rh1 h1 ha 0.6
+Rh2 h2 hb 0.6
+Vf112 ha haf 0
+DH1 haf v50 DGBPC35
+DH2 hb v50 DGBPC35
+DH3 0 haf DGBPC35
+DH4 0 hb DGBPC35
+C8 v50 c8e 2200u
+Resr8 c8e 0 0.06
+C32 v50 c32e 2200u
+Resr32 c32e 0 0.06
+R260 v50 0 7.5k
+.tran 10u 250m uic
+.control
+run
+let i113 = i(Vf113)
+let i114 = i(Vf114)
+let i111 = i(Vf111)
+let i116 = i(Vf116)
+let i112 = i(Vf112)
+let i113sq = i113*i113
+let i114sq = i114*i114
+let i111sq = i111*i111
+let i116sq = i116*i116
+let i112sq = i112*i112
+let a113 = abs(i113)
+let a114 = abs(i114)
+let a111 = abs(i111)
+let a116 = abs(i116)
+let a112 = abs(i112)
+meas tran ipk_f113 MAX a113 from=0 to=250m
+meas tran ipk_f114 MAX a114 from=0 to=250m
+meas tran ipk_f111 MAX a111 from=0 to=250m
+meas tran ipk_f116 MAX a116 from=0 to=250m
+meas tran ipk_f112 MAX a112 from=0 to=250m
+meas tran i2t_f113 INTEG i113sq from=0 to=250m
+meas tran i2t_f114 INTEG i114sq from=0 to=250m
+meas tran i2t_f111 INTEG i111sq from=0 to=250m
+meas tran i2t_f116 INTEG i116sq from=0 to=250m
+meas tran i2t_f112 INTEG i112sq from=0 to=250m
+meas tran v50_final AVG v(v50) from=200m to=250m
+meas tran v18_final AVG v(v18) from=200m to=250m
+* ratios to the nominal melting I2t: 239 5 A = 302.8 A2s (Littelfuse 239 datasheet via LCSC), 217 8 A = 198 A2s (Littelfuse 217 datasheet), the 239 3 A / 7 A values were not retrieved: the OEM 3AG 313 values (3 A 200, 7 A 347 A2s) are used as the reference
+let r_f113 = i2t_f113 / 302.8
+let r_f111 = i2t_f111 / 302.8
+let r_f114 = i2t_f114 / 198
+let r_f116 = i2t_f116 / 200
+let r_f112 = i2t_f112 / 347
+print r_f113
+print r_f111
+print r_f114
+print r_f116
+print r_f112
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/inrush.csv i113 i114 i111 i116 i112 v(v50) v(v18) v(vraw)
+.endc
+.end

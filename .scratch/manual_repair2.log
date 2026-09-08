@@ -1,0 +1,48 @@
+routed 451 links in 1263.2 s, 400 rip-ups (1398 items), failed: ['/Power_Supply/U21_EN', 'D6', 'GI5_L', 'GI_BIT6']
+== reroute done
+round 0: 7 errors, 4 open (non-GND), 0 GND open
+    clearance | Track [D7] on F.Cu, length 0.8000 mm / Track [GI5_L] on F.Cu, length 0.2000 mm
+    clearance | Track [D7] on F.Cu, length 0.2000 mm / Track [GI5_L] on F.Cu, length 0.2000 mm
+    clearance | Track [+18V] on F.Cu, length 0.6612 mm / Track [COLB8] on F.Cu, length 0.6662 mm
+    clearance | Track [+18V] on F.Cu, length 0.4000 mm / Pad 11 [COLB8] of U19 on F.Cu
+    clearance | Track [COLB8] on F.Cu, length 0.6662 mm / Track [+18V] on F.Cu, length 0.2000 mm
+    clearance | Track [CLK_GI] on F.Cu, length 0.2000 mm / Track [GI5_L] on F.Cu, length 0.2000 mm
+    open: Track [D6] on B.Cu, length 0.6000 mm @147.8,111.0 / Track [D6] on F.Cu, length 0.8075 mm @147.8,110.4
+    open: Pad 3 [/Power_Supply/U21_EN] of U21 on F @150.9,72.0 / Track [/Power_Supply/U21_EN] on F.Cu, le @156.8,69.2
+    open: Track [GI_BIT6] on F.Cu, length 1.0000 m @154.0,110.0 / Track [GI_BIT6] on F.Cu, length 0.2000 m @152.8,108.4
+    open: Track [GI5_L] on F.Cu, length 0.6000 mm @154.6,108.4 / Track [GI5_L] on F.Cu, length 0.2000 mm @153.6,110.8
+    removed 10
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+   routed 1 links in 8.3 s, 0 rip-ups (0 items), failed: ['/Power_Supply/U21_EN', 'D6', 'GI5_L', 'GI_BIT6']
+round 1: 0 errors, 4 open (non-GND), 0 GND open
+    open: Track [D6] on B.Cu, length 0.6000 mm @147.8,111.0 / Track [D6] on F.Cu, length 0.8075 mm @147.8,110.4
+    open: Pad 3 [/Power_Supply/U21_EN] of U21 on F @150.9,72.0 / Track [/Power_Supply/U21_EN] on F.Cu, le @156.8,69.2
+    open: Track [GI_BIT6] on F.Cu, length 1.0000 m @154.0,110.0 / Track [GI_BIT6] on F.Cu, length 0.2000 m @152.8,108.4
+    open: Track [GI5_L] on F.Cu, length 0.6000 mm @154.6,108.4 / Track [GI5_L] on F.Cu, length 0.2000 mm @153.6,110.8
+   routed 0 links in 8.1 s, 0 rip-ups (0 items), failed: ['/Power_Supply/U21_EN', 'D6', 'GI5_L', 'GI_BIT6']
+round 2: 0 errors, 4 open (non-GND), 0 GND open
+    open: Track [D6] on B.Cu, length 0.6000 mm @147.8,111.0 / Track [D6] on F.Cu, length 0.8075 mm @147.8,110.4
+    open: Pad 3 [/Power_Supply/U21_EN] of U21 on F @150.9,72.0 / Track [/Power_Supply/U21_EN] on F.Cu, le @156.8,69.2
+    open: Track [GI_BIT6] on F.Cu, length 1.0000 m @154.0,110.0 / Track [GI_BIT6] on F.Cu, length 0.2000 m @152.8,108.4
+    open: Track [GI5_L] on F.Cu, length 0.6000 mm @154.6,108.4 / Track [GI5_L] on F.Cu, length 0.2000 mm @153.6,110.8
+   routed 0 links in 8.0 s, 0 rip-ups (0 items), failed: ['/Power_Supply/U21_EN', 'D6', 'GI5_L', 'GI_BIT6']
+round 3: 0 errors, 4 open (non-GND), 0 GND open
+    open: Track [D6] on B.Cu, length 0.6000 mm @147.8,111.0 / Track [D6] on F.Cu, length 0.8075 mm @147.8,110.4
+    open: Pad 3 [/Power_Supply/U21_EN] of U21 on F @150.9,72.0 / Track [/Power_Supply/U21_EN] on F.Cu, le @156.8,69.2
+    open: Track [GI_BIT6] on F.Cu, length 1.0000 m @154.0,110.0 / Track [GI_BIT6] on F.Cu, length 0.2000 m @152.8,108.4
+    open: Track [GI5_L] on F.Cu, length 0.6000 mm @154.6,108.4 / Track [GI5_L] on F.Cu, length 0.2000 mm @153.6,110.8
+   routed 0 links in 8.0 s, 0 rip-ups (0 items), failed: ['/Power_Supply/U21_EN', 'D6', 'GI5_L', 'GI_BIT6']
+round 4: 0 errors, 4 open (non-GND), 0 GND open
+    open: Track [D6] on B.Cu, length 0.6000 mm @147.8,111.0 / Track [D6] on F.Cu, length 0.8075 mm @147.8,110.4
+    open: Pad 3 [/Power_Supply/U21_EN] of U21 on F @150.9,72.0 / Track [/Power_Supply/U21_EN] on F.Cu, le @156.8,69.2
+    open: Track [GI_BIT6] on F.Cu, length 1.0000 m @154.0,110.0 / Track [GI_BIT6] on F.Cu, length 0.2000 m @152.8,108.4
+    open: Track [GI5_L] on F.Cu, length 0.6000 mm @154.6,108.4 / Track [GI5_L] on F.Cu, length 0.2000 mm @153.6,110.8
+== repair2 done rc=1

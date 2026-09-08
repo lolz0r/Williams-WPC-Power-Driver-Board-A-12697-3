@@ -1,0 +1,509 @@
+  maps built in 1.0 s (2236x1355 cells x 3 layers x 4 classes)
+open nets: 16
+  net +18V: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 0.6 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #1: /Power_Supply/U21_EN crosses [] (0 items removed)
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #2: /Power_Supply/U21_EN crosses [] (0 items removed)
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #3: /Power_Supply/U21_EN crosses [] (0 items removed)
+  no path /Power_Supply/U21_EN: [('U21', '3')]
+  FAILED /Power_Supply/U21_EN (no routable pair left)
+  net /Power_Supply/U21_EN: 2 -> 2 components, 0 links, 11.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #4: /Power_Supply/U20_EN crosses ['/Power_Supply/U20_RT'] (1 items removed)
+  net /Power_Supply/U20_EN: 2 -> 1 components, 1 links, 3.5 s
+  net COLB8: 2 -> 1 components, 1 links, 0.0 s
+  net ROWCLR1: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #5: GI5_L crosses ['GI_BIT5'] (1 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  net ROWCLR2: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #6: GI1_L crosses ['SOL27_L'] (3 items removed)
+  net GI1_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.6 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #7: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (5 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.6 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #8: FLIP_RLY_L crosses ['CLK_GI'] (1 items removed)
+  net FLIP_RLY_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #9: CLK_SOL_GEN crosses ['D6'] (5 items removed)
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #10: D2 crosses ['D3'] (4 items removed)
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #11: D2 crosses ['SOL18_L'] (1 items removed)
+  net D2: 3 -> 1 components, 2 links, 12.6 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #12: D4_N crosses ['D3_N'] (3 items removed)
+  net D4_N: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #13: D5_N crosses ['D6_N'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #14: D3 crosses ['D2'] (1 items removed)
+  net D3: 3 -> 1 components, 2 links, 7.3 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #15: REF_1V4 crosses ['+5V'] (2 items removed)
+  net REF_1V4: 2 -> 1 components, 1 links, 8.6 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #16: /Power_Supply/U20_RT crosses ['/Power_Supply/U20_EN'] (4 items removed)
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #17: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (6 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #18: SOL27_L crosses ['GI1_L'] (8 items removed)
+  net SOL27_L: 2 -> 1 components, 1 links, 3.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #19: GI5_L crosses ['GI_BIT5'] (3 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #20: CLK_GI crosses ['FLIP_RLY_L'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #21: D6 crosses ['CLK_SOL_GEN'] (1 items removed)
+  net D6: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #22: SOL18_L crosses ['D2', 'D3'] (2 items removed)
+  net SOL18_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #23: D3_N crosses ['D6_N'] (1 items removed)
+  net D3_N: 2 -> 1 components, 1 links, 7.1 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #24: D6_N crosses ['D5_N'] (3 items removed)
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #25: D6_N crosses ['D3_N'] (1 items removed)
+  net D6_N: 3 -> 1 components, 2 links, 2.3 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #26: D2 crosses ['D3'] (1 items removed)
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #27: D2 crosses ['SOL18_L'] (1 items removed)
+  net D2: 3 -> 1 components, 2 links, 14.3 s
+  net +5V: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #28: /Power_Supply/U20_EN crosses ['/Power_Supply/U20_RT'] (1 items removed)
+  net /Power_Supply/U20_EN: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #29: GI_BIT6 crosses ['GI5_L'] (3 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #30: GI1_L crosses ['SOL27_L'] (5 items removed)
+  net GI1_L: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #31: GI_BIT5 crosses ['GI_BIT6'] (3 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.2 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #32: FLIP_RLY_L crosses ['CLK_GI'] (5 items removed)
+  net FLIP_RLY_L: 2 -> 1 components, 1 links, 1.2 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #33: CLK_SOL_GEN crosses ['D6'] (2 items removed)
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 4.9 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #34: D3 crosses ['D2'] (1 items removed)
+  net D3: 3 -> 1 components, 2 links, 8.7 s
+  maps built in 0.9 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #35: D5_N crosses ['D6_N'] (3 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.3 s
+  maps built in 0.8 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #36: D3_N crosses ['D6_N'] (1 items removed)
+  net D3_N: 2 -> 1 components, 1 links, 7.8 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #37: SOL18_L crosses ['D2', 'D3'] (2 items removed)
+  net SOL18_L: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #38: /Power_Supply/U20_RT crosses ['/Power_Supply/U20_EN'] (1 items removed)
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #39: GI5_L crosses ['GI_BIT5'] (2 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #40: SOL27_L crosses ['BLANKING'] (7 items removed)
+  net SOL27_L: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #41: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (4 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #42: CLK_GI crosses ['FLIP_RLY_L'] (4 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #43: D6 crosses ['CLK_SOL_GEN'] (2 items removed)
+  net D6: 2 -> 1 components, 1 links, 1.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #44: D2 crosses ['D3'] (1 items removed)
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #45: D2 crosses ['SOL18_L'] (1 items removed)
+  net D2: 3 -> 1 components, 2 links, 12.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #46: D6_N crosses ['D5_N'] (1 items removed)
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #47: D6_N crosses ['D3_N'] (2 items removed)
+  net D6_N: 3 -> 1 components, 2 links, 2.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #48: D3 crosses ['D2'] (1 items removed)
+  net D3: 3 -> 1 components, 2 links, 6.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #49: /Power_Supply/U20_EN crosses ['/Power_Supply/U20_RT'] (1 items removed)
+  net /Power_Supply/U20_EN: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #50: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (2 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #51: BLANKING crosses ['D0', 'SOL27_L'] (5 items removed)
+  net BLANKING: 2 -> 1 components, 1 links, 1.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #52: GI5_L crosses ['GI_BIT5'] (1 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #53: FLIP_RLY_L crosses ['CLK_GI'] (1 items removed)
+  net FLIP_RLY_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #54: CLK_SOL_GEN crosses ['D6'] (1 items removed)
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 4.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #55: SOL18_L crosses ['D2', 'SOL19_L', 'SOL20_L'] (7 items removed)
+  net SOL18_L: 2 -> 1 components, 1 links, 1.4 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #56: D5_N crosses ['D6_N'] (1 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.0 s
+  net D3_N: 1 -> 1 components, 0 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #57: D2 crosses ['BLANKING', 'D0'] (4 items removed)
+  net D2: 4 -> 1 components, 3 links, 7.3 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #58: /Power_Supply/U20_RT crosses ['/Power_Supply/U20_EN'] (1 items removed)
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 3.6 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #59: GI_BIT6 crosses ['GI5_L'] (5 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #60: D0 crosses ['D2'] (1 items removed)
+  net D0: 4 -> 1 components, 2 links, 7.0 s
+  net SOL27_L: 1 -> 1 components, 0 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #61: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (2 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #62: CLK_GI crosses ['FLIP_RLY_L'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #63: D6 crosses ['CLK_SOL_GEN'] (1 items removed)
+  net D6: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #64: SOL19_L crosses ['SOL18_L'] (2 items removed)
+  net SOL19_L: 2 -> 1 components, 1 links, 0.9 s
+  net SOL20_L: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #65: D6_N crosses ['D5_N'] (1 items removed)
+  net D6_N: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #66: BLANKING crosses ['D0', 'D2'] (7 items removed)
+  net BLANKING: 2 -> 1 components, 1 links, 8.3 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #67: /Power_Supply/U20_EN crosses ['/Power_Supply/U20_RT'] (1 items removed)
+  net /Power_Supply/U20_EN: 2 -> 1 components, 1 links, 3.5 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #68: GI5_L crosses ['CLK_GI', 'FLIP_RLY_L'] (11 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #69: D2 crosses ['D3'] (1 items removed)
+  net D2: 2 -> 1 components, 1 links, 8.4 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #70: GI_BIT6 crosses ['GI_BIT5'] (3 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #71: FLIP_RLY_L crosses ['GI4_L', 'GI5_L'] (7 items removed)
+  net FLIP_RLY_L: 3 -> 1 components, 2 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #72: CLK_SOL_GEN crosses ['D6'] (1 items removed)
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 5.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #73: SOL18_L crosses ['SOL19_L', 'SOL20_L'] (6 items removed)
+  net SOL18_L: 2 -> 1 components, 1 links, 1.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #74: D5_N crosses ['D6_N'] (4 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.1 s
+  net D0: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #75: /Power_Supply/U20_RT crosses ['/Power_Supply/U20_EN'] (1 items removed)
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 3.5 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #76: CLK_GI crosses ['FLIP_RLY_L'] (3 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #77: D3 crosses ['D2', 'D5'] (6 items removed)
+  net D3: 2 -> 1 components, 1 links, 8.6 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #78: GI_BIT5 crosses ['GI_BIT6'] (3 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.2 s
+  net GI4_L: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #79: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (7 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #80: D6 crosses ['CLK_SOL_GEN'] (1 items removed)
+  net D6: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #81: SOL19_L crosses ['SOL18_L'] (3 items removed)
+  net SOL19_L: 2 -> 1 components, 1 links, 0.9 s
+  net SOL20_L: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #82: D6_N crosses ['D5_N'] (4 items removed)
+  net D6_N: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #83: /Power_Supply/U20_EN crosses ['/Power_Supply/U20_RT'] (3 items removed)
+  net /Power_Supply/U20_EN: 2 -> 1 components, 1 links, 3.5 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #84: FLIP_RLY_L crosses ['D7', 'GI4_L'] (16 items removed)
+  net FLIP_RLY_L: 2 -> 1 components, 1 links, 1.1 s
+  net D2: 3 -> 1 components, 2 links, 0.1 s
+  net D5: 2 -> 1 components, 1 links, 0.3 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #85: GI_BIT6 crosses ['GI5_L'] (7 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #86: GI_BIT5 crosses ['GI_BIT6'] (5 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #87: CLK_SOL_GEN crosses ['D6'] (1 items removed)
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 5.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #88: SOL18_L crosses ['SOL19_L', 'SOL20_L'] (4 items removed)
+  net SOL18_L: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #89: D5_N crosses ['CLK_GI', 'CLK_SOL_GEN'] (2 items removed)
+  net D5_N: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #90: /Power_Supply/U20_RT crosses ['/Power_Supply/U20_EN'] (1 items removed)
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 3.5 s
+  net D7: 1 -> 1 components, 0 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #91: GI4_L crosses ['FLIP_RLY_L'] (5 items removed)
+  net GI4_L: 3 -> 1 components, 2 links, 3.7 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #92: GI5_L crosses ['GI_BIT5'] (3 items removed)
+  net GI5_L: 3 -> 1 components, 2 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #93: GI_BIT6 crosses ['GI5_L'] (3 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #94: D6 crosses ['CLK_SOL_GEN'] (2 items removed)
+  net D6: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #95: SOL19_L crosses ['SOL18_L'] (2 items removed)
+  net SOL19_L: 2 -> 1 components, 1 links, 0.9 s
+  net SOL20_L: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #96: CLK_GI crosses ['D7_N'] (1 items removed)
+  net CLK_GI: 2 -> 1 components, 1 links, 4.3 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #97: CLK_SOL_GEN crosses ['D6'] (1 items removed)
+  net CLK_SOL_GEN: 3 -> 1 components, 2 links, 5.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #98: /Power_Supply/U20_EN crosses ['/Power_Supply/U20_RT'] (1 items removed)
+  net /Power_Supply/U20_EN: 2 -> 1 components, 1 links, 3.7 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #99: FLIP_RLY_L crosses ['CLK_GI', 'GI4_L'] (5 items removed)
+  net FLIP_RLY_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #100: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (8 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #101: GI5_L crosses ['GI_BIT5'] (5 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #102: SOL18_L crosses ['+5V', 'CLK_SOL_LOW', 'D1', 'D1_N', 'D4', 'D7'] (7 items removed)
+  net SOL18_L: 2 -> 1 components, 1 links, 1.8 s
+  net D7_N: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #103: D6 crosses ['CLK_SOL_GEN', 'D4', 'ZERO_CROSS'] (5 items removed)
+  net D6: 2 -> 1 components, 1 links, 1.3 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #104: /Power_Supply/U20_RT crosses ['/Power_Supply/U20_SW'] (1 items removed)
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 3.8 s
+  net CLK_GI: 1 -> 1 components, 0 links, 0.0 s
+  net GI4_L: 1 -> 1 components, 0 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #105: GI_BIT6 crosses ['GI5_L'] (1 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #106: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (6 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  net +5V: 3 -> 1 components, 2 links, 1.5 s
+  net CLK_SOL_LOW: 2 -> 1 components, 1 links, 0.4 s
+  net D1: 2 -> 1 components, 1 links, 0.1 s
+  net D1_N: 2 -> 1 components, 1 links, 0.4 s
+  net D4: 3 -> 1 components, 1 links, 1.5 s
+  net D7: 2 -> 1 components, 1 links, 0.2 s
+  net CLK_SOL_GEN: 2 -> 1 components, 1 links, 0.0 s
+  net ZERO_CROSS: 2 -> 1 components, 1 links, 0.6 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #107: /Power_Supply/U20_SW crosses ['/Power_Supply/U20_RT'] (4 items removed)
+  net /Power_Supply/U20_SW: 2 -> 1 components, 1 links, 4.3 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #108: GI5_L crosses ['GI_BIT5'] (1 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #109: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (9 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #110: /Power_Supply/U20_RT crosses ['/Power_Supply/U20_SW'] (1 items removed)
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 3.8 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #111: GI_BIT5 crosses ['GI_BIT6'] (1 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #112: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (8 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #113: /Power_Supply/U20_SW crosses ['/Power_Supply/U20_RT'] (1 items removed)
+  net /Power_Supply/U20_SW: 2 -> 1 components, 1 links, 4.5 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #114: GI_BIT6 crosses ['GI5_L'] (3 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #115: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (4 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  net /Power_Supply/U20_RT: 2 -> 1 components, 1 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #116: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (6 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #117: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (5 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #118: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (3 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #119: GI5_L crosses ['GI_BIT5'] (2 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #120: GI_BIT6 crosses ['GI5_L'] (1 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #121: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (5 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #122: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (3 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #123: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (7 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #124: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (4 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #125: GI5_L crosses ['D7', 'GI_BIT5', 'GI_BIT6'] (7 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #126: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (5 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  net D7: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #127: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (4 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #128: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (4 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #129: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (8 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #130: GI_BIT5 crosses ['GI_BIT6'] (1 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #131: GI5_L crosses ['D1', 'D7', 'GI_BIT5', 'GI_BIT6'] (9 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #132: GI_BIT6 crosses ['D4', 'D7', 'GI5_L'] (5 items removed)
+  net GI_BIT6: 3 -> 1 components, 2 links, 1.1 s
+  net D1: 1 -> 1 components, 0 links, 0.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #133: D7 crosses ['D3', 'D4', 'D5', 'D6', 'GI5_L', 'Net-(Q9-Pad1)'] (9 items removed)
+  net D7: 3 -> 1 components, 2 links, 9.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #134: GI_BIT5 crosses ['D1', 'D7', 'GI_BIT6'] (13 items removed)
+  net GI_BIT5: 3 -> 1 components, 2 links, 1.0 s
+  net D4: 2 -> 1 components, 1 links, 0.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #135: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (8 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #136: D3 crosses ['D2', 'D4'] (8 items removed)
+  net D3: 2 -> 1 components, 1 links, 9.2 s
+  net D5: 2 -> 1 components, 1 links, 0.2 s
+  net D6: 2 -> 1 components, 1 links, 0.1 s
+  net Net-(Q9-Pad1): 1 -> 1 components, 0 links, 0.0 s
+  net D1: 1 -> 1 components, 0 links, 0.0 s
+  net D7: 3 -> 1 components, 1 links, 0.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #137: GI_BIT6 crosses ['GI5_L', 'GI_BIT5'] (8 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #138: GI_BIT5 crosses ['GI_BIT6'] (5 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #139: D2 crosses ['D3', 'D4', 'D5'] (3 items removed)
+  net D2: 2 -> 1 components, 1 links, 9.5 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #140: D4 crosses ['D5'] (3 items removed)
+  net D4: 3 -> 1 components, 2 links, 6.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #141: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (5 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #142: GI_BIT6 crosses ['GI5_L'] (1 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 0.9 s
+  net D3: 2 -> 1 components, 1 links, 0.6 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #143: D5 crosses ['D4', 'D6', 'GI5_L'] (6 items removed)
+  net D5: 4 -> 1 components, 3 links, 9.7 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #144: GI_BIT5 crosses ['GI_BIT6'] (3 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 0.9 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #145: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (4 items removed)
+  net GI5_L: 3 -> 1 components, 2 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #146: D4 crosses ['D3', 'D5'] (3 items removed)
+  net D4: 4 -> 1 components, 2 links, 8.5 s
+  net D6: 2 -> 1 components, 1 links, 0.1 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #147: GI_BIT6 crosses ['GI5_L'] (1 items removed)
+  net GI_BIT6: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #148: GI_BIT5 crosses ['GI5_L', 'GI_BIT6'] (4 items removed)
+  net GI_BIT5: 2 -> 1 components, 1 links, 1.0 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #149: D3 crosses ['D1', 'D2', 'D4'] (7 items removed)
+  net D3: 2 -> 1 components, 1 links, 9.2 s
+  net D5: 2 -> 1 components, 1 links, 0.2 s
+  maps built in 0.7 s (2236x1355 cells x 3 layers x 4 classes)
+  rip-up #150: GI5_L crosses ['GI_BIT5', 'GI_BIT6'] (7 items removed)
+  net GI5_L: 2 -> 1 components, 1 links, 1.0 s
+  no path GI_BIT6: [('J111', '2'), (None, None)]
+  FAILED GI_BIT6 (no routable pair left)
+  net GI_BIT6: 2 -> 2 components, 0 links, 0.1 s
+  net D1: 3 -> 1 components, 2 links, 0.2 s
+  net D2: 2 -> 1 components, 1 links, 0.1 s
+  no path D4: [('U1', '6'), (None, None)]
+  FAILED D4 (no routable pair left)
+  net D4: 2 -> 2 components, 0 links, 4.1 s
+  no path GI_BIT5: [('J111', '1'), (None, None)]
+  FAILED GI_BIT5 (no routable pair left)
+  net GI_BIT5: 2 -> 2 components, 0 links, 0.1 s
+routed 200 links in 420.2 s, 150 rip-ups (522 items), failed: ['/Power_Supply/U21_EN', 'D4', 'GI_BIT5', 'GI_BIT6']
+wrote .scratch/flow.kicad_pcb: 737 new items
+== reroute done
+round 0: 7 errors, 4 open (non-GND), 0 GND open
+  removed 39 track items around 13 error positions
+  routed 147 links in 269.2 s, 150 rip-ups (355 items), failed: ['/Power_Supply/U21_EN', 'BLANKING', 'CLK_GI', 'FLIP_RLY_L', 'GI_BIT6']
+round 1: 1 errors, 6 open (non-GND), 0 GND open
+  removed 7 track items around 2 error positions
+  routed 133 links in 638.0 s, 150 rip-ups (306 items), failed: ['/CPU_Interface/ZC_REF', '/Power_Supply/U21_EN', 'CLK_GI', 'COLB8', 'D0', 'D1', 'D3', 'D4', 'D7', 'FLIP_RLY_L', 'GI1_L', 'GI_BIT5', 'SOL27_L', 'SOL28_L']
+round 2: 19 errors, 14 open (non-GND), 0 GND open
+  removed 108 track items around 38 error positions
+Terminated                 python3 -u ../wpc_power_driver_modern/tools/drc_repair.py .scratch/flow.kicad_pcb --rounds 4 --max-ripup 150
+== repair done rc=143

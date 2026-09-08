@@ -1,0 +1,20 @@
+== GND stitch vias
+placed 0 stitch vias; failed: ['D108-2', 'C21-2', 'B13-2']
+== rail pours
+rail pours: 0 zones added, 56 thermal vias (47 positions skipped: other-net copper underneath)
+== finish (dedupe, thermal vias, GND pours, refill, stub cleanup)
+.scratch/flow.kicad_pcb: removed 0 duplicate segments, 0 duplicate vias
+helper segments removed: 0
+thermal vias added: 2
+removed 4 colliding thermal vias
+final DRC: {('warning', 'track_dangling'): 53, ('warning', 'via_dangling'): 68, ('warning', 'isolated_copper'): 7, ('warning', 'npth_inside_courtyard'): 1, ('warning', 'hole_to_hole'): 6} unconnected 0
+removed 281 items; unconnected 0->0, errors 0->0, dangling left 55
+== legend
+Traceback (most recent call last):
+  File "/home/lolz0r/tng/wpc_power_driver_cost/tools/legend.py", line 48, in <module>
+    if __name__ == '__main__': main()
+                               ~~~~^^
+  File "/home/lolz0r/tng/wpc_power_driver_cost/tools/legend.py", line 25, in main
+    ref = f.GetReference(); P = f.GetPosition(); x, y = P.x / 1e6, P.y / 1e6; rot = f.GetOrientationDegrees() % 180
+          ^^^^^^^^^^^^^^
+== finalize done rc=0

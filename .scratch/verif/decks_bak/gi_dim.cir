@@ -1,0 +1,63 @@
+G.I. dimming as the firmware does it (FreeWPC triac.c / PinMAME wpc.c): the IRQ writes the triac latch ON and immediately OFF again N ms after the zero crossing (N = 7 - brightness), the triac then conducts to the next crossing. Three strings (18 x #44 = 1.4 ohm on 6.8 VAC / 9.6 V peak) fired 1 ms, 3 ms and 6 ms after each crossing through the BTA16-600C macro (fires at 50 mA gate current, holds while |I| > 50 mA) with a 5 us latch pulse -> 470R -> MMBT4401 emitter follower -> 27R gate. Checks: conduction in BOTH half-cycles, no DC component in the string current (transformer saturation), RMS current per level, gate pulse amplitude.
+.include ../models.lib
+VCC vcc 0 5
+Vac ac 0 SIN(0 9.6 60)
+* ideal zero-cross reference (the board's ZC pulse is centred on the crossing to +-25 us): rising crossings at t = k/60, falling at t = k/60 + 8.333 ms
+.subckt GISTR latch ac vcc
+RL latch a 40
+Rb a b 470
+Rpd b 0 10k
+Q1 vcc b e QMMBT4401
+Vg e eg 0
+R27 eg g 27
+Dg g 0 DGATE
+Rgk g 0 200
+.model DGATE D(Is=1e-9 n=2 Rs=5)
+Vmt mt2 mt2i 0
+Btri mt2i 0 I = v(mt2i) * ( max((abs(i(Vg)) > 0.05), (v(on) > 0.5)) > 0.5 ? 20 : 1e-6 )
+Bon onr 0 V = (abs(i(Vmt)) > 0.05) ? 1 : 0
+Ron onr on 1
+Con on 0 0.5u
+Vstr ac acs 0
+Rstr acs mt2 1.4
+.ends
+* latch pulses: 5 us wide, twice per cycle (120 Hz): delay d after each crossing -> PULSE with period 8.3333 ms
+VL1 l1 0 PULSE(0 4.6 1.0m 20n 20n 5u 8.33333m)
+VL3 l3 0 PULSE(0 4.6 3.0m 20n 20n 5u 8.33333m)
+VL6 l6 0 PULSE(0 4.6 6.0m 20n 20n 5u 8.33333m)
+X1 l1 ac vcc GISTR
+X3 l3 ac vcc GISTR
+X6 l6 ac vcc GISTR
+.tran 10u 100m
+.control
+run
+let i1 = v.x1.vstr#branch
+let i3 = v.x3.vstr#branch
+let i6 = v.x6.vstr#branch
+let ig1 = v.x1.vg#branch
+meas tran i1_rms RMS i1 from=50m to=100m
+meas tran i3_rms RMS i3 from=50m to=100m
+meas tran i6_rms RMS i6 from=50m to=100m
+meas tran i1_avg AVG i1 from=50m to=100m
+meas tran i3_avg AVG i3 from=50m to=100m
+meas tran i6_avg AVG i6 from=50m to=100m
+meas tran i1_pos MAX i1 from=50m to=100m
+meas tran i1_neg MIN i1 from=50m to=100m
+meas tran i6_pos MAX i6 from=50m to=100m
+meas tran i6_neg MIN i6 from=50m to=100m
+meas tran ig_peak MAX ig1 from=50m to=100m
+meas tran ig_width TRIG ig1 VAL=0.05 RISE=1 TARG ig1 VAL=0.05 FALL=1 from=50m
+* full-on reference RMS: 9.6/sqrt(2)/1.4 = 4.85 A
+let i1_ratio = i1_rms / 4.85
+let i3_ratio = i3_rms / 4.85
+let i6_ratio = i6_rms / 4.85
+let dc1 = abs(i1_avg) / i1_rms
+let dc6 = abs(i6_avg) / i6_rms
+print i1_ratio
+print i3_ratio
+print i6_ratio
+print dc1
+print dc6
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/gi_dim.csv v(ac) i1 i3 i6 ig1
+.endc
+.end

@@ -1,0 +1,181 @@
+"""Run all SPICE verification decks through libngspice (inside the KiCad flatpak) and summarise measurements.
+Usage: flatpak run --command=python3 org.kicad.KiCad tools/spice/run_all.py"""
+import os, sys, json, glob
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ngspice_lib import NgSpice
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.abspath(os.path.join(HERE, '..', '..', 'output', 'spice'))
+os.makedirs(OUT, exist_ok=True)
+CHECKS = {  # deck -> list of (measurement, lo, hi, description)   [cost board in the STTNG machine: real "+50V" = ~70 V (51 VAC winding), real strobe timing, real +12 V topology]
+    'sol_low': [('icoil_max', 5.5, 7.5, 'AE-26-1200 (10.8 ohm) coil current on the 70 V rail (A)'),
+                ('vce_on', 0.0, 0.25, 'IRLR3110Z Vds while ON at 4.6 V gate drive (V): 6.5 A x 18 mOhm model = 0.12 V; 0.25 V = 38 mOhm, above the hot datasheet maximum (16 mOhm at 25 C, x1.5 at 100 C)'),
+                ('vcol_peak', 68.0, 80.0, 'drain voltage clamped by the S3M tie-back diode at turn-off (V): rail + Vf; the 100 V MOSFET / 100 V capacitors keep 20 V of margin even at the 78-83 V unloaded peak'),
+                ('i_latch', -0.001, 0.001, 'steady current drawn from the 74HCT574 output (A)'),
+                ('icoil_off', -0.01, 0.05, 'coil current 15 ms after turn-off (A)'),
+                ('p_fet', 0.0, 1.5, 'MOSFET dissipation during the pulse (W): 6.5 A^2 x 18 mOhm = 0.77 W; pulsed at <= 10 % duty the average stays < 0.15 W (DPAK on ~1 sq. in. of copper, 50 C/W)')],
+    'sol_high': [('icoil_max', 14.0, 18.5, 'AE-23-800 (4.2 ohm, 12 mH) coil current on the 70 V rail (A): 70 / 4.2 = 16.7 A'),
+                 ('vout_on', 0.0, 0.45, 'IRLR3110Z Vds while ON (V): 16.6 A x 18 mOhm = 0.30 V; 0.45 V = 27 mOhm = the hot datasheet maximum at 4.5 V gate drive'),
+                 ('vout_peak', 68.0, 80.0, 'output clamped by the S3M tie-back diode (V)'),
+                 ('p_fet', 0.0, 7.5, 'MOSFET dissipation during the 40 ms pulse (W): 16.6 A^2 x 18 mOhm = 5.1 W; 7.5 W = the hot-Rds(on) bound'),
+                 ('e_pulse', 0.0, 0.3, 'energy dissipated in the MOSFET per 40 ms pulse (J)'),
+                 ('tj_rise_pulse', 0.0, 6.0, 'junction temperature rise per pulse (C): E / 40 ms x Zth(40 ms) with Zth ~0.6 C/W (IRLR3110Z RthJC 1.05 C/W, single-pulse transient ~60 % of it)'),
+                 ('tj_rise_20pct', 0.0, 75.0, 'steady junction rise at 20 % pulse duty (C): P x 0.2 x 50 C/W (DPAK on ~1 sq. in. copper) -> Tj <= 125 C at 50 C ambient even when a coil machine-guns; normal firmware duty is <= 10 %')],
+    'sol_hold': [('ia_hold', 4.0, 5.5, '100 % hold of a 14.5 ohm coil on 70 V (A)'),
+                 ('pa_hold', 0.0, 0.8, 'MOSFET dissipation during a continuous hold (W): 4.8 A^2 x 18 mOhm = 0.43 W'),
+                 ('vds_hold', 0.0, 0.15, 'Vds during the hold (V)'),
+                 ('tj_rise_hold', 0.0, 40.0, 'junction rise for a coil held for seconds (C): P x 50 C/W (DPAK on ~1 sq. in. of copper) - 40 C keeps Tj < 100 C at 50 C ambient'),
+                 ('ib_avg', 2.5, 4.0, 'average current of an AE-26-1200 PWM-held at 50 % (FreeWPC SOL_DUTY_50: 4 ms on / 4 ms off) (A)'),
+                 ('ib_max', 4.0, 7.0, 'peak coil current during the PWM hold (A)'), ('ib_min', 0.3, 3.0, 'coil current stays continuous through the 4 ms off slot (A)'),
+                 ('pb_avg', 0.0, 0.8, 'MOSFET dissipation during the PWM hold (W): conduction + the 125 Hz switching is negligible'),
+                 ('tj_rise_pwm', 0.0, 40.0, 'junction rise during the PWM hold (C)'),
+                 ('idb_avg', 0.0, 2.0, 'average freewheel current in the S3M tie-back (A): S3M IF(AV) = 3 A (this is why the coil groups got S3M instead of S1M)'),
+                 ('idb_max', 0.0, 30.0, 'peak diode current (A): S3M IFSM 100 A')],
+    'flasher': [('ilamp_inrush', 3.0, 8.0, 'cold-lamp inrush (A)'), ('ilamp_hot', 0.7, 1.4, 'hot lamp current (A)'), ('vsat', 0.0, 0.1, 'IRLR3110Z Vds with the lamp on (V): 1.1 A x 18 mOhm = 0.02 V')],
+    'lamp_matrix': [('irow_normal', 0.3, 3.5, 'row current, normal lamp incl. cold inrush (A)'), ('vsense_normal', 0.0, 1.3, 'sense voltage stays below the 1.4 V trip (V)'),
+                    ('vref', 1.2, 1.6, '1.4 V reference (V)'), ('vcol_drop', 0.0, 0.3, 'column IRFR5305 drop with one lamp on (V): ~2 A x 65 mOhm = 0.13 V; 0.3 V = 150 mOhm (hot, low Vgs)'),
+                    ('vrow_on', 0.0, 0.8, 'row driver drop incl. the 0.22 R sense resistor (V): 2 A x (0.22 + 0.08) = 0.6 V; 0.8 V keeps > 17 V on the 18 V lamp string'),
+                    ('clr_min', 3.0, 5.5, 'comparator never clears the row flip-flop in normal operation (V)'),
+                    ('vgs_col', -13.0, -7.0, 'column MOSFET Vgs from the 1k/1.5k divider (V): IRFR5305 needs <= -7 V for its rated 65 mOhm')],
+    'lamp_matrix_trip': [('irow_fault', 6.4, 80.0, 'shorted lamp: row current exceeds the 6.4 A trip (A)'),
+                    ('t_trip', 0.0330, 0.0332, 'row flip-flop cleared (s): short applied at 32.5 ms, column strobe (fault current) starts at 33.0 ms -> cleared within 0.2 ms'),
+                    ('irow_after', 0.0, 0.5, 'row current after shutdown until the next strobe (A)'), ('irow_next', 2.0, 80.0, 'fault current returns at the next strobe and trips again (A) - per-strobe shutdown as in the original')],
+    'lamp_strobe': [('icol_peak', 4.0, 12.0, 'column IRFR5305 current at the start of a 2 ms strobe with 8 warm #555 lamps (A): ~1 A per lamp, 0.7 A once hot'),
+                    ('icol_avg', 0.4, 1.0, 'average column current over the 16 ms frame (A): x 8 columns = the ~5 A +18V load with every lamp lit'),
+                    ('vcol_drop', 0.0, 0.8, 'column MOSFET drop at the 8 A strobe peak (V): 65-100 mOhm'),
+                    ('pcol_avg', 0.0, 0.6, 'average column MOSFET dissipation, all 8 lamps lit (W): 2 ms of 8 A every 16 ms'),
+                    ('tj_rise_col', 0.0, 30.0, 'column DPAK junction rise (C): P x 50 C/W'),
+                    ('irow_peak', 0.5, 2.5, 'row IRLR024N current: one warm lamp per strobe (A)'), ('irow_avg', 0.2, 1.0, 'average row current with all 8 lamps of the row lit (A)'),
+                    ('prow_avg', 0.0, 0.3, 'row MOSFET average dissipation (W)'), ('tj_rise_row', 0.0, 15.0, 'row DPAK junction rise (C)'),
+                    ('vsense_max', 0.0, 1.2, 'sense voltage over 400 ms of strobing incl. the cold first strobes (V): stays below the 1.4 V trip'),
+                    ('clr_min', 3.0, 5.5, 'no false over-current trip during normal strobing (V)'),
+                    ('ilamp_first', 1.5, 3.5, 'cold-filament current at the very first strobe (A): 7 ohm filament on 18 V'),
+                    ('vlamp_rms', 5.5, 6.6, 'RMS voltage across a #555 lamp over the 16 ms frame (V): rated 6.3 V; the MOSFET drops are 0.5 V instead of the 2.2 V of the 1993 Darlingtons, so the lamps run at ~98 % of their rating (brighter, about 3x shorter life than on the original board - irrelevant for LEDs)'),
+                    ('vlamp_old_rms', 5.0, 6.0, 'the same lamp behind the original TIP107/TIP102 drops (V) - reference for the comparison')],
+    'gi_dim': [('i1_ratio', 0.85, 1.0, 'string RMS current at dimming level 6 (fired 1 ms after the crossing) relative to full on'),
+               ('i3_ratio', 0.6, 0.95, 'level 4 (3 ms) relative to full on'), ('i6_ratio', 0.15, 0.5, 'level 1 (6 ms) relative to full on - the levels are monotonic and usable'),
+               ('dc1', 0.0, 0.02, 'DC component of the string current at level 6 (|avg| / rms): both half-cycles fire identically (quadrant I and IV), no transformer saturation'),
+               ('dc6', 0.0, 0.02, 'DC component at level 1'),
+               ('i1_pos', 4.0, 8.0, 'positive half-cycle peak, level 6 (A)'), ('i1_neg', -8.0, -4.0, 'negative half-cycle peak, level 6 (A): quadrant IV firing with the positive gate current'),
+               ('i6_pos', 3.0, 7.0, 'positive peak, level 1 (A)'), ('i6_neg', -7.0, -3.0, 'negative peak, level 1 (A)'),
+               ('ig_peak', 0.06, 0.13, 'gate current from the 5 us latch write (A): above the 50 mA Q IV Igt of the BTA16-600C'),
+               ('ig_width', 3e-6, 20e-6, 'time the gate current exceeds 50 mA (s): the FreeWPC write-on / write-off pair gives a few us; BTA16 gate-controlled turn-on time tgt = 2 us and the resistive string reaches the latching current instantly')],
+    'zero_cross': [('vu_avg', 10.0, 16.0, '+12V power rail average at 2.5 A (V)'), ('vu_ripple', 0.0, 2.0, '+12V power ripple p-p at 2.5 A (V)'), ('vu_min', 9.5, 16.0, '+12V power minimum at 2.5 A (V)'),
+                   ('zc_high', 4.5, 5.1, 'ZC output HIGH level during the pulse (V): the pulse is active high like the original two-comparator circuit (PinMAME: bit 7 = 1 at the crossing)'),
+                   ('zc_low', 0.0, 0.5, 'ZC output low level between crossings (V)'), ('smp_min', -0.35, 0.3, 'sample node minimum (V, must stay > -0.3 for LM339)'),
+                   ('zc_width', 0.0005, 0.002, 'ZC high-pulse width (s): the original circuit gives ~1 ms; FreeWPC polls the bit every 1 ms and must catch it'),
+                   ('zc_center_err', -0.0003, 0.0003, 'pulse centre vs true zero crossing (s)')],
+    'psu': [('v18_avg', 13.0, 20.0, '+18V lamp rail average at 2.8 A / 5 ohm plus the 1 A +12V digital buck (V): the lamp matrix needs >= 13 V for full brightness'),
+            ('v18_ripple', 0.0, 3.0, '+18V ripple p-p with 2 x 10000 uF (V): 3 V = 20 % of the rail, the largest brightness flicker acceptable at 120 Hz'),
+            ('vin5_min', 6.5, 14.0, '+5V buck input minimum at 3 A output with 10000 uF (V): TPS54360B needs 5.6 V for 5 V out, the 6.0 V UVLO start + 0.5 V'),
+            ('vin5_ripple', 0.0, 3.5, '+5V raw ripple p-p (V)'), ('v5_min', 4.95, 5.05, '+5V minimum at 3 A load (V)'),
+            ('v50_idle', 66.0, 74.0, '"+50V" idle (V): 51.4 VAC nominal winding -> 72.7 V peak minus two diode drops; pinwiki: TP6 measures 70-75 V'),
+            ('v50_max', 66.0, 80.0, '"+50V" maximum at idle (V): the STTNG transformer measured 55.2 VAC unloaded = 78 V peak (83 V at +6 % line); 100 V capacitors and 100 V MOSFETs keep >= 17 V'),
+            ('v50_avg_pulse', 35.0, 60.0, '"+50V" average during a 40 ms AE-23-800 pulse with 4400 uF (V): the original 100 uF board fell to the rectified sine'),
+            ('v50_min_pulse', 28.0, 60.0, '"+50V" minimum during the pulse (V)'), ('icoil_max', 11.0, 18.0, 'peak AE-23-800 coil current with the sagging rail (A)'),
+            ('v20_min', 13.0, 24.0, '+20V minimum during a 4 A flasher burst with 10000 uF (V): flashers only on this rail now'),
+            ('v20_ripple', 0.0, 3.0, '+20V ripple p-p during the burst (V)'),
+            ('v12_min', 11.95, 12.05, '+12V digital minimum, buck fed from the +18V lamp rail at 2.8 A of lamps (V)'), ('v12_max', 11.95, 12.05, '+12V digital maximum (V)')],
+    'psu_maxload': [('v18_min', 10.0, 20.0, '+18V minimum with all 64 lamps lit (2.5 ohm, ~5 A) plus the +12V digital buck, 2 x 10000 uF (V): lamps stay usable above ~10 V'),
+                    ('vin5_min', 6.0, 14.0, '+5V buck input minimum with everything on (V): converter needs 5.6 V, worst-case UVLO stop 6.0 V'),
+                    ('v5_min', 4.95, 5.05, '+5V minimum at 3 A with everything on (V)'),
+                    ('v20_min', 9.0, 24.0, '+20V minimum during the 8-flasher cold inrush with 10000 uF (V): only flashers hang on this rail (interlocked with the coin door)'),
+                    ('iflash_peak', 20.0, 60.0, 'combined cold inrush of 8 flashers (A) - within the F111 5 A slow-blow 40 ms envelope'),
+                    ('v12_min', 10.5, 12.05, '+12V digital minimum with all lamps lit (V): the buck droops (0.97 Vin - 0.5) while +18V sags to 11.9 V; the original 7812 (needs 14 V in) dropped to ~10 V in the same case; the CPU switch matrix (LM339 + 1 k pull-ups) works far below that'),
+                    ('v12u_min', 10.0, 16.0, '+12V power (unregulated) minimum with 2.5 A of gun motors / optos / DMD / coin door on 10000 uF (V): pinwiki reports jittery optos around 10 V; a 15000 uF C30 (OEM) would add ~0.4 V'),
+                    ('v50_avg_pulse', 15.0, 60.0, '"+50V" average with 2 AE-23-800 + 4 AE-26-1200 fired together (V) - informational, an unrealistic firmware case bounding the rail'),
+                    ('itot50_max', 25.0, 45.0, 'total coil current, six coils at once (A)'),
+                    ('ibr50_peak', 0.0, 400.0, 'peak current through the +50V bridge (A): GBPC3510 surge rating 400 A (this is a single 40 ms event)'),
+                    ('ibr18_peak', 0.0, 60.0, 'repetitive peak current in the +18V GBJ1510 with all lamps lit (A): capacitor-input rectifiers run at 3-5 x Io, limit 4 x the 15 A rating; surge rating 240 A'),
+                    ('ibr20_peak', 0.0, 60.0, 'peak current in the +20V GBJ1510 during the flasher inrush (A): 4 x the 15 A rating for the repetitive part; the 240 A surge rating covers the first cycles'),
+                    ('ibr5_peak', 0.0, 32.0, 'repetitive peak current in the +5V-raw GBU8J at 3 A output (A): 4 x the 8 A rating; surge rating 200 A'),
+                    ('ibr12_peak', 0.0, 32.0, 'repetitive peak current in the +12V-power GBU8J (BR5) at 2.5 A (A): 4 x the 8 A rating')],
+    'psu_brownout': [('vraw_min', 6.0, 12.0, '+5V buck input minimum at 88 % mains and the rated 3 A (V): must stay above the UVLO stop level - 5.5 V nominal, 6.0 V worst case (Vena 1.3 V) - so the converter keeps regulating (sweep: output/spice/uvlo_sweep.md)'),
+                     ('v5_min', 4.95, 5.05, '+5V holds through an 88 % brownout at 3 A (V) - the CPU reset chip (MC34064, 4.6 V) never trips'),
+                     ('v18_min', 9.5, 16.0, '+18V minimum at 88 % mains with all lamps lit (V)'),
+                     ('v12_min', 9.0, 12.05, '+12V digital at 88 % mains with all lamps lit (V): droops with the +18V rail; 9 V still runs the CPU switch-matrix comparators; the original 7812 would have delivered ~7 V here'),
+                     ('v12u_min', 8.5, 16.0, '+12V power at 88 % mains with 2.5 A of motors / optos (V)')],
+    'psu_12vu': [('v12u_min', 10.0, 16.0, '+12V power minimum at 2.5 A, measured STTNG winding (12.47 VAC unloaded, 0.25 ohm/leg) (V)'),
+                 ('v12u_avg', 10.5, 16.0, '+12V power average at 2.5 A (V)'), ('v12u_ripple', 0.0, 2.0, 'ripple p-p at 2.5 A with 10000 uF (V)'),
+                 ('ibr5_peak', 0.0, 32.0, 'BR5 GBU8J repetitive peak current (A): 4 x 8 A'), ('ibr5_rms', 0.0, 8.0, 'BR5 RMS current (A): GBU8J average rating 8 A'),
+                 ('v12u_max_unloaded', 0.0, 20.0, 'maximum +12V power with only the LED load (V): C30 is a 25 V part - 20 V keeps 20 % margin (unloaded winding 17.6 V peak)'),
+                 ('v12u_min_nominal', 8.5, 16.0, 'pessimistic bound: the manual\'s nominal 9.8 VAC winding at 2.5 A (V) - the real transformer is ~2 V higher')],
+    'buck_5v': [('vout_ss', 4.9, 5.1, 'steady-state output at 1 A (V)'), ('vout_ripple', 0.0, 0.08, 'output ripple p-p at 1 A (V)'),
+                ('vout_step_min', 4.6, 5.1, 'undershoot on a 1 -> 3 A load step (V): 4.6 V is the 74HCT / CPU-board minimum with margin (MC34064 reset at 4.6 V)'),
+                ('vout_step_max', 4.9, 5.4, 'overshoot on the 3 -> 1 A step (V)'),
+                ('il_peak', 3.0, 4.3, 'peak inductor current at 3 A (A): must stay below the 4.5 A minimum current limit of the TPS54360B (SRP1265A-100M rated 10 A)'),
+                ('vout_3a', 4.9, 5.1, 'output at 3 A (V)'), ('iin_3a', -3.0, -1.5, 'input current at 3 A out from 8 V (A, negative = drawn from Vin)')],
+    'buck_12v': [('vout_ss', 11.8, 12.2, 'steady-state output at 1 A from the +18V rail at 13.5 V (V)'), ('vout_ripple', 0.0, 0.1, 'output ripple p-p at 1 A (V)'),
+                 ('vout_step_min', 11.4, 12.2, 'undershoot on a 1 -> 2 A load step (V): the real load behind F115 is <= 0.75 A; 11.4 V keeps the switch matrix / CPU +12V loads happy'),
+                 ('vout_step_max', 11.8, 12.6, 'overshoot on the 2 -> 1 A step (V)'),
+                 ('il_peak', 2.0, 4.3, 'peak inductor current at 2 A from 13.5 V (A): below the 4.5 A minimum current limit'),
+                 ('vout_2a', 11.8, 12.2, 'output at 2 A (V)'), ('iin_2a', -2.6, -1.0, 'input current at 2 A out from 13.5 V (A)')],
+    'powerup': [('icoil_blank', 0.0, 0.01, 'coil current while BLANKING is high (reset, +5V ramp, undefined latch content = 1) (A): the tri-stated 74HCT574 and the 10 k gate pull-down keep the IRLR3110Z off'),
+                ('istr_blank', 0.0, 0.05, 'G.I. string current while blanked (A): 10 k base pull-down keeps the MMBT4401 / triac off'),
+                ('icol_blank', 0.0, 0.01, 'lamp column current while blanked with a row MOSFET randomly ON (A): the TBD62083A input pull-down keeps the column P-MOSFET off'),
+                ('vgate_blank', 0.0, 0.5, 'solenoid gate voltage while blanked (V)'),
+                ('blank_min', 4.0, 5.5, 'BLANKING never drops below 4 V while the CPU holds reset (V): SR1 pulls it up, the CPU 2N3904 is off'),
+                ('icoil_on', 10.0, 20.0, 'coil current after the CPU releases BLANKING with the latch holding 1 (A): the path works'),
+                ('istr_on', 4.0, 8.0, 'G.I. string current after release (A peak)'), ('icol_on', 3.0, 8.0, 'lamp column current after release (A)'),
+                ('icoil_after', 0.0, 0.01, 'coil current after the CPU writes 0 (A)'), ('icol_after', 0.0, 0.01, 'column current after the CPU writes 0 (A)')],
+    'inrush': [('ipk_f113', 0.0, 60.0, 'peak inrush through F113 / BR2 (GBU8J, IFSM 200 A) into C5 at switch-on on the mains peak (A)'),
+               ('i2t_f113', 0.0, 60.0, 'I2t through F113 in the first 250 ms (A2s): <= 20 % of the 302.8 A2s nominal melting I2t of the 239 5 A (Littelfuse datasheet) so the fuse never ages from switch-on'),
+               ('ipk_f114', 0.0, 120.0, 'peak inrush through F114 / BR1 (GBJ1510, IFSM 240 A) into C6 + C7 (A)'),
+               ('i2t_f114', 0.0, 40.0, 'I2t through the FAST 8 A F114 (A2s): <= 20 % of the 198 A2s of the 217 8 A (Littelfuse datasheet)'),
+               ('ipk_f111', 0.0, 120.0, 'peak inrush through F111 / BR4 (GBJ1510) into C11 (A)'),
+               ('i2t_f111', 0.0, 60.0, 'I2t through F111 (239 5 A, 302.8 A2s) (A2s)'),
+               ('ipk_f116', 0.0, 100.0, 'peak inrush through F116 / BR5 (GBU8J) into the 10000 uF C30 (A)'),
+               ('i2t_f116', 0.0, 40.0, 'I2t through F116 (239 3 A) (A2s): the 239 3 A value was not retrieved - limit set at 20 % of the OEM 3AG 313 3 A (200 A2s), a conservative stand-in'),
+               ('ipk_f112', 0.0, 200.0, 'peak inrush through F112 / BR3 (GBPC3510, IFSM 400 A) into 2 x 2200 uF at 72.7 V peak (A)'),
+               ('i2t_f112', 0.0, 70.0, 'I2t through F112 (239 7 A) (A2s): the 239 7 A value was not retrieved - 20 % of the OEM 313 7 A (347 A2s)'),
+               ('v50_final', 66.0, 74.0, '"+50V" reached after 250 ms (V)'), ('v18_final', 14.0, 20.0, '+18V reached after 250 ms (V)')],
+}
+
+def main():
+    ng = NgSpice()
+    summary = []
+    for deck in sorted(glob.glob(os.path.join(HERE, 'decks', '*.cir'))):
+        name = os.path.basename(deck)[:-4]
+        os.chdir(os.path.join(HERE, 'decks'))
+        ng.cmd('destroy all')
+        log = ng.run_deck(deck)
+        csv = os.path.join(OUT, name + '.csv')     # the 20 ns switching-model runs write > 100 MB: keep every 10th sample (measurements were taken on the full run)
+        if os.path.exists(csv) and os.path.getsize(csv) > 20e6:
+            rows = open(csv).read().split('\n'); open(csv, 'w').write('\n'.join(rows[::10]) + '\n')
+        meas = {}
+        errs = [l for l in log if 'stderr' in l and 'Warning' not in l]
+        for l in log:
+            if 'stdout' in l and '=' in l and ' at' not in l.split('=')[0] and 'Data Rows' not in l:
+                parts = l.replace('stdout', '').strip().split('=')
+                key = parts[0].strip()
+                try: meas[key] = float(parts[1].split()[0])
+                except Exception: pass
+        if 't1' in meas and 't1r' in meas:
+            meas['zc_width'] = meas['t1r'] - meas['t1']
+            meas['zc_center_err'] = (meas['t1'] + meas['t1r']) / 2 - meas.get('tz', 0)
+        results = []
+        for m, lo, hi, desc in CHECKS.get(name, []):
+            v = meas.get(m)
+            ok = v is not None and lo <= v <= hi
+            results.append((m, v, lo, hi, ok, desc))
+        summary.append((name, results, errs[:5]))
+        print(f'== {name}: ' + ', '.join(f'{k}={v:.4g}' for k, v in meas.items() if k != 'time'))
+        for e in errs[:5]: print('   ERR', e[:160])
+    lines = ['# SPICE verification results - cost-optimised board in the STTNG machine', '', 'ngspice (KiCad 10 bundled libngspice) transient runs of each circuit block; MOSFET/diode models in `tools/spice/models.lib` are level-1 fits to datasheet Rds(on)/Qg',
+             '(functional fidelity, not vendor-exact); the TPS54360B is a behavioural peak-current-mode model (12 A/V, 4.5 A minimum current limit, 400 kHz). Machine-level decks use the real WPC',
+             'interface: 51 VAC solenoid winding (~70 V rail), 2 ms lamp column strobes, IRQ-timed triac firing, PWM-held coils, the +12 V digital / +12 V power split, the active-high zero-cross pulse,',
+             'BLANKING as the CPU drives it at reset, and switch-on inrush against the Littelfuse 239/217 melting I2t (docs/WPC_INTERFACE_FINDINGS.md). Waveform CSVs are next to this file.',
+             'Each limit is explained in its description column (see also README.md).', '']
+    allok = True
+    for name, results, errs in summary:
+        lines.append(f'## {name}'); lines.append('')
+        lines.append('| measurement | value | expected | result |'); lines.append('|---|---|---|---|')
+        for m, v, lo, hi, ok, desc in results:
+            allok &= ok
+            lines.append(f'| {desc} (`{m}`) | {"n/a" if v is None else f"{v:.4g}"} | {lo:g} … {hi:g} | {"PASS" if ok else "FAIL"} |')
+        for e in errs: lines.append(f'* ngspice error: `{e.strip()[:160]}`')
+        lines.append('')
+    lines.append(f'**Overall: {"ALL CHECKS PASS" if allok else "SOME CHECKS FAILED"}**')
+    open(os.path.join(OUT, 'RESULTS.md'), 'w').write('\n'.join(lines) + '\n')
+    print('\n'.join(lines))
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,130 @@
+  net AC98_B: 5 -> 1 components, 4 links, 0.1 s
+  net /Power_Supply/AC98_A_F: 5 -> 1 components, 4 links, 0.1 s
+  net /Power_Supply/AC13_A_F: 5 -> 1 components, 4 links, 0.1 s
+  rip-up #1: AC13_B crosses ['/Power_Supply/AC13_A_F'] (2 items removed)
+  net AC13_B: 5 -> 1 components, 4 links, 4.0 s
+  net AC16_A_F: 7 -> 1 components, 6 links, 0.2 s
+  net AC16_B: 7 -> 1 components, 6 links, 0.2 s
+  /Power_Supply/+5V_RAW: routed with class BusN (neck-down)
+  rip-up #2: /Power_Supply/+5V_RAW crosses [] (0 items removed)
+  rip-up #3: /Power_Supply/+5V_RAW crosses [] (0 items removed)
+  rip-up #4: /Power_Supply/+5V_RAW crosses [] (0 items removed)
+  /Power_Supply/+5V_RAW: routed with class BusN (neck-down)
+  /Power_Supply/+5V_RAW: routed with class BusS (neck-down)
+  net /Power_Supply/+5V_RAW: 8 -> 1 components, 7 links, 17.5 s
+  net +12VU: 8 -> 1 components, 6 links, 1.6 s
+  rip-up #5: +20V crosses ['CLK_SOL_HIGH', 'SOL10_L'] (2 items removed)
+  +20V: routed with class BusN (neck-down)
+  net +20V: 12 -> 1 components, 11 links, 7.8 s
+  rip-up #6: AC9_B crosses ['ACSOL_B'] (14 items removed)
+  AC9_B: routed with class BusN (neck-down)
+  net AC9_B: 5 -> 1 components, 4 links, 6.6 s
+  AC9_AF: routed with class BusN (neck-down)
+  net AC9_AF: 6 -> 1 components, 5 links, 4.6 s
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusN (neck-down)
+  rip-up #7: +18V crosses [] (0 items removed)
+  rip-up #8: +18V crosses [] (0 items removed)
+  rip-up #9: +18V crosses [] (0 items removed)
+  +18V: routed with class BusN (neck-down)
+  +18V: routed with class BusS (neck-down)
+  net +18V: 27 -> 1 components, 26 links, 55.0 s
+  rip-up #10: SOL21_L crosses [] (0 items removed)
+  rip-up #11: SOL21_L crosses [] (0 items removed)
+  rip-up #12: SOL21_L crosses [] (0 items removed)
+  no path SOL21_L: [('R38', '1'), (None, None)]
+  FAILED SOL21_L (no routable pair left)
+  net SOL21_L: 2 -> 2 components, 0 links, 7.0 s
+  rip-up #13: D0 crosses ['ROWCLR1'] (1 items removed)
+  net D0: 2 -> 1 components, 1 links, 7.1 s
+  rip-up #14: D4 crosses [] (0 items removed)
+  rip-up #15: D4 crosses [] (0 items removed)
+  rip-up #16: D4 crosses [] (0 items removed)
+  no path D4: [('U11', '12'), (None, None)]
+  FAILED D4 (no routable pair left)
+  net D4: 2 -> 2 components, 0 links, 19.6 s
+  rip-up #17: CLK_LAMP_ROW crosses ['+5V'] (1 items removed)
+  rip-up #18: CLK_LAMP_ROW crosses [] (0 items removed)
+  rip-up #19: CLK_LAMP_ROW crosses [] (0 items removed)
+  no path CLK_LAMP_ROW: [('U13', '11'), (None, None)]
+  FAILED CLK_LAMP_ROW (no routable pair left)
+  net CLK_LAMP_ROW: 2 -> 2 components, 0 links, 17.5 s
+  net /Power_Supply/AC13_A_F: 2 -> 1 components, 1 links, 0.0 s
+  net CLK_SOL_HIGH: 2 -> 1 components, 1 links, 0.0 s
+  net SOL10_L: 2 -> 1 components, 1 links, 0.1 s
+  net ACSOL_B: 1 -> 1 components, 0 links, 0.0 s
+  rip-up #20: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.4 s
+  net +5V: 2 -> 1 components, 1 links, 1.1 s
+  rip-up #21: D0 crosses ['ROWCLR1'] (1 items removed)
+  net D0: 2 -> 1 components, 1 links, 6.8 s
+  rip-up #22: ROWCLR1 crosses ['D0'] (1 items removed)
+  net ROWCLR1: 2 -> 1 components, 1 links, 2.4 s
+  thrash guard: D0 <-> ROWCLR1 - link skipped
+  no path D0: [('U13', '12'), (None, None)]
+  FAILED D0 (no routable pair left)
+  net D0: 2 -> 2 components, 0 links, 4.5 s
+routed 95 links in 169.4 s, 22 rip-ups (23 items), failed: ['CLK_LAMP_ROW', 'D0', 'D4', 'SOL21_L']
+== v5 reroute done
+round 0: 42 errors, 5 open (non-GND), 5 GND open
+    shorting_items | PTH pad 2 [ACSOL_A_F] of F112 / Track [/Power_Supply/+5V_RAW] on F.Cu, l
+    shorting_items | Track [/Power_Supply/+5V_RAW] on F.Cu, l / PTH pad 2 [ACSOL_A_F] of F112
+    shorting_items | Track [AC16_B] on F.Cu, length 1.6261 mm / Pad 1 [AC9_B] of D108 on F.Cu
+    shorting_items | Pad 2 [GND] of D108 on F.Cu / Track [AC16_A] on F.Cu, length 28.2000 m
+    shorting_items | Track [ACSOL_A] on F.Cu, length 25.8000  / Pad 1 [/Power_Supply/+5V_RAW] of D105 on
+    shorting_items | Track [ACSOL_A_F] on F.Cu, length 4.6000 / Track [/Power_Supply/+5V_RAW] on F.Cu, l
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 0.7 @392.0,149.4 / Track [CLK_LAMP_ROW] on In2.Cu, length 0 @393.0,149.4
+    open: Track [+12VU] on B.Cu, length 7.6000 mm @38.4,55.6 / Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7
+    open: Track [D0] on F.Cu, length 0.2000 mm @393.6,148.8 / Track [D0] on F.Cu, length 0.7406 mm @392.0,148.6
+    open: Pad 12 [D4] of U11 on F.Cu @356.7,148.4 / Track [D4] on F.Cu, length 2.2000 mm @369.8,144.8
+    open: Track [SOL21_L] on In2.Cu, length 6.4000 @196.2,120.8 / Track [SOL21_L] on F.Cu, length 0.4432 m @196.2,138.0
+    removed 27
+   routed 18 links in 84.6 s, 16 rip-ups (14 items), failed: ['CLK_LAMP_ROW', 'D0', 'D4', 'SOL21_L']
+round 1: 19 errors, 5 open (non-GND), 3 GND open
+    clearance | PTH pad 2 [/Power_Supply/AC13_A_F] of F1 / Pad 1 [/Power_Supply/+5V_RAW] of D106 on
+    shorting_items | PTH pad 2 [/Power_Supply/AC13_A_F] of F1 / Pad 1 [/Power_Supply/+5V_RAW] of D106 on
+    shorting_items | Pad 1 [AC9_AF] of D107 on F.Cu / PTH pad 5 [AC16_B] of J104
+    clearance | Pad 1 [/Power_Supply/+5V_RAW] of D105 on / PTH pad 2 [ACSOL_A_F] of F112
+    clearance | Pad 1 [/Power_Supply/+5V_RAW] of D105 on / PTH pad 2 [ACSOL_A_F] of F112
+    shorting_items | PTH pad 5 [AC16_B] of J105 / Pad 1 [AC9_B] of D108 on F.Cu
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 0.7 @392.0,149.4 / Track [CLK_LAMP_ROW] on In2.Cu, length 0 @393.0,149.4
+    open: Track [+12VU] on F.Cu, length 2.4000 mm @38.4,63.2 / Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7
+    open: Track [D0] on F.Cu, length 0.2000 mm @393.8,149.0 / Track [D0] on F.Cu, length 0.7406 mm @392.0,148.6
+    open: Pad 12 [D4] of U11 on F.Cu @356.7,148.4 / Track [D4] on F.Cu, length 2.2000 mm @369.8,144.8
+    open: Track [SOL21_L] on In2.Cu, length 6.4000 @196.2,120.8 / Track [SOL21_L] on F.Cu, length 0.4432 m @196.2,138.0
+   routed 5 links in 71.3 s, 13 rip-ups (5 items), failed: ['CLK_LAMP_ROW', 'D0', 'D4', 'SOL21_L']
+round 2: 19 errors, 5 open (non-GND), 3 GND open
+    clearance | PTH pad 2 [/Power_Supply/AC13_A_F] of F1 / Pad 1 [/Power_Supply/+5V_RAW] of D106 on
+    shorting_items | PTH pad 2 [/Power_Supply/AC13_A_F] of F1 / Pad 1 [/Power_Supply/+5V_RAW] of D106 on
+    shorting_items | Pad 1 [AC9_AF] of D107 on F.Cu / PTH pad 5 [AC16_B] of J104
+    clearance | Pad 1 [/Power_Supply/+5V_RAW] of D105 on / PTH pad 2 [ACSOL_A_F] of F112
+    clearance | Pad 1 [/Power_Supply/+5V_RAW] of D105 on / PTH pad 2 [ACSOL_A_F] of F112
+    shorting_items | PTH pad 5 [AC16_B] of J105 / Pad 1 [AC9_B] of D108 on F.Cu
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 0.7 @392.0,149.4 / Track [CLK_LAMP_ROW] on In2.Cu, length 0 @393.0,149.4
+    open: Track [+12VU] on B.Cu, length 7.6000 mm @38.4,55.6 / Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7
+    open: Track [D0] on F.Cu, length 0.7406 mm @392.0,148.6 / Track [D0] on F.Cu, length 0.2000 mm @393.6,148.8
+    open: Track [D4] on F.Cu, length 0.7423 mm @356.0,148.2 / Track [D4] on F.Cu, length 2.2000 mm @369.8,144.8
+    open: Track [SOL21_L] on In2.Cu, length 6.4000 @196.2,120.8 / Track [SOL21_L] on F.Cu, length 0.4432 m @196.2,138.0
+   routed 5 links in 71.5 s, 13 rip-ups (10 items), failed: ['CLK_LAMP_ROW', 'D0', 'D4', 'SOL21_L']
+round 3: 19 errors, 5 open (non-GND), 3 GND open
+    clearance | PTH pad 2 [/Power_Supply/AC13_A_F] of F1 / Pad 1 [/Power_Supply/+5V_RAW] of D106 on
+    shorting_items | PTH pad 2 [/Power_Supply/AC13_A_F] of F1 / Pad 1 [/Power_Supply/+5V_RAW] of D106 on
+    shorting_items | Pad 1 [AC9_AF] of D107 on F.Cu / PTH pad 5 [AC16_B] of J104
+    clearance | Pad 1 [/Power_Supply/+5V_RAW] of D105 on / PTH pad 2 [ACSOL_A_F] of F112
+    clearance | Pad 1 [/Power_Supply/+5V_RAW] of D105 on / PTH pad 2 [ACSOL_A_F] of F112
+    shorting_items | PTH pad 5 [AC16_B] of J105 / Pad 1 [AC9_B] of D108 on F.Cu
+    open: Track [CLK_LAMP_ROW] on F.Cu, length 0.7 @392.0,149.4 / Track [CLK_LAMP_ROW] on In2.Cu, length 0 @393.0,149.4
+    open: Track [+12VU] on B.Cu, length 7.6000 mm @38.4,55.6 / Pad 1 [+12VU] of R250 on F.Cu @40.4,63.7
+    open: Track [D0] on F.Cu, length 0.2000 mm @393.8,149.0 / Track [D0] on F.Cu, length 0.7406 mm @392.0,148.6
+    open: Pad 12 [D4] of U11 on F.Cu @356.7,148.4 / Track [D4] on F.Cu, length 2.2000 mm @369.8,144.8
+    open: Track [SOL21_L] on In2.Cu, length 6.4000 @196.2,120.8 / Track [SOL21_L] on F.Cu, length 0.4432 m @196.2,138.0
+== v5 repair done rc=0

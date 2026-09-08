@@ -1,0 +1,36 @@
+Cost-board brownout: mains at 88 % (US 108 V) - 9VAC winding 11.2 V peak, GBU8J, C5 10000uF feeding the +5V buck at its rated 3 A; 16VAC winding 19.9 V peak, GBJ1510, 10000uF feeding the +12V buck at 2 A with 8 flashers hot; UVLO stop levels 5.6 V / 8.5 V modelled (118k/29.4k and 130k/20k dividers at Vena 1.22 V)
+.include ../models.lib
+V9 s1 s2 SIN(0 11.18 60)
+Rs1 s1 sa 0.05
+Rs2 s2 sb 0.05
+DS1 sa vraw DGBU8
+DS2 sb vraw DGBU8
+DS3 0 sa DGBU8
+DS4 0 sb DGBU8
+C5 vraw 0 10000u
+Bv5 v5 0 V = 0.5*(1+tanh((v(vraw)-5.6)*40)) * min(5.0, max(0.97*v(vraw) - 0.5, 0))
+R5 v5 0 1.667
+Bin5 vraw 0 I = (v(v5)*v(v5)/1.667) / (0.88*max(v(vraw),1))
+V16 f1 f2 SIN(0 19.9 60)
+Rf1 f1 fa 0.05
+Rf2 f2 fb 0.05
+DF1 fa v20 DGBJ15
+DF2 fb v20 DGBJ15
+DF3 0 fa DGBJ15
+DF4 0 fb DGBJ15
+C11 v20 0 10000u
+Rflash v20 0 2.7
+Bv12 v12 0 V = 0.5*(1+tanh((v(v20)-8.5)*40)) * min(12.0, max(0.97*v(v20) - 0.5, 0))
+R12 v12 0 6
+Bin12 v20 0 I = (v(v12)*v(v12)/6) / (0.88*max(v(v20),1))
+.tran 50u 200m uic
+.control
+run
+meas tran vraw_min MIN v(vraw) from=150m to=200m
+meas tran v5_min MIN v(v5) from=150m to=200m
+meas tran v20_min MIN v(v20) from=150m to=200m
+meas tran v12_min MIN v(v12) from=150m to=200m
+meas tran vraw_avg AVG v(vraw) from=150m to=200m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/psu_brownout.csv v(vraw) v(v5) v(v20) v(v12)
+.endc
+.end
