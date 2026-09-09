@@ -3,7 +3,7 @@ their tabs, solid tab connection.  Geometry matches tools/placement_cost.py POS_
 DRC refill (finish_board / finalize.sh).   Usage: flatpak run --command=python3 org.kicad.KiCad tools/rail_pours.py board.kicad_pcb"""
 import pcbnew, sys
 # (zone name, net, x0, y0, x1, y1)   [mm]
-POURS = [('BR1_18V', '+18V', 346, 64, 376, 100), ('BR1_AC13A', '/Power_Supply/AC13_A_F', 340, 4, 356.7, 37), ('BR1_AC13B', 'AC13_B', 356.7, 4, 376, 37),
+POURS = [('BR1_18V', '+18V', 339, 57, 379, 108), ('BR1_AC13A', '/Power_Supply/AC13_A_F', 340, 3, 356.7, 49), ('BR1_AC13B', 'AC13_B', 356.7, 3, 379, 49),
          ('BR2_5VRAW', '/Power_Supply/+5V_RAW', 293, 106, 308, 121), ('BR2_AC9A', 'AC9_AF', 277, 121, 288, 135), ('BR2_AC9B', 'AC9_B', 313, 121, 328, 135),
          ('BR4_20V', '+20V', 284, 4, 299, 20), ('BR4_AC16A', 'AC16_A_F', 271, 20, 281, 44), ('BR4_AC16B', 'AC16_B', 302, 20, 330, 44),
          ('BR5_AC98A', '/Power_Supply/AC98_A_F', 9, 3, 23.7, 15), ('BR5_AC98B', 'AC98_B', 23.7, 3, 38, 15), ('BR5_12VU', '+12VU', 9, 43, 38, 54)]

@@ -1,0 +1,40 @@
+TI TPS54360 transient model, 12v actual compensation, Vin=13.0
+.include /Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/.scratch/vendor-models/TPS54360_TRANS_minimum_limit_sensitivity.lib
+.include /Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/tools/spice/models.lib
+Vin vin 0 PWL(0 0 100u 13.0)
+Rin vin vinf .02
+Cin vinf 0 20u
+XU boot comp en 0 sw rt vinf fb 0 TPS54360_TRANS
+Ren1 vinf en 130k
+Ren2 en 0 20k
+Rrt rt 0 240k
+Cboot boot sw 100n
+Rfb1 vout fb 28k
+Rfb2 fb 0 2k
+Rc comp cc 42.2k
+Cc cc 0 100n
+Cp comp 0 390p
+Dcatch 0 sw DB560C
+L1 sw linductor 10u
+Rdcr linductor vout .025
+Cout1 vout c1 330u
+Resr1 c1 0 .045
+Cout2 vout c2 330u
+Resr2 c2 0 .045
+Cc3 vout 0 10u
+Rload vout 0 16.0
+Istep vout 0 PWL(0 0 4.5m 0 4.501m 1.25 6m 1.25 6.001m 0)
+.save v(vout) v(sw) v(comp) i(L1)
+.options reltol=.005 abstol=1u vntol=1m method=gear
+.tran 100n 8m
+.control
+run
+meas tran output_ss AVG v(vout) from=4m to=4.5m
+meas tran output_peak MAX v(vout)
+meas tran step_min MIN v(vout) from=4.5m to=5m
+meas tran removal_peak MAX v(vout) from=6m to=7m
+meas tran highload_ss AVG v(vout) from=5.5m to=6m
+meas tran inductor_peak MAX i(L1)
+meas tran inductor_running_peak MAX i(L1) from=4m to=8m
+.endc
+.end

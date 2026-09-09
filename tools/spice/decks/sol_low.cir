@@ -1,4 +1,4 @@
-Cost-board low-power solenoid driver (sol 9-16) in the machine: 74HCT574 (4.6 V / 40 R) -> 100R -> IRLR3110Z DPAK (10k pull-down) -> AE-26-1200 coil (10.8 ohm, 25 mH) on ~70 V, S3M tie-back, 40 ms pulse
+Cost-board low-power solenoid driver (sol 9-16) in the machine: 74HCT574 (4.6 V / 40 R) -> 100R -> IPD90N10S4L06 DPAK (10k pull-down) -> AE-26-1200 coil (10.8 ohm, 25 mH) on ~70 V, S3M tie-back, 40 ms pulse
 .include ../models.lib
 V50 v50 0 70
 VL latch 0 PULSE(0 4.6 1m 20n 20n 40m 100m)
@@ -6,7 +6,7 @@ RL latch a 40
 Rg a g 100
 Rpd g 0 10k
 Vdr col cold 0
-XQ cold g 0 IRLR3110Z
+XQ cold g 0 IPD90N10S4L06
 Vcoil v50 v50c 0
 Lc col cl 25m
 Rc cl v50c 10.8

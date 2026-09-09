@@ -35,9 +35,9 @@ meas tran istr_after MAX istr_abs from=70m to=80m
 meas tran p_npn AVG pnpn from=20m to=60m
 meas tran p_triac AVG ptri from=20m to=53.33m
 meas tran i_latch MIN i(VL) from=2m to=60m
-* junction rise with the Boyd 7019BG bolt-on channel heatsink (11.0 C/W natural convection at a 75 C rise, x1.15 for the ~50 C rise here = 12.65 C/W) + Rth(j-c) 2.5 (BTA insulated TO-220, ST) + interface 0.5 C/W
-* = 15.65 C/W junction-to-ambient; requirement Tj <= 125 C at 50 C cabinet ambient -> rise <= 75 C.  (The previously specified 577002B00000G clip is 32 C/W per the Boyd catalogue, not 25: rise would be 115 C.)
-let tj_rise_sink = p_triac * 15.65
+* junction rise with the Boyd 7020BG bolt-on channel heatsink (8.7 C/W natural convection at a 75 C rise, x1.25 for the ~50 C rise here = 10.875 C/W) + Rth(j-c) 2.5 (BTA insulated TO-220, ST) + interface 0.5 C/W
+* = 13.875 C/W junction-to-ambient; requirement Tj <= 125 C at 50 C cabinet ambient -> rise <= 75 C.  (The previously specified 577002B00000G clip is 32 C/W per the Boyd catalogue, not 25: rise would be 115 C.)
+let tj_rise_sink = p_triac * 13.875
 let tj_rise_clip = p_triac * 35
 let rth_sa_needed = 75 / p_triac - 3
 print tj_rise_sink

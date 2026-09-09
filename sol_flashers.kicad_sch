@@ -5,13 +5,13 @@
 	(uuid "9644ffdd-1a77-4910-9f0a-f0fc7212ea5d")
 	(paper "A1")
 	(title_block
-		(title "Solenoids 17-24 (flashlamps, IRLR3110Z)")
+		(title "Solenoids 17-24 (flashlamps, IPD90N10S4L-06)")
 		(date "2026-09-04")
 		(rev "A")
 		(company "Modern re-implementation of the Williams A-12697-3 (same form factor)")
 	)
 	(lib_symbols
-		(symbol "74xx:74HCT574"
+		(symbol "wpc_symbols:74xx_74HCT574"
 			(pin_names
 				(offset 1.016)
 			)
@@ -94,7 +94,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "DIP?20*"
+			(property "ki_fp_filters" "DIP?20* SOIC-20W_7.5x12.8mm_P1.27mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -105,7 +105,7 @@
 					)
 				)
 			)
-			(symbol "74HCT574_1_0"
+			(symbol "74xx_74HCT574_1_0"
 				(pin input inverted
 					(at -12.7 -12.7 0)
 					(length 5.08)
@@ -467,7 +467,7 @@
 					)
 				)
 			)
-			(symbol "74HCT574_1_1"
+			(symbol "74xx_74HCT574_1_1"
 				(rectangle
 					(start -7.62 15.24)
 					(end 7.62 -15.24)
@@ -482,7 +482,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x09"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x09"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -556,7 +556,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-254_AE-6410-09A_1x09_P2.54mm_Vertical Molex_KK-396_A-41791-0009_1x09_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -567,7 +567,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x09_1_1"
+			(symbol "Connector_Generic_Conn_01x09_1_1"
 				(rectangle
 					(start -1.27 11.43)
 					(end 1.27 -11.43)
@@ -843,7 +843,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x13"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x13"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -917,7 +917,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0013_1x13_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -928,7 +928,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x13_1_1"
+			(symbol "Connector_Generic_Conn_01x13_1_1"
 				(rectangle
 					(start -1.27 16.51)
 					(end 1.27 -16.51)
@@ -1320,7 +1320,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "wpc_symbols:Device_C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1398,7 +1398,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "C_* C_0805_2012Metric C_1210_3225Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1409,7 +1409,7 @@
 					)
 				)
 			)
-			(symbol "C_0_1"
+			(symbol "Device_C_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762)
@@ -1437,7 +1437,7 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
+			(symbol "Device_C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1477,7 +1477,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "wpc_symbols:Device_R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1553,7 +1553,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "R_* R_0805_2012Metric R_2512_6332Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1564,7 +1564,7 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "Device_R_0_1"
 				(rectangle
 					(start -1.016 -2.54)
 					(end 1.016 2.54)
@@ -1577,7 +1577,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "Device_R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -1617,7 +1617,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4007"
+		(symbol "wpc_symbols:Diode_1N4007"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1715,7 +1715,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*DO?41*"
+			(property "ki_fp_filters" "D*DO?41* D_SMA D_SMC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1726,7 +1726,7 @@
 					)
 				)
 			)
-			(symbol "1N4007_0_1"
+			(symbol "Diode_1N4007_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27)
@@ -1769,7 +1769,7 @@
 					)
 				)
 			)
-			(symbol "1N4007_1_1"
+			(symbol "Diode_1N4007_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1809,7 +1809,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:Q_NMOS_GDS"
+		(symbol "wpc_symbols:Transistor_FET_Q_NMOS_GDS"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1885,7 +1885,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GDS_0_1"
+			(symbol "Transistor_FET_Q_NMOS_GDS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905)
@@ -2070,7 +2070,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GDS_1_1"
+			(symbol "Transistor_FET_Q_NMOS_GDS_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2128,7 +2128,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+20V"
+		(symbol "wpc_symbols:wpc_power_+20V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -2207,7 +2207,7 @@
 					)
 				)
 			)
-			(symbol "+20V_0_1"
+			(symbol "wpc_power_+20V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -2248,7 +2248,7 @@
 					)
 				)
 			)
-			(symbol "+20V_1_1"
+			(symbol "wpc_power_+20V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2270,7 +2270,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "wpc_symbols:power_+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -2349,7 +2349,7 @@
 					)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "power_+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -2390,7 +2390,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "power_+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2412,7 +2412,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "wpc_symbols:power_GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -2491,7 +2491,7 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "power_GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0)
@@ -2510,7 +2510,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "power_GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -3547,7 +3547,7 @@
 		)
 		(uuid "66441cca-ceb4-4dbd-8d65-760215889ab1")
 	)
-	(text "Flashlamp drivers (sol. 17-24): IRLR3110Z DPAK, latch U3 output HIGH = lamp ON, clocked by /SOL 2 (J113-9). Sol 17-20 keep an on-board S1M tie-back to +20V\n(the A-12697 has none there); the sol 21-24 tie-back cathodes are brought out to J126-10..13 exactly like the A-12697 D9-D12, so the harness chooses the clamp rail.\nOn STTNG sol. 17/18 drive the 12 V gun motors (motor high side on the +12V power rail of J118) through this group.\nOutputs on J126 (playfield, key pin 9) and J125 (backbox, key pin 4). Flasher supply +20V on J107-5/6 / J106-5."
+	(text "Flashlamp drivers (sol. 17-24): IPD90N10S4L-06 DPAK, latch U3 output HIGH = lamp ON, clocked by /SOL 2 (J113-9). Sol 17-20 keep an on-board S1M tie-back to +20V\n(the A-12697 has none there); the sol 21-24 tie-back cathodes are brought out to J126-10..13 exactly like the A-12697 D9-D12, so the harness chooses the clamp rail.\nOn STTNG sol. 17/18 drive the 12 V gun motors (motor high side on the +12V power rail of J118) through this group.\nOutputs on J126 (playfield, key pin 9) and J125 (backbox, key pin 4). Flasher supply +20V on J107-5/6 / J106-5."
 		(exclude_from_sim no)
 		(at 20.32 15.24 0)
 		(effects
@@ -4857,7 +4857,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 59.69 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4874,7 +4874,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 62.23 54.61 0)
 			(effects
 				(font
@@ -4903,7 +4903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 59.69 54.61 0)
 			(effects
 				(font
@@ -4913,7 +4913,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 59.69 54.61 0)
 			(effects
 				(font
@@ -4933,7 +4933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 59.69 54.61 0)
 			(effects
 				(font
@@ -4982,7 +4982,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 46.99 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5104,7 +5104,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 52.07 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5226,7 +5226,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 62.23 39.37 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5348,7 +5348,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 52.07 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5418,7 +5418,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 62.23 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5488,7 +5488,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 62.23 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5558,7 +5558,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 129.54 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5575,7 +5575,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 132.08 54.61 0)
 			(effects
 				(font
@@ -5604,7 +5604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 129.54 54.61 0)
 			(effects
 				(font
@@ -5614,7 +5614,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 129.54 54.61 0)
 			(effects
 				(font
@@ -5634,7 +5634,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 129.54 54.61 0)
 			(effects
 				(font
@@ -5683,7 +5683,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 116.84 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5805,7 +5805,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 121.92 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5927,7 +5927,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 132.08 39.37 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6049,7 +6049,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 121.92 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6119,7 +6119,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 132.08 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6189,7 +6189,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 132.08 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6259,7 +6259,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 199.39 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6276,7 +6276,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 201.93 54.61 0)
 			(effects
 				(font
@@ -6305,7 +6305,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 199.39 54.61 0)
 			(effects
 				(font
@@ -6315,7 +6315,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 199.39 54.61 0)
 			(effects
 				(font
@@ -6335,7 +6335,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 199.39 54.61 0)
 			(effects
 				(font
@@ -6384,7 +6384,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 186.69 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6506,7 +6506,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 191.77 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6628,7 +6628,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 201.93 39.37 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6750,7 +6750,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 191.77 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6820,7 +6820,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 201.93 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6890,7 +6890,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 201.93 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6960,7 +6960,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 270.51 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6977,7 +6977,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 273.05 54.61 0)
 			(effects
 				(font
@@ -7006,7 +7006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 270.51 54.61 0)
 			(effects
 				(font
@@ -7016,7 +7016,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 270.51 54.61 0)
 			(effects
 				(font
@@ -7036,7 +7036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 270.51 54.61 0)
 			(effects
 				(font
@@ -7085,7 +7085,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 257.81 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7207,7 +7207,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 262.89 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7329,7 +7329,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 273.05 39.37 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7451,7 +7451,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 262.89 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7521,7 +7521,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 273.05 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7591,7 +7591,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 273.05 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7661,7 +7661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 59.69 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7678,7 +7678,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 62.23 110.49 0)
 			(effects
 				(font
@@ -7707,7 +7707,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 59.69 110.49 0)
 			(effects
 				(font
@@ -7717,7 +7717,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 59.69 110.49 0)
 			(effects
 				(font
@@ -7737,7 +7737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 59.69 110.49 0)
 			(effects
 				(font
@@ -7786,7 +7786,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 46.99 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7908,7 +7908,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 52.07 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8030,7 +8030,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 62.23 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8152,7 +8152,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 52.07 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8222,7 +8222,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 62.23 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8292,7 +8292,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 129.54 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8309,7 +8309,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 132.08 110.49 0)
 			(effects
 				(font
@@ -8338,7 +8338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 129.54 110.49 0)
 			(effects
 				(font
@@ -8348,7 +8348,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 129.54 110.49 0)
 			(effects
 				(font
@@ -8368,7 +8368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 129.54 110.49 0)
 			(effects
 				(font
@@ -8417,7 +8417,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 116.84 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8539,7 +8539,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 121.92 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8661,7 +8661,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 132.08 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8783,7 +8783,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 121.92 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8853,7 +8853,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 132.08 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8923,7 +8923,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 199.39 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8940,7 +8940,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 201.93 110.49 0)
 			(effects
 				(font
@@ -8969,7 +8969,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 199.39 110.49 0)
 			(effects
 				(font
@@ -8979,7 +8979,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 199.39 110.49 0)
 			(effects
 				(font
@@ -8999,7 +8999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 199.39 110.49 0)
 			(effects
 				(font
@@ -9048,7 +9048,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 186.69 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9170,7 +9170,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 191.77 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9292,7 +9292,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 201.93 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9414,7 +9414,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 191.77 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9484,7 +9484,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 201.93 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9554,7 +9554,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 270.51 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9571,7 +9571,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 273.05 110.49 0)
 			(effects
 				(font
@@ -9600,7 +9600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 270.51 110.49 0)
 			(effects
 				(font
@@ -9610,7 +9610,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 270.51 110.49 0)
 			(effects
 				(font
@@ -9630,7 +9630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 270.51 110.49 0)
 			(effects
 				(font
@@ -9679,7 +9679,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 257.81 110.49 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9801,7 +9801,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 262.89 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9923,7 +9923,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 273.05 95.25 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10045,7 +10045,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 262.89 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10115,7 +10115,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 273.05 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10185,7 +10185,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT574")
+		(lib_id "wpc_symbols:74xx_74HCT574")
 		(at 59.69 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10361,7 +10361,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 59.69 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10431,7 +10431,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 59.69 219.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10501,7 +10501,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 110.49 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10623,7 +10623,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 110.49 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10693,7 +10693,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 110.49 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10763,7 +10763,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x13")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x13")
 		(at 299.72 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10819,7 +10819,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604013"
+		(property "MPN" "0026604130"
 			(at 299.72 180.34 0)
 			(effects
 				(font
@@ -10839,7 +10839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604013"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604130"
 			(at 299.72 180.34 0)
 			(effects
 				(font
@@ -10918,7 +10918,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x09")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x09")
 		(at 359.41 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10974,7 +10974,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604009"
+		(property "MPN" "0026604090"
 			(at 359.41 180.34 0)
 			(effects
 				(font

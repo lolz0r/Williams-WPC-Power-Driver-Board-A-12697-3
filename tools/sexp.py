@@ -20,7 +20,8 @@ def parse(text):
         elif m.group(2):
             lst = stack.pop(); stack[-1].append(lst)
         elif m.group(3) is not None:
-            stack[-1].append(m.group(3).replace('\\"', '"').replace('\\\\', '\\'))
+            escapes = {'n': '\n', 'r': '\r', 't': '\t', '"': '"', '\\': '\\'}
+            stack[-1].append(re.sub(r'\\([nrt"\\])', lambda match: escapes[match[1]], m.group(3)))
         elif m.group(4) is not None:
             stack[-1].append(Sym(m.group(4)))
         else:

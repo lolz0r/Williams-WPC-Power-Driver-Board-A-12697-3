@@ -1,0 +1,69 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: lamp matrix with the real wpc strobe timing (freewpc lamp.c / pinwiki: column strobe every 2 ms, 8 columns = 16 ms frame): column 1 = irfr5305 p-dpak carrying 8 #555 lamps, the other 7 columns as a lumped 7-lamp load on +18v; row 1 = irlr024n + 0.22r sense carrying its lamp in every column (8 lamps of row 1 lit). lamps are thermal filaments (7 ohm cold -> ~25 ohm at 1.6 w, tau 15 ms). a second "1993" lamp path with the tip107/tip102 darlington drops (1.2 v + 1.0 v) gives the rms lamp voltage of the original board for comparison.
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vcc                                          5
+stdout v18                                         18
+stdout colin                                        0
+stdout xu19.g                                       0
+stdout ulnout                                      18
+stdout cg                                          18
+stdout col                                7.96514e-10
+stdout colx                               7.96514e-10
+stdout row                                5.19017e-09
+stdout ta                                 2.75775e-18
+stdout rl7                                3.28381e-11
+stdout tb                                 8.33144e-20
+stdout coln_ctl                                     0
+stdout v18d                                     17.88
+stdout rown                                1.3035e-07
+stdout tc                                 2.23786e-15
+stdout q                                          4.6
+stdout g                                      4.55446
+stdout e                                  3.79551e-09
+stdout es                                 3.79551e-09
+stdout s                                  3.79551e-09
+stdout ref                                    1.29012
+stdout n1                                    0.645061
+stdout clr_n                                  4.99995
+stdout v18o                                      15.8
+stdout rowo                               1.14076e-07
+stdout rowo2                                3.476e-09
+stdout td                                 1.74748e-15
+stdout vdo#branch                            1.58e-08
+stdout vs#branch                          1.72523e-08
+stdout vq#branch                         -0.000455446
+stdout vdrop#branch                         1.788e-08
+stdout vcoln#branch                                 0
+stdout vcol#branch                         1.3601e-10
+stdout vstb#branch                                  0
+stdout v18#branch                        -3.38341e-08
+stdout vcc#branch                         -0.00370988
+ Reference value :  0.00000e+00
+ Reference value :  4.59729e-02
+ Reference value :  9.25131e-02
+ Reference value :  1.39717e-01
+ Reference value :  1.88057e-01
+ Reference value :  2.36367e-01
+ Reference value :  2.83927e-01
+ Reference value :  3.31732e-01
+ Reference value :  3.79308e-01
+stdout No. of Data Rows : 82988
+stdout icol_peak           =  8.02237e+00 at=  3.53004e-01
+stdout icol_avg            =  6.65974e-01 from=  3.50000e-01 to=  4.00000e-01
+stdout vcol_drop           =  4.34207e-01 at=  3.85202e-01
+stdout pcol_avg            =  2.34902e-01 from=  3.50000e-01 to=  4.00000e-01
+stdout irow_peak           =  1.02283e+00 at=  3.87000e-01
+stdout irow_avg            =  5.13941e-01 from=  3.50000e-01 to=  4.00000e-01
+stdout prow_avg            =  8.20680e-02 from=  3.50000e-01 to=  4.00000e-01
+stdout vsense_max          =  1.91734e-01 at=  3.85242e-01
+stdout clr_min             =  4.99995e+00 at=  4.00000e-01
+stdout vlamp_rms           =  6.17362e+00 from=  3.52000e-01 to=  4.00000e-01
+stdout vlamp_old_rms       =  5.53093e+00 from=  3.52000e-01 to=  4.00000e-01
+stdout ilamp_first         =  2.27995e+00 at=  1.00275e-03
+stdout tj_rise_col = 2.583924e+01
+stdout tj_rise_row = 9.027477e+00

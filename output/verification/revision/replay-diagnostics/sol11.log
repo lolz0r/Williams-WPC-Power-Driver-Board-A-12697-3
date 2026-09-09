@@ -1,0 +1,92 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom raw-write replay channel 11; bus.csv
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                        86
+stdout cmd                                          0
+stdout gateinput                                    0
+stdout gate                                         0
+stdout drain                                       86
+stdout drainq                                      86
+stdout coil                                        86
+stdout diode                                       86
+stdout lcoil#branch                      -1.17133e-09
+stdout vdiode#branch                     -9.54714e-14
+stdout vsense#branch                      1.17143e-09
+stdout vcmd#branch                                  0
+stdout vrail#branch                      -1.17134e-09
+ Reference value :  0.00000e+00
+ Reference value :  1.87963e-01
+ Reference value :  3.87568e-01
+ Reference value :  5.59723e-01
+ Reference value :  7.28578e-01
+ Reference value :  8.93438e-01
+ Reference value :  1.06414e+00
+ Reference value :  1.22727e+00
+ Reference value :  1.40885e+00
+ Reference value :  1.57721e+00
+ Reference value :  1.75441e+00
+ Reference value :  1.92229e+00
+ Reference value :  2.09494e+00
+ Reference value :  2.26492e+00
+ Reference value :  2.42939e+00
+ Reference value :  2.58298e+00
+ Reference value :  2.74625e+00
+ Reference value :  2.90997e+00
+ Reference value :  3.07410e+00
+ Reference value :  3.24511e+00
+ Reference value :  3.42159e+00
+ Reference value :  3.60541e+00
+ Reference value :  3.77004e+00
+ Reference value :  3.95140e+00
+ Reference value :  4.12080e+00
+ Reference value :  4.30815e+00
+ Reference value :  4.49733e+00
+ Reference value :  4.66361e+00
+ Reference value :  4.86201e+00
+ Reference value :  5.05839e+00
+ Reference value :  5.25208e+00
+ Reference value :  5.43437e+00
+ Reference value :  5.60724e+00
+ Reference value :  5.77200e+00
+ Reference value :  5.94368e+00
+ Reference value :  6.12004e+00
+ Reference value :  6.26821e+00
+ Reference value :  6.43227e+00
+ Reference value :  6.60819e+00
+ Reference value :  6.77927e+00
+ Reference value :  6.96674e+00
+ Reference value :  7.16299e+00
+ Reference value :  7.33214e+00
+ Reference value :  7.51059e+00
+ Reference value :  7.68766e+00
+ Reference value :  7.84303e+00
+ Reference value :  7.98280e+00
+ Reference value :  8.13592e+00
+ Reference value :  8.28118e+00
+ Reference value :  8.43168e+00
+ Reference value :  8.58776e+00
+ Reference value :  8.72823e+00
+ Reference value :  8.89360e+00
+ Reference value :  9.05213e+00
+ Reference value :  9.19996e+00
+ Reference value :  9.34243e+00
+ Reference value :  9.48253e+00
+ Reference value :  9.62798e+00
+ Reference value :  9.77760e+00
+ Reference value :  9.91889e+00
+ Reference value :  1.00595e+01
+ Reference value :  1.02201e+01
+stdout No. of Data Rows : 2046130
+stdout sim_end = 1.023000000000e+01
+stdout vds_peak            =  8.71556e+01 at=  8.87479e+00
+stdout vgs_peak            =  4.44129e+00 at=  8.81043e+00
+stdout p_avg               =  1.00605e-02 from=  2.00000e-01 to=  1.02000e+01
+stdout id_avg              =  5.28372e-03 from=  2.00000e-01 to=  1.02000e+01
+stdout i_peak              =  6.58894e+00 at=  8.85241e+00
+stdout coil_peak           =  6.58376e+00 at=  7.79702e+00
+stdout tj_repeating = 5.062374976000e+01

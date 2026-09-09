@@ -1,0 +1,21 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: zero-cross detector of the cost board after the 2026-09-06 correction: a half-wave sample of the f113-fused 9 vac leg (r197 10k / r254 1.5k / c21 10n; r198 dnp) on the + input of u6a against the 0.26 v reference (r206 27k / r255 1.5k) on the - input, r256 1.5k pull-up -> zero cross is high while that leg is positive: a 60 hz square wave with one edge per mains zero crossing, the waveform of the a-12697 (sheet 1: d38 sample on u6a pin 7 (+), reference on pin 6 (-); a real tp4 measures ~8.1 ms high pulses at 60 hz). the 9 vac winding feeds br2 (gbu8j) + c5 10000 uf at the 3 a buck load (2.7 ohm).
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 28011
+stdout zc_low              =  1.51131e-01 at=  9.11701e-02
+stdout zc_high             =  4.74999e+00 at=  9.11601e-02
+stdout za_min              =  -9.10755e-02 at=  9.52601e-02
+stdout za_max              =  1.21698e+00 at=  8.82201e-02
+stdout zc_r1               =  6.71971e-02
+stdout zc_f1               =  7.44981e-02
+stdout zc_r2               =  8.38671e-02
+stdout tz1                 =  6.66667e-02
+stdout tz2                 =  7.50000e-02
+stdout tz3                 =  8.33333e-02
+stdout zc_r1_10            =  6.71955e-02
+stdout zc_r1_90            =  6.71998e-02
+stdout i_r197_pk           =  8.11330e-04 at=  8.82051e-02
+stdout period = 1.667000e-02

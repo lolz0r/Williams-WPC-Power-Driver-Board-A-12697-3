@@ -11,7 +11,7 @@
 		(company "Modern re-implementation of the Williams A-12697-3 (same form factor)")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
+		(symbol "wpc_symbols:Connector_TestPoint"
 			(pin_numbers
 				(hide yes)
 			)
@@ -88,7 +88,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Pin* Test*"
+			(property "ki_fp_filters" "Pin* Test* TestPoint_THTPad_D2.0mm_Drill1.0mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -99,7 +99,7 @@
 					)
 				)
 			)
-			(symbol "TestPoint_0_1"
+			(symbol "Connector_TestPoint_0_1"
 				(circle
 					(center 0 3.302)
 					(radius 0.762)
@@ -112,7 +112,7 @@
 					)
 				)
 			)
-			(symbol "TestPoint_1_1"
+			(symbol "Connector_TestPoint_1_1"
 				(pin passive line
 					(at 0 0 90)
 					(length 2.54)
@@ -134,7 +134,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x03"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x03"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -208,7 +208,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0003_1x03_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -219,7 +219,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x03_1_1"
+			(symbol "Connector_Generic_Conn_01x03_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 1.27 -3.81)
@@ -321,7 +321,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x04"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x04"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -395,7 +395,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0004_1x04_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -406,7 +406,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x04_1_1"
+			(symbol "Connector_Generic_Conn_01x04_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 1.27 -6.35)
@@ -537,7 +537,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x05"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x05"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -611,7 +611,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -622,7 +622,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x05_1_1"
+			(symbol "Connector_Generic_Conn_01x05_1_1"
 				(rectangle
 					(start -1.27 6.35)
 					(end 1.27 -6.35)
@@ -782,7 +782,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x06"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x06"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -856,7 +856,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0006_1x06_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -867,7 +867,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x06_1_1"
+			(symbol "Connector_Generic_Conn_01x06_1_1"
 				(rectangle
 					(start -1.27 6.35)
 					(end 1.27 -8.89)
@@ -1056,7 +1056,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x07"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x07"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1130,7 +1130,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0007_1x07_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1141,7 +1141,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x07_1_1"
+			(symbol "Connector_Generic_Conn_01x07_1_1"
 				(rectangle
 					(start -1.27 8.89)
 					(end 1.27 -8.89)
@@ -1359,7 +1359,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x09"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x09"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1433,7 +1433,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-254_AE-6410-09A_1x09_P2.54mm_Vertical Molex_KK-396_A-41791-0009_1x09_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1444,7 +1444,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x09_1_1"
+			(symbol "Connector_Generic_Conn_01x09_1_1"
 				(rectangle
 					(start -1.27 11.43)
 					(end 1.27 -11.43)
@@ -1720,7 +1720,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "wpc_symbols:Device_C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1798,7 +1798,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "C_* C_0805_2012Metric C_1210_3225Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1809,7 +1809,7 @@
 					)
 				)
 			)
-			(symbol "C_0_1"
+			(symbol "Device_C_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762)
@@ -1837,7 +1837,7 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
+			(symbol "Device_C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1877,7 +1877,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized"
+		(symbol "wpc_symbols:Device_C_Polarized"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1955,7 +1955,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "CP_*"
+			(property "ki_fp_filters" "CP_* CP_Radial_D10.0mm_P5.00mm CP_Radial_D25.0mm_P10.00mm_SnapIn CP_Radial_D26.0mm_P10.00mm_SnapIn"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1966,7 +1966,7 @@
 					)
 				)
 			)
-			(symbol "C_Polarized_0_1"
+			(symbol "Device_C_Polarized_0_1"
 				(rectangle
 					(start -2.286 0.508)
 					(end 2.286 1.016)
@@ -2016,7 +2016,7 @@
 					)
 				)
 			)
-			(symbol "C_Polarized_1_1"
+			(symbol "Device_C_Polarized_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -2056,7 +2056,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Bridge_+-AA"
+		(symbol "wpc_symbols:Device_D_Bridge_+-AA"
 			(pin_names
 				(offset 0)
 			)
@@ -2131,7 +2131,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*Bridge* D*Rectifier*"
+			(property "ki_fp_filters" "D*Bridge* D*Rectifier* Diode_Bridge_28.6x28.6x7.3mm_P18.0mm_P11.6mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2142,7 +2142,7 @@
 					)
 				)
 			)
-			(symbol "D_Bridge_+-AA_0_1"
+			(symbol "Device_D_Bridge_+-AA_0_1"
 				(circle
 					(center -5.08 0)
 					(radius 0.254)
@@ -2316,7 +2316,7 @@
 					)
 				)
 			)
-			(symbol "D_Bridge_+-AA_1_1"
+			(symbol "Device_D_Bridge_+-AA_1_1"
 				(pin passive line
 					(at 7.62 0 180)
 					(length 2.54)
@@ -2392,7 +2392,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_Schottky"
+		(symbol "wpc_symbols:Device_D_Schottky"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2469,7 +2469,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(property "ki_fp_filters" "*SingleDiode* *_Diode_* D2PAK_Schottky_AKA D_* D_SMC TO-???* TO220_Schottky_AKA_5772"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2480,7 +2480,7 @@
 					)
 				)
 			)
-			(symbol "D_Schottky_0_1"
+			(symbol "Device_D_Schottky_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635)
@@ -2527,7 +2527,7 @@
 					)
 				)
 			)
-			(symbol "D_Schottky_1_1"
+			(symbol "Device_D_Schottky_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2567,7 +2567,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Fuse"
+		(symbol "wpc_symbols:Device_Fuse"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2643,7 +2643,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "*Fuse*"
+			(property "ki_fp_filters" "*Fuse* Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2654,7 +2654,7 @@
 					)
 				)
 			)
-			(symbol "Fuse_0_1"
+			(symbol "Device_Fuse_0_1"
 				(rectangle
 					(start -0.762 -2.54)
 					(end 0.762 2.54)
@@ -2680,7 +2680,7 @@
 					)
 				)
 			)
-			(symbol "Fuse_1_1"
+			(symbol "Device_Fuse_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -2720,7 +2720,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L"
+		(symbol "wpc_symbols:Device_L"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2797,7 +2797,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(property "ki_fp_filters" "*Coil* Choke_* Inductor_* L_* L_Bourns_SRP1245A"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2808,7 +2808,7 @@
 					)
 				)
 			)
-			(symbol "L_0_1"
+			(symbol "Device_L_0_1"
 				(arc
 					(start 0 2.54)
 					(mid 0.6323 1.905)
@@ -2858,7 +2858,7 @@
 					)
 				)
 			)
-			(symbol "L_1_1"
+			(symbol "Device_L_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -2898,7 +2898,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED"
+		(symbol "wpc_symbols:Device_LED"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2986,7 +2986,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+			(property "ki_fp_filters" "LED* LED_0805_2012Metric LED_SMD:* LED_THT:*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2997,7 +2997,7 @@
 					)
 				)
 			)
-			(symbol "LED_0_1"
+			(symbol "Device_LED_0_1"
 				(polyline
 					(pts
 						(xy -3.048 -0.762)
@@ -3072,7 +3072,7 @@
 					)
 				)
 			)
-			(symbol "LED_1_1"
+			(symbol "Device_LED_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -3112,7 +3112,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "wpc_symbols:Device_R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -3188,7 +3188,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "R_* R_0805_2012Metric R_2512_6332Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3199,7 +3199,7 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "Device_R_0_1"
 				(rectangle
 					(start -1.016 -2.54)
 					(end 1.016 2.54)
@@ -3212,7 +3212,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "Device_R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -3252,7 +3252,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Mechanical:MountingHole"
+		(symbol "wpc_symbols:Mechanical_MountingHole"
 			(pin_names
 				(offset 1.016)
 			)
@@ -3325,7 +3325,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "MountingHole*"
+			(property "ki_fp_filters" "MountingHole* MountingHole_4.3mm_M4"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3336,7 +3336,7 @@
 					)
 				)
 			)
-			(symbol "MountingHole_0_1"
+			(symbol "Mechanical_MountingHole_0_1"
 				(circle
 					(center 0 0)
 					(radius 1.27)
@@ -3351,7 +3351,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Switching:TPS54360DDA"
+		(symbol "wpc_symbols:Regulator_Switching_TPS54360DDA"
 			(pin_names
 				(offset 0.254)
 			)
@@ -3428,7 +3428,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "TI*SO*PowerPAD*ThermalVias*"
+			(property "ki_fp_filters" "TI*SO*PowerPAD*ThermalVias* Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3439,7 +3439,7 @@
 					)
 				)
 			)
-			(symbol "TPS54360DDA_0_1"
+			(symbol "Regulator_Switching_TPS54360DDA_0_1"
 				(rectangle
 					(start -7.62 7.62)
 					(end 7.62 -10.16)
@@ -3452,7 +3452,7 @@
 					)
 				)
 			)
-			(symbol "TPS54360DDA_1_1"
+			(symbol "Regulator_Switching_TPS54360DDA_1_1"
 				(pin input line
 					(at 10.16 5.08 180)
 					(length 2.54)
@@ -3618,7 +3618,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+12V"
+		(symbol "wpc_symbols:power_+12V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3697,7 +3697,7 @@
 					)
 				)
 			)
-			(symbol "+12V_0_1"
+			(symbol "power_+12V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -3738,7 +3738,7 @@
 					)
 				)
 			)
-			(symbol "+12V_1_1"
+			(symbol "power_+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -3760,7 +3760,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+12VU"
+		(symbol "wpc_symbols:wpc_power_+12VU"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3839,7 +3839,7 @@
 					)
 				)
 			)
-			(symbol "+12VU_0_1"
+			(symbol "wpc_power_+12VU_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -3880,7 +3880,7 @@
 					)
 				)
 			)
-			(symbol "+12VU_1_1"
+			(symbol "wpc_power_+12VU_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -3902,7 +3902,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+18V"
+		(symbol "wpc_symbols:wpc_power_+18V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3981,7 +3981,7 @@
 					)
 				)
 			)
-			(symbol "+18V_0_1"
+			(symbol "wpc_power_+18V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -4022,7 +4022,7 @@
 					)
 				)
 			)
-			(symbol "+18V_1_1"
+			(symbol "wpc_power_+18V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4044,7 +4044,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+20V"
+		(symbol "wpc_symbols:wpc_power_+20V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -4123,7 +4123,7 @@
 					)
 				)
 			)
-			(symbol "+20V_0_1"
+			(symbol "wpc_power_+20V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -4164,7 +4164,7 @@
 					)
 				)
 			)
-			(symbol "+20V_1_1"
+			(symbol "wpc_power_+20V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4186,7 +4186,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+50V"
+		(symbol "wpc_symbols:wpc_power_+50V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -4265,7 +4265,7 @@
 					)
 				)
 			)
-			(symbol "+50V_0_1"
+			(symbol "wpc_power_+50V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -4306,7 +4306,7 @@
 					)
 				)
 			)
-			(symbol "+50V_1_1"
+			(symbol "wpc_power_+50V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4328,7 +4328,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "wpc_symbols:power_+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -4407,7 +4407,7 @@
 					)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "power_+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -4448,7 +4448,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "power_+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4470,7 +4470,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "wpc_symbols:power_GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -4549,7 +4549,7 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "power_GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0)
@@ -4568,7 +4568,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "power_GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -4590,7 +4590,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
+		(symbol "wpc_symbols:power_PWR_FLAG"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -4669,7 +4669,7 @@
 					)
 				)
 			)
-			(symbol "PWR_FLAG_0_0"
+			(symbol "power_PWR_FLAG_0_0"
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
@@ -4689,7 +4689,7 @@
 					)
 				)
 			)
-			(symbol "PWR_FLAG_0_1"
+			(symbol "power_PWR_FLAG_0_1"
 				(polyline
 					(pts
 						(xy 0 0)
@@ -7774,7 +7774,7 @@
 		)
 		(uuid "8ca49766-39f3-4f00-9d46-b3cf4e288d83")
 	)
-	(text "BR1: discrete Schottky bridge D101-D104 (D2PAK tabs = cathodes: D101/D102 on the +18V pour, D103/D104 on the AC pours)"
+	(text "BR1: D101-D104 STPS20M100ST TO-220, each with 577202B00000G heatsink (tabs/heatsinks = cathodes; do not join heatsinks)"
 		(exclude_from_sim no)
 		(at 167.64 218.44 0)
 		(effects
@@ -7867,7 +7867,7 @@
 		)
 		(uuid "68c926c8-b474-4dc7-84e7-f61c9f875108")
 	)
-	(text "Power supplies (windings per manual/pinwiki: 9 VAC red -> +5V, 13.3 VAC blu-wht -> +18V, 16 VAC wht-red -> +20V, 51 VAC blk-yel -> \"+50V\" (~70 V DC),\n9.8 VAC wht-grn -> +12V power). Each secondary is fused (F111-F114, F116, 5x20 mm) before its bridge: GBPC3510W block (BR3, 6224BG basket heatsink); the +18V (D101-D104),\n+5V raw (D105-D108), +20V (D109-D112) and +12V power (D113-D116) bridges are four STPS20M100S 100 V / 20 A D2PAK Schottky diodes each, cooled by the pours under their tabs. +50V (2 x 2200uF/100V, bleeder R259||R260) feeds the coils through F103/F104/F105 (J107-1 also feeds the 8-driver board).\n+20V (BR4/C11) feeds the flashlamps only (coin-door interlock kills +20V/+50V). +18V (BR1/C6/C7) feeds the lamp matrix AND the +12V digital buck U21 (2 A,\nF115 3/4 A -> J114 to CPU J210 / Fliptronic J904 / 8-driver, as the original 7812 did). +12V power (BR5/C30 10000uF, unregulated, F116) -> J116/J117/J118 pin 2\n(coin door, DMD controller, playfield optos and the STTNG gun motors). +5V: BR2 -> C5 -> TPS54360B U20 (3 A) -> J114/J116/J117/J118.\nLED1 +12V digital, LED2 +12V after F115, LED4 +5V, LED5 +20V, LED6 +18V, LED7 +12V power. TP1 12V power, TP2 5V, TP3 12V digital, TP5 GND, TP6 50V, TP7 20V, TP8 18V, TP9 5V raw."
+	(text "Power supplies (windings per manual/pinwiki: 9 VAC red -> +5V, 13.3 VAC blu-wht -> +18V, 16 VAC wht-red -> +20V, 51 VAC blk-yel -> \"+50V\" (~70 V DC),\n9.8 VAC wht-grn -> +12V power). Each secondary is fused (F111-F114, F116, 5x20 mm) before its bridge: GBPC3510W block (BR3, 6223BG basket heatsink); the +18V (D101-D104),\nBR1 D101-D104 use STPS20M100ST TO-220AB with individual 577202B00000G heatsinks; D105-D116 retain STPS20M100SG D2PAK diodes on copper pours. +50V (2 x 2200uF/100V, bleeder R259||R260) feeds the coils through F103/F104/F105 (J107-1 also feeds the 8-driver board).\n+20V (BR4/C11) feeds the flashlamps only (coin-door interlock kills +20V/+50V). +18V (BR1/C6/C7) feeds the lamp matrix AND the +12V digital buck U21 (2 A,\nF115 3/4 A -> J114 to CPU J210 / Fliptronic J904 / 8-driver, as the original 7812 did). +12V power (BR5/C30 10000uF, unregulated, F116) -> J116/J117/J118 pin 2\n(coin door, DMD controller, playfield optos and the STTNG gun motors). +5V: BR2 -> C5 -> TPS54360B U20 (3 A) -> J114/J116/J117/J118.\nLED1 +12V digital, LED2 +12V after F115, LED4 +5V, LED5 +20V, LED6 +18V, LED7 +12V power. TP1 12V power, TP2 5V, TP3 12V digital, TP5 GND, TP6 50V, TP7 20V, TP8 18V, TP9 5V raw."
 		(exclude_from_sim no)
 		(at 20.32 15.24 0)
 		(effects
@@ -9838,7 +9838,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x07")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x07")
 		(at 59.69 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9894,7 +9894,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604007"
+		(property "MPN" "0026604070"
 			(at 59.69 59.69 0)
 			(effects
 				(font
@@ -9914,7 +9914,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604007"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604070"
 			(at 59.69 59.69 0)
 			(effects
 				(font
@@ -9975,7 +9975,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x09")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x09")
 		(at 59.69 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10031,7 +10031,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604009"
+		(property "MPN" "0026604090"
 			(at 59.69 110.49 0)
 			(effects
 				(font
@@ -10118,7 +10118,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x05")
 		(at 59.69 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10174,7 +10174,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604005"
+		(property "MPN" "0026604050"
 			(at 59.69 165.1 0)
 			(effects
 				(font
@@ -10194,7 +10194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604005"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604050"
 			(at 59.69 165.1 0)
 			(effects
 				(font
@@ -10249,7 +10249,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x05")
 		(at 59.69 204.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10305,7 +10305,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604005"
+		(property "MPN" "0026604050"
 			(at 59.69 204.47 0)
 			(effects
 				(font
@@ -10325,7 +10325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604005"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604050"
 			(at 59.69 204.47 0)
 			(effects
 				(font
@@ -10380,7 +10380,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x04")
 		(at 59.69 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10436,7 +10436,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604004"
+		(property "MPN" "0026604040"
 			(at 59.69 240.03 0)
 			(effects
 				(font
@@ -10456,7 +10456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604004"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604040"
 			(at 59.69 240.03 0)
 			(effects
 				(font
@@ -10508,7 +10508,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 49.53 237.49 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10578,7 +10578,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 49.53 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10648,7 +10648,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 49.53 242.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10718,7 +10718,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 49.53 245.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10788,7 +10788,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 35.56 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10858,7 +10858,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 35.56 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10928,7 +10928,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 154.94 52.07 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11050,7 +11050,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Bridge_+-AA")
+		(lib_id "wpc_symbols:Device_D_Bridge_+-AA")
 		(at 180.34 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11178,7 +11178,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 170.18 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11248,7 +11248,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 193.04 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11370,7 +11370,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 193.04 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11440,7 +11440,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 203.2 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11562,7 +11562,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 203.2 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11632,7 +11632,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+50V")
+		(lib_id "wpc_symbols:wpc_power_+50V")
 		(at 203.2 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11702,7 +11702,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 205.74 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11772,7 +11772,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 218.44 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11891,7 +11891,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 226.06 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12013,7 +12013,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 226.06 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12083,7 +12083,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 233.68 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12205,7 +12205,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 233.68 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12275,7 +12275,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 154.94 121.92 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12397,7 +12397,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12519,7 +12519,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 173.99 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12589,7 +12589,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12711,7 +12711,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 199.39 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12781,7 +12781,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12903,7 +12903,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 186.69 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12973,7 +12973,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13095,7 +13095,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 212.09 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13165,7 +13165,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 226.06 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13182,7 +13182,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10000uF 25V"
+		(property "Value" "10000uF 35V"
 			(at 228.6 128.27 0)
 			(effects
 				(font
@@ -13191,7 +13191,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D26.0mm_P10.00mm_SnapIn"
 			(at 226.06 128.27 0)
 			(effects
 				(font
@@ -13211,7 +13211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor 10000 uF 25 V snap-in 25x25 mm, 85C 3000 h (USC)"
+		(property "Description" "Capacitor 10000 uF 35 V snap-in 25.4x45 mm, 10 mm pitch, 6.0 mm leads, PVC sleeve, 105C; permissible ripple 7.89 A at 60C / 120 Hz; local ambient <=60C design condition"
 			(at 226.06 128.27 0)
 			(effects
 				(font
@@ -13221,7 +13221,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "25USC10000MEFCSN25X25"
+		(property "MPN" "B41252A7109M000"
 			(at 226.06 128.27 0)
 			(effects
 				(font
@@ -13231,7 +13231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Rubycon"
+		(property "Manufacturer" "TDK"
 			(at 226.06 128.27 0)
 			(effects
 				(font
@@ -13241,7 +13241,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/rubycon/25USC10000MEFCSN25X25/3565219"
+		(property "Link" "https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000"
 			(at 226.06 128.27 0)
 			(effects
 				(font
@@ -13287,7 +13287,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 226.06 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13357,7 +13357,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 236.22 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13427,7 +13427,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 238.76 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13497,7 +13497,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 243.84 128.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13619,7 +13619,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "wpc_symbols:Device_LED")
 		(at 243.84 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13741,7 +13741,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 243.84 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13811,7 +13811,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 251.46 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13930,7 +13930,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 154.94 191.77 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14052,7 +14052,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14069,7 +14069,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STPS20M100S"
+		(property "Value" "STPS20M100ST"
 			(at 182.88 196.85 0)
 			(effects
 				(font
@@ -14078,7 +14078,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "wpc_cost:D2PAK_Schottky_AKA"
+		(property "Footprint" "wpc_cost:TO220_Schottky_AKA_5772"
 			(at 180.34 196.85 0)
 			(effects
 				(font
@@ -14098,7 +14098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky rectifier 100 V 20 A D2PAK - discrete bridge element +18V lamp matrix supply, AC_A -> +"
+		(property "Description" "Schottky rectifier 100 V 20 A TO-220AB, physical leads A-K-A; individual 577202B00000G heatsink required"
 			(at 180.34 196.85 0)
 			(effects
 				(font
@@ -14108,7 +14108,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "STPS20M100SG-TR"
+		(property "MPN" "STPS20M100ST"
 			(at 180.34 196.85 0)
 			(effects
 				(font
@@ -14128,7 +14128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100SG-TR/2122461"
+		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100ST/2122463"
 			(at 180.34 196.85 0)
 			(effects
 				(font
@@ -14174,7 +14174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+18V")
+		(lib_id "wpc_symbols:wpc_power_+18V")
 		(at 173.99 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14244,7 +14244,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14261,7 +14261,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STPS20M100S"
+		(property "Value" "STPS20M100ST"
 			(at 208.28 196.85 0)
 			(effects
 				(font
@@ -14270,7 +14270,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "wpc_cost:D2PAK_Schottky_AKA"
+		(property "Footprint" "wpc_cost:TO220_Schottky_AKA_5772"
 			(at 205.74 196.85 0)
 			(effects
 				(font
@@ -14290,7 +14290,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky rectifier 100 V 20 A D2PAK - discrete bridge element +18V lamp matrix supply, AC_B -> +"
+		(property "Description" "Schottky rectifier 100 V 20 A TO-220AB, physical leads A-K-A; individual 577202B00000G heatsink required"
 			(at 205.74 196.85 0)
 			(effects
 				(font
@@ -14300,7 +14300,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "STPS20M100SG-TR"
+		(property "MPN" "STPS20M100ST"
 			(at 205.74 196.85 0)
 			(effects
 				(font
@@ -14320,7 +14320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100SG-TR/2122461"
+		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100ST/2122463"
 			(at 205.74 196.85 0)
 			(effects
 				(font
@@ -14366,7 +14366,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+18V")
+		(lib_id "wpc_symbols:wpc_power_+18V")
 		(at 199.39 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14436,7 +14436,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14453,7 +14453,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STPS20M100S"
+		(property "Value" "STPS20M100ST"
 			(at 182.88 209.55 0)
 			(effects
 				(font
@@ -14462,7 +14462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "wpc_cost:D2PAK_Schottky_AKA"
+		(property "Footprint" "wpc_cost:TO220_Schottky_AKA_5772"
 			(at 180.34 209.55 0)
 			(effects
 				(font
@@ -14482,7 +14482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky rectifier 100 V 20 A D2PAK - discrete bridge element +18V lamp matrix supply, GND -> AC_A"
+		(property "Description" "Schottky rectifier 100 V 20 A TO-220AB, physical leads A-K-A; individual 577202B00000G heatsink required"
 			(at 180.34 209.55 0)
 			(effects
 				(font
@@ -14492,7 +14492,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "STPS20M100SG-TR"
+		(property "MPN" "STPS20M100ST"
 			(at 180.34 209.55 0)
 			(effects
 				(font
@@ -14512,7 +14512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100SG-TR/2122461"
+		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100ST/2122463"
 			(at 180.34 209.55 0)
 			(effects
 				(font
@@ -14558,7 +14558,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 186.69 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14628,7 +14628,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14645,7 +14645,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "STPS20M100S"
+		(property "Value" "STPS20M100ST"
 			(at 208.28 209.55 0)
 			(effects
 				(font
@@ -14654,7 +14654,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "wpc_cost:D2PAK_Schottky_AKA"
+		(property "Footprint" "wpc_cost:TO220_Schottky_AKA_5772"
 			(at 205.74 209.55 0)
 			(effects
 				(font
@@ -14674,7 +14674,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky rectifier 100 V 20 A D2PAK - discrete bridge element +18V lamp matrix supply, GND -> AC_B"
+		(property "Description" "Schottky rectifier 100 V 20 A TO-220AB, physical leads A-K-A; individual 577202B00000G heatsink required"
 			(at 205.74 209.55 0)
 			(effects
 				(font
@@ -14684,7 +14684,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "STPS20M100SG-TR"
+		(property "MPN" "STPS20M100ST"
 			(at 205.74 209.55 0)
 			(effects
 				(font
@@ -14704,7 +14704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100SG-TR/2122461"
+		(property "Link" "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100ST/2122463"
 			(at 205.74 209.55 0)
 			(effects
 				(font
@@ -14750,7 +14750,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 212.09 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14820,7 +14820,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 226.06 198.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14837,7 +14837,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10000uF 25V"
+		(property "Value" "10000uF 35V"
 			(at 228.6 198.12 0)
 			(effects
 				(font
@@ -14846,7 +14846,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D26.0mm_P10.00mm_SnapIn"
 			(at 226.06 198.12 0)
 			(effects
 				(font
@@ -14866,7 +14866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor 10000 uF 25 V snap-in 25x25 mm, 85C 3000 h (USC)"
+		(property "Description" "Capacitor 10000 uF 35 V snap-in 25.4x45 mm, 10 mm pitch, 6.0 mm leads, PVC sleeve, 105C; permissible ripple 7.89 A at 60C / 120 Hz; local ambient <=60C design condition"
 			(at 226.06 198.12 0)
 			(effects
 				(font
@@ -14876,7 +14876,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "25USC10000MEFCSN25X25"
+		(property "MPN" "B41252A7109M000"
 			(at 226.06 198.12 0)
 			(effects
 				(font
@@ -14886,7 +14886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Rubycon"
+		(property "Manufacturer" "TDK"
 			(at 226.06 198.12 0)
 			(effects
 				(font
@@ -14896,7 +14896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/rubycon/25USC10000MEFCSN25X25/3565219"
+		(property "Link" "https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000"
 			(at 226.06 198.12 0)
 			(effects
 				(font
@@ -14942,7 +14942,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 226.06 201.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15012,7 +15012,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 236.22 198.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15029,7 +15029,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10000uF 25V"
+		(property "Value" "10000uF 35V"
 			(at 238.76 198.12 0)
 			(effects
 				(font
@@ -15038,7 +15038,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D26.0mm_P10.00mm_SnapIn"
 			(at 236.22 198.12 0)
 			(effects
 				(font
@@ -15058,7 +15058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor 10000 uF 25 V snap-in 25x25 mm, 85C 3000 h (USC)"
+		(property "Description" "Capacitor 10000 uF 35 V snap-in 25.4x45 mm, 10 mm pitch, 6.0 mm leads, PVC sleeve, 105C; permissible ripple 7.89 A at 60C / 120 Hz; local ambient <=60C design condition"
 			(at 236.22 198.12 0)
 			(effects
 				(font
@@ -15068,7 +15068,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "25USC10000MEFCSN25X25"
+		(property "MPN" "B41252A7109M000"
 			(at 236.22 198.12 0)
 			(effects
 				(font
@@ -15078,7 +15078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Rubycon"
+		(property "Manufacturer" "TDK"
 			(at 236.22 198.12 0)
 			(effects
 				(font
@@ -15088,7 +15088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/rubycon/25USC10000MEFCSN25X25/3565219"
+		(property "Link" "https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000"
 			(at 236.22 198.12 0)
 			(effects
 				(font
@@ -15134,7 +15134,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 236.22 201.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15204,7 +15204,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+18V")
+		(lib_id "wpc_symbols:wpc_power_+18V")
 		(at 236.22 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15274,7 +15274,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 238.76 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15344,7 +15344,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 243.84 198.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15466,7 +15466,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "wpc_symbols:Device_LED")
 		(at 243.84 209.55 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15588,7 +15588,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 243.84 205.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15658,7 +15658,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 251.46 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15777,7 +15777,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 154.94 262.89 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15899,7 +15899,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 267.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16021,7 +16021,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 267.97 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16143,7 +16143,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 280.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16265,7 +16265,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 186.69 280.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16335,7 +16335,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 280.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16457,7 +16457,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 212.09 280.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16527,7 +16527,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 226.06 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16544,7 +16544,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10000uF 25V"
+		(property "Value" "10000uF 35V"
 			(at 228.6 269.24 0)
 			(effects
 				(font
@@ -16553,7 +16553,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D26.0mm_P10.00mm_SnapIn"
 			(at 226.06 269.24 0)
 			(effects
 				(font
@@ -16573,7 +16573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor 10000 uF 25 V snap-in 25x25 mm, 85C 3000 h (USC)"
+		(property "Description" "Capacitor 10000 uF 35 V snap-in 25.4x45 mm, 10 mm pitch, 6.0 mm leads, PVC sleeve, 105C; permissible ripple 7.89 A at 60C / 120 Hz; local ambient <=60C design condition"
 			(at 226.06 269.24 0)
 			(effects
 				(font
@@ -16583,7 +16583,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "25USC10000MEFCSN25X25"
+		(property "MPN" "B41252A7109M000"
 			(at 226.06 269.24 0)
 			(effects
 				(font
@@ -16593,7 +16593,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Rubycon"
+		(property "Manufacturer" "TDK"
 			(at 226.06 269.24 0)
 			(effects
 				(font
@@ -16603,7 +16603,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/rubycon/25USC10000MEFCSN25X25/3565219"
+		(property "Link" "https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000"
 			(at 226.06 269.24 0)
 			(effects
 				(font
@@ -16613,7 +16613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price" ""
+		(property "Price" "8.71"
 			(at 226.06 269.24 0)
 			(effects
 				(font
@@ -16623,7 +16623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Price100" "1.85"
+		(property "Price100" "4.66992"
 			(at 226.06 269.24 0)
 			(effects
 				(font
@@ -16649,7 +16649,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 226.06 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16719,7 +16719,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 246.38 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16838,7 +16838,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 251.46 262.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16908,7 +16908,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 154.94 332.74 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17030,7 +17030,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 337.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17152,7 +17152,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12VU")
+		(lib_id "wpc_symbols:wpc_power_+12VU")
 		(at 173.99 337.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17222,7 +17222,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 337.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17344,7 +17344,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12VU")
+		(lib_id "wpc_symbols:wpc_power_+12VU")
 		(at 199.39 337.82 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17414,7 +17414,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 180.34 350.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17536,7 +17536,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 186.69 350.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17606,7 +17606,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 205.74 350.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17728,7 +17728,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 212.09 350.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17798,7 +17798,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 226.06 339.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17815,7 +17815,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10000uF 25V"
+		(property "Value" "10000uF 35V"
 			(at 228.6 339.09 0)
 			(effects
 				(font
@@ -17824,7 +17824,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D26.0mm_P10.00mm_SnapIn"
 			(at 226.06 339.09 0)
 			(effects
 				(font
@@ -17844,7 +17844,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Capacitor 10000 uF 25 V snap-in 25x25 mm, 85C 3000 h (USC)"
+		(property "Description" "Capacitor 10000 uF 35 V snap-in 25.4x45 mm, 10 mm pitch, 6.0 mm leads, PVC sleeve, 105C; permissible ripple 7.89 A at 60C / 120 Hz; local ambient <=60C design condition"
 			(at 226.06 339.09 0)
 			(effects
 				(font
@@ -17854,7 +17854,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "25USC10000MEFCSN25X25"
+		(property "MPN" "B41252A7109M000"
 			(at 226.06 339.09 0)
 			(effects
 				(font
@@ -17864,7 +17864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Rubycon"
+		(property "Manufacturer" "TDK"
 			(at 226.06 339.09 0)
 			(effects
 				(font
@@ -17874,7 +17874,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/rubycon/25USC10000MEFCSN25X25/3565219"
+		(property "Link" "https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000"
 			(at 226.06 339.09 0)
 			(effects
 				(font
@@ -17920,7 +17920,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 226.06 342.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17990,7 +17990,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12VU")
+		(lib_id "wpc_symbols:wpc_power_+12VU")
 		(at 236.22 327.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18060,7 +18060,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 238.76 327.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18130,7 +18130,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 243.84 339.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18252,7 +18252,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "wpc_symbols:Device_LED")
 		(at 243.84 350.52 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18374,7 +18374,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 243.84 346.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18444,7 +18444,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 251.46 327.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18563,7 +18563,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:TPS54360DDA")
+		(lib_id "wpc_symbols:Regulator_Switching_TPS54360DDA")
 		(at 420.37 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18706,7 +18706,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 420.37 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18776,7 +18776,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 359.41 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18898,7 +18898,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 359.41 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18968,7 +18968,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 369.57 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19090,7 +19090,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 369.57 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19160,7 +19160,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 379.73 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19282,7 +19282,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 389.89 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19404,7 +19404,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 389.89 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19474,7 +19474,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 400.05 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19596,7 +19596,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 400.05 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19666,7 +19666,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 410.21 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19788,7 +19788,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 420.37 85.09 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19910,7 +19910,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 420.37 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19980,7 +19980,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
+		(lib_id "wpc_symbols:Device_L")
 		(at 430.53 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20102,7 +20102,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 430.53 91.44 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20172,7 +20172,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 440.69 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20294,7 +20294,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 440.69 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20364,7 +20364,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 450.85 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20486,7 +20486,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 450.85 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20556,7 +20556,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 461.01 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20678,7 +20678,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 471.17 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20734,7 +20734,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21B333KBANNNC"
+		(property "MPN" "C0805C333K5RACTU"
 			(at 471.17 85.09 0)
 			(effects
 				(font
@@ -20744,7 +20744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "KEMET"
 			(at 471.17 85.09 0)
 			(effects
 				(font
@@ -20754,7 +20754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=CL21B333KBANNNC"
+		(property "Link" "https://search.kemet.com/download/specsheet/C0805C333K5RACTU"
 			(at 471.17 85.09 0)
 			(effects
 				(font
@@ -20800,7 +20800,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 471.17 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20870,7 +20870,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 481.33 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20926,7 +20926,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21C471JBANNNC"
+		(property "MPN" "C0805C471J5GACTU"
 			(at 481.33 85.09 0)
 			(effects
 				(font
@@ -20936,7 +20936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "KEMET"
 			(at 481.33 85.09 0)
 			(effects
 				(font
@@ -20946,7 +20946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=CL21C471JBANNNC"
+		(property "Link" "https://search.kemet.com/download/specsheet/C0805C471J5GACTU"
 			(at 481.33 85.09 0)
 			(effects
 				(font
@@ -20992,7 +20992,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 481.33 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21062,7 +21062,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 491.49 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21184,7 +21184,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 491.49 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21254,7 +21254,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 491.49 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21324,7 +21324,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 501.65 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21446,7 +21446,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 501.65 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21516,7 +21516,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 501.65 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21586,7 +21586,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 511.81 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21708,7 +21708,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 511.81 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21778,7 +21778,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 511.81 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21848,7 +21848,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 527.05 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21918,7 +21918,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 532.13 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21988,7 +21988,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 542.29 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22110,7 +22110,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "wpc_symbols:Device_LED")
 		(at 542.29 102.87 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22232,7 +22232,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 542.29 99.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22302,7 +22302,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 549.91 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22421,7 +22421,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Switching:TPS54360DDA")
+		(lib_id "wpc_symbols:Regulator_Switching_TPS54360DDA")
 		(at 420.37 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22564,7 +22564,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 420.37 165.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22634,7 +22634,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+18V")
+		(lib_id "wpc_symbols:wpc_power_+18V")
 		(at 405.13 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22704,7 +22704,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 359.41 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22826,7 +22826,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+18V")
+		(lib_id "wpc_symbols:wpc_power_+18V")
 		(at 359.41 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22896,7 +22896,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 359.41 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22966,7 +22966,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 369.57 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23088,7 +23088,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+18V")
+		(lib_id "wpc_symbols:wpc_power_+18V")
 		(at 369.57 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23158,7 +23158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 369.57 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23228,7 +23228,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 379.73 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23350,7 +23350,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+18V")
+		(lib_id "wpc_symbols:wpc_power_+18V")
 		(at 379.73 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23420,7 +23420,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 389.89 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23542,7 +23542,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 389.89 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23612,7 +23612,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 400.05 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23734,7 +23734,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 400.05 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23804,7 +23804,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 410.21 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23926,7 +23926,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "wpc_symbols:Device_D_Schottky")
 		(at 420.37 175.26 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24048,7 +24048,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 420.37 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24118,7 +24118,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
+		(lib_id "wpc_symbols:Device_L")
 		(at 430.53 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24240,7 +24240,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
+		(lib_id "wpc_symbols:power_+12V")
 		(at 430.53 181.61 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24310,7 +24310,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 440.69 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24432,7 +24432,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
+		(lib_id "wpc_symbols:power_+12V")
 		(at 440.69 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24502,7 +24502,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 450.85 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24624,7 +24624,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 450.85 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24694,7 +24694,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 461.01 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24816,7 +24816,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 471.17 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24938,7 +24938,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 471.17 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25008,7 +25008,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 481.33 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25064,7 +25064,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CL21C391JBANNNC"
+		(property "MPN" "C0805C391J5GACTU"
 			(at 481.33 175.26 0)
 			(effects
 				(font
@@ -25074,7 +25074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Samsung"
+		(property "Manufacturer" "KEMET"
 			(at 481.33 175.26 0)
 			(effects
 				(font
@@ -25084,7 +25084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=CL21C391JBANNNC"
+		(property "Link" "https://search.kemet.com/download/specsheet/C0805C391J5GACTU"
 			(at 481.33 175.26 0)
 			(effects
 				(font
@@ -25130,7 +25130,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 481.33 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25200,7 +25200,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 491.49 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25322,7 +25322,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
+		(lib_id "wpc_symbols:power_+12V")
 		(at 491.49 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25392,7 +25392,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 491.49 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25462,7 +25462,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
+		(lib_id "wpc_symbols:Device_C_Polarized")
 		(at 501.65 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25584,7 +25584,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
+		(lib_id "wpc_symbols:power_+12V")
 		(at 501.65 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25654,7 +25654,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 501.65 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25724,7 +25724,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 511.81 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25846,7 +25846,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
+		(lib_id "wpc_symbols:power_+12V")
 		(at 511.81 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25916,7 +25916,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 511.81 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -25986,7 +25986,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
+		(lib_id "wpc_symbols:power_+12V")
 		(at 527.05 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26056,7 +26056,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
+		(lib_id "wpc_symbols:power_PWR_FLAG")
 		(at 532.13 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26126,7 +26126,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 542.29 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26248,7 +26248,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "wpc_symbols:Device_LED")
 		(at 542.29 193.04 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26370,7 +26370,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 542.29 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26440,7 +26440,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 549.91 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26559,7 +26559,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 560.07 175.26 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26681,7 +26681,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 568.96 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26803,7 +26803,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
+		(lib_id "wpc_symbols:Device_LED")
 		(at 568.96 193.04 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26925,7 +26925,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 568.96 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26995,7 +26995,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
+		(lib_id "wpc_symbols:Connector_TestPoint")
 		(at 59.69 299.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27114,7 +27114,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 59.69 299.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27184,7 +27184,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 420.37 260.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27306,7 +27306,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+50V")
+		(lib_id "wpc_symbols:wpc_power_+50V")
 		(at 411.48 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27376,7 +27376,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 420.37 275.59 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27498,7 +27498,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+50V")
+		(lib_id "wpc_symbols:wpc_power_+50V")
 		(at 411.48 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27568,7 +27568,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 420.37 289.56 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27690,7 +27690,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+50V")
+		(lib_id "wpc_symbols:wpc_power_+50V")
 		(at 411.48 287.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27760,7 +27760,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x06")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x06")
 		(at 519.43 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27816,7 +27816,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604006"
+		(property "MPN" "0026604060"
 			(at 519.43 260.35 0)
 			(effects
 				(font
@@ -27836,7 +27836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604006"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604060"
 			(at 519.43 260.35 0)
 			(effects
 				(font
@@ -27894,7 +27894,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x05")
 		(at 519.43 299.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -27950,7 +27950,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604005"
+		(property "MPN" "0026604050"
 			(at 519.43 299.72 0)
 			(effects
 				(font
@@ -27970,7 +27970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604005"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604050"
 			(at 519.43 299.72 0)
 			(effects
 				(font
@@ -28025,7 +28025,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x07")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x07")
 		(at 519.43 340.36 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28081,7 +28081,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604007"
+		(property "MPN" "0026604070"
 			(at 519.43 340.36 0)
 			(effects
 				(font
@@ -28101,7 +28101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604007"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604070"
 			(at 519.43 340.36 0)
 			(effects
 				(font
@@ -28162,7 +28162,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 509.27 342.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28232,7 +28232,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 509.27 347.98 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28302,7 +28302,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x04")
 		(at 519.43 379.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28358,7 +28358,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604004"
+		(property "MPN" "0026604040"
 			(at 519.43 379.73 0)
 			(effects
 				(font
@@ -28378,7 +28378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604004"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604040"
 			(at 519.43 379.73 0)
 			(effects
 				(font
@@ -28430,7 +28430,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 509.27 382.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28500,7 +28500,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x04")
 		(at 519.43 410.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28556,7 +28556,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604004"
+		(property "MPN" "0026604040"
 			(at 519.43 410.21 0)
 			(effects
 				(font
@@ -28576,7 +28576,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604004"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604040"
 			(at 519.43 410.21 0)
 			(effects
 				(font
@@ -28628,7 +28628,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 509.27 412.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28698,7 +28698,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x04")
 		(at 519.43 439.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28754,7 +28754,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604004"
+		(property "MPN" "0026604040"
 			(at 519.43 439.42 0)
 			(effects
 				(font
@@ -28774,7 +28774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604004"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604040"
 			(at 519.43 439.42 0)
 			(effects
 				(font
@@ -28826,7 +28826,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 509.27 441.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28896,7 +28896,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x03")
 		(at 619.76 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -28952,7 +28952,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604003"
+		(property "MPN" "0026604030"
 			(at 619.76 260.35 0)
 			(effects
 				(font
@@ -28972,7 +28972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604003"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604030"
 			(at 619.76 260.35 0)
 			(effects
 				(font
@@ -29021,7 +29021,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x07")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x07")
 		(at 619.76 299.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29077,7 +29077,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604007"
+		(property "MPN" "0026604070"
 			(at 619.76 299.72 0)
 			(effects
 				(font
@@ -29097,7 +29097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604007"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604070"
 			(at 619.76 299.72 0)
 			(effects
 				(font
@@ -29158,7 +29158,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x09")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x09")
 		(at 619.76 350.52 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29214,7 +29214,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604009"
+		(property "MPN" "0026604090"
 			(at 619.76 350.52 0)
 			(effects
 				(font
@@ -29301,7 +29301,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+20V")
+		(lib_id "wpc_symbols:wpc_power_+20V")
 		(at 425.45 469.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29371,7 +29371,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 444.5 469.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29441,7 +29441,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 464.82 469.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29511,7 +29511,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 312.42 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29577,7 +29577,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 323.85 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29643,7 +29643,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 336.55 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29709,7 +29709,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 347.98 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29775,7 +29775,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 359.41 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29841,7 +29841,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 372.11 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29907,7 +29907,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 383.54 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -29973,7 +29973,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole")
+		(lib_id "wpc_symbols:Mechanical_MountingHole")
 		(at 396.24 480.06 0)
 		(unit 1)
 		(exclude_from_sim no)

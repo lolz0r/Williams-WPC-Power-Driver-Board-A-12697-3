@@ -1,0 +1,37 @@
+{
+  "command": [
+    "mame",
+    "sttng_l7",
+    "-rompath",
+    "/Users/mc/Downloads",
+    "-pluginspath",
+    "/Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/tools/mame/plugins;/usr/local/share/mame/plugins",
+    "-plugin",
+    "wpcverify",
+    "-video",
+    "none",
+    "-sound",
+    "none",
+    "-nothrottle",
+    "-seconds_to_run",
+    "320",
+    "-skip_gameinfo",
+    "-nvram_directory",
+    "/Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/output/verification/mame/diagnostics/nvram",
+    "-cfg_directory",
+    "/Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/output/verification/mame/diagnostics/cfg"
+  ],
+  "rom_sha256": {
+    "ng_u8_s.l1": "bf2363d082780e44c0654a7f6a9f34cfeac9ee93dee546016a947924ce3ced74",
+    "ng_u4_s.l1": "cc33a8ca687c761a1f5230711e075c9a91b9a11f3b7a10e7cc27cf642fa0e219",
+    "ng_u5_s.l1": "c5294265de9036f3228c07d1b94c56b7178c9bfa1a80a5d7429c89de2082d994",
+    "ng_u2_s.l1": "a3b1fd9797f24276ecb8df6aca4f9cd6e04652986c5906bd949a2728e41fc86d",
+    "ng_u3_s.l1": "ed128a24b3e99fe9ddad1a59b48b332be123264a264bc0d085bbea27db707c8b",
+    "trek_lx7.rom": "dad77a734d107b36221b4f74032259ea4f34404318b630ccce1fc337fe42ab24",
+    "ng_u6_s.l1": "e3902ff1da472609b59b69bb4d8f9d2f7a3d1eb293bf28a44b7e9a790d3ad5b5",
+    "ng_u7_s.l1": "0e7504f7a2bbe0b3b10cef0ebb7ebce9b0ddecff80fe1f927a1bf35ca419f280"
+  },
+  "scenario": "diagnostics",
+  "seconds": 320,
+  "limitations": "Input script exercises firmware but is not a full physical playfield model. Scenario success requires screen/trace review."
+}

@@ -1,6 +1,7 @@
-"""Run all SPICE verification decks through libngspice (inside the KiCad flatpak) and summarise measurements.
-Usage: flatpak run --command=python3 org.kicad.KiCad tools/spice/run_all.py"""
-import os, sys, json, glob
+"""Run all SPICE verification decks through native libngspice and summarize measurements.
+Usage: python3 tools/spice/run_all.py --output output/verification/revision/spice"""
+import os, sys, json, glob, argparse, tempfile, shutil, re, hashlib
+from pathlib import Path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from ngspice_lib import NgSpice
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -8,31 +9,31 @@ OUT = os.path.abspath(os.path.join(HERE, '..', '..', 'output', 'spice'))
 os.makedirs(OUT, exist_ok=True)
 CHECKS = {  # deck -> list of (measurement, lo, hi, description)   [cost board in the STTNG machine: real "+50V" = ~70 V (51 VAC winding), real strobe timing, real +12 V topology]
     'sol_low': [('icoil_max', 5.5, 7.5, 'AE-26-1200 (10.8 ohm) coil current on the 70 V rail (A)'),
-                ('vce_on', 0.0, 0.25, 'IRLR3110Z Vds while ON at 4.6 V gate drive (V): 6.5 A x 18 mOhm model = 0.12 V; 0.25 V = 38 mOhm, above the hot datasheet maximum (16 mOhm at 25 C, x1.5 at 100 C)'),
-                ('vcol_peak', 68.0, 80.0, 'drain voltage clamped by the S3M tie-back diode at turn-off (V): rail + Vf; the 100 V MOSFET / 100 V capacitors keep 20 V of margin even at the 78-83 V unloaded peak'),
+                ('vce_on', 0.0, 0.25, 'IPD90N10S4L06 drain voltage during conduction at 4.6 V command; approximate hot-resistance fit, 8.1 mOhm maximum specified at 4.5 V and 25 C.'),
+                ('vcol_peak', 68.0, 80.0, 'Drain voltage clamped by S3M tie-back in this 70 V case; separate high-line and parasitic checks are required.'),
                 ('i_latch', -0.001, 0.001, 'steady current drawn from the 74HCT574 output (A)'),
                 ('icoil_off', -0.01, 0.05, 'coil current 15 ms after turn-off (A)'),
-                ('p_fet', 0.0, 1.5, 'MOSFET dissipation during the pulse (W): 6.5 A^2 x 18 mOhm = 0.77 W; pulsed at <= 10 % duty the average stays < 0.15 W (DPAK on ~1 sq. in. of copper, 50 C/W)')],
+                ('p_fet', 0.0, 1.5, 'MOSFET conduction loss during the commanded pulse, using the approximate hot-resistance fit.')],
     'sol_high': [('icoil_max', 14.0, 18.5, 'AE-23-800 (4.2 ohm, 12 mH) coil current on the 70 V rail (A): 70 / 4.2 = 16.7 A'),
-                 ('vout_on', 0.0, 0.45, 'IRLR3110Z Vds while ON (V): 16.6 A x 18 mOhm = 0.30 V; 0.45 V = 27 mOhm = the hot datasheet maximum at 4.5 V gate drive'),
+                 ('vout_on', 0.0, 0.45, 'IPD90N10S4L06 drain voltage during conduction; approximate hot-resistance fit.'),
                  ('vout_peak', 68.0, 80.0, 'output clamped by the S3M tie-back diode (V)'),
-                 ('p_fet', 0.0, 7.5, 'MOSFET dissipation during the 40 ms pulse (W): 16.6 A^2 x 18 mOhm = 5.1 W; 7.5 W = the hot-Rds(on) bound'),
+                 ('p_fet', 0.0, 7.5, 'MOSFET conduction loss during the commanded pulse, using the approximate hot-resistance fit.'),
                  ('e_pulse', 0.0, 0.3, 'energy dissipated in the MOSFET per 40 ms pulse (J)'),
-                 ('tj_rise_pulse', 0.0, 6.0, 'junction temperature rise per pulse (C): E / 40 ms x Zth(40 ms) with Zth ~0.6 C/W (IRLR3110Z RthJC 1.05 C/W, single-pulse transient ~60 % of it)'),
-                 ('tj_rise_10pct', 0.0, 75.0, 'steady junction rise at the normal <= 10 % firmware pulse duty (C): P x 0.1 x 110 C/W - the as-routed DPAK has only its tab pad (37-45 mm2 of 1 oz copper within 12.7 mm, no pour: board audit in docs/THERMAL_AND_PROTECTION.md), i.e. the IRLR3110Z datasheet minimum-footprint Rth(j-a) of 110 C/W, not the 50 C/W of the earlier assumption; Tj <= 125 C at 50 C ambient'),
-                 ('tj_rise_20pct', 0.0, 125.0, 'steady junction rise when a coil machine-guns at 20 % duty (C): P x 0.2 x 110 C/W as routed = ~113 C -> Tj ~163 C, above the 125 C design target but below the 175 C absolute maximum of the IRLR3110Z (limit here = 175 - 50); OPEN ITEM for the next PCB revision: a >= 300 mm2 (1 oz) drain pour per output brings Rth(j-a) to ~60 C/W (see tj_rise_20pct_pour) - or the firmware duty limit keeps it at 10 %'),
-                 ('tj_rise_20pct_pour', 0.0, 75.0, 'the same 20 % duty case with the recommended >= 300 mm2 drain pour (Rth(j-a) ~60 C/W, IR AN-1057 curve between the 110 C/W minimum footprint and 40 C/W at 1 in2): Tj <= 125 C (C)')],
+                 ('tj_rise_pulse', 0.0, 6.0, 'Illustrative single-pulse rise from energy and assumed 0.6 C/W transient impedance; not package/board thermal qualification.'),
+                 ('tj_rise_10pct', 0.0, 75.0, 'Junction rise at 10% repeating duty using 62 C/W minimum-footprint datasheet RthJA; 125 C target at 50 C local ambient.'),
+                 ('tj_rise_20pct', 0.0, 75.0, 'Junction rise at 20% repeating duty using 62 C/W minimum-footprint datasheet RthJA; 125 C target at 50 C local ambient.'),
+                 ('tj_rise_20pct_pour', 0.0, 75.0, 'Sensitivity only: same 20% duty at an assumed 60 C/W. No claim that this layout achieves that resistance.')],
     'sol_hold': [('ia_hold', 4.0, 5.5, '100 % hold of a 14.5 ohm coil on 70 V (A)'),
-                 ('pa_hold', 0.0, 0.8, 'MOSFET dissipation during a continuous hold (W): 4.8 A^2 x 18 mOhm = 0.43 W'),
+                 ('pa_hold', 0.0, 0.8, 'MOSFET conduction loss during continuous hold using the approximate hot-resistance fit.'),
                  ('vds_hold', 0.0, 0.15, 'Vds during the hold (V)'),
-                 ('tj_rise_hold', 0.0, 75.0, 'junction rise for a coil held for seconds (C): P x 110 C/W (as-routed DPAK, tab pad only - datasheet minimum-footprint Rth(j-a)); 75 C = Tj 125 C at 50 C ambient'),
+                 ('tj_rise_hold', 0.0, 75.0, 'Continuous-hold junction rise using 62 C/W minimum-footprint datasheet RthJA; excludes neighboring heat.'),
                  ('ib_avg', 2.5, 4.0, 'average current of an AE-26-1200 PWM-held at 50 % (FreeWPC SOL_DUTY_50: 4 ms on / 4 ms off) (A)'),
                  ('ib_max', 4.0, 7.0, 'peak coil current during the PWM hold (A)'), ('ib_min', 0.3, 3.0, 'coil current stays continuous through the 4 ms off slot (A)'),
                  ('pb_avg', 0.0, 0.8, 'MOSFET dissipation during the PWM hold (W): conduction + the 125 Hz switching is negligible'),
-                 ('tj_rise_pwm', 0.0, 75.0, 'junction rise during the PWM hold (C): P x 110 C/W as routed'),
+                 ('tj_rise_pwm', 0.0, 75.0, 'PWM-hold junction rise using 62 C/W minimum-footprint datasheet RthJA; excludes neighboring heat.'),
                  ('idb_avg', 0.0, 2.0, 'average freewheel current in the S3M tie-back (A): S3M IF(AV) = 3 A (this is why the coil groups got S3M instead of S1M)'),
                  ('idb_max', 0.0, 30.0, 'peak diode current (A): S3M IFSM 100 A')],
-    'flasher': [('ilamp_inrush', 3.0, 8.0, 'cold-lamp inrush (A)'), ('ilamp_hot', 0.7, 1.4, 'hot lamp current (A)'), ('vsat', 0.0, 0.1, 'IRLR3110Z Vds with the lamp on (V): 1.1 A x 18 mOhm = 0.02 V')],
+    'flasher': [('ilamp_inrush', 3.0, 8.0, 'cold-lamp inrush (A)'), ('ilamp_hot', 0.7, 1.4, 'hot lamp current (A)'), ('vsat', 0.0, 0.1, 'IPD90N10S4L06 drain voltage with hot filament load.')],
     'lamp_matrix': [('irow_normal', 0.3, 3.5, 'row current, normal lamp incl. cold inrush (A)'), ('vsense_normal', 0.0, 1.3, 'sense voltage stays below the 1.4 V trip (V)'),
                     ('vref', 1.2, 1.6, '1.4 V reference (V)'), ('vcol_drop', 0.0, 0.3, 'column IRFR5305 drop with one lamp on (V): ~2 A x 65 mOhm = 0.13 V; 0.3 V = 150 mOhm (hot, low Vgs)'),
                     ('vrow_on', 0.0, 0.8, 'row driver drop incl. the 0.22 R sense resistor (V): 2 A x (0.22 + 0.08) = 0.6 V; 0.8 V keeps > 17 V on the 18 V lamp string'),
@@ -117,7 +118,7 @@ CHECKS = {  # deck -> list of (measurement, lo, hi, description)   [cost board i
                  ('vout_step_max', 11.8, 12.6, 'overshoot on the 2 -> 1 A step (V)'),
                  ('il_peak', 2.0, 4.3, 'peak inductor current at 2 A from 13.5 V (A): below the 4.5 A minimum current limit'),
                  ('vout_2a', 11.8, 12.2, 'output at 2 A (V)'), ('iin_2a', -2.6, -1.0, 'input current at 2 A out from 13.5 V (A)')],
-    'powerup': [('icoil_blank', 0.0, 0.01, 'coil current while BLANKING is high (reset, +5V ramp, undefined latch content = 1) (A): the tri-stated 74HCT574 and the 10 k gate pull-down keep the IRLR3110Z off'),
+    'powerup': [('icoil_blank', 0.0, 0.01, 'coil current while BLANKING is high (reset, +5V ramp, undefined latch content = 1) (A): the tri-stated 74HCT574 and the 10 k gate pull-down keep the IPD90N10S4L06 off'),
                 ('istr_blank', 0.0, 0.05, 'G.I. string current while blanked (A): 10 k base pull-down keeps the MMBT4401 / triac off'),
                 ('icol_blank', 0.0, 0.01, 'lamp column current while blanked with a row MOSFET randomly ON (A): the TBD62083A input pull-down keeps the column P-MOSFET off'),
                 ('vgate_blank', 0.0, 0.5, 'solenoid gate voltage while blanked (V)'),
@@ -130,16 +131,16 @@ CHECKS = {  # deck -> list of (measurement, lo, hi, description)   [cost board i
                 ('istr_after', 0.0, 0.3, 'string current after latch released (A)'),
                 ('p_npn', 0.0, 0.25, 'MMBT4401 dissipation (W, SOT-23 limit 0.31 W)'), ('i_latch', -0.004, -0.0001, 'base current sourced by the 74HCT574 (A, negative = out of the latch)'),
                 ('p_triac', 0.0, 5.0, 'BTA16-600C conduction loss with the datasheet on-state (Vt0 0.85 V, Rd 25 mOhm) at this string current (W) - the datasheet gives <= 5 W at 4.5 A rms'),
-                ('tj_rise_sink', 0.0, 75.0, 'junction rise above ambient with the Boyd 7019BG bolt-on channel heatsink (11.0 C/W catalogue value at a 75 C rise, x1.15 for the ~50 C rise here) + Rth(j-c) 2.5 (BTA16 insulated TO-220) + 0.5 C/W interface = 15.65 C/W (C): limit Tj <= 125 C in a 50 C cabinet. The 7019BG (39.4 x 9.5 x 25.4 mm, M3 bolt-on, no PCB holes) fits all five triac positions on the tab side (docs/THERMAL_AND_PROTECTION.md section 2)'),
-                ('tj_rise_clip', 0.0, 200.0, 'informational: the rise the previously specified Aavid 577002B00000G clip-on would give - it is a 32 C/W part per the Boyd catalogue (35 C/W junction-to-ambient), i.e. Tj ~165 C with an incandescent string; replaced by the 7019BG (C)'),
-                ('rth_sa_needed', 0.0, 100.0, 'maximum sink-to-ambient thermal resistance that keeps Tj <= 125 C at 50 C ambient with this string (C/W) - informational, compare with the 12.65 C/W of the 7019BG in this cabinet')],
+                ('tj_rise_sink', 0.0, 75.0, 'junction rise above ambient with the Boyd 7020BG bolt-on channel heatsink (8.7 C/W catalogue value at a 75 C rise, x1.25 for the ~50 C rise here) + Rth(j-c) 2.5 (BTA16 insulated TO-220) + 0.5 C/W interface = 13.875 C/W (C): limit Tj <= 125 C in a 50 C cabinet. The 7020BG (33.02 x 11.94 x 36.83 mm, M3 bolt-on, no PCB holes) fits all five triac positions on the tab side (docs/THERMAL_AND_PROTECTION.md section 2)'),
+                ('tj_rise_clip', 0.0, 200.0, 'informational: the rise the previously specified Aavid 577002B00000G clip-on would give - it is a 32 C/W part per the Boyd catalogue (35 C/W junction-to-ambient), i.e. Tj ~165 C with an incandescent string; replaced by the 7020BG (C)'),
+                ('rth_sa_needed', 0.0, 100.0, 'maximum sink-to-ambient thermal resistance that keeps Tj <= 125 C at 50 C ambient with this string (C/W) - informational, compare with the 10.875 C/W of the 7020BG in this cabinet')],
     'gi_string': [('ipk', 0.0, 160.0, 'cold-start peak current of an 18 x #44 string fired at the voltage peak (A) - BTA16-600C ITSM 160 A (8.3 ms)'),
                   ('i2t_f106', 0.0, 60.0, 'I2t through F106 (239 5 A S.B., 302.8 A2s nominal melting) during the whole cold start (A2s): <= 20 %, and far below the BTA16 I2t of 128 A2s'),
                   ('i2t_30ms', 0.0, 60.0, 'I2t in the first 30 ms (A2s) - the part the fuse sees as a surge'),
                   ('irms_ss', 3.5, 5.0, 'steady string rms current (A) - 18 x #44 = 4.5 A on the 5 A slow-blow F106 (rated to carry 110 % continuously)'),
                   ('p_triac', 0.0, 5.0, 'steady triac dissipation with the datasheet on-state (W) - see gi_gate for the heatsink requirement'),
                   ('istr_pre', 0.0, 0.05, 'string current before the gate is driven (A)'),
-                  ('tj_rise_sink', 0.0, 75.0, 'junction rise with the Boyd 7019BG heatsink at the steady 4.5 A rms string (C): P x 15.65 C/W (2.5 j-c + 0.5 interface + 12.65 sink) - the worst of the two G.I. decks; Tj <= 125 C at 50 C ambient')],
+                  ('tj_rise_sink', 0.0, 75.0, 'junction rise with the Boyd 7020BG heatsink at the steady 4.5 A rms string (C): P x 13.875 C/W (2.5 j-c + 0.5 interface + 10.875 sink) - the worst of the two G.I. decks; Tj <= 125 C at 50 C ambient')],
     'ribbon': [('g_w1', 4.0, 5.0, 'MOSFET gate after the CPU writes bit = 1 (V): 74LS240 drives the ribbon LOW, U9 74HCT240 re-inverts it, the 74HCT574 latches it on the strobe rising edge -> ON'),
                ('out_w1', 0.0, 1.0, 'drain voltage with the output ON (V)'),
                ('g_w0', 0.0, 0.3, 'gate after the CPU writes bit = 0 (ribbon HIGH) (V) - OFF'), ('out_w0', 60.0, 80.0, 'drain at the 70 V rail with the output OFF (V)'),
@@ -158,15 +159,15 @@ CHECKS = {  # deck -> list of (measurement, lo, hi, description)   [cost board i
     'bridge_loss': [('iavg_18a', 5.0, 8.0, 'BR1 +18V DC output current with all 64 lamps lit + the +12V digital buck at 0.75 A (A) - the everything-on case of psu_maxload'),
                     ('irms_18a', 5.0, 16.0, 'BR1 leg RMS current in that case (A): capacitor-input rectifier, crest factor ~1.6-2'),
                     ('pd_18a', 0.0, 5.0, 'per-diode loss of the +18V Schottky bridge (4 x STPS20M100S) with all lamps lit, datasheet equation 0.425 IF(AV) + 0.0088 IF(RMS)^2 (W) - the whole bridge is 4x this (was 15.2 W with the GBJ1510)'),
-                    ('rthreq_18a', 25.0, 200.0, 'Rth(j-a) each +18V diode needs for Tj <= 110 C at 50 C ambient with all lamps lit (C/W) - 31.2 C/W needed = 12 cm2 of 2 oz copper; specified 15 cm2 per diode = 29.7 C/W (D101/D102 share the +18V pour: 30 cm2; D103 on AC13_A_F and D104 on AC13_B 15 cm2 each)'),
-                    ('tj_18a', 0.0, 110.0, 'BR1 diode junction temperature with all 64 incandescent lamps lit (6.4 A DC, 11.2 A rms) on 15 cm2 of 2 oz copper per diode (29.7 C/W) at 50 C ambient (C): the case the GBJ1510 failed at 208 C'),
-                    ('tj_18b', 0.0, 110.0, 'BR1 diode junction temperature at 3.0 A DC (C)'),
+                    ('rthreq_18a', 25.0, 200.0, 'Conduction-only required thermal resistance for 110 C; informational legacy metric (C/W)'),
+                    ('tj_18a', 0.0, 125.0, 'BR1 TO220 with individual Boyd 5772: 32.2 C/W including 25% sink derating, plus worst 70 V/125 C leakage at 20.69 V; target 125 C at 50 C ambient'),
+                    ('tj_18b', 0.0, 125.0, 'BR1 TO220/sink junction estimate at 3 A DC, including leakage (C)'),
                     ('pd_18c', 0.0, 5.0, 'per-diode loss at the F114 rating 8 A DC (W) - informational: needs ~30 cm2 of 2 oz copper per diode for 110 C, i.e. the 8 A fuse limit is a short-term rating'),
-                    ('tj_18c', 0.0, 150.0, 'BR1 diode junction temperature at 8 A DC on the 15 cm2 pours (C): limit = the STPS20M100S absolute maximum 150 C (informational; 110 C would need ~30 cm2 per diode, so the F114 rating is a short-term bound)'),
+                    ('tj_18c', 0.0, 150.0, 'BR1 fuse-rating load is informational only; not qualified for continuous operation (C)'),
                     ('tj_20a', 0.0, 110.0, 'BR4 +20V diode junction temperature at 2.5 A DC sustained on 4 cm2 of 2 oz copper per diode (36 C/W) (C)'),
                     ('tj_20b', 0.0, 150.0, 'BR4 diode junction temperature at the F111 rating 5 A DC on 4 cm2 (C): informational, limit = Tj max 150 C; 110 C needs ~10 cm2 per diode'),
-                    ('tj_50a', 0.0, 125.0, 'BR3 +50V GBPC3510W junction temperature at 3.0 A DC sustained (a held 14.5 ohm coil half the time plus play; flippers are rectified on the Fliptronic board) with the Boyd 6224BG basket heatsink bolted on the (upward-facing) metal base: 1.4 j-c + 0.5 + 9.4 x 1.05 = 11.8 C/W (C)'),
-                    ('pds_50b', 0.0, 60.0, 'BR3 dissipation at the F112 rating 7 A DC (W) - informational: sustained limit with the 6224BG is 3.4 A'),
+                    ('tj_50a', 0.0, 125.0, 'BR3 +50V GBPC3510W junction temperature at 3.0 A DC sustained (a held 14.5 ohm coil half the time plus play; flippers are rectified on the Fliptronic board) with the Boyd 6223BG basket heatsink bolted on the (upward-facing) metal base: 1.4 j-c + 0.5 + 9.4 x 1.05 = 11.8 C/W (C)'),
+                    ('pds_50b', 0.0, 60.0, 'BR3 dissipation at the F112 rating 7 A DC (W) - informational: sustained limit with the 6223BG is 3.4 A'),
                     ('tj_5a', 0.0, 110.0, 'BR2 +5V raw diode junction temperature with the +5V buck at its rated 3 A output (~1.9 A DC in) on 2 cm2 of 2 oz copper per diode (41 C/W) (C)'),
                     ('tj_5b', 0.0, 110.0, 'BR2 diode junction temperature at the estimated real +5V load 2.4 A (C)'),
                     ('tj_12a', 0.0, 110.0, 'BR5 +12V power diode junction temperature at 2.5 A DC sustained on 2 cm2 of 2 oz copper per diode (41 C/W) (C)'),
@@ -188,16 +189,45 @@ CHECKS = {  # deck -> list of (measurement, lo, hi, description)   [cost board i
 }
 
 def main():
+    global OUT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', default=OUT, help='Directory for fresh reports and waveforms')
+    args = parser.parse_args()
+    OUT = os.path.abspath(args.output)
+    os.makedirs(OUT, exist_ok=True)
+    Path(OUT, 'RESULTS.md').write_text('# SPICE verification\n\nINCOMPLETE: run in progress or interrupted.\n')
     ng = NgSpice()
     summary = []
-    for deck in sorted(glob.glob(os.path.join(HERE, 'decks', '*.cir'))):
+    source_decks = sorted(glob.glob(os.path.join(HERE, 'decks', '*.cir')))
+    names = {Path(p).stem for p in source_decks}
+    if names != set(CHECKS):
+        raise RuntimeError(f'Deck/check coverage mismatch: {names ^ set(CHECKS)}')
+    # Stage unchanged electrical circuits with portable waveform destinations.
+    # Keep the checked-in reference results and source decks intact.
+    stage = tempfile.TemporaryDirectory(prefix='wpc-spice-')
+    staged = Path(stage.name)
+    shutil.copytree(Path(HERE) / 'decks', staged / 'decks')
+    shutil.copyfile(Path(HERE) / 'models.lib', staged / 'models.lib')
+    manifest = {}
+    for original in source_decks + [os.path.join(HERE, 'models.lib'), __file__,
+                                   os.path.join(os.path.dirname(__file__), 'ngspice_lib.py')]:
+        manifest[os.path.relpath(original, HERE)] = hashlib.sha256(Path(original).read_bytes()).hexdigest()
+    Path(OUT, 'inputs.json').write_text(json.dumps(manifest, indent=2) + '\n')
+    for deck in sorted(glob.glob(str(staged / 'decks' / '*.cir'))):
+        source = Path(deck).read_text()
+        source = re.sub(r'(?m)^(\s*wrdata\s+)\S+',
+                        lambda m: m[1] + Path(m[0].split()[-1]).name, source)
+        Path(deck).write_text(source)
         name = os.path.basename(deck)[:-4]
-        os.chdir(os.path.join(HERE, 'decks'))
+        os.chdir(staged / 'decks')
         ng.cmd('destroy all')
         log = ng.run_deck(deck)
+        Path(OUT, name + '.log').write_text('\n'.join(log) + '\n')
+        for waveform in (staged / 'decks').glob('*.csv'):
+            shutil.move(str(waveform), str(Path(OUT) / waveform.name))
         csv = os.path.join(OUT, name + '.csv')     # the 20 ns switching-model runs write > 100 MB: keep every 10th sample (measurements were taken on the full run)
         if os.path.exists(csv) and os.path.getsize(csv) > 20e6:
-            rows = open(csv).read().split('\n'); open(csv, 'w').write('\n'.join(rows[::10]) + '\n')
+            rows = Path(csv).read_text().split('\n'); Path(csv).write_text('\n'.join(rows[::10]) + '\n')
         meas = {}
         errs = [l for l in log if 'stderr' in l and 'Warning' not in l]
         for l in log:
@@ -225,13 +255,14 @@ def main():
         summary.append((name, results, errs[:5]))
         print(f'== {name}: ' + ', '.join(f'{k}={v:.4g}' for k, v in meas.items() if k != 'time'))
         for e in errs[:5]: print('   ERR', e[:160])
-    lines = ['# SPICE verification results - cost-optimised board in the STTNG machine', '', 'ngspice (KiCad 10 bundled libngspice) transient runs of each circuit block; MOSFET/diode models in `tools/spice/models.lib` are level-1 fits to datasheet Rds(on)/Qg',
+    lines = ['# SPICE verification results - cost-optimised board in the STTNG machine', '', 'ngspice shared-library transient runs of each circuit block; MOSFET/diode models in `tools/spice/models.lib` are level-1 fits to datasheet Rds(on)/Qg',
              '(functional fidelity, not vendor-exact); the TPS54360B is a behavioural peak-current-mode model (12 A/V, 4.5 A minimum current limit, 400 kHz). Machine-level decks use the real WPC',
-             'interface: 51 VAC solenoid winding (~70 V rail), 2 ms lamp column strobes, IRQ-timed triac firing, PWM-held coils, the +12 V digital / +12 V power split, the active-high zero-cross pulse,',
+             'interface: 51 VAC solenoid winding (~70 V rail), 2 ms lamp column strobes, IRQ-timed triac firing, PWM-held coils, the +12 V digital / +12 V power split, the zero-cross square wave,',
              'BLANKING as the CPU drives it at reset, and switch-on inrush against the Littelfuse 239/217 melting I2t (docs/WPC_INTERFACE_FINDINGS.md). Waveform CSVs are next to this file.',
              'Each limit is explained in its description column (see also README.md).', '']
     allok = True
     for name, results, errs in summary:
+        allok &= bool(results) and not errs
         lines.append(f'## {name}'); lines.append('')
         lines.append('| measurement | value | expected | result |'); lines.append('|---|---|---|---|')
         for m, v, lo, hi, ok, desc in results:
@@ -240,7 +271,10 @@ def main():
         for e in errs: lines.append(f'* ngspice error: `{e.strip()[:160]}`')
         lines.append('')
     lines.append(f'**Overall: {"ALL CHECKS PASS" if allok else "SOME CHECKS FAILED"}**')
-    open(os.path.join(OUT, 'RESULTS.md'), 'w').write('\n'.join(lines) + '\n')
+    Path(OUT, 'RESULTS.md').write_text('\n'.join(lines) + '\n')
     print('\n'.join(lines))
+    os.chdir(HERE)
+    stage.cleanup()
+    return 0 if allok else 1
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

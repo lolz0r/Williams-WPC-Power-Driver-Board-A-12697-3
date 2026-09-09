@@ -11,7 +11,7 @@
 		(company "Modern re-implementation of the Williams A-12697-3 (same form factor)")
 	)
 	(lib_symbols
-		(symbol "74xx:74HCT74"
+		(symbol "wpc_symbols:74xx_74HCT74"
 			(pin_names
 				(offset 1.016)
 			)
@@ -94,7 +94,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SO*3.9x8.65mm_P1.27mm* TSSOP*4.4x5mm_P0.65mm* DHVQFN*2.5x3mm_P0.5mm*"
+			(property "ki_fp_filters" "DHVQFN*2.5x3mm_P0.5mm* SO*3.9x8.65mm_P1.27mm* SOIC-14_3.9x8.7mm_P1.27mm TSSOP*4.4x5mm_P0.65mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -105,7 +105,7 @@
 					)
 				)
 			)
-			(symbol "74HCT74_1_0"
+			(symbol "74xx_74HCT74_1_0"
 				(pin input line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -215,7 +215,7 @@
 					)
 				)
 			)
-			(symbol "74HCT74_1_1"
+			(symbol "74xx_74HCT74_1_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -228,7 +228,7 @@
 					)
 				)
 			)
-			(symbol "74HCT74_2_0"
+			(symbol "74xx_74HCT74_2_0"
 				(pin output line
 					(at 7.62 -2.54 180)
 					(length 2.54)
@@ -338,7 +338,7 @@
 					)
 				)
 			)
-			(symbol "74HCT74_2_1"
+			(symbol "74xx_74HCT74_2_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -351,7 +351,7 @@
 					)
 				)
 			)
-			(symbol "74HCT74_3_0"
+			(symbol "74xx_74HCT74_3_0"
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
@@ -389,7 +389,7 @@
 					)
 				)
 			)
-			(symbol "74HCT74_3_1"
+			(symbol "74xx_74HCT74_3_1"
 				(rectangle
 					(start -5.08 7.62)
 					(end 5.08 -7.62)
@@ -404,7 +404,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Comparator:LM339"
+		(symbol "wpc_symbols:Comparator_LM339"
 			(pin_names
 				(offset 0.127)
 			)
@@ -489,7 +489,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* SOIC-14_3.9x8.7mm_P1.27mm TSSOP*4.4x5mm*P0.65mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -500,7 +500,7 @@
 					)
 				)
 			)
-			(symbol "LM339_1_1"
+			(symbol "Comparator_LM339_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08)
@@ -589,7 +589,7 @@
 					)
 				)
 			)
-			(symbol "LM339_2_1"
+			(symbol "Comparator_LM339_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08)
@@ -678,7 +678,7 @@
 					)
 				)
 			)
-			(symbol "LM339_3_1"
+			(symbol "Comparator_LM339_3_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08)
@@ -767,7 +767,7 @@
 					)
 				)
 			)
-			(symbol "LM339_4_1"
+			(symbol "Comparator_LM339_4_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08)
@@ -856,7 +856,7 @@
 					)
 				)
 			)
-			(symbol "LM339_5_1"
+			(symbol "Comparator_LM339_5_1"
 				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
@@ -896,7 +896,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x09"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x09"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -970,7 +970,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-254_AE-6410-09A_1x09_P2.54mm_Vertical Molex_KK-396_A-41791-0009_1x09_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -981,7 +981,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x09_1_1"
+			(symbol "Connector_Generic_Conn_01x09_1_1"
 				(rectangle
 					(start -1.27 11.43)
 					(end 1.27 -11.43)
@@ -1257,7 +1257,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "wpc_symbols:Device_C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1335,7 +1335,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "C_* C_0805_2012Metric C_1210_3225Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1346,7 +1346,7 @@
 					)
 				)
 			)
-			(symbol "C_0_1"
+			(symbol "Device_C_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762)
@@ -1374,7 +1374,7 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
+			(symbol "Device_C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1414,7 +1414,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "wpc_symbols:Device_R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1490,7 +1490,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "R_* R_0805_2012Metric R_2512_6332Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1501,7 +1501,7 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "Device_R_0_1"
 				(rectangle
 					(start -1.016 -2.54)
 					(end 1.016 2.54)
@@ -1514,7 +1514,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "Device_R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -1554,7 +1554,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4148W"
+		(symbol "wpc_symbols:Diode_1N4148W"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1652,7 +1652,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?123*"
+			(property "ki_fp_filters" "D*SOD?123* D_SOD-123"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1663,7 +1663,7 @@
 					)
 				)
 			)
-			(symbol "1N4148W_0_1"
+			(symbol "Diode_1N4148W_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27)
@@ -1706,7 +1706,7 @@
 					)
 				)
 			)
-			(symbol "1N4148W_1_1"
+			(symbol "Diode_1N4148W_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1746,7 +1746,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:Q_NMOS_GDS"
+		(symbol "wpc_symbols:Transistor_FET_Q_NMOS_GDS"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1822,7 +1822,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GDS_0_1"
+			(symbol "Transistor_FET_Q_NMOS_GDS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905)
@@ -2007,7 +2007,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GDS_1_1"
+			(symbol "Transistor_FET_Q_NMOS_GDS_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2065,7 +2065,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "wpc_symbols:power_+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -2144,7 +2144,7 @@
 					)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "power_+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -2185,7 +2185,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "power_+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2207,7 +2207,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "wpc_symbols:power_GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -2286,7 +2286,7 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "power_GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0)
@@ -2305,7 +2305,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "power_GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -6365,7 +6365,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 62.23 59.69 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -6499,7 +6499,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 77.47 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6621,7 +6621,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 82.55 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6743,7 +6743,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 88.9 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6868,7 +6868,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 91.44 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6990,7 +6990,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 96.52 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7112,7 +7112,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 102.87 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7234,7 +7234,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 113.03 67.31 0)
 		(unit 4)
 		(exclude_from_sim no)
@@ -7359,7 +7359,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 123.19 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7481,7 +7481,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 62.23 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7551,7 +7551,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 82.55 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7621,7 +7621,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 91.44 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7691,7 +7691,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 102.87 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7761,7 +7761,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 123.19 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7831,7 +7831,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 212.09 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7965,7 +7965,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 227.33 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8087,7 +8087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 232.41 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8209,7 +8209,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 238.76 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8334,7 +8334,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 241.3 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8456,7 +8456,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 246.38 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8578,7 +8578,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 252.73 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8700,7 +8700,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 262.89 67.31 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -8825,7 +8825,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 273.05 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8947,7 +8947,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 212.09 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9017,7 +9017,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 232.41 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9087,7 +9087,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 241.3 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9157,7 +9157,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 252.73 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9227,7 +9227,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 273.05 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9297,7 +9297,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 62.23 115.57 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -9431,7 +9431,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 77.47 118.11 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9553,7 +9553,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 82.55 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9675,7 +9675,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 88.9 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9800,7 +9800,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 91.44 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9922,7 +9922,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 96.52 125.73 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10044,7 +10044,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 102.87 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10166,7 +10166,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 113.03 123.19 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -10291,7 +10291,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 123.19 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10413,7 +10413,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 62.23 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10483,7 +10483,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 82.55 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10553,7 +10553,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 91.44 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10623,7 +10623,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 102.87 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10693,7 +10693,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 123.19 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10763,7 +10763,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 212.09 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10897,7 +10897,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 227.33 118.11 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11019,7 +11019,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 232.41 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11141,7 +11141,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 238.76 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11266,7 +11266,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 241.3 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11388,7 +11388,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 246.38 125.73 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11510,7 +11510,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 252.73 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11632,7 +11632,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 262.89 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11757,7 +11757,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 273.05 116.84 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11879,7 +11879,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 212.09 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11949,7 +11949,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 232.41 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12019,7 +12019,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 241.3 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12089,7 +12089,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 252.73 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12159,7 +12159,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 273.05 113.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12229,7 +12229,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 62.23 170.18 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -12363,7 +12363,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 77.47 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12485,7 +12485,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 82.55 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12607,7 +12607,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 88.9 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12732,7 +12732,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 91.44 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12854,7 +12854,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 96.52 180.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12976,7 +12976,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 102.87 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13098,7 +13098,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 113.03 177.8 0)
 		(unit 4)
 		(exclude_from_sim no)
@@ -13223,7 +13223,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 123.19 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13345,7 +13345,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 62.23 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13415,7 +13415,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 82.55 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13485,7 +13485,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 91.44 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13555,7 +13555,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 102.87 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13625,7 +13625,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 123.19 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13695,7 +13695,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 212.09 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13829,7 +13829,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 227.33 172.72 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13951,7 +13951,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 232.41 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14073,7 +14073,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 238.76 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14198,7 +14198,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 241.3 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14320,7 +14320,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 246.38 180.34 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14442,7 +14442,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 252.73 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14564,7 +14564,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 262.89 177.8 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -14689,7 +14689,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 273.05 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14811,7 +14811,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 212.09 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14881,7 +14881,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 232.41 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14951,7 +14951,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 241.3 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15021,7 +15021,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 252.73 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15091,7 +15091,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 273.05 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15161,7 +15161,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 62.23 224.79 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -15295,7 +15295,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 77.47 227.33 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15417,7 +15417,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 82.55 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15539,7 +15539,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 88.9 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15664,7 +15664,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 91.44 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15786,7 +15786,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 96.52 234.95 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15908,7 +15908,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 102.87 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16030,7 +16030,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 113.03 232.41 0)
 		(unit 2)
 		(exclude_from_sim no)
@@ -16155,7 +16155,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 123.19 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16277,7 +16277,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 62.23 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16347,7 +16347,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 82.55 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16417,7 +16417,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 91.44 245.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16487,7 +16487,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 102.87 242.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16557,7 +16557,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 123.19 222.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16627,7 +16627,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 212.09 224.79 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16761,7 +16761,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 227.33 227.33 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16883,7 +16883,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 232.41 234.95 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17005,7 +17005,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 238.76 227.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17130,7 +17130,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 241.3 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17252,7 +17252,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 246.38 234.95 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17374,7 +17374,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 252.73 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17496,7 +17496,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 262.89 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17621,7 +17621,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 273.05 226.06 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17743,7 +17743,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 212.09 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17813,7 +17813,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 232.41 238.76 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17883,7 +17883,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 241.3 245.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17953,7 +17953,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 252.73 242.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18023,7 +18023,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 273.05 222.25 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18093,7 +18093,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 59.69 265.43 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -18215,7 +18215,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 59.69 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18285,7 +18285,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 59.69 275.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18355,7 +18355,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 72.39 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18477,7 +18477,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 72.39 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18547,7 +18547,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 72.39 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18617,7 +18617,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 90.17 265.43 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -18739,7 +18739,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 90.17 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18809,7 +18809,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 90.17 275.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18879,7 +18879,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 101.6 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19001,7 +19001,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 101.6 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19071,7 +19071,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 101.6 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19141,7 +19141,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 119.38 265.43 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -19263,7 +19263,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 119.38 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19333,7 +19333,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 119.38 275.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19403,7 +19403,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 132.08 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19525,7 +19525,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 132.08 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19595,7 +19595,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 132.08 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19665,7 +19665,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT74")
+		(lib_id "wpc_symbols:74xx_74HCT74")
 		(at 149.86 265.43 0)
 		(unit 3)
 		(exclude_from_sim no)
@@ -19787,7 +19787,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 149.86 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19857,7 +19857,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 149.86 275.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19927,7 +19927,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 162.56 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20049,7 +20049,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 162.56 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20119,7 +20119,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 162.56 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20189,7 +20189,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 199.39 265.43 0)
 		(unit 5)
 		(exclude_from_sim no)
@@ -20311,7 +20311,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 196.85 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20381,7 +20381,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 196.85 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20451,7 +20451,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 212.09 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20573,7 +20573,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 212.09 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20643,7 +20643,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 212.09 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20713,7 +20713,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Comparator:LM339")
+		(lib_id "wpc_symbols:Comparator_LM339")
 		(at 229.87 265.43 0)
 		(unit 5)
 		(exclude_from_sim no)
@@ -20835,7 +20835,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 227.33 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20905,7 +20905,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 227.33 273.05 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20975,7 +20975,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 242.57 265.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21097,7 +21097,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 242.57 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21167,7 +21167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 242.57 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21237,7 +21237,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 289.56 245.11 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21359,7 +21359,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148W")
+		(lib_id "wpc_symbols:Diode_1N4148W")
 		(at 289.56 260.35 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21481,7 +21481,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148W")
+		(lib_id "wpc_symbols:Diode_1N4148W")
 		(at 289.56 270.51 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21603,7 +21603,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 299.72 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21725,7 +21725,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 289.56 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21795,7 +21795,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 289.56 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21865,7 +21865,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 299.72 264.16 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21935,7 +21935,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x09")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x09")
 		(at 330.2 219.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22078,7 +22078,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x09")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x09")
 		(at 384.81 219.71 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22221,7 +22221,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x09")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x09")
 		(at 330.2 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)

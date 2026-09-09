@@ -1,0 +1,32 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: cost board everything-on stress case in the machine: 64 lamps lit (2.5 ohm = ~5.5 a on +18v, gbj1510 + 2 x 10000uf) plus the +12v digital buck (0.75 a, f115 limit) on +18v, 8 flashers with cold inrush on +20v (gbj1510 + 10000uf), 2 x ae-23-800 + 4 x ae-26-1200 fired together on the ~70 v rail (51.4vac, gbpc3510 + 2 x 2200uf), +5v buck 3 a from gbu8j + 10000uf, +12v power (9.8vac, gbu8j, 10000uf) with 2.5 a of motors / optos
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  1.05736e-01
+ Reference value :  1.69998e-01
+stdout No. of Data Rows : 18591
+stdout v18_avg             =  1.43205e+01 from=  8.00000e-02 to=  1.20000e-01
+stdout v18_min             =  1.34798e+01 at=  9.41756e-02
+stdout i18_avg             =  5.72820e+00 from=  8.00000e-02 to=  1.20000e-01
+stdout ibr18_peak          =  2.45695e+01 at=  9.54956e-02
+stdout ibr20_peak          =  3.82568e+01 at=  4.50156e-02
+stdout ibr5_peak           =  8.70489e+00 at=  1.03776e-01
+stdout ibr12_peak          =  8.22829e+00 at=  8.72756e-02
+stdout vin5_min            =  9.97361e+00 at=  1.27810e-01
+stdout v5_min              =  5.10000e+00 at=  1.39996e-01
+stdout v20_min             =  1.28080e+01 at=  4.36556e-02
+stdout v20_avg             =  1.71834e+01 from=  8.00000e-02 to=  1.40016e-01
+stdout iflash_peak         =  5.67221e+01 at=  4.00156e-02
+stdout iflash_hot          =  7.61759e+00 from=  1.00000e-01 to=  1.40016e-01
+stdout v12_min             =  1.20000e+01 at=  1.39996e-01
+stdout v12u_min            =  1.16093e+01 at=  8.57156e-02
+stdout v12u_avg            =  1.22307e+01 from=  8.00000e-02 to=  1.40016e-01
+stdout v50_idle            =  6.92151e+01 from=  1.00000e-01 to=  1.20000e-01
+stdout v50_avg_pulse       =  2.24000e+01 from=  1.30000e-01 to=  1.59003e-01
+stdout v50_min_pulse       =  1.41110e+01 at=  1.34836e-01
+stdout ihp_max             =  2.06074e+01 at=  1.24270e-01
+stdout ilp_max             =  1.72651e+01 at=  1.23870e-01
+stdout itot50_max          =  3.78197e+01 at=  1.24090e-01
+stdout ibr50_peak          =  3.69999e+01 at=  1.37036e-01

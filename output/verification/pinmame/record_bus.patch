@@ -1,0 +1,28 @@
+diff --git a/src/wpc/wpc.c b/src/wpc/wpc.c
+index 5ce26e0..a8770fc 100644
+--- a/src/wpc/wpc.c
++++ b/src/wpc/wpc.c
+@@ -758,6 +758,23 @@ READ_HANDLER(wpc_r) {
+ }
+ 
+ WRITE_HANDLER(wpc_w) {
++  /* WPC_BOARD_VERIFY_OBSERVER: passive raw CPU writes. */
++  {
++    static FILE *trace = NULL;
++    static int initialized = 0;
++    const int address = offset + WPC_BASE;
++    if (!initialized) {
++      const char *name = getenv("PINMAME_WPC_TRACE");
++      initialized = 1;
++      if (name) {
++        trace = fopen(name, "w");
++        if (trace) fprintf(trace, "time,kind,address,data,mask\n");
++      }
++    }
++    if (trace && ((address >= 0x3fe0 && address <= 0x3fe6) || address == 0x3fff || address == 0x3fd4))
++      fprintf(trace, "%.9f,W,%04x,%02x,ff\n", timer_get_time(), address, data & 255);
++  }
++
+ #ifdef PROC_SUPPORT
+   if (coreGlobals.p_rocEn) {
+     // process immediate coil changes for C01 to C28 and C37 to C40

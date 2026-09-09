@@ -1,15 +1,16 @@
-"""Cost-optimised board sourcing table (extends the modern board's table).  Every entry was checked on DigiKey / Mouser
-(Sep 2026, WebSearch snippets - see README "Sourcing notes"); `link` is the DigiKey product page (where a product ID was
-verified) or a DigiKey exact-keyword result page.  `price` = DigiKey (or Mouser where noted) qty-1 USD where it was visible,
-else None; `price100` = estimated unit price when buying for 100 boards (i.e. 100 x the per-board quantity: reel / 1000-piece
-breaks for the parts used 8-32 times per board, 100-piece breaks for the others).  Where no break was visible the rules
-0.55-0.7x (semiconductors), 0.3x (passives), 0.6x (connectors / electromechanical) of the qty-1 price were applied."""
+"""BOM sourcing identifiers and historical cost estimates.
+See docs/SOURCING_REVIEW.md for the dated, source-linked availability audit.
+price100 entries are estimates, not supplier quotations or stock commitments.
+"""
 DK = 'https://www.digikey.com/en/products/detail/'
 KW = 'https://www.digikey.com/en/products/result?keywords='
 
 def kw(mpn): return KW + mpn.replace('#', '%23').replace(',', '%2C').replace('/', '%2F')
 
 SRC = {
+    'IPD90N10S4L06': dict(mfr='Infineon', mpn='IPD90N10S4L06ATMA1',
+                        desc='N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver',
+                        link='https://www.infineon.com/part/IPD90N10S4L-06', price=None, price_est=3.00, price100=1.50),
     # ---- power semiconductors (new DPAK parts)
     'IRLR3110Z': dict(mfr='Infineon', mpn='IRLR3110ZTRPBF', desc='N-MOSFET 100 V 63 A 14 mOhm @10 V / 16 mOhm @4.5 V logic-level, DPAK (TO-252)',
                       link=DK + 'infineon-technologies/IRLR3110ZTRPBF/1928415', price=1.90, price100=0.78),   # 2800 pcs = full reels
@@ -25,6 +26,10 @@ SRC = {
     'TRIAC':    dict(mfr='STMicroelectronics', mpn='BTA16-600CRG', desc='Triac 16 A 600 V, 4-quadrant (Igt 25/50 mA), insulated TO-220AB', link=DK + 'stmicroelectronics/BTA16-600CRG/669145', price=None, price_est=1.45, price100=0.95),
     'NPN':      dict(mfr='Diodes Inc', mpn='MMBT4401-7-F', desc='NPN 40 V 600 mA, SOT-23', link=DK + 'diodes-incorporated/MMBT4401-7-F/775841', price=None, price_est=0.12, price100=0.05),
     # ---- bridge rectifiers (2026-09-07: the low-voltage bridges are four discrete D2PAK Schottky diodes each, the GBJ / GBU entries stay for reference)
+    'SCH20100_TO220': dict(mfr='STMicroelectronics', mpn='STPS20M100ST', desc='Schottky rectifier 100 V 20 A TO-220AB, physical leads A-K-A; individual 577202B00000G heatsink required', link=DK+'stmicroelectronics/STPS20M100ST/2122463', price=4.39, price100=2.0278),
+    'HS5772': dict(mfr='Boyd (Aavid)', mpn='577202B00000G', desc='TO-220 channel heatsink 13.21 x 12.70 x 19.05 mm, 24.4 C/W natural convection, direct tab mount; electrically live', link=DK+'boyd-laconia-llc/577202B00000G/108322', price=0.56, price100=0.4412),
+    'THERMALPASTE': dict(mfr='MG Chemicals', mpn='8616-3ML', desc='Silicone-free thermal paste, 3 mL syringe; thin bond line at all rectifier/triac heatsink interfaces, consumable per build batch', link=DK+'mg-chemicals/8616-3ML/4899944', price=14.33, price_est=None, price100=11.22),
+    'M3X8': dict(mfr='BFirst Industrial', mpn='MPMS 003 0008 PH', desc='Screw M3 x 8 mm pan head Phillips, zinc; BR1 rectifier heatsinks', link=DK+'bfirst-industrial/MPMS-003-0008-PH/274954', price=None, price_est=0.10, price100=None),
     'SCH20100': dict(mfr='STMicroelectronics', mpn='STPS20M100SG-TR', desc='Schottky rectifier 100 V 20 A, D2PAK (TO-263-2, tab = cathode) - discrete bridge element for +18V / +5V raw / +20V / +12V power', link=DK + 'stmicroelectronics/STPS20M100SG-TR/2122461', price=1.58, price100=0.52),   # DigiKey: 1.58 @1, 0.782 @100, 0.519 @1000 reel (16 per board)
     # BR3 must be the WIRE-LEAD version: the footprint (Diode_Bridge_28.6x28.6x7.3mm_P18.0mm_P11.6mm, 1.4 mm drills) takes the GBPC-W leads; the -E4/51 without W has 0.25 in faston lugs (thermal review 2026-09-07)
     'BR35':     dict(mfr='Vishay', mpn='GBPC3510W-E4/51', desc='Bridge rectifier 35 A 1000 V, GBPC-W (28.6 mm square block, wire leads, #10 centre hole, metal base up when PCB-mounted)', link=DK + 'vishay-semiconductor-diodes-division/GBPC3510W-E4-51/605926', price=None, price_est=7.00, price100=4.70),   # lug version was 6.36 / 4.26
@@ -44,25 +49,26 @@ SRC = {
     'DRV8':     dict(mfr='Toshiba', mpn='TBD62083AFWG,EL', desc='8-ch DMOS sink driver (ULN2803 pin-compatible), SOIC-18W', link=DK + 'toshiba-semiconductor-and-storage/TBD62083AFWG-EL/5514124', price=None, price_est=1.10, price100=0.75),
     'LED':      dict(mfr='Lite-On', mpn='LTST-C170KRKT', desc='LED red 631 nm, 0805', link=DK + 'liteon/LTST-C170KRKT/386779', price=0.18, price100=0.07),
     # ---- passives
-    'L10U':     dict(mfr='Bourns', mpn='SRP1265A-100M', desc='Inductor 10 uH 10 A shielded, 12.5x12.5 mm', link=DK + 'bourns-inc/SRP1265A-100M/4876620', price=None, price_est=2.10, price100=1.30),
+    'L10U':     dict(mfr='Bourns', mpn='SRP1265A-100M', desc='Inductor 10 uH 10 A shielded, 13.5x12.5x6.2 mm overall', link=DK + 'bourns-inc/SRP1265A-100M/4876620', price=None, price_est=2.10, price100=1.30),
     'RNET':     dict(mfr='Bourns', mpn='4610X-101-471LF', desc='Resistor network 9x470 R bussed, SIP-10', link=DK + 'bourns-inc/4610X-101-471LF/1089204', price=None, price_est=0.55, price100=0.35),
     'RS022':    dict(mfr='Yageo', mpn='RL2512FK-070R22L', desc='Resistor 0.22 R 1% 1 W current sense, 2512', link=DK + 'yageo/RL2512FK-070R22L/2827691', price=None, price_est=0.35, price100=0.12),
     'C100N':    dict(mfr='Samsung', mpn='CL21B104KBCNNNC', desc='Capacitor 100 nF 50 V X7R, 0805', link=DK + 'samsung-electro-mechanics/CL21B104KBCNNNC/3886661', price=None, price_est=0.10, price100=0.01),
     'C10U':     dict(mfr='Samsung', mpn='CL32B106KBJNNWE', desc='Capacitor 10 uF 50 V X7R, 1210', link=DK + 'samsung-electro-mechanics/CL32B106KBJNNWE/3889046', price=None, price_est=0.45, price100=0.12),
-    'C10N':     dict(mfr='Samsung', mpn='CL21B103KBANNNC', desc='Capacitor 10 nF 50 V X7R, 0805', link=kw('CL21B103KBANNNC'), price=None, price_est=0.10, price100=0.01),
+    'C10N':     dict(mfr='KEMET', mpn='C0805C103K5RACTU', desc='Capacitor 10 nF 50 V X7R, 0805', link=kw('C0805C103K5RACTU'), price=None, price_est=0.10, price100=0.01),
     'C1N5':     dict(mfr='Samsung', mpn='CL21B152KBANNNC', desc='Capacitor 1.5 nF 50 V X7R, 0805', link=kw('CL21B152KBANNNC'), price=None, price_est=0.10, price100=0.01),
     'C2N2':     dict(mfr='Samsung', mpn='CL21B222KBANNNC', desc='Capacitor 2.2 nF 50 V X7R, 0805', link=kw('CL21B222KBANNNC'), price=None, price_est=0.10, price100=0.01),
-    'C33N':     dict(mfr='Samsung', mpn='CL21B333KBANNNC', desc='Capacitor 33 nF 50 V X7R, 0805', link=kw('CL21B333KBANNNC'), price=None, price_est=0.10, price100=0.01),
-    'C390P':    dict(mfr='Samsung', mpn='CL21C391JBANNNC', desc='Capacitor 390 pF 50 V C0G, 0805', link=kw('CL21C391JBANNNC'), price=None, price_est=0.10, price100=0.01),
-    'C470P':    dict(mfr='Samsung', mpn='CL21C471JBANNNC', desc='Capacitor 470 pF 50 V C0G, 0805', link=kw('CL21C471JBANNNC'), price=None, price_est=0.10, price100=0.01),
+    'C33N':     dict(mfr='KEMET', mpn='C0805C333K5RACTU', desc='Capacitor 33 nF 50 V X7R, 0805', link=kw('C0805C333K5RACTU'), price=None, price_est=0.10, price100=0.01),
+    'C390P':    dict(mfr='KEMET', mpn='C0805C391J5GACTU', desc='Capacitor 390 pF 50 V C0G, 0805', link=kw('C0805C391J5GACTU'), price=None, price_est=0.10, price100=0.01),
+    'C470P':    dict(mfr='KEMET', mpn='C0805C471J5GACTU', desc='Capacitor 470 pF 50 V C0G, 0805', link=kw('C0805C471J5GACTU'), price=None, price_est=0.10, price100=0.01),
     'C150N':    dict(mfr='Samsung', mpn='CL21B154KBCNNNC', desc='Capacitor 150 nF 50 V X7R, 0805', link=kw('CL21B154KBCNNNC'), price=None, price_est=0.12, price100=0.02),
     'C470N':    dict(mfr='Samsung', mpn='CL21B474KBFNNNE', desc='Capacitor 470 nF 50 V X7R, 0805', link=kw('CL21B474KBFNNNE'), price=None, price_est=0.15, price100=0.03),
     'C330U':    dict(mfr='Panasonic', mpn='EEU-FR1E331', desc='Capacitor 330 uF 25 V low-ESR 105C, radial 10x12.5 mm', link=DK + 'panasonic-electronic-components/EEU-FR1E331/2433549', price=None, price_est=0.62, price100=0.30),
     'C2200U25': dict(mfr='Panasonic', mpn='EEU-FR1E222', desc='Capacitor 2200 uF 25 V low-ESR 105C, radial 12.5x25 mm', link=kw('EEU-FR1E222'), price=None, price_est=1.40, price100=0.65),
+    'C10000U35': dict(mfr='TDK', mpn='B41252A7109M000', desc='Capacitor 10000 uF 35 V snap-in 25.4x45 mm, 10 mm pitch, 6.0 mm leads, PVC sleeve, 105C; permissible ripple 7.89 A at 60C / 120 Hz; local ambient <=60C design condition', link='https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000', price=8.71, price_est=None, price100=4.66992),
     'C10000U25': dict(mfr='Rubycon', mpn='25USC10000MEFCSN25X25', desc='Capacitor 10000 uF 25 V snap-in 25x25 mm, 85C 3000 h (USC)', link=DK + 'rubycon/25USC10000MEFCSN25X25/3565219', price=None, price_est=2.90, price100=1.85),   # 400 pcs
     'C2200U100': dict(mfr='Nichicon', mpn='LLS2A222MELA', desc='Capacitor 2200 uF 100 V snap-in 25x40 mm', link=DK + 'nichicon/LLS2A222MELA/2548962', price=None, price_est=3.60, price100=2.20),   # 200 pcs
     # ---- connectors / mechanical
-    'IDC34':    dict(mfr='3M', mpn='30334-5002HB', desc='Box header 2x17 2.54 mm shrouded, vertical', link=DK + '3m/30334-5002HB/1237402', price=None, price_est=1.10, price100=0.65),
+    'IDC34':    dict(mfr='3M', mpn='N2534-6002-RB', desc='Box header 2x17 2.54 mm shrouded, vertical', link=DK + '3m/N2534-6002-RB/755183', price=None, price_est=1.10, price100=0.65),
     'KK254_5':  dict(mfr='Molex', mpn='0022232051', desc='KK 254 header 1x5 2.54 mm friction lock', link=kw('0022232051'), price=None, price_est=0.45, price100=0.28),
     'KK254_9':  dict(mfr='Molex', mpn='0022232091', desc='KK 254 header 1x9 2.54 mm friction lock', link=kw('0022232091'), price=None, price_est=0.75, price100=0.45),
     'FUSECLIP': dict(mfr='Keystone', mpn='3517', desc='Fuse clip 5 x 20 mm PCB mount, 15 A, tin (2 per fuse)', link=DK + 'keystone-electronics/3517/316010', price=0.32, price100=0.135),  # 3200 pcs: 0.13 @5000 seen
@@ -74,11 +80,11 @@ SRC = {
     # ---- heatsinks + hardware (thermal review 2026-09-07, docs/THERMAL_AND_PROTECTION.md).  Boyd board-level catalogue values = natural convection at a 75 C rise.
     # The earlier 577002B00000G clip (listed here as 25 C/W) is a 32 C/W part per the catalogue and gave Tj ~165 C on an incandescent G.I. string - replaced.
     'HS7019':   dict(mfr='Boyd (Aavid)', mpn='7019BG', desc='Heatsink TO-220 bolt-on narrow channel with folded-back fins, 11.0 C/W, 39.4 x 9.5 x 25.4 mm, no PCB tabs (device screw only)', link=kw('7019BG'), price=None, price_est=1.75, price100=1.15),
-    'HS7020':   dict(mfr='Boyd (Aavid)', mpn='7020BG', desc='Heatsink TO-220 bolt-on narrow channel with folded-back fins, 8.7 C/W, 33.0 x 11.9 x 36.8 mm, no PCB tabs (device screw only; #6 / M3 hole of the GBJ / GBU bridges)', link=DK + 'aavid-thermal-division-of-boyd-corporation/7020BG/1625705', price=None, price_est=2.40, price100=1.55),
-    'HS6224':   dict(mfr='Boyd (Aavid)', mpn='6224BG', desc='Heatsink square basket for bridge rectifiers, 9.4 C/W, 26.92 mm sq x 31.75 mm, 4.77 mm hole (M4), sits on the metal base of the GBPC block', link=kw('6224BG'), price=None, price_est=8.50, price100=6.20),   # 6223BG: DigiKey 8.87 @1, 6.14 @1000; 6224BG Future 6.42
+    'HS7020':   dict(mfr='Boyd (Aavid)', mpn='7020BG', desc='Heatsink TO-220 bolt-on narrow channel with folded-back fins, 8.7 C/W, 33.0 x 11.9 x 36.8 mm, no PCB tabs (device screw only; #6 / M3 hole of the GBJ / GBU bridges)', link=DK + 'aavid-thermal-division-of-boyd-corporation/7020BG/1625705', price=4.46, price_est=None, price100=3.4935),
+    'HS6224':   dict(mfr='Boyd (Aavid)', mpn='6223BG', desc='Heatsink square basket for bridge rectifiers, 9.4 C/W, 26.92 mm sq x 31.75 mm, 4.14 mm hole (M4 close clearance), sits on the metal base of the GBPC block', link=DK+'boyd-laconia-llc/6223BG/1625608', price=9.16, price_est=None, price100=7.1699),   # 6223BG: DigiKey 8.87 @1, 6.14 @1000; 6224BG Future 6.42
     'M3X12':    dict(mfr='B&F Fastener Supply', mpn='MPMS 003 0012 PH', desc='Screw M3 x 12 mm pan head Phillips, zinc (heatsink to TO-220 / GBJ / GBU)', link=kw('MPMS 003 0012 PH'), price=None, price_est=0.10, price100=0.04),
     'M3NUT':    dict(mfr='B&F Fastener Supply', mpn='MHNZ 003', desc='Hex nut M3, zinc', link=kw('MHNZ 003'), price=None, price_est=0.06, price100=0.02),
-    'M4X16':    dict(mfr='B&F Fastener Supply', mpn='MPMS 004 0016 PH', desc='Screw M4 x 16 mm pan head Phillips, zinc (6224BG basket through the GBPC3510W centre hole)', link=kw('MPMS 004 0016 PH'), price=None, price_est=0.12, price100=0.05),
+    'M4X16': dict(mfr='Kanebridge', mpn='MJ416MPP', desc='M4 x 16 mm JIS-B1111 Phillips pan screw, zinc steel; 6.75 mm head diameter, 2.60 mm head height; BR3 / 6223BG hardware; distributor carton MOQ may exceed one-board quantity', link='https://legacy.kanebridge.com/kaneprls.asp?SellCode=MJ-MPP', price=None, price_est=0.12, price100=None),
     'M4NUT':    dict(mfr='B&F Fastener Supply', mpn='MHNZ 004', desc='Hex nut M4, zinc', link=kw('MHNZ 004'), price=None, price_est=0.08, price100=0.03),
     'HS220':    dict(mfr='Aavid (Boyd)', mpn='577002B00000G', desc='Clip-on heatsink TO-220, 32 C/W (catalogue) - NO LONGER USED, kept for reference', link=kw('577002B00000G'), price=None, price_est=0.55, price100=0.35),
     'RLY':      dict(mfr='Omron', mpn='G2RL-2 DC12', desc='Relay DPDT 12 V coil (DNP - Fliptronic games)', link=kw('G2RL-2 DC12'), price=None, price_est=3.20, price100=2.20),
@@ -87,7 +93,7 @@ SRC = {
 _KK100 = {3: 0.35, 4: 0.40, 5: 0.45, 6: 0.50, 7: 0.55, 9: 0.65, 11: 0.78, 12: 0.82, 13: 0.88}
 _KK1 = {3: 0.55, 4: 0.62, 5: 0.70, 6: 0.78, 7: 0.85, 9: 0.95, 11: 1.20, 12: 1.30, 13: 1.40}
 for n in [3, 4, 5, 6, 7, 9, 11, 12, 13]:
-    mpn = f'00266040{n:02d}'
+    mpn = f'0026604{n:02d}0'
     SRC[f'KK{n}'] = dict(mfr='Molex', mpn=mpn, desc=f'KK 396 header 1x{n} 3.96 mm vertical friction lock, tin',
                          link=(DK + 'molex/0026604090/79784') if n == 9 else kw(mpn), price=0.95 if n == 9 else None, price_est=_KK1[n], price100=_KK100[n])
 

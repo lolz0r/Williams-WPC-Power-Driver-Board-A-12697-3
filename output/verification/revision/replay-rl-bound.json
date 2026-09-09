@@ -1,0 +1,588 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "trace": "replay-diagnostics",
+      "channel": 1,
+      "window_s": [
+        63.5343675,
+        73.5343675
+      ],
+      "conduction_only_W": 0.08255383903319241,
+      "conduction_only_temperature_C": 55.11833802005793,
+      "forward_diode_average_A": 0.020457022869560824,
+      "coil_peak_A": 22.660458484979323,
+      "spice_total_temperature_C": 54.3309914,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 2,
+      "window_s": [
+        17.6008005,
+        27.6008005
+      ],
+      "conduction_only_W": 0.04617029231971583,
+      "conduction_only_temperature_C": 52.86255812382238,
+      "forward_diode_average_A": 0.0,
+      "coil_peak_A": 22.66139654481203,
+      "spice_total_temperature_C": 52.39933242,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 3,
+      "window_s": [
+        69.2513605,
+        79.2513605
+      ],
+      "conduction_only_W": 0.04185806043928797,
+      "conduction_only_temperature_C": 52.59519974723585,
+      "forward_diode_average_A": 0.006819062745402525,
+      "coil_peak_A": 22.66045863330299,
+      "spice_total_temperature_C": 52.1888294,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 4,
+      "window_s": [
+        138.242337,
+        148.242337
+      ],
+      "conduction_only_W": 0.04003299813666933,
+      "conduction_only_temperature_C": 52.4820458844735,
+      "forward_diode_average_A": 0.00681892889302155,
+      "coil_peak_A": 22.660032426465342,
+      "spice_total_temperature_C": 52.093957,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 5,
+      "window_s": [
+        1.5842554999999994,
+        11.5842555
+      ],
+      "conduction_only_W": 0.2767109345034493,
+      "conduction_only_temperature_C": 67.15607793921386,
+      "forward_diode_average_A": 0.03409678576069106,
+      "coil_peak_A": 22.661396551892224,
+      "spice_total_temperature_C": 64.4573336,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 6,
+      "window_s": [
+        87.1359925,
+        97.1359925
+      ],
+      "conduction_only_W": 0.04185806043928797,
+      "conduction_only_temperature_C": 52.59519974723585,
+      "forward_diode_average_A": 0.013638125583899421,
+      "coil_peak_A": 22.66045863330299,
+      "spice_total_temperature_C": 52.20279428,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 7,
+      "window_s": [
+        156.1443755,
+        166.1443755
+      ],
+      "conduction_only_W": 0.04185729019473779,
+      "conduction_only_temperature_C": 52.595151992073745,
+      "forward_diode_average_A": 0.013638125490797686,
+      "coil_peak_A": 22.660458484979323,
+      "spice_total_temperature_C": 52.20275398,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 8,
+      "window_s": [
+        150.2589755,
+        160.2589755
+      ],
+      "conduction_only_W": 0.04003030238221859,
+      "conduction_only_temperature_C": 52.48187874769755,
+      "forward_diode_average_A": 0.006818928825296254,
+      "coil_peak_A": 22.660031563368836,
+      "spice_total_temperature_C": 52.09361228,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 9,
+      "window_s": [
+        153.259135,
+        163.259135
+      ],
+      "conduction_only_W": 0.006531699464752488,
+      "conduction_only_temperature_C": 50.40496536681466,
+      "forward_diode_average_A": 0.002154004620281153,
+      "coil_peak_A": 8.83406830419437,
+      "spice_total_temperature_C": 50.344801778,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 10,
+      "window_s": [
+        156.2596155,
+        166.2596155
+      ],
+      "conduction_only_W": 0.006561198854335845,
+      "conduction_only_temperature_C": 50.40679432896882,
+      "forward_diode_average_A": 0.0021540046237895896,
+      "coil_peak_A": 8.834068317994028,
+      "spice_total_temperature_C": 50.34371064,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 11,
+      "window_s": [
+        0.45904149999999966,
+        10.4590415
+      ],
+      "conduction_only_W": 0.01189759962116298,
+      "conduction_only_temperature_C": 50.7376511765121,
+      "forward_diode_average_A": 0.0028691237187116864,
+      "coil_peak_A": 6.582472254110191,
+      "spice_total_temperature_C": 50.62374976,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 12,
+      "window_s": [
+        96.259361,
+        106.259361
+      ],
+      "conduction_only_W": 0.006529767956102305,
+      "conduction_only_temperature_C": 50.40484561327834,
+      "forward_diode_average_A": 0.002154003414460027,
+      "coil_peak_A": 8.834068096553343,
+      "spice_total_temperature_C": 50.344702206,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 13,
+      "window_s": [
+        99.2503035,
+        109.2503035
+      ],
+      "conduction_only_W": 0.006422013456878007,
+      "conduction_only_temperature_C": 50.39816483432644,
+      "forward_diode_average_A": 0.0021540043712643606,
+      "coil_peak_A": 8.834067324741783,
+      "spice_total_temperature_C": 50.33914837,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 14,
+      "window_s": [
+        102.250624,
+        112.250624
+      ],
+      "conduction_only_W": 0.006292075884493653,
+      "conduction_only_temperature_C": 50.3901087048386,
+      "forward_diode_average_A": 0.0021539993418455317,
+      "coil_peak_A": 8.834047542632776,
+      "spice_total_temperature_C": 50.332449456,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 15,
+      "window_s": [
+        114.1533685,
+        124.1533685
+      ],
+      "conduction_only_W": 0.00794580218320887,
+      "conduction_only_temperature_C": 50.49263973535895,
+      "forward_diode_average_A": 0.005451133462436754,
+      "coil_peak_A": 9.936276043715846,
+      "spice_total_temperature_C": 50.42600665,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-diagnostics",
+      "channel": 16,
+      "window_s": [
+        4.458784,
+        14.458784
+      ],
+      "conduction_only_W": 0.10232366839101541,
+      "conduction_only_temperature_C": 56.34406744024295,
+      "forward_diode_average_A": 0.027276054639087492,
+      "coil_peak_A": 22.660458336632196,
+      "spice_total_temperature_C": 55.3706725,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 1,
+      "window_s": [
+        4.215159,
+        14.215159
+      ],
+      "conduction_only_W": 0.1621978159877961,
+      "conduction_only_temperature_C": 60.056264591243355,
+      "forward_diode_average_A": 0.21598364959487446,
+      "coil_peak_A": 22.66139656278677,
+      "spice_total_temperature_C": 85.1471118,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 2,
+      "window_s": [
+        3.806421499999999,
+        13.806421499999999
+      ],
+      "conduction_only_W": 0.15745680877041782,
+      "conduction_only_temperature_C": 59.76232214376591,
+      "forward_diode_average_A": 0.21494184352910742,
+      "coil_peak_A": 22.661396562828465,
+      "spice_total_temperature_C": 82.7273696,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 3,
+      "window_s": [
+        215.701144833,
+        225.701144833
+      ],
+      "conduction_only_W": 0.04683545357155196,
+      "conduction_only_temperature_C": 52.903798121436225,
+      "forward_diode_average_A": 0.0,
+      "coil_peak_A": 22.661396551892224,
+      "spice_total_temperature_C": 52.43390858,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 4,
+      "window_s": [
+        171.626136333,
+        181.626136333
+      ],
+      "conduction_only_W": 0.0468342981090441,
+      "conduction_only_temperature_C": 52.90372648276073,
+      "forward_diode_average_A": 0.0,
+      "coil_peak_A": 22.661396551881523,
+      "spice_total_temperature_C": 52.43384844,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 5,
+      "window_s": [
+        126.901048333,
+        136.901048333
+      ],
+      "conduction_only_W": 0.04616952201138595,
+      "conduction_only_temperature_C": 52.862510364705926,
+      "forward_diode_average_A": 0.0,
+      "coil_peak_A": 22.661396544802656,
+      "spice_total_temperature_C": 52.39929212,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 6,
+      "window_s": [
+        78.944689833,
+        88.944689833
+      ],
+      "conduction_only_W": 0.21622998164927534,
+      "conduction_only_temperature_C": 63.40625886225507,
+      "forward_diode_average_A": 0.02045807148472357,
+      "coil_peak_A": 22.66139657443934,
+      "spice_total_temperature_C": 61.2805156,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 9,
+      "window_s": [
+        79.152400833,
+        89.152400833
+      ],
+      "conduction_only_W": 0.02136187059110009,
+      "conduction_only_temperature_C": 51.3244359766482,
+      "forward_diode_average_A": 0.006462040895584961,
+      "coil_peak_A": 8.834103749256201,
+      "spice_total_temperature_C": 51.12557032,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 10,
+      "window_s": [
+        77.952272333,
+        87.952272333
+      ],
+      "conduction_only_W": 0.02138955577386694,
+      "conduction_only_temperature_C": 51.32615245797975,
+      "forward_diode_average_A": 0.006462040895585627,
+      "coil_peak_A": 8.834103749285251,
+      "spice_total_temperature_C": 51.12644514,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 11,
+      "window_s": [
+        13.094160332999998,
+        23.094160332999998
+      ],
+      "conduction_only_W": 0.00795976690558702,
+      "conduction_only_temperature_C": 50.493505548146395,
+      "forward_diode_average_A": 0.0028691237187119497,
+      "coil_peak_A": 6.582472254110205,
+      "spice_total_temperature_C": 50.421074178,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 12,
+      "window_s": [
+        79.635737333,
+        89.635737333
+      ],
+      "conduction_only_W": 0.021361402342765297,
+      "conduction_only_temperature_C": 51.32440694525145,
+      "forward_diode_average_A": 0.006462040895584919,
+      "coil_peak_A": 8.83410374925622,
+      "spice_total_temperature_C": 51.12266624,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 13,
+      "window_s": [
+        78.453170333,
+        88.453170333
+      ],
+      "conduction_only_W": 0.021258855957549682,
+      "conduction_only_temperature_C": 51.31804906936808,
+      "forward_diode_average_A": 0.006462040895575556,
+      "coil_peak_A": 8.834103749245706,
+      "spice_total_temperature_C": 51.12025816,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 14,
+      "window_s": [
+        79.478032833,
+        89.478032833
+      ],
+      "conduction_only_W": 0.0213250545658127,
+      "conduction_only_temperature_C": 51.32215338308039,
+      "forward_diode_average_A": 0.006462040895581588,
+      "coil_peak_A": 8.834103749256181,
+      "spice_total_temperature_C": 51.12367126,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 15,
+      "window_s": [
+        72.675056833,
+        82.675056833
+      ],
+      "conduction_only_W": 0.0654809167178771,
+      "conduction_only_temperature_C": 54.05981683650838,
+      "forward_diode_average_A": 0.43547989477644417,
+      "coil_peak_A": 9.936452917388792,
+      "spice_total_temperature_C": 60.513743,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    },
+    {
+      "trace": "replay-gameplay",
+      "channel": 16,
+      "window_s": [
+        117.536016833,
+        127.536016833
+      ],
+      "conduction_only_W": 0.020929415341921602,
+      "conduction_only_temperature_C": 51.29762375119914,
+      "forward_diode_average_A": 0.006819062838496895,
+      "coil_peak_A": 22.660458633302987,
+      "spice_total_temperature_C": 51.1014207,
+      "checks": {
+        "conduction_only_temperature": true,
+        "forward_diode_average": true,
+        "coil_current_bound": true
+      },
+      "passed": true
+    }
+  ],
+  "assumptions": {
+    "rail_V": 86,
+    "hot_mos_R_ohm": 0.015,
+    "flyback_Vf_V": 1.0,
+    "ambient_C": 50,
+    "Rtheta_C_W": 62
+  },
+  "limitations": [
+    "Exact segment solution of fixed R/L and piecewise constant drive, using actual ROM edge times",
+    "Conduction-only check: omits switching, reverse recovery, mutual heating, wire inductance and real coil saturation",
+    "Low constant diode drop increases freewheel persistence; a sensitivity assumption, not a guaranteed diode bound",
+    "Does not replace unresolved transient timestep sensitivity or physical SOA tests"
+  ]
+}

@@ -1,3 +1,5 @@
+> Earlier design/review record. See [current release status](RELEASE_STATUS.md) for superseding component choices, copper stackup, results and unresolved gates.
+
 # WPC power driver board (A-12697-3) - interface facts for a drop-in replacement
 
 Research record for the cost-optimised board, written while checking whether it will work inside a *Star Trek: The Next Generation*

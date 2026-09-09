@@ -2,8 +2,12 @@
 import os, glob, copy, math, uuid
 from sexp import parse, dump, find, find_all, S, Sym
 
-FPDIR = glob.glob(os.path.expanduser(
-    '~/.local/share/flatpak/runtime/org.kicad.KiCad.Library.Footprints/x86_64/stable/*/files/footprints'))[0]
+_footprints = [os.environ.get('KICAD10_FOOTPRINT_DIR', ''),
+               '/Applications/KiCad/KiCad.app/Contents/SharedSupport/footprints', '/usr/share/kicad/footprints']
+_footprints += glob.glob(os.path.expanduser('~/.local/share/flatpak/runtime/org.kicad.KiCad.Library.Footprints/x86_64/stable/*/files/footprints'))
+FPDIR = next((p for p in _footprints if os.path.isdir(p)), None)
+if not FPDIR:
+    raise RuntimeError('Install KiCad footprint libraries or set KICAD10_FOOTPRINT_DIR')
 _cache = {}
 
 def uid():
@@ -89,7 +93,7 @@ class Board:
             node.append(S('path', path))
         if sheetname:
             node.append(S('sheetname', sheetname)); node.append(S('sheetfile', sheetfile))
-        attr = [Sym('attr'), Sym('through_hole')]
+        attr = [Sym('attr'), Sym('smd' if any(p[2] == 'smd' for p in find_all(fp, 'pad')) and not any(p[2] == 'thru_hole' for p in find_all(fp, 'pad')) else 'through_hole')]
         if ref.startswith('H'):
             attr += [Sym('exclude_from_pos_files'), Sym('exclude_from_bom')]
         if dnp:
@@ -201,13 +205,13 @@ class Board:
         stack = S('stackup',
                   S('layer', 'F.SilkS', S('type', 'Top Silk Screen')), S('layer', 'F.Paste', S('type', 'Top Solder Paste')),
                   S('layer', 'F.Mask', S('type', 'Top Solder Mask'), S('thickness', 0.01)),
-                  S('layer', 'F.Cu', S('type', 'copper'), S('thickness', 0.035)),
+                  S('layer', 'F.Cu', S('type', 'copper'), S('thickness', 0.07)),
                   S('layer', 'dielectric 1', S('type', 'prepreg'), S('thickness', 0.2), S('material', 'FR4'), S('epsilon_r', 4.5), S('loss_tangent', 0.02)),
                   S('layer', 'In1.Cu', S('type', 'copper'), S('thickness', 0.035)),
-                  S('layer', 'dielectric 2', S('type', 'core'), S('thickness', 1.05), S('material', 'FR4'), S('epsilon_r', 4.5), S('loss_tangent', 0.02)),
+                  S('layer', 'dielectric 2', S('type', 'core'), S('thickness', 0.99), S('material', 'FR4'), S('epsilon_r', 4.5), S('loss_tangent', 0.02)),
                   S('layer', 'In2.Cu', S('type', 'copper'), S('thickness', 0.035)),
                   S('layer', 'dielectric 3', S('type', 'prepreg'), S('thickness', 0.2), S('material', 'FR4'), S('epsilon_r', 4.5), S('loss_tangent', 0.02)),
-                  S('layer', 'B.Cu', S('type', 'copper'), S('thickness', 0.035)),
+                  S('layer', 'B.Cu', S('type', 'copper'), S('thickness', 0.07)),
                   S('layer', 'B.Mask', S('type', 'Bottom Solder Mask'), S('thickness', 0.01)),
                   S('layer', 'B.Paste', S('type', 'Bottom Solder Paste')), S('layer', 'B.SilkS', S('type', 'Bottom Silk Screen')),
                   S('copper_finish', 'None'), S('dielectric_constraints', Sym('no')))

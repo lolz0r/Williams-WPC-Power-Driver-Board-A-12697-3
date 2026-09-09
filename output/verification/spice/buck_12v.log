@@ -1,0 +1,80 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: tps54360b +12v buck (from the +18v lamp rail, as the original 7812), switching model: peak-current-mode (12 a/v, 4.5 a min current limit, 400 khz), 10 uh, 2 x 330 uf + 10 uf, b560c; 13.5 v in (the +18v rail at full lamp load), 1 a -> 2 a load step at 10 ms; rc 42.2k / cc 100n / cp 390p (fco = sqrt(fp_mod fsw/2) = 2.8 khz)
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vin                                       13.5
+stdout vinf                                      13.5
+stdout clk                                          0
+stdout ref                                          0
+stdout vout                               1.61792e-05
+stdout fb                                 1.07861e-06
+stdout comp                                 -0.353259
+stdout cc                                   -0.353259
+stdout vcl                                        2.6
+stdout vcl0                                      -0.2
+stdout ipk                                          0
+stdout st                                    -0.67152
+stdout vone                                         1
+stdout swa                                1.61792e-05
+stdout sw                                 1.61792e-05
+stdout c1                                           0
+stdout c2                                           0
+stdout ld                                 1.94151e-13
+stdout ctl                                          0
+stdout vsw#branch                            1.35e-06
+stdout bipk#branch                                  0
+stdout l1#branch                          1.34881e-06
+stdout vctl#branch                                  0
+stdout vone#branch                       -2.67151e-12
+stdout vcl0#branch                       -3.73562e-10
+stdout vcl#branch                        -3.95326e-12
+stdout vref#branch                                  0
+stdout vclk#branch                                  0
+stdout vin#branch                           -1.35e-06
+ Reference value :  0.00000e+00
+ Reference value :  4.42118e-04
+ Reference value :  8.27506e-04
+ Reference value :  1.21807e-03
+ Reference value :  1.63500e-03
+ Reference value :  2.06257e-03
+ Reference value :  2.51587e-03
+ Reference value :  2.99257e-03
+ Reference value :  3.44881e-03
+ Reference value :  3.92165e-03
+ Reference value :  4.39163e-03
+ Reference value :  4.86561e-03
+ Reference value :  5.33001e-03
+ Reference value :  5.80102e-03
+ Reference value :  6.27839e-03
+ Reference value :  6.75017e-03
+ Reference value :  7.21201e-03
+ Reference value :  7.67803e-03
+ Reference value :  8.13860e-03
+ Reference value :  8.60750e-03
+ Reference value :  9.07199e-03
+ Reference value :  9.53257e-03
+ Reference value :  1.00004e-02
+ Reference value :  1.04724e-02
+ Reference value :  1.09476e-02
+ Reference value :  1.14327e-02
+ Reference value :  1.19065e-02
+ Reference value :  1.23684e-02
+ Reference value :  1.28399e-02
+ Reference value :  1.33149e-02
+ Reference value :  1.36791e-02
+ Reference value :  1.41283e-02
+ Reference value :  1.46011e-02
+ Reference value :  1.50651e-02
+ Reference value :  1.55465e-02
+stdout No. of Data Rows : 934676
+stdout vout_ss             =  1.19426e+01 from=  9.00000e-03 to=  1.00000e-02
+stdout vout_ripple         =  4.06775e-02 from=  9.90000e-03 to=  1.00000e-02
+stdout vout_step_min       =  1.17998e+01 at=  1.02082e-02
+stdout vout_step_max       =  1.20355e+01 at=  1.31661e-02
+stdout il_peak             =  3.23270e+00 at=  1.24349e-02
+stdout vout_2a             =  1.19020e+01 from=  1.20000e-02 to=  1.25000e-02
+stdout iin_2a              =  -1.81153e+00 from=  1.20000e-02 to=  1.25000e-02

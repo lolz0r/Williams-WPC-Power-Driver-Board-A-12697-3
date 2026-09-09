@@ -1,0 +1,2252 @@
+{
+  "passed": true,
+  "pad_checks": 1381,
+  "net_checks": 373,
+  "geometry_sha256": "8937f9cf24ef7c15a897724ba8961c8a86c35106d2ce383da0cc9c3056d0e454",
+  "failures": [],
+  "nets": [
+    {
+      "net": "+12V",
+      "pads": 11,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+12VU",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+12V_F",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+18V",
+      "pads": 27,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+20V",
+      "pads": 12,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+50V",
+      "pads": 28,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+50V_F103",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+50V_F104",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+50V_F105",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "+5V",
+      "pads": 71,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/CPU_Interface/BLK_REF",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/CPU_Interface/ZC_REF",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/CPU_Interface/ZC_SAMPLE",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/GI_Triacs/GI1_G",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/GI_Triacs/GI2_G",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/GI_Triacs/GI3_G",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/GI_Triacs/GI4_G",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/GI_Triacs/GI5_G",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/GI_Triacs/RLY_COIL",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW1_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW1_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW1_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW2_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW2_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW2_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW3_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW3_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW3_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW4_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW4_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW4_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW5_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW5_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW5_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW6_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW6_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW6_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW7_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW7_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW7_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW8_E",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW8_Q",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Lamp_Rows/ROW8_S",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/+5V_RAW",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/AC13_A_F",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/AC98_A_F",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U20_BOOT",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U20_CC",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U20_COMP",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U20_EN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U20_FB",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U20_RT",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U20_SW",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U21_BOOT",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U21_CC",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U21_COMP",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U21_EN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U21_FB",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U21_RT",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Power_Supply/U21_SW",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S17_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S18_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S19_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S20_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S21_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S22_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S23_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_Flashers/S24_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_GeneralPurpose/S25_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_GeneralPurpose/S26_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_GeneralPurpose/S27_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_GeneralPurpose/S28_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S01_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S02_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S03_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S04_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S05_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S06_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S07_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_HighPower/S08_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S09_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S10_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S11_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S12_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S13_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S14_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S15_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "/Sol_LowPower/S16_G",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC13_A",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC13_B",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC16_A",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC16_A_F",
+      "pads": 7,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC16_B",
+      "pads": 7,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC98_A",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC98_B",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC9_A",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC9_AF",
+      "pads": 6,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "AC9_B",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ACSOL_A",
+      "pads": 6,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ACSOL_A_F",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ACSOL_B",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "BLANKING",
+      "pads": 9,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "CLK_GI",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "CLK_LAMP_COL",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "CLK_LAMP_ROW",
+      "pads": 10,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "CLK_SOL_FLASH",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "CLK_SOL_GEN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "CLK_SOL_HIGH",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "CLK_SOL_LOW",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL1",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL2",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL3",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL4",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL5",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL6",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL7",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COL8",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB1",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB2",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB3",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB4",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB5",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB6",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB7",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLB8",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV1",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV2",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV3",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV4",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV5",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV6",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV7",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "COLDRV8",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D0",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D0_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D1",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D1_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D2",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D2_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D3",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D3_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D4",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D4_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D5",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D5_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D6",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D6_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D7",
+      "pads": 8,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "D7_N",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "FLIP_RLY_L",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI1_IN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI1_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI1_OUT",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI1_RET",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI2_IN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI2_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI2_OUT",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI2_RET",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI3_IN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI3_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI3_OUT",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI3_RET",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI4_IN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI4_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI4_OUT",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI4_RET",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI5_IN",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI5_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI5_OUT",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI5_RET",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI_BIT5",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI_BIT6",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GI_RET",
+      "pads": 11,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "GND",
+      "pads": 209,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(D33-K)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(F101-Pad2)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(F102-Pad2)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(LED1-A)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(LED2-A)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(LED3-K)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(LED4-A)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(LED5-A)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(LED6-A)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(LED7-A)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q11-B)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q11-E)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q13-B)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q13-E)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q15-B)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q15-E)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q17-B)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q17-E)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q3-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q83-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q84-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q85-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q86-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q87-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q88-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q89-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q9-B)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q9-E)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q90-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q91-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q92-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q93-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q94-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q95-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q96-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q97-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(Q98-G)",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "Net-(U6B--)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "REF_1V4",
+      "pads": 12,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW1",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW2",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW3",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW4",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW5",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW6",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW7",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROW8",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR1",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR2",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR3",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR4",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR5",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR6",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR7",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ROWCLR8",
+      "pads": 3,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL01",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL01_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL02",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL02_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL03",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL03_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL04",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL04_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL05",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL05_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL06",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL06_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL07",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL07_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL08",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL08_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL09",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL09_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL10",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL10_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL11",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL11_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL12",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL12_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL13",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL13_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL14",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL14_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL15",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL15_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL16",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL16_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL17",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL17_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL18",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL18_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL19",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL19_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL20",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL20_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL21",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL21_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL21_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL22",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL22_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL22_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL23",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL23_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL23_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL24",
+      "pads": 4,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL24_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL24_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL25",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL25_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL25_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL26",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL26_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL26_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL27",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL27_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL27_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL28",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL28_L",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "SOL28_TB",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "ZERO_CROSS",
+      "pads": 5,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(F101-Pad1)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(F102-Pad1)",
+      "pads": 2,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J101-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J102-Pin_7-Pad7)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J104-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J105-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J106-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J106-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J106-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J106-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J107-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J109-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J109-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J109-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J109-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J109-Pin_5-Pad5)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J109-Pin_6-Pad6)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J109-Pin_7-Pad7)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_5-Pad5)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_6-Pad6)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_7-Pad7)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_8-Pad8)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J110-Pin_9-Pad9)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J111-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J112-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J113-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J113-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J113-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J113-Pin_32-Pad32)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J113-Pin_33-Pad33)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J113-Pin_5-Pad5)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J114-Pin_6-Pad6)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J115-Pin_9-Pad9)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J116-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J117-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J118-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J119-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J120-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J121-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J122-Pin_7-Pad7)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J123-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J124-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J125-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J126-Pin_9-Pad9)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J127-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J128-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J129-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J130-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J131-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J132-Pin_4-Pad4)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J133-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J134-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J135-Pin_3-Pad3)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J136-Pin_1-Pad1)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J136-Pin_2-Pad2)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J137-Pin_8-Pad8)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(J138-Pin_8-Pad8)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(RLY1-Pad12)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(RLY1-Pad22)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(SR1-R9-Pad10)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(SR2-R9-Pad10)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U10A-~{Q}-Pad6)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U10B-~{Q}-Pad8)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U11A-~{Q}-Pad6)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U11B-~{Q}-Pad8)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U12A-~{Q}-Pad6)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U12B-~{Q}-Pad8)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U13A-~{Q}-Pad6)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U13B-~{Q}-Pad8)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U2-Q4-Pad15)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U2-Q5-Pad14)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U2-Q6-Pad13)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U2-Q7-Pad12)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U6-Pad13)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    },
+    {
+      "net": "unconnected-(U6-Pad14)",
+      "pads": 1,
+      "conductive_pad_groups": 1,
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "Native exported copper is the input; this is independent topology analysis, not an independent Gerber geometry extraction",
+    "Round pads exported as solid copper; plated holes connect via annulus by construction",
+    "No etch tolerance or high-frequency integrity qualification"
+  ]
+}

@@ -2,6 +2,8 @@
 import os, sys, json
 sys.path.insert(0, os.path.dirname(__file__))
 import kicad_pcb as P
+if __name__ == '__main__' and '--overwrite-routed-board' not in sys.argv:
+    raise SystemExit('This historical placement generator overwrites routing and requires the missing original placement module. Use tools/export_release.py. Explicit --overwrite-routed-board is required.')
 import placement_cost as PL
 
 OUT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))

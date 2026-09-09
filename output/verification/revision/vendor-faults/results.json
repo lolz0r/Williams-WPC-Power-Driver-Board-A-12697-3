@@ -1,0 +1,246 @@
+{
+  "cases": [
+    {
+      "name": "5v_uvlo",
+      "checks": {
+        "output_peak": {
+          "value": 5.12996,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.09327e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 4.58277,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 5.60815,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -8.49768,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [],
+      "deck_sha256": "2efb94aec08ce6fdfe8668955fd33abdf897f6e63d24bc3120bc6e143a6ded4c",
+      "passed": false
+    },
+    {
+      "name": "5v_prebias",
+      "checks": {
+        "output_peak": {
+          "value": 4.71775,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.02978,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 0.0,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 3.09092,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -21.2779,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.00315012, timestep = 1.25e-19: trouble with d_d1-instance d.xu.d_u8_d13",
+        "stderr run simulation(s) aborted"
+      ],
+      "deck_sha256": "9f197d2a49530cc081037fc10f27825bd9a83c55e6b9351a481e88d3afb2cb5c",
+      "passed": false
+    },
+    {
+      "name": "5v_short",
+      "checks": {
+        "output_peak": {
+          "value": 5.16928,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.09327e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 5.11584,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 5.64562,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -0.00593061,
+          "min": -1,
+          "max": 10,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "f31189f26181b987392a4361926fe59ff431f967ced58d815b5ca83a54426cda",
+      "passed": true
+    },
+    {
+      "name": "12v_uvlo",
+      "checks": {
+        "output_peak": {
+          "value": 11.9736,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.48125e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 10.5356,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 5.61913,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -39.3265,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [],
+      "deck_sha256": "b64fbfb83db0106b4d6cb9bb7a4b82f44754ed3dc1e46a6180a0370e4d0b70ac",
+      "passed": false
+    },
+    {
+      "name": "12v_prebias",
+      "checks": {
+        "output_peak": {
+          "value": 4.97924,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_min": {
+          "value": 2.13697,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 0.0,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 0.543297,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -51.2545,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.00013675, timestep = 1.25e-19: trouble with d_d1-instance d.xu.d_u8_d13",
+        "stderr run simulation(s) aborted"
+      ],
+      "deck_sha256": "4d32f90e2dcfa18d3851ac9596c789c593caecd0e81c75adc0c7276a28857f2d",
+      "passed": false
+    },
+    {
+      "name": "12v_short",
+      "checks": {
+        "output_peak": {
+          "value": 12.4147,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.48125e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 12.371,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 5.66582,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -0.049498,
+          "min": -1,
+          "max": 10,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "ebb68e1bcbb6fe1b76257041b06a456929a40586742ee1c0cc27a34d2c05024b",
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "passed": false,
+  "limits": "Short-circuit transient 10 A bound equals the selected inductor thermal rating at 25 C; not a converter current-limit accuracy test. Model overshoot does not qualify switch SOA.",
+  "limitations": [
+    "Typical TI behavioral model, no PCB parasitics or thermal feedback",
+    "Shorts last 1 ms; no claim of repeated/continuous fault survival",
+    "Prebias source is an artificial isolated charging fixture, not proof of tolerance to arbitrary backfeeding"
+  ]
+}

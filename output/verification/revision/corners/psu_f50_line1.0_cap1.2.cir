@@ -1,0 +1,47 @@
+Cost-board brownout in the machine: mains at 88 % (US 106 V) - 9VAC winding 11.2 V peak, GBU8J, C5 12000.0uF feeding the +5V buck at its rated 3 A; 13.3VAC winding 16.5 V peak, GBJ1510, 2 x 12000.0uF with 5 A of lamps feeding the +12V digital buck (0.75 A); '9.8VAC' winding (12.47 VAC measured unloaded) at 88 % = 15.5 V peak, 0.25 ohm per leg, GBU8J, 12000.0uF with 2.5 A of motors/optos on the +12V power rail; UVLO stop levels 5.6 V / 8.5 V modelled
+.include /Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/tools/spice/models.lib
+V9 s1 s2 SIN(0 12.7 50)
+Rs1 s1 sa 0.05
+Rs2 s2 sb 0.05
+DS1 sa vraw DSCH20100
+DS2 sb vraw DSCH20100
+DS3 0 sa DSCH20100
+DS4 0 sb DSCH20100
+C5 vraw 0 12000.0u
+Bv5 v5 0 V = 0.5*(1+tanh((v(vraw)-5.6)*40)) * min(5.10, max(0.97*v(vraw) - 0.5, 0))
+R5 v5 0 1.667
+Bin5 vraw 0 I = (v(v5)*v(v5)/1.667) / (0.88*max(v(vraw),1))
+V13 l1 l2 SIN(0 18.8 50)
+Rl1 l1 la 0.05
+Rl2 l2 lb 0.05
+DL1 la v18 DSCH20100
+DL2 lb v18 DSCH20100
+DL3 0 la DSCH20100
+DL4 0 lb DSCH20100
+C6 v18 0 12000.0u
+C7 v18 0 12000.0u
+Rl18 v18 0 2.5
+Bv12 v12 0 V = 0.5*(1+tanh((v(v18)-8.5)*40)) * min(12.0, max(0.97*v(v18) - 0.5, 0))
+R12 v12 0 16
+Bin12 v18 0 I = (v(v12)*v(v12)/16) / (0.88*max(v(v18),1))
+V98 u1 u2 SIN(0 17.63 50)
+Ru1 u1 ua 0.25
+Ru2 u2 ub 0.25
+DU1 ua v12u DSCH20100
+DU2 ub v12u DSCH20100
+DU3 0 ua DSCH20100
+DU4 0 ub DSCH20100
+C30 v12u 0 12000.0u
+Rmot v12u 0 4.8
+.tran 50u 200m uic
+.control
+run
+meas tran vraw_min MIN v(vraw) from=150m to=200m
+meas tran v5_min MIN v(v5) from=150m to=200m
+meas tran v18_min MIN v(v18) from=150m to=200m
+meas tran v12_min MIN v(v12) from=150m to=200m
+meas tran v12u_min MIN v(v12u) from=150m to=200m
+meas tran vraw_avg AVG v(vraw) from=150m to=200m
+
+.endc
+.end

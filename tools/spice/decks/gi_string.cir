@@ -42,8 +42,8 @@ meas tran i2t_30ms INTEG isq from=0 to=30m
 meas tran irms_ss RMS istr from=300m to=400m
 meas tran p_triac AVG ptri from=300m to=400m
 meas tran istr_pre MAX iabs from=0 to=4m
-* junction rise with the Boyd 7019BG heatsink: Rth(j-a) = 2.5 + 0.5 + 11.0 x 1.15 = 15.65 C/W (see gi_gate); limit 75 C (Tj 125 C at 50 C ambient)
-let tj_rise_sink = p_triac * 15.65
+* junction rise with the Boyd 7020BG heatsink: Rth(j-a) = 2.5 + 0.5 + 8.7 x 1.25 = 13.875 C/W (see gi_gate); limit 75 C (Tj 125 C at 50 C ambient)
+let tj_rise_sink = p_triac * 13.875
 print tj_rise_sink
 wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/gi_string.csv v(ac) istr ptri
 .endc

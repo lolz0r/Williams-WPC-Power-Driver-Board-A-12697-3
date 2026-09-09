@@ -1,0 +1,183 @@
+{
+  "source": "https://www.ti.com/lit/zip/SLVMCT7",
+  "model_sha256": "84de74e80f9abcc6cce316de4c7532187e23d198bc988612993136cb38dbec77",
+  "archive_sha256": "1ee0c24bacdf18ef241fc062dba526ed162c2464efb0b71f4dde0fe2a3e6c492",
+  "compatibility": "ngspice 47 ngbehavior=ps; TI model v1.10, originally PSpice 16.2; TI SLVAEA1 documents TPS54360B coating change",
+  "cases": [
+    {
+      "name": "5v_vin8.0",
+      "checks": {
+        "output_ss": {
+          "value": 5.11046,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 5.17929,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "step_min": {
+          "value": 5.01066,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 5.17929,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 5.07174,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 3.26357,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "5v_vin15.34",
+      "checks": {
+        "output_ss": {
+          "value": 5.11551,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 5.18251,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "step_min": {
+          "value": 5.01174,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 5.18251,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 5.07374,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 3.47659,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "12v_vin13.0",
+      "checks": {
+        "output_ss": {
+          "value": 11.9314,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 11.9957,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "step_min": {
+          "value": 11.828,
+          "min": 10.8,
+          "max": 12.6,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 11.994,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 11.8645,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 4.98431,
+          "min": 0,
+          "max": 4.5,
+          "passed": false
+        }
+      },
+      "errors": [],
+      "passed": false
+    },
+    {
+      "name": "12v_vin20.69",
+      "checks": {
+        "output_ss": {
+          "value": 11.9652,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 12.0219,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "step_min": {
+          "value": 11.8491,
+          "min": 10.8,
+          "max": 12.6,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 12.0219,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 11.8879,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 5.43598,
+          "min": 0,
+          "max": 4.5,
+          "passed": false
+        }
+      },
+      "errors": [],
+      "passed": false
+    }
+  ],
+  "complete": true,
+  "passed": false,
+  "limitations": "Typical vendor behavioral model; catch-diode fit and lumped output ESR/DCR. Does not validate PCB parasitics, physical loop stability, all faults, SOA or thermal shutdown accuracy."
+}

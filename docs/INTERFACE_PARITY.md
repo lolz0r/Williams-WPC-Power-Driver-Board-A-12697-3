@@ -1,3 +1,5 @@
+> Earlier design/review record. See [current release status](RELEASE_STATUS.md) for superseding component choices, copper stackup, results and unresolved gates.
+
 # Interface parity: cost board vs. Williams A-12697-3 (pin by pin)
 
 Audit date 2026-09-07.  Question answered here: does this board present **exactly the same interface** to the rest of the machine

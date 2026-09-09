@@ -1,0 +1,16 @@
+{
+  "status": "REVIEW_CANDIDATE_NOT_RELEASED",
+  "fab_ready": false,
+  "electrical_errors": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "drc_warnings": 65,
+  "erc_warnings": 0,
+  "remaining_gates": [
+    "Run tools/package_review.py to bind independent checks to this exact export",
+    "Regulator reverse-current / shutdown qualification",
+    "Simultaneous thermal, real loads, fuse/fault and cabinet/harness qualification",
+    "Fabricator DFM, procurement confirmation and first-article measurements"
+  ],
+  "physical_qualification": "First-article cabinet fit, loaded supply/oscilloscope, fault/fuse and thermal measurements are not performed by software."
+}

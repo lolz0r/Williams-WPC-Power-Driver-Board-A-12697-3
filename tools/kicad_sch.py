@@ -2,8 +2,12 @@
 import os, glob, math, uuid, copy
 from sexp import parse, dump, find, find_all, S, Sym
 
-SYMDIR = glob.glob(os.path.expanduser(
-    '~/.local/share/flatpak/runtime/org.kicad.KiCad.Library.Symbols/x86_64/stable/*/files/symbols'))[0]
+_symbols = [os.environ.get('KICAD10_SYMBOL_DIR', ''),
+            '/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols', '/usr/share/kicad/symbols']
+_symbols += glob.glob(os.path.expanduser('~/.local/share/flatpak/runtime/org.kicad.KiCad.Library.Symbols/x86_64/stable/*/files/symbols'))
+SYMDIR = next((p for p in _symbols if os.path.isdir(p)), None)
+if not SYMDIR:
+    raise RuntimeError('Install KiCad symbol libraries or set KICAD10_SYMBOL_DIR')
 
 _libcache = {}
 
@@ -264,7 +268,12 @@ class Sheet:
                  S('company', 'Modern re-implementation of the Williams A-12697-3 (same form factor)'))]
         libs = [Sym('lib_symbols')]
         for lid in sorted(self.libsyms):
-            libs.append(self.libsyms[lid].embedded())
+            embedded = self.libsyms[lid].embedded()
+            filters = next((p for p in find_all(embedded, 'property') if p[1] == 'ki_fp_filters'), None)
+            if filters:
+                footprints = sorted({s['props']['Footprint'].split(':')[-1] for s in self.symbols if s['sdef'].lib_id == lid and s['props'].get('Footprint')})
+                filters[2] = ' '.join(dict.fromkeys(filters[2].split() + footprints))
+            libs.append(embedded)
         doc.append(libs)
         for (x, y) in sorted(self.junctions):
             doc.append(S('junction', S('at', x, y), S('diameter', 0), S('color', 0, 0, 0, 0), S('uuid', uid())))
@@ -331,7 +340,7 @@ def make_power_symbol(name, base='+5V', libname='power'):
         for pin in find_all(sub, 'pin'):
             find(pin, 'name')[1] = name
     obj = SymDef.__new__(SymDef)
-    obj.libname, obj.name, obj.raw = libname, name, raw
+    obj.libname, obj.name, obj.raw = 'wpc_power', name, raw
     obj.pins = {}; obj.units = set()
     for sub in find_all(raw, 'symbol'):
         unit = int(sub[1].rsplit('_', 2)[1])

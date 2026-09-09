@@ -1,0 +1,22 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: cost-board flashlamp driver (sol 17-24): 74hct574 -> 100r -> irlr3110z dpak sink, #89 lamp on +20v (s1m tie-back)
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout v20                                         20
+stdout latch                                        0
+stdout a                                            0
+stdout g                                            0
+stdout lamp                                        20
+stdout v20l                                        20
+stdout vlamp#branch                        1.0397e-09
+stdout vl#branch                                    0
+stdout v20#branch                         -1.0397e-09
+ Reference value :  0.00000e+00
+stdout No. of Data Rows : 16062
+stdout ilamp_inrush        =  6.61475e+00 at=  1.00198e-03
+stdout ilamp_hot           =  1.11114e+00 from=  5.00000e-02 to=  6.00033e-02
+stdout vsat                =  2.03541e-02 from=  5.00000e-02 to=  6.00033e-02

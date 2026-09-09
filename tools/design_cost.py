@@ -2,14 +2,14 @@
 capacitor positions and function as A-12697-3; derived from design_modern.py of ../wpc_power_driver_modern).
 
 Changes versus the modern board (see README.md):
- * all 28 solenoid / flasher outputs: IRLB4030 TO-220 -> Infineon IRLR3110Z DPAK (100 V, 14 mOhm, logic level); same 100 R gate /
+ * all 28 solenoid / flasher outputs: IRLB4030 TO-220 -> Infineon IPD90N10S4L06 DPAK (100 V, 14 mOhm, logic level); same 100 R gate /
    10 k pull-down / SMA-SMC tie-back circuit, still driven straight from the 74HCT574 latches
  * lamp rows: IRLZ44N -> IRLR024N DPAK (55 V, 65 mOhm); lamp columns: IRF9Z34N -> IRFR5305 P-channel DPAK (-55 V, 65 mOhm)
- * bridges: BR3 (+50 V) stays a GBPC3510W block (6224BG basket heatsink); the four low-voltage bridges are DISCRETE Schottky bridges since the
+ * bridges: BR3 (+50 V) stays a GBPC3510W block (6223BG basket heatsink); the four low-voltage bridges are DISCRETE Schottky bridges since the
    2026-09-07 thermal review (a GBJ1510 dissipates 15 W at full lamp load and cannot be heat-sinked on the board): four ST STPS20M100SG-TR
    (100 V, 20 A, D2PAK) per rail - D101-D104 (+18 V, was BR1), D105-D108 (+5 V raw, BR2), D109-D112 (+20 V, BR4), D113-D116 (+12 V power, BR5),
    cooled by the copper of their cathode / AC pours (docs/THERMAL_AND_PROTECTION.md section 1)
- * electrolytics: the 15000 uF / 35 V snap-ins become 10000 uF / 25 V (Rubycon USC, 25 x 25 mm) - C5, C6, C7, C11 and C30; 2 x 2200 uF / 100 V on +50 V kept
+ * electrolytics: C5/C6/C7/C11/C30 use 10000 uF / 35 V TDK B41252, 25.4 x 45 mm for ripple margin; 2 x 2200 uF / 100 V on +50 V kept
  * buck converters: TPS54560B (5 A) -> TPS54360B (3.5 A, same HSOP-8 pin-out); feedback / RT / compensation recomputed for the
    TPS54360B (gm(ps) 12 A/V) with the 2 x 330 uF + 10 uF electrolytic output filter; +5 V rated 3 A, +12 V 2 A
  * fuses: 3AG -> 5 x 20 mm (Littelfuse 239 Slo-Blo / 217 fast) in Keystone 3517 clips, each fuse centred on the original 3AG position
@@ -73,6 +73,7 @@ FP_SIP10 = 'Resistor_THT:R_Array_SIP10'
 FP_C = 'Capacitor_SMD:C_0805_2012Metric'
 FP_C1210 = 'Capacitor_SMD:C_1210_3225Metric'
 FP_C10000 = 'Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn'   # Rubycon 25USC10000MEFCSN25X25 is 25 x 25 mm
+FP_C10000_HR = 'Capacitor_THT:CP_Radial_D26.0mm_P10.00mm_SnapIn' # TDK 25.4 mm nominal, 26.4 mm maximum fits 27 mm courtyard; 45 mm body
 FP_C2200_100 = 'Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn'
 FP_C2200_25 = 'Capacitor_THT:CP_Radial_D12.5mm_P5.00mm'
 FP_C330 = 'Capacitor_THT:CP_Radial_D10.0mm_P5.00mm'
@@ -90,7 +91,7 @@ FP_SOIC18 = 'Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm'
 FP_HSOP8 = 'Package_SO:Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm'
 FP_L = 'Inductor_SMD:L_Bourns_SRP1245A'      # same land pattern family as SRP1265A
 FP_KK = lambda n: f'Connector_Molex:Molex_KK-396_A-41791-00{n:02d}_1x{n:02d}_P3.96mm_Vertical'
-FP_HDR2x17 = 'Connector_IDC:IDC-Header_2x17_P2.54mm_Vertical'
+FP_HDR2x17 = 'wpc_cost:3M_N2534_6002_RB'
 FP_KK254 = lambda n: f'Connector_Molex:Molex_KK-254_AE-6410-{n:02d}A_1x{n:02d}_P2.54mm_Vertical'
 FP_FUSE = 'Fuse:Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal'   # pad centroid = fuse centre, like the 3AG clip footprint
 FP_LED = 'LED_SMD:LED_0805_2012Metric'
@@ -254,13 +255,13 @@ HP_PARTS = {  # sol -> (MOSFET (old TIP36C ref), Rg (old 470), Rpd (old 4.7K), d
     5: ('Q64', 'R127', 'R126', 'D25'), 6: ('Q66', 'R129', 'R128', 'D26'), 7: ('Q68', 'R131', 'R130', 'D27'), 8: ('Q70', 'R133', 'R132', 'D28')}
 
 def sheet_sol_high():
-    s = Sheet('Sol_HighPower', 'sol_highpower.kicad_sch', 'A2', 'Solenoids 1-8 (high power, IRLR3110Z)')
+    s = Sheet('Sol_HighPower', 'sol_highpower.kicad_sch', 'A2', 'Solenoids 1-8 (high power, IPD90N10S4L06)')
     b = B(s)
     for i, n in enumerate(range(1, 9)):
         col, row = i % 4, i // 4
         ox, oy = 60 + col * 70, 60 + row * 60
         q, rg, rpd, dio = HP_PARTS[n]
-        fet_driver(b, ox, oy, n, q, rg, rpd, dio, 'IRLR3110Z', '+50V', f'SOL{n:02d}_L', f'SOL{n:02d}', 'high power', hp=True)
+        fet_driver(b, ox, oy, n, q, rg, rpd, dio, 'IPD90N10S4L06', '+50V', f'SOL{n:02d}_L', f'SOL{n:02d}', 'high power', hp=True)
     latch574(b, 'U5', 60, 210, 'CLK_SOL_HIGH', [f'SOL{n:02d}_L' for n in range(1, 9)], desc='Solenoid 1-8 latch')
     bypass(b, 'B5', 110, 195)
     b.conn_labels('J130', 9, 300, 200, {1: 'SOL01', 2: 'SOL02', 3: None, 4: 'SOL03', 5: 'SOL04', 6: 'SOL05', 7: 'SOL06', 8: 'SOL07', 9: 'SOL08'},
@@ -268,19 +269,19 @@ def sheet_sol_high():
     # J132 (B.B.) / J131 (CAB): 5-pin copies of J130 as on A-12697 sheet 3 (N/C in the STTNG harness) - docs/INTERFACE_PARITY.md
     b.conn_labels('J132', 5, 360, 200, {1: 'SOL01', 2: 'SOL02', 3: 'SOL03', 4: None, 5: 'SOL04'}, FP_KK(5), 'KK5', 'J132 Sol 1-4 drive (backbox, parallel to J130; N/C on STTNG)')
     b.conn_labels('J131', 5, 360, 235, {1: 'SOL05', 2: None, 3: 'SOL06', 4: 'SOL07', 5: 'SOL08'}, FP_KK(5), 'KK5', 'J131 Sol 5-8 drive (cabinet, parallel to J130; N/C on STTNG)')
-    b.text('High power solenoid drivers (sol. 1-8): IRLR3110Z DPAK (100 V, 14 mOhm, 16 mOhm at 4.5 V) driven directly by latch U5 (74HCT574, output HIGH = ON,\n'
+    b.text('High power solenoid drivers (sol. 1-8): IPD90N10S4L06 DPAK (100 V, 14 mOhm, 16 mOhm at 4.5 V) driven directly by latch U5 (74HCT574, output HIGH = ON,\n'
            'outputs tri-stated by BLANKING -> gate pull-downs hold every driver OFF). SMC 3 A tie-back diodes return to +50V (the "+50V" rail of a WPC\n'
            'machine is ~70 V DC: 51 VAC winding, 72-78 V peak). U5 is clocked by /SOL 4 (J113-10). Output connectors J130 (playfield, key pin 3), J132 (backbox, sol 1-4, key 4)\n'
            'and J131 (cabinet, sol 5-8, key 2) as on the A-12697. Supply +50V via F105 on J107-3.', (20, 15), 2.0)
     return s
 
 def sheet_sol_low():
-    s = Sheet('Sol_LowPower', 'sol_lowpower.kicad_sch', 'A2', 'Solenoids 9-16 (low power, IRLR3110Z)')
+    s = Sheet('Sol_LowPower', 'sol_lowpower.kicad_sch', 'A2', 'Solenoids 9-16 (low power, IPD90N10S4L06)')
     b = B(s)
     for i, n in enumerate(range(9, 17)):
         col, row = i % 4, i // 4
         ox, oy = 60 + col * 70, 55 + row * 55
-        fet_driver(b, ox, oy, n, fet='IRLR3110Z', tie_net='+50V', in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='low power', big_diode=True, **lp_parts(SOL_Q[n]))
+        fet_driver(b, ox, oy, n, fet='IPD90N10S4L06', tie_net='+50V', in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='low power', big_diode=True, **lp_parts(SOL_Q[n]))
     latch574(b, 'U4', 60, 200, 'CLK_SOL_LOW', [f'SOL{n:02d}_L' for n in range(9, 17)], desc='Solenoid 9-16 latch')
     bypass(b, 'B4', 110, 185)
     b.conn_labels('J127', 9, 300, 190, {1: 'SOL09', 2: None, 3: 'SOL10', 4: 'SOL11', 5: 'SOL12', 6: 'SOL13', 7: 'SOL14', 8: 'SOL15', 9: 'SOL16'},
@@ -288,19 +289,19 @@ def sheet_sol_low():
     # J129 (B.B.) / J128 (CAB): 5-pin copies of J127 as on A-12697 sheet 3 (N/C in the STTNG harness) - docs/INTERFACE_PARITY.md
     b.conn_labels('J129', 5, 360, 190, {1: 'SOL09', 2: 'SOL10', 3: None, 4: 'SOL11', 5: 'SOL12'}, FP_KK(5), 'KK5', 'J129 Sol 9-12 drive (backbox, parallel to J127; N/C on STTNG)')
     b.conn_labels('J128', 5, 360, 225, {1: 'SOL13', 2: 'SOL14', 3: 'SOL15', 4: None, 5: 'SOL16'}, FP_KK(5), 'KK5', 'J128 Sol 13-16 drive (cabinet, parallel to J127; N/C on STTNG)')
-    b.text('Low power solenoid drivers (sol. 9-16): IRLR3110Z logic-level DPAK MOSFETs (14 mOhm), latch U4 output HIGH = ON, clocked by /SOL 3 (J113-11).\n'
+    b.text('Low power solenoid drivers (sol. 9-16): IPD90N10S4L06 logic-level DPAK MOSFETs (14 mOhm), latch U4 output HIGH = ON, clocked by /SOL 3 (J113-11).\n'
            'Tie-back diodes S3M (SMC, 3 A) to +50V (~70 V DC in the machine): coils in this group can be PWM-held by the firmware, the diode then carries the freewheel current.\n'
            'Output connectors J127 (playfield, key pin 2), J129 (backbox, sol 9-12, key 3) and J128 (cabinet, sol 13-16, key 4) as on the A-12697. Supply +50V via F104 on J107-2.', (20, 15), 2.0)
     return s
 
 def sheet_sol_flash():
-    s = Sheet('Sol_Flashers', 'sol_flashers.kicad_sch', 'A2', 'Solenoids 17-24 (flashlamps, IRLR3110Z)')
+    s = Sheet('Sol_Flashers', 'sol_flashers.kicad_sch', 'A2', 'Solenoids 17-24 (flashlamps, IPD90N10S4L06)')
     b = B(s)
     for i, n in enumerate(range(17, 25)):
         col, row = i % 4, i // 4
         ox, oy = 60 + col * 70, 55 + row * 55
         # sol 21-24: tie-back cathodes go to J126-10..13 only (A-12697 D9-D12), NOT to +20V on the board - a harness may feed these loads from +50V
-        fet_driver(b, ox, oy, n, fet='IRLR3110Z', tie_net=(f'SOL{n:02d}_TB' if n >= 21 else '+20V'), in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='flasher', **lp_parts(SOL_Q[n]))
+        fet_driver(b, ox, oy, n, fet='IPD90N10S4L06', tie_net=(f'SOL{n:02d}_TB' if n >= 21 else '+20V'), in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='flasher', **lp_parts(SOL_Q[n]))
     latch574(b, 'U3', 60, 200, 'CLK_SOL_FLASH', [f'SOL{n:02d}_L' for n in range(17, 25)], desc='Solenoid 17-24 latch')
     bypass(b, 'B3', 110, 185)
     b.conn_labels('J126', 13, 300, 180, {1: 'SOL17', 2: 'SOL18', 3: 'SOL19', 4: 'SOL20', 5: 'SOL21', 6: 'SOL22', 7: 'SOL23', 8: 'SOL24',
@@ -310,18 +311,18 @@ def sheet_sol_flash():
     # the 16-9057 schematic symbol draws the KEY at pin 5) -> sol 20 sits on pin 5; the STTNG harness only uses pins 6 (sol 21) and 8 (sol 23)
     b.conn_labels('J125', 9, 360, 180, {1: 'SOL17', 2: 'SOL18', 3: 'SOL19', 4: None, 5: 'SOL20', 6: 'SOL21', 7: 'SOL22', 8: 'SOL23', 9: 'SOL24'},
                   FP_KK(9), 'KK9', 'J125 Sol 17-24 drive (backbox flashers)')
-    b.text('Flashlamp drivers (sol. 17-24): IRLR3110Z DPAK, latch U3 output HIGH = lamp ON, clocked by /SOL 2 (J113-9). Sol 17-20 keep an on-board S1M tie-back to +20V\n'
+    b.text('Flashlamp drivers (sol. 17-24): IPD90N10S4L06 DPAK, latch U3 output HIGH = lamp ON, clocked by /SOL 2 (J113-9). Sol 17-20 keep an on-board S1M tie-back to +20V\n'
            '(the A-12697 has none there); the sol 21-24 tie-back cathodes are brought out to J126-10..13 exactly like the A-12697 D9-D12, so the harness chooses the clamp rail.\n'
            'On STTNG sol. 17/18 drive the 12 V gun motors (motor high side on the +12V power rail of J118) through this group.\n'
            'Outputs on J126 (playfield, key pin 9) and J125 (backbox, key pin 4). Flasher supply +20V on J107-5/6 / J106-5.', (20, 15), 2.0)
     return s
 
 def sheet_sol_gp():
-    s = Sheet('Sol_GeneralPurpose', 'sol_gp.kicad_sch', 'A2', 'Solenoids 25-28 (general purpose, IRLR3110Z)')
+    s = Sheet('Sol_GeneralPurpose', 'sol_gp.kicad_sch', 'A2', 'Solenoids 25-28 (general purpose, IPD90N10S4L06)')
     b = B(s)
     for i, n in enumerate(range(25, 29)):
         ox, oy = 60 + i * 70, 55
-        fet_driver(b, ox, oy, n, fet='IRLR3110Z', tie_net=f'SOL{n:02d}_TB', in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='gen. purpose', big_diode=True, **lp_parts(SOL_Q[n]))
+        fet_driver(b, ox, oy, n, fet='IPD90N10S4L06', tie_net=f'SOL{n:02d}_TB', in_net=f'SOL{n:02d}_L', out_net=f'SOL{n:02d}', kind='gen. purpose', big_diode=True, **lp_parts(SOL_Q[n]))
     latch574(b, 'U2', 60, 150, 'CLK_SOL_GEN', [f'SOL{n:02d}_L' for n in range(25, 29)] + [None] * 4, desc='Solenoid 25-28 latch')
     bypass(b, 'B2', 110, 135)
     b.conn_labels('J122', 9, 300, 140, {1: 'SOL25', 2: 'SOL26', 3: 'SOL27', 4: 'SOL28', 5: 'SOL25_TB', 6: 'SOL26_TB', 7: None, 8: 'SOL27_TB', 9: 'SOL28_TB'},
@@ -329,7 +330,7 @@ def sheet_sol_gp():
     b.conn_labels('J124', 5, 360, 140, {1: 'SOL25', 2: 'SOL26', 3: 'SOL27', 4: None, 5: 'SOL28'}, FP_KK(5), 'KK5', 'J124 Sol 25-28 drive (backbox)')
     # J123 (B.B.): sol 25-28 with the key on pin 2 (A-12697 sheet 3 + silkscreen film); N/C in the STTNG harness
     b.conn_labels('J123', 5, 360, 190, {1: 'SOL25', 2: None, 3: 'SOL26', 4: 'SOL27', 5: 'SOL28'}, FP_KK(5), 'KK5', 'J123 Sol 25-28 drive (backbox, parallel to J122/J124; N/C on STTNG)')
-    b.text('General purpose drivers (sol. 25-28): IRLR3110Z DPAK, latch U2 output HIGH = ON, clocked by /SOL 1 (J113-12). S3M tie-back diode cathodes are brought out\n'
+    b.text('General purpose drivers (sol. 25-28): IPD90N10S4L06 DPAK, latch U2 output HIGH = ON, clocked by /SOL 1 (J113-12). S3M tie-back diode cathodes are brought out\n'
            'to J122 pins 5,6,8,9 so the harness can tie them to the supply actually used (+50V coil or +20V flasher).\n'
            'Outputs J122 (playfield, key pin 7), J123 (backbox, key pin 2) and J124 (cabinet, key pin 4) as on the A-12697. U2 bits 4-7 unused.', (20, 15), 2.0)
     return s
@@ -382,7 +383,7 @@ def sheet_gi():
     # ---- flipper enable relay option (DNP on Fliptronic II games) ----
     ox, oy = 300, 250
     b.part('RLY1', RELAY, ox, oy, value='G2RL-2 12V (DNP)', fp=FP_RELAY, src='RLY', dnp=True)
-    b.part('Q3', NFET, ox - 30.48, oy, value='IRLR3110ZTRPBF (DNP)', fp=FP_DPAK, src='IRLR3110Z', dnp=True, desc='Relay driver MOSFET (DNP)')
+    b.part('Q3', NFET, ox - 30.48, oy, value='IPD90N10S4L06ATMA1 (DNP)', fp=FP_DPAK, src='IPD90N10S4L06', dnp=True, desc='Relay driver MOSFET (DNP)')
     b.part('R202', R, ox - 43.18, oy, 90, value='100 (DNP)', fp=FP_R, src=RS('100'), dnp=True)
     b.part('R209', R, ox - 38.1, oy + 7.62, value='10K (DNP)', fp=FP_R, src=RS('10K'), dnp=True)
     b.part('D35', DREC, ox - 27.94, oy - 15.24, 270, value='S1M (DNP)', fp=FP_SMA, src='S1M', dnp=True, desc='Relay coil diode (DNP)')
@@ -653,7 +654,9 @@ def sheet_cpu():
     return s
 
 # ---------------------------------------------------------------- Power supplies
-BRIDGES = {  # kind -> (symbol, value, footprint, sourcing key)
+FP_BR1_TO220 = 'wpc_cost:TO220_Schottky_AKA_5772'
+BRIDGES = {
+    'sch_to220': (DSCH, 'STPS20M100ST', FP_BR1_TO220, 'SCH20100_TO220'),  # kind -> (symbol, value, footprint, sourcing key)
     'gbpc': (BRIDGE, 'GBPC3510', FP_BRIDGE, 'BR35'), 'gbj': (BRIDGE, 'GBJ1510', FP_GBJ, 'BR15GBJ'),
     'gbu8': (GBU8, 'GBU8J', FP_GBU, 'BR8GBU'), 'gbu4': (GBU, 'GBU4J', FP_GBU, 'BR4V'),
     'sch': (DSCH, 'STPS20M100S', FP_D2PAK, 'SCH20100')}   # four discrete D2PAK Schottky diodes instead of a block (thermal review 2026-09-07)
@@ -668,7 +671,7 @@ def rect_block(b, ox, oy, name, fuse, frating, fsrc, ac_a, ac_b, bridge, capref,
     sym, val, fp, src = BRIDGES[kind]
     fa = b.pin(fuse, 1)
     b.gl(ac_a, fa, 180, 'input')
-    if kind == 'sch':
+    if kind.startswith('sch'):
         fb = b.pin(fuse, 2)
         b.w(fb, (fb[0], fb[1] - 5.08))    # the fused leg leaves the fuse as a label (global or local), the diodes pick it up by name
         if fused_gl:
@@ -677,7 +680,7 @@ def rect_block(b, ox, oy, name, fuse, frating, fsrc, ac_a, ac_b, bridge, capref,
             b.lbl(f'{ac_a}_F', (fb[0], fb[1] - 5.08), 90); fnet = f'/{ac_a}_F'
         plus = rail if rail else '/+5V_RAW'
         da, db_, dc, dd = diodes
-        dsc = f'Schottky rectifier 100 V 20 A D2PAK - discrete bridge element {name.split(" (")[0]}'
+        dsc = f'Schottky rectifier 100 V 20 A {"TO-220AB with 577202B00000G heatsink" if kind == "sch_to220" else "D2PAK"} - discrete bridge element {name.split(" (")[0]}'
         # D_Schottky is horizontal at rot 0 (pin 1 K left, pin 2 A right; stubs end 6.35 mm from the centre): 25.4 mm column pitch keeps the stubs apart
         b.two(da, sym, ox, oy - 2.54, val, fp, src, plus, fnet, desc=dsc + ', AC_A -> +')
         b.two(db_, sym, ox + 25.4, oy - 2.54, val, fp, src, plus, ac_b, desc=dsc + ', AC_B -> +')
@@ -785,15 +788,15 @@ def sheet_power():
     b.w((n50[0] + 25.4, n50[1]), (n50[0] + 33.02, n50[1])); b.w((n50[0] + 33.02, n50[1]), b.pin('R260', 1)); b.gnd(b.pin('R260', 2))
     b.part('R259', R, n50[0] + 40.64, n50[1] + 6.35, value='15K', fp=FP_R2512, src=r2512('15K'), desc='Resistor 15K 1 W 2512 bleeder (parallel to R260)')
     b.w((n50[0] + 33.02, n50[1]), (n50[0] + 40.64, n50[1])); b.w((n50[0] + 40.64, n50[1]), b.pin('R259', 1)); b.gnd(b.pin('R259', 2)); b.j((n50[0] + 33.02, n50[1]))
-    n20 = rect_block(b, 180, 130, '+20V flashlamp supply', 'F111', '5A S.B.', 'F5A', 'AC16_A', 'AC16_B', 'BR4', 'C11', '10000uF 25V', FP_C10000, 'C10000U25', '+20V', led='LED5', ledres='R194', tp='TP7', kind='sch', fused_gl='AC16_A_F', diodes=('D109', 'D110', 'D111', 'D112'))
-    n18 = rect_block(b, 180, 200, '+18V lamp matrix supply (13.3 VAC); also feeds the +12V digital buck U21', 'F114', '8A', 'F8A', 'AC13_A', 'AC13_B', 'BR1', 'C6', '10000uF 25V', FP_C10000, 'C10000U25', '+18V', led='LED6', ledres='R196', tp='TP8', cap2='C7', kind='sch', diodes=('D101', 'D102', 'D103', 'D104'))
-    n5 = rect_block(b, 180, 270, '+5V raw supply (9VAC)', 'F113', '5A S.B.', 'F5A', 'AC9_A', 'AC9_B', 'BR2', 'C5', '10000uF 25V', FP_C10000, 'C10000U25', None, kind='sch', fused_gl='AC9_AF', diodes=('D105', 'D106', 'D107', 'D108'))
+    n20 = rect_block(b, 180, 130, '+20V flashlamp supply', 'F111', '5A S.B.', 'F5A', 'AC16_A', 'AC16_B', 'BR4', 'C11', '10000uF 35V', FP_C10000_HR, 'C10000U35', '+20V', led='LED5', ledres='R194', tp='TP7', kind='sch', fused_gl='AC16_A_F', diodes=('D109', 'D110', 'D111', 'D112'))
+    n18 = rect_block(b, 180, 200, '+18V lamp matrix supply (13.3 VAC); also feeds the +12V digital buck U21', 'F114', '8A', 'F8A', 'AC13_A', 'AC13_B', 'BR1', 'C6', '10000uF 35V', FP_C10000_HR, 'C10000U35', '+18V', led='LED6', ledres='R196', tp='TP8', cap2='C7', kind='sch_to220', diodes=('D101', 'D102', 'D103', 'D104'))
+    n5 = rect_block(b, 180, 270, '+5V raw supply (9VAC)', 'F113', '5A S.B.', 'F5A', 'AC9_A', 'AC9_B', 'BR2', 'C5', '10000uF 35V', FP_C10000_HR, 'C10000U35', None, kind='sch', fused_gl='AC9_AF', diodes=('D105', 'D106', 'D107', 'D108'))
     b.lbl('+5V_RAW', (n5[0] + 10.16, n5[1]))
     b.w((n5[0] + 10.16, n5[1]), (n5[0] + 20.32, n5[1])); b.gl('RAW5V_TP', (n5[0] + 20.32, n5[1]), 0) if False else None
     b.part('TP9', TP, n5[0] + 20.32, n5[1] - 5.08, value='TP9 +5V_RAW', fp=FP_TP, src=TPSRC, desc='Test point +5V raw (buck input)')
     b.w((n5[0] + 20.32, n5[1]), b.pin('TP9', 1)); b.j((n5[0] + 20.32, n5[1]))
     b.w((n5[0] + 20.32, n5[1]), (n5[0] + 25.4, n5[1])); b.flag((n5[0] + 25.4, n5[1]))
-    n12 = rect_block(b, 180, 340, '+12V POWER (unregulated, 9.8VAC): motors, optos, coin door, DMD - J116/J117/J118', 'F116', '3A S.B.', 'F3A', 'AC98_A', 'AC98_B', 'BR5', 'C30', '10000uF 25V', FP_C10000, 'C10000U25', '+12VU', led='LED7', ledres='R250', tp='TP1', kind='sch', diodes=('D113', 'D114', 'D115', 'D116'))
+    n12 = rect_block(b, 180, 340, '+12V POWER (unregulated, 9.8VAC): motors, optos, coin door, DMD - J116/J117/J118', 'F116', '3A S.B.', 'F3A', 'AC98_A', 'AC98_B', 'BR5', 'C30', '10000uF 35V', FP_C10000_HR, 'C10000U35', '+12VU', led='LED7', ledres='R250', tp='TP1', kind='sch', diodes=('D113', 'D114', 'D115', 'D116'))
     # --- buck converters ---
     # +5 V set point 5.10 V (11.3 k / 2.1 k, 0.1 % thin film): the CPU sees 5.10 - up to 3 A x (20 mOhm board + 60 mOhm harness) = 4.86 V nominal, 4.79 V worst case, above the 4.70 V maximum MC34064 reset threshold;
     # with 5.00 V and 1 % parts the worst case was 4.61 V.  Maximum at the connector 5.17 V (< 5.20 V).  docs/THERMAL_AND_PROTECTION.md section 9
@@ -847,8 +850,8 @@ def sheet_power():
     for i in range(1, 9):
         b.part(f'H{i}', MH, 300 + i * 12, 480, value='M4', fp=FP_MH, desc='Mounting hole 4.3mm')
     b.text('Power supplies (windings per manual/pinwiki: 9 VAC red -> +5V, 13.3 VAC blu-wht -> +18V, 16 VAC wht-red -> +20V, 51 VAC blk-yel -> "+50V" (~70 V DC),\n'
-           '9.8 VAC wht-grn -> +12V power). Each secondary is fused (F111-F114, F116, 5x20 mm) before its bridge: GBPC3510W block (BR3, 6224BG basket heatsink); the +18V (D101-D104),\n'
-           '+5V raw (D105-D108), +20V (D109-D112) and +12V power (D113-D116) bridges are four STPS20M100S 100 V / 20 A D2PAK Schottky diodes each, cooled by the pours under their tabs. +50V (2 x 2200uF/100V, bleeder R259||R260) feeds the coils through F103/F104/F105 (J107-1 also feeds the 8-driver board).\n'
+           '9.8 VAC wht-grn -> +12V power). Each secondary is fused (F111-F114, F116, 5x20 mm) before its bridge: GBPC3510W block (BR3, 6223BG basket heatsink); the +18V (D101-D104),\n'
+           'BR1 D101-D104 use STPS20M100ST TO-220AB with individual 577202B00000G heatsinks; D105-D116 retain STPS20M100SG D2PAK diodes on copper pours. +50V (2 x 2200uF/100V, bleeder R259||R260) feeds the coils through F103/F104/F105 (J107-1 also feeds the 8-driver board).\n'
            '+20V (BR4/C11) feeds the flashlamps only (coin-door interlock kills +20V/+50V). +18V (BR1/C6/C7) feeds the lamp matrix AND the +12V digital buck U21 (2 A,\n'
            'F115 3/4 A -> J114 to CPU J210 / Fliptronic J904 / 8-driver, as the original 7812 did). +12V power (BR5/C30 10000uF, unregulated, F116) -> J116/J117/J118 pin 2\n'
            '(coin door, DMD controller, playfield optos and the STTNG gun motors). +5V: BR2 -> C5 -> TPS54360B U20 (3 A) -> J114/J116/J117/J118.\n'

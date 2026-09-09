@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": 7845,
+  "failures": [],
+  "pcb_sha256": "44539ec9c5ab0706a5702e4cdfcc58427dff737fd30fe17ccfbce6d000288683",
+  "gerber_pad_instances": {
+    "F.Cu": 1381,
+    "In1.Cu": 441,
+    "In2.Cu": 441,
+    "B.Cu": 441
+  },
+  "copper_object_counts": {
+    "F.Cu": 9059,
+    "In1.Cu": 1784,
+    "In2.Cu": 3405,
+    "B.Cu": 5699
+  },
+  "drill_counts": {
+    "PTH": 1776,
+    "NPTH": 9
+  },
+  "outline_centerline_mm": [
+    449.1520000050002,
+    272.9100000100005
+  ],
+  "parser_warnings": [
+    "/Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/output/release-candidate/drill/wpc_power_driver_cost-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+    "/Users/mc/Williams-WPC-Power-Driver-Board-A-12697-3-/output/release-candidate/drill/wpc_power_driver_cost-PTH.drl:34 \"G90\": G90 header statement found after end of header"
+  ],
+  "limitations": "X2 attributes/pad positions and drills checked independently; does not independently solve connectivity of every plotted copper region or replace fabricator DFM/electrical testing. Native KiCad DRC provides geometric connectivity checks."
+}

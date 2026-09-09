@@ -1,0 +1,134 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom raw-write replay channel 1; bus.csv
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                        86
+stdout cmd                                          0
+stdout gateinput                                    0
+stdout gate                                         0
+stdout drain                                       86
+stdout drainq                                      86
+stdout coil                                        86
+stdout diode                                       86
+stdout lcoil#branch                      -1.17131e-09
+stdout vdiode#branch                     -1.23872e-13
+stdout vsense#branch                      1.17143e-09
+stdout vcmd#branch                                  0
+stdout vrail#branch                      -1.17131e-09
+ Reference value :  0.00000e+00
+ Reference value :  8.24665e-02
+ Reference value :  1.61554e-01
+ Reference value :  2.39422e-01
+ Reference value :  3.14016e-01
+ Reference value :  3.82552e-01
+ Reference value :  4.43046e-01
+ Reference value :  4.98254e-01
+ Reference value :  5.63989e-01
+ Reference value :  6.27779e-01
+ Reference value :  6.90614e-01
+ Reference value :  7.55696e-01
+ Reference value :  8.19171e-01
+ Reference value :  8.82364e-01
+ Reference value :  9.48744e-01
+ Reference value :  1.02103e+00
+ Reference value :  1.09512e+00
+ Reference value :  1.16820e+00
+ Reference value :  1.24390e+00
+ Reference value :  1.32051e+00
+ Reference value :  1.39535e+00
+ Reference value :  1.47170e+00
+ Reference value :  1.55145e+00
+ Reference value :  1.62999e+00
+ Reference value :  1.70896e+00
+ Reference value :  1.78757e+00
+ Reference value :  1.86757e+00
+ Reference value :  1.94336e+00
+ Reference value :  2.02063e+00
+ Reference value :  2.09532e+00
+ Reference value :  2.17139e+00
+ Reference value :  2.25003e+00
+ Reference value :  2.32797e+00
+ Reference value :  2.40906e+00
+ Reference value :  2.48910e+00
+ Reference value :  2.57168e+00
+ Reference value :  2.65013e+00
+ Reference value :  2.72962e+00
+ Reference value :  2.80838e+00
+ Reference value :  2.88640e+00
+ Reference value :  2.96521e+00
+ Reference value :  3.04293e+00
+ Reference value :  3.12090e+00
+ Reference value :  3.20559e+00
+ Reference value :  3.28858e+00
+ Reference value :  3.36689e+00
+ Reference value :  3.44747e+00
+ Reference value :  3.52716e+00
+ Reference value :  3.60823e+00
+ Reference value :  3.69056e+00
+ Reference value :  3.77636e+00
+ Reference value :  3.85346e+00
+ Reference value :  3.93245e+00
+ Reference value :  4.00902e+00
+ Reference value :  4.08808e+00
+ Reference value :  4.17056e+00
+ Reference value :  4.25725e+00
+ Reference value :  4.33824e+00
+ Reference value :  4.41762e+00
+ Reference value :  4.49778e+00
+ Reference value :  4.58167e+00
+ Reference value :  4.66620e+00
+ Reference value :  4.74979e+00
+ Reference value :  4.83079e+00
+ Reference value :  4.91257e+00
+ Reference value :  4.99249e+00
+ Reference value :  5.07220e+00
+ Reference value :  5.14930e+00
+ Reference value :  5.22889e+00
+ Reference value :  5.30731e+00
+ Reference value :  5.38244e+00
+ Reference value :  5.46094e+00
+ Reference value :  5.53501e+00
+ Reference value :  5.61541e+00
+ Reference value :  5.69164e+00
+ Reference value :  5.76667e+00
+ Reference value :  5.84714e+00
+ Reference value :  5.92617e+00
+ Reference value :  6.00471e+00
+ Reference value :  6.08331e+00
+ Reference value :  6.16521e+00
+ Reference value :  6.24590e+00
+ Reference value :  6.32216e+00
+ Reference value :  6.40148e+00
+ Reference value :  6.48985e+00
+ Reference value :  6.57881e+00
+ Reference value :  6.66829e+00
+ Reference value :  6.76135e+00
+ Reference value :  6.85382e+00
+ Reference value :  6.94652e+00
+ Reference value :  7.03935e+00
+ Reference value :  7.13206e+00
+ Reference value :  7.22549e+00
+ Reference value :  7.31953e+00
+ Reference value :  7.41244e+00
+ Reference value :  7.50533e+00
+ Reference value :  7.59767e+00
+ Reference value :  7.68959e+00
+ Reference value :  7.78172e+00
+ Reference value :  7.87431e+00
+ Reference value :  7.96308e+00
+ Reference value :  8.04574e+00
+stdout No. of Data Rows : 3240394
+stderr doAnalyses: TRAN:  Timestep too small; time = 8.09596, timestep = 3.87219e-18: trouble with node "vrail#branch"
+stderr run simulation(s) aborted
+stdout sim_end = 8.095955813094e+00
+stdout vds_peak            =  8.76885e+01 at=  5.03120e-01
+stdout vgs_peak            =  4.49653e+00 at=  3.22886e-01
+stdout p_avg               =  3.97931e-01 from=  2.00000e-01 to=  8.09596e+00
+stdout id_avg              =  6.84411e-01 from=  2.00000e-01 to=  8.09596e+00
+stdout i_peak              =  6.92232e+01 at=  4.10957e-01
+stdout coil_peak           =  2.26755e+01 at=  5.03114e-01
+stdout tj_repeating = 7.467173440000e+01

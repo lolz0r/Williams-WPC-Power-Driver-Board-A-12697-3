@@ -1,0 +1,57 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: held coils on the ~70 v rail through an ipd90n10s4l06 dpak: (a) 100 % hold of a 14.5 ohm coil for 3 s (a "continuous duty" coil on the f103 branch), (b) freewpc-style pwm hold (sol_duty_50 = 4 ms on / 4 ms off, 125 hz) of an ae-26-1200 (10.8 ohm, 25 mh) with the s3m tie-back carrying the freewheel current; dissipation, diode current and junction-temperature estimate with the as-routed dpak copper (tab pad only, no pour: datasheet minimum-footprint rth(j-a) 62 c/w - board audit in docs/thermal_and_protection.md)
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout v50                                         70
+stdout la                                           0
+stdout aa                                           0
+stdout ga                                           0
+stdout outa                                        70
+stdout outad                                       70
+stdout v50a                                        70
+stdout cla                                         70
+stdout lb                                           0
+stdout ab                                           0
+stdout gb                                           0
+stdout outb                                        70
+stdout outbd                                       70
+stdout v50b                                        70
+stdout clb                                         70
+stdout dbk                                         70
+stdout lcb#branch                        -1.13864e-09
+stdout lca#branch                        -1.13911e-09
+stdout vdb#branch                        -4.80765e-14
+stdout vcb#branch                         1.13864e-09
+stdout vdrb#branch                        1.13869e-09
+stdout vlb#branch                                   0
+stdout vca#branch                         1.13911e-09
+stdout vdra#branch                        1.13869e-09
+stdout vla#branch                                   0
+stdout v50#branch                        -2.27775e-09
+ Reference value :  3.38320e-02
+ Reference value :  3.05952e-01
+ Reference value :  5.70892e-01
+ Reference value :  8.41952e-01
+ Reference value :  1.11170e+00
+ Reference value :  1.39300e+00
+ Reference value :  1.65590e+00
+ Reference value :  1.94204e+00
+ Reference value :  2.22811e+00
+ Reference value :  2.50146e+00
+ Reference value :  2.76100e+00
+stdout No. of Data Rows : 171738
+stdout ia_hold             =  4.82350e+00 from=  2.00000e+00 to=  3.00000e+00
+stdout pa_hold             =  2.85845e-01 from=  2.00000e+00 to=  3.00000e+00
+stdout vds_hold            =  5.92608e-02 from=  2.00000e+00 to=  3.00000e+00
+stdout ib_avg              =  3.19432e+00 from=  2.00000e+00 to=  3.00000e+00
+stdout ib_max              =  5.48645e+00 at=  2.07700e+00
+stdout ib_min              =  9.03329e-01 at=  2.10500e+00
+stdout pb_avg              =  2.34494e-01 from=  2.00000e+00 to=  3.00000e+00
+stdout idb_avg             =  1.28018e+00 from=  2.00000e+00 to=  3.00000e+00
+stdout idb_max             =  1.23324e+01 at=  2.08100e+00
+stdout tj_rise_hold = 1.772237e+01
+stdout tj_rise_pwm = 1.453861e+01

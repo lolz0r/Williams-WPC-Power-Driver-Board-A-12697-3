@@ -1,0 +1,788 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-08T10:27:10",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71",
+            "violations": [
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01012 [+20V]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.27
+                            },
+                            "uuid": "420536f7-7a62-4301-9acc-806e1792e844"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01019 [+18V]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 1.9685
+                            },
+                            "uuid": "1bddda7c-cc81-4ce1-8a8c-192f2bdde1bc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+12VU' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01030 [+12VU]",
+                            "pos": {
+                                "x": 1.7399,
+                                "y": 3.3782
+                            },
+                            "uuid": "a6bad5f0-9ee4-459c-95b2-19c79ef15ea9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01013 [+20V]",
+                            "pos": {
+                                "x": 1.9939,
+                                "y": 1.27
+                            },
+                            "uuid": "a4a58122-f91a-4633-a2f2-f7f421ec37be"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01020 [+18V]",
+                            "pos": {
+                                "x": 1.9939,
+                                "y": 1.9685
+                            },
+                            "uuid": "48505e3f-0be7-4e7a-8745-bdaec78b2186"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+12VU' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01031 [+12VU]",
+                            "pos": {
+                                "x": 1.9939,
+                                "y": 3.3782
+                            },
+                            "uuid": "3a6a6a6e-b99e-4685-bda1-d5aad808a95b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01009 [+50V]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 0.5461
+                            },
+                            "uuid": "c85b221f-0ebd-43cd-8d49-25b6f4fa9fd6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01017 [+20V]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 1.1684
+                            },
+                            "uuid": "251ae5d4-b575-42cb-aae7-57c6fbc645b0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01025 [+18V]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 1.8669
+                            },
+                            "uuid": "d39d1c4c-12ad-4e9b-8a49-08b50e5a543a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+12VU' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01035 [+12VU]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 3.2766
+                            },
+                            "uuid": "9133b275-7877-477f-a6ca-bf3ccca65b5b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01058 [+18V]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 1.6891
+                            },
+                            "uuid": "553292ec-17fe-4895-80b3-2b87bef78a4b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01060 [+18V]",
+                            "pos": {
+                                "x": 3.6957,
+                                "y": 1.6891
+                            },
+                            "uuid": "a0b14ee2-2345-46fe-8ed4-a58431cb991a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01062 [+18V]",
+                            "pos": {
+                                "x": 3.7973,
+                                "y": 1.6891
+                            },
+                            "uuid": "c3b3ec99-99b7-4211-8418-cffc12c9462d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01057 [+18V]",
+                            "pos": {
+                                "x": 4.0513,
+                                "y": 1.4478
+                            },
+                            "uuid": "b59e945d-c986-431d-b3ec-d58e87437d6a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01081 [+50V]",
+                            "pos": {
+                                "x": 4.1148,
+                                "y": 2.5781
+                            },
+                            "uuid": "df2d6016-71ad-454a-9e1a-b2789a51bcb3"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01082 [+50V]",
+                            "pos": {
+                                "x": 4.1148,
+                                "y": 2.7305
+                            },
+                            "uuid": "b7a8a571-c9d2-4d8d-92c7-290b6b5a13c1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01083 [+50V]",
+                            "pos": {
+                                "x": 4.1148,
+                                "y": 2.8702
+                            },
+                            "uuid": "c68e03f1-13a4-4823-aabf-cedfae8d9907"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01089 [+20V]",
+                            "pos": {
+                                "x": 4.2545,
+                                "y": 4.699
+                            },
+                            "uuid": "d13ee581-fada-4a10-a0d7-36ce0bd6da7a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04003 [+50V]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 0.3556
+                            },
+                            "uuid": "a3eb1b84-2305-4f2b-9e20-a2fc2c8190ba"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04015 [+50V]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 0.9144
+                            },
+                            "uuid": "15e37384-71ac-41dc-be3c-864ba2d08a19"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04006 [+50V]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.3556
+                            },
+                            "uuid": "474a524e-a714-4859-a7b8-fe96755880c8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04018 [+50V]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.9144
+                            },
+                            "uuid": "2b77061f-c4d5-473f-8675-145bcfbdef86"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04009 [+50V]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": 0.3556
+                            },
+                            "uuid": "2999686e-2445-4903-8155-91279a0e95f5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04021 [+50V]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": 0.9144
+                            },
+                            "uuid": "4ea277f7-5ab8-4441-ae8f-c2134533f5da"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04012 [+50V]",
+                            "pos": {
+                                "x": 2.7305,
+                                "y": 0.3556
+                            },
+                            "uuid": "cdf2f1a5-207e-4d67-a736-5bf9a683b647"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04024 [+50V]",
+                            "pos": {
+                                "x": 2.7305,
+                                "y": 0.9144
+                            },
+                            "uuid": "ab13d927-518f-4530-80d5-102f320c7e5d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07001 [+18V]",
+                            "pos": {
+                                "x": 0.8255,
+                                "y": 0.4699
+                            },
+                            "uuid": "16ecbf8f-79bb-457b-bcc4-a06a0720911f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07005 [+18V]",
+                            "pos": {
+                                "x": 0.8255,
+                                "y": 1.0287
+                            },
+                            "uuid": "111dc393-ca1c-4e4e-9a7a-271ca363c4b7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07002 [+18V]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 0.4699
+                            },
+                            "uuid": "89b0eef8-be4e-4cbe-af63-59813c26f461"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07006 [+18V]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 1.0287
+                            },
+                            "uuid": "14728b1a-01ab-4c27-a839-a0fe36ad9953"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07014 [+18V]",
+                            "pos": {
+                                "x": 1.9558,
+                                "y": 1.9177
+                            },
+                            "uuid": "4493235a-e8e2-4b4e-8d11-a19c04fe7208"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07003 [+18V]",
+                            "pos": {
+                                "x": 2.2225,
+                                "y": 0.4699
+                            },
+                            "uuid": "48108880-8db6-4c4b-9460-2ce3d5b09e0d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07007 [+18V]",
+                            "pos": {
+                                "x": 2.2225,
+                                "y": 1.0287
+                            },
+                            "uuid": "86dc1168-0f07-4dfc-a1e4-32ba8b885668"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07004 [+18V]",
+                            "pos": {
+                                "x": 2.921,
+                                "y": 0.4699
+                            },
+                            "uuid": "a8cbec08-956c-4bed-b8a9-8a5c997e8c2c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+18V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07008 [+18V]",
+                            "pos": {
+                                "x": 2.921,
+                                "y": 1.0287
+                            },
+                            "uuid": "faeccdac-fb0c-400d-b86d-4f615f220a3d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05003 [+20V]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 0.3556
+                            },
+                            "uuid": "5c9a1a07-b911-48c5-b297-cddeab831687"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05006 [+20V]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.3556
+                            },
+                            "uuid": "4957e0b8-f1c0-4a43-a5f9-faf11e926116"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05009 [+20V]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": 0.3556
+                            },
+                            "uuid": "a9b663d9-8998-4880-8477-485871e6817a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+20V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05012 [+20V]",
+                            "pos": {
+                                "x": 2.7305,
+                                "y": 0.3556
+                            },
+                            "uuid": "0c408cfa-7507-436a-b93f-c5f9c5c71eda"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03003 [+50V]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 0.4064
+                            },
+                            "uuid": "f80fb0bf-fe73-4d51-b479-c3407204cc01"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03015 [+50V]",
+                            "pos": {
+                                "x": 0.6223,
+                                "y": 1.0033
+                            },
+                            "uuid": "b09d74c6-d19c-487a-8b01-238da59169fd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03006 [+50V]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 0.4064
+                            },
+                            "uuid": "057f0336-ba94-4a47-b07d-76b78ed0353e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03018 [+50V]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": 1.0033
+                            },
+                            "uuid": "8b167e67-cb25-4647-8b65-2e3ae3073ca1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03009 [+50V]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": 0.4064
+                            },
+                            "uuid": "be541a5d-450f-4c6f-9e1d-0d11c986a0ff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03021 [+50V]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": 1.0033
+                            },
+                            "uuid": "4c174149-a474-4944-9b2f-d463165252ed"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03012 [+50V]",
+                            "pos": {
+                                "x": 2.7305,
+                                "y": 0.4064
+                            },
+                            "uuid": "295de74e-002d-4d64-b0b0-1166000bcfdd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol '+50V' not found in symbol library 'power'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03024 [+50V]",
+                            "pos": {
+                                "x": 2.7305,
+                                "y": 1.0033
+                            },
+                            "uuid": "253c7a4f-3de4-487d-b4f8-57667f542133"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        },
+        {
+            "path": "/Power_Supply/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/39888a21-daf9-49e6-ab1b-e224dcbde01f",
+            "violations": []
+        },
+        {
+            "path": "/CPU_Interface/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/a6f1182f-23ad-473e-8643-0568779cf898",
+            "violations": []
+        },
+        {
+            "path": "/Sol_HighPower/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/5c6d19e1-7b8a-4e14-b45b-5ec398faa715",
+            "violations": []
+        },
+        {
+            "path": "/Sol_LowPower/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/78ace362-b785-407d-9c79-dc0e42cef027",
+            "violations": []
+        },
+        {
+            "path": "/Sol_Flashers/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/9644ffdd-1a77-4910-9f0a-f0fc7212ea5d",
+            "violations": []
+        },
+        {
+            "path": "/Sol_GeneralPurpose/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/743bc465-0c75-411b-a920-e52f246bad39",
+            "violations": []
+        },
+        {
+            "path": "/Lamp_Columns/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/ece849b1-594b-44c5-aea6-b8acaded1a7d",
+            "violations": []
+        },
+        {
+            "path": "/Lamp_Rows/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/cb725953-25d6-446e-8ef4-3e94f5260dfa",
+            "violations": []
+        },
+        {
+            "path": "/GI_Triacs/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/b402c634-3560-4cac-93f4-c53f7dbc37ea",
+            "violations": []
+        }
+    ],
+    "source": "wpc_power_driver_cost.kicad_sch"
+}

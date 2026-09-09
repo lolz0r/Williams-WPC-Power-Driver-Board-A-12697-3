@@ -1,3 +1,5 @@
+> Earlier design/review record. See [current release status](RELEASE_STATUS.md) for superseding component choices, copper stackup, results and unresolved gates.
+
 # Thermal and protection design - cost-optimised WPC Power Driver Board (A-12697-3 replacement)
 
 Review of 2026-09-07 closing the open thermal / protection items of `VERIFICATION_MATRIX.md` (rows 9.6, 14, 15): bridge rectifier and triac

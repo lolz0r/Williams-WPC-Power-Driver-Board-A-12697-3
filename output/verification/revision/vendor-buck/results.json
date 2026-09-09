@@ -1,0 +1,319 @@
+{
+  "source": "https://www.ti.com/lit/zip/SLVMCT7",
+  "model_sha256": "84de74e80f9abcc6cce316de4c7532187e23d198bc988612993136cb38dbec77",
+  "minimum_limit_model_sha256": "9cd5ade442ab4cae67897f17b34d1a77767da00f71fc7c9e0ec41cd3cbc3d5b7",
+  "archive_sha256": "1ee0c24bacdf18ef241fc062dba526ed162c2464efb0b71f4dde0fe2a3e6c492",
+  "compatibility": "ngspice 47 ngbehavior=ps; TI model v1.10, originally PSpice 16.2; TI SLVAEA1 documents TPS54360B coating change",
+  "cases": [
+    {
+      "name": "5v_vin8.0",
+      "checks": {
+        "output_ss": {
+          "value": 5.11046,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 5.17929,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "step_min": {
+          "value": 5.01066,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 5.17929,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 5.07174,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 3.26357,
+          "min": 0,
+          "max": 6.8,
+          "passed": true
+        },
+        "inductor_running_peak": {
+          "value": 3.26357,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "minimum_current_limit_sensitivity": false,
+      "deck_sha256": "8fbc8c5bba41f6653bfd08812648e948aacbde41c16d00d116aa585a345c534c",
+      "passed": true
+    },
+    {
+      "name": "5v_vin15.34",
+      "checks": {
+        "output_ss": {
+          "value": 5.11551,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 5.18251,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "step_min": {
+          "value": 5.01174,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 5.18251,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 5.07374,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 3.47659,
+          "min": 0,
+          "max": 6.8,
+          "passed": true
+        },
+        "inductor_running_peak": {
+          "value": 3.47659,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "minimum_current_limit_sensitivity": false,
+      "deck_sha256": "d9100f1c8925056e9dbb16ad07671a5cbf599e94ead09d077c68222c4c17064d",
+      "passed": true
+    },
+    {
+      "name": "12v_vin13.0",
+      "checks": {
+        "output_ss": {
+          "value": 11.9314,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 11.9957,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "step_min": {
+          "value": 11.828,
+          "min": 10.8,
+          "max": 12.6,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 11.994,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 11.8645,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 4.98431,
+          "min": 0,
+          "max": 6.8,
+          "passed": true
+        },
+        "inductor_running_peak": {
+          "value": 2.16759,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "minimum_current_limit_sensitivity": false,
+      "deck_sha256": "e48c1005924a4948fa4fed6f1e7e0a8ebcbf2910e35b04b7dd2dc34e8c1c12a7",
+      "passed": true
+    },
+    {
+      "name": "12v_vin20.69",
+      "checks": {
+        "output_ss": {
+          "value": 11.9652,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 12.0219,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "step_min": {
+          "value": 11.8491,
+          "min": 10.8,
+          "max": 12.6,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 12.0219,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 11.8879,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 5.43598,
+          "min": 0,
+          "max": 6.8,
+          "passed": true
+        },
+        "inductor_running_peak": {
+          "value": 2.6539,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "minimum_current_limit_sensitivity": false,
+      "deck_sha256": "76e78df21d0e738568ab0d5a62ec85f33ad216679646d9069765e33d6de624d0",
+      "passed": true
+    },
+    {
+      "name": "12v_vin13.0_minimum_limit",
+      "checks": {
+        "output_ss": {
+          "value": 11.9423,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 12.0002,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "step_min": {
+          "value": 11.8372,
+          "min": 10.8,
+          "max": 12.6,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 12.0001,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 11.8719,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 4.53497,
+          "min": 0,
+          "max": 6.8,
+          "passed": true
+        },
+        "inductor_running_peak": {
+          "value": 2.17434,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "minimum_current_limit_sensitivity": true,
+      "deck_sha256": "8d5c974d21f54672665441fde0c79d26aff7ad64ccef7348c1e1377203a96486",
+      "passed": true
+    },
+    {
+      "name": "12v_vin20.69_minimum_limit",
+      "checks": {
+        "output_ss": {
+          "value": 12.0558,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_peak": {
+          "value": 12.0772,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "step_min": {
+          "value": 11.9298,
+          "min": 10.8,
+          "max": 12.6,
+          "passed": true
+        },
+        "removal_peak": {
+          "value": 12.0772,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "highload_ss": {
+          "value": 11.9515,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 4.60152,
+          "min": 0,
+          "max": 6.8,
+          "passed": true
+        },
+        "inductor_running_peak": {
+          "value": 2.64803,
+          "min": 0,
+          "max": 4.5,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "minimum_current_limit_sensitivity": true,
+      "deck_sha256": "dd08084ce9ce1ef4eb0281a0e14610396cc25c10efe56207becd623751131174",
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "passed": true,
+  "current_limits": "4.5 A is the guaranteed MINIMUM regulator current-limit threshold, not a component absolute maximum. 6.8 A is the maximum threshold. SRP1265A-100M has 10 A thermal / 15.5 A saturation ratings at 25 C. Running peaks must stay below 4.5 A; startup is separately tested with a lowered model ceiling.",
+  "limitations": "Typical vendor behavioral model; two explicitly modified minimum-current-limit sensitivity cases are not vendor process corners. Catch-diode fit and lumped output ESR/DCR. Does not validate PCB parasitics, physical loop stability, all faults, SOA or thermal shutdown accuracy."
+}

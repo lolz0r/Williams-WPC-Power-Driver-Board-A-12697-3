@@ -1,0 +1,69 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: cost-board lamp matrix over-current trip (irfr5305 / irlr024n): lamp shorted (0.1 ohm harness) at 32.5 ms -> sense > 1.4 v -> lm339 clears the 74hct74 -> row off within the rc delay
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vcc                                          5
+stdout v18                                         18
+stdout colin                                        0
+stdout xu19.g                                       0
+stdout ulnout                                      18
+stdout cg                                          18
+stdout col                                9.92914e-10
+stdout row                                 4.0914e-11
+stdout d                                            0
+stdout clk                                          0
+stdout d_n                                          5
+stdout vls                                        4.6
+stdout lca                                    3.34192
+stdout lcb                                  0.0456057
+stdout lba                                  0.0456058
+stdout lbb                                   0.665168
+stdout s1b                                5.59095e-10
+stdout lx                                  0.00201114
+stdout dn_b                                         5
+stdout cp                                 5.02276e-08
+stdout s2b                                5.02552e-08
+stdout d2_b                                   4.33028
+stdout cp2                                    4.96268
+stdout s4b                                   0.650776
+stdout ly                                   0.0179282
+stdout s3b                                6.93146e-09
+stdout clr_n                                  4.99995
+stdout pre_b                                  4.99995
+stdout crp                                5.69514e-08
+stdout lrb                                 6.3703e-08
+stdout qn_a                                       4.6
+stdout eqn_int1                                   4.6
+stdout g                                      4.55446
+stdout e                                  2.99199e-11
+stdout es                                 2.99199e-11
+stdout s                                  2.99199e-11
+stdout ref                                    1.29012
+stdout n1                                    0.645061
+stdout rowf                                4.0914e-11
+stdout ctl                                          0
+stdout beqn#branch                                  0
+stdout bdn#branch                          -1.001e-11
+stdout eqn#branch                        -0.000455446
+stdout vctl#branch                                  0
+stdout vs#branch                             1.36e-10
+stdout vls#branch                          -0.0012367
+stdout vclk#branch                        7.49055e-13
+stdout vd#branch                          0.000433028
+stdout vcol#branch                                  0
+stdout v18#branch                        -1.53695e-10
+stdout vcc#branch                         -0.00507037
+ Reference value :  4.92560e-04
+ Reference value :  2.30090e-02
+ Reference value :  4.59480e-02
+stdout No. of Data Rows : 26449
+stdout irow_fault          =  8.36510e+00 at=  3.30010e-02
+stdout t_trip              =  3.31618e-02
+stdout clr_after           =  4.99722e+00 at=  3.31665e-02
+stdout irow_after          =  2.52927e-03 at=  3.40038e-02
+stdout irow_next           =  8.36524e+00 at=  4.90010e-02
+stdout t_over              =  3.31614e-02

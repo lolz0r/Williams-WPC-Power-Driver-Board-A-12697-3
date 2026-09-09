@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "name": "5v_uvlo",
+      "checks": {
+        "output_peak": {
+          "value": 5.14407,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "recovery": {
+          "value": 5.10586,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -3.08377,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        },
+        "bypass_peak": {
+          "value": 21.2906,
+          "min": 0,
+          "max": 150,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": false
+    },
+    {
+      "name": "5v_prebias",
+      "checks": {
+        "output_peak": {
+          "value": 2.08784,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "recovery": {
+          "value": 0.0,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": false
+        },
+        "inductor_min": {
+          "value": -11.8785,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        },
+        "bypass_peak": {
+          "value": 27.0759,
+          "min": 0,
+          "max": 150,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.000880495, timestep = 1.25e-19: trouble with d_d1-instance d.xu.d_u8_d13",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    }
+  ],
+  "complete": true,
+  "pcb_changed": false,
+  "limitations": "Approximate bypass-diode model; IFSM comparison alone is not surge qualification."
+}

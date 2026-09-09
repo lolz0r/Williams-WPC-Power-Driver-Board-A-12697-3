@@ -1,0 +1,26 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: power-on inrush into the filter capacitors through the 5x20 mm fuses and the gbj/gbu/gbpc bridges, switch-on at the mains peak (worst case, no inrush thermistor assumed). transformer windings as voltage sources with the estimated short-circuit resistance (7-9 % regulation): 9vac/0.15r, 13.3vac/0.2r, 16vac/0.3r, 9.8vac/0.3r, 51.4vac/1.2r; capacitor esr 25 mohm (10000uf rubycon usc), 60 mohm (2200uf/100v). measures the peak current and the i2t (0..250 ms) through f113 (+5v raw, 239 5 a), f114 (+18v, 217 8 a fast), f111 (+20v, 239 5 a), f116 (+12v power, 239 3 a), f112 (+50v, 239 7 a) and the bridge peak currents.
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  5.81917e-02
+ Reference value :  2.13012e-01
+stdout No. of Data Rows : 25019
+stdout ipk_f113            =  5.51221e+01 at=  1.00000e-07
+stdout ipk_f114            =  7.12675e+01 at=  1.00000e-07
+stdout ipk_f111            =  5.96252e+01 at=  1.00000e-07
+stdout ipk_f116            =  3.55188e+01 at=  1.00000e-07
+stdout ipk_f112            =  5.32695e+01 at=  1.00000e-07
+stdout i2t_f113            =  2.82392e+00 from=  1.00000e-07 to=  2.50000e-01
+stdout i2t_f114            =  1.04550e+01 from=  1.00000e-07 to=  2.50000e-01
+stdout i2t_f111            =  5.45752e+00 from=  1.00000e-07 to=  2.50000e-01
+stdout i2t_f116            =  1.94017e+00 from=  1.00000e-07 to=  2.50000e-01
+stdout i2t_f112            =  6.66296e+00 from=  1.00000e-07 to=  2.50000e-01
+stdout v50_final           =  7.03674e+01 from=  2.00000e-01 to=  2.50000e-01
+stdout v18_final           =  1.75029e+01 from=  2.00000e-01 to=  2.50000e-01
+stdout r_f113 = 9.324932e-03
+stdout r_f111 = 1.802137e-02
+stdout r_f114 = 5.276060e-02
+stdout r_f116 = 1.498087e-02
+stdout r_f112 = 1.920161e-02

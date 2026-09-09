@@ -11,7 +11,7 @@
 		(company "Modern re-implementation of the Williams A-12697-3 (same form factor)")
 	)
 	(lib_symbols
-		(symbol "74xx:74HCT574"
+		(symbol "wpc_symbols:74xx_74HCT574"
 			(pin_names
 				(offset 1.016)
 			)
@@ -94,7 +94,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "DIP?20*"
+			(property "ki_fp_filters" "DIP?20* SOIC-20W_7.5x12.8mm_P1.27mm"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -105,7 +105,7 @@
 					)
 				)
 			)
-			(symbol "74HCT574_1_0"
+			(symbol "74xx_74HCT574_1_0"
 				(pin input inverted
 					(at -12.7 -12.7 0)
 					(length 5.08)
@@ -467,7 +467,7 @@
 					)
 				)
 			)
-			(symbol "74HCT574_1_1"
+			(symbol "74xx_74HCT574_1_1"
 				(rectangle
 					(start -7.62 15.24)
 					(end 7.62 -15.24)
@@ -482,7 +482,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x03"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x03"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -556,7 +556,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0003_1x03_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -567,7 +567,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x03_1_1"
+			(symbol "Connector_Generic_Conn_01x03_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 1.27 -3.81)
@@ -669,7 +669,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x05"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x05"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -743,7 +743,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical Molex_KK-396_A-41791-0005_1x05_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -754,7 +754,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x05_1_1"
+			(symbol "Connector_Generic_Conn_01x05_1_1"
 				(rectangle
 					(start -1.27 6.35)
 					(end 1.27 -6.35)
@@ -914,7 +914,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x11"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x11"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -988,7 +988,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0011_1x11_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -999,7 +999,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x11_1_1"
+			(symbol "Connector_Generic_Conn_01x11_1_1"
 				(rectangle
 					(start -1.27 13.97)
 					(end 1.27 -13.97)
@@ -1333,7 +1333,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_01x12"
+		(symbol "wpc_symbols:Connector_Generic_Conn_01x12"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1407,7 +1407,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_* Molex_KK-396_A-41791-0012_1x12_P3.96mm_Vertical"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1418,7 +1418,7 @@
 					)
 				)
 			)
-			(symbol "Conn_01x12_1_1"
+			(symbol "Connector_Generic_Conn_01x12_1_1"
 				(rectangle
 					(start -1.27 13.97)
 					(end 1.27 -16.51)
@@ -1781,7 +1781,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C"
+		(symbol "wpc_symbols:Device_C"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1859,7 +1859,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "C_*"
+			(property "ki_fp_filters" "C_* C_0805_2012Metric C_1210_3225Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1870,7 +1870,7 @@
 					)
 				)
 			)
-			(symbol "C_0_1"
+			(symbol "Device_C_0_1"
 				(polyline
 					(pts
 						(xy -2.032 0.762)
@@ -1898,7 +1898,7 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
+			(symbol "Device_C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1938,7 +1938,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Fuse"
+		(symbol "wpc_symbols:Device_Fuse"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2014,7 +2014,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "*Fuse*"
+			(property "ki_fp_filters" "*Fuse* Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2025,7 +2025,7 @@
 					)
 				)
 			)
-			(symbol "Fuse_0_1"
+			(symbol "Device_Fuse_0_1"
 				(rectangle
 					(start -0.762 -2.54)
 					(end 0.762 2.54)
@@ -2051,7 +2051,7 @@
 					)
 				)
 			)
-			(symbol "Fuse_1_1"
+			(symbol "Device_Fuse_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -2091,7 +2091,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "wpc_symbols:Device_R"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2167,7 +2167,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "R_* R_0805_2012Metric R_2512_6332Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2178,7 +2178,7 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
+			(symbol "Device_R_0_1"
 				(rectangle
 					(start -1.016 -2.54)
 					(end 1.016 2.54)
@@ -2191,7 +2191,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "Device_R_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -2231,7 +2231,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4007"
+		(symbol "wpc_symbols:Diode_1N4007"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2329,7 +2329,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*DO?41*"
+			(property "ki_fp_filters" "D*DO?41* D_SMA D_SMC"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2340,7 +2340,7 @@
 					)
 				)
 			)
-			(symbol "1N4007_0_1"
+			(symbol "Diode_1N4007_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27)
@@ -2383,7 +2383,7 @@
 					)
 				)
 			)
-			(symbol "1N4007_1_1"
+			(symbol "Diode_1N4007_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2423,7 +2423,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Relay:G2RL-2"
+		(symbol "wpc_symbols:Relay_G2RL-2"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2496,7 +2496,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "Relay?DPDT?Omron?G2RL*"
+			(property "ki_fp_filters" "Relay?DPDT?Omron?G2RL* Relay_DPDT_Omron_G2RL-2"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2507,7 +2507,7 @@
 					)
 				)
 			)
-			(symbol "G2RL-2_0_1"
+			(symbol "Relay_G2RL-2_0_1"
 				(rectangle
 					(start -15.24 5.08)
 					(end 15.24 -5.08)
@@ -2851,7 +2851,7 @@
 					)
 				)
 			)
-			(symbol "G2RL-2_1_1"
+			(symbol "Relay_G2RL-2_1_1"
 				(pin passive line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -2999,7 +2999,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:Q_NPN_BEC"
+		(symbol "wpc_symbols:Transistor_BJT_Q_NPN_BEC"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3097,7 +3097,7 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BEC_0_1"
+			(symbol "Transistor_BJT_Q_NPN_BEC_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0)
@@ -3136,7 +3136,7 @@
 					)
 				)
 			)
-			(symbol "Q_NPN_BEC_1_1"
+			(symbol "Transistor_BJT_Q_NPN_BEC_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635)
@@ -3235,7 +3235,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:Q_NMOS_GDS"
+		(symbol "wpc_symbols:Transistor_FET_Q_NMOS_GDS"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3311,7 +3311,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GDS_0_1"
+			(symbol "Transistor_FET_Q_NMOS_GDS_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905)
@@ -3496,7 +3496,7 @@
 					)
 				)
 			)
-			(symbol "Q_NMOS_GDS_1_1"
+			(symbol "Transistor_FET_Q_NMOS_GDS_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -3554,7 +3554,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Triac_Thyristor:BTA16-600C"
+		(symbol "wpc_symbols:Triac_Thyristor_BTA16-600C"
 			(pin_names
 				(offset 0)
 			)
@@ -3632,7 +3632,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "TO?220*"
+			(property "ki_fp_filters" "TO-220-3_Vertical TO?220*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3643,7 +3643,7 @@
 					)
 				)
 			)
-			(symbol "BTA16-600C_0_1"
+			(symbol "Triac_Thyristor_BTA16-600C_0_1"
 				(polyline
 					(pts
 						(xy -2.54 1.27)
@@ -3712,7 +3712,7 @@
 					)
 				)
 			)
-			(symbol "BTA16-600C_1_1"
+			(symbol "Triac_Thyristor_BTA16-600C_1_1"
 				(pin passive line
 					(at 0 -3.81 90)
 					(length 2.54)
@@ -3770,7 +3770,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+12V"
+		(symbol "wpc_symbols:power_+12V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3849,7 +3849,7 @@
 					)
 				)
 			)
-			(symbol "+12V_0_1"
+			(symbol "power_+12V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -3890,7 +3890,7 @@
 					)
 				)
 			)
-			(symbol "+12V_1_1"
+			(symbol "power_+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -3912,7 +3912,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
+		(symbol "wpc_symbols:power_+5V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -3991,7 +3991,7 @@
 					)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "power_+5V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27)
@@ -4032,7 +4032,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "power_+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4054,7 +4054,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "wpc_symbols:power_GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -4133,7 +4133,7 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "power_GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0)
@@ -4152,7 +4152,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "power_GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -7406,7 +7406,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Triac_Thyristor:BTA16-600C")
+		(lib_id "wpc_symbols:Triac_Thyristor_BTA16-600C")
 		(at 59.69 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7531,7 +7531,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 46.99 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7653,7 +7653,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(lib_id "wpc_symbols:Transistor_BJT_Q_NPN_BEC")
 		(at 36.83 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7778,7 +7778,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 24.13 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7900,7 +7900,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 29.21 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8022,7 +8022,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 85.09 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8144,7 +8144,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 39.37 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8214,7 +8214,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 29.21 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8284,7 +8284,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Triac_Thyristor:BTA16-600C")
+		(lib_id "wpc_symbols:Triac_Thyristor_BTA16-600C")
 		(at 144.78 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8409,7 +8409,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 132.08 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8531,7 +8531,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(lib_id "wpc_symbols:Transistor_BJT_Q_NPN_BEC")
 		(at 121.92 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8656,7 +8656,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 109.22 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8778,7 +8778,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 114.3 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8900,7 +8900,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 170.18 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9022,7 +9022,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 124.46 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9092,7 +9092,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 114.3 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9162,7 +9162,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Triac_Thyristor:BTA16-600C")
+		(lib_id "wpc_symbols:Triac_Thyristor_BTA16-600C")
 		(at 229.87 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9287,7 +9287,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 217.17 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9409,7 +9409,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(lib_id "wpc_symbols:Transistor_BJT_Q_NPN_BEC")
 		(at 207.01 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9534,7 +9534,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 194.31 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9656,7 +9656,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 199.39 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9778,7 +9778,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 255.27 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9900,7 +9900,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 209.55 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9970,7 +9970,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 199.39 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10040,7 +10040,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Triac_Thyristor:BTA16-600C")
+		(lib_id "wpc_symbols:Triac_Thyristor_BTA16-600C")
 		(at 314.96 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10165,7 +10165,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 302.26 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10287,7 +10287,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(lib_id "wpc_symbols:Transistor_BJT_Q_NPN_BEC")
 		(at 292.1 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10412,7 +10412,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 279.4 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10534,7 +10534,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 284.48 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10656,7 +10656,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 340.36 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10778,7 +10778,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 294.64 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10848,7 +10848,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 284.48 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10918,7 +10918,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Triac_Thyristor:BTA16-600C")
+		(lib_id "wpc_symbols:Triac_Thyristor_BTA16-600C")
 		(at 400.05 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11043,7 +11043,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 387.35 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11165,7 +11165,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:Q_NPN_BEC")
+		(lib_id "wpc_symbols:Transistor_BJT_Q_NPN_BEC")
 		(at 377.19 57.15 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11290,7 +11290,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 364.49 57.15 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11412,7 +11412,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 369.57 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11534,7 +11534,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 425.45 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11656,7 +11656,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 379.73 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11726,7 +11726,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 369.57 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11796,7 +11796,7 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HCT574")
+		(lib_id "wpc_symbols:74xx_74HCT574")
 		(at 59.69 149.86 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11972,7 +11972,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 59.69 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12042,7 +12042,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 59.69 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12112,7 +12112,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "wpc_symbols:Device_C")
 		(at 110.49 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12234,7 +12234,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
+		(lib_id "wpc_symbols:power_+5V")
 		(at 110.49 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12304,7 +12304,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 110.49 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12374,7 +12374,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x12")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x12")
 		(at 299.72 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12430,7 +12430,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604012"
+		(property "MPN" "0026604120"
 			(at 299.72 139.7 0)
 			(effects
 				(font
@@ -12450,7 +12450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604012"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604120"
 			(at 299.72 139.7 0)
 			(effects
 				(font
@@ -12526,7 +12526,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 289.56 127 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12596,7 +12596,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 240.03 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12718,7 +12718,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 240.03 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12788,7 +12788,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x11")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x11")
 		(at 400.05 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12844,7 +12844,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604011"
+		(property "MPN" "0026604110"
 			(at 400.05 139.7 0)
 			(effects
 				(font
@@ -12864,7 +12864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604011"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604110"
 			(at 400.05 139.7 0)
 			(effects
 				(font
@@ -12937,7 +12937,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x11")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x11")
 		(at 480.06 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12993,7 +12993,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604011"
+		(property "MPN" "0026604110"
 			(at 480.06 139.7 0)
 			(effects
 				(font
@@ -13013,7 +13013,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604011"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604110"
 			(at 480.06 139.7 0)
 			(effects
 				(font
@@ -13086,7 +13086,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x03")
 		(at 400.05 199.39 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13142,7 +13142,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604003"
+		(property "MPN" "0026604030"
 			(at 400.05 199.39 0)
 			(effects
 				(font
@@ -13162,7 +13162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604003"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604030"
 			(at 400.05 199.39 0)
 			(effects
 				(font
@@ -13211,7 +13211,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Relay:G2RL-2")
+		(lib_id "wpc_symbols:Relay_G2RL-2")
 		(at 299.72 250.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13351,7 +13351,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:Q_NMOS_GDS")
+		(lib_id "wpc_symbols:Transistor_FET_Q_NMOS_GDS")
 		(at 269.24 250.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13368,7 +13368,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "IRLR3110ZTRPBF (DNP)"
+		(property "Value" "IPD90N10S4L06ATMA1"
 			(at 271.78 250.19 0)
 			(effects
 				(font
@@ -13397,7 +13397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Relay driver MOSFET (DNP)"
+		(property "Description" "N-MOSFET 100 V, 8.1 mOhm max at 4.5 V, DPAK G-D-S, RthJA 62 C/W minimal footprint; upgraded solenoid driver"
 			(at 269.24 250.19 0)
 			(effects
 				(font
@@ -13407,7 +13407,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "IRLR3110ZTRPBF"
+		(property "MPN" "IPD90N10S4L06ATMA1"
 			(at 269.24 250.19 0)
 			(effects
 				(font
@@ -13427,7 +13427,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/detail/infineon-technologies/IRLR3110ZTRPBF/1928415"
+		(property "Link" "https://www.infineon.com/part/IPD90N10S4L-06"
 			(at 269.24 250.19 0)
 			(effects
 				(font
@@ -13476,7 +13476,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 256.54 250.19 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13598,7 +13598,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
+		(lib_id "wpc_symbols:Device_R")
 		(at 261.62 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13720,7 +13720,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
+		(lib_id "wpc_symbols:Diode_1N4007")
 		(at 271.78 234.95 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13842,7 +13842,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 261.62 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13912,7 +13912,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
+		(lib_id "wpc_symbols:power_GND")
 		(at 271.78 255.27 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13982,7 +13982,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
+		(lib_id "wpc_symbols:power_+12V")
 		(at 289.56 228.6 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14052,7 +14052,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 302.26 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14174,7 +14174,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Fuse")
+		(lib_id "wpc_symbols:Device_Fuse")
 		(at 312.42 232.41 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14296,7 +14296,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x05")
+		(lib_id "wpc_symbols:Connector_Generic_Conn_01x05")
 		(at 400.05 240.03 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14352,7 +14352,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0026604005"
+		(property "MPN" "0026604050"
 			(at 400.05 240.03 0)
 			(effects
 				(font
@@ -14372,7 +14372,7 @@
 				(hide yes)
 			)
 		)
-		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604005"
+		(property "Link" "https://www.digikey.com/en/products/result?keywords=0026604050"
 			(at 400.05 240.03 0)
 			(effects
 				(font

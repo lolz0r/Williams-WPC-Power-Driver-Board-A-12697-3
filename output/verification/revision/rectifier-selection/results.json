@@ -1,0 +1,124 @@
+{
+  "cases": [
+    {
+      "name": "f50_line0.9",
+      "losses_W_per_package": {
+        "18a": 1.463151,
+        "20a": 0.5598428,
+        "5a": 0.409808,
+        "12b": 0.6429424
+      },
+      "reverse_peaks_V": {
+        "18a": 14.6019,
+        "20a": 19.8907,
+        "5a": 10.4072,
+        "12b": 14.7023
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "f50_line1",
+      "losses_W_per_package": {
+        "18a": 1.632833,
+        "20a": 0.5624403,
+        "5a": 0.3563275,
+        "12b": 0.6448829
+      },
+      "reverse_peaks_V": {
+        "18a": 16.2932,
+        "20a": 22.1412,
+        "5a": 11.691,
+        "12b": 16.3788
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "f50_line1.1",
+      "losses_W_per_package": {
+        "18a": 1.80673,
+        "20a": 0.5648371,
+        "5a": 0.3155617,
+        "12b": 0.6466614
+      },
+      "reverse_peaks_V": {
+        "18a": 17.9848,
+        "20a": 24.3919,
+        "5a": 12.9718,
+        "12b": 18.0559
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "f60_line0.9",
+      "losses_W_per_package": {
+        "18a": 1.470243,
+        "20a": 0.5604719,
+        "5a": 0.4080238,
+        "12b": 0.6432132
+      },
+      "reverse_peaks_V": {
+        "18a": 14.4869,
+        "20a": 19.8558,
+        "5a": 10.3454,
+        "12b": 14.458
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "f60_line1",
+      "losses_W_per_package": {
+        "18a": 1.638883,
+        "20a": 0.5630075,
+        "5a": 0.3552161,
+        "12b": 0.6450952
+      },
+      "reverse_peaks_V": {
+        "18a": 16.1677,
+        "20a": 22.1034,
+        "5a": 11.633,
+        "12b": 16.1079
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "f60_line1.1",
+      "losses_W_per_package": {
+        "18a": 1.813792,
+        "20a": 0.5654086,
+        "5a": 0.3148564,
+        "12b": 0.6468925
+      },
+      "reverse_peaks_V": {
+        "18a": 17.8478,
+        "20a": 24.3512,
+        "5a": 12.9172,
+        "12b": 17.7582
+      },
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "peak_conduction_W": {
+    "18a": 1.813792,
+    "20a": 0.5654086,
+    "5a": 0.409808,
+    "12b": 0.6468925
+  },
+  "full_VRRM_leakage_bound_W": {
+    "18a": 0.89924,
+    "20a": 1.219595,
+    "5a": 0.64859,
+    "12b": 0.9027950000000001
+  },
+  "sources": [
+    "https://www.st.com/resource/en/datasheet/stps30m60s.pdf",
+    "https://estore.st.com/en/stps30m60st-cpn.html"
+  ],
+  "limitations": "Loss equation at hot junction; approximate cold-Vf fit sets currents. Real transformer impedance and leakage at operating voltage need measurement. The 60 V selection requires controlled secondary transient peaks below 48 V; normal line peaks alone are insufficient surge qualification.",
+  "passed": true
+}

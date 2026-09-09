@@ -84,12 +84,13 @@ P('R272', 1000, 3750, 0); P('C42', 1000, 3800, 0); P('C43', 1000, 3850, 0); P('D
 P('C2', 820, 3760, 0); P('C12', 820, 3900, 0); P('C44', 900, 3920, 0)
 
 # parts that have no counterpart on the A-12697-3 assembly drawing, placed in board millimetres (see gen_pcb.py)
-POS_MM = {'C21': (86.0, 73.6, 90),      # 10 nF zero-cross filter next to U6 pin 5 (added 2026-09-07; it had no position and was missing from the PCB)
+POS_MM = {'C11': (325.951, 21.46, -90), # 1.2 mm right for the larger TDK capacitor courtyard
+          'C21': (86.0, 73.6, 90),      # 10 nF zero-cross filter next to U6 pin 5 (added 2026-09-07; it had no position and was missing from the PCB)
           'J129': (275.5, 265.3, 180),  # 2.5 mm left of the drawing position: at 278.0 its housing sits inside mounting hole H6's courtyard
           'H9': (251.99, 23.30, 0),     # 5.5 mm NPTH for the M4 bolt of BR3 (GBPC3510W) - docs/THERMAL_AND_PROTECTION.md
           # discrete Schottky bridges (2026-09-07, docs/THERMAL_AND_PROTECTION.md section 8).  Project footprint D2PAK_Schottky_AKA:
           # pad 1 = tab = cathode.  Rotation 90 = tab up, 270 = tab down, 0 = tab right, 180 = tab left.  Pours: tools/rail_pours.py
-          'D103': (350.0, 40.0, 90), 'D104': (363.4, 40.0, 90), 'D101': (350.0, 61.0, 270), 'D102': (363.4, 61.0, 270),   # BR1 +18V: AC pair (tabs up), DC pair (tabs down)
+          'D103': (350.0, 32.65, 0), 'D104': (363.4, 17.65, 0), 'D101': (350.0, 53.35, 180), 'D102': (376.0, 77.35, 180),   # BR1 +18V: AC pair (tabs up), DC pair (tabs down)
           'D105': (290.0, 114.0, 0), 'D106': (311.0, 114.0, 180), 'D107': (290.0, 128.0, 180), 'D108': (311.0, 128.0, 0),   # BR2 +5V raw: below C8 / left of U9; DC pair tabs facing, AC pair tabs outward
           'D109': (281.0, 12.0, 0), 'D110': (302.0, 12.0, 180), 'D111': (281.0, 26.0, 180), 'D112': (302.0, 26.0, 0),     # BR4 +20V: DC pair tabs facing, AC pair tabs outward
           'D115': (17.0, 19.0, 90), 'D116': (30.4, 19.0, 90), 'D113': (17.0, 40.0, 270), 'D114': (30.4, 40.0, 270)}       # BR5 +12V power: AC pair (tabs up), DC pair (tabs down)

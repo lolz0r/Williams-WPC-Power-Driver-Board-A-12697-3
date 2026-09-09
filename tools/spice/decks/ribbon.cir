@@ -1,4 +1,4 @@
-End-to-end CPU write -> J211/J113 ribbon -> U9 74HCT240 -> 74HCT574 -> IRLR3110Z with the real WPC timing and the ACTIVE-LOW data (XSPICE digital latch). 6809E write cycle at 2 MHz: Q rises at t0 = 10 us x k (one write per 10 us slot so that the 100 R / Cgs gate RC settles), E rises t0 + 125 ns, E falls t0 + 375 ns; the ASIC strobe is LOW from Q rise to E fall (370 ns as scoped on J211); CPU write data (U12 74LS240, enabled only for the write) is valid worst case from t0 + 200 ns (tDDQ max) to t0 + 405 ns (tDHW 30 ns min after E falls), tri-stated otherwise. Ribbon 1 R / 120 pF, SR2 4.7 k pull-ups on the data, SR1 4.7 k on the strobes and BLANKING. Register bit 1 -> ribbon LOW -> U9 HIGH -> Q HIGH -> gate ON. Cycles: k=0 write 1, k=1 write 0, k=2 write 1, k=3 write 1 with the ribbon unplugged (no CPU, BLANKING floats up), k=4 write 1 with BLANKING high, k=5 write 0.
+End-to-end CPU write -> J211/J113 ribbon -> U9 74HCT240 -> 74HCT574 -> IPD90N10S4L06 with the real WPC timing and the ACTIVE-LOW data (XSPICE digital latch). 6809E write cycle at 2 MHz: Q rises at t0 = 10 us x k (one write per 10 us slot so that the 100 R / Cgs gate RC settles), E rises t0 + 125 ns, E falls t0 + 375 ns; the ASIC strobe is LOW from Q rise to E fall (370 ns as scoped on J211); CPU write data (U12 74LS240, enabled only for the write) is valid worst case from t0 + 200 ns (tDDQ max) to t0 + 405 ns (tDHW 30 ns min after E falls), tri-stated otherwise. Ribbon 1 R / 120 pF, SR2 4.7 k pull-ups on the data, SR1 4.7 k on the strobes and BLANKING. Register bit 1 -> ribbon LOW -> U9 HIGH -> Q HIGH -> gate ON. Cycles: k=0 write 1, k=1 write 0, k=2 write 1, k=3 write 1 with the ribbon unplugged (no CPU, BLANKING floats up), k=4 write 1 with BLANKING high, k=5 write 0.
 .include ../models.lib
 VCC vcc 0 5
 * one write per 10 us slot (the 100 R / Cgs gate RC settles in a few us; the 10 k gate pull-down after a tri-state takes ~150 us and is covered at that timescale by powerup.cir - here the tri-state is proven by the latch output current)
@@ -45,8 +45,8 @@ Soe qa qo ctl_oe 0 SWO
 .model SWO SW(Ron=0.01 Roff=1e9 Vt=0.5 Vh=0.1)
 Rg qo g 100
 Rpd g 0 10k
-* ---- IRLR3110Z on an AE-26-1200 (10.8 R / 25 mH) on the 70 V rail (drain voltage shows the output state)
-XQ out g 0 IRLR3110Z
+* ---- IPD90N10S4L06 on an AE-26-1200 (10.8 R / 25 mH) on the 70 V rail (drain voltage shows the output state)
+XQ out g 0 IPD90N10S4L06
 V50 v50 0 70
 Lc out cl 25m
 Rc cl v50 10.8

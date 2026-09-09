@@ -1,7 +1,7 @@
 """Minimal ctypes driver for libngspice (shared library shipped inside the KiCad flatpak).
 Run with:  flatpak run --command=python3 org.kicad.KiCad tools/spice/ngspice_lib.py deck.cir
 """
-import ctypes, ctypes.util, os, sys, json
+import ctypes, ctypes.util, os, sys, json, glob
 
 class VecInfo(ctypes.Structure):
     _fields_ = [('v_name', ctypes.c_char_p), ('v_type', ctypes.c_int), ('v_flags', ctypes.c_short),
@@ -16,7 +16,14 @@ BGThreadRunning = ctypes.CFUNCTYPE(ctypes.c_int, ctypes.c_bool, ctypes.c_int, ct
 
 class NgSpice:
     def __init__(self, path=None):
-        path = path or (ctypes.util.find_library('ngspice') or '/app/lib/libngspice.so.0')
+        path = path or os.environ.get('NGSPICE_LIBRARY') or ctypes.util.find_library('ngspice')
+        if not path:
+            path = next((p for p in (
+                '/opt/homebrew/opt/libngspice/lib/libngspice.dylib',
+                '/usr/local/opt/libngspice/lib/libngspice.dylib',
+                '/app/lib/libngspice.so.0') if os.path.exists(p)), None)
+        if not path:
+            raise RuntimeError('Install libngspice or set NGSPICE_LIBRARY to its shared library path')
         self.lib = ctypes.CDLL(path)
         self.log = []
         self._cb = [SendChar(self._send_char), SendStat(self._send_stat), ControllerExit(self._exit),
@@ -28,6 +35,14 @@ class NgSpice:
         self.lib.ngSpice_AllVecs.restype = ctypes.POINTER(ctypes.c_char_p)
         self.lib.ngSpice_AllVecs.argtypes = [ctypes.c_char_p]
         self.lib.ngSpice_CurPlot.restype = ctypes.c_char_p
+        # The shared-library API does not read the executable's spinit file.
+        # Homebrew ships XSPICE code models beside libngspice.
+        model_dir = os.environ.get('NGSPICE_CODEMODELS')
+        if not model_dir and sys.platform == 'darwin':
+            model_dir = os.path.join(os.path.dirname(os.path.realpath(path)), 'ngspice')
+        if model_dir:
+            for model in sorted(glob.glob(os.path.join(model_dir, '*.cm'))):
+                self.cmd(f'codemodel {model}')
     def _send_char(self, s, i, u):
         self.log.append(s.decode(errors='replace')); return 0
     def _send_stat(self, s, i, u): return 0

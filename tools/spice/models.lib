@@ -1,4 +1,15 @@
 * Approximate SPICE models for the WPC power driver verification (functional accuracy, not vendor-exact)
+* IPD90N10S4L-06 candidate: conservative hot-resistance fit (~13 mOhm at 4.5 V),
+* not a vendor avalanche/SOA model. Datasheet maximum at 25 C is 8.1 mOhm;
+* 6 nF Cgs and 0.425 nF Cgd bound input capacitance/Miller charge for this workload.
+.subckt IPD90N10S4L06 D G S
+M1 D G S S MIPD90 L=1u W=1u
+Db S D DIPD90
+Cgs G S 6n
+Cgd G D 0.425n
+.model MIPD90 NMOS(Level=1 Vto=1.6 Kp=80 Lambda=0.001 Rd=0.006 Rs=0.002)
+.model DIPD90 D(Is=1e-9 n=1.4 Rs=0.008 Bv=100 Tt=60n Cjo=2.1n)
+.ends
 .model Q2N5401 PNP(Is=2.5e-14 Bf=180 Vaf=100 Ikf=0.12 Rb=10 Rc=0.5 Cjc=8p Cje=15p Tf=0.5n Tr=50n)
 * TIP102 NPN Darlington (8k / 120R internal resistors, collector-emitter diode)
 .subckt TIP102 C B E

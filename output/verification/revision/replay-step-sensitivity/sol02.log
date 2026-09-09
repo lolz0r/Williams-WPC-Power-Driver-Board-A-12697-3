@@ -1,0 +1,38 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom raw-write replay channel 2; bus.csv
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                        86
+stdout cmd                                          0
+stdout gateinput                                    0
+stdout gate                                         0
+stdout drain                                       86
+stdout drainq                                      86
+stdout coil                                        86
+stdout diode                                       86
+stdout lcoil#branch                      -1.17131e-09
+stdout vdiode#branch                     -1.23872e-13
+stdout vsense#branch                      1.17143e-09
+stdout vcmd#branch                                  0
+stdout vrail#branch                      -1.17131e-09
+ Reference value :  0.00000e+00
+ Reference value :  9.56440e-02
+ Reference value :  1.90116e-01
+ Reference value :  2.78019e-01
+ Reference value :  3.60945e-01
+ Reference value :  4.37569e-01
+stdout No. of Data Rows : 176217
+stderr doAnalyses: TRAN:  Timestep too small; time = 0.437569, timestep = 3.125e-18: trouble with node "vrail#branch"
+stderr run simulation(s) aborted
+stdout sim_end = 4.375689803142e-01
+stdout vds_peak            =  8.82500e+01 at=  4.37569e-01
+stdout vgs_peak            =  4.47716e+00 at=  2.66729e-01
+stdout p_avg               =  4.12626e+00 from=  2.00000e-01 to=  4.37569e-01
+stdout id_avg              =  8.61443e+00 from=  2.00000e-01 to=  4.37569e-01
+stdout i_peak              =  1.61410e+02 at=  4.37569e-01
+stdout coil_peak           =  2.09956e+01 at=  4.35545e-01
+stdout tj_repeating = 3.058279340000e+02

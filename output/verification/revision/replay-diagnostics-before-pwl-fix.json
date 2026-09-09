@@ -1,0 +1,734 @@
+{
+  "trace_sha256": "c551c87f05fa119b46028032d17a402ef2a6b14e180952e444ec0c44738b7362",
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "cases": [
+    {
+      "channel": 1,
+      "window_s": [
+        63.5343675,
+        73.5343675
+      ],
+      "commanded_duty": 0.012614100000000406,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.703,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44196,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 54.33247,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.0203922,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6811,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 2,
+      "window_s": [
+        17.6008005,
+        27.6008005
+      ],
+      "commanded_duty": 0.006468049999999792,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.703,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44095,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.39935,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": -1.29429e-10,
+          "min": 0,
+          "max": 3,
+          "passed": false
+        },
+        "i_peak": {
+          "value": 22.681,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": false
+    },
+    {
+      "channel": 3,
+      "window_s": [
+        69.2513605,
+        79.2513605
+      ],
+      "commanded_duty": 0.006382499999999425,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.703,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44196,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.18912,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00679746,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.68,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 4,
+      "window_s": [
+        138.242337,
+        148.242337
+      ],
+      "commanded_duty": 0.006145549999999389,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.7029,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44095,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.09425,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00679733,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.68,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 5,
+      "window_s": [
+        1.5842554999999994,
+        11.5842555
+      ],
+      "commanded_duty": 0.03876795000000026,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.703,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44196,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 64.45306,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.0339888,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6814,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 6,
+      "window_s": [
+        87.1359925,
+        97.1359925
+      ],
+      "commanded_duty": 0.006382499999999425,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.689,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44196,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.20378,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.013595,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.68,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 7,
+      "window_s": [
+        156.1443755,
+        166.1443755
+      ],
+      "commanded_duty": 0.006382400000001098,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.689,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44095,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.20374,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.013595,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6801,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 8,
+      "window_s": [
+        150.2589755,
+        160.2589755
+      ],
+      "commanded_duty": 0.006145200000000272,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.703,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44196,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.09411,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00679733,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6796,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 9,
+      "window_s": [
+        153.259135,
+        163.259135
+      ],
+      "commanded_duty": 0.006350100000000225,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.229,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44343,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.34475,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00215988,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84177,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 10,
+      "window_s": [
+        156.2596155,
+        166.2596155
+      ],
+      "commanded_duty": 0.006375299999996286,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.229,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44343,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.34627,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00215988,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84177,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 11,
+      "window_s": [
+        0.45904149999999966,
+        10.4590415
+      ],
+      "commanded_duty": 0.019339150000000062,
+      "coil_ohm": 13.05,
+      "coil_H": 0.03,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.1524,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44038,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.62411,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00288057,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 6.58975,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 12,
+      "window_s": [
+        96.259361,
+        106.259361
+      ],
+      "commanded_duty": 0.006348450000000128,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.229,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44344,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.34465,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00215988,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84177,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 13,
+      "window_s": [
+        99.2503035,
+        109.2503035
+      ],
+      "commanded_duty": 0.006256399999999473,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2347,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44343,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.3391,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00215988,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84177,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 14,
+      "window_s": [
+        102.250624,
+        112.250624
+      ],
+      "commanded_duty": 0.006145399999999768,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.229,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44343,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.3324,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00215988,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84231,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 15,
+      "window_s": [
+        114.1533685,
+        124.1533685
+      ],
+      "commanded_duty": 0.006231699999999308,
+      "coil_ohm": 8.64,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2614,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44343,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.42676,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.0054635,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 9.94487,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "channel": 16,
+      "window_s": [
+        4.458784,
+        14.458784
+      ],
+      "commanded_duty": 0.015654849999999953,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.703,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44196,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 55.37405,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.0271896,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.68,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "passed": false,
+  "limitations": [
+    "Coil R/L approximations; 86 V high-line bound with 4.5 V gate and hot MOSFET fit",
+    "Commands assumed enabled; no credit for physical blanking",
+    "Temperature is steady repetition of worst 10 s window at 50 C ambient and 62 C/W, excludes mutual heating",
+    "Channels 17-28 motors/flashers excluded here; covered by generic decks only",
+    "No harness parasitics, avalanche SOA, fuse clearing or physical thermal correlation"
+  ]
+}

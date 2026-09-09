@@ -1,3 +1,4 @@
+import sys
 """Write the KiCad project: schematic sheets + project file; extract netlist json."""
 import os, json, sys
 sys.path.insert(0, os.path.dirname(__file__))
@@ -122,6 +123,8 @@ def write_project(sheets):
     json.dump(pro, open(os.path.join(OUT, f'{PROJECT}.kicad_pro'), 'w'), indent=2)
 
 if __name__ == '__main__':
+    if '--overwrite-derived-schematic' not in sys.argv:
+        raise SystemExit('Historical generator replaces schematic UUIDs and project rules. Use tools/export_release.py for the routed revision; explicit --overwrite-derived-schematic is required to regenerate.')
     root, sheets = write_schematics()
     nets = netlist(sheets)
     json.dump(nets, open(os.path.join(OUT, '.scratch', 'nets.json'), 'w'), indent=1)

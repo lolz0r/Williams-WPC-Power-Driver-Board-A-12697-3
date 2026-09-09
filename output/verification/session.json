@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-08",
+  "baseline_commit": "dfe4364",
+  "ngspice": "47",
+  "mame": "0.289",
+  "kicad": "10.0.6 (downloaded app on temporary mounted disk image; Homebrew cask install requires administrator password)",
+  "spice": {
+    "decks": 21,
+    "passing_checks": 211,
+    "failing_checks": 0,
+    "report": "spice/RESULTS.md"
+  },
+  "gate_regression_tests": 5,
+  "fresh_artifact_check": {
+    "netlisted_pins": 1333,
+    "net_mismatches": 0,
+    "component_field_mismatches": 44,
+    "report": "artifacts-fresh.json"
+  },
+  "mame_rom_check": "sttng_l7 ROM set not found; no gameplay replay performed",
+  "pcb_or_schematic_modified": false,
+  "kicad_drc": {
+    "report": "drc-libraries.json",
+    "warnings": 553,
+    "errors": 0,
+    "unconnected_items": 0,
+    "schematic_parity_warnings": 255,
+    "hole_spacing_warnings": 6,
+    "exit_code": 5
+  },
+  "kicad_erc": {
+    "report": "erc-full.json",
+    "errors": 0,
+    "custom_power_symbol_warnings": 47,
+    "exit_code": 5
+  }
+}

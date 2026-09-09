@@ -1,0 +1,35 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: cost-board high-power solenoid driver (sol 1-8) in the machine: 74hct574 -> 100r -> ipd90n10s4l06 dpak (10k pull-down) -> ae-23-800 coil (4.2 ohm, 12 mh) on the real "+50v" rail (~70 v dc), s3m tie-back, 40 ms pulse
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout v50                                         86
+stdout latch                                        0
+stdout a                                            0
+stdout g                                            0
+stdout out                                         86
+stdout outd                                        86
+stdout v50c                                        86
+stdout cl                                          86
+stdout lc#branch                         -1.17133e-09
+stdout vcoil#branch                       1.17133e-09
+stdout vdr#branch                         1.17143e-09
+stdout vl#branch                                    0
+stdout v50#branch                        -1.17133e-09
+ Reference value :  1.67262e-02
+stdout No. of Data Rows : 12895
+stdout icoil_max           =  2.22454e+01 at=  4.09956e-02
+stdout vout_on             =  2.59893e-01 from=  3.00000e-02 to=  4.00012e-02
+stdout vout_peak           =  8.76689e+01 at=  4.10121e-02
+stdout p_fet               =  5.78128e+00 from=  3.00000e-02 to=  4.00012e-02
+stdout e_pulse             =  2.07098e-01 from=  1.00000e-03 to=  4.15000e-02
+stdout icoil_off           =  2.72225e-05 at=  5.60122e-02
+stdout tj_rise_pulse = 3.106466e+00
+stdout p_avg_10pct = 5.781282e-01
+stdout p_avg_20pct = 1.156256e+00
+stdout tj_rise_10pct = 3.584395e+01
+stdout tj_rise_20pct = 7.168790e+01
+stdout tj_rise_20pct_pour = 6.937538e+01

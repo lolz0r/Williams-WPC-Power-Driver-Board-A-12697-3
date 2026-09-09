@@ -1,4 +1,4 @@
-Power-up / blanking sequence in the machine: the ~70 V, +18V and 6.8VAC rails are up from t=0, +5V comes up through the TPS54360B soft-start (2 ms ramp) at t=30 ms; BLANKING is an open-collector line from the CPU (2N3904, off during reset) pulled up by SR1 (4.7k) - it follows +5V up and stays HIGH until the CPU releases it at t=200 ms. Every latch is a 74HCT574 that powers up with a random content (worst case: all 1) and is tri-stated while /OE (= BLANKING) is above VCC/2; below VCC = 2 V an HCT output cannot drive. Paths: solenoid (IRLR3110Z + AE-23-800 on 70 V), G.I. (MMBT4401 + BTA16 macro + 6.8VAC string), lamp column (TBD62083A with its internal pull-down, IRFR5305 on +18V) with a row MOSFET that happens to be ON (74HCT74 random state). At t=200 ms the CPU pulls BLANKING low with the latches still holding 1 -> the outputs must then turn on (the path works); at 240 ms the CPU writes 0.
+Power-up / blanking sequence in the machine: the ~70 V, +18V and 6.8VAC rails are up from t=0, +5V comes up through the TPS54360B soft-start (2 ms ramp) at t=30 ms; BLANKING is an open-collector line from the CPU (2N3904, off during reset) pulled up by SR1 (4.7k) - it follows +5V up and stays HIGH until the CPU releases it at t=200 ms. Every latch is a 74HCT574 that powers up with a random content (worst case: all 1) and is tri-stated while /OE (= BLANKING) is above VCC/2; below VCC = 2 V an HCT output cannot drive. Paths: solenoid (IPD90N10S4L06 + AE-23-800 on 70 V), G.I. (MMBT4401 + BTA16 macro + 6.8VAC string), lamp column (TBD62083A with its internal pull-down, IRFR5305 on +18V) with a row MOSFET that happens to be ON (74HCT74 random state). At t=200 ms the CPU pulls BLANKING low with the latches still holding 1 -> the outputs must then turn on (the path works); at 240 ms the CPU writes 0.
 .include ../models.lib
 V50 v50 0 70
 V18 v18 0 18
@@ -20,7 +20,7 @@ Rq lq latch 40
 * ---- solenoid path
 Rg latch g 100
 Rpd g 0 10k
-XQ out g 0 IRLR3110Z
+XQ out g 0 IPD90N10S4L06
 Vcoil v50 v50c 0
 Lc out cl 12m
 Rc cl v50c 4.2

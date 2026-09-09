@@ -1,0 +1,65 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: cost-board lamp matrix: column irfr5305 p-dpak (tbd62083a sink, 1k/1.5k gate divider) + row irlr024n dpak with 0.22r sense and lm339 over-current shutdown
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vcc                                          5
+stdout v18                                         18
+stdout colin                                        0
+stdout xu19.g                                       0
+stdout ulnout                                      18
+stdout cg                                          18
+stdout col                                9.92914e-10
+stdout row                                 4.0914e-11
+stdout d                                            0
+stdout clk                                          0
+stdout d_n                                          5
+stdout vls                                        4.6
+stdout lca                                    3.34192
+stdout lcb                                  0.0456057
+stdout lba                                  0.0456058
+stdout lbb                                   0.665168
+stdout s1b                                5.59095e-10
+stdout lx                                  0.00201114
+stdout dn_b                                         5
+stdout cp                                 5.02276e-08
+stdout s2b                                5.02552e-08
+stdout d2_b                                   4.33028
+stdout cp2                                    4.96268
+stdout s4b                                   0.650776
+stdout ly                                   0.0179282
+stdout s3b                                6.93146e-09
+stdout clr_n                                  4.99995
+stdout pre_b                                  4.99995
+stdout crp                                5.69514e-08
+stdout lrb                                 6.3703e-08
+stdout qn_a                                       4.6
+stdout eqn_int1                                   4.6
+stdout g                                      4.55446
+stdout e                                  2.99199e-11
+stdout es                                 2.99199e-11
+stdout s                                  2.99199e-11
+stdout ref                                    1.29012
+stdout n1                                    0.645061
+stdout beqn#branch                                  0
+stdout bdn#branch                          -1.001e-11
+stdout eqn#branch                        -0.000455446
+stdout vs#branch                             1.36e-10
+stdout vls#branch                          -0.0012367
+stdout vclk#branch                        7.49055e-13
+stdout vd#branch                          0.000433028
+stdout vcol#branch                                  0
+stdout v18#branch                        -1.53695e-10
+stdout vcc#branch                         -0.00507037
+ Reference value :  0.00000e+00
+stdout No. of Data Rows : 8338
+stdout irow_normal         =  2.43844e+00 at=  1.00356e-03
+stdout vsense_normal       =  5.02595e-01 at=  1.42572e-03
+stdout vref                =  1.29012e+00 from=  1.00000e-03 to=  2.00018e-02
+stdout vcol_drop           =  1.20460e-01 from=  2.00000e-03 to=  2.90072e-03
+stdout vrow_on             =  6.22810e-01 from=  2.00000e-03 to=  2.90072e-03
+stdout clr_min             =  4.99937e+00 at=  1.69101e-02
+stdout vgs_col             =  -1.07951e+01 at=  2.89072e-03
