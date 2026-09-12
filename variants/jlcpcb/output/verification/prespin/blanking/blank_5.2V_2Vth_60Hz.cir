@@ -1,0 +1,83 @@
+Assert BLANKING at 15 ms under active loads; blank_5.2V_2Vth_60Hz
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+V50 v50 0 86
+V18 v18 0 30
+Vac ac 0 SIN(0 11.1 60)
+* +5V rail: 0 until 30 ms, then a 2 ms soft-start ramp to 5 V
+Vvcc vcc 0 5.2
+* BLANKING: SR1 4.7k to VCC, CPU open collector (2N3904) closes at 200 ms
+Rsr1 vcc blank 4.7k
+Scpu blank 0 cpu 0 SWCPU
+.model SWCPU SW(Ron=25 Roff=1e9 Vt=.5 Vh=.1)
+Vcpu cpu 0 PWL(0 5 15m 5 15.00002m 0 30m 0 30.00002m 5)
+Cblank blank 0 280p
+* latch data (what the latch holds): 1 until 240 ms, then 0
+Bdat dat 0 V = (time < 25m) ? 1 : 0
+* 74HCT574 behavioural output: driven to dat*VCC through 40 R only when VCC > 2 V and /OE < VCC/2, otherwise high impedance
+Ben en 0 V = (v(blank) < 2.0) ? 1 : 0
+Bq q 0 V = v(dat) * v(vcc)
+Sq q lq en 0 SWL
+Rq lq latch 40
+.model SWL SW(Ron=0.01 Roff=1e9 Vt=0.5 Vh=0.1)
+* ---- solenoid path
+Rg latch g 100
+Rpd g 0 10k
+Vsense out drainq 0
+XQ drainq g 0 IPD90N10S4L06
+Vcoil v50 v50c 0
+Lc out cl 12m
+Rc cl v50c 4.2
+Dfb out v50 DS3M
+* ---- G.I. path (latch shared)
+Rb latch b 470
+Rpdb b 0 10k
+Q1 vcc b e QMMBT4401
+Vg e eg 0
+R27 eg gt 27
+Dg gt 0 DGATE
+Rgk gt 0 200
+.model DGATE D(Is=1e-9 n=2 Rs=5)
+Vmt mt2 mt2i 0
+Btri mt2i 0 I = v(mt2i) * ( max((abs(i(Vg)) > 0.05), (v(on) > 0.5)) > 0.5 ? 20 : 1e-6 )
+Bon onr 0 V = (abs(i(Vmt)) > 0.05) ? 1 : 0
+Ron onr on 1
+Con on 0 0.5u
+Vstr ac acs 0
+Rstr acs mt2 1.4
+* ---- lamp column path: latch (tri-stated) -> TBD62083A input (internal pull-down, modelled 100k) -> IRFR5305 column; row MOSFET forced ON (random 74HCT74 state); 8 hot lamps = 3 ohm
+Rtbd latch tin 0
+Rtbdpd tin 0 100k
+XU19 tin ulnout TBD62083CH
+Rser ulnout cg 1k
+Rgs cg v18 1.5k
+XQC col cg v18 IRFR5305
+Vcol col colx 0
+Rlamps colx rowd 3
+Vrowg rg 0 4.6
+Rrg rg rgate 100
+XQR rowd rgate re IRLR024N
+Rsense re 0 0.22
+
+.save v(blank) v(g) v(cg) v(out) i(Vsense) i(Vcol) i(Vstr)
+.options method=gear reltol=.002
+.tran 1u 40m 0 500n
+.control
+run
+let ifet=abs(i(Vsense))
+let icol=abs(i(Vcol))
+let igi=abs(i(Vstr))
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran fet_on MAX ifet from=10m to=14m
+meas tran col_on MAX icol from=10m to=14m
+meas tran gi_on MAX igi from=1m to=14m
+meas tran gate_off MAX v(g) from=15.5m to=29m
+meas tran fet_off MAX ifet from=15.5m to=29m
+meas tran col_off MAX icol from=15.5m to=29m
+meas tran gi_off MAX igi from=27m to=29m
+meas tran fet_restart MAX ifet from=31m to=40m
+meas tran col_restart MAX icol from=31m to=40m
+meas tran gi_restart MAX igi from=31m to=40m
+meas tran blank_high MIN v(blank) from=15.01m to=29m
+.endc
+.end

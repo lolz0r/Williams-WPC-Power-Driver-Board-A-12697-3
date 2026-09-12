@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "file": "matrix_backward_euler_0.5us.json",
+      "step_us": 0.5,
+      "completed": false,
+      "passed": false,
+      "sim_end_s": 0.02438948,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.0243895, timestep = 6.25e-19: trouble with node \"row0q\"",
+        "stderr run simulation(s) aborted"
+      ]
+    },
+    {
+      "file": "matrix_backward_euler_1us.json",
+      "step_us": 1.0,
+      "completed": false,
+      "passed": false,
+      "sim_end_s": 0.00806098,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.00806098, timestep = 1.25e-18: trouble with node \"row0q\"",
+        "stderr run simulation(s) aborted"
+      ]
+    }
+  ],
+  "convergence_established": false,
+  "pcb_changed": false,
+  "fab_ready": false,
+  "files_sha256": {
+    "matrix_backward_euler_0.5us.cir": "332bb36da489e3a4cb1d1f785e667315092f61d00db742d36cdf774d40a60662",
+    "matrix_backward_euler_0.5us.json": "99c7baf104dc91a76dbb281dd8fca1e8e8d4fe75333a30b95d4cfba8e4643af6",
+    "matrix_backward_euler_0.5us.log": "635654d1ecda99d608ed76dd66ef7d5bb24d4d8920eff45cb78aa728da46fc5a",
+    "matrix_backward_euler_0.5us.progress": "67bf89fc2b5a1ebbb72fcd8f508b2b28ca7a6c9bcf0529c9bf72be27c8eb05cc",
+    "matrix_backward_euler_0.5us.run.json": "7a825610739e0397a46e6cdaba7584ed469d73b7a884e0e5609502c9c6bad2d6",
+    "matrix_backward_euler_0.5us.worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "matrix_backward_euler_1us.cir": "a8fe85feda5e3522c49f88866a3e17bf3230483f4b5081d970c1e2768e9d1282",
+    "matrix_backward_euler_1us.json": "52611b4dbd466cf0a796079313e2b3ccf6654515e1d4b003cba896b5ec04e40b",
+    "matrix_backward_euler_1us.log": "48a2272cc048af10c0e6de39cece7a11932bbe1fd535ed6ec8a4d06044e10d94",
+    "matrix_backward_euler_1us.progress": "b37b5f4c3d84979394939befc1e419a268a84f661ca128663a750ba451bee59b",
+    "matrix_backward_euler_1us.run.json": "f0fcf5f58bc4d7c7bc68bc779a37c09bdece21660c3f605429b16c0710fb8ddb",
+    "matrix_backward_euler_1us.worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "script_sha256": "4436d63e01c11be90e5fd23c936eeb42f49d8f3d223d06636a40ab3a0f569fc3"
+}

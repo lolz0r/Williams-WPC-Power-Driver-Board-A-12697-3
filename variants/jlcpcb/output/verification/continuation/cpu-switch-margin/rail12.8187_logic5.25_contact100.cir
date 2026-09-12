@@ -1,0 +1,35 @@
+STTNG CPU switch voltage margin rail12.8187_logic5.25_contact100; manual printed 3-2 and 3-3
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+V12 twelve 0 12.8187381
+V5 five 0 5.25
+Vcolumncmd ccmd 0 PULSE(0 5 1m 20n 20n 1m 3m)
+Rcdriver ccmd cin 30
+Xcolumn cin column ULN2803CH
+Rcolumn twelve column 1k
+Ccolumn column 0 470p
+Rpull twelve row 1.2k
+Crow row 0 470p
+Rsense row sense 1k
+Dcpu row switch_wire D1N4148
+Rcontact switch_wire sw 100
+Dplayfield sw column D1N4148
+* Harness capacitance is a sensitivity assumption in addition to the manual.
+Charness switch_wire 0 2n
+Xcomparator sense five out LM339
+Routput five out 10k
+.save v(row) v(sense) v(out) v(column)
+.options method=gear reltol=.0001
+.tran 100n 3m 0 100n
+.control
+run
+let sim_end=time[length(time)-1]
+print sim_end
+let margin_open=v(sense)-5.25
+let margin_closed=5.25-v(sense)
+meas tran input_open_margin MIN margin_open from=500u to=900u
+meas tran input_closed_margin MIN margin_closed from=1100u to=1900u
+meas tran output_high MIN v(out) from=500u to=900u
+meas tran output_low MAX v(out) from=1100u to=1900u
+meas tran return_high MIN v(out) from=2100u to=2900u
+.endc
+.end

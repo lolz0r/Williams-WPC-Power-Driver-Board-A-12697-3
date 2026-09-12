@@ -1,0 +1,51 @@
+{
+  "name": "12v_vin13.0_minimum_limit",
+  "checks": {
+    "output_ss": {
+      "value": 11.9414,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": true
+    },
+    "output_peak": {
+      "value": 12.0,
+      "min": 0,
+      "max": 12.6,
+      "passed": true
+    },
+    "step_min": {
+      "value": 11.8368,
+      "min": 10.8,
+      "max": 12.6,
+      "passed": true
+    },
+    "removal_peak": {
+      "value": 11.9993,
+      "min": 0,
+      "max": 12.6,
+      "passed": true
+    },
+    "highload_ss": {
+      "value": 11.8714,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 4.53468,
+      "min": 0,
+      "max": 6.8,
+      "passed": true
+    },
+    "inductor_running_peak": {
+      "value": 2.18079,
+      "min": 0,
+      "max": 4.5,
+      "passed": true
+    }
+  },
+  "errors": [],
+  "minimum_current_limit_sensitivity": true,
+  "deck_sha256": "c3accac0baa82bf42c3abcca89abec1b7e685fda5e9ad51c9dc2725f3c415e41",
+  "passed": true
+}

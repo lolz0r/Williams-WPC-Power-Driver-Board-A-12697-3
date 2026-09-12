@@ -1,0 +1,335 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/followup/matrix-euler/matrix_backward_euler_0.5us.cir",
+  "deck_sha256": "332bb36da489e3a4cb1d1f785e667315092f61d00db742d36cdf774d40a60662",
+  "elapsed_s": 37.87013317999663,
+  "wall_limit_s": 180.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [
+    "stderr doAnalyses: TRAN:  Timestep too small; time = 0.0243895, timestep = 6.25e-19: trouble with node \"row0q\"",
+    "stderr run simulation(s) aborted"
+  ],
+  "measurements": {
+    "sim_end": 0.02438948,
+    "col0_peak": 20.1321,
+    "row0_peak": 2.91785,
+    "row0_clear": 4.99995,
+    "col0_power": 0.0,
+    "row0_power": 0.0,
+    "col0_tj": 50.0,
+    "row0_tj": 50.0,
+    "col1_peak": 20.1718,
+    "row1_peak": 2.91785,
+    "row1_clear": 4.99995,
+    "col1_power": 0.0,
+    "row1_power": 0.0,
+    "col1_tj": 50.0,
+    "row1_tj": 50.0,
+    "col2_peak": 20.1715,
+    "row2_peak": 2.91785,
+    "row2_clear": 4.99995,
+    "col2_power": 0.0,
+    "row2_power": 0.0,
+    "col2_tj": 50.0,
+    "row2_tj": 50.0,
+    "col3_peak": 4.99447,
+    "row3_peak": 2.91785,
+    "row3_clear": 4.99995,
+    "col3_power": 0.0,
+    "row3_power": 0.0,
+    "col3_tj": 50.0,
+    "row3_tj": 50.0,
+    "col4_peak": 20.2196,
+    "row4_peak": 2.91785,
+    "row4_clear": 4.99995,
+    "col4_power": 0.0,
+    "row4_power": 0.0,
+    "col4_tj": 50.0,
+    "row4_tj": 50.0,
+    "col5_peak": 20.1724,
+    "row5_peak": 2.91785,
+    "row5_clear": 4.99995,
+    "col5_power": 0.0,
+    "row5_power": 0.0,
+    "col5_tj": 50.0,
+    "row5_tj": 50.0,
+    "col6_peak": 18.0915,
+    "row6_peak": 3.72769,
+    "row6_clear": 4.99995,
+    "col6_power": 0.0,
+    "row6_power": 0.0,
+    "col6_tj": 50.0,
+    "row6_tj": 50.0,
+    "col7_peak": 15.6599,
+    "row7_peak": 3.72778,
+    "row7_clear": 4.99995,
+    "col7_power": 0.0,
+    "row7_power": 0.0,
+    "col7_tj": 50.0,
+    "row7_tj": 50.0
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "sim_end": {
+      "min": 0.36999990000000144,
+      "max": 0.37000010000000144,
+      "value": 0.02438948,
+      "passed": false
+    },
+    "col0_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 20.1321,
+      "passed": true
+    },
+    "row0_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 2.91785,
+      "passed": true
+    },
+    "row0_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col0_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row0_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "col1_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 20.1718,
+      "passed": true
+    },
+    "row1_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 2.91785,
+      "passed": true
+    },
+    "row1_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col1_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row1_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "col2_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 20.1715,
+      "passed": true
+    },
+    "row2_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 2.91785,
+      "passed": true
+    },
+    "row2_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col2_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row2_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "col3_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 4.99447,
+      "passed": true
+    },
+    "row3_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 2.91785,
+      "passed": true
+    },
+    "row3_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col3_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row3_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "col4_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 20.2196,
+      "passed": true
+    },
+    "row4_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 2.91785,
+      "passed": true
+    },
+    "row4_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col4_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row4_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "col5_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 20.1724,
+      "passed": true
+    },
+    "row5_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 2.91785,
+      "passed": true
+    },
+    "row5_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col5_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row5_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "col6_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 18.0915,
+      "passed": true
+    },
+    "row6_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 3.72769,
+      "passed": true
+    },
+    "row6_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col6_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row6_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "col7_peak": {
+      "min": 0,
+      "max": 31,
+      "value": 15.6599,
+      "passed": true
+    },
+    "row7_peak": {
+      "min": 0,
+      "max": 8,
+      "value": 3.72778,
+      "passed": true
+    },
+    "row7_clear": {
+      "min": 2.4,
+      "max": 5.1,
+      "value": 4.99995,
+      "passed": true
+    },
+    "col7_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    },
+    "row7_tj": {
+      "min": 0,
+      "max": 125,
+      "value": 50.0,
+      "passed": true
+    }
+  },
+  "passed": false,
+  "method": "backward Euler: method=trap maxord=1",
+  "step_us": 0.5,
+  "pcb_changed": false,
+  "device_values_and_command_points_unchanged": true,
+  "base_deck_sha256": "3cc9da17c9a810c52f301fc57da596eb91321ed1adbf1101ebd786bdf0f8ab6f",
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "source": "https://ngspice.sourceforge.io/docs/ngspice-44-manual.pdf",
+  "limitations": [
+    "First-order numerical damping can suppress transients; timestep convergence and cross-method agreement must be assessed",
+    "No device, command-edge, leakage-shunt or board change; original generic device models retained",
+    "Completion and screening do not qualify the real assembly or erase previous failed simulations"
+  ]
+}

@@ -1,0 +1,24 @@
+# Local downloads, model/build checkouts and intermediate board experiments.
+/.scratch/
+/.venv/
+/snap/
+*.kicad_prl
+/tools/pinmame/play
+
+# Reproducible bulk traces and emulator state; retain reports, decks and plots.
+/output/verification/spice/*.csv
+/output/verification/revision/spice/*.csv
+/output/verification/mame/*/bus.csv
+/output/verification/mame/*/nvram/
+/output/verification/mame/*/cfg/
+/output/verification/pinmame/*/bus.csv
+/output/verification/pinmame/*/nvram/
+/output/verification/pinmame/*/cfg/
+
+# Broad catalog-query caches. Selected-part snapshots remain under research/jlcpcb/.
+/research/catalog-index.json
+/research/catalog-search/
+
+# Superseded packaged revision; keep current JLC-2 review and native archives.
+/output/JLC-1-review.zip
+/output/JLC-1-native-cad.zip

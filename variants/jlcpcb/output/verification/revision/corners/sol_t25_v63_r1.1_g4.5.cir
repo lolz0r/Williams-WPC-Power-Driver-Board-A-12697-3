@@ -1,0 +1,42 @@
+Cost-board high-power solenoid driver (sol 1-8) in the machine: 74HCT574 -> 100R -> IPD90N10S4L06 DPAK (10k pull-down) -> AE-23-800 coil (4.2 ohm, 12 mH) on the real "+50V" rail (~70 V DC), S3M tie-back, 40 ms pulse
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+V50 v50 0 63
+VL latch 0 PULSE(0 4.5 1m 20n 20n 40m 100m)
+RL latch a 40
+Rg a g 100
+Rpd g 0 10k
+Vdr out outd 0
+XQ outd g 0 IPD90N10S4L06
+Vcoil v50 v50c 0
+Lc out cl 12m
+Rc cl v50c 4.710783000000001
+Dfb out v50 DS3M
+.tran 5u 60m
+.control
+run
+let icoil = i(Vcoil)
+let ifet = i(Vdr)
+let pfet = v(outd)*ifet
+meas tran icoil_max MAX icoil from=1m to=41m
+meas tran vout_on AVG v(outd) from=30m to=40m
+meas tran vout_peak MAX v(out) from=41m to=60m
+meas tran p_fet AVG pfet from=30m to=40m
+meas tran e_pulse INTEG pfet from=1m to=41.5m
+meas tran icoil_off MAX icoil from=56m to=60m
+let tj_rise_pulse = e_pulse / 0.04 * 0.6
+print tj_rise_pulse
+* Minimum-footprint datasheet RthJA = 62 C/W; board/enclosure correlation remains necessary.
+* The 60 C/W result is a sensitivity case, not a verified drain-pour specification.
+let p_avg_10pct = p_fet * 0.1
+let p_avg_20pct = p_fet * 0.2
+let tj_rise_10pct = p_avg_10pct * 62
+let tj_rise_20pct = p_avg_20pct * 62
+let tj_rise_20pct_pour = p_avg_20pct * 60
+print p_avg_10pct
+print p_avg_20pct
+print tj_rise_10pct
+print tj_rise_20pct
+print tj_rise_20pct_pour
+
+.endc
+.end

@@ -1,0 +1,60 @@
+TI TPS54360 transient model, 12v actual compensation, Vin=20.69
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/.scratch/vendor-models/SLVMCT7/TPS54360_PSPICE_TRANS/TPS54360_TRANS.LIB
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+
+Cin vinf 0 20u
+XU boot comp en 0 sw rt vinf fb 0 TPS54360_TRANS
+Ren1 vinf en 130k
+Ren2 en 0 20k
+Rrt rt 0 240k
+Cboot boot sw 100n
+Rfb1 vout fb 28k
+Rfb2 fb 0 2k
+Rc comp cc 42.2k
+Cc cc 0 100n
+Cp comp 0 390p
+Dcatch 0 sw DB560C
+L1 sw linductor 10u
+Rdcr linductor vout .025
+Cout1 vout c1 330u IC=12.0
+Resr1 c1 0 .045
+Cout2 vout c2 330u IC=12.0
+Resr2 c2 0 .045
+Cc3 vout 0 10u IC=12.0
+Rload vout 0 16
+
+
+* AC secondary, winding resistance, four Schottky diodes and reservoir.
+Bsecondary secp secn V=16.92*sin(2*3.141592653589793*60*time)*min(time/100u,1)
+Rsec1 secp acp .05
+Rsec2 secn acn .05
+Dbridge1 acp vinf DSCH20100
+Dbridge2 acn vinf DSCH20100
+Dbridge3 0 acp DSCH20100
+Dbridge4 0 acn DSCH20100
+Creservoir stored 0 16000u
+Rreservoir stored vinf .05
+Rrawbleed vinf 0 5000
+Rlamps vinf 0 2.5
+
+.save v(vout) v(vinf) v(en) v(sw) i(L1) @d.xu.d_u8_d13[id]
+.options reltol=.005 abstol=1u vntol=1m method=gear klu itl4=100
+.tran 1u 0.03 0 250n uic
+.control
+run
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran output_peak MAX v(vout)
+meas tran output_min MIN v(vout)
+meas tran inductor_peak MAX i(L1)
+meas tran inductor_min MIN i(L1)
+meas tran body_reverse_peak MAX @d.xu.d_u8_d13[id]
+meas tran input_min MIN v(vinf)
+meas tran before_loss AVG v(vout) from=20m to=24m
+meas tran recovery AVG v(vout) from=0.025 to=0.03
+set wr_singlescale
+set wr_vecnames
+linearize v(vout) v(vinf) v(en) i(L1)
+wrdata /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prespin/power-sequence/12v_precharged_output_0.75A_250n.csv v(vout) v(vinf) v(en) i(L1)
+.endc
+.end

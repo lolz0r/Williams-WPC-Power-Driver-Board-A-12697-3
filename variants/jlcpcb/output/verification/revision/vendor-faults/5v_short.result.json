@@ -1,0 +1,38 @@
+{
+  "name": "5v_short",
+  "checks": {
+    "output_peak": {
+      "value": 5.1647,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "output_min": {
+      "value": 1.09327e-08,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "recovery": {
+      "value": 5.06796,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 5.64579,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -0.00645387,
+      "min": -1,
+      "max": 10,
+      "passed": true
+    }
+  },
+  "errors": [],
+  "deck_sha256": "39043dd701822097fd3f113ebe94de18a9649529cd156317419fb2ed72b3a5b1",
+  "passed": true
+}

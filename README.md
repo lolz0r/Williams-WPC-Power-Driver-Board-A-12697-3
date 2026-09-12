@@ -1,5 +1,7 @@
 # Williams WPC power/driver replacement
 
+The separate [JLC-2 electronics redesign](variants/jlcpcb/README.md) includes JLCPCB sourcing, revised native CAD and fresh Linux SPICE/MAME verification. Its status and exports are maintained independently from the parent revision below.
+
 This project develops a modern replacement for the Williams **A-12697-3** power
 and driver board, with **Star Trek: The Next Generation L7** as the current
 compatibility and emulation target. It provides rectified supplies, 5 V and 12 V

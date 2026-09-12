@@ -1,0 +1,640 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "delay_ns": 0.001,
+      "ribbon_pF": 120,
+      "checks": {
+        "g_w1": {
+          "value": 4.53648,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "out_w1": {
+          "value": 0.0796054,
+          "min": 0.0,
+          "max": 1.0,
+          "passed": true
+        },
+        "g_w0": {
+          "value": 0.0913012,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "out_w0": {
+          "value": 71.1244,
+          "min": 60.0,
+          "max": 80.0,
+          "passed": true
+        },
+        "g_w1b": {
+          "value": 4.47509,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "ioe_on": {
+          "value": 0.000453648,
+          "min": 1e-05,
+          "max": 0.2,
+          "passed": true
+        },
+        "ioe_unplug": {
+          "value": 7.11361e-10,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_unplug": {
+          "value": 4.13163,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "blank_unplug": {
+          "value": 4.99998,
+          "min": 4.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "ioe_blank": {
+          "value": 1.27104e-09,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_blank": {
+          "value": 3.53682,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "g_w0b": {
+          "value": 0.0767443,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "rib_low": {
+          "value": 0.0275077,
+          "min": 0.0,
+          "max": 0.8,
+          "passed": true
+        },
+        "rib_high": {
+          "value": 3.44341,
+          "min": 2.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "t_setup": {
+          "value": 1.687522e-07,
+          "min": 2.5e-08,
+          "max": 1e-06,
+          "passed": true
+        },
+        "t_hold": {
+          "value": 1.294319e-07,
+          "min": 5e-09,
+          "max": 1e-06,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "8eec13b4b1194dee6d8e5daf74ee14cdffcdab1e70aa427fb04de6871b1b3791"
+    },
+    {
+      "delay_ns": 0.001,
+      "ribbon_pF": 200,
+      "checks": {
+        "g_w1": {
+          "value": 4.53648,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "out_w1": {
+          "value": 0.0796054,
+          "min": 0.0,
+          "max": 1.0,
+          "passed": true
+        },
+        "g_w0": {
+          "value": 0.0913012,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "out_w0": {
+          "value": 71.1244,
+          "min": 60.0,
+          "max": 80.0,
+          "passed": true
+        },
+        "g_w1b": {
+          "value": 4.47497,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "ioe_on": {
+          "value": 0.000453648,
+          "min": 1e-05,
+          "max": 0.2,
+          "passed": true
+        },
+        "ioe_unplug": {
+          "value": 7.11364e-10,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_unplug": {
+          "value": 4.13163,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "blank_unplug": {
+          "value": 4.99998,
+          "min": 4.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "ioe_blank": {
+          "value": 1.27115e-09,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_blank": {
+          "value": 3.5367,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "g_w0b": {
+          "value": 0.0769518,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "rib_low": {
+          "value": 0.0277326,
+          "min": 0.0,
+          "max": 0.8,
+          "passed": true
+        },
+        "rib_high": {
+          "value": 3.44544,
+          "min": 2.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "t_setup": {
+          "value": 1.658875e-07,
+          "min": 2.5e-08,
+          "max": 1e-06,
+          "passed": true
+        },
+        "t_hold": {
+          "value": 1.919771e-07,
+          "min": 5e-09,
+          "max": 1e-06,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "4d4aa5c4f1c7ec91f42b9166cc0deee5a0b56bb11abdcf71a1668cc3721051a0"
+    },
+    {
+      "delay_ns": 32,
+      "ribbon_pF": 120,
+      "checks": {
+        "g_w1": {
+          "value": 4.53648,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "out_w1": {
+          "value": 0.0796054,
+          "min": 0.0,
+          "max": 1.0,
+          "passed": true
+        },
+        "g_w0": {
+          "value": 0.0913012,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "out_w0": {
+          "value": 71.1244,
+          "min": 60.0,
+          "max": 80.0,
+          "passed": true
+        },
+        "g_w1b": {
+          "value": 4.47486,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "ioe_on": {
+          "value": 0.000453648,
+          "min": 1e-05,
+          "max": 0.2,
+          "passed": true
+        },
+        "ioe_unplug": {
+          "value": 7.11343e-10,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_unplug": {
+          "value": 4.13159,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "blank_unplug": {
+          "value": 4.99998,
+          "min": 4.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "ioe_blank": {
+          "value": 1.27116e-09,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_blank": {
+          "value": 3.53669,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "g_w0b": {
+          "value": 0.0767448,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "rib_low": {
+          "value": 0.0275078,
+          "min": 0.0,
+          "max": 0.8,
+          "passed": true
+        },
+        "rib_high": {
+          "value": 3.44341,
+          "min": 2.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "t_setup": {
+          "value": 1.365472e-07,
+          "min": 2.5e-08,
+          "max": 1e-06,
+          "passed": true
+        },
+        "t_hold": {
+          "value": 1.611405e-07,
+          "min": 5e-09,
+          "max": 1e-06,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "4dcf4c7517aee2245f96881c9243d6dc9c8388d7a3307652ba363db007d33e44"
+    },
+    {
+      "delay_ns": 32,
+      "ribbon_pF": 200,
+      "checks": {
+        "g_w1": {
+          "value": 4.53648,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "out_w1": {
+          "value": 0.0796054,
+          "min": 0.0,
+          "max": 1.0,
+          "passed": true
+        },
+        "g_w0": {
+          "value": 0.0913012,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "out_w0": {
+          "value": 71.1244,
+          "min": 60.0,
+          "max": 80.0,
+          "passed": true
+        },
+        "g_w1b": {
+          "value": 4.47449,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "ioe_on": {
+          "value": 0.000453648,
+          "min": 1e-05,
+          "max": 0.2,
+          "passed": true
+        },
+        "ioe_unplug": {
+          "value": 7.11439e-10,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_unplug": {
+          "value": 4.13176,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "blank_unplug": {
+          "value": 4.99998,
+          "min": 4.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "ioe_blank": {
+          "value": 1.27116e-09,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_blank": {
+          "value": 3.53669,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "g_w0b": {
+          "value": 0.0767693,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "rib_low": {
+          "value": 0.0277327,
+          "min": 0.0,
+          "max": 0.8,
+          "passed": true
+        },
+        "rib_high": {
+          "value": 3.44544,
+          "min": 2.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "t_setup": {
+          "value": 1.358865e-07,
+          "min": 2.5e-08,
+          "max": 1e-06,
+          "passed": true
+        },
+        "t_hold": {
+          "value": 2.239761e-07,
+          "min": 5e-09,
+          "max": 1e-06,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "8b9ef8fd3c9746267180236483136850161a5bcbdecd3eda5d00a9b980fe1495"
+    },
+    {
+      "delay_ns": 53,
+      "ribbon_pF": 120,
+      "checks": {
+        "g_w1": {
+          "value": 4.53648,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "out_w1": {
+          "value": 0.0796054,
+          "min": 0.0,
+          "max": 1.0,
+          "passed": true
+        },
+        "g_w0": {
+          "value": 0.0913012,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "out_w0": {
+          "value": 71.1244,
+          "min": 60.0,
+          "max": 80.0,
+          "passed": true
+        },
+        "g_w1b": {
+          "value": 4.47474,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "ioe_on": {
+          "value": 0.000453648,
+          "min": 1e-05,
+          "max": 0.2,
+          "passed": true
+        },
+        "ioe_unplug": {
+          "value": 7.11325e-10,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_unplug": {
+          "value": 4.13156,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "blank_unplug": {
+          "value": 4.99998,
+          "min": 4.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "ioe_blank": {
+          "value": 1.27116e-09,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_blank": {
+          "value": 3.53669,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "g_w0b": {
+          "value": 0.0767462,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "rib_low": {
+          "value": 0.0275078,
+          "min": 0.0,
+          "max": 0.8,
+          "passed": true
+        },
+        "rib_high": {
+          "value": 3.44341,
+          "min": 2.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "t_setup": {
+          "value": 1.157716e-07,
+          "min": 2.5e-08,
+          "max": 1e-06,
+          "passed": true
+        },
+        "t_hold": {
+          "value": 1.824309e-07,
+          "min": 5e-09,
+          "max": 1e-06,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "0f8c62170a5bbab8250476341fa7a92e8a77504b465e4221e908ba5c6a59da6b"
+    },
+    {
+      "delay_ns": 53,
+      "ribbon_pF": 200,
+      "checks": {
+        "g_w1": {
+          "value": 4.53648,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "out_w1": {
+          "value": 0.0796054,
+          "min": 0.0,
+          "max": 1.0,
+          "passed": true
+        },
+        "g_w0": {
+          "value": 0.0913012,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "out_w0": {
+          "value": 71.1244,
+          "min": 60.0,
+          "max": 80.0,
+          "passed": true
+        },
+        "g_w1b": {
+          "value": 4.47466,
+          "min": 4.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "ioe_on": {
+          "value": 0.000453648,
+          "min": 1e-05,
+          "max": 0.2,
+          "passed": true
+        },
+        "ioe_unplug": {
+          "value": 7.11332e-10,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_unplug": {
+          "value": 4.13157,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "blank_unplug": {
+          "value": 4.99998,
+          "min": 4.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "ioe_blank": {
+          "value": 1.27113e-09,
+          "min": 0.0,
+          "max": 1e-06,
+          "passed": true
+        },
+        "g_blank": {
+          "value": 3.53672,
+          "min": 0.0,
+          "max": 5.0,
+          "passed": true
+        },
+        "g_w0b": {
+          "value": 0.0769593,
+          "min": 0.0,
+          "max": 0.3,
+          "passed": true
+        },
+        "rib_low": {
+          "value": 0.0277296,
+          "min": 0.0,
+          "max": 0.8,
+          "passed": true
+        },
+        "rib_high": {
+          "value": 3.44544,
+          "min": 2.0,
+          "max": 5.5,
+          "passed": true
+        },
+        "t_setup": {
+          "value": 1.128495e-07,
+          "min": 2.5e-08,
+          "max": 1e-06,
+          "passed": true
+        },
+        "t_hold": {
+          "value": 2.451881e-07,
+          "min": 5e-09,
+          "max": 1e-06,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "6331bec5b53147c7f81e16a4183f14698d33eb047cf3bd304f9b0fc46d9ef6ff"
+    }
+  ],
+  "sources": [
+    "https://www.ti.com/lit/ds/symlink/sn74hct240.pdf",
+    "https://www.ti.com/lit/ds/symlink/sn74hct574.pdf"
+  ],
+  "limitations": "Behavioral output impedance and logic model; board/harness load and gate-drive waveforms need physical correlation. 150 pF timing rating bounds logic input bus; MOSFET gate load is modeled explicitly."
+}

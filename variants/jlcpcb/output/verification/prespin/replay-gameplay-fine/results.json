@@ -1,0 +1,141 @@
+{
+  "method": "trap",
+  "reltol": 0.002,
+  "max_step_us": 2.5,
+  "requested_channels": [
+    1,
+    15
+  ],
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "cases": [
+    {
+      "diode_terminal_forward_average_A": 0.640972,
+      "deck_sha256": "7e9ab14f18b8d9bca5866c3a8958f7d2caec4b25c7a95133f36c419e3421c44d",
+      "channel": 1,
+      "window_s": [
+        4.215159,
+        14.215159
+      ],
+      "commanded_duty": 0.03549425000000026,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6885,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.49681,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 76.5346732,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.215093,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 69.2232,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.676,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.2299999,
+          "max": 10.230000099999998,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.82201,
+      "deck_sha256": "13a82027b77f67877b37811d9383ad17fc9a14f07c2eef3642e8c8bb457ade29",
+      "channel": 15,
+      "window_s": [
+        72.675057833,
+        82.675057833
+      ],
+      "commanded_duty": 0.10146424999997805,
+      "coil_ohm": 8.64,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2613,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.50203,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 60.424804,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.436333,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.0417,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 9.93936,
+          "min": 0,
+          "max": 10.152777777777777,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Integration method and maximum step recorded in report, 20 ns command transitions, strict PWL times and explicit end-time completion; no partial transient may pass",
+    "Forward diode rating uses carrier-conduction current after subtracting ngspice capcur; original positive terminal-current average is also reported. Electrical device and stored-charge model unchanged",
+    "Coil R/L approximations; 86 V high-line bound with 4.5 V gate and hot MOSFET fit",
+    "Commands assumed enabled; no credit for physical blanking",
+    "Temperature is steady repetition of worst 10 s window at 50 C ambient and 62 C/W, excludes mutual heating",
+    "Channels 17-28 motors/flashers excluded here; covered by generic decks only",
+    "No harness parasitics, avalanche SOA, fuse clearing or physical thermal correlation"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "12v_uvlo",
+  "checks": {
+    "output_peak": {
+      "value": 11.9737,
+      "min": 0,
+      "max": 12.6,
+      "passed": true
+    },
+    "output_min": {
+      "value": 1.48125e-08,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "recovery": {
+      "value": 10.5352,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": false
+    },
+    "inductor_peak": {
+      "value": 5.61914,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -39.3296,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    }
+  },
+  "errors": [],
+  "deck_sha256": "8c7cac95b2fa7661503cbc909a22133b946b1dda77b002b38357cb653c4c70f6",
+  "passed": false
+}

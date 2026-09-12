@@ -1,0 +1,921 @@
+{
+  "cases": [
+    {
+      "name": "c20000_f50_line0.9_lamp2.5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 11.1093,
+        "raw_max": 13.6108,
+        "raw_mean": 12.3744,
+        "secondary_rms": 9.51233,
+        "diode_peak": 19.7817,
+        "inrush_peak": 44.2693
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "b8261cfa36b422d1d5ec69af2027d009f54fa374dc10933ef137216704f471cb"
+    },
+    {
+      "name": "c20000_f50_line0.9_lamp5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.5826,
+        "raw_max": 14.2779,
+        "raw_mean": 13.4166,
+        "secondary_rms": 6.18324,
+        "diode_peak": 14.0355,
+        "inrush_peak": 43.4518
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "267ddc05e80743dedbe47db4185f393723aed872bd53fec6ebec5210b928c63f"
+    },
+    {
+      "name": "c20000_f50_line1_lamp2.5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.5137,
+        "raw_max": 15.255,
+        "raw_mean": 13.8981,
+        "secondary_rms": 10.4113,
+        "diode_peak": 21.7266,
+        "inrush_peak": 49.4149
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "29a2679d936e42da85309a42d1ea555969f6436079c9eee8f456811689120d51"
+    },
+    {
+      "name": "c20000_f50_line1_lamp5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.1719,
+        "raw_max": 16.0053,
+        "raw_mean": 15.0714,
+        "secondary_rms": 6.67697,
+        "diode_peak": 15.2519,
+        "inrush_peak": 48.4996
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "1dea915121f7e4abc8897a03d16347a92d133b4ed89ce20783a8d289d1946ffb"
+    },
+    {
+      "name": "c20000_f50_line1.1_lamp2.5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 13.9093,
+        "raw_max": 16.8959,
+        "raw_mean": 15.416,
+        "secondary_rms": 11.3314,
+        "diode_peak": 23.7058,
+        "inrush_peak": 54.5613
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "02a41f3265c6b6e1b81f72ac91cd9d7fab94c71a3c3d1f0a6b3572259d17c544"
+    },
+    {
+      "name": "c20000_f50_line1.1_lamp5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 15.7515,
+        "raw_max": 17.7287,
+        "raw_mean": 16.7195,
+        "secondary_rms": 7.19267,
+        "diode_peak": 16.5069,
+        "inrush_peak": 53.548
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "5c37c8dd287a3e2c5694978ee1f100462b85e5643daa5326099533daba088f11"
+    },
+    {
+      "name": "c20000_f60_line0.9_lamp2.5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 11.3069,
+        "raw_max": 13.5134,
+        "raw_mean": 12.4077,
+        "secondary_rms": 9.5443,
+        "diode_peak": 19.8709,
+        "inrush_peak": 47.9852
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "07e87d914c46555b9d797fae51a159d3f8855711629c541baee9ca346638e7d5"
+    },
+    {
+      "name": "c20000_f60_line0.9_lamp5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.7146,
+        "raw_max": 14.2145,
+        "raw_mean": 13.437,
+        "secondary_rms": 6.19441,
+        "diode_peak": 14.0702,
+        "inrush_peak": 47.215
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "6a8ba62646603be368e50dfad0d21ec15cf148cbe750d7d4fe6ec9d90a416141"
+    },
+    {
+      "name": "c20000_f60_line1_lamp2.5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.7296,
+        "raw_max": 15.1485,
+        "raw_mean": 13.9344,
+        "secondary_rms": 10.4472,
+        "diode_peak": 21.8258,
+        "inrush_peak": 53.5721
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "b02e2cdd3adb1bb54601c7a5d9ccec54aa54e3821e54970198d56ccd5c5cde21"
+    },
+    {
+      "name": "c20000_f60_line1_lamp5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.3142,
+        "raw_max": 15.9371,
+        "raw_mean": 15.0933,
+        "secondary_rms": 6.6894,
+        "diode_peak": 15.29,
+        "inrush_peak": 52.7097
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "ca464d74fa3e9cc1023104c77ad4be8ffad35173ea4a375c13e3dd7c96184e6a"
+    },
+    {
+      "name": "c20000_f60_line1.1_lamp2.5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.1443,
+        "raw_max": 16.78,
+        "raw_mean": 15.4556,
+        "secondary_rms": 11.3712,
+        "diode_peak": 23.8151,
+        "inrush_peak": 59.1598
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "8874d2368e39504c7ee9c439b7098d3822cbe77aefd2a0d1f1ceb355cf574843"
+    },
+    {
+      "name": "c20000_f60_line1.1_lamp5",
+      "nominal_reservoir_uF": 20000,
+      "simulated_reservoir_uF": 16000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 15.9045,
+        "raw_max": 17.6554,
+        "raw_mean": 16.743,
+        "secondary_rms": 7.20635,
+        "diode_peak": 16.5485,
+        "inrush_peak": 58.2049
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "457dba7c24e223f7a5a6c5b2dd1e32f8db9e7095090afc9890d026a29db70750"
+    },
+    {
+      "name": "c30000_f50_line0.9_lamp2.5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 11.4993,
+        "raw_max": 13.4185,
+        "raw_mean": 12.4354,
+        "secondary_rms": 9.5709,
+        "diode_peak": 19.9449,
+        "inrush_peak": 52.4349
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "582e26f5142d65f40e622b2984f6ff53f3e10187fb61002f6f09e922e54b8461"
+    },
+    {
+      "name": "c30000_f50_line0.9_lamp5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.843,
+        "raw_max": 14.1544,
+        "raw_mean": 13.4539,
+        "secondary_rms": 6.20364,
+        "diode_peak": 14.0987,
+        "inrush_peak": 51.7248
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "55da683fa08a028eaf44fb628cdcf2351456b9fb6a5f8a091a934089483f850a"
+    },
+    {
+      "name": "c30000_f50_line1_lamp2.5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.9402,
+        "raw_max": 15.0447,
+        "raw_mean": 13.9647,
+        "secondary_rms": 10.4771,
+        "diode_peak": 21.9082,
+        "inrush_peak": 58.5519
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "35d9cb7491b6098c30b393327dd187727d0247616094e5bddeea8bfb2fff3dae"
+    },
+    {
+      "name": "c30000_f50_line1_lamp5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.4527,
+        "raw_max": 15.8724,
+        "raw_mean": 15.1114,
+        "secondary_rms": 6.69967,
+        "diode_peak": 15.3214,
+        "inrush_peak": 57.7564
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "12a8c72fd4448fb506477d7e257f0b29d6d1466a880093f6bebfbff6c945355b"
+    },
+    {
+      "name": "c30000_f50_line1.1_lamp2.5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.3734,
+        "raw_max": 16.6672,
+        "raw_mean": 15.4886,
+        "secondary_rms": 11.4042,
+        "diode_peak": 23.906,
+        "inrush_peak": 64.6698
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "f7565309fb17e97bec5122361179a6c53ab651964d4420e555193884d77dd6ac"
+    },
+    {
+      "name": "c30000_f50_line1.1_lamp5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 16.0535,
+        "raw_max": 17.5859,
+        "raw_mean": 16.7625,
+        "secondary_rms": 7.21765,
+        "diode_peak": 16.5826,
+        "inrush_peak": 63.7891
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "69a25ca3ccb5d56c744849b55ab29c44a2b319ff742844ab822b5808b4e8c67c"
+    },
+    {
+      "name": "c30000_f60_line0.9_lamp2.5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 11.6243,
+        "raw_max": 13.3589,
+        "raw_mean": 12.4507,
+        "secondary_rms": 9.58552,
+        "diode_peak": 19.9856,
+        "inrush_peak": 55.929
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "811cca72872ebc82204f68aafa7e547137344358556742aee9b49f43fb9e8143"
+    },
+    {
+      "name": "c30000_f60_line0.9_lamp5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.9264,
+        "raw_max": 14.1173,
+        "raw_mean": 13.4631,
+        "secondary_rms": 6.20868,
+        "diode_peak": 14.1143,
+        "inrush_peak": 55.2679
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "9a118855587b89d1ace48e62b710e83d6826efc23dfec0878a44eccc786906fb"
+    },
+    {
+      "name": "c30000_f60_line1_lamp2.5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 13.0771,
+        "raw_max": 14.9795,
+        "raw_mean": 13.9814,
+        "secondary_rms": 10.4935,
+        "diode_peak": 21.9535,
+        "inrush_peak": 62.4634
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "858ccc343ae1a8d3459026cab20fe37e9b00471d1d6ca120d5edda4316542857"
+    },
+    {
+      "name": "c30000_f60_line1_lamp5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.5426,
+        "raw_max": 15.8326,
+        "raw_mean": 15.1213,
+        "secondary_rms": 6.70529,
+        "diode_peak": 15.3386,
+        "inrush_peak": 61.7227
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "bf8b8323e502f98cfc7fa4f4cc8315fbed93e83eced08a096f5583d2c1059b5b"
+    },
+    {
+      "name": "c30000_f60_line1.1_lamp2.5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.5224,
+        "raw_max": 16.5963,
+        "raw_mean": 15.5068,
+        "secondary_rms": 11.4224,
+        "diode_peak": 23.9558,
+        "inrush_peak": 68.9988
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "3d860f70ce76cc940f9575bcbe7427e62fa77e8f38cbeeb05d21c18fc459b735"
+    },
+    {
+      "name": "c30000_f60_line1.1_lamp5",
+      "nominal_reservoir_uF": 30000,
+      "simulated_reservoir_uF": 24000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 16.1504,
+        "raw_max": 17.5433,
+        "raw_mean": 16.7732,
+        "secondary_rms": 7.22382,
+        "diode_peak": 16.6015,
+        "inrush_peak": 68.1788
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "af6f6ec2a344079a0f2a4077a20fee451e4739a856911f86d821b0aa67dfcb75"
+    },
+    {
+      "name": "c40000_f50_line0.9_lamp2.5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 11.6859,
+        "raw_max": 13.3308,
+        "raw_mean": 12.4573,
+        "secondary_rms": 9.59187,
+        "diode_peak": 20.0032,
+        "inrush_peak": 57.8708
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "02773d73ef6e67424f80e76536e7a893212eea252ccdc7480edbb72b00cc1644"
+    },
+    {
+      "name": "c40000_f50_line0.9_lamp5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 12.9675,
+        "raw_max": 14.1002,
+        "raw_mean": 13.4671,
+        "secondary_rms": 6.21087,
+        "diode_peak": 14.1211,
+        "inrush_peak": 57.2374
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "4b9b966f6abde91a0de4635958088abcbad59143092d943d515084ea961a7a99"
+    },
+    {
+      "name": "c40000_f50_line1_lamp2.5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 13.1444,
+        "raw_max": 14.9488,
+        "raw_mean": 13.9887,
+        "secondary_rms": 10.5006,
+        "diode_peak": 21.9731,
+        "inrush_peak": 64.6375
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "3294508edcb8a5f34f09462214f8881ab6f300f5250a25ae5c6aadb459efe50f"
+    },
+    {
+      "name": "c40000_f50_line1_lamp5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.5869,
+        "raw_max": 15.8142,
+        "raw_mean": 15.1256,
+        "secondary_rms": 6.70772,
+        "diode_peak": 15.346,
+        "inrush_peak": 63.928
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "75c7fcae3627d6da9d6657927b08dbbd9b1417d74d543375cc9dd218d5a458bf"
+    },
+    {
+      "name": "c40000_f50_line1.1_lamp2.5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.5959,
+        "raw_max": 16.5629,
+        "raw_mean": 15.5147,
+        "secondary_rms": 11.4303,
+        "diode_peak": 23.9774,
+        "inrush_peak": 71.4055
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "e9d6a9a3ad2c65514193279712393ab6502e119cdf6c895c57f80bd33572508e"
+    },
+    {
+      "name": "c40000_f50_line1.1_lamp5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 16.1981,
+        "raw_max": 17.5235,
+        "raw_mean": 16.7778,
+        "secondary_rms": 7.2265,
+        "diode_peak": 16.6096,
+        "inrush_peak": 70.6198
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "7f99b6f355425abe785be723fe4dbc7363a5026e853c49a2f93b5efd6379f3d2"
+    },
+    {
+      "name": "c40000_f60_line0.9_lamp2.5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 11.7766,
+        "raw_max": 13.2916,
+        "raw_mean": 12.466,
+        "secondary_rms": 9.60018,
+        "diode_peak": 20.0263,
+        "inrush_peak": 61.0719
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "62e3d9be6d6eb2278dd2dc51eb0b42a4c196163f5dee406a709f0eb982a22f55"
+    },
+    {
+      "name": "c40000_f60_line0.9_lamp5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 13.0281,
+        "raw_max": 14.0765,
+        "raw_mean": 13.4723,
+        "secondary_rms": 6.21372,
+        "diode_peak": 14.1299,
+        "inrush_peak": 60.4852
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "35355a382817292b459e038a0380bcf392c4b1e9d1468cb0a47368cb9e389c63"
+    },
+    {
+      "name": "c40000_f60_line1_lamp2.5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 13.2438,
+        "raw_max": 14.9061,
+        "raw_mean": 13.9982,
+        "secondary_rms": 10.5099,
+        "diode_peak": 21.9988,
+        "inrush_peak": 68.2224
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "5364b5ef8ff5adcce8911f265f087f35fc49bdffaf6fc149e8592d64f950c154"
+    },
+    {
+      "name": "c40000_f60_line1_lamp5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.6524,
+        "raw_max": 15.7888,
+        "raw_mean": 15.1313,
+        "secondary_rms": 6.71089,
+        "diode_peak": 15.3557,
+        "inrush_peak": 67.5652
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "62b62f8ec8ebfca0777ea6085e33dae571132f590a555ae8339db8057787face"
+    },
+    {
+      "name": "c40000_f60_line1.1_lamp2.5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "lamp_ohms": 2.5,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 14.7041,
+        "raw_max": 16.5165,
+        "raw_mean": 15.525,
+        "secondary_rms": 11.4406,
+        "diode_peak": 24.0058,
+        "inrush_peak": 75.3744
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "450f18dbd61bc8b02837d8541d187542d16785ffd0b6788f2e0d0deed92a1862"
+    },
+    {
+      "name": "c40000_f60_line1.1_lamp5",
+      "nominal_reservoir_uF": 40000,
+      "simulated_reservoir_uF": 32000.0,
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "lamp_ohms": 5.0,
+      "measurements": {
+        "sim_end": 0.5,
+        "raw_min": 16.2686,
+        "raw_max": 17.4963,
+        "raw_mean": 16.7839,
+        "secondary_rms": 7.22999,
+        "diode_peak": 16.6202,
+        "inrush_peak": 74.6467
+      },
+      "completed": false,
+      "errors": [
+        "stderr no such vector as 'i(creservoir)'",
+        "stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!"
+      ],
+      "raw_above_12V": false,
+      "raw_above_12_3V_screen": false,
+      "deck_sha256": "5ef416137a2e448e160f264920a30793b76ef6fb1bb5264886976547249150cb"
+    }
+  ],
+  "completed": false,
+  "pcb_changed": false,
+  "regulator_verified": false,
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "assumptions": {
+    "secondary_peak_V": 18.8,
+    "resistance_per_leg_ohm": 0.05,
+    "reservoir_ESR_ohm": 0.05,
+    "buck_input_power_W": 10
+  },
+  "limitations": [
+    "10 W constant-power input approximates 0.75 A output at 90% efficiency; no controller, startup, dropout or overshoot qualification",
+    "12.3 V is a headroom screening value, not a guaranteed TPS54360B operating boundary",
+    "Transformer impedance, lamp loading, capacitor ESR and aging require measurement",
+    "30 mF and 40 mF nominal are hypothetical alternatives, not JLCPCB selections or CAD changes",
+    "Reported inrush starts at an AC zero crossing; other phases and fuse I2t remain unqualified for hypothetical capacitors"
+  ]
+}

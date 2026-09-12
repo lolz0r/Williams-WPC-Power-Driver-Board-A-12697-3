@@ -1,0 +1,132 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "run": "replay-gameplay",
+      "channel": 1,
+      "metric": "vds_peak",
+      "coarse": 87.6983,
+      "fine": 87.6885,
+      "absolute_difference": 0.009799999999998477,
+      "allowed_difference": 1.7539660000000001,
+      "passed": true
+    },
+    {
+      "run": "replay-gameplay",
+      "channel": 1,
+      "metric": "tj_repeating",
+      "coarse": 80.5848542,
+      "fine": 76.5346732,
+      "absolute_difference": 4.050180999999995,
+      "allowed_difference": 4.02924271,
+      "passed": false
+    },
+    {
+      "run": "replay-gameplay",
+      "channel": 1,
+      "metric": "id_avg",
+      "coarse": 0.215089,
+      "fine": 0.215093,
+      "absolute_difference": 4.000000000004e-06,
+      "allowed_difference": 0.010754650000000001,
+      "passed": true
+    },
+    {
+      "run": "replay-gameplay",
+      "channel": 1,
+      "metric": "coil_peak",
+      "coarse": 22.6752,
+      "fine": 22.676,
+      "absolute_difference": 0.0007999999999981355,
+      "allowed_difference": 0.45352,
+      "passed": true
+    },
+    {
+      "run": "replay-gameplay",
+      "channel": 15,
+      "metric": "vds_peak",
+      "coarse": 87.2614,
+      "fine": 87.2613,
+      "absolute_difference": 9.99999999891088e-05,
+      "allowed_difference": 1.745228,
+      "passed": true
+    },
+    {
+      "run": "replay-gameplay",
+      "channel": 15,
+      "metric": "tj_repeating",
+      "coarse": 60.4710312,
+      "fine": 60.424804,
+      "absolute_difference": 0.046227199999997026,
+      "allowed_difference": 3.02355156,
+      "passed": true
+    },
+    {
+      "run": "replay-gameplay",
+      "channel": 15,
+      "metric": "id_avg",
+      "coarse": 0.436258,
+      "fine": 0.436333,
+      "absolute_difference": 7.500000000004725e-05,
+      "allowed_difference": 0.021816650000000003,
+      "passed": true
+    },
+    {
+      "run": "replay-gameplay",
+      "channel": 15,
+      "metric": "coil_peak",
+      "coarse": 9.93936,
+      "fine": 9.93936,
+      "absolute_difference": 0.0,
+      "allowed_difference": 0.19878720000000002,
+      "passed": true
+    },
+    {
+      "run": "replay-flashers",
+      "channel": 23,
+      "metric": "vds_peak",
+      "coarse": 31.0983,
+      "fine": 31.0983,
+      "absolute_difference": 0.0,
+      "allowed_difference": 0.621966,
+      "passed": true
+    },
+    {
+      "run": "replay-flashers",
+      "channel": 23,
+      "metric": "current_peak",
+      "coarse": 27.0001,
+      "fine": 27.0148,
+      "absolute_difference": 0.014700000000001268,
+      "allowed_difference": 0.810444,
+      "passed": true
+    },
+    {
+      "run": "replay-flashers",
+      "channel": 23,
+      "metric": "power_average",
+      "coarse": 0.00132067,
+      "fine": 0.0013209,
+      "absolute_difference": 2.3000000000015196e-07,
+      "allowed_difference": 0.001,
+      "passed": true
+    },
+    {
+      "run": "replay-flashers",
+      "channel": 23,
+      "metric": "diode_average",
+      "coarse": 2.47256e-06,
+      "fine": 2.48649e-06,
+      "absolute_difference": 1.3929999999999967e-08,
+      "allowed_difference": 1e-05,
+      "passed": true
+    }
+  ],
+  "inputs": {
+    "output/verification/prespin/replay-gameplay/results.json": "fd3880f111fef88d69b5f3934a4e5319cd8cfc1899fa54ee2aa066308dd50ab7",
+    "output/verification/prespin/replay-gameplay-fine/results.json": "198e3e9ab778cd58e2583e3d6822839a14516fd18a42f25fa5eb792ba23ddc6a",
+    "output/verification/prespin/replay-flashers/results.json": "67d324cbbf20518aeb9fb95a5cfa7b19342727dd102b8e4325905c2a61d91f39",
+    "output/verification/prespin/replay-flashers-fine/results.json": "12c121a8a5df717bfb1a4d9283fb629171a8258041f42bc95fd6c22ecb133901"
+  },
+  "scope": "Targeted 5 us / 2.5 us maximum timestep comparison: gameplay worst-heating channel 1, hold channel 15, four-bulb flasher 23. Other cases retain baseline/generic convergence limits."
+}

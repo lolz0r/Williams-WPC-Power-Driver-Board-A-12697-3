@@ -1,0 +1,55 @@
+ROM GI 5, AC relative phase 270; 18 #44 envelope
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+VCC vcc 0 5
+* 18 #44 lamps in parallel, one thermal state (identical lamps): I = 18 x v / (2.5 (1 + 9 th)), heating per lamp
+.subckt LAMP18 a b
+Blamp a b I = 18 * v(a,b) / (2.5 * (1 + 9 * max(v(th), 0)))
+Bheat 0 th I = v(a,b) * v(a,b) / (2.5 * (1 + 9 * max(v(th), 0)))
+Cth th 0 0.095
+Rth th 0 0.63
+.ends
+Vac ac0 0 SIN(0 11.1 60 0 0 270)
+Rw ac0 ac 0.1
+Vf106 ac acf 0
+XS acf mt2 LAMP18
+Vmt mt2 mt2i 0
+Btri mt2i 0 I = ( max((abs(i(Vg)) > 0.05), (v(on) > 0.5)) > 0.5 ) ? ( (v(mt2i) > 0) ? max(v(mt2i) - 0.85, 0) / 0.025 : min(v(mt2i) + 0.85, 0) / 0.025 ) : v(mt2i) * 1e-6
+Bon onr 0 V = (abs(i(Vmt)) > 0.05) ? 1 : 0
+Ron onr on 1
+Con on 0 0.5u
+* gate drive: latch bit held from 4.17 ms (74HCT574 Q 4.6 V / 40 R -> 470 R -> MMBT4401 -> 27 R)
+VL latch 0 PWL(
++ 0.000000000000 4.50
++ 0.499999980000 4.50
++ 0.500000000000 0.00
++ 0.500000020000 0.00
++ 0.520000000000 0.00
++ )
+RL latch a 40
+Rb a b 470
+Rpd b 0 10k
+Q1 vcc b e QMMBT4401
+Vg e eg 0
+R27 eg g 27
+Dg g 0 DGATE
+Rgk g 0 200
+.model DGATE D(Is=1e-9 n=2 Rs=5)
+.options reltol=0.005 method=gear
+.save i(Vf106) i(Vmt) v(mt2i) i(Vg)
+.tran 5u 0.520000000 0 2u
+.control
+run
+let istr=i(Vf106)
+let iabs=abs(istr)
+let isq=istr*istr
+let ptri=v(mt2i)*i(Vmt)
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran peak_current MAX iabs
+meas tran rms_current RMS istr from=0.100000000 to=0.500000000
+meas tran avg_power AVG ptri from=0.100000000 to=0.500000000
+meas tran inrush_i2t INTEG isq from=0 to=.03
+let tj=50+avg_power*13.875
+print tj
+.endc
+.end

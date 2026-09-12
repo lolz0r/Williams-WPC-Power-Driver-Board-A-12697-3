@@ -1,0 +1,15 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: led4 worst-case constant forward voltage; selected ncd0805r1 and 470r
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vcc                                       4.95
+stdout led                                        2.6
+stdout vled#branch                          0.0049505
+stdout vcc#branch                          -0.0049505
+stdout No. of Data Rows : 59
+stdout led_current         =  4.95050e-03 from=  0.00000e+00 to=  1.00000e-05
+stdout resistor_power      =  1.16337e-02 from=  0.00000e+00 to=  1.00000e-05

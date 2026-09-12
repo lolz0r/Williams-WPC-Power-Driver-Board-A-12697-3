@@ -1,0 +1,33 @@
+{
+  "from_revision": "JLC-1",
+  "to_revision": "JLC-2",
+  "parent_pcb_sha256": "26020aac77afa408567f4fd07961db2634fced9da806edefdac291ab9b22e4d7",
+  "changed_nets": {
+    "SOL21_TB": "+20V",
+    "SOL22_TB": "+20V",
+    "SOL23_TB": "+20V",
+    "SOL24_TB": "+20V",
+    "SOL25_TB": "+20V",
+    "SOL26_TB": "+20V",
+    "SOL27_TB": "+20V",
+    "SOL28_TB": "+20V"
+  },
+  "reason": "On STTNG these tieback connector pins are unconnected in the harness. Board connections provide the flasher clamp return and avoid dependence on MOSFET avalanche. All STTNG outputs 20..28 are flashers supplied by +20 V.",
+  "interface_change": "J122 pins 5,6,8,9 and J126 pins 10,11,12,13 now carry +20 V. Do not connect a harness that assigns a different voltage to these pins. This revision targets STTNG only.",
+  "routing": {
+    "results": [
+      "added 1 copper items; 10 groups remain",
+      "added 1 copper items; 9 groups remain",
+      "added 1 copper items; 8 groups remain",
+      "added 1 copper items; 7 groups remain",
+      "added 1 copper items; 6 groups remain",
+      "added 1 copper items; 5 groups remain",
+      "added 1 copper items; 4 groups remain",
+      "added 1 copper items; 3 groups remain",
+      "added 2 copper items; 2 groups remain",
+      "added 3 copper items; 1 groups remain",
+      "connected"
+    ],
+    "original_pcb_sha256": "26020aac77afa408567f4fd07961db2634fced9da806edefdac291ab9b22e4d7"
+  }
+}

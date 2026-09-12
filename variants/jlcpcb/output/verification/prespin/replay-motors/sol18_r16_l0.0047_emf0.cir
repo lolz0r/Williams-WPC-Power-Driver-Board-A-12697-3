@@ -1,0 +1,50 @@
+ROM motor channel 18; sol18_r16_l0.0047_emf0
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+Vcmd cmd 0 PWL(
++ 0.000000000000 0.00
++ 0.199999980000 0.00
++ 0.200000000000 4.50
++ 7.024363480000 4.50
++ 7.024363500000 0.00
++ 8.892211480000 0.00
++ 8.892211500000 4.50
++ 10.200000000000 4.50
++ 10.200000020000 0.00
++ 10.230000000000 0.00
++ )
+Ro cmd a 40
+Rg a gate 100
+Rpd gate 0 10k
+Vsense drain dq 0
+XQ dq gate 0 IPD90N10S4L06
+Vclamp clamprail 0 30
+Vdiode drain da 0
+Dfly da clamprail DS1M
+Vraw raw 0 20
+Rwire raw feed .1
+Lplus feed motp 0.0047
+Lmotor motp m1 10m
+Rmotor m1 m2 16
+Vbemf m2 m3 0
+Lminus m3 m4 0.0047
+Dseries m4 drain D1N4004
+.save v(drain) v(gate) i(Vsense) i(Vdiode) @dfly[capcur]
+.options reltol=.002 method=gear
+.tran 100u 10.230000000 0 5u
+.control
+run
+let pfet=v(drain)*i(Vsense)
+let carrier=i(Vdiode)-@dfly[capcur]
+let forward=(abs(carrier)+carrier)/2
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran vds_peak MAX v(drain)
+meas tran vgs_peak MAX v(gate)
+meas tran current_peak MAX i(Vsense)
+meas tran current_avg AVG i(Vsense) from=0.200000000 to=10.200000000
+meas tran diode_average AVG forward from=0.200000000 to=10.200000000
+meas tran power_average AVG pfet from=0.200000000 to=10.200000000
+let tj=50+power_average*62
+print tj
+.endc
+.end

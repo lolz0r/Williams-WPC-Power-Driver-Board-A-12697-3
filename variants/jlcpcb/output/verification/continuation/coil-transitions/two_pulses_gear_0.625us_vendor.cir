@@ -1,0 +1,42 @@
+Exact two initial ROM pulses; short convergence investigation two_pulses_gear_0.625us_vendor
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/.scratch/vendor-models/S3M.spice.txt
+Vcmd cmd 0 PWL(
++ 0.000000000000 0
++ 0.000099980000 0
++ 0.000100000000 4.5
++ 0.002164480000 4.5
++ 0.002164500000 0
++ 0.008292480000 0
++ 0.008292500000 4.5
++ 0.010354980000 4.5
++ 0.010355000000 0
++ 0.030355000000 0
++ )
+Vrail rail 0 86
+Ro cmd a 40
+Rg a gate 100
+Rpd gate 0 10k
+Vsense drain dq 0
+XQ dq gate 0 IPD90N10S4L06
+Lcoil drain cl 12m
+Rcoil cl rail 3.78
+Dfly drain rail DI_S3M
+.save v(dq) v(gate) i(Vsense) i(Lcoil) @m.xq.m1[id] @d.xq.db[id] @d.xq.db[capcur]
+.options method=gear klu reltol=.0001 trtol=1 chgtol=1e-16 itl4=500
+.tran 1u 0.030355 0 0.625u
+.control
+run
+let loss_channel=v(dq)*@m.xq.m1[id]
+let loss_body=-v(dq)*(@d.xq.db[id]-@d.xq.db[capcur])
+let loss_total=loss_channel+loss_body
+let terminal_power=v(dq)*i(Vsense)
+let icoil=abs(i(Lcoil))
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran e_dissipation INTEG loss_total
+meas tran e_terminal INTEG terminal_power
+meas tran vds_peak MAX v(dq)
+meas tran coil_peak MAX icoil
+.endc
+.end

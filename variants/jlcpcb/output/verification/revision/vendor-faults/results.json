@@ -1,0 +1,245 @@
+{
+  "cases": [
+    {
+      "name": "12v_prebias",
+      "checks": {
+        "output_peak": {
+          "value": 4.97924,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_min": {
+          "value": 2.13697,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 0.0,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 0.543297,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -51.2545,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.000233016, timestep = 1.25e-19: trouble with d_d1-instance d.xu.d_u8_d13",
+        "stderr run simulation(s) aborted"
+      ],
+      "deck_sha256": "5fa698cc5166462c6ea64a0800e3349e5897a698b4d0ba7e1731646c86ac512b",
+      "passed": false
+    },
+    {
+      "name": "12v_short",
+      "checks": {
+        "output_peak": {
+          "value": 12.3787,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.48125e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 12.3325,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 5.66541,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -0.0477762,
+          "min": -1,
+          "max": 10,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "527c1e9fe3f9bc15bcd50f0f5fde773e9484028c610fc1c7e21b934dcbf0dfd8",
+      "passed": true
+    },
+    {
+      "name": "12v_uvlo",
+      "checks": {
+        "output_peak": {
+          "value": 11.9737,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.48125e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 10.5352,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 5.61914,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -39.3296,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [],
+      "deck_sha256": "8c7cac95b2fa7661503cbc909a22133b946b1dda77b002b38357cb653c4c70f6",
+      "passed": false
+    },
+    {
+      "name": "5v_prebias",
+      "checks": {
+        "output_peak": {
+          "value": 2.40806,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.02999,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 0.0,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 2.83263,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -21.2779,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.00177181, timestep = 1.25e-19: trouble with d_d1-instance d.xu.d_u8_d13",
+        "stderr run simulation(s) aborted"
+      ],
+      "deck_sha256": "f76ff7f7936b6fb435ef7111198b3cd8cf1e7bf1f4e79333d96df8ed0cf862b7",
+      "passed": false
+    },
+    {
+      "name": "5v_short",
+      "checks": {
+        "output_peak": {
+          "value": 5.1647,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.09327e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 5.06796,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_peak": {
+          "value": 5.64579,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -0.00645387,
+          "min": -1,
+          "max": 10,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "39043dd701822097fd3f113ebe94de18a9649529cd156317419fb2ed72b3a5b1",
+      "passed": true
+    },
+    {
+      "name": "5v_uvlo",
+      "checks": {
+        "output_peak": {
+          "value": 5.12966,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "output_min": {
+          "value": 1.09327e-08,
+          "min": -0.3,
+          "max": 13,
+          "passed": true
+        },
+        "recovery": {
+          "value": 4.58289,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": false
+        },
+        "inductor_peak": {
+          "value": 5.60816,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -8.49811,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "errors": [],
+      "deck_sha256": "0234a7ac2aa0d1f33ec8a6d349a805e49830099267f78bee29896b28ce31fa54",
+      "passed": false
+    }
+  ],
+  "complete": true,
+  "passed": false,
+  "scope": "Typical TI model sensitivities. UVLO forces input to 3 V in 100 us with an ideal sinking voltage source; prebias powers output with VIN initially zero. These are not complete cabinet power-down models. Short applied for 1 ms.",
+  "limitations": [
+    "Failed checks and aborted simulations remain unresolved; no fault-survival or reverse-current qualification",
+    "PCB parasitics, real transformer/bridge rail discharge and thermal feedback not represented"
+  ]
+}

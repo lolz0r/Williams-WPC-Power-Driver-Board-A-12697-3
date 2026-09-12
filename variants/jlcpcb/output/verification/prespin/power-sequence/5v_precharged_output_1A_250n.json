@@ -1,0 +1,69 @@
+{
+  "name": "5v_precharged_output_1A_250n",
+  "rail": "5v",
+  "scenario": "precharged_output",
+  "output_load_A": 1.0,
+  "elapsed_s": 2236.621406182996,
+  "measurements": {
+    "sim_end": 0.03,
+    "output_peak": 5.11944,
+    "output_min": -0.0355291,
+    "inductor_peak": 2.81164,
+    "inductor_min": -19.7086,
+    "body_reverse_peak": 19.7086,
+    "input_min": 1.40519e-06,
+    "before_loss": 5.10489,
+    "recovery": 5.1044
+  },
+  "checks": {
+    "output_peak": {
+      "value": 5.11944,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "output_min": {
+      "value": -0.0355291,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 2.81164,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -19.7086,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    },
+    "recovery": {
+      "value": 5.1044,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    },
+    "sim_end": {
+      "value": 0.03,
+      "min": 0.029999989999999997,
+      "max": 0.03000001,
+      "passed": true
+    }
+  },
+  "errors": [],
+  "passed": false,
+  "deck_sha256": "32181d91ff982b36694c0745e4ac8bdc0c5b497bd7bbc94bfb3b4a3ce79b7e19",
+  "base_deck_sha256": "0db7a950940126b1030e859e765068dc6677a21a271fd4684602875916feb113",
+  "reservoir_uF": 8000,
+  "secondary_peak_V": 11.43,
+  "raw_lamp_load_ohms": null,
+  "limitations": [
+    "Typical TI switching model with approximate rectifiers, no board parasitics or thermal feedback",
+    "Low line / minus 20 percent reservoir; actual transformer impedance remains to be measured",
+    "Reverse-current bound of 1 A is an engineering screening threshold, not a manufacturer guarantee of internal body-diode SOA",
+    "Short-circuit survival and arbitrary external backfeed are not qualified by a passing loss/restart case"
+  ]
+}

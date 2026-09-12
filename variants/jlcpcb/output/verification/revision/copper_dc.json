@@ -1,0 +1,24 @@
+{
+  "geometry_sha256": "5c3df5823bba125648c271ab63d8d82326f28828e56c8b81d21bcf9081fb5cbf",
+  "method": "Four-layer finite-volume sheet resistance; actual filled polygons, 2oz finished outer/1oz inner, 20um barrel plating, ideal source at L1-2, J114-3/4 tied at load. No connector/harness contact resistance.",
+  "cases": [
+    {
+      "mesh_mm": 0.5,
+      "nodes": 388804,
+      "connected_nodes": 388766,
+      "resistance_20C_ohm": 0.008224996381648371,
+      "resistance_75C_ohm": 0.010002829349541666,
+      "drop_at_3A_75C_V": 0.030008488048625
+    },
+    {
+      "mesh_mm": 0.25,
+      "nodes": 1553821,
+      "connected_nodes": 1553821,
+      "resistance_20C_ohm": 0.008315335874135975,
+      "resistance_75C_ohm": 0.010112695723330466,
+      "drop_at_3A_75C_V": 0.030338087169991403
+    }
+  ],
+  "relative_mesh_change": 0.010983529754392318,
+  "measurement_required": true
+}

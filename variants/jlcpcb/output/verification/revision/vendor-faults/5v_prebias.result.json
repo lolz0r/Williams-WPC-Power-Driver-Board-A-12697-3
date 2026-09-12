@@ -1,0 +1,41 @@
+{
+  "name": "5v_prebias",
+  "checks": {
+    "output_peak": {
+      "value": 2.40806,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "output_min": {
+      "value": 1.02999,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "recovery": {
+      "value": 0.0,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": false
+    },
+    "inductor_peak": {
+      "value": 2.83263,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -21.2779,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    }
+  },
+  "errors": [
+    "stderr doAnalyses: TRAN:  Timestep too small; time = 0.00177181, timestep = 1.25e-19: trouble with d_d1-instance d.xu.d_u8_d13",
+    "stderr run simulation(s) aborted"
+  ],
+  "deck_sha256": "f76ff7f7936b6fb435ef7111198b3cd8cf1e7bf1f4e79333d96df8ed0cf862b7",
+  "passed": false
+}

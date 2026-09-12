@@ -1,0 +1,317 @@
+{
+  "revision": "JLC-2",
+  "expanded_checks_executed": true,
+  "all_primary_logic_and_output_screens_passed": true,
+  "all_simulation_checks_passed": false,
+  "normal_power_sequence_passed": false,
+  "numerical_convergence_established": false,
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "netlist_sha256": "d83a480ec2a1782bdbb1d6bddb01961f0359066e7ad5f34efe142b34f2f3b568",
+  "primary_checks": {
+    "blanking": {
+      "passed": true,
+      "cases": 8,
+      "sha256": "e7a622e1b95c3ac8382e62c9d8c6fc139943f4773f1e8c2e956af0d9c50a12a9"
+    },
+    "replay-gameplay": {
+      "passed": true,
+      "cases": 14,
+      "sha256": "fd3880f111fef88d69b5f3934a4e5319cd8cfc1899fa54ee2aa066308dd50ab7"
+    },
+    "replay-flashers": {
+      "passed": true,
+      "cases": 9,
+      "sha256": "67d324cbbf20518aeb9fb95a5cfa7b19342727dd102b8e4325905c2a61d91f39"
+    },
+    "replay-motors": {
+      "passed": true,
+      "cases": 16,
+      "sha256": "4c4562fae44b08cd3b7689a8ed60a454e186c655bbbd61815a30958e79e284ca"
+    },
+    "replay-gi": {
+      "passed": true,
+      "cases": 20,
+      "sha256": "b363ba9f6afc2a4be2ed75bbad8473dc220a95fc1d3a1539d513c04dcb1ebf8b"
+    },
+    "rom-logic.json": {
+      "passed": true,
+      "sha256": "8a7feecbba3ef24fd743792ab848d2abb41b84ebc3611fe33f0a33e028ab1c84"
+    },
+    "gameplay-evidence.json": {
+      "passed": true,
+      "sha256": "f799986c9c32410cfdb4bb64025aa5d89d155fc41e52b91cc53268f4bce8d4b9"
+    },
+    "replay-matrix/matrix_20.69V.json": {
+      "passed": true,
+      "sha256": "5240e55d993e13908c64732314101ddb968f92f0fc1506aaf7c16303be8dc343"
+    },
+    "replay-rl-bound.json": {
+      "passed": true,
+      "sha256": "a4315b9c5688bfd880706baa831e0db23500d8e4fb83ac351b147cfea64d8a99"
+    },
+    "regulator-fixture-audit.json": {
+      "passed": true,
+      "sha256": "623dd40ea592e568bfea305da4e2ce1c9e77f9b048f17823b3e2f4fed0794db2"
+    }
+  },
+  "power_sequence": [
+    {
+      "name": "5v_loss_restart_3A_250n",
+      "intended_load_loss_restart": true,
+      "simulation_completed": true,
+      "passed": true,
+      "measurements": {
+        "sim_end": 0.12,
+        "output_peak": 5.13088,
+        "output_min": -7.64438e-10,
+        "inductor_peak": 5.61099,
+        "inductor_min": -0.0130463,
+        "body_reverse_peak": 1.3633,
+        "input_min": -0.0044529,
+        "before_loss": 5.10587,
+        "recovery": 5.10261
+      },
+      "failed_checks": {},
+      "report_sha256": "70bb78d52fcca374ff1bc80d4e29bd6ca305692e1082d8f014ffb6ef60bdb3c0"
+    },
+    {
+      "name": "12v_loss_restart_0.75A_250n",
+      "intended_load_loss_restart": true,
+      "simulation_completed": true,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.12,
+        "output_peak": 12.785,
+        "output_min": -4.1885e-12,
+        "inductor_peak": 5.62087,
+        "inductor_min": -0.0684989,
+        "body_reverse_peak": 5.46326,
+        "input_min": -2.59867e-06,
+        "before_loss": 12.4231,
+        "recovery": 11.8406
+      },
+      "failed_checks": {
+        "output_peak": {
+          "value": 12.785,
+          "min": 0,
+          "max": 12.6,
+          "passed": false
+        }
+      },
+      "report_sha256": "cb3256434e889d4667e40808ed06aa05a65cd3246abc8aeb9064fe31fbcc1cdf"
+    },
+    {
+      "name": "12v_loss_restart_0.02A_250n",
+      "intended_load_loss_restart": true,
+      "simulation_completed": true,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.12,
+        "output_peak": 12.819,
+        "output_min": -1.47832e-10,
+        "inductor_peak": 5.61065,
+        "inductor_min": -0.700308,
+        "body_reverse_peak": 35.9364,
+        "input_min": -2.59867e-06,
+        "before_loss": 12.4838,
+        "recovery": 11.496
+      },
+      "failed_checks": {
+        "output_peak": {
+          "value": 12.819,
+          "min": 0,
+          "max": 12.6,
+          "passed": false
+        }
+      },
+      "report_sha256": "ce373d5a091647120daf72796e8f9423ff07f79e36362126d4826849b9298aff"
+    },
+    {
+      "name": "12v_loss_restart_2A_250n",
+      "intended_load_loss_restart": false,
+      "simulation_completed": true,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.12,
+        "output_peak": 12.6689,
+        "output_min": -1.57237e-12,
+        "inductor_peak": 5.62119,
+        "inductor_min": -0.0286598,
+        "body_reverse_peak": 13.4011,
+        "input_min": -2.59867e-06,
+        "before_loss": 12.2576,
+        "recovery": 11.2937
+      },
+      "failed_checks": {
+        "output_peak": {
+          "value": 12.6689,
+          "min": 0,
+          "max": 12.6,
+          "passed": false
+        },
+        "recovery": {
+          "value": 11.2937,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": false
+        }
+      },
+      "report_sha256": "134b2beb26abd80d374d86405b7b3ef918fb72c34bedc3c6bc5084c9aabe0b1b"
+    },
+    {
+      "name": "5v_precharged_output_1A_250n",
+      "intended_load_loss_restart": false,
+      "simulation_completed": true,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.03,
+        "output_peak": 5.11944,
+        "output_min": -0.0355291,
+        "inductor_peak": 2.81164,
+        "inductor_min": -19.7086,
+        "body_reverse_peak": 19.7086,
+        "input_min": 1.40519e-06,
+        "before_loss": 5.10489,
+        "recovery": 5.1044
+      },
+      "failed_checks": {
+        "inductor_min": {
+          "value": -19.7086,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "report_sha256": "f633e4e254c28966c09bb602a0b76ecef6d53c187436689025897fd8f0f2a9b7"
+    },
+    {
+      "name": "12v_precharged_output_0.75A_250n",
+      "intended_load_loss_restart": false,
+      "simulation_completed": true,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.03,
+        "output_peak": 12.5963,
+        "output_min": -0.635858,
+        "inductor_peak": 4.95468,
+        "inductor_min": -48.0562,
+        "body_reverse_peak": 48.0562,
+        "input_min": 4.7657e-06,
+        "before_loss": 12.4094,
+        "recovery": 11.8746
+      },
+      "failed_checks": {
+        "output_min": {
+          "value": -0.635858,
+          "min": -0.3,
+          "max": 13,
+          "passed": false
+        },
+        "inductor_min": {
+          "value": -48.0562,
+          "min": -1,
+          "max": 10,
+          "passed": false
+        }
+      },
+      "report_sha256": "223fb4218b3bfd7f13724b8671c7b17e95a617456533c3b7d997bf824723d427"
+    }
+  ],
+  "clamp_change": {
+    "from_revision": "JLC-1",
+    "to_revision": "JLC-2",
+    "parent_pcb_sha256": "26020aac77afa408567f4fd07961db2634fced9da806edefdac291ab9b22e4d7",
+    "changed_nets": {
+      "SOL21_TB": "+20V",
+      "SOL22_TB": "+20V",
+      "SOL23_TB": "+20V",
+      "SOL24_TB": "+20V",
+      "SOL25_TB": "+20V",
+      "SOL26_TB": "+20V",
+      "SOL27_TB": "+20V",
+      "SOL28_TB": "+20V"
+    },
+    "reason": "On STTNG these tieback connector pins are unconnected in the harness. Board connections provide the flasher clamp return and avoid dependence on MOSFET avalanche. All STTNG outputs 20..28 are flashers supplied by +20 V.",
+    "interface_change": "J122 pins 5,6,8,9 and J126 pins 10,11,12,13 now carry +20 V. Do not connect a harness that assigns a different voltage to these pins. This revision targets STTNG only.",
+    "routing": {
+      "results": [
+        "added 1 copper items; 10 groups remain",
+        "added 1 copper items; 9 groups remain",
+        "added 1 copper items; 8 groups remain",
+        "added 1 copper items; 7 groups remain",
+        "added 1 copper items; 6 groups remain",
+        "added 1 copper items; 5 groups remain",
+        "added 1 copper items; 4 groups remain",
+        "added 1 copper items; 3 groups remain",
+        "added 2 copper items; 2 groups remain",
+        "added 3 copper items; 1 groups remain",
+        "connected"
+      ],
+      "original_pcb_sha256": "26020aac77afa408567f4fd07961db2634fced9da806edefdac291ab9b22e4d7"
+    }
+  },
+  "reports": {
+    "output/verification/prespin/replay-convergence-initial.json": "ff28f246b5b89b0f2c43896b648599f6d87eae8d98715b02550a8810fd7acc27",
+    "output/verification/prespin/mame-game-attempt.json": "d4c9c795e8d22746a5bf5c7ed4e24da076395dab455897edc69a352fdbb49634",
+    "output/verification/prespin/replay-rl-bound.json": "a4315b9c5688bfd880706baa831e0db23500d8e4fb83ac351b147cfea64d8a99",
+    "output/verification/prespin/gameplay-evidence.json": "f799986c9c32410cfdb4bb64025aa5d89d155fc41e52b91cc53268f4bce8d4b9",
+    "output/verification/prespin/rom-logic.json": "8a7feecbba3ef24fd743792ab848d2abb41b84ebc3611fe33f0a33e028ab1c84",
+    "output/verification/prespin/convergence-review.json": "6e79a4e44295ca1d738e635ec23e89e93c7966c86ea8df2a06ee28e51684d4cb",
+    "output/verification/prespin/regulator-fixture-audit.json": "623dd40ea592e568bfea305da4e2ce1c9e77f9b048f17823b3e2f4fed0794db2",
+    "output/verification/prespin/replay-motors/results.json": "4c4562fae44b08cd3b7689a8ed60a454e186c655bbbd61815a30958e79e284ca",
+    "output/verification/prespin/replay-gameplay-1p25us/results.json": "c7e41240947a68ca8da905b4a22b8e07cbd79ff68271909d8d9eb9560670f985",
+    "output/verification/prespin/blanking/results.json": "e7a622e1b95c3ac8382e62c9d8c6fc139943f4773f1e8c2e956af0d9c50a12a9",
+    "output/verification/prespin/replay-gi/results.json": "b363ba9f6afc2a4be2ed75bbad8473dc220a95fc1d3a1539d513c04dcb1ebf8b",
+    "output/verification/prespin/replay-flashers/results.json": "67d324cbbf20518aeb9fb95a5cfa7b19342727dd102b8e4325905c2a61d91f39",
+    "output/verification/prespin/replay-gameplay-0p625us/results.json": "a1e44200838777d7c92a1c180905e73c67aa386f8d508c5876d9a24400c848eb",
+    "output/verification/prespin/replay-gameplay-loss5us/results.json": "926ee5468bd21561de50f986cedbd9132648306e6c4c7060a4cea176cba079be",
+    "output/verification/prespin/replay-loss-segments/runtime-stops.json": "6a530bdec650e8db42c0b1ac1e7df25191c3354f944665644ed5bc1b174cfd14",
+    "output/verification/prespin/replay-loss-segments/coil1_0.15625us.json": "d0d7cf21b612f86a0688b7595e93569a142da5fd37a2ad9bb8c6ca2ec58fd3dc",
+    "output/verification/prespin/replay-loss-segments/coil1_0.078125us.json": "a6d5eec893feb620b9cb8e64d7ee151bf6c359e8c01e4aded65913ce95a2b429",
+    "output/verification/prespin/replay-loss-segments/coil1_0.15625us_vendor_diode.json": "3f19730576f495a3d9dbe821c1145bc043eb379f07cfc8b53371decda52945c2",
+    "output/verification/prespin/replay-loss-segments/coil1_0.3125us_strict.json": "ad2ba2eb4eb1a505c7279f2e10c49d37e479fa31a4f32a78cc18426815170d2c",
+    "output/verification/prespin/replay-gameplay-gear1p25us/results.json": "32b5866b386be11d44ba1bf6fe0be314ce7528e439e282f7aff001cf7a8cffa9",
+    "output/verification/prespin/power-sequence/recovery-ripple.json": "62c8164da621cda5ef00d5c59eaa730c1b95f5f5c119f37836b9742f7be06e10",
+    "output/verification/prespin/power-sequence/12v_precharged_output_0.75A_250n.json": "223fb4218b3bfd7f13724b8671c7b17e95a617456533c3b7d997bf824723d427",
+    "output/verification/prespin/power-sequence/12v_loss_restart_0.02A_250n.json": "ce373d5a091647120daf72796e8f9423ff07f79e36362126d4826849b9298aff",
+    "output/verification/prespin/power-sequence/12v_loss_restart_2A_250n.json": "134b2beb26abd80d374d86405b7b3ef918fb72c34bedc3c6bc5084c9aabe0b1b",
+    "output/verification/prespin/power-sequence/5v_precharged_output_1A_250n.json": "f633e4e254c28966c09bb602a0b76ecef6d53c187436689025897fd8f0f2a9b7",
+    "output/verification/prespin/power-sequence/12v_loss_restart_0.75A_250n.json": "cb3256434e889d4667e40808ed06aa05a65cd3246abc8aeb9064fe31fbcc1cdf",
+    "output/verification/prespin/power-sequence/5v_loss_restart_3A_250n.json": "70bb78d52fcca374ff1bc80d4e29bd6ca305692e1082d8f014ffb6ef60bdb3c0",
+    "output/verification/prespin/replay-matrix/matrix_20.69V.json": "5240e55d993e13908c64732314101ddb968f92f0fc1506aaf7c16303be8dc343",
+    "output/verification/prespin/replay-matrix/matrix_20.69V_1us.json": "e5d33f760317bdf2c71225b11c76e167d1ce21cecd534c0685fb4ef5e6ed2475",
+    "output/verification/prespin/replay-matrix/matrix_20.69V_1us_strict.json": "f75a6ebf43470aaac1fb2cd8981e8668e820a531da3a6a63af2e7f6d15c09e42",
+    "output/verification/prespin/flasher-unclamped/results.json": "59bab796101009562cef72b4c7b10b945f6143aed42246adb0b665d7eebcf3a7",
+    "output/verification/prespin/replay-gameplay-loss0p3125us/results.json": "cfa4462162ac812b30b08bb2c4040068e6906c051f928bb517e9ea9411e1615b",
+    "output/verification/prespin/replay-gameplay-loss0p625us/results.json": "640a9dafef323ba3fabbadba8c63897c122bc99c58085632a1e21bade14d9a47",
+    "output/verification/prespin/replay-gameplay-gear2p5us/results.json": "389796a1733917b41abdb96dffdd41b1d9580d2eae0b1484ff4b70007c95a4b8",
+    "output/verification/prespin/replay-gameplay/results.json": "fd3880f111fef88d69b5f3934a4e5319cd8cfc1899fa54ee2aa066308dd50ab7",
+    "output/verification/prespin/replay-gameplay-fine/results.json": "198e3e9ab778cd58e2583e3d6822839a14516fd18a42f25fa5eb792ba23ddc6a",
+    "output/verification/prespin/replay-flashers-fine/results.json": "12c121a8a5df717bfb1a4d9283fb629171a8258041f42bc95fd6c22ecb133901",
+    "output/verification/prespin/replay-matrix/initial-fixture-error/matrix_20.69V.json": "ca4f3e20cb0a82d49aeb80ba7f615b09439a44cb90d8f0abae6f4a17071b77de",
+    "output/verification/prespin/replay-matrix/sparse-aborted/matrix_20.69V.json": "3d952f6d7e1fed7186639064ced050e53abb985f0b64d51beab6b4ea66328f0f"
+  },
+  "physical_test_completed": false,
+  "limitations": [
+    "Software-only verification; incomplete numerical refinements are not passes",
+    "Watchdog assertion, partial-power behavior, real circuit loss/SOA/fuse coordination, actual transformer/harness, thermal and fit need hardware measurements",
+    "Power-sequence body_reverse_peak records instantaneous terminal current including displacement; it is not a separate carrier-current SOA qualification",
+    "12 V 2 A case exceeds the rail fuse rating; precharged-output cases exercise an unqualified backfeed condition",
+    "The manufacturer S3M model comparison is distinct from the unchanged engineering diode fit used for prior screening"
+  ],
+  "vendor_model_sources": {
+    "TPS54360": {
+      "url": "https://www.ti.com/lit/zip/SLVMCT7",
+      "local_path": ".scratch/vendor-models/SLVMCT7/TPS54360_PSPICE_TRANS/TPS54360_TRANS.LIB",
+      "sha256": "84de74e80f9abcc6cce316de4c7532187e23d198bc988612993136cb38dbec77",
+      "scope": "TI v1.10 typical model, ngspice PSpice compatibility; separate minimum-current sensitivity is explicitly modified."
+    },
+    "S3M": {
+      "url": "https://www.diodes.com/spice/download/381/S3M.spice.txt",
+      "local_path": ".scratch/vendor-models/S3M.spice.txt",
+      "sha256": "a03d1a4af13cfc334a8ee8af9f3a4569ed364229ecc126f5cc79e2816a2dc32f",
+      "scope": "Manufacturer diode comparison only; unchanged model. Not the DS3M engineering fit used in baseline screening."
+    }
+  },
+  "pending_refinements": []
+}

@@ -1,0 +1,28 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/continuation/coil-full-window/coil1_vendor_energy_balance_0.625us.cir",
+  "deck_sha256": "c86f6c6959e7165a4e95e196a092871b366e2a2a730f4669942288964a68bd1e",
+  "elapsed_s": 81.2946190990042,
+  "wall_limit_s": 300.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.8062335,
+    "e_dissipation": 1.58859,
+    "e_terminal": 1.58859,
+    "vds_peak": 87.3493,
+    "coil_peak": 22.676,
+    "fet_terminal_peak": 113.887,
+    "dissipation_w": 0.1588591,
+    "terminal_w": 0.1588591,
+    "tj_dissipation": 59.84926,
+    "tj_terminal": 59.84926,
+    "e_source": 500.678,
+    "e_coil": 496.619,
+    "e_flyback": 2.4709,
+    "e_inductor_last": 8.243316e-21,
+    "energy_residual": -8.9e-05
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion"
+}

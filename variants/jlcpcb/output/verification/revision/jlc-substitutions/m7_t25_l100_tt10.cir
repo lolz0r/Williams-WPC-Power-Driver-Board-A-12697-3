@@ -1,0 +1,26 @@
+M7 flasher clamp, 30 V rail, hot #89 lamp 18 ohms, wiring inductance sensitivity
+Vrail rail 0 30
+Rlamp rail load 18
+Lwire load drain 100u
+Vgate ctl 0 PULSE(0 5 100u 100n 100n 1m 100m)
+Sdriver drain 0 ctl 0 DRIVER
+.model DRIVER SW(Ron=.02 Roff=1e10 Vt=2.5 Vh=.1)
+Vmeasure drain da 0
+Dfly da rail M7FIT
+.model M7FIT D(Is=5e-9 n=1.8 Rs=.08 Cjo=15p Tt=10u Bv=1000 Ibv=5u)
+.temp 25
+.save v(drain) v(rail) i(Vmeasure) @dfly[capcur]
+.options method=gear reltol=.001
+.tran .1u 4m
+.control
+run
+let carrier=i(Vmeasure)-@dfly[capcur]
+let forward=(abs(carrier)+carrier)/2
+let terminal=(abs(i(Vmeasure))+i(Vmeasure))/2
+let reverse=v(rail)-v(drain)
+meas tran carrier_average AVG forward
+meas tran terminal_average AVG terminal
+meas tran clamp_peak MAX v(drain)
+meas tran reverse_peak MAX reverse
+.endc
+.end

@@ -1,0 +1,70 @@
+{
+  "passed": false,
+  "step_us": 0.078125,
+  "vendor_diode": false,
+  "checks": {
+    "sim_end": {
+      "value": 0.119209,
+      "min": 0.8062333999999997,
+      "max": 0.8062335999999996,
+      "passed": false
+    },
+    "vds_peak": {
+      "value": 87.4217,
+      "min": 0,
+      "max": 90,
+      "passed": true
+    },
+    "coil_peak": {
+      "value": 14.6812,
+      "min": 0,
+      "max": 23.20634920634921,
+      "passed": true
+    },
+    "tj_dissipation": {
+      "value": 50.22747,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "tj_terminal": {
+      "value": 50.2617,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    }
+  },
+  "errors": [
+    "stderr doAnalyses: pause requested",
+    "stderr run simulation interrupted"
+  ],
+  "measurements": {
+    "sim_end": 0.119209,
+    "e_dissipation": 0.036688,
+    "e_terminal": 0.0422104,
+    "vds_peak": 87.4217,
+    "coil_peak": 14.6812,
+    "fet_terminal_peak": 36.5572,
+    "dissipation_w": 0.003668805,
+    "terminal_w": 0.004221036,
+    "tj_dissipation": 50.22747,
+    "tj_terminal": 50.2617
+  },
+  "original_window_s": [
+    4.215159,
+    14.215159
+  ],
+  "simulated_s": 0.8062334999999996,
+  "removed_idle_s": 7.288042333000001,
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "deck_sha256": "2a9deb817bc8d00cac327ea441157f78b4d24a8b9a707f6212ed476f22ed7c0d",
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "vendor_diode_sha256": null,
+  "limitations": [
+    "Only OFF gaps shortened; at least 100 ms OFF exceeds 30 coil L/R time constants. No physical thermal feedback in this lumped model, so energy can be averaged over the original duration",
+    "Initial 50 ms and final 50 ms allow electrical settling; their leakage/switching losses are included conservatively",
+    "Channel+body carrier loss excludes reactive MOSFET capacitance current; terminal-energy metric retained independently",
+    "Vendor diode comparison uses unmodified Diodes Inc S3M model; approximate hot MOSFET fit retained",
+    "Peak terminal current includes displacement/recovery and is reported separately, not treated as a continuous-current/SOA guarantee"
+  ]
+}

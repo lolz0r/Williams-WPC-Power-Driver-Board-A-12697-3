@@ -1,0 +1,13 @@
+LED4 worst-case constant forward voltage; selected NCD0805R1 and 470R
+Vcc vcc 0 5.2
+R192 vcc led 474.7
+Vled led 0 1.6
+.tran 1u 10u
+.control
+run
+let current=i(Vled)
+let rp=(v(vcc)-v(led))*current
+meas tran led_current AVG current
+meas tran resistor_power AVG rp
+.endc
+.end

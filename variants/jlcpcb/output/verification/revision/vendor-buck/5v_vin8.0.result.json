@@ -1,0 +1,51 @@
+{
+  "name": "5v_vin8.0",
+  "checks": {
+    "output_ss": {
+      "value": 5.11051,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    },
+    "output_peak": {
+      "value": 5.17947,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "step_min": {
+      "value": 5.01066,
+      "min": 4.75,
+      "max": 5.25,
+      "passed": true
+    },
+    "removal_peak": {
+      "value": 5.17947,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "highload_ss": {
+      "value": 5.07185,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 3.26835,
+      "min": 0,
+      "max": 6.8,
+      "passed": true
+    },
+    "inductor_running_peak": {
+      "value": 3.26835,
+      "min": 0,
+      "max": 4.5,
+      "passed": true
+    }
+  },
+  "errors": [],
+  "minimum_current_limit_sensitivity": false,
+  "deck_sha256": "27ce2d5d8bb561ab5f7409f64d51724743dff73de244c5cf0b4b13d4beffa7fe",
+  "passed": true
+}

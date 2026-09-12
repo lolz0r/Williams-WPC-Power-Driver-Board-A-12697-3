@@ -1,0 +1,24 @@
+{
+  "harness_sha256": "70e77ff2f4f77d669ad336057c770559993770a0a34a6c9ce26ab1df685374f9",
+  "library_sha256": "171d9bbf712f1ace79f389dcb5eedc1d45f320e2ce1426bb7f4c74e4661157f1",
+  "commit": "2e64cfa9f92955952489854a60ec23397294417e",
+  "rom_hashes": {
+    "sttng_l7.zip": "7c9657fbd4e5eb2e7d4f70ab3eed01c59b30e3af41a0443d626d77ec876e83cc"
+  },
+  "seconds": 240,
+  "build_command": [
+    "/usr/bin/clang++",
+    "-std=c++17",
+    "-O2",
+    "-I/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/.scratch/pinmame/src/libpinmame",
+    "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/pinmame/play.cpp",
+    "-L/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/.scratch/pinmame/build",
+    "-lpinmame",
+    "-Wl,-rpath,/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/.scratch/pinmame/build",
+    "-o",
+    "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/pinmame/play"
+  ],
+  "completed": true,
+  "returncode": 0,
+  "bus_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08"
+}

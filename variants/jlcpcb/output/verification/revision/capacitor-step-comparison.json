@@ -1,0 +1,135 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_18a_c6",
+      "coarse_A": 4.88361,
+      "fine_A": 4.8836,
+      "relative_difference": 2.0476655588020793e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_18a_c7",
+      "coarse_A": 4.88361,
+      "fine_A": 4.8836,
+      "relative_difference": 2.0476655588020793e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_18b_c6",
+      "coarse_A": 2.57416,
+      "fine_A": 2.57415,
+      "relative_difference": 3.884762407956581e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_18b_c7",
+      "coarse_A": 2.57416,
+      "fine_A": 2.57415,
+      "relative_difference": 3.884762407956581e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_20a_c11",
+      "coarse_A": 4.56799,
+      "fine_A": 4.56798,
+      "relative_difference": 2.1891466486619767e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_20b_c11",
+      "coarse_A": 7.81052,
+      "fine_A": 7.81049,
+      "relative_difference": 3.840973456394789e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_5a_c5",
+      "coarse_A": 2.69875,
+      "fine_A": 2.69875,
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceFalse",
+      "metric": "rms_12a_c30",
+      "coarse_A": 3.20329,
+      "fine_A": 3.20328,
+      "relative_difference": 3.121790409255956e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_18a_c6",
+      "coarse_A": 3.82566,
+      "fine_A": 3.82565,
+      "relative_difference": 2.613928054261359e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_18a_c7",
+      "coarse_A": 5.86773,
+      "fine_A": 5.86771,
+      "relative_difference": 3.4084731233596338e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_18b_c6",
+      "coarse_A": 2.0123,
+      "fine_A": 2.0123,
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_18b_c7",
+      "coarse_A": 3.11445,
+      "fine_A": 3.11444,
+      "relative_difference": 3.2108397951694556e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_20a_c11",
+      "coarse_A": 4.44442,
+      "fine_A": 4.44441,
+      "relative_difference": 2.2500123749828825e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_20b_c11",
+      "coarse_A": 7.5661,
+      "fine_A": 7.56607,
+      "relative_difference": 3.96505465163723e-06,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_5a_c5",
+      "coarse_A": 2.65297,
+      "fine_A": 2.65297,
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "case": "f60_line1.1_esr0.02_imbalanceTrue",
+      "metric": "rms_12a_c30",
+      "coarse_A": 3.17005,
+      "fine_A": 3.17005,
+      "relative_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "scope": "High-line low-ESR balanced and imbalanced reservoir cases; Gear 10 vs 5 us, imbalanced fine run uses KLU and 100 Newton iterations. Original SPARSE failures retained.",
+  "physical_models_unchanged": true
+}

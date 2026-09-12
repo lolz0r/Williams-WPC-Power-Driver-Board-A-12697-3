@@ -1,0 +1,516 @@
+{
+  "passed": false,
+  "complete": true,
+  "cases": [
+    {
+      "name": "n1_l1u_clamp0",
+      "lamps": 1,
+      "wire_uH": 1,
+      "clamp": false,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.6739,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43787,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 1.6658,
+          "min": 0,
+          "max": 1.7000000000000002,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 30.6739,
+        "vgs_peak": 4.43787,
+        "load_peak": 1.6658,
+        "e_turnoff": 1.06448e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "dffa1f1c8f328b304db23bd29514c60d2e93eb0e06b71d8c84b85613de88e856"
+    },
+    {
+      "name": "n1_l1u_clamp1",
+      "lamps": 1,
+      "wire_uH": 1,
+      "clamp": true,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.524,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43787,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 1.66581,
+          "min": 0,
+          "max": 1.7000000000000002,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 30.524,
+        "vgs_peak": 4.43787,
+        "load_peak": 1.66581,
+        "e_turnoff": 1.06166e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "90f510c22b2c23993b87e428fe997ff99c10b05ddf609e2f9d86574cdef2b0ef"
+    },
+    {
+      "name": "n1_l10u_clamp0",
+      "lamps": 1,
+      "wire_uH": 10,
+      "clamp": false,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 42.7017,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43787,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 1.66552,
+          "min": 0,
+          "max": 1.7000000000000002,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 42.7017,
+        "vgs_peak": 4.43787,
+        "load_peak": 1.66552,
+        "e_turnoff": 2.50572e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "cf3ee2e320b6099d3697c3e66077599c21a30f4591ce80c258cf81c8be7c5168"
+    },
+    {
+      "name": "n1_l10u_clamp1",
+      "lamps": 1,
+      "wire_uH": 10,
+      "clamp": true,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.8011,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43787,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 1.66552,
+          "min": 0,
+          "max": 1.7000000000000002,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 30.8011,
+        "vgs_peak": 4.43787,
+        "load_peak": 1.66552,
+        "e_turnoff": 1.92618e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3478d1498281eae09c49a7dcb7a80df74b497f89fa7eb44c6bb5b18a58b6fe72"
+    },
+    {
+      "name": "n1_l100u_clamp0",
+      "lamps": 1,
+      "wire_uH": 100,
+      "clamp": false,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 100.228,
+          "min": 0,
+          "max": 90,
+          "passed": false
+        },
+        "vgs_peak": {
+          "value": 4.43789,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 1.66552,
+          "min": 0,
+          "max": 1.7000000000000002,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 100.228,
+        "vgs_peak": 4.43789,
+        "load_peak": 1.66552,
+        "e_turnoff": 0.000160876
+      },
+      "errors": [],
+      "passed": false,
+      "deck_sha256": "8c6ee5588e8c8f27e5b8ba00b0ea4cb76e583f26515238e7652da800927f6ea4"
+    },
+    {
+      "name": "n1_l100u_clamp1",
+      "lamps": 1,
+      "wire_uH": 100,
+      "clamp": true,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9633,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43789,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 1.66552,
+          "min": 0,
+          "max": 1.7000000000000002,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 30.9633,
+        "vgs_peak": 4.43789,
+        "load_peak": 1.66552,
+        "e_turnoff": 2.63408e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "ee6890321a3a2469f5da1d73bfd7175adf5cffcbfbb1bec306d9e4e2d7a85c79"
+    },
+    {
+      "name": "n4_l1u_clamp0",
+      "lamps": 4,
+      "wire_uH": 1,
+      "clamp": false,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 34.4146,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43787,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 6.64828,
+          "min": 0,
+          "max": 6.800000000000001,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 34.4146,
+        "vgs_peak": 4.43787,
+        "load_peak": 6.64828,
+        "e_turnoff": 6.12647e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "27d9dd4570e3435d5bcc72ac9217dbfd62d5263499957ff6ca97937741c93f31"
+    },
+    {
+      "name": "n4_l1u_clamp1",
+      "lamps": 4,
+      "wire_uH": 1,
+      "clamp": true,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.7797,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43787,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 6.64828,
+          "min": 0,
+          "max": 6.800000000000001,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 30.7797,
+        "vgs_peak": 4.43787,
+        "load_peak": 6.64828,
+        "e_turnoff": 5.85035e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "442fcd3b0bfc6f0fce9eeeedb52548ace1398ac898e3dabe9946d5581af658af"
+    },
+    {
+      "name": "n4_l10u_clamp0",
+      "lamps": 4,
+      "wire_uH": 10,
+      "clamp": false,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 71.5194,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43788,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 6.64828,
+          "min": 0,
+          "max": 6.800000000000001,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 71.5194,
+        "vgs_peak": 4.43788,
+        "load_peak": 6.64828,
+        "e_turnoff": 0.000288705
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "1abefcd9bb611a4c37eb7ef1ed494ef0373c6923b40bc4a33ce9d05f112e1ba8"
+    },
+    {
+      "name": "n4_l10u_clamp1",
+      "lamps": 4,
+      "wire_uH": 10,
+      "clamp": true,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.235,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.43788,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 6.64828,
+          "min": 0,
+          "max": 6.800000000000001,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 31.235,
+        "vgs_peak": 4.43788,
+        "load_peak": 6.64828,
+        "e_turnoff": 9.85284e-05
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "deacbf163baa08ff8791b8626c3028bd81216d6b3229a68cb6f4e0d2706d6388"
+    },
+    {
+      "name": "n4_l100u_clamp0",
+      "lamps": 4,
+      "wire_uH": 100,
+      "clamp": false,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 100.351,
+          "min": 0,
+          "max": 90,
+          "passed": false
+        },
+        "vgs_peak": {
+          "value": 4.438,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 6.64828,
+          "min": 0,
+          "max": 6.800000000000001,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 100.351,
+        "vgs_peak": 4.438,
+        "load_peak": 6.64828,
+        "e_turnoff": 0.00248152
+      },
+      "errors": [],
+      "passed": false,
+      "deck_sha256": "834f94460f8e566dfbb8fc2c1f83e21e46073c0f1a70b7905437aa7d690d0be2"
+    },
+    {
+      "name": "n4_l100u_clamp1",
+      "lamps": 4,
+      "wire_uH": 100,
+      "clamp": true,
+      "checks": {
+        "sim_end": {
+          "value": 0.002,
+          "min": 0.00199999,
+          "max": 0.00200001,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.4292,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.438,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "load_peak": {
+          "value": 6.64828,
+          "min": 0,
+          "max": 6.800000000000001,
+          "passed": true
+        }
+      },
+      "measurements": {
+        "sim_end": 0.002,
+        "vds_peak": 31.4292,
+        "vgs_peak": 4.438,
+        "load_peak": 6.64828,
+        "e_turnoff": 0.000107464
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "1972457713e969575e1cb6e66cfa2bf381a1e8ad9a0037040d0c9745a589f2bb"
+    }
+  ],
+  "limitations": [
+    "100 V MOSFET avalanche macro is not an SOA or avalanche-energy qualification",
+    "Constant hot 18 ohm filaments isolate turn-off; cold inrush tested separately",
+    "1..100 uH is engineering sensitivity, actual harness inductance unknown",
+    "On STTNG cathodes for SOL21..28 are open in the existing native board/harness; clamped cases are a comparison, not current hardware"
+  ]
+}

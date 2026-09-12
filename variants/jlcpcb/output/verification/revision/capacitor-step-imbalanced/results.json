@@ -1,0 +1,112 @@
+{
+  "cases": [
+    {
+      "name": "f60_line1.1_esr0.02_imbalanceTrue",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": null,
+          "passed": false
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": null,
+          "passed": false
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": null,
+          "passed": false
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": null,
+          "passed": false
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": null,
+          "passed": false
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": null,
+          "passed": false
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": null,
+          "passed": false
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": null,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.0350279, timestep = 6.25e-18: trouble with node \"d45a#internal\"",
+        "stderr run simulation(s) aborted",
+        "stderr out of interval",
+        "stderr meas tran rms_18a_c6 rms i(vc18a_c6) from=800m to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran rms_18a_c7 rms i(vc18a_c7) from=800m to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran rms_18b_c6 rms i(vc18b_c6) from=800m to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran rms_18b_c7 rms i(vc18b_c7) from=800m to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran rms_20a_c11 rms i(vc20a_c11) from=800m to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran rms_20b_c11 rms i(vc20b_c11) from=800m to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran rms_5a_c5 rms i(vc5a_c5) from=800m to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran rms_12a_c30 rms i(vc12a_c30) from=800m to=1 failed!"
+      ],
+      "deck_sha256": "83ee70803c78dd4e752e6ad573354c00d79f3f96c16e77b265cf6a4d51513143",
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "method": "gear",
+  "maxstep": "5u",
+  "limitations": "Approximate rectifiers, assumed transformer resistance from bridge_loss.cir, ESR sweep is sensitivity rather than vendor tolerance. 1 s settling and integer mains periods. TDK parts require measured LOCAL ambient <=60 C for 7.89 A limit for all five 10,000 uF reservoirs. 100 Hz factor 0.9 conservatively bounds the TDK B41252 2016 page 16 curve (100 Hz normalized to 1, 120 Hz approximately 1.01). Fuse-limit load is informational, not a sustained-load qualification.",
+  "sources": [
+    "https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000"
+  ]
+}

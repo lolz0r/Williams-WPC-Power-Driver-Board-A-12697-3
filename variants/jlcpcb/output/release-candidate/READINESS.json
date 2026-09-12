@@ -1,0 +1,41 @@
+{
+  "status": "ENGINEERING_REVIEW_CANDIDATE_WITH_OPEN_ANALOG_FINDINGS",
+  "revision": "JLC-2",
+  "electronic_redesign_complete": true,
+  "software_review_complete": false,
+  "expanded_checks_executed": true,
+  "all_simulation_checks_passed": false,
+  "normal_power_sequence_passed": false,
+  "numerical_convergence_established": false,
+  "fabrication_files_verified": true,
+  "prototype_recommendation": "Hold assembled prototype order pending disposition of the regulator and numerical findings in docs/PRESPIN_VERIFICATION.md",
+  "fab_ready": false,
+  "production_qualified": false,
+  "electrical_errors": 0,
+  "unconnected_items": 0,
+  "schematic_parity_issues": 0,
+  "drc_warnings": 77,
+  "drc_warnings_reviewed": true,
+  "all_populated_electronics_jlcpcb_purchasable_snapshot": true,
+  "failed_or_inconclusive_regulator_cases": [
+    "12v_prebias",
+    "12v_uvlo",
+    "5v_prebias",
+    "5v_uvlo"
+  ],
+  "remaining_gates": [
+    "Regulator full-input sequence/backfeed findings and incomplete fine-step loss/matrix convergence; see prespin summary and continued report",
+    "First-article cabinet/harness/fastener/tolerance clearance and actual component fit",
+    "Loaded power, simultaneous thermal, faults, fuse clearing and protection/SOA measurements",
+    "JLCPCB procurement including twelve short-stock/preorder types; assembly orientation and fabricator DFM confirmation"
+  ],
+  "physical_qualification": "No physical prototype, load or cabinet/harness was tested. See docs/VERIFICATION.md and first-article procedure.",
+  "prespin_failed_power_cases": [
+    "12v_loss_restart_0.75A_250n",
+    "12v_loss_restart_0.02A_250n",
+    "12v_loss_restart_2A_250n",
+    "5v_precharged_output_1A_250n",
+    "12v_precharged_output_0.75A_250n"
+  ],
+  "prespin_summary_sha256": "76742e016574fab1ac04d3255487d5d3269065adf5a4fce649eb7b29f8146086"
+}

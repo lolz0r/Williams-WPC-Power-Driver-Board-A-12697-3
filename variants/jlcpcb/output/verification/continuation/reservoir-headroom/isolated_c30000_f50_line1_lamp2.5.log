@@ -1,0 +1,30 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: u21 source headroom; hypothetical reservoir sensitivity isolated_c30000_f50_line1_lamp2.5
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout secp                              -4.53225e-19
+stdout secn                              -4.53225e-19
+stdout acp                               -4.53225e-19
+stdout acn                               -4.53225e-19
+stdout vinf                               2.16564e-25
+stdout stored                             2.16564e-25
+stdout dedicated                         -4.50031e-11
+stdout isolated_stored                   -4.50031e-11
+stdout vsecondary#branch                  3.08149e-33
+ Reference value :  1.15361e-01
+ Reference value :  3.86981e-01
+stdout No. of Data Rows : 50036
+stdout sim_end = 5.000000e-01
+stdout raw_min             =  1.22985e+01 at=  4.02441e-01
+stdout raw_max             =  1.52608e+01 at=  4.25821e-01
+stdout raw_mean            =  1.38600e+01 from=  4.00000e-01 to=  5.00000e-01
+stdout buck_input_min      =  1.42543e+01 at=  4.94261e-01
+stdout buck_input_max      =  1.48010e+01 at=  4.15981e-01
+stdout secondary_rms       =  1.02740e+01 from=  4.00000e-01 to=  5.00000e-01
+stdout capacitor_rms       =  7.19316e+00 from=  4.00000e-01 to=  5.00000e-01
+stdout diode_peak          =  2.09349e+01 at=  4.64621e-01
+stdout inrush_peak         =  6.15705e+01 at=  3.66126e-03

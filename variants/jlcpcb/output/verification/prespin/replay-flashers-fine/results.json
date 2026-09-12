@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "complete": true,
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "max_step_us": 2.5,
+  "cases": [
+    {
+      "name": "sol23",
+      "channel": 23,
+      "load": {
+        "lamps": 4,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        34.868887333,
+        44.868887333
+      ],
+      "duty": 0.006805100000000408,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.0983,
+        "vgs_peak": 4.49003,
+        "current_peak": 27.0148,
+        "current_avg": 0.0235421,
+        "diode_average": 2.48649e-06,
+        "power_average": 0.0013209,
+        "tj": 50.0819
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.0983,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.49003,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 27.0148,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 2.48649e-06,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.0819,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3739f5a9be537adc83f39f8662aaaeef8239da5c12f4f8b91b52a4afb73c2975"
+    }
+  ],
+  "limitations": [
+    "Worst 10 s commanded duty; latch output enabled, separate logic/blanking checks",
+    "Flashers: actual bulb counts from Williams printed 2-44, both #89 and #906 approximated by the same lower-resistance thermal envelope; not measured filament data",
+    "Flashers require proposed SOL21..28 cathode connection to +20 V on the PCB; original open-tieback board is not represented",
+    "Motors: manual 3-22 EMI series diode and two chokes included; 4.7 uH and 4.7 mH cover ambiguous drawing units, 10 mH motor and 8/16 ohm 0/8 V back EMF are sensitivities, not measured A-17562 values",
+    "8 ohm simultaneous stalled motors can exceed the shared 3 A rail fuse; passing device stress does not imply indefinite stall operation or prove fuse clearing",
+    "TI logic and MOSFET/M7 are approximate device fits; no avalanche/SOA/fuse-clearing or physical thermal claim"
+  ]
+}

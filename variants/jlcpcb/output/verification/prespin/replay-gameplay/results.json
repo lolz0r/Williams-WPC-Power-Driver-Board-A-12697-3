@@ -1,0 +1,863 @@
+{
+  "method": "trap",
+  "reltol": 0.002,
+  "max_step_us": 5.0,
+  "requested_channels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "cases": [
+    {
+      "diode_terminal_forward_average_A": 0.710268,
+      "deck_sha256": "029a360adaf3435e4e5651b8bfb490aa075a44cd345818759fd257cad9c1685b",
+      "channel": 1,
+      "window_s": [
+        4.215159,
+        14.215159
+      ],
+      "commanded_duty": 0.03549425000000026,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6983,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.49626,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 80.5848542,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.215089,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 68.4683,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.6752,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.2299999,
+          "max": 10.230000099999998,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.723756,
+      "deck_sha256": "69681c1dbce77b6c58e3691ba4e0c6234417966dc0b11838e1e0eac6eb39acd5",
+      "channel": 2,
+      "window_s": [
+        3.806421499999999,
+        13.806421499999999
+      ],
+      "commanded_duty": 0.034731249999999256,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6983,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.4965,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 82.7920852,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.21405,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 73.3621,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.6747,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.2299999,
+          "max": 10.230000099999998,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 1.69371e-05,
+      "deck_sha256": "7835840db042875979f8bc9e1f1c362e2c789f1af19419e47d7ffbff011639f7",
+      "channel": 3,
+      "window_s": [
+        88.542872833,
+        98.542872833
+      ],
+      "commanded_duty": 0.006554450000000145,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6814,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44127,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.43392904,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 2.32946e-12,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6811,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.676,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 1.69358e-05,
+      "deck_sha256": "d483577e59b127e3dd3064e6adca52a608204e427d33ef7e4584018acfd7e7a1",
+      "channel": 4,
+      "window_s": [
+        171.626135333,
+        181.626135333
+      ],
+      "commanded_duty": 0.006553949999999986,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6814,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44127,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.43372878,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 2.32946e-12,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6811,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.676,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999899999989,
+          "max": 10.230000099999987,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 1.6714e-05,
+      "deck_sha256": "d8f6faea67d2a0eb1b37fbb4415b5fb78737d399f446efcac6b8ef99fe0fe492",
+      "channel": 5,
+      "window_s": [
+        141.642554333,
+        151.642554333
+      ],
+      "commanded_duty": 0.00646809999999789,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6814,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44127,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 52.39935226,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 2.32947e-12,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6811,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.676,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999899999989,
+          "max": 10.230000099999987,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.0240073,
+      "deck_sha256": "541eafb0ff5784119ceaedfc1f8333721905a8d35d4e2f44ce52b0471d3ebdf9",
+      "channel": 6,
+      "window_s": [
+        78.944689833,
+        88.944689833
+      ],
+      "commanded_duty": 0.029493549999999404,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6858,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44127,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 61.2805342,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.0203938,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6811,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.676,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.00747051,
+      "deck_sha256": "e3de47d260d6a725749ef514cf5c8e84bdd2f5a33c6b250d4107c59dfd42a93e",
+      "channel": 9,
+      "window_s": [
+        77.786385333,
+        87.786385333
+      ],
+      "commanded_duty": 0.01940385000000049,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2228,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44129,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 51.12556412,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00647958,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84158,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 8.83641,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.0085777,
+      "deck_sha256": "655dc0a556fc582507b195f89cb776e3cdc88fcd46d8af4b4243718c263983ac",
+      "channel": 10,
+      "window_s": [
+        77.952272833,
+        87.952272833
+      ],
+      "commanded_duty": 0.019427650000000084,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2236,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44129,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 51.12439604,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00648006,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84158,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 8.83641,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.0101779,
+      "deck_sha256": "172234b4d5e66251ee083e930f8a49c338391bed489317ae5d08c402e332bea0",
+      "channel": 11,
+      "window_s": [
+        13.094160332999998,
+        23.094160332999998
+      ],
+      "commanded_duty": 0.012935900000000267,
+      "coil_ohm": 13.05,
+      "coil_H": 0.03,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.1556,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44129,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 50.421074178,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00288218,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 6.58894,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 6.58376,
+          "min": 0,
+          "max": 6.72183908045977,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.2299999,
+          "max": 10.230000099999998,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.00747127,
+      "deck_sha256": "d869382bd4b71d6cce127e7050ab6369dc4483fbee24db512c1ee8f82cba0255",
+      "channel": 12,
+      "window_s": [
+        79.635729333,
+        89.635729333
+      ],
+      "commanded_duty": 0.019404049999999985,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2228,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44129,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 51.12557652,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00647958,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84158,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 8.83641,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.00747431,
+      "deck_sha256": "4d3381c3b0211148a932774ac26b2dab12a283b7e11dbea6b5bb499997db68df",
+      "channel": 13,
+      "window_s": [
+        78.453170333,
+        88.453170333
+      ],
+      "commanded_duty": 0.01931624999999997,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2229,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44129,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 51.12027614,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00647958,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84158,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 8.83641,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.0074729,
+      "deck_sha256": "7236f3523f6bd5549fe13d4dd20b449bd9ee63318334b3ef658cbc7e16104213",
+      "channel": 14,
+      "window_s": [
+        79.478032833,
+        89.478032833
+      ],
+      "commanded_duty": 0.019372449999998764,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2229,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44129,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 51.12366878,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00647958,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 8.84158,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 8.83641,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.821989,
+      "deck_sha256": "1a0a9c4f510d38d663429b14b29a14164d79eb24f5cf2a389355f6c6e451eecf",
+      "channel": 15,
+      "window_s": [
+        72.675057833,
+        82.675057833
+      ],
+      "commanded_duty": 0.10146424999997805,
+      "coil_ohm": 8.64,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2614,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.49614,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 60.4710312,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.436258,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.0527,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 9.93936,
+          "min": 0,
+          "max": 10.152777777777777,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "diode_terminal_forward_average_A": 0.00932426,
+      "deck_sha256": "273eae2e6d7def565a5956cd0915965a7a20b3cfb8e7b2eb9355a585fc28f9ec",
+      "channel": 16,
+      "window_s": [
+        117.536016333,
+        127.536016333
+      ],
+      "commanded_duty": 0.0031912999999988757,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6857,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44127,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 51.1014207,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.00679762,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 22.6802,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 22.675,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Integration method and maximum step recorded in report, 20 ns command transitions, strict PWL times and explicit end-time completion; no partial transient may pass",
+    "Forward diode rating uses carrier-conduction current after subtracting ngspice capcur; original positive terminal-current average is also reported. Electrical device and stored-charge model unchanged",
+    "Coil R/L approximations; 86 V high-line bound with 4.5 V gate and hot MOSFET fit",
+    "Commands assumed enabled; no credit for physical blanking",
+    "Temperature is steady repetition of worst 10 s window at 50 C ambient and 62 C/W, excludes mutual heating",
+    "Channels 17-28 motors/flashers excluded here; covered by generic decks only",
+    "No harness parasitics, avalanche SOA, fuse clearing or physical thermal correlation"
+  ]
+}

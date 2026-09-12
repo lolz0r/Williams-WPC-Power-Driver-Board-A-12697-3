@@ -1,0 +1,75 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/continuation/isolated-buck/startup_0.75A_f60_cc100n_stop30m.cir",
+  "deck_sha256": "90ccd5b71b72696cf804b121a62df6cf0f4cba1ecb6085a8bffe1b6cc60d3583",
+  "elapsed_s": 300.0106112079957,
+  "wall_limit_s": 300.0,
+  "timed_out": true,
+  "worker_returncode": -15,
+  "execution_completed": false,
+  "errors": [],
+  "measurements": {},
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "sim_end": {
+      "value": null,
+      "min": 0.029999989999999997,
+      "max": 0.03000001,
+      "passed": false
+    },
+    "output_peak": {
+      "value": null,
+      "min": 0,
+      "max": 12.6,
+      "passed": false
+    },
+    "output_min": {
+      "value": null,
+      "min": -0.3,
+      "max": 13,
+      "passed": false
+    },
+    "inductor_peak": {
+      "value": null,
+      "min": 0,
+      "max": 10,
+      "passed": false
+    },
+    "inductor_min": {
+      "value": null,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    },
+    "recovery_min": {
+      "value": null,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": false
+    },
+    "recovery_max": {
+      "value": null,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "candidate_only": true,
+  "pcb_changed": false,
+  "scenario": "startup",
+  "load_A": 0.75,
+  "frequency_Hz": 60,
+  "compensation_C_nF": 100,
+  "base_deck_sha256": "7d1d9a8f091bce7389c80e9267d2f42b0ff4cc072204727e47e035a0cdc370cb",
+  "deviations": [
+    "C7 moved from lamp rail to diode-isolated U21 input",
+    "Added B560C diode between +18 V and U21 input",
+    "U21 input divider/local ceramics follow isolated input",
+    "C42 modeled at 100 nF (native 100 nF)"
+  ],
+  "limitations": [
+    "Typical vendor model; no PCB layout or component SOA qualification",
+    "Last complete rectified cycle checked, not merely a partial-cycle average",
+    "Ripple, fuse inrush, brownout, reverse power, thermal and source corners still needed before promotion"
+  ]
+}

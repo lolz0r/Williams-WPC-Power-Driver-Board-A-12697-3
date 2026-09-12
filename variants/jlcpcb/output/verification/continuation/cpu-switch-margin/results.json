@@ -1,0 +1,900 @@
+{
+  "cases": [
+    {
+      "name": "rail9.5_logic4.75_contact0.1",
+      "rail_V": 9.5,
+      "logic_V": 4.75,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 4.75,
+        "input_closed_margin": 2.79494,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 4.75,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.79494,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "fd88597688c6ccee9fa080b48f1160f58dcb5d0e2b2f52326d3b87ca052682d3"
+    },
+    {
+      "name": "rail9.5_logic4.75_contact100",
+      "rail_V": 9.5,
+      "logic_V": 4.75,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 4.75,
+        "input_closed_margin": 2.22298,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 4.75,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.22298,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "1c74d6226a8297e63d0b6cc4954b9ffcb263088036dd7f3c414054d9faa527b8"
+    },
+    {
+      "name": "rail9.5_logic5.25_contact0.1",
+      "rail_V": 9.5,
+      "logic_V": 5.25,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 4.25,
+        "input_closed_margin": 3.29494,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 4.25,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 3.29494,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "a0827251097eb6ff84fca5b59caa87662a2f9a7c5c28e81234d8a31c623751db"
+    },
+    {
+      "name": "rail9.5_logic5.25_contact100",
+      "rail_V": 9.5,
+      "logic_V": 5.25,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 4.25,
+        "input_closed_margin": 2.72298,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 4.25,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.72298,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "e63d5ff119c05ac74a958a7c0ad61ed00b16edeb207f1b458ca892e13c78e864"
+    },
+    {
+      "name": "rail10.9175_logic4.75_contact0.1",
+      "rail_V": 10.9175196,
+      "logic_V": 4.75,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 6.16752,
+        "input_closed_margin": 2.77388,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 6.16752,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.77388,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "bfc99780b690454f7f82953c42b77e39b56dd30d775f976c5ff7ee978ef5ccb7"
+    },
+    {
+      "name": "rail10.9175_logic4.75_contact100",
+      "rail_V": 10.9175196,
+      "logic_V": 4.75,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 6.16752,
+        "input_closed_margin": 2.09474,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 6.16752,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.09474,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "ee39d01c98446b515c3a44a1ca79ca78eccb014433f2be74151bfe693b306373"
+    },
+    {
+      "name": "rail10.9175_logic5.25_contact0.1",
+      "rail_V": 10.9175196,
+      "logic_V": 5.25,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 5.66752,
+        "input_closed_margin": 3.27388,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 5.66752,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 3.27388,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "d4f02329a0761d6ac34ab9bbca36831f8881004e7cf35d48cea1ffd5b1fd2b7b"
+    },
+    {
+      "name": "rail10.9175_logic5.25_contact100",
+      "rail_V": 10.9175196,
+      "logic_V": 5.25,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 5.66752,
+        "input_closed_margin": 2.59474,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 5.66752,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.59474,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "4327f96055005f6669d1bb39fe12efa892c220410b7a4887c0e2b96061b5fec1"
+    },
+    {
+      "name": "rail12.8187_logic4.75_contact0.1",
+      "rail_V": 12.8187381,
+      "logic_V": 4.75,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 8.06874,
+        "input_closed_margin": 2.74975,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 8.06874,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.74975,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "bfe08cc0501f4af995861af7cb90e6acda3b2ce2458e6ab18c372cf47aba1f32"
+    },
+    {
+      "name": "rail12.8187_logic4.75_contact100",
+      "rail_V": 12.8187381,
+      "logic_V": 4.75,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 8.06874,
+        "input_closed_margin": 1.92653,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 8.06874,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 1.92653,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "7f751ab1cb2dfc932787e6f9e6ec9052d98a6969cd38d270d98a0a1fe7123cfa"
+    },
+    {
+      "name": "rail12.8187_logic5.25_contact0.1",
+      "rail_V": 12.8187381,
+      "logic_V": 5.25,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 7.56874,
+        "input_closed_margin": 3.24975,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 7.56874,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 3.24975,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "ccb6473333bc090a540eac27080e9622baa3c5b7d95976679931e0a6a0d91348"
+    },
+    {
+      "name": "rail12.8187_logic5.25_contact100",
+      "rail_V": 12.8187381,
+      "logic_V": 5.25,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 7.56874,
+        "input_closed_margin": 2.42653,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 7.56874,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.42653,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "b5cd87504e1da521a1b71d046c5d5238578f19fdf2df8bec036fbc2fe886da3e"
+    },
+    {
+      "name": "rail13.5_logic4.75_contact0.1",
+      "rail_V": 13.5,
+      "logic_V": 4.75,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 8.75,
+        "input_closed_margin": 2.74198,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 8.75,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.74198,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "52af5fcb1730c461a5a046db21a629beeb650808eeec8a556d1690091c4e2711"
+    },
+    {
+      "name": "rail13.5_logic4.75_contact100",
+      "rail_V": 13.5,
+      "logic_V": 4.75,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 8.75,
+        "input_closed_margin": 1.86706,
+        "output_high": 4.74995,
+        "output_low": 0.0142074,
+        "return_high": 4.74995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 8.75,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 1.86706,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0142074,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 4.74995,
+          "min": 2,
+          "max": 4.85,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "7f29feb7bd6b3f5342c31f1a8d276802e423943cd1151a7bb4f4be8e1a3109f6"
+    },
+    {
+      "name": "rail13.5_logic5.25_contact0.1",
+      "rail_V": 13.5,
+      "logic_V": 5.25,
+      "contact_ohms": 0.1,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 8.25,
+        "input_closed_margin": 3.24198,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 8.25,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 3.24198,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "4e59d3cb7319a4f0801d78005a8cfa632d2607546a8fda6c35ebf983df92c6b2"
+    },
+    {
+      "name": "rail13.5_logic5.25_contact100",
+      "rail_V": 13.5,
+      "logic_V": 5.25,
+      "contact_ohms": 100,
+      "measurements": {
+        "sim_end": 0.003,
+        "input_open_margin": 8.25,
+        "input_closed_margin": 2.36706,
+        "output_high": 5.24995,
+        "output_low": 0.0157029,
+        "return_high": 5.24995
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.003,
+          "min": 0.002999999,
+          "max": 0.003000001,
+          "passed": true
+        },
+        "input_open_margin": {
+          "value": 8.25,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "input_closed_margin": {
+          "value": 2.36706,
+          "min": 0.1,
+          "max": 20,
+          "passed": true
+        },
+        "output_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        },
+        "output_low": {
+          "value": 0.0157029,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "return_high": {
+          "value": 5.24995,
+          "min": 2,
+          "max": 5.35,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "b6802d2e2fff43f552aa03067433ff6df6a696137196710c3cdff9188c4ca0d4"
+    }
+  ],
+  "passed": true,
+  "model_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "manual_sha256": "5e89acb0e1fca7cb7e53e621869293e95bf97358e7b3b2d70f825c4204e2fb14",
+  "sources": [
+    "https://archive.org/download/arcademanual_Star_Trek_TNG_OPS/Star_Trek_TNG_OPS.pdf",
+    "https://www.ti.com/lit/ds/symlink/lm339.pdf"
+  ],
+  "limitations": [
+    "Manual printed 3-2/3-3 functional circuits; no actual CPU-board netlist or complete CPU power-domain model",
+    "Generic ULN2803/diode and ideal hysteretic comparator models; no manufacturer offset/delay/process model",
+    "0.1 V minimum comparator-input margin is a screening guard band; TTL 0.8/2.0 V output screens",
+    "The fixed 5 V comparison input is within the legacy LM339 common-mode range when powered by these 12 V cases; no startup/partial-power claim",
+    "Matrix path adds a second series diode/column sink relative to the directly grounded dedicated-switch example",
+    "9.5-13.5 V brackets observed normal-run extrema but is not a replacement rail requirement or complete peripheral acceptance range",
+    "100 ohm contact and 2 nF harness capacitance are explicit sensitivity assumptions; measurements sampled 100 us after each command edge"
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/continuation/coil-transitions/two_pulses_trap_0.625us_vendor.cir",
+  "deck_sha256": "93e25ebd57b9217be4c43cfdf535a503708e25576c5aa443cef1bc1bcc092ba0",
+  "elapsed_s": 0.6668241010047495,
+  "wall_limit_s": 120,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.030355,
+    "e_dissipation": 0.00576409,
+    "e_terminal": 0.00576411,
+    "vds_peak": 87.1652,
+    "coil_peak": 11.5641
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "sim_end": {
+      "value": 0.030355,
+      "min": 0.03035498999999967,
+      "max": 0.030355009999999672,
+      "passed": true
+    },
+    "vds_peak": {
+      "value": 87.1652,
+      "min": 0,
+      "max": 90,
+      "passed": true
+    },
+    "coil_peak": {
+      "value": 11.5641,
+      "min": 0,
+      "max": 23.20634920634921,
+      "passed": true
+    },
+    "e_dissipation": {
+      "value": 0.00576409,
+      "min": 0,
+      "max": 1,
+      "passed": true
+    },
+    "e_terminal": {
+      "value": 0.00576411,
+      "min": 0,
+      "max": 1,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "vendor_model_sha256": "a03d1a4af13cfc334a8ee8af9f3a4569ed364229ecc126f5cc79e2816a2dc32f",
+  "pulse_edges": [
+    [
+      4.215159,
+      1
+    ],
+    [
+      4.2172235,
+      0
+    ],
+    [
+      4.2233515,
+      1
+    ],
+    [
+      4.225414,
+      0
+    ]
+  ],
+  "method": "trap",
+  "step_us": 0.625,
+  "limitations": [
+    "Two initial pulses only; not the maximum-current transitions or full-window thermal qualification",
+    "Tighter integration tolerances and KLU; device models, gate resistance and command edges unchanged",
+    "Approximate MOSFET model; selected manufacturer S3M model used only with --vendor-diode"
+  ]
+}

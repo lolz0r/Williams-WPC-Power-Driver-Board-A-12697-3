@@ -1,0 +1,32 @@
+
+warning: "target:/usr/bin/python3.13": could not open as an executable file: Input/output error.
+
+warning: `target:/usr/bin/python3.13': can't open to read symbols: Input/output error.
+
+warning: Could not load vsyscall page because no executable was specified
+
+warning: Target and debugger are in different PID namespaces; thread lists and other data are likely unreliable.  Connect to gdbserver inside the container.
+0x00007801aae84480 in ?? ()
+Error reading attached process's symbol file.
+: No such file or directory.
+warning: Expected absolute pathname for libpthread in the inferior, but got .gnu_debugdata for /proc/786986/root/usr/lib/x86_64-linux-gnu/libc.so.6.
+warning: File "/usr/lib/x86_64-linux-gnu/libthread_db.so.1" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+	add-auto-load-safe-path /usr/lib/x86_64-linux-gnu/libthread_db.so.1
+line to your configuration file "/home/lolz0r/.config/gdb/gdbinit".
+To completely disable this security protection add
+	set auto-load safe-path /
+line to your configuration file "/home/lolz0r/.config/gdb/gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+	info "(gdb)Auto-loading safe path"
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+Error reading attached process's symbol file.
+: No such file or directory.
+warning: Expected absolute pathname for libpthread in the inferior, but got .gnu_debugdata for /proc/786986/root/usr/lib/x86_64-linux-gnu/libc.so.6.
+warning: File "/usr/lib/x86_64-linux-gnu/libthread_db.so.1" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+warning: Unable to find libthread_db matching inferior's thread library, thread debugging will not be available.
+0x652ae340eba0:	"time"
+$1 = 35916838
+$2 = 0.60889207938509071
+[Inferior 1 (process 786986) detached]

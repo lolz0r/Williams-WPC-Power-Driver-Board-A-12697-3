@@ -1,0 +1,32 @@
+U21 source headroom; hypothetical reservoir sensitivity shared_c30000_f50_line1_lamp2.5
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+Vsecondary secp secn SIN(0 18.8 50)
+Rsec1 secp acp .05
+Rsec2 secn acn .05
+Dbridge1 acp vinf DSCH20100
+Dbridge2 acn vinf DSCH20100
+Dbridge3 0 acp DSCH20100
+Dbridge4 0 acn DSCH20100
+Creservoir stored 0 24000u
+Rreservoir stored vinf .05
+Rrawbleed vinf 0 5000
+Rlamps vinf 0 2.5
+Bbuck vinf 0 I=10/max(v(vinf),4.5)*min(max((time-20m)/10m,0),1)
+.save v(vinf) v(vinf) i(Vsecondary) @dbridge1[id] @dbridge2[id] @creservoir[i]
+.options method=gear reltol=.0001 abstol=100n vntol=10u
+.tran 10u 500m 0 10u
+.control
+run
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran raw_min MIN v(vinf) from=400m to=500m
+meas tran raw_max MAX v(vinf) from=400m to=500m
+meas tran raw_mean AVG v(vinf) from=400m to=500m
+meas tran buck_input_min MIN v(vinf) from=400m to=500m
+meas tran buck_input_max MAX v(vinf) from=400m to=500m
+meas tran secondary_rms RMS i(Vsecondary) from=400m to=500m
+meas tran capacitor_rms RMS @creservoir[i] from=400m to=500m
+meas tran diode_peak MAX @dbridge1[id] from=400m to=500m
+meas tran inrush_peak MAX @dbridge1[id] from=0 to=30m
+.endc
+.end

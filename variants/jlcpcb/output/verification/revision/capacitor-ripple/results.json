@@ -1,0 +1,1979 @@
+{
+  "cases": [
+    {
+      "name": "f50_line1.0_esr0.02_imbalanceFalse",
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.4631,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.4631,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.51501,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.51501,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.45751,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.58876,
+          "passed": false
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.90454,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.11569,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "d962fe0f8448ac33c56e68e64d89a171989209818885cfdad6b0e80b67862528",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.0_esr0.02_imbalanceTrue",
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.50917,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.34925,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.97631,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.03114,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.33101,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.33329,
+          "passed": false
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.85879,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.08116,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "04329ca46170fa8267a3b0abe826b25fc39a1d19550de2e852ece7b07165cc58",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.0_esr0.05_imbalanceFalse",
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.31776,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.31776,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.46233,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.46233,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.30039,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.29943,
+          "passed": false
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.83945,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.07114,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "bf4a8358a0f92459f77cf87723cd8a149ea28fb9dcc9392433f98fa3d57c6cc8",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.0_esr0.05_imbalanceTrue",
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.26221,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.22967,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.85606,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.02155,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.07566,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.86551,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.75855,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.99774,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "a3838bcbebef5efa52c966dc9123f88b1fae2f4bc51fb9e3dca2c5c79d469c8d",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.0_esr0.1_imbalanceFalse",
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.10428,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.10428,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.38497,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.38497,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.08836,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.90486,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.75746,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.00175,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "994a95c172b0fd813a43dcf14cc7c30b56c3c286b1e95a5d3c277f8b04158256",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.0_esr0.1_imbalanceTrue",
+      "frequency_Hz": 50,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.91514,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.04838,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.69943,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 2.98783,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.76842,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.29118,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.65735,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.87474,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "50a39bd1f313d8a637f6749827bace2457d33a2ba36cee63ce5c2d4646de2c22",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.1_esr0.02_imbalanceFalse",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.86493,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.86493,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.57176,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.57176,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.55656,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.7755,
+          "passed": false
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.69734,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.20084,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "f7cc375c93ce406a9c3405bb2f9633b4a86b23da37838b51877465f23664eb41",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.1_esr0.02_imbalanceTrue",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.8246,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.83078,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.01986,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.10101,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.4294,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.52022,
+          "passed": false
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.65152,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.1664,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "2c26adad282a0af49bbe3cd89f635a195ded1b75b105f715f955bfb2e43a7532",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.1_esr0.05_imbalanceFalse",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.70528,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.70528,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.51843,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.51843,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.39704,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.48194,
+          "passed": false
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.63341,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.15603,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "8aa4ff6fa4044e866e9df10e589fb3e5ce255c86d7c9f775f6102e99d6e2eb64",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.1_esr0.05_imbalanceTrue",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.55381,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.69892,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.89598,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.09359,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.17011,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.04542,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.55135,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.08252,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "517484412eb92ac7be913c8d4b3e6942966ed8594d6c7cfb33a8cfb3b1c943ca",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.1_esr0.1_imbalanceFalse",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.47123,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.47123,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.44017,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.44017,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.18211,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.08252,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.55148,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.08629,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "8f67c93f95c1f84f2cd77346f1deb04ac10c4018a4aae0dfb80b2235bcfa22db",
+      "passed": true
+    },
+    {
+      "name": "f50_line1.1_esr0.1_imbalanceTrue",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.17553,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.50133,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.73679,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.06012,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.85897,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.46483,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.44457,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.101,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.95898,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "6067f52a6cec2dffa10336d887f803fdb670182be679600cca09d00994d18c4a",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.0_esr0.02_imbalanceFalse",
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.48005,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.48005,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.51755,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.51755,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.46959,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.62584,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.90551,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.1183,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "065ca0c3f72db001f2296a07021bacd248a13c33d8706e7a2ad7eb005a4a3f8d",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.0_esr0.02_imbalanceTrue",
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.51006,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.38284,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.96938,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.04417,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.34688,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.38183,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.85944,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.08503,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "9420b1a2c23255cf5f2ab67eeafeb23408012669b044cdce0cb2367eb251c00d",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.0_esr0.05_imbalanceFalse",
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.33242,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.33242,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.46455,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.46455,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.30994,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.32895,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.83963,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.07357,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "4ea7f598415eb05c0fc0afed604da126d4304a3a22d0ee8a4ba3f8942fa20836",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.0_esr0.05_imbalanceTrue",
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.2375,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.28494,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.83601,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.04724,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.08643,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.89887,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.75763,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.00115,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "b098cca5094bc052136a9a06840d1f5617e670be79c7a4fed6adb4bb62be09ea",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.0_esr0.1_imbalanceFalse",
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.11647,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.11647,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.3868,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.3868,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.09532,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.92651,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.75687,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.00394,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "3de9eee0697391d5947827cd6edb728766a8e729390d640b8b5559e14ec48ca1",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.0_esr0.1_imbalanceTrue",
+      "frequency_Hz": 60,
+      "line_scale": 1.0,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.87953,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.10876,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.67613,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.01418,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.77516,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.31232,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.65524,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.87756,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "6e153d6f14b88fc15e3b68dc5ab762649de1b191c81a23d9bf9f500e4487a622",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.1_esr0.02_imbalanceFalse",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.88361,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.88361,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.57416,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.57416,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.56799,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.81052,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.69875,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.20329,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "f7c6e0f96c6dac8e09fc716c529d7a8ce950199e3462f6d2861998a502c9fb62",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.1_esr0.02_imbalanceTrue",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.82566,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.86773,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.0123,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.02,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.11445,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.44442,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.5661,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.65297,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.04,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.17005,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "7e2164db78ffa54f2735a3b113cdab9c34257a7368e0550184d7719b88e7bd17",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.1_esr0.05_imbalanceFalse",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.72145,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.72145,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.52052,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.52052,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.40608,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.50979,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.63414,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.15831,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "cca35da675ef715f0dacbc11362b593f7432965bcabf5d3556c1e93ed7a0d421",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.1_esr0.05_imbalanceTrue",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.52695,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.75942,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.87519,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.05,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.11977,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 4.18029,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.07687,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.55146,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.08572,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "ced77cd50b77d13c394ca50b043b4d2d7ab9a8c23e1d913b674b05e123945d77",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.1_esr0.1_imbalanceFalse",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.48424,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.48424,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.44189,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.44189,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 4.18868,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 7.10291,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 2.55155,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 10000.0,
+          "load": "design load",
+          "measured_A": 3.08834,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "0085214fdcd41e720fc17d1df92655b82d2f955d845b92587fa453798b5e305e",
+      "passed": true
+    },
+    {
+      "name": "f60_line1.1_esr0.1_imbalanceTrue",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "checks": {
+        "rms_18a_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.13578,
+          "passed": true
+        },
+        "rms_18a_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 5.5651,
+          "passed": true
+        },
+        "rms_18b_c6": {
+          "ref": "C6",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 1.71312,
+          "passed": true
+        },
+        "rms_18b_c7": {
+          "ref": "C7",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.1,
+          "capacitance_uF": 12000.0,
+          "load": "design load",
+          "measured_A": 3.08658,
+          "passed": true
+        },
+        "rms_20a_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 3.86532,
+          "passed": true
+        },
+        "rms_20b_c11": {
+          "ref": "C11",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "fuse-limit informational",
+          "measured_A": 6.48471,
+          "passed": true
+        },
+        "rms_5a_c5": {
+          "ref": "C5",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.44373,
+          "passed": true
+        },
+        "rms_12a_c30": {
+          "ref": "C30",
+          "rating_A": 7.89,
+          "ESR_ohm": 0.2,
+          "capacitance_uF": 8000.0,
+          "load": "design load",
+          "measured_A": 2.96162,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "b24b504ca4fd0c15dc6192a9c722df88911f08e7afdb029b8925aa446a3d359c",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "method": "gear",
+  "maxstep": "10u",
+  "limitations": "Approximate rectifiers, assumed transformer resistance from bridge_loss.cir, ESR sweep is sensitivity rather than vendor tolerance. 1 s settling and integer mains periods. TDK parts require measured LOCAL ambient <=60 C for 7.89 A limit for all five 10,000 uF reservoirs. 100 Hz factor 0.9 conservatively bounds the TDK B41252 2016 page 16 curve (100 Hz normalized to 1, 120 Hz approximately 1.01). Fuse-limit load is informational, not a sustained-load qualification.",
+  "sources": [
+    "https://product.tdk.com/en/search/capacitor/aluminum-electrolytic/snap_multi_large/info?part_no=B41252A7109M000"
+  ]
+}

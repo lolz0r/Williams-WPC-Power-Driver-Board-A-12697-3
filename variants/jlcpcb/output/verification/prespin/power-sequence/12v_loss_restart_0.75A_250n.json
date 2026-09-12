@@ -1,0 +1,75 @@
+{
+  "name": "12v_loss_restart_0.75A_250n",
+  "rail": "12v",
+  "scenario": "loss_restart",
+  "output_load_A": 0.75,
+  "elapsed_s": 2887.093517610003,
+  "measurements": {
+    "sim_end": 0.12,
+    "output_peak": 12.785,
+    "output_min": -4.1885e-12,
+    "inductor_peak": 5.62087,
+    "inductor_min": -0.0684989,
+    "body_reverse_peak": 5.46326,
+    "input_min": -2.59867e-06,
+    "before_loss": 12.4231,
+    "recovery": 11.8406
+  },
+  "checks": {
+    "output_peak": {
+      "value": 12.785,
+      "min": 0,
+      "max": 12.6,
+      "passed": false
+    },
+    "output_min": {
+      "value": -4.1885e-12,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 5.62087,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -0.0684989,
+      "min": -1,
+      "max": 10,
+      "passed": true
+    },
+    "recovery": {
+      "value": 11.8406,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": true
+    },
+    "sim_end": {
+      "value": 0.12,
+      "min": 0.11999999,
+      "max": 0.12000000999999999,
+      "passed": true
+    },
+    "before_loss": {
+      "value": 12.4231,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": true
+    }
+  },
+  "errors": [],
+  "passed": false,
+  "deck_sha256": "7d1d9a8f091bce7389c80e9267d2f42b0ff4cc072204727e47e035a0cdc370cb",
+  "base_deck_sha256": "a6265b7c139f6379ca06b0cb492c03680ad27af0cbb0a5e6c45386732c8fd041",
+  "reservoir_uF": 16000,
+  "secondary_peak_V": 16.92,
+  "raw_lamp_load_ohms": 2.5,
+  "limitations": [
+    "Typical TI switching model with approximate rectifiers, no board parasitics or thermal feedback",
+    "Low line / minus 20 percent reservoir; actual transformer impedance remains to be measured",
+    "Reverse-current bound of 1 A is an engineering screening threshold, not a manufacturer guarantee of internal body-diode SOA",
+    "Short-circuit survival and arbitrary external backfeed are not qualified by a passing loss/restart case"
+  ]
+}

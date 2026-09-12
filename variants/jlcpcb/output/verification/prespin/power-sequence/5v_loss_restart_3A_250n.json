@@ -1,0 +1,75 @@
+{
+  "name": "5v_loss_restart_3A_250n",
+  "rail": "5v",
+  "scenario": "loss_restart",
+  "output_load_A": 3.0,
+  "elapsed_s": 5201.623998253999,
+  "measurements": {
+    "sim_end": 0.12,
+    "output_peak": 5.13088,
+    "output_min": -7.64438e-10,
+    "inductor_peak": 5.61099,
+    "inductor_min": -0.0130463,
+    "body_reverse_peak": 1.3633,
+    "input_min": -0.0044529,
+    "before_loss": 5.10587,
+    "recovery": 5.10261
+  },
+  "checks": {
+    "output_peak": {
+      "value": 5.13088,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "output_min": {
+      "value": -7.64438e-10,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 5.61099,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -0.0130463,
+      "min": -1,
+      "max": 10,
+      "passed": true
+    },
+    "recovery": {
+      "value": 5.10261,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    },
+    "sim_end": {
+      "value": 0.12,
+      "min": 0.11999999,
+      "max": 0.12000000999999999,
+      "passed": true
+    },
+    "before_loss": {
+      "value": 5.10587,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    }
+  },
+  "errors": [],
+  "passed": true,
+  "deck_sha256": "8ba937159e23b76e57644cd8832d70ab2c3806f6d129a9ae60fe329c8d5285e2",
+  "base_deck_sha256": "0db7a950940126b1030e859e765068dc6677a21a271fd4684602875916feb113",
+  "reservoir_uF": 8000,
+  "secondary_peak_V": 11.43,
+  "raw_lamp_load_ohms": null,
+  "limitations": [
+    "Typical TI switching model with approximate rectifiers, no board parasitics or thermal feedback",
+    "Low line / minus 20 percent reservoir; actual transformer impedance remains to be measured",
+    "Reverse-current bound of 1 A is an engineering screening threshold, not a manufacturer guarantee of internal body-diode SOA",
+    "Short-circuit survival and arbitrary external backfeed are not qualified by a passing loss/restart case"
+  ]
+}

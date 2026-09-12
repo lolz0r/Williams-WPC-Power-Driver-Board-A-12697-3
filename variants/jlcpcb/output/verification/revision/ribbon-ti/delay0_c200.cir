@@ -1,0 +1,82 @@
+End-to-end CPU write -> J211/J113 ribbon -> U9 74HCT240 -> 74HCT574 -> IPD90N10S4L06 with the real WPC timing and the ACTIVE-LOW data (XSPICE digital latch). 6809E write cycle at 2 MHz: Q rises at t0 = 10 us x k (one write per 10 us slot so that the 100 R / Cgs gate RC settles), E rises t0 + 125 ns, E falls t0 + 375 ns; the ASIC strobe is LOW from Q rise to E fall (370 ns as scoped on J211); CPU write data (U12 74LS240, enabled only for the write) is valid worst case from t0 + 200 ns (tDDQ max) to t0 + 405 ns (tDHW 30 ns min after E falls), tri-stated otherwise. Ribbon 1 R / 120 pF, R318-R325 4.7 k pull-ups on the data, R310-R317 4.7 k on the strobes and BLANKING. Register bit 1 -> ribbon LOW -> U9 HIGH -> Q HIGH -> gate ON. Cycles: k=0 write 1, k=1 write 0, k=2 write 1, k=3 write 1 with the ribbon unplugged (no CPU, BLANKING floats up), k=4 write 1 with BLANKING high, k=5 write 0.
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+VCC vcc 0 5
+* one write per 10 us slot (the 100 R / Cgs gate RC settles in a few us; the 10 k gate pull-down after a tri-state takes ~150 us and is covered at that timescale by powerup.cir - here the tri-state is proven by the latch output current)
+Bk k 0 V = floor(time / 10u)
+Btc tc 0 V = time - 10u * floor(time / 10u)
+Bbit bit 0 V = (v(k) < 0.5) ? 1 : (v(k) < 1.5) ? 0 : (v(k) < 4.5) ? 1 : 0
+Bvalid valid 0 V = (v(tc) > 200n && v(tc) < 405n) ? 1 : 0
+Bplug plug 0 V = (v(k) > 2.5 && v(k) < 3.5) ? 0 : 1
+Bblk blk 0 V = (v(k) > 3.5 && v(k) < 4.5) ? 1 : 0
+* ---- 74LS240 on the CPU board: register bit 1 -> output LOW (25 R sink), bit 0 -> HIGH (3.4 V through 130 R totem pole); tri-stated outside the write
+Vh vh 0 3.4
+Bctl_lo ctl_lo 0 V = (v(valid) > 0.5 && v(bit) > 0.5 && v(plug) > 0.5) ? 1 : 0
+Bctl_hi ctl_hi 0 V = (v(valid) > 0.5 && v(bit) < 0.5 && v(plug) > 0.5) ? 1 : 0
+Slo cpu 0 ctl_lo 0 SWL
+Shi cpu vh ctl_hi 0 SWH
+.model SWL SW(Ron=25 Roff=1e9 Vt=0.5 Vh=0.1)
+.model SWH SW(Ron=130 Roff=1e9 Vt=0.5 Vh=0.1)
+Rrib cpu rib 1
+Crib rib 0 200p
+Rpu rib vcc 4.7k
+* ---- strobe: ASIC push-pull CMOS output (25 R), LOW for 375 ns from Q rise; through the ribbon; R310-R317 4.7 k pull-up holds it HIGH when unplugged (a switch disconnects the CPU)
+Bstb stb0 0 V = (v(tc) < 375n) ? 0 : 5
+Rstb stb0 stbc 25
+Sstb stbc stb plug 0 SWO
+Cstb stb 0 200p
+Rstbpu stb vcc 4.7k
+* ---- BLANKING: R310-R317 4.7 k pull-up, CPU 2N3904 open collector sinks it while the CPU runs and is plugged in
+Rblk blank vcc 4.7k
+Bctl_b ctl_b 0 V = (v(blk) < 0.5 && v(plug) > 0.5) ? 1 : 0
+Sblk blank 0 ctl_b 0 SWL
+* TI SCLS174H/SCLS177H worst timing; 150 pF bounds logic bus load.
+* ---- U9 74HCT240 (tpd 53 ns max at 4.5 V, 150 pF, -40..85 C) -> 74HCT574 (tpd CLK->Q 66 ns at 150 pF), HCT thresholds VIL 0.8 / VIH 2.0, Q output 4.6 V / 40 R, /OE = BLANKING
+.model adc adc_bridge(in_low=0.8 in_high=2.0 rise_delay=1n fall_delay=1n)
+.model inv d_inverter(rise_delay=0n fall_delay=0n input_load=1p)
+.model dff d_dff(clk_delay=66n set_delay=66n reset_delay=66n ic=1 rise_delay=4n fall_delay=4n)
+.model dac dac_bridge(out_low=0 out_high=4.6 t_rise=6n t_fall=6n)
+Aadc [rib stb] [drib dstb] adc
+Ainv drib d574 inv
+Adff d574 dstb NULL NULL dq dnq dff
+Adac [dq d574] [q d574a] dac
+Voe q qx 0
+Roe qx qa 40
+Bctl_oe ctl_oe 0 V = (v(blank) < 2.5) ? 1 : 0
+Soe qa qo ctl_oe 0 SWO
+.model SWO SW(Ron=0.01 Roff=1e9 Vt=0.5 Vh=0.1)
+Rg qo g 100
+Rpd g 0 10k
+* ---- IPD90N10S4L06 on an AE-26-1200 (10.8 R / 25 mH) on the 70 V rail (drain voltage shows the output state)
+XQ out g 0 IPD90N10S4L06
+V50 v50 0 70
+Lc out cl 25m
+Rc cl v50 10.8
+Dfb out v50 DS3M
+.tran 2n 60u
+.control
+run
+meas tran g_w1 MIN v(g) from=6u to=9.9u
+meas tran out_w1 MAX v(out) from=6u to=9.9u
+meas tran g_w0 MAX v(g) from=16u to=19.9u
+meas tran out_w0 MIN v(out) from=16u to=19.9u
+meas tran g_w1b MIN v(g) from=26u to=29.9u
+meas tran g_unplug MAX v(g) from=36u to=39.9u
+meas tran blank_unplug MIN v(blank) from=36u to=39.9u
+meas tran g_blank MAX v(g) from=46u to=49.9u
+let ioe = abs(i(Voe))
+meas tran ioe_on MAX ioe from=0.5u to=1.9u
+meas tran ioe_unplug MAX ioe from=31u to=39.9u
+meas tran ioe_blank MAX ioe from=41u to=49.9u
+meas tran g_w0b MAX v(g) from=56u to=59.9u
+meas tran rib_low MAX v(rib) from=250n to=370n
+meas tran rib_high MIN v(rib) from=10.25u to=10.37u
+meas tran t_dv WHEN v(d574a)=2.3 RISE=1 from=0 to=1u
+meas tran t_clk WHEN v(stb)=2.0 RISE=1 from=0 to=1u
+meas tran t_dinv WHEN v(d574a)=2.3 FALL=1 from=0.3u to=1.5u
+let t_setup = t_clk - t_dv
+let t_hold = t_dinv - t_clk
+print t_setup
+print t_hold
+
+.endc
+.end

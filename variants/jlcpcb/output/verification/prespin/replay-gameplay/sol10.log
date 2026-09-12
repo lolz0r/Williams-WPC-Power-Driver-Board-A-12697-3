@@ -1,0 +1,103 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom raw-write replay channel 10; bus.csv
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                        86
+stdout cmd                                          0
+stdout gateinput                                    0
+stdout gate                                         0
+stdout drain                                       86
+stdout drainq                                      86
+stdout coil                                        86
+stdout diode                                       86
+stdout lcoil#branch                      -1.17162e-09
+stdout vdiode#branch                      1.92088e-13
+stdout vsense#branch                      1.17143e-09
+stdout vcmd#branch                                  0
+stdout vrail#branch                      -1.17162e-09
+ Reference value :  0.00000e+00
+ Reference value :  1.47328e-01
+ Reference value :  2.95123e-01
+ Reference value :  4.43203e-01
+ Reference value :  5.91643e-01
+ Reference value :  7.40148e-01
+ Reference value :  8.88953e-01
+ Reference value :  1.03647e+00
+ Reference value :  1.18534e+00
+ Reference value :  1.33360e+00
+ Reference value :  1.48193e+00
+ Reference value :  1.62983e+00
+ Reference value :  1.77766e+00
+ Reference value :  1.92625e+00
+ Reference value :  2.06900e+00
+ Reference value :  2.21625e+00
+ Reference value :  2.36394e+00
+ Reference value :  2.51067e+00
+ Reference value :  2.65824e+00
+ Reference value :  2.80563e+00
+ Reference value :  2.95324e+00
+ Reference value :  3.10074e+00
+ Reference value :  3.24800e+00
+ Reference value :  3.39512e+00
+ Reference value :  3.54263e+00
+ Reference value :  3.68953e+00
+ Reference value :  3.83692e+00
+ Reference value :  3.98445e+00
+ Reference value :  4.13169e+00
+ Reference value :  4.27890e+00
+ Reference value :  4.42553e+00
+ Reference value :  4.57322e+00
+ Reference value :  4.72051e+00
+ Reference value :  4.86817e+00
+ Reference value :  5.01466e+00
+ Reference value :  5.16135e+00
+ Reference value :  5.30845e+00
+ Reference value :  5.45587e+00
+ Reference value :  5.60360e+00
+ Reference value :  5.75182e+00
+ Reference value :  5.89949e+00
+ Reference value :  6.04702e+00
+ Reference value :  6.19423e+00
+ Reference value :  6.34031e+00
+ Reference value :  6.48680e+00
+ Reference value :  6.63029e+00
+ Reference value :  6.77489e+00
+ Reference value :  6.92139e+00
+ Reference value :  7.06743e+00
+ Reference value :  7.21412e+00
+ Reference value :  7.35971e+00
+ Reference value :  7.50558e+00
+ Reference value :  7.65202e+00
+ Reference value :  7.79852e+00
+ Reference value :  7.94489e+00
+ Reference value :  8.09064e+00
+ Reference value :  8.23704e+00
+ Reference value :  8.38399e+00
+ Reference value :  8.52964e+00
+ Reference value :  8.67640e+00
+ Reference value :  8.82320e+00
+ Reference value :  8.96933e+00
+ Reference value :  9.09123e+00
+ Reference value :  9.20933e+00
+ Reference value :  9.32727e+00
+ Reference value :  9.44531e+00
+ Reference value :  9.56263e+00
+ Reference value :  9.68085e+00
+ Reference value :  9.79871e+00
+ Reference value :  9.91665e+00
+ Reference value :  1.00340e+01
+ Reference value :  1.01534e+01
+stdout No. of Data Rows : 2046215
+stdout sim_end = 1.023000000000e+01
+stdout vds_peak            =  8.72236e+01 at=  8.97367e+00
+stdout vgs_peak            =  4.44129e+00 at=  8.90929e+00
+stdout p_avg               =  1.81354e-02 from=  2.00000e-01 to=  1.02000e+01
+stdout id_avg              =  6.48006e-03 from=  2.00000e-01 to=  1.02000e+01
+stdout id_terminal_avg     =  8.57770e-03 from=  2.00000e-01 to=  1.02000e+01
+stdout i_peak              =  8.84158e+00 at=  8.95652e+00
+stdout coil_peak           =  8.83641e+00 at=  2.65541e-01
+stdout tj_repeating = 5.112439604000e+01

@@ -1,0 +1,32 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: sttng cpu switch voltage margin rail9.5_logic5.25_contact100; manual printed 3-2 and 3-3
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout twelve                                     9.5
+stdout five                                      5.25
+stdout ccmd                                         0
+stdout cin                                2.98218e-10
+stdout xcolumn.b1                         2.71378e-08
+stdout column                                     9.5
+stdout xcolumn.n1                         3.02382e-08
+stdout row                                        9.5
+stdout sense                                      9.5
+stdout switch_wire                                9.5
+stdout sw                                         9.5
+stdout out                                    5.24995
+stdout vcolumncmd#branch                   9.9406e-12
+stdout v5#branch                         -5.24995e-09
+stdout v12#branch                        -4.00174e-11
+ Reference value :  2.10428e-04
+ Reference value :  2.79476e-03
+stdout No. of Data Rows : 30172
+stdout sim_end = 3.000000e-03
+stdout input_open_margin   =  4.25000e+00 at=  8.99928e-04
+stdout input_closed_margin =  2.72298e+00 at=  1.48170e-03
+stdout output_high         =  5.24995e+00 at=  8.99928e-04
+stdout output_low          =  1.57029e-02 at=  1.89990e-03
+stdout return_high         =  5.24995e+00 at=  2.89996e-03

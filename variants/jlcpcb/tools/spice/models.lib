@@ -1,0 +1,155 @@
+* Approximate SPICE models for the WPC power driver verification (functional accuracy, not vendor-exact)
+* IPD90N10S4L-06 candidate: conservative hot-resistance fit (~13 mOhm at 4.5 V),
+* not a vendor avalanche/SOA model. Datasheet maximum at 25 C is 8.1 mOhm;
+* 6 nF Cgs and 0.425 nF Cgd bound input capacitance/Miller charge for this workload.
+.subckt IPD90N10S4L06 D G S
+M1 D G S S MIPD90 L=1u W=1u
+Db S D DIPD90
+Cgs G S 6n
+Cgd G D 0.425n
+.model MIPD90 NMOS(Level=1 Vto=1.6 Kp=80 Lambda=0.001 Rd=0.006 Rs=0.002)
+.model DIPD90 D(Is=1e-9 n=1.4 Rs=0.008 Bv=100 Tt=60n Cjo=2.1n)
+.ends
+.model Q2N5401 PNP(Is=2.5e-14 Bf=180 Vaf=100 Ikf=0.12 Rb=10 Rc=0.5 Cjc=8p Cje=15p Tf=0.5n Tr=50n)
+* TIP102 NPN Darlington (8k / 120R internal resistors, collector-emitter diode)
+.subckt TIP102 C B E
+Q1 C B N1 QTD
+Q2 C N1 E QTP
+R1 B N1 8k
+R2 N1 E 120
+D1 E C DFLY
+.model QTD NPN(Is=1e-13 Bf=200 Vaf=100 Ikf=2 Rb=5 Cjc=50p Cje=100p Tf=5n Tr=100n)
+.model QTP NPN(Is=5e-12 Bf=100 Vaf=60 Ikf=40 Rc=0.03 Re=0.01 Rb=1 Cjc=300p Cje=600p Tf=20n Tr=300n)
+.model DFLY D(Is=1e-10 n=1.5)
+.ends
+* TIP107 PNP Darlington
+.subckt TIP107 C B E
+Q1 C B N1 QTDP
+Q2 C N1 E QTPP
+R1 B N1 8k
+R2 N1 E 120
+D1 C E DFLY2
+.model QTDP PNP(Is=1e-13 Bf=150 Vaf=100 Ikf=1 Rb=5 Cjc=50p Cje=100p Tf=8n Tr=150n)
+.model QTPP PNP(Is=5e-12 Bf=60 Vaf=60 Ikf=15 Rc=0.03 Re=0.01 Rb=1 Cjc=300p Cje=600p Tf=30n Tr=400n)
+.model DFLY2 D(Is=1e-10 n=1.5)
+.ends
+.model TIP36C PNP(Is=2e-11 Bf=40 Vaf=80 Ikf=25 Rc=0.02 Re=0.005 Rb=0.5 Cjc=500p Cje=1n Tf=30n Tr=500n)
+.model D1N4004 D(Is=3e-9 n=1.8 Rs=0.05 Cjo=30p Tt=4u Bv=400 Ibv=1u)
+.model D1N4148 D(Is=2.5e-9 n=1.75 Rs=0.5 Cjo=4p Tt=4n Bv=100)
+* LM339 comparator: open-collector output pulls low when V(-) > V(+)
+.subckt LM339 INP INN OUT
+S1 OUT 0 INN INP SWCMP
+.model SWCMP SW(Ron=30 Roff=1e9 Vt=0 Vh=1m)
+.ends
+* ULN2803 channel: Darlington with 2.7k input, output open collector
+.subckt ULN2803CH IN OUT
+R1 IN B1 2.7k
+Q1 OUT B1 N1 QU1
+Q2 OUT N1 0 QU2
+R2 B1 N1 7.2k
+R3 N1 0 3k
+.model QU1 NPN(Is=1e-14 Bf=200 Cjc=5p)
+.model QU2 NPN(Is=1e-12 Bf=80 Ikf=1 Rc=0.5 Cjc=30p)
+.ends
+* 74LS output: totem pole modelled as a 5V pulse source with 30 ohm series resistance is done in the decks
+* High-gain TIP102 sample (typical hFE ~3x the minimum) for the over-current trip scenario
+.subckt TIP102HG C B E
+Q1 C B N1 QTDH
+Q2 C N1 E QTPH
+R1 B N1 8k
+R2 N1 E 120
+D1 E C DFLYH
+.model DFLYH D(Is=1e-10 n=1.5)
+.model QTDH NPN(Is=1e-13 Bf=800 Vaf=100 Ikf=8 Rb=5 Cjc=50p Cje=100p Tf=5n Tr=100n)
+.model QTPH NPN(Is=5e-12 Bf=400 Vaf=60 Ikf=120 Rc=0.02 Re=0.005 Rb=1 Cjc=300p Cje=600p Tf=20n Tr=300n)
+.ends
+* ================= modern-board models (functional level-1 MOSFETs fitted to datasheet Rds(on); vendor models not used) =================
+* IRL540N: 100 V logic level, Rds(on) 77 mOhm @10 V (~0.14 Ohm @5 V in this model, conservative), Qg ~34 nC
+.subckt IRL540N D G S
+M1 D G S S MIRL540N L=1u W=1u
+Db S D DBODY100
+Cgs G S 1.5n
+Cgd G D 0.15n
+.model MIRL540N NMOS(Level=1 Vto=1.0 Kp=3.5 Lambda=0.002 Rd=0.02 Rs=0.005)
+.model DBODY100 D(Is=1e-10 n=1.4 Rs=0.01 Bv=100 Tt=100n Cjo=500p)
+.ends
+* IRLB4030: 100 V logic level, 4.3 mOhm @10 V / ~5.3 mOhm @4.5 V, Qg ~100 nC
+.subckt IRLB4030 D G S
+M1 D G S S MIRLB4030 L=1u W=1u
+Db S D DBODY100B
+Cgs G S 5n
+Cgd G D 0.6n
+.model MIRLB4030 NMOS(Level=1 Vto=1.5 Kp=150 Lambda=0.001 Rd=0.003 Rs=0.0005)
+.model DBODY100B D(Is=1e-9 n=1.4 Rs=0.003 Bv=100 Tt=150n Cjo=2n)
+.ends
+* IRLZ44N: 55 V logic level, 22 mOhm @10 V / ~28 mOhm @5 V, Qg ~48 nC
+.subckt IRLZ44N D G S
+M1 D G S S MIRLZ44N L=1u W=1u
+Db S D DBODY55
+Cgs G S 2n
+Cgd G D 0.3n
+.model MIRLZ44N NMOS(Level=1 Vto=1.2 Kp=20 Lambda=0.002 Rd=0.015 Rs=0.003)
+.model DBODY55 D(Is=1e-10 n=1.4 Rs=0.01 Bv=55 Tt=100n Cjo=800p)
+.ends
+* IRF9Z34N: -55 V P-channel, 100 mOhm @-10 V
+.subckt IRF9Z34N D G S
+M1 D G S S MIRF9Z34N L=1u W=1u
+Db D S DBODY55P
+Cgs G S 1n
+Cgd G D 0.2n
+.model MIRF9Z34N PMOS(Level=1 Vto=-3.0 Kp=2.0 Lambda=0.002 Rd=0.03 Rs=0.005)
+.model DBODY55P D(Is=1e-10 n=1.4 Rs=0.02 Bv=55 Tt=100n Cjo=500p)
+.ends
+* SMA / SMC rectifiers (S1M 1 A 1000 V, S3M 3 A 1000 V) and B560C Schottky
+.model DS1M D(Is=5e-9 n=1.8 Rs=0.08 Cjo=15p Tt=2u Bv=1000 Ibv=1u)
+.model DS3M D(Is=1e-8 n=1.8 Rs=0.03 Cjo=40p Tt=2u Bv=1000 Ibv=1u)
+.model DB560C D(Is=2e-6 n=1.05 Rs=0.02 Cjo=300p Tt=0 Bv=60 Ibv=10u)
+* MMBT4401 NPN
+.model QMMBT4401 NPN(Is=2.6e-14 Bf=200 Vaf=90 Ikf=0.6 Rb=10 Rc=0.3 Re=0.05 Cjc=6p Cje=25p Tf=0.4n Tr=40n)
+* TBD62083A channel: DMOS sink with ~1 Ohm on-resistance, input threshold ~1.5 V (5 V logic), clamp diode to COM omitted
+.subckt TBD62083CH IN OUT
+Rin IN g 10k
+Rg g 0 100k
+M1 OUT g 0 0 MTBD L=1u W=1u
+.model MTBD NMOS(Level=1 Vto=1.5 Kp=0.5 Rd=0.5)
+.ends
+* 74HCT output: 4.6 V / 0 V behind 40 Ohm is modelled inline in the decks
+* ================= cost-board models (DPAK MOSFETs, GBJ / GBU bridges, TPS54360B behavioural model lives in the buck decks) =================
+* IRLR3110Z: 100 V logic level DPAK, Rds(on) 14 mOhm max @10 V / 16 mOhm max @4.5 V (typ 11.5 / 13.5); this fit gives ~18 mOhm at the
+* 4.6 V HCT gate drive (channel 10 mOhm + Rd/Rs 8 mOhm) and ~12 mOhm at 10 V - i.e. slightly worse than the datasheet maximum on purpose.
+* Ciss 3.98 nF, Qg 34 nC
+.subckt IRLR3110Z D G S
+M1 D G S S MIRLR3110Z L=1u W=1u
+Db S D DBODY100Z
+Cgs G S 3.5n
+Cgd G D 0.5n
+.model MIRLR3110Z NMOS(Level=1 Vto=1.5 Kp=32 Lambda=0.001 Rd=0.006 Rs=0.002)
+.model DBODY100Z D(Is=1e-9 n=1.4 Rs=0.008 Bv=100 Tt=120n Cjo=900p)
+.ends
+* IRLR024N: 55 V logic level DPAK, Rds(on) 65 mOhm max @10 V, 78 mOhm max @5 V; fit ~80 mOhm at 4.6 V, ~43 mOhm at 10 V. Qg 15 nC, Ciss 480 pF
+.subckt IRLR024N D G S
+M1 D G S S MIRLR024N L=1u W=1u
+Db S D DBODY55R
+Cgs G S 0.5n
+Cgd G D 0.1n
+.model MIRLR024N NMOS(Level=1 Vto=1.2 Kp=4.9 Lambda=0.002 Rd=0.015 Rs=0.005)
+.model DBODY55R D(Is=1e-10 n=1.4 Rs=0.02 Bv=55 Tt=100n Cjo=300p)
+.ends
+* IRFR5305: -55 V P-channel DPAK, Rds(on) 65 mOhm max @-10 V (fit 65 mOhm at -10 V, ~60 mOhm at the -10.8 V divider drive). Ciss 1.2 nF
+.subckt IRFR5305 D G S
+M1 D G S S MIRFR5305 L=1u W=1u
+Db D S DBODY55PR
+Cgs G S 1n
+Cgd G D 0.25n
+.model MIRFR5305 PMOS(Level=1 Vto=-3.0 Kp=3.2 Lambda=0.002 Rd=0.015 Rs=0.005)
+.model DBODY55PR D(Is=1e-10 n=1.4 Rs=0.02 Bv=55 Tt=100n Cjo=400p)
+.ends
+* Bridge rectifier elements.  DGBPC35 (35 A block) is the same generic model the modern deck used for all bridges (Rs 50 mOhm), so the
+* +50V results stay comparable; the smaller GBJ1510 (15 A, Vf 1.05 V @ 7.5 A) and GBU8J (8 A, Vf 1.0 V @ 4 A) get a HIGHER series
+* resistance (60 / 80 mOhm) so that the +18V / +20V / +5V-raw sag and ripple results are on the pessimistic side (Vf ~1.3 V modelled at rated current).
+.model DGBPC35 D(Is=3e-9 n=1.8 Rs=0.05 Cjo=300p Tt=4u Bv=1000 Ibv=10u)
+.model DGBJ15 D(Is=2e-8 n=1.7 Rs=0.06 Cjo=85p Tt=3u Bv=1000 Ibv=10u)
+.model DGBU8 D(Is=1e-8 n=1.7 Rs=0.08 Cjo=60p Tt=3u Bv=600 Ibv=10u)
+* STPS20M100S (ST DS6169 rev 5): 100 V 20 A Schottky, D2PAK.  Fit to the 25 C TYPICAL Vf (0.55 V @ 5 A, 0.66 @ 10 A) - 0.86 V at 20 A (datasheet typ 0.775, max 0.85),
+* i.e. pessimistic at the peaks; the hot (125 C) curve is ~0.1 V lower.  Conduction loss per the datasheet: P = 0.425 IF(AV) + 0.0088 IF(RMS)^2 (used in bridge_loss.cir).
+.model DSCH20100 D(Is=2.3e-7 n=1.05 Rs=0.0182 Cjo=600p Tt=0 Bv=100 Ibv=1u)

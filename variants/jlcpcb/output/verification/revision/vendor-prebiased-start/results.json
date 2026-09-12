@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "name": "5v",
+      "checks": {
+        "output_peak": {
+          "value": 5.12142,
+          "min": 0,
+          "max": 5.25,
+          "passed": true
+        },
+        "recovery": {
+          "value": 5.10456,
+          "min": 4.95,
+          "max": 5.2,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -0.0124671,
+          "min": -1,
+          "max": 10,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    },
+    {
+      "name": "12v",
+      "checks": {
+        "output_peak": {
+          "value": 11.9672,
+          "min": 0,
+          "max": 12.6,
+          "passed": true
+        },
+        "recovery": {
+          "value": 11.9536,
+          "min": 11.4,
+          "max": 12.6,
+          "passed": true
+        },
+        "inductor_min": {
+          "value": -0.0256044,
+          "min": -1,
+          "max": 10,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true
+    }
+  ],
+  "complete": true,
+  "passed": true,
+  "scope": "VIN already present; output half prebiased, EN held low for 200 us then released. Does not qualify external backfeed into an unpowered raw rail."
+}

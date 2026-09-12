@@ -1,0 +1,27 @@
+Four maximum STTNG #906 flashers, hot-lamp switch-off, n4_l10u_clamp1
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+Vrail rail 0 30
+Rlamps rail lp 4.5
+Lwire lp drain 10u
+Vcmd cmd 0 PULSE(0 4.5 100u 20n 20n 1m 5m)
+Ro cmd a 40
+Rg a gate 100
+Rpd gate 0 10k
+Vs drain dq 0
+XQ dq gate 0 IPD90N10S4L06
+Dfly drain rail DS1M
+.save v(drain) v(gate) i(Vs) i(Lwire)
+.options method=gear reltol=.001
+.tran 50n 2m 0 100n
+.control
+run
+let absload=abs(i(Lwire))
+let pfet=v(drain)*i(Vs)
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran vds_peak MAX v(drain)
+meas tran vgs_peak MAX v(gate)
+meas tran load_peak MAX absload
+meas tran e_turnoff INTEG pfet from=1.099m to=1.2m
+.endc
+.end

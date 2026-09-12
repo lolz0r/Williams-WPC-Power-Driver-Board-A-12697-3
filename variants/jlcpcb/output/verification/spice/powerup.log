@@ -1,0 +1,79 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: power-up / blanking sequence in the machine: the ~70 v, +18v and 6.8vac rails are up from t=0, +5v comes up through the tps54360b soft-start (2 ms ramp) at t=30 ms; blanking is an open-collector line from the cpu (2n3904, off during reset) pulled up by sr1 (4.7k) - it follows +5v up and stays high until the cpu releases it at t=200 ms. every latch is a 74hct574 that powers up with a random content (worst case: all 1) and is tri-stated while /oe (= blanking) is above vcc/2; below vcc = 2 v an hct output cannot drive. paths: solenoid (ipd90n10s4l06 + ae-23-800 on 70 v), g.i. (mmbt4401 + bta16 macro + 6.8vac string), lamp column (tbd62083a with its internal pull-down, irfr5305 on +18v) with a row mosfet that happens to be on (74hct74 random state). at t=200 ms the cpu pulls blanking low with the latches still holding 1 -> the outputs must then turn on (the path works); at 240 ms the cpu writes 0.
+stderr Warning: Value of resistor rtbd is too small, set to 1.000000e-12
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout v50                                         70
+stdout v18                                         18
+stdout ac                                           0
+stdout vcc                                          0
+stdout blank                                        0
+stdout cpu                                          0
+stdout dat                                          1
+stdout en                                           0
+stdout q                                            0
+stdout lq                                -1.55893e-39
+stdout latch                             -1.55893e-39
+stdout g                                  -1.5435e-39
+stdout out                                         70
+stdout v50c                                        70
+stdout cl                                          70
+stdout b                                 -1.60993e-39
+stdout e                                  2.12374e-34
+stdout eg                                 2.12374e-34
+stdout gt                                 2.12372e-34
+stdout mt2                                          0
+stdout mt2i                                         0
+stdout on                                           0
+stdout onr                                          0
+stdout acs                                          0
+stdout tin                               -1.55893e-39
+stdout xu19.g                            -1.41721e-39
+stdout ulnout                                      18
+stdout cg                                          18
+stdout col                                4.48836e-10
+stdout colx                               4.48836e-10
+stdout rowd                               4.08063e-11
+stdout rg                                         4.6
+stdout rgate                                      4.6
+stdout re                                 2.99222e-11
+stdout bon#branch                                   0
+stdout vmt#branch                                   0
+stdout vg#branch                          5.41369e-41
+stdout bq#branch                         -1.55893e-48
+stdout ben#branch                                   0
+stdout bdat#branch                                  0
+stdout bvcc#branch                       -5.38674e-41
+stdout lc#branch                         -1.14048e-09
+stdout vrowg#branch                                 0
+stdout vcol#branch                         1.3601e-10
+stdout vstr#branch                                  0
+stdout vcoil#branch                       1.14048e-09
+stdout vcpu#branch                                  0
+stdout vac#branch                                   0
+stdout v18#branch                        -1.53695e-10
+stdout v50#branch                        -1.14048e-09
+ Reference value :  0.00000e+00
+ Reference value :  4.82939e-02
+ Reference value :  6.99228e-02
+ Reference value :  9.06295e-02
+ Reference value :  1.11049e-01
+ Reference value :  1.31778e-01
+ Reference value :  1.53287e-01
+ Reference value :  1.74837e-01
+ Reference value :  1.96144e-01
+stdout No. of Data Rows : 74337
+stdout icoil_blank         =  2.37510e-08 at=  7.39306e-02
+stdout istr_blank          =  9.59999e-06 at=  1.12500e-01
+stdout icol_blank          =  1.36010e-10 at=  1.88733e-01
+stdout vgate_blank         =  1.29460e-04 at=  3.19685e-02
+stdout blank_min           =  4.99998e+00 at=  1.98999e-01
+stdout icoil_on            =  1.66197e+01 at=  2.39999e-01
+stdout istr_on             =  6.62069e+00 at=  2.37501e-01
+stdout icol_on             =  5.28437e+00 at=  2.00007e-01
+stdout icoil_after         =  2.53301e-09 at=  2.60053e-01
+stdout icol_after          =  3.11147e-05 at=  2.60033e-01

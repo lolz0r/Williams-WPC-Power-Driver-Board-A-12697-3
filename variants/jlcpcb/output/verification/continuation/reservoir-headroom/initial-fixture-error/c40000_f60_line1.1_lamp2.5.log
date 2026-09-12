@@ -1,0 +1,27 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: u21 source headroom; hypothetical reservoir sensitivity c40000_f60_line1.1_lamp2.5
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout secp                                3.4451e-19
+stdout secn                                3.4451e-19
+stdout acp                                 3.4451e-19
+stdout acn                                 3.4451e-19
+stdout vinf                              -4.39781e-21
+stdout stored                            -4.39781e-21
+stdout vsecondary#branch                 -6.31166e-30
+ Reference value :  1.46402e-01
+ Reference value :  4.54062e-01
+stdout No. of Data Rows : 50029
+stdout sim_end = 5.000000e-01
+stdout raw_min             =  1.47041e+01 at=  4.77222e-01
+stdout raw_max             =  1.65165e+01 at=  4.21252e-01
+stdout raw_mean            =  1.55250e+01 from=  4.00000e-01 to=  5.00000e-01
+stdout secondary_rms       =  1.14406e+01 from=  4.00000e-01 to=  5.00000e-01
+stderr no such vector as 'i(creservoir)'
+stderr meas tran capacitor_rms rms i(creservoir) from=400m to=500m failed!
+stdout diode_peak          =  2.40058e+01 at=  4.53992e-01
+stdout inrush_peak         =  7.53744e+01 at=  3.40197e-03

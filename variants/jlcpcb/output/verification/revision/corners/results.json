@@ -1,0 +1,2373 @@
+{
+  "model_limitations": "Approximate semiconductor/control models. No measured transformer impedance, thermal correlation, SOA or EMC certification.",
+  "cases": [
+    {
+      "name": "sol_t0_v63_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 63,
+        "coil_ohm": 3.482892,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.5407,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 50.45316,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.14218,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 0.00272606,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v63_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 63,
+        "coil_ohm": 3.482892,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.5334,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 47.00752,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.999532,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 0.002716,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v63_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 63,
+        "coil_ohm": 4.256868000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.4384,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 33.76106,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.474819,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 5.44335e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v63_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 63,
+        "coil_ohm": 4.256868000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.4279,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 31.47372,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.375281,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 5.41614e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v70_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 70,
+        "coil_ohm": 3.482892,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.5991,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 62.35811,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.648936,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 0.0232731,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v70_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 70,
+        "coil_ohm": 3.482892,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.5989,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 58.07515,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.47097,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 0.0234476,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v70_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 70,
+        "coil_ohm": 4.256868000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.4795,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 41.7183,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.826211,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 7.88964e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v70_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 70,
+        "coil_ohm": 4.256868000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.4818,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 38.8788,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.702644,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 8.11888e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v86_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 86,
+        "coil_ohm": 3.482892,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.7474,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 94.36891,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 4.010582,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 0.0741362,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v86_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 86,
+        "coil_ohm": 3.482892,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.7459,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 87.80156,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 3.745959,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 0.0743983,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v86_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 86,
+        "coil_ohm": 4.256868000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.6009,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 63.10183,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.758145,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.90015e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t0_v86_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 0,
+        "rail_V": 86,
+        "coil_ohm": 4.256868000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.6007,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 58.76102,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.580878,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.84988e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v63_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 63,
+        "coil_ohm": 3.854277,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.4766,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 41.19082,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.775045,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 5.48313e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v63_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 63,
+        "coil_ohm": 3.854277,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.4783,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 38.38963,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.657613,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 5.57156e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v63_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 63,
+        "coil_ohm": 4.710783000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.384,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 27.56263,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.219634,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 6.65179e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v63_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 63,
+        "coil_ohm": 4.710783000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.3806,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 25.70164,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.136811,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 6.51489e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v70_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 70,
+        "coil_ohm": 3.854277,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.5354,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 50.90434,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.198589,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 8.67596e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v70_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 70,
+        "coil_ohm": 3.854277,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.5427,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 47.42487,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.049119,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 8.82484e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v70_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 70,
+        "coil_ohm": 4.710783000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.4297,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 34.05581,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.510269,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 8.87815e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v70_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 70,
+        "coil_ohm": 4.710783000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.4276,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 31.74686,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.407413,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 8.53724e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v86_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 86,
+        "coil_ohm": 3.854277,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.675,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 77.01459,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 3.326174,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 2.70984e-05,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v86_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 86,
+        "coil_ohm": 3.854277,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.6689,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 71.6879,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 3.106466,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 2.72226e-05,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v86_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 86,
+        "coil_ohm": 4.710783000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.5384,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 51.50067,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.279351,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.57862e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t25_v86_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 25,
+        "rail_V": 86,
+        "coil_ohm": 4.710783000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.5382,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 47.97549,
+          "min": 0,
+          "max": 100,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.128572,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.59051e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v63_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 63,
+        "coil_ohm": 4.225662000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.4296,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 34.26207,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.495063,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 6.53782e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v63_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 63,
+        "coil_ohm": 4.225662000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.4316,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 31.94017,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.394363,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 6.67087e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v63_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 63,
+        "coil_ohm": 5.164698000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.3393,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 22.92671,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.025609,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.12934e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v63_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 63,
+        "coil_ohm": 5.164698000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 64.3411,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 21.38308,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 0.9552911,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.1948e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v70_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 70,
+        "coil_ohm": 4.225662000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.4835,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 42.33769,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.851545,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 9.83355e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v70_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 70,
+        "coil_ohm": 4.225662000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.4858,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 39.45518,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.726217,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 9.44578e-07,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v70_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 70,
+        "coil_ohm": 5.164698000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.386,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 28.32562,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.266819,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.44158e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v70_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 70,
+        "coil_ohm": 5.164698000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 71.3843,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 26.41131,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.18323,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.36041e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v86_r0.9_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 86,
+        "coil_ohm": 4.225662000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.6085,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 64.03976,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.796416,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 2.26138e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v86_r0.9_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 86,
+        "coil_ohm": 4.225662000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.6056,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 59.63275,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 2.616666,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 2.21671e-06,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v86_r1.1_g4.5",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 86,
+        "coil_ohm": 5.164698000000001,
+        "gate_V": 4.5,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.4856,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 42.82772,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.915038,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 2.14403e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "sol_t50_v86_r1.1_g5.15",
+      "category": "normal",
+      "parameters": {
+        "ambient_C": 50,
+        "rail_V": 86,
+        "coil_ohm": 5.164698000000001,
+        "gate_V": 5.15,
+        "duty": 0.2,
+        "rth_C_W": 62
+      },
+      "checks": {
+        "vout_peak": {
+          "value": 87.4861,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "tj_rise_20pct": {
+          "value": 39.9081,
+          "min": 0,
+          "max": 75,
+          "passed": true
+        },
+        "tj_rise_pulse": {
+          "value": 1.789182,
+          "min": 0,
+          "max": 10,
+          "passed": true
+        },
+        "icoil_off": {
+          "value": 1.98649e-08,
+          "min": -0.01,
+          "max": 0.1,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f50_v0.85_logic4.75",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 0.85,
+        "logic_V": 4.75
+      },
+      "checks": {
+        "period": {
+          "value": 0.02000001,
+          "min": 0.01998,
+          "max": 0.020019999999999996,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.151131,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 4.74999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f50_v0.85_logic5.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 0.85,
+        "logic_V": 5.2
+      },
+      "checks": {
+        "period": {
+          "value": 0.02,
+          "min": 0.01998,
+          "max": 0.020019999999999996,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.168318,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 5.19999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f50_v1.0_logic4.75",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.0,
+        "logic_V": 4.75
+      },
+      "checks": {
+        "period": {
+          "value": 0.01999996,
+          "min": 0.01998,
+          "max": 0.020019999999999996,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.151131,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 4.74999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f50_v1.0_logic5.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.0,
+        "logic_V": 5.2
+      },
+      "checks": {
+        "period": {
+          "value": 0.02000005,
+          "min": 0.01998,
+          "max": 0.020019999999999996,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.168318,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 5.19999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f50_v1.1_logic4.75",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.1,
+        "logic_V": 4.75
+      },
+      "checks": {
+        "period": {
+          "value": 0.02,
+          "min": 0.01998,
+          "max": 0.020019999999999996,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.151131,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 4.74999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f50_v1.1_logic5.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.1,
+        "logic_V": 5.2
+      },
+      "checks": {
+        "period": {
+          "value": 0.01999999,
+          "min": 0.01998,
+          "max": 0.020019999999999996,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.168318,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 5.19999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f60_v0.85_logic4.75",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 0.85,
+        "logic_V": 4.75
+      },
+      "checks": {
+        "period": {
+          "value": 0.01667,
+          "min": 0.01665,
+          "max": 0.01668333333333333,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.151131,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 4.74999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f60_v0.85_logic5.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 0.85,
+        "logic_V": 5.2
+      },
+      "checks": {
+        "period": {
+          "value": 0.016665,
+          "min": 0.01665,
+          "max": 0.01668333333333333,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.168318,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 5.19999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f60_v1.0_logic4.75",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.0,
+        "logic_V": 4.75
+      },
+      "checks": {
+        "period": {
+          "value": 0.016665,
+          "min": 0.01665,
+          "max": 0.01668333333333333,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.151131,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 4.74999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f60_v1.0_logic5.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.0,
+        "logic_V": 5.2
+      },
+      "checks": {
+        "period": {
+          "value": 0.016665,
+          "min": 0.01665,
+          "max": 0.01668333333333333,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.168318,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 5.19999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f60_v1.1_logic4.75",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.1,
+        "logic_V": 4.75
+      },
+      "checks": {
+        "period": {
+          "value": 0.016665,
+          "min": 0.01665,
+          "max": 0.01668333333333333,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.151131,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 4.74999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "zc_f60_v1.1_logic5.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.1,
+        "logic_V": 5.2
+      },
+      "checks": {
+        "period": {
+          "value": 0.016665,
+          "min": 0.01665,
+          "max": 0.01668333333333333,
+          "passed": true
+        },
+        "zc_low": {
+          "value": 0.168318,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "zc_high": {
+          "value": 5.19999,
+          "min": 4.0,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f50_line0.88_cap0.8",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 0.88,
+        "capacitor_scale": 0.8
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 10.433,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 9.84357,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f50_line0.88_cap1.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 0.88,
+        "capacitor_scale": 1.2
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 10.8657,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 10.1391,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f50_line1.0_cap0.8",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.0,
+        "capacitor_scale": 0.8
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 11.2721,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f50_line1.0_cap1.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.0,
+        "capacitor_scale": 1.2
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 11.6104,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f50_line1.1_cap0.8",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.1,
+        "capacitor_scale": 0.8
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 12.4631,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f50_line1.1_cap1.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.1,
+        "capacitor_scale": 1.2
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 12.8371,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f60_line0.88_cap0.8",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 0.88,
+        "capacitor_scale": 0.8
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 10.6514,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 9.99237,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f60_line0.88_cap1.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 0.88,
+        "capacitor_scale": 1.2
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 11.0059,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 10.2354,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f60_line1.0_cap0.8",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.0,
+        "capacitor_scale": 0.8
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 11.4425,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f60_line1.0_cap1.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.0,
+        "capacitor_scale": 1.2
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 11.7208,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f60_line1.1_cap0.8",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.1,
+        "capacitor_scale": 0.8
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 12.6515,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "psu_f60_line1.1_cap1.2",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.1,
+        "capacitor_scale": 1.2
+      },
+      "checks": {
+        "v5_min": {
+          "value": 5.1,
+          "min": 4.75,
+          "max": 5.25,
+          "passed": true
+        },
+        "v12_min": {
+          "value": 12.0,
+          "min": 9.0,
+          "max": 12.6,
+          "passed": true
+        },
+        "v12u_min": {
+          "value": 12.9592,
+          "min": 8.0,
+          "max": 20.0,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "bridge_f50_line0.9",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 0.9,
+        "ambient_C": 50,
+        "BR1_rth_C_W": 32.2
+      },
+      "checks": {
+        "tj_18a": {
+          "value": 108.0215,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_50a": {
+          "value": 117.0273,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "bridge_f50_line1.0",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.0,
+        "ambient_C": 50,
+        "BR1_rth_C_W": 32.2
+      },
+      "checks": {
+        "tj_18a": {
+          "value": 115.0807,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_50a": {
+          "value": 117.4267,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "bridge_f50_line1.1",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 50,
+        "line_scale": 1.1,
+        "ambient_C": 50,
+        "BR1_rth_C_W": 32.2
+      },
+      "checks": {
+        "tj_18a": {
+          "value": 122.1272,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_50a": {
+          "value": 117.8043,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "bridge_f60_line0.9",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 0.9,
+        "ambient_C": 50,
+        "BR1_rth_C_W": 32.2
+      },
+      "checks": {
+        "tj_18a": {
+          "value": 108.2669,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_50a": {
+          "value": 117.063,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "bridge_f60_line1.0",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.0,
+        "ambient_C": 50,
+        "BR1_rth_C_W": 32.2
+      },
+      "checks": {
+        "tj_18a": {
+          "value": 115.2652,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_50a": {
+          "value": 117.455,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    },
+    {
+      "name": "bridge_f60_line1.1",
+      "category": "normal",
+      "parameters": {
+        "frequency_Hz": 60,
+        "line_scale": 1.1,
+        "ambient_C": 50,
+        "BR1_rth_C_W": 32.2
+      },
+      "checks": {
+        "tj_18a": {
+          "value": 122.3627,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "tj_50a": {
+          "value": 117.883,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "passed": true,
+      "errors": []
+    }
+  ],
+  "capacitor_voltage_bounds": {
+    "C5": {
+      "peak_bound_V": 15.33856029749859,
+      "rating_V": 35,
+      "passed": true
+    },
+    "C6/C7": {
+      "peak_bound_V": 20.689944417518387,
+      "rating_V": 35,
+      "passed": true
+    },
+    "C11": {
+      "peak_bound_V": 26.55468806067961,
+      "rating_V": 35,
+      "passed": true
+    },
+    "C30": {
+      "peak_bound_V": 19.39876743507175,
+      "rating_V": 35,
+      "passed": true
+    },
+    "C8/C32": {
+      "peak_bound_V": 85.87104750729435,
+      "rating_V": 100,
+      "passed": true
+    }
+  },
+  "passed": true
+}

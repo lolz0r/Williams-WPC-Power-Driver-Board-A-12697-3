@@ -1,0 +1,78 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: end-to-end cpu write -> j211/j113 ribbon -> u9 74hct240 -> 74hct574 -> ipd90n10s4l06 with the real wpc timing and the active-low data (xspice digital latch). 6809e write cycle at 2 mhz: q rises at t0 = 10 us x k (one write per 10 us slot so that the 100 r / cgs gate rc settles), e rises t0 + 125 ns, e falls t0 + 375 ns; the asic strobe is low from q rise to e fall (370 ns as scoped on j211); cpu write data (u12 74ls240, enabled only for the write) is valid worst case from t0 + 200 ns (tddq max) to t0 + 405 ns (tdhw 30 ns min after e falls), tri-stated otherwise. ribbon 1 r / 120 pf, r318-r325 4.7 k pull-ups on the data, r310-r317 4.7 k on the strobes and blanking. register bit 1 -> ribbon low -> u9 high -> q high -> gate on. cycles: k=0 write 1, k=1 write 0, k=2 write 1, k=3 write 1 with the ribbon unplugged (no cpu, blanking floats up), k=4 write 1 with blanking high, k=5 write 0.
+stdout Reducing trtol to 1 for xspice 'A' devices
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vcc                                          5
+stdout k                                            0
+stdout tc                                           0
+stdout bit                                          1
+stdout valid                                        0
+stdout plug                                         1
+stdout blk                                          0
+stdout vh                                         3.4
+stdout ctl_lo                                       0
+stdout ctl_hi                                       0
+stdout cpu                                    4.99997
+stdout rib                                    4.99997
+stdout stb0                                         0
+stdout stbc                                  0.026455
+stdout stb                                  0.0264656
+stdout blank                                 0.026455
+stdout ctl_b                                        1
+stdout q                                          4.6
+stdout d574a                                        0
+stdout qx                                         4.6
+stdout qa                                     4.58185
+stdout ctl_oe                                       1
+stdout qo                                     4.58185
+stdout g                                      4.53648
+stdout out                                  0.0796054
+stdout v50                                         70
+stdout cl                                   0.0796054
+stdout bctl_oe#branch                               0
+stdout bctl_b#branch                                0
+stdout bstb#branch                          0.0010582
+stdout bctl_hi#branch                               0
+stdout bctl_lo#branch                               0
+stdout bblk#branch                                  0
+stdout bplug#branch                                 0
+stdout bvalid#branch                                0
+stdout bbit#branch                                  0
+stdout btc#branch                                   0
+stdout bk#branch                                    0
+stdout lc#branch                             -6.47411
+stdout v50#branch                            -6.47411
+stdout voe#branch                         0.000453648
+stdout vh#branch                          1.59997e-09
+stdout vcc#branch                         -0.00211641
+stdout adac#branch_1_0                   -0.000453648
+stdout adac#branch_1_1                              0
+ Reference value :  1.85448e-05
+ Reference value :  2.04486e-05
+ Reference value :  4.02212e-05
+ Reference value :  5.86665e-05
+stdout No. of Data Rows : 31661
+stdout g_w1                =  4.53648e+00 at=  9.89955e-06
+stdout out_w1              =  7.96054e-02 at=  9.89955e-06
+stdout g_w0                =  9.13012e-02 at=  1.60017e-05
+stdout out_w0              =  7.11244e+01 at=  1.60017e-05
+stdout g_w1b               =  4.47497e+00 at=  2.60008e-05
+stdout g_unplug            =  4.13163e+00 at=  3.60008e-05
+stdout blank_unplug        =  4.99998e+00 at=  3.98988e-05
+stdout g_blank             =  3.53670e+00 at=  4.60014e-05
+stdout ioe_on              =  4.53648e-04 at=  5.66552e-07
+stdout ioe_unplug          =  7.11364e-10 at=  3.98988e-05
+stdout ioe_blank           =  1.27115e-09 at=  4.98994e-05
+stdout g_w0b               =  7.69518e-02 at=  5.60005e-05
+stdout rib_low             =  2.77326e-02 at=  2.51689e-07
+stdout rib_high            =  3.44544e+00 at=  1.03696e-05
+stdout t_dv                =  2.11688e-07
+stdout t_clk               =  3.77575e-07
+stdout t_dinv              =  5.69552e-07
+stdout t_setup = 1.658875e-07
+stdout t_hold = 1.919771e-07

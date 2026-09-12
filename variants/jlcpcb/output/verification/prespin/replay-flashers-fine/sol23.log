@@ -1,0 +1,302 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom flasher channel 23; sol23
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout cmd                                          0
+stdout a                                            0
+stdout gate                                         0
+stdout drain                                       30
+stdout dq                                          30
+stdout clamprail                                   30
+stdout da                                          30
+stdout feed                                        30
+stdout wire                                        30
+stdout lp                                          30
+stdout theta                              1.34502e-20
+stdout lwire#branch                        1.0595e-09
+stdout vlamp#branch                        1.0595e-09
+stdout vdiode#branch                     -4.26326e-14
+stdout vclamp#branch                      -1.0595e-09
+stdout vsense#branch                      1.06047e-09
+stdout vcmd#branch                                  0
+ Reference value :  0.00000e+00
+ Reference value :  4.09540e-02
+ Reference value :  8.25090e-02
+ Reference value :  1.23974e-01
+ Reference value :  1.64406e-01
+ Reference value :  2.05551e-01
+ Reference value :  2.46296e-01
+ Reference value :  2.87509e-01
+ Reference value :  3.28559e-01
+ Reference value :  3.70474e-01
+ Reference value :  4.11887e-01
+ Reference value :  4.52952e-01
+ Reference value :  4.94552e-01
+ Reference value :  5.35369e-01
+ Reference value :  5.74842e-01
+ Reference value :  6.13902e-01
+ Reference value :  6.52919e-01
+ Reference value :  6.92292e-01
+ Reference value :  7.31509e-01
+ Reference value :  7.70852e-01
+ Reference value :  8.09869e-01
+ Reference value :  8.48519e-01
+ Reference value :  8.87884e-01
+ Reference value :  9.27192e-01
+ Reference value :  9.68152e-01
+ Reference value :  1.00952e+00
+ Reference value :  1.05021e+00
+ Reference value :  1.09120e+00
+ Reference value :  1.13221e+00
+ Reference value :  1.17351e+00
+ Reference value :  1.21280e+00
+ Reference value :  1.25185e+00
+ Reference value :  1.29205e+00
+ Reference value :  1.33224e+00
+ Reference value :  1.37263e+00
+ Reference value :  1.41121e+00
+ Reference value :  1.45038e+00
+ Reference value :  1.49133e+00
+ Reference value :  1.53081e+00
+ Reference value :  1.56961e+00
+ Reference value :  1.60825e+00
+ Reference value :  1.64608e+00
+ Reference value :  1.68423e+00
+ Reference value :  1.72211e+00
+ Reference value :  1.75984e+00
+ Reference value :  1.79935e+00
+ Reference value :  1.83901e+00
+ Reference value :  1.87853e+00
+ Reference value :  1.91843e+00
+ Reference value :  1.95785e+00
+ Reference value :  1.99706e+00
+ Reference value :  2.03728e+00
+ Reference value :  2.07740e+00
+ Reference value :  2.11761e+00
+ Reference value :  2.15721e+00
+ Reference value :  2.19677e+00
+ Reference value :  2.23399e+00
+ Reference value :  2.26192e+00
+ Reference value :  2.29917e+00
+ Reference value :  2.33812e+00
+ Reference value :  2.37699e+00
+ Reference value :  2.41622e+00
+ Reference value :  2.45506e+00
+ Reference value :  2.49375e+00
+ Reference value :  2.53252e+00
+ Reference value :  2.57107e+00
+ Reference value :  2.60940e+00
+ Reference value :  2.64807e+00
+ Reference value :  2.68679e+00
+ Reference value :  2.72547e+00
+ Reference value :  2.76419e+00
+ Reference value :  2.80253e+00
+ Reference value :  2.84114e+00
+ Reference value :  2.87889e+00
+ Reference value :  2.91693e+00
+ Reference value :  2.95546e+00
+ Reference value :  2.99466e+00
+ Reference value :  3.03235e+00
+ Reference value :  3.07001e+00
+ Reference value :  3.10719e+00
+ Reference value :  3.14436e+00
+ Reference value :  3.18098e+00
+ Reference value :  3.21717e+00
+ Reference value :  3.25320e+00
+ Reference value :  3.28943e+00
+ Reference value :  3.32668e+00
+ Reference value :  3.36458e+00
+ Reference value :  3.40229e+00
+ Reference value :  3.43952e+00
+ Reference value :  3.47827e+00
+ Reference value :  3.51727e+00
+ Reference value :  3.55643e+00
+ Reference value :  3.59477e+00
+ Reference value :  3.63350e+00
+ Reference value :  3.67282e+00
+ Reference value :  3.71217e+00
+ Reference value :  3.75080e+00
+ Reference value :  3.78867e+00
+ Reference value :  3.82735e+00
+ Reference value :  3.86506e+00
+ Reference value :  3.90395e+00
+ Reference value :  3.94250e+00
+ Reference value :  3.98062e+00
+ Reference value :  4.02001e+00
+ Reference value :  4.05887e+00
+ Reference value :  4.09822e+00
+ Reference value :  4.13718e+00
+ Reference value :  4.17683e+00
+ Reference value :  4.21543e+00
+ Reference value :  4.25324e+00
+ Reference value :  4.29136e+00
+ Reference value :  4.32970e+00
+ Reference value :  4.36880e+00
+ Reference value :  4.40828e+00
+ Reference value :  4.44722e+00
+ Reference value :  4.48590e+00
+ Reference value :  4.52474e+00
+ Reference value :  4.56374e+00
+ Reference value :  4.60245e+00
+ Reference value :  4.64120e+00
+ Reference value :  4.67914e+00
+ Reference value :  4.71785e+00
+ Reference value :  4.75636e+00
+ Reference value :  4.79515e+00
+ Reference value :  4.83454e+00
+ Reference value :  4.87345e+00
+ Reference value :  4.91221e+00
+ Reference value :  4.95065e+00
+ Reference value :  4.98827e+00
+ Reference value :  5.02711e+00
+ Reference value :  5.06664e+00
+ Reference value :  5.10631e+00
+ Reference value :  5.14634e+00
+ Reference value :  5.18620e+00
+ Reference value :  5.22600e+00
+ Reference value :  5.26553e+00
+ Reference value :  5.30581e+00
+ Reference value :  5.34423e+00
+ Reference value :  5.38396e+00
+ Reference value :  5.42403e+00
+ Reference value :  5.46275e+00
+ Reference value :  5.50255e+00
+ Reference value :  5.54232e+00
+ Reference value :  5.58190e+00
+ Reference value :  5.62140e+00
+ Reference value :  5.66078e+00
+ Reference value :  5.70061e+00
+ Reference value :  5.73972e+00
+ Reference value :  5.77945e+00
+ Reference value :  5.81907e+00
+ Reference value :  5.85888e+00
+ Reference value :  5.89845e+00
+ Reference value :  5.93810e+00
+ Reference value :  5.97793e+00
+ Reference value :  6.01736e+00
+ Reference value :  6.05608e+00
+ Reference value :  6.09447e+00
+ Reference value :  6.13329e+00
+ Reference value :  6.17166e+00
+ Reference value :  6.20997e+00
+ Reference value :  6.24804e+00
+ Reference value :  6.28769e+00
+ Reference value :  6.32756e+00
+ Reference value :  6.36784e+00
+ Reference value :  6.40796e+00
+ Reference value :  6.44741e+00
+ Reference value :  6.48742e+00
+ Reference value :  6.52690e+00
+ Reference value :  6.56605e+00
+ Reference value :  6.60514e+00
+ Reference value :  6.64483e+00
+ Reference value :  6.68388e+00
+ Reference value :  6.72290e+00
+ Reference value :  6.76180e+00
+ Reference value :  6.80064e+00
+ Reference value :  6.83974e+00
+ Reference value :  6.87845e+00
+ Reference value :  6.91747e+00
+ Reference value :  6.95659e+00
+ Reference value :  6.99538e+00
+ Reference value :  7.03301e+00
+ Reference value :  7.07041e+00
+ Reference value :  7.10920e+00
+ Reference value :  7.14809e+00
+ Reference value :  7.18711e+00
+ Reference value :  7.22597e+00
+ Reference value :  7.26492e+00
+ Reference value :  7.30361e+00
+ Reference value :  7.34257e+00
+ Reference value :  7.38129e+00
+ Reference value :  7.41964e+00
+ Reference value :  7.45786e+00
+ Reference value :  7.49664e+00
+ Reference value :  7.53508e+00
+ Reference value :  7.57320e+00
+ Reference value :  7.61146e+00
+ Reference value :  7.64959e+00
+ Reference value :  7.68675e+00
+ Reference value :  7.71822e+00
+ Reference value :  7.73901e+00
+ Reference value :  7.75897e+00
+ Reference value :  7.78417e+00
+ Reference value :  7.82116e+00
+ Reference value :  7.85745e+00
+ Reference value :  7.89502e+00
+ Reference value :  7.93207e+00
+ Reference value :  7.96885e+00
+ Reference value :  8.00605e+00
+ Reference value :  8.04324e+00
+ Reference value :  8.08008e+00
+ Reference value :  8.11734e+00
+ Reference value :  8.15420e+00
+ Reference value :  8.19109e+00
+ Reference value :  8.22805e+00
+ Reference value :  8.26516e+00
+ Reference value :  8.30281e+00
+ Reference value :  8.34023e+00
+ Reference value :  8.37711e+00
+ Reference value :  8.40862e+00
+ Reference value :  8.44582e+00
+ Reference value :  8.48250e+00
+ Reference value :  8.51848e+00
+ Reference value :  8.55443e+00
+ Reference value :  8.58965e+00
+ Reference value :  8.62457e+00
+ Reference value :  8.66097e+00
+ Reference value :  8.69723e+00
+ Reference value :  8.73318e+00
+ Reference value :  8.76967e+00
+ Reference value :  8.80594e+00
+ Reference value :  8.84257e+00
+ Reference value :  8.87870e+00
+ Reference value :  8.91518e+00
+ Reference value :  8.95147e+00
+ Reference value :  8.98740e+00
+ Reference value :  9.02357e+00
+ Reference value :  9.05984e+00
+ Reference value :  9.09641e+00
+ Reference value :  9.13303e+00
+ Reference value :  9.16991e+00
+ Reference value :  9.20627e+00
+ Reference value :  9.24287e+00
+ Reference value :  9.27860e+00
+ Reference value :  9.31543e+00
+ Reference value :  9.35142e+00
+ Reference value :  9.38727e+00
+ Reference value :  9.42465e+00
+ Reference value :  9.46275e+00
+ Reference value :  9.50082e+00
+ Reference value :  9.53864e+00
+ Reference value :  9.57609e+00
+ Reference value :  9.61390e+00
+ Reference value :  9.65142e+00
+ Reference value :  9.68865e+00
+ Reference value :  9.72639e+00
+ Reference value :  9.76430e+00
+ Reference value :  9.80182e+00
+ Reference value :  9.83790e+00
+ Reference value :  9.87520e+00
+ Reference value :  9.91254e+00
+ Reference value :  9.94997e+00
+ Reference value :  9.98754e+00
+ Reference value :  1.00247e+01
+ Reference value :  1.00615e+01
+ Reference value :  1.00987e+01
+ Reference value :  1.01360e+01
+ Reference value :  1.01730e+01
+ Reference value :  1.02089e+01
+stdout No. of Data Rows : 4092807
+stdout sim_end = 1.023000e+01
+stdout vds_peak            =  3.10983e+01 at=  9.83255e+00
+stdout vgs_peak            =  4.49003e+00 at=  9.79898e+00
+stdout current_peak        =  2.70148e+01 at=  1.01657e+01
+stdout current_avg         =  2.35421e-02 from=  2.00000e-01 to=  1.02000e+01
+stdout diode_average       =  2.48649e-06 from=  2.00000e-01 to=  1.02000e+01
+stdout power_average       =  1.32090e-03 from=  2.00000e-01 to=  1.02000e+01
+stdout tj = 5.008190e+01

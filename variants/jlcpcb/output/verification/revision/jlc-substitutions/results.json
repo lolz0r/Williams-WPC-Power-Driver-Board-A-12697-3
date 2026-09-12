@@ -1,0 +1,759 @@
+{
+  "cases": [
+    {
+      "name": "led4_v4.95_vf1.6_r0.99",
+      "checks": {
+        "led_current": {
+          "value": 0.00719966,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.0241188,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "d30edb9c2146f3f779bfdad04cbea62bdbfddec337ff4b6fd09fa4aaa9c65b7a",
+      "passed": true
+    },
+    {
+      "name": "led4_v4.95_vf1.6_r1.01",
+      "checks": {
+        "led_current": {
+          "value": 0.00705709,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.0236412,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "b484774caba867a2508489d804a05c3381b1d3461b130b1aa83815abc35c496e",
+      "passed": true
+    },
+    {
+      "name": "led4_v4.95_vf2.6_r0.99",
+      "checks": {
+        "led_current": {
+          "value": 0.00505051,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.0118687,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "d9a1522c67e73ade69b78105a0eea222eef70ae7c00c078931cae546d7f945e0",
+      "passed": true
+    },
+    {
+      "name": "led4_v4.95_vf2.6_r1.01",
+      "checks": {
+        "led_current": {
+          "value": 0.0049505,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.0116337,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "2ba7820dc6e567b1ec7bffc3ad76b4396867d14a2d705b4cea4ed3fd3da229a7",
+      "passed": true
+    },
+    {
+      "name": "led4_v5.2_vf1.6_r0.99",
+      "checks": {
+        "led_current": {
+          "value": 0.00773694,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.027853,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "3f8c1abb53fc67299089744005d6e776a2737b400b7ea5836b919a52730611fa",
+      "passed": true
+    },
+    {
+      "name": "led4_v5.2_vf1.6_r1.01",
+      "checks": {
+        "led_current": {
+          "value": 0.00758374,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.0273015,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "04d3f9259cba71820add212c9ab607a6cbccd8bc5b4ef4e2fa18eaff70390a96",
+      "passed": true
+    },
+    {
+      "name": "led4_v5.2_vf2.6_r0.99",
+      "checks": {
+        "led_current": {
+          "value": 0.00558779,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.0145283,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "ff8237c8c412ccbfeaaf5a0336762ca9cb4109e80c887d1db6b9208e3b740ef9",
+      "passed": true
+    },
+    {
+      "name": "led4_v5.2_vf2.6_r1.01",
+      "checks": {
+        "led_current": {
+          "value": 0.00547714,
+          "min": 0,
+          "max": 0.025,
+          "passed": true
+        },
+        "resistor_power": {
+          "value": 0.0142406,
+          "min": 0,
+          "max": 0.125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "6930b50d4e09ebe0df1bf98087e558698cd9cd7d6c4615b1093ce2c68e225807",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l1_tt0.1",
+      "checks": {
+        "carrier_average": {
+          "value": 2.87005e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 2.05566e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.9511,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0262,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "7173b006b0123fc4e898a15ee89ea24d15e230e0f8f7cc4d2eca9b6a5caf13a2",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l1_tt2",
+      "checks": {
+        "carrier_average": {
+          "value": 1.19621e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 2.07587e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.8038,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0262,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "54708a985a5f27880e66cc3d9277e1e1f8e4ac479a678cbe85e86cea13637b5a",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l1_tt10",
+      "checks": {
+        "carrier_average": {
+          "value": 9.87658e-06,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 2.08442e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.7618,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0262,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "8806a040defca3ebd0ca70302cae20995597f8b32514800ede93e79f8020f353",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l10_tt0.1",
+      "checks": {
+        "carrier_average": {
+          "value": 0.000237928,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.000205812,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 31.0431,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0262,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "dd5a146ed7b66c3894b307fbbedbf7a0111c65e2d51b62ff2f7857de241d311c",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l10_tt2",
+      "checks": {
+        "carrier_average": {
+          "value": 0.000214811,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.000206701,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.9172,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0262,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "08b6d6e85616eaed74497ce528b36100702e02f39e27b6340f80284dc61e75dd",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l10_tt10",
+      "checks": {
+        "carrier_average": {
+          "value": 0.000116682,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.00020808,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.8232,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0263,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "b4b1c0ba1a6bcc3d0e989b18d5b64472453f1b7442fa06531ef811d6788bfef7",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l100_tt0.1",
+      "checks": {
+        "carrier_average": {
+          "value": 0.00207749,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.00207078,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 31.0395,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0262,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "adc14906158959f057d4756205e20818a8309fd174b1a38187161653426e936c",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l100_tt2",
+      "checks": {
+        "carrier_average": {
+          "value": 0.00207133,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.00207,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.9812,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 35.4325,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "4906e849ed006591eef3e32adbd80a530da9c591ae047a5ebed15d2f7641be61",
+      "passed": true
+    },
+    {
+      "name": "m7_t25_l100_tt10",
+      "checks": {
+        "carrier_average": {
+          "value": 0.00196763,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.0020758,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.9223,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 108.827,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "c8f691182c598ea090f3e026cc6f9114104e1eaa1e86178c062286a576b07dd2",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l1_tt0.1",
+      "checks": {
+        "carrier_average": {
+          "value": 2.07372e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 2.07904e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.8123,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0268,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "ddbd629ce2d56245e40e905422cabe443f8999f90c2b5a5de52f474ee50d9720",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l1_tt2",
+      "checks": {
+        "carrier_average": {
+          "value": 2.12026e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 2.10224e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.6793,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0279,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "f9c7c686c82fa042f10d37ac84e022461993a083975ae25f0c286b73da39a8a8",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l1_tt10",
+      "checks": {
+        "carrier_average": {
+          "value": 7.06208e-06,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 2.1223e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.5614,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0322,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "0a3881f9685b7a1b1c1e66ddafa298d326540c4dedd0fbd52950f41fd437c0e6",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l10_tt0.1",
+      "checks": {
+        "carrier_average": {
+          "value": 0.000223791,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.000208349,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.9299,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0269,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "d65ba329713205fbccd3f078ce301fd39a2ceb29006302c4ee5f2056af9ad938",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l10_tt2",
+      "checks": {
+        "carrier_average": {
+          "value": 0.000203108,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.000209047,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.7741,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0279,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "a708cca1fe36a17a3ac96bfd082512139b982db5b14e937023042e6f13331574",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l10_tt10",
+      "checks": {
+        "carrier_average": {
+          "value": 0.000134003,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.000210973,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.6747,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0322,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "d62b9102cb4c95e0d836f8606b0463b71ab7a2224a4423884d8637c272f20e3f",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l100_tt0.1",
+      "checks": {
+        "carrier_average": {
+          "value": 0.00210477,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.00209702,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.9437,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0269,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "2828d9f1e0eab903a3019b47a328c49ee70481fd9e6f5ffe32578dcfd77e07e1",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l100_tt2",
+      "checks": {
+        "carrier_average": {
+          "value": 0.00211464,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.00209489,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.8746,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 30.0279,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "c6abb1a07275d3d357c035415378101b3872667cc6d0d109b1660ccea73cbcbd",
+      "passed": true
+    },
+    {
+      "name": "m7_t125_l100_tt10",
+      "checks": {
+        "carrier_average": {
+          "value": 0.00199273,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "terminal_average": {
+          "value": 0.00210138,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "clamp_peak": {
+          "value": 30.7982,
+          "min": 0,
+          "max": 35,
+          "passed": true
+        },
+        "reverse_peak": {
+          "value": 93.2209,
+          "min": 0,
+          "max": 1000,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "f49bb333f1968e4e6b8eb9c2ad6c702ac6ed4bcf7cace39756d044400cb83138",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "pullup_static_bound": {
+    "supply_V": 5.2,
+    "resistance_min_ohms": 4653,
+    "current_A": 0.001117558564367075,
+    "power_W": 0.00581130453470879
+  },
+  "sources": [
+    "https://www.microdiode.com/uploadfiles/PDF/M1-THRU-M7-SMA.pdf",
+    "https://jlcpcb.com/partdetail/C84256",
+    "https://jlcpcb.com/partdetail/C17673"
+  ],
+  "limitations": [
+    "LED modeled as its specified forward-voltage limits; reduced +5V LED current reduces brightness",
+    "M7 approximate fit, not vendor model; reverse recovery is a 0.1..10 us engineering sensitivity because the MDD datasheet does not guarantee it",
+    "30 V, hot 18 ohm flasher and 1..100 uH wiring; not a model of a replacement solenoid connected to a flasher output",
+    "1 A is average forward rating; 35 V clamp bound protects the 100 V MOSFET with margin under these assumptions",
+    "Pull-up low-output current bound applies to 4.7k resistors; HCT TTL input thresholds retained"
+  ]
+}

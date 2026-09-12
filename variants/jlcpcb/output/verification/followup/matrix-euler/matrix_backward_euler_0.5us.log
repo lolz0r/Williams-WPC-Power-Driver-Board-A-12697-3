@@ -1,0 +1,358 @@
+stdout ******
+stdout ** ngspice-47 shared library
+stdout ** Creation Date: Fri Nov 11 11:11:11 UTC 2011
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: all 64 lamp paths, raw rom row/column strobes, 20.69 v
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                     20.69
+stdout vcc                                          5
+stdout ref                                    1.29012
+stdout mid                                   0.645061
+stdout row0cmd                                    4.5
+stdout row1cmd                                    4.5
+stdout row2cmd                                    4.5
+stdout row3cmd                                    4.5
+stdout row4cmd                                    4.5
+stdout row5cmd                                    4.5
+stdout row6cmd                                    4.5
+stdout row7cmd                                    4.5
+stdout col0cmd                                      0
+stdout col1cmd                                      0
+stdout col2cmd                                      0
+stdout col3cmd                                    4.5
+stdout col4cmd                                      0
+stdout col5cmd                                      0
+stdout col6cmd                                      0
+stdout col7cmd                                      0
+stdout col0in                                       0
+stdout xdriver0.g                                   0
+stdout col0sink                                 20.69
+stdout col0g                                    20.69
+stdout col0drain                            0.0863491
+stdout col0                                 0.0863491
+stdout row0q                                  4.48225
+stdout row0g                                  4.43787
+stdout row0                                  0.086076
+stdout row0s                                0.0621946
+stdout row0sh                               0.0621946
+stdout row0sense                            0.0621946
+stdout clr0                                   4.99995
+stdout col1in                                       0
+stdout xdriver1.g                                   0
+stdout col1sink                                 20.69
+stdout col1g                                    20.69
+stdout col1drain                            0.0863491
+stdout col1                                 0.0863491
+stdout row1q                                  4.48225
+stdout row1g                                  4.43787
+stdout row1                                  0.086076
+stdout row1s                                0.0621946
+stdout row1sh                               0.0621946
+stdout row1sense                            0.0621946
+stdout clr1                                   4.99995
+stdout col2in                                       0
+stdout xdriver2.g                                   0
+stdout col2sink                                 20.69
+stdout col2g                                    20.69
+stdout col2drain                            0.0863491
+stdout col2                                 0.0863491
+stdout row2q                                  4.48225
+stdout row2g                                  4.43787
+stdout row2                                  0.086076
+stdout row2s                                0.0621946
+stdout row2sh                               0.0621946
+stdout row2sense                            0.0621946
+stdout clr2                                   4.99995
+stdout col3in                                 4.49836
+stdout xdriver3.g                             4.08942
+stdout col3sink                             0.0105327
+stdout col3g                                  8.28232
+stdout col3drain                              20.5693
+stdout col3                                   20.5693
+stdout row3q                                  4.48225
+stdout row3g                                  4.43787
+stdout row3                                  0.086076
+stdout row3s                                0.0621946
+stdout row3sh                               0.0621946
+stdout row3sense                            0.0621946
+stdout clr3                                   4.99995
+stdout col4in                                       0
+stdout xdriver4.g                                   0
+stdout col4sink                                 20.69
+stdout col4g                                    20.69
+stdout col4drain                            0.0863491
+stdout col4                                 0.0863491
+stdout row4q                                  4.48225
+stdout row4g                                  4.43787
+stdout row4                                  0.086076
+stdout row4s                                0.0621946
+stdout row4sh                               0.0621946
+stdout row4sense                            0.0621946
+stdout clr4                                   4.99995
+stdout col5in                                       0
+stdout xdriver5.g                                   0
+stdout col5sink                                 20.69
+stdout col5g                                    20.69
+stdout col5drain                            0.0863491
+stdout col5                                 0.0863491
+stdout row5q                                  4.48225
+stdout row5g                                  4.43787
+stdout row5                                  0.086076
+stdout row5s                                0.0621946
+stdout row5sh                               0.0621946
+stdout row5sense                            0.0621946
+stdout clr5                                   4.99995
+stdout col6in                                       0
+stdout xdriver6.g                                   0
+stdout col6sink                                 20.69
+stdout col6g                                    20.69
+stdout col6drain                            0.0863491
+stdout col6                                 0.0863491
+stdout row6q                                  4.48225
+stdout row6g                                  4.43787
+stdout row6                                  0.086076
+stdout row6s                                0.0621946
+stdout row6sh                               0.0621946
+stdout row6sense                            0.0621946
+stdout clr6                                   4.99995
+stdout col7in                                       0
+stdout xdriver7.g                                   0
+stdout col7sink                                 20.69
+stdout col7g                                    20.69
+stdout col7drain                            0.0863491
+stdout col7                                 0.0863491
+stdout row7q                                  4.48225
+stdout row7g                                  4.43787
+stdout row7                                  0.086076
+stdout row7s                                0.0621946
+stdout row7sh                               0.0621946
+stdout row7sense                            0.0621946
+stdout clr7                                   4.99995
+stdout a00                                  0.0863491
+stdout t00                                1.36323e-21
+stdout a01                                  0.0863491
+stdout t01                                1.36323e-21
+stdout a02                                  0.0863491
+stdout t02                                1.36323e-21
+stdout a03                                  0.0863491
+stdout t03                                1.36323e-21
+stdout a04                                  0.0863491
+stdout t04                                1.36323e-21
+stdout a05                                  0.0863491
+stdout t05                                1.36323e-21
+stdout a06                                  0.0863491
+stdout t06                                1.36323e-21
+stdout a07                                  0.0863491
+stdout t07                                1.36323e-21
+stdout a10                                  0.0863491
+stdout t10                                1.36323e-21
+stdout a11                                  0.0863491
+stdout t11                                1.36323e-21
+stdout a12                                  0.0863491
+stdout t12                                1.36323e-21
+stdout a13                                  0.0863491
+stdout t13                                1.36323e-21
+stdout a14                                  0.0863491
+stdout t14                                1.36323e-21
+stdout a15                                  0.0863491
+stdout t15                                1.36323e-21
+stdout a16                                  0.0863491
+stdout t16                                1.36323e-21
+stdout a17                                  0.0863491
+stdout t17                                1.36323e-21
+stdout a20                                  0.0863491
+stdout t20                                1.36323e-21
+stdout a21                                  0.0863491
+stdout t21                                1.36323e-21
+stdout a22                                  0.0863491
+stdout t22                                1.36323e-21
+stdout a23                                  0.0863491
+stdout t23                                1.36323e-21
+stdout a24                                  0.0863491
+stdout t24                                1.36323e-21
+stdout a25                                  0.0863491
+stdout t25                                1.36323e-21
+stdout a26                                  0.0863491
+stdout t26                                1.36323e-21
+stdout a27                                  0.0863491
+stdout t27                                1.36323e-21
+stdout a30                                   0.955055
+stdout t30                                    3.46562
+stdout a31                                   0.955055
+stdout t31                                    3.46562
+stdout a32                                   0.955055
+stdout t32                                    3.46562
+stdout a33                                   0.955055
+stdout t33                                    3.46562
+stdout a34                                   0.955055
+stdout t34                                    3.46562
+stdout a35                                   0.955055
+stdout t35                                    3.46562
+stdout a36                                   0.955055
+stdout t36                                    3.46562
+stdout a37                                   0.955055
+stdout t37                                    3.46562
+stdout a40                                  0.0863491
+stdout t40                                1.36323e-21
+stdout a41                                  0.0863491
+stdout t41                                1.36323e-21
+stdout a42                                  0.0863491
+stdout t42                                1.36323e-21
+stdout a43                                  0.0863491
+stdout t43                                1.36323e-21
+stdout a44                                  0.0863491
+stdout t44                                1.36323e-21
+stdout a45                                  0.0863491
+stdout t45                                1.36323e-21
+stdout a46                                  0.0863491
+stdout t46                                1.36323e-21
+stdout a47                                  0.0863491
+stdout t47                                1.36323e-21
+stdout a50                                  0.0863491
+stdout t50                                1.36323e-21
+stdout a51                                  0.0863491
+stdout t51                                1.36323e-21
+stdout a52                                  0.0863491
+stdout t52                                1.36323e-21
+stdout a53                                  0.0863491
+stdout t53                                1.36323e-21
+stdout a54                                  0.0863491
+stdout t54                                1.36323e-21
+stdout a55                                  0.0863491
+stdout t55                                1.36323e-21
+stdout a56                                  0.0863491
+stdout t56                                1.36323e-21
+stdout a57                                  0.0863491
+stdout t57                                1.36323e-21
+stdout a60                                  0.0863491
+stdout t60                                1.36323e-21
+stdout a61                                  0.0863491
+stdout t61                                1.36323e-21
+stdout a62                                  0.0863491
+stdout t62                                1.36323e-21
+stdout a63                                  0.0863491
+stdout t63                                1.36323e-21
+stdout a64                                  0.0863491
+stdout t64                                1.36323e-21
+stdout a65                                  0.0863491
+stdout t65                                1.36323e-21
+stdout a66                                  0.0863491
+stdout t66                                1.36323e-21
+stdout a67                                  0.0863491
+stdout t67                                1.36323e-21
+stdout a70                                  0.0863491
+stdout t70                                1.36323e-21
+stdout a71                                  0.0863491
+stdout t71                                1.36323e-21
+stdout a72                                  0.0863491
+stdout t72                                1.36323e-21
+stdout a73                                  0.0863491
+stdout t73                                1.36323e-21
+stdout a74                                  0.0863491
+stdout t74                                1.36323e-21
+stdout a75                                  0.0863491
+stdout t75                                1.36323e-21
+stdout a76                                  0.0863491
+stdout t76                                1.36323e-21
+stdout a77                                  0.0863491
+stdout t77                                1.36323e-21
+stdout vrow7#branch                          0.282703
+stdout vcol7#branch                       1.41217e-10
+stdout vrow6#branch                          0.282703
+stdout vcol6#branch                       1.41217e-10
+stdout vrow5#branch                          0.282703
+stdout vcol5#branch                       1.41217e-10
+stdout vrow4#branch                          0.282703
+stdout vcol4#branch                       1.41217e-10
+stdout vrow3#branch                          0.282703
+stdout vcol3#branch                           2.26162
+stdout vrow2#branch                          0.282703
+stdout vcol2#branch                       1.41217e-10
+stdout vrow1#branch                          0.282703
+stdout vcol1#branch                       1.41217e-10
+stdout vrow0#branch                          0.282703
+stdout vcol0#branch                       1.41217e-10
+stdout vdrivecol7#branch                            0
+stdout vdrivecol6#branch                            0
+stdout vdrivecol5#branch                            0
+stdout vdrivecol4#branch                            0
+stdout vdrivecol3#branch                 -4.08942e-05
+stdout vdrivecol2#branch                            0
+stdout vdrivecol1#branch                            0
+stdout vdrivecol0#branch                            0
+stdout vdriverow7#branch                 -0.000443787
+stdout vdriverow6#branch                 -0.000443787
+stdout vdriverow5#branch                 -0.000443787
+stdout vdriverow4#branch                 -0.000443787
+stdout vdriverow3#branch                 -0.000443787
+stdout vdriverow2#branch                 -0.000443787
+stdout vdriverow1#branch                 -0.000443787
+stdout vdriverow0#branch                 -0.000443787
+stdout vcc#branch                         -0.00370992
+stdout vrail#branch                          -2.26989
+stdout No. of Data Rows : 58360
+stderr doAnalyses: TRAN:  Timestep too small; time = 0.0243895, timestep = 6.25e-19: trouble with node "row0q"
+stderr run simulation(s) aborted
+stdout sim_end = 2.438948e-02
+stdout col0_peak           =  2.01321e+01 at=  1.00491e-02
+stdout row0_peak           =  2.91785e+00 at=  8.06125e-03
+stdout row0_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col0_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row0_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col0_tj = 5.000000e+01
+stdout row0_tj = 5.000000e+01
+stdout col1_peak           =  2.01718e+01 at=  1.20850e-02
+stdout row1_peak           =  2.91785e+00 at=  8.06125e-03
+stdout row1_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col1_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row1_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col1_tj = 5.000000e+01
+stdout row1_tj = 5.000000e+01
+stdout col2_peak           =  2.01715e+01 at=  1.41334e-02
+stdout row2_peak           =  2.91785e+00 at=  8.06125e-03
+stdout row2_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col2_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row2_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col2_tj = 5.000000e+01
+stdout row2_tj = 5.000000e+01
+stdout col3_peak           =  4.99447e+00 at=  1.61835e-02
+stdout row3_peak           =  2.91785e+00 at=  8.06125e-03
+stdout row3_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col3_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row3_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col3_tj = 5.000000e+01
+stdout row3_tj = 5.000000e+01
+stdout col4_peak           =  2.02196e+01 at=  1.84739e-03
+stdout row4_peak           =  2.91785e+00 at=  8.06125e-03
+stdout row4_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col4_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row4_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col4_tj = 5.000000e+01
+stdout row4_tj = 5.000000e+01
+stdout col5_peak           =  2.01724e+01 at=  3.89547e-03
+stdout row5_peak           =  2.91785e+00 at=  8.06125e-03
+stdout row5_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col5_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row5_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col5_tj = 5.000000e+01
+stdout row5_tj = 5.000000e+01
+stdout col6_peak           =  1.80915e+01 at=  5.94212e-03
+stdout row6_peak           =  3.72769e+00 at=  1.00482e-02
+stdout row6_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col6_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row6_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col6_tj = 5.000000e+01
+stdout row6_tj = 5.000000e+01
+stdout col7_peak           =  1.56599e+01 at=  8.06265e-03
+stdout row7_peak           =  3.72778e+00 at=  1.00482e-02
+stdout row7_clear          =  4.99995e+00 at=  2.43895e-02
+stdout col7_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout row7_power          =  0.00000e+00 from=  1.00000e-01 to=  2.43895e-02
+stdout col7_tj = 5.000000e+01
+stdout row7_tj = 5.000000e+01

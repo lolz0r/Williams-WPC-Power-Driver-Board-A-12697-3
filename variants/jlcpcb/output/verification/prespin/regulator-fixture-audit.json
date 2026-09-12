@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": 254,
+  "failures": [],
+  "netlist_sha256": "d83a480ec2a1782bdbb1d6bddb01961f0359066e7ad5f34efe142b34f2f3b568",
+  "decks": {
+    "12v_loss_restart_0.02A_250n.cir": "f99bc0fcc9f63dc8cdaf7e78979755e7eb3c3b48f2f16306b9daf62b1c506c0e",
+    "12v_loss_restart_0.75A_250n.cir": "7d1d9a8f091bce7389c80e9267d2f42b0ff4cc072204727e47e035a0cdc370cb",
+    "12v_loss_restart_2A_250n.cir": "23fa0c0b195b5aebeddf03156938dbd2e5d9f6584024dd1ef8515dec28a7026e",
+    "12v_precharged_output_0.75A_250n.cir": "90735c46f9ee71647bad548ea5f6e4bc25d11858c44735ab034e9e6a8695dc28",
+    "5v_loss_restart_3A_250n.cir": "8ba937159e23b76e57644cd8832d70ab2c3806f6d129a9ae60fe329c8d5285e2",
+    "5v_precharged_output_1A_250n.cir": "32181d91ff982b36694c0745e4ac8bdc0c5b497bd7bbc94bfb3b4a3ce79b7e19"
+  },
+  "scope": "Regulator port mapping, actual R/C/L values and topology, catch diode, raw-rail bridge and reservoir assignment. Explicit lumped ESR/DCR nodes are collapsed only for native connectivity matching.",
+  "limitations": [
+    "Winding resistance, rectifier fit, input phase, ESR/DCR, lamp load, reverse-current and voltage screens are engineering assumptions, not independently extracted measurements",
+    "TPS54360 model is the documented typical vendor model used for the B part; no complete process-corner model",
+    "Other load capacitance, wiring and board parasitics remain outside this fixture"
+  ]
+}

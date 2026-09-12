@@ -1,0 +1,29 @@
+stdout ******
+stdout ** ngspice-47 shared library
+stdout ** Creation Date: Fri Nov 11 11:11:11 UTC 2011
+stdout ******
+stdout Note: No compatibility mode selected!
+stdout Circuit: exact two initial rom pulses; short convergence investigation two_pulses_gear_0.625us_vendor
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout cmd                                          0
+stdout rail                                        86
+stdout a                                            0
+stdout gate                                         0
+stdout drain                                       86
+stdout dq                                          86
+stdout cl                                          86
+stdout lcoil#branch                      -1.17355e-09
+stdout vsense#branch                      1.17286e-09
+stdout vrail#branch                      -1.17356e-09
+stdout vcmd#branch                                  0
+stdout No. of Data Rows : 102508
+stdout sim_end = 3.035500e-02
+stdout e_dissipation       =  5.76119e-03 from=  0.00000e+00 to=  3.03550e-02
+stdout e_terminal          =  5.76121e-03 from=  0.00000e+00 to=  3.03550e-02
+stdout vds_peak            =  8.71652e+01 at=  1.03801e-02
+stdout coil_peak           =  1.15642e+01 at=  1.03567e-02

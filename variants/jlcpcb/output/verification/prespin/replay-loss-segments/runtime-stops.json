@@ -1,0 +1,32 @@
+{
+  "interruption_method": "Set ngspice ft_intrpt through debugger, the ordinary simulator interrupt request; no electrical model parameters changed. Existing control measurements and completion checks then ran.",
+  "fine_run": {
+    "report": "coil1_0.078125us.json",
+    "reason": "Numerical time stagnation: accepted-vector count increased by 865198 while the last double-precision time remained identical.",
+    "observations": [
+      {
+        "points": 36141862,
+        "time_s": 0.11920896100388931
+      },
+      {
+        "points": 37007060,
+        "time_s": 0.11920896100388931
+      }
+    ],
+    "required_end_s": 0.8062334999999996,
+    "manually_interrupted": true
+  },
+  "vendor_diode_run": {
+    "report": "coil1_0.15625us_vendor_diode.json",
+    "reason": "Exploratory comparison stopped after about one hour. It was still advancing; this interruption is not evidence of intrinsic solver failure or a component failure.",
+    "points": 35916838,
+    "time_s": 0.6088920793850907,
+    "required_end_s": 0.8062334999999996,
+    "manually_interrupted": true
+  },
+  "limitations": [
+    "Partial-window power/temperature numbers cannot pass the full-transient completion gate",
+    "Manufacturer-diode full-window verification is incomplete",
+    "Read-only progress inspection used public ngspice plot/dvec layouts; no simulator functions were called during inspection"
+  ]
+}

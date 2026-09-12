@@ -1,0 +1,853 @@
+{
+  "passed": false,
+  "initial_comparison_passed": false,
+  "initial_failed_checks": [
+    {
+      "run": "replay-gameplay",
+      "channel": 1,
+      "metric": "tj_repeating",
+      "coarse": 80.5848542,
+      "fine": 76.5346732,
+      "absolute_difference": 4.050180999999995,
+      "allowed_difference": 4.02924271,
+      "passed": false
+    }
+  ],
+  "comparisons": [
+    {
+      "a": "replay-loss-segments/coil1_0.15625us.json",
+      "b": "replay-loss-segments/coil1_0.078125us.json",
+      "metric": "dissipation_w",
+      "both_runs_passed": false,
+      "a_value": 0.005631639,
+      "b_value": 0.003668805,
+      "difference": 0.001962834,
+      "limit": 0.001,
+      "passed": false
+    },
+    {
+      "a": "replay-loss-segments/coil1_0.15625us.json",
+      "b": "replay-loss-segments/coil1_0.078125us.json",
+      "metric": "terminal_w",
+      "both_runs_passed": false,
+      "a_value": 0.006859458,
+      "b_value": 0.004221036,
+      "difference": 0.0026384219999999996,
+      "limit": 0.001,
+      "passed": false
+    },
+    {
+      "a": "replay-loss-segments/coil1_0.15625us.json",
+      "b": "replay-loss-segments/coil1_0.078125us.json",
+      "metric": "vds_peak",
+      "both_runs_passed": false,
+      "a_value": 87.5039,
+      "b_value": 87.4217,
+      "difference": 0.08220000000000027,
+      "limit": 4.375195000000001,
+      "passed": false
+    },
+    {
+      "a": "replay-loss-segments/coil1_0.15625us.json",
+      "b": "replay-loss-segments/coil1_0.078125us.json",
+      "metric": "coil_peak",
+      "both_runs_passed": false,
+      "a_value": 17.1897,
+      "b_value": 14.6812,
+      "difference": 2.508499999999998,
+      "limit": 0.8594849999999999,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col0_peak",
+      "both_runs_passed": false,
+      "a_value": 20.1374,
+      "b_value": 20.1374,
+      "difference": 0.0,
+      "limit": 1.00687,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col0_power",
+      "both_runs_passed": false,
+      "a_value": 0.217497,
+      "b_value": 0.209432,
+      "difference": 0.008064999999999989,
+      "limit": 0.01087485,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col1_peak",
+      "both_runs_passed": false,
+      "a_value": 20.1871,
+      "b_value": 20.1871,
+      "difference": 0.0,
+      "limit": 1.009355,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col1_power",
+      "both_runs_passed": false,
+      "a_value": 0.217568,
+      "b_value": 0.209443,
+      "difference": 0.008125000000000021,
+      "limit": 0.010878400000000002,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col2_peak",
+      "both_runs_passed": false,
+      "a_value": 20.1877,
+      "b_value": 20.1877,
+      "difference": 0.0,
+      "limit": 1.009385,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col2_power",
+      "both_runs_passed": false,
+      "a_value": 0.217585,
+      "b_value": 0.209483,
+      "difference": 0.008101999999999998,
+      "limit": 0.01087925,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col3_peak",
+      "both_runs_passed": false,
+      "a_value": 8.37234,
+      "b_value": 8.37129,
+      "difference": 0.0010499999999993292,
+      "limit": 0.418617,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col3_power",
+      "both_runs_passed": false,
+      "a_value": 0.218281,
+      "b_value": 0.21062,
+      "difference": 0.007661000000000001,
+      "limit": 0.010914050000000002,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col4_peak",
+      "both_runs_passed": false,
+      "a_value": 20.235,
+      "b_value": 20.235,
+      "difference": 0.0,
+      "limit": 1.01175,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col4_power",
+      "both_runs_passed": false,
+      "a_value": 0.232131,
+      "b_value": 0.232801,
+      "difference": 0.0006700000000000039,
+      "limit": 0.01164005,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col5_peak",
+      "both_runs_passed": false,
+      "a_value": 20.188,
+      "b_value": 20.188,
+      "difference": 0.0,
+      "limit": 1.0094,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col5_power",
+      "both_runs_passed": false,
+      "a_value": 0.231566,
+      "b_value": 0.232324,
+      "difference": 0.0007580000000000087,
+      "limit": 0.0116162,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col6_peak",
+      "both_runs_passed": false,
+      "a_value": 18.0949,
+      "b_value": 18.0961,
+      "difference": 0.001200000000000756,
+      "limit": 0.9048050000000001,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col6_power",
+      "both_runs_passed": false,
+      "a_value": 0.167515,
+      "b_value": 0.179063,
+      "difference": 0.011548000000000003,
+      "limit": 0.00895315,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col7_peak",
+      "both_runs_passed": false,
+      "a_value": 15.6609,
+      "b_value": 15.6609,
+      "difference": 0.0,
+      "limit": 0.783045,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "col7_power",
+      "both_runs_passed": false,
+      "a_value": 0.165705,
+      "b_value": 0.181014,
+      "difference": 0.015309000000000017,
+      "limit": 0.0090507,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row0_peak",
+      "both_runs_passed": false,
+      "a_value": 2.91437,
+      "b_value": 2.91437,
+      "difference": 0.0,
+      "limit": 0.1457185,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row0_power",
+      "both_runs_passed": false,
+      "a_value": 0.0450464,
+      "b_value": 0.0450381,
+      "difference": 8.30000000000275e-06,
+      "limit": 0.00225232,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row1_peak",
+      "both_runs_passed": false,
+      "a_value": 2.91437,
+      "b_value": 2.91437,
+      "difference": 0.0,
+      "limit": 0.1457185,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row1_power",
+      "both_runs_passed": false,
+      "a_value": 0.0450464,
+      "b_value": 0.0450381,
+      "difference": 8.30000000000275e-06,
+      "limit": 0.00225232,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row2_peak",
+      "both_runs_passed": false,
+      "a_value": 2.91437,
+      "b_value": 2.91437,
+      "difference": 0.0,
+      "limit": 0.1457185,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row2_power",
+      "both_runs_passed": false,
+      "a_value": 0.0450464,
+      "b_value": 0.0450381,
+      "difference": 8.30000000000275e-06,
+      "limit": 0.00225232,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row3_peak",
+      "both_runs_passed": false,
+      "a_value": 2.91437,
+      "b_value": 2.91437,
+      "difference": 0.0,
+      "limit": 0.1457185,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row3_power",
+      "both_runs_passed": false,
+      "a_value": 0.0450464,
+      "b_value": 0.0450381,
+      "difference": 8.30000000000275e-06,
+      "limit": 0.00225232,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row4_peak",
+      "both_runs_passed": false,
+      "a_value": 2.91437,
+      "b_value": 2.91437,
+      "difference": 0.0,
+      "limit": 0.1457185,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row4_power",
+      "both_runs_passed": false,
+      "a_value": 0.0450464,
+      "b_value": 0.0450381,
+      "difference": 8.30000000000275e-06,
+      "limit": 0.00225232,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row5_peak",
+      "both_runs_passed": false,
+      "a_value": 2.91437,
+      "b_value": 2.91437,
+      "difference": 0.0,
+      "limit": 0.1457185,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row5_power",
+      "both_runs_passed": false,
+      "a_value": 0.0450464,
+      "b_value": 0.0450381,
+      "difference": 8.30000000000275e-06,
+      "limit": 0.00225232,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row6_peak",
+      "both_runs_passed": false,
+      "a_value": 3.71357,
+      "b_value": 3.71357,
+      "difference": 0.0,
+      "limit": 0.1856785,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row6_power",
+      "both_runs_passed": false,
+      "a_value": 0.0395848,
+      "b_value": 0.0391867,
+      "difference": 0.0003981000000000054,
+      "limit": 0.00197924,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row7_peak",
+      "both_runs_passed": false,
+      "a_value": 3.94358,
+      "b_value": 3.94358,
+      "difference": 0.0,
+      "limit": 0.197179,
+      "passed": false
+    },
+    {
+      "a": "replay-matrix/matrix_20.69V.json",
+      "b": "replay-matrix/matrix_20.69V_1us.json",
+      "metric": "row7_power",
+      "both_runs_passed": false,
+      "a_value": 0.0396553,
+      "b_value": 0.0399187,
+      "difference": 0.0002634000000000039,
+      "limit": 0.0019959350000000003,
+      "passed": false
+    }
+  ],
+  "coil_refinements": [
+    {
+      "run": "replay-gameplay",
+      "complete": true,
+      "passed": true,
+      "max_step_us": 5.0,
+      "method": "trap",
+      "terminal_temperature_C": 80.5848542,
+      "carrier_dissipation_W": null,
+      "errors": []
+    },
+    {
+      "run": "replay-gameplay-fine",
+      "complete": true,
+      "passed": true,
+      "max_step_us": 2.5,
+      "method": "trap",
+      "terminal_temperature_C": 76.5346732,
+      "carrier_dissipation_W": null,
+      "errors": []
+    },
+    {
+      "run": "replay-gameplay-1p25us",
+      "complete": false,
+      "passed": false,
+      "max_step_us": 1.25,
+      "method": "trap",
+      "terminal_temperature_C": 73.2170594,
+      "carrier_dissipation_W": null,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 8.11234, timestep = 8.87118e-19: trouble with node \"vrail#branch\"",
+        "stderr run simulation(s) aborted"
+      ]
+    },
+    {
+      "run": "replay-gameplay-0p625us",
+      "complete": true,
+      "passed": true,
+      "max_step_us": 0.625,
+      "method": "trap",
+      "terminal_temperature_C": 70.1584506,
+      "carrier_dissipation_W": null,
+      "errors": []
+    },
+    {
+      "run": "replay-gameplay-loss5us",
+      "complete": true,
+      "passed": true,
+      "max_step_us": 5.0,
+      "method": "trap",
+      "terminal_temperature_C": 80.5848542,
+      "carrier_dissipation_W": 0.409674,
+      "errors": []
+    },
+    {
+      "run": "replay-gameplay-loss0p625us",
+      "complete": true,
+      "passed": true,
+      "max_step_us": 0.625,
+      "method": "trap",
+      "terminal_temperature_C": 70.1584506,
+      "carrier_dissipation_W": 0.225823,
+      "errors": []
+    },
+    {
+      "run": "replay-gameplay-loss0p3125us",
+      "complete": false,
+      "passed": false,
+      "max_step_us": 0.3125,
+      "method": "trap",
+      "terminal_temperature_C": 141.575426,
+      "carrier_dissipation_W": 1.12763,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.382976, timestep = 3.90625e-19: trouble with node \"vrail#branch\"",
+        "stderr run simulation(s) aborted"
+      ]
+    },
+    {
+      "run": "replay-gameplay-gear2p5us",
+      "complete": false,
+      "passed": false,
+      "max_step_us": 2.5,
+      "method": "gear",
+      "terminal_temperature_C": 120.913182,
+      "carrier_dissipation_W": null,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.202079, timestep = 1.22495e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ]
+    },
+    {
+      "run": "replay-gameplay-gear1p25us",
+      "complete": false,
+      "passed": false,
+      "max_step_us": 1.25,
+      "method": "gear",
+      "terminal_temperature_C": 112.402814,
+      "carrier_dissipation_W": null,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.202363, timestep = 6.8377e-18: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ]
+    }
+  ],
+  "additional_trials": [
+    {
+      "run": "replay-loss-segments/coil1_0.078125us.json",
+      "complete": false,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.119209,
+        "e_dissipation": 0.036688,
+        "e_terminal": 0.0422104,
+        "vds_peak": 87.4217,
+        "coil_peak": 14.6812,
+        "fet_terminal_peak": 36.5572,
+        "dissipation_w": 0.003668805,
+        "terminal_w": 0.004221036,
+        "tj_dissipation": 50.22747,
+        "tj_terminal": 50.2617
+      },
+      "errors": [
+        "stderr doAnalyses: pause requested",
+        "stderr run simulation interrupted"
+      ]
+    },
+    {
+      "run": "replay-loss-segments/coil1_0.15625us.json",
+      "complete": false,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.1383975,
+        "e_dissipation": 0.0563164,
+        "e_terminal": 0.0685946,
+        "vds_peak": 87.5039,
+        "coil_peak": 17.1897,
+        "fet_terminal_peak": 41.5182,
+        "dissipation_w": 0.005631639,
+        "terminal_w": 0.006859458,
+        "tj_dissipation": 50.34916,
+        "tj_terminal": 50.42529
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.138397, timestep = 1.95312e-19: trouble with node \"vrail#branch\"",
+        "stderr run simulation(s) aborted"
+      ]
+    },
+    {
+      "run": "replay-loss-segments/coil1_0.15625us_vendor_diode.json",
+      "complete": false,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.6088921,
+        "e_dissipation": 1.13208,
+        "e_terminal": 1.75828,
+        "vds_peak": 87.3497,
+        "coil_peak": 22.676,
+        "fet_terminal_peak": 108.375,
+        "dissipation_w": 0.1132075,
+        "terminal_w": 0.1758277,
+        "tj_dissipation": 57.01886,
+        "tj_terminal": 60.90132
+      },
+      "errors": [
+        "stderr doAnalyses: pause requested",
+        "stderr run simulation interrupted"
+      ]
+    },
+    {
+      "run": "replay-loss-segments/coil1_0.3125us_strict.json",
+      "complete": false,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.05536352,
+        "e_dissipation": 0.00239425,
+        "e_terminal": 0.00239433,
+        "vds_peak": 87.2931,
+        "coil_peak": 10.8673,
+        "fet_terminal_peak": 10.8671,
+        "dissipation_w": 0.0002394255,
+        "terminal_w": 0.0002394332,
+        "tj_dissipation": 50.01484,
+        "tj_terminal": 50.01484
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.0553635, timestep = 3.90625e-19: trouble with node \"vsense#branch\"",
+        "stderr run simulation(s) aborted"
+      ]
+    },
+    {
+      "run": "replay-matrix/matrix_20.69V.json",
+      "complete": true,
+      "passed": true,
+      "measurements": {
+        "sim_end": 0.37,
+        "col0_peak": 20.1374,
+        "row0_peak": 2.91437,
+        "row0_clear": 4.99995,
+        "col0_power": 0.217497,
+        "row0_power": 0.0450464,
+        "col0_tj": 73.92462,
+        "row0_tj": 54.9551,
+        "col1_peak": 20.1871,
+        "row1_peak": 2.91437,
+        "row1_clear": 4.99995,
+        "col1_power": 0.217568,
+        "row1_power": 0.0450464,
+        "col1_tj": 73.93248,
+        "row1_tj": 54.9551,
+        "col2_peak": 20.1877,
+        "row2_peak": 2.91437,
+        "row2_clear": 4.99995,
+        "col2_power": 0.217585,
+        "row2_power": 0.0450464,
+        "col2_tj": 73.9344,
+        "row2_tj": 54.9551,
+        "col3_peak": 8.37234,
+        "row3_peak": 2.91437,
+        "row3_clear": 4.99995,
+        "col3_power": 0.218281,
+        "row3_power": 0.0450464,
+        "col3_tj": 74.01088,
+        "row3_tj": 54.9551,
+        "col4_peak": 20.235,
+        "row4_peak": 2.91437,
+        "row4_clear": 4.99995,
+        "col4_power": 0.232131,
+        "row4_power": 0.0450464,
+        "col4_tj": 75.53441,
+        "row4_tj": 54.9551,
+        "col5_peak": 20.188,
+        "row5_peak": 2.91437,
+        "row5_clear": 4.99995,
+        "col5_power": 0.231566,
+        "row5_power": 0.0450464,
+        "col5_tj": 75.47228,
+        "row5_tj": 54.9551,
+        "col6_peak": 18.0949,
+        "row6_peak": 3.71357,
+        "row6_clear": 4.99995,
+        "col6_power": 0.167515,
+        "row6_power": 0.0395848,
+        "col6_tj": 68.42661,
+        "row6_tj": 54.35432,
+        "col7_peak": 15.6609,
+        "row7_peak": 3.94358,
+        "row7_clear": 4.99995,
+        "col7_power": 0.165705,
+        "row7_power": 0.0396553,
+        "col7_tj": 68.22754,
+        "row7_tj": 54.36208
+      },
+      "errors": []
+    },
+    {
+      "run": "replay-matrix/matrix_20.69V_1us.json",
+      "complete": false,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.2558,
+        "col0_peak": 20.1374,
+        "row0_peak": 2.91437,
+        "row0_clear": 4.99995,
+        "col0_power": 0.209432,
+        "row0_power": 0.0450381,
+        "col0_tj": 73.03752,
+        "row0_tj": 54.95419,
+        "col1_peak": 20.1871,
+        "row1_peak": 2.91437,
+        "row1_clear": 4.99995,
+        "col1_power": 0.209443,
+        "row1_power": 0.0450381,
+        "col1_tj": 73.03871,
+        "row1_tj": 54.95419,
+        "col2_peak": 20.1877,
+        "row2_peak": 2.91437,
+        "row2_clear": 4.99995,
+        "col2_power": 0.209483,
+        "row2_power": 0.0450381,
+        "col2_tj": 73.0431,
+        "row2_tj": 54.95419,
+        "col3_peak": 8.37129,
+        "row3_peak": 2.91437,
+        "row3_clear": 4.99995,
+        "col3_power": 0.21062,
+        "row3_power": 0.0450381,
+        "col3_tj": 73.16815,
+        "row3_tj": 54.95419,
+        "col4_peak": 20.235,
+        "row4_peak": 2.91437,
+        "row4_clear": 4.99995,
+        "col4_power": 0.232801,
+        "row4_power": 0.0450381,
+        "col4_tj": 75.60814,
+        "row4_tj": 54.95419,
+        "col5_peak": 20.188,
+        "row5_peak": 2.91437,
+        "row5_clear": 4.99995,
+        "col5_power": 0.232324,
+        "row5_power": 0.0450381,
+        "col5_tj": 75.55561,
+        "row5_tj": 54.95419,
+        "col6_peak": 18.0961,
+        "row6_peak": 3.71357,
+        "row6_clear": 4.99995,
+        "col6_power": 0.179063,
+        "row6_power": 0.0391867,
+        "col6_tj": 69.6969,
+        "row6_tj": 54.31054,
+        "col7_peak": 15.6609,
+        "row7_peak": 3.94358,
+        "row7_clear": 4.99995,
+        "col7_power": 0.181014,
+        "row7_power": 0.0399187,
+        "col7_tj": 69.91155,
+        "row7_tj": 54.39106
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.2558, timestep = 1.25e-18: trouble with node \"vrow6#branch\"",
+        "stderr run simulation(s) aborted"
+      ]
+    },
+    {
+      "run": "replay-matrix/matrix_20.69V_1us_strict.json",
+      "complete": false,
+      "passed": false,
+      "measurements": {
+        "sim_end": 0.001844489,
+        "col0_peak": 0.0126982,
+        "row0_peak": 0.282703,
+        "row0_clear": 4.99995,
+        "col0_power": 0.0,
+        "row0_power": 0.0,
+        "col0_tj": 50.0,
+        "row0_tj": 50.0,
+        "col1_peak": 0.0126982,
+        "row1_peak": 0.282703,
+        "row1_clear": 4.99995,
+        "col1_power": 0.0,
+        "row1_power": 0.0,
+        "col1_tj": 50.0,
+        "row1_tj": 50.0,
+        "col2_peak": 0.0126982,
+        "row2_peak": 0.282703,
+        "row2_clear": 4.99995,
+        "col2_power": 0.0,
+        "row2_power": 0.0,
+        "col2_tj": 50.0,
+        "row2_tj": 50.0,
+        "col3_peak": 2.26201,
+        "row3_peak": 0.282703,
+        "row3_clear": 4.99995,
+        "col3_power": 0.0,
+        "row3_power": 0.0,
+        "col3_tj": 50.0,
+        "row3_tj": 50.0,
+        "col4_peak": 0.0126982,
+        "row4_peak": 0.282703,
+        "row4_clear": 4.99995,
+        "col4_power": 0.0,
+        "row4_power": 0.0,
+        "col4_tj": 50.0,
+        "row4_tj": 50.0,
+        "col5_peak": 0.0126982,
+        "row5_peak": 0.282703,
+        "row5_clear": 4.99995,
+        "col5_power": 0.0,
+        "row5_power": 0.0,
+        "col5_tj": 50.0,
+        "row5_tj": 50.0,
+        "col6_peak": 0.0126982,
+        "row6_peak": 0.282703,
+        "row6_clear": 4.99995,
+        "col6_power": 0.0,
+        "row6_power": 0.0,
+        "col6_tj": 50.0,
+        "row6_tj": 50.0,
+        "col7_peak": 0.0126982,
+        "row7_peak": 0.282703,
+        "row7_clear": 4.99995,
+        "col7_power": 0.0,
+        "row7_power": 0.0,
+        "col7_tj": 50.0,
+        "row7_tj": 50.0
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.00184449, timestep = 1.25e-18: trouble with node \"vrow6#branch\"",
+        "stderr run simulation(s) aborted"
+      ]
+    }
+  ],
+  "inputs": {
+    "output/verification/prespin/replay-loss-segments/coil1_0.15625us.json": "d0d7cf21b612f86a0688b7595e93569a142da5fd37a2ad9bb8c6ca2ec58fd3dc",
+    "output/verification/prespin/replay-loss-segments/coil1_0.078125us.json": "a6d5eec893feb620b9cb8e64d7ee151bf6c359e8c01e4aded65913ce95a2b429",
+    "output/verification/prespin/replay-matrix/matrix_20.69V.json": "5240e55d993e13908c64732314101ddb968f92f0fc1506aaf7c16303be8dc343",
+    "output/verification/prespin/replay-matrix/matrix_20.69V_1us.json": "e5d33f760317bdf2c71225b11c76e167d1ce21cecd534c0685fb4ef5e6ed2475",
+    "output/verification/prespin/replay-loss-segments/coil1_0.15625us_vendor_diode.json": "3f19730576f495a3d9dbe821c1145bc043eb379f07cfc8b53371decda52945c2",
+    "output/verification/prespin/replay-loss-segments/coil1_0.3125us_strict.json": "ad2ba2eb4eb1a505c7279f2e10c49d37e479fa31a4f32a78cc18426815170d2c",
+    "output/verification/prespin/replay-matrix/matrix_20.69V_1us_strict.json": "f75a6ebf43470aaac1fb2cd8981e8668e820a531da3a6a63af2e7f6d15c09e42"
+  },
+  "limitations": [
+    "Convergence must be distinguished from all completed runs remaining below an engineering screen",
+    "Failed or aborted finer-step runs cannot establish a physical maximum; retained for audit",
+    "Channel/body loss and terminal-energy estimates are separately recorded; no unvalidated model alteration made to force agreement",
+    "Physical scope/current/thermal correlation remains required"
+  ],
+  "pending_refinements": [],
+  "manual_interruptions": {
+    "interruption_method": "Set ngspice ft_intrpt through debugger, the ordinary simulator interrupt request; no electrical model parameters changed. Existing control measurements and completion checks then ran.",
+    "fine_run": {
+      "report": "coil1_0.078125us.json",
+      "reason": "Numerical time stagnation: accepted-vector count increased by 865198 while the last double-precision time remained identical.",
+      "observations": [
+        {
+          "points": 36141862,
+          "time_s": 0.11920896100388931
+        },
+        {
+          "points": 37007060,
+          "time_s": 0.11920896100388931
+        }
+      ],
+      "required_end_s": 0.8062334999999996,
+      "manually_interrupted": true
+    },
+    "vendor_diode_run": {
+      "report": "coil1_0.15625us_vendor_diode.json",
+      "reason": "Exploratory comparison stopped after about one hour. It was still advancing; this interruption is not evidence of intrinsic solver failure or a component failure.",
+      "points": 35916838,
+      "time_s": 0.6088920793850907,
+      "required_end_s": 0.8062334999999996,
+      "manually_interrupted": true
+    },
+    "limitations": [
+      "Partial-window power/temperature numbers cannot pass the full-transient completion gate",
+      "Manufacturer-diode full-window verification is incomplete",
+      "Read-only progress inspection used public ngspice plot/dvec layouts; no simulator functions were called during inspection"
+    ]
+  }
+}

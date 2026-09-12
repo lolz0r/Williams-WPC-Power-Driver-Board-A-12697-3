@@ -1,0 +1,16 @@
+Approved fallback review, 2026-09-10
+
+BR3: Vishay GBPC3508W-E4/51 (800 V) and GBPC3506W-E4/51 (600 V). Same GBPC35 family forward-drop, surge, RthJC and GBPC-W drawing as GBPC3510W-E4/51. Native schematic states 51 VAC winding and 78 V peak unloaded; 600 V and 800 V cover the application. Maintain current/heatsink/lead package.
+https://www.vishay.com/docs/88612/gbpc12.pdf
+https://www.lcsc.com/product-detail/C4749242.html
+
+5 A fuse: 0239005.HXP retains the 239-series 5 A cartridge; HX is a 100-piece factory packaging code, MX is 1000. Both are lead-free cartridge parts, not axial-leaded XEP. Buy split quantity 35 where possible.
+https://www.littelfuse.com/assetdocs/littelfuse_fuse_239_datasheet.pdf?assetguid=3baa8060-00d2-4ce6-8f59-8ee52bea992a
+https://www.digikey.com/en/products/detail/littelfuse-inc/0239005-HXP/778230
+
+Grease: 8616-85ML is the same MG Chemicals 8616 formulation in a tube, shared batch consumable.
+https://mgchemicals.com/downloads/tds/tds-8616.pdf
+
+M4 screw: locally sourced zinc steel M4x0.7 x 16 mm small Phillips pan head. Envelope limits from tools/make_mechanical_models.py lines 105-109: diameter 7.6 mm, height 3.0 mm. Native H9 hole 5.5 mm; 6223BG hole 4.14 mm. Installation fit and actual supplier identification remain required.
+
+No stock reservation, purchase or external message performed.

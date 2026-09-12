@@ -1,0 +1,51 @@
+{
+  "name": "5v_vin15.34",
+  "checks": {
+    "output_ss": {
+      "value": 5.11552,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    },
+    "output_peak": {
+      "value": 5.18215,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "step_min": {
+      "value": 5.01168,
+      "min": 4.75,
+      "max": 5.25,
+      "passed": true
+    },
+    "removal_peak": {
+      "value": 5.18215,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "highload_ss": {
+      "value": 5.07371,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 3.48041,
+      "min": 0,
+      "max": 6.8,
+      "passed": true
+    },
+    "inductor_running_peak": {
+      "value": 3.48041,
+      "min": 0,
+      "max": 4.5,
+      "passed": true
+    }
+  },
+  "errors": [],
+  "minimum_current_limit_sensitivity": false,
+  "deck_sha256": "0db7a950940126b1030e859e765068dc6677a21a271fd4684602875916feb113",
+  "passed": true
+}

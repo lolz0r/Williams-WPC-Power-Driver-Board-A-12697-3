@@ -1,0 +1,43 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: actual coil-1 rom pulses with only settled off time compressed; coil1_0.3125us_strict
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout cmd                                          0
+stdout rail                                        86
+stdout a                                            0
+stdout gate                                         0
+stdout drain                                       86
+stdout dq                                          86
+stdout cl                                          86
+stdout lcoil#branch                       -1.1713e-09
+stdout vsense#branch                      1.17143e-09
+stdout vrail#branch                      -1.17131e-09
+stdout vcmd#branch                                  0
+ Reference value :  0.00000e+00
+ Reference value :  5.63563e-03
+ Reference value :  1.12703e-02
+ Reference value :  1.68788e-02
+ Reference value :  2.25525e-02
+ Reference value :  2.81509e-02
+ Reference value :  3.38341e-02
+ Reference value :  3.95134e-02
+ Reference value :  4.52050e-02
+ Reference value :  5.14062e-02
+ Reference value :  5.53631e-02
+stdout No. of Data Rows : 177979
+stderr doAnalyses: TRAN:  Timestep too small; time = 0.0553635, timestep = 3.90625e-19: trouble with node "vsense#branch"
+stderr run simulation(s) aborted
+stdout sim_end = 5.536352e-02
+stdout e_dissipation       =  2.39425e-03 from=  0.00000e+00 to=  5.53635e-02
+stdout e_terminal          =  2.39433e-03 from=  0.00000e+00 to=  5.53635e-02
+stdout vds_peak            =  8.72931e+01 at=  5.20783e-02
+stdout coil_peak           =  1.08673e+01 at=  5.20663e-02
+stdout fet_terminal_peak   =  1.08671e+01 at=  5.20663e-02
+stdout dissipation_w = 2.394255e-04
+stdout terminal_w = 2.394332e-04
+stdout tj_dissipation = 5.001484e+01
+stdout tj_terminal = 5.001484e+01

@@ -1,0 +1,65 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: actual coil-1 rom pulses with only settled off time compressed; coil1_0.15625us
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout cmd                                          0
+stdout rail                                        86
+stdout a                                            0
+stdout gate                                         0
+stdout drain                                       86
+stdout dq                                          86
+stdout cl                                          86
+stdout lcoil#branch                       -1.1713e-09
+stdout vsense#branch                      1.17143e-09
+stdout vrail#branch                      -1.17131e-09
+stdout vcmd#branch                                  0
+ Reference value :  0.00000e+00
+ Reference value :  4.11625e-03
+ Reference value :  7.92000e-03
+ Reference value :  1.20873e-02
+ Reference value :  1.61998e-02
+ Reference value :  2.03822e-02
+ Reference value :  2.45553e-02
+ Reference value :  2.86991e-02
+ Reference value :  3.28895e-02
+ Reference value :  3.70755e-02
+ Reference value :  4.12142e-02
+ Reference value :  4.52995e-02
+ Reference value :  4.94030e-02
+ Reference value :  5.38143e-02
+ Reference value :  5.82973e-02
+ Reference value :  6.25704e-02
+ Reference value :  6.70517e-02
+ Reference value :  7.15719e-02
+ Reference value :  7.59464e-02
+ Reference value :  8.01212e-02
+ Reference value :  8.46655e-02
+ Reference value :  8.91741e-02
+ Reference value :  9.36716e-02
+ Reference value :  9.81806e-02
+ Reference value :  1.02646e-01
+ Reference value :  1.07118e-01
+ Reference value :  1.10911e-01
+ Reference value :  1.15432e-01
+ Reference value :  1.19236e-01
+ Reference value :  1.23761e-01
+ Reference value :  1.27355e-01
+ Reference value :  1.31738e-01
+ Reference value :  1.35570e-01
+stdout No. of Data Rows : 886236
+stderr doAnalyses: TRAN:  Timestep too small; time = 0.138397, timestep = 1.95312e-19: trouble with node "vrail#branch"
+stderr run simulation(s) aborted
+stdout sim_end = 1.383975e-01
+stdout e_dissipation       =  5.63164e-02 from=  0.00000e+00 to=  1.38397e-01
+stdout e_terminal          =  6.85946e-02 from=  0.00000e+00 to=  1.38397e-01
+stdout vds_peak            =  8.75039e+01 at=  1.27853e-01
+stdout coil_peak           =  1.71897e+01 at=  1.27841e-01
+stdout fet_terminal_peak   =  4.15182e+01 at=  1.27840e-01
+stdout dissipation_w = 5.631639e-03
+stdout terminal_w = 6.859458e-03
+stdout tj_dissipation = 5.034916e+01
+stdout tj_terminal = 5.042529e+01

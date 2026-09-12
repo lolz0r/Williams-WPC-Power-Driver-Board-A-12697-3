@@ -1,0 +1,45 @@
+Zero-cross detector of the cost board after the 2026-09-06 correction: a half-wave sample of the F113-fused 9 VAC leg (R197 10k / R254 1.5k / C21 10n; R198 DNP) on the + input of U6A against the 0.26 V reference (R206 27k / R255 1.5k) on the - input, R256 1.5k pull-up -> ZERO CROSS is HIGH while that leg is positive: a 60 Hz SQUARE WAVE with one edge per mains zero crossing, the waveform of the A-12697 (sheet 1: D38 sample on U6A pin 7 (+), reference on pin 6 (-); a real TP4 measures ~8.1 ms high pulses at 60 Hz). The 9 VAC winding feeds BR2 (GBU8J) + C5 10000 uF at the 3 A buck load (2.7 ohm).
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+VCC vcc 0 4.75
+V9 s1 s2 SIN(0 13.97 60)
+Rs1 s1 sa 0.05
+Rs2 s2 sb 0.05
+DS1 sa vraw DSCH20100
+DS2 sb vraw DSCH20100
+DS3 0 sa DSCH20100
+DS4 0 sb DSCH20100
+C5 vraw 0 10000u
+Rraw vraw 0 2.7
+Eac acd 0 s1 s2 1
+Vd197 sa sad 0
+R197 sad smp 10k
+R254 smp 0 1.5k
+C21 smp 0 10n
+R206 vcc zref 27k
+R255 zref 0 1.5k
+XU6A smp zref zc LM339
+R256 zc vcc 1.5k
+R253 zc ledk 1.5k
+Dled vcc ledk DLED
+.model DLED D(Is=1e-18 n=1.8)
+.tran 5u 140m uic
+.control
+run
+meas tran zc_low MIN v(zc) from=61m to=100m
+meas tran zc_high MAX v(zc) from=61m to=100m
+meas tran za_min MIN v(smp) from=61m to=100m
+meas tran za_max MAX v(smp) from=61m to=100m
+meas tran zc_r1 WHEN v(zc)=2.0 RISE=1 from=61m
+meas tran zc_f1 WHEN v(zc)=2.0 FALL=1 from=61m
+meas tran zc_r2 WHEN v(zc)=2.0 RISE=2 from=61m
+meas tran tz1 WHEN v(acd)=0 CROSS=1 from=61m
+meas tran tz2 WHEN v(acd)=0 CROSS=2 from=61m
+meas tran tz3 WHEN v(acd)=0 CROSS=3 from=61m
+meas tran zc_r1_10 WHEN v(zc)=0.5 RISE=1 from=61m
+meas tran zc_r1_90 WHEN v(zc)=4.5 RISE=1 from=61m
+meas tran i_r197_pk MAX i(Vd197) from=61m to=100m
+
+let period = zc_r2-zc_r1
+print period
+.endc
+.end

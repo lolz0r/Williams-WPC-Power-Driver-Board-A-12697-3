@@ -1,0 +1,57 @@
+ROM raw-write replay channel 9; bus.csv
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+Vrail rail 0 86
+Vcmd cmd 0 PWL(
++ 0.000000000000 0.00
++ 0.199999980000 0.00
++ 0.200000000000 4.50
++ 0.264680480000 4.50
++ 0.264680500000 0.00
++ 1.566015980000 0.00
++ 1.566016000000 4.50
++ 1.630695480000 4.50
++ 1.630695500000 0.00
++ 8.916289480000 0.00
++ 8.916289500000 4.50
++ 8.980967980000 4.50
++ 8.980968000000 0.00
++ 10.200000000000 0.00
++ 10.200000020000 0.00
++ 10.230000000000 0.00
++ )
+Rout cmd gateinput 40
+Rg gateinput gate 100
+Rpd gate 0 10k
+Vsense drain drainq 0
+XQ drainq gate 0 IPD90N10S4L06
+Lcoil drain coil 0.025
+Rcoil coil rail 9.72
+Vdiode drain diode 0
+Dfly diode rail DS3M
+.save v(drainq) v(gate) i(Vsense) i(Vdiode) i(Lcoil) @dfly[capcur]
+.options reltol=0.002 method=trap maxord=2
+.tran 100u 10.230000000 0 5u
+.control
+set numdgt=12
+run
+let pfet=v(drainq)*i(Vsense)
+* Separate carrier conduction from the diode stored-charge current.
+* Rectifying numerical capacitor ringing otherwise biases the forward average.
+* Keep the original terminal-current metric for independent review.
+let id_terminal=(abs(i(Vdiode))+i(Vdiode))/2
+let diode_conduction=i(Vdiode)-@dfly[capcur]
+let id=(abs(diode_conduction)+diode_conduction)/2
+let icoil=abs(i(Lcoil))
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran vds_peak MAX v(drainq)
+meas tran vgs_peak MAX v(gate)
+meas tran p_avg AVG pfet from=0.200000000 to=10.200000000
+meas tran id_avg AVG id from=0.200000000 to=10.200000000
+meas tran id_terminal_avg AVG id_terminal from=0.200000000 to=10.200000000
+meas tran i_peak MAX i(Vsense)
+meas tran coil_peak MAX icoil
+let tj_repeating=50+p_avg*62
+print tj_repeating
+.endc
+.end

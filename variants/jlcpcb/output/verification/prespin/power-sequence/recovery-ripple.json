@@ -1,0 +1,82 @@
+{
+  "cases": [
+    {
+      "name": "12v_loss_restart_0.02A_250n",
+      "csv_sha256": "2ced3073c02adf26c676326c979bf4979d630928d2fcaa301fa2e4d9511da370",
+      "window_s": [
+        0.095,
+        0.12
+      ],
+      "output_min_V": 11.295368,
+      "output_max_V": 12.8187381,
+      "output_average_V": 11.98217833412,
+      "raw_min_V": 11.2920797,
+      "time_above_upper_screen_s": 0.0019610000000000044,
+      "time_below_lower_screen_s": 0.0006229999999999986,
+      "screen_band_V": [
+        11.4,
+        12.6
+      ]
+    },
+    {
+      "name": "12v_loss_restart_0.75A_250n",
+      "csv_sha256": "84b2a2313a8de04eb8d061da29d679b200e9f0cff331a667dd2cf12c62776b83",
+      "window_s": [
+        0.095,
+        0.12
+      ],
+      "output_min_V": 10.9175196,
+      "output_max_V": 12.7849675,
+      "output_average_V": 11.995104814967998,
+      "raw_min_V": 10.991446,
+      "time_above_upper_screen_s": 0.002239999999999992,
+      "time_below_lower_screen_s": 0.0036710000000000076,
+      "screen_band_V": [
+        11.4,
+        12.6
+      ]
+    },
+    {
+      "name": "12v_loss_restart_2A_250n",
+      "csv_sha256": "e985ba2f2549784f83b38018cdb291075a83b3d174adbfe4679bfc151d877560",
+      "window_s": [
+        0.095,
+        0.12
+      ],
+      "output_min_V": 10.3392065,
+      "output_max_V": 12.6687733,
+      "output_average_V": 11.615745743124002,
+      "raw_min_V": 10.5343375,
+      "time_above_upper_screen_s": 0.0008370000000000113,
+      "time_below_lower_screen_s": 0.010211499999999984,
+      "screen_band_V": [
+        11.4,
+        12.6
+      ]
+    },
+    {
+      "name": "5v_loss_restart_3A_250n",
+      "csv_sha256": "39803efd3bb759d5f510f1c7fc30fcf4e6bf38314ceaa6d42c42ba4d775993fd",
+      "window_s": [
+        0.095,
+        0.12
+      ],
+      "output_min_V": 5.09736354,
+      "output_max_V": 5.11484684,
+      "output_average_V": 5.1041855212324005,
+      "raw_min_V": 8.14706504,
+      "time_above_upper_screen_s": 0.0,
+      "time_below_lower_screen_s": 0.0,
+      "screen_band_V": [
+        4.95,
+        5.25
+      ]
+    }
+  ],
+  "scope": "Last 25 ms after restart: three complete 120 Hz rectified cycles at 60 Hz mains, from saved 1 us interpolated samples. Supplementary observations, not a replacement or relaxation of the original adaptive-step checks.",
+  "limitations": [
+    "Typical model and assumed transformer/load; not measured voltage limits",
+    "1 us interpolation may omit very short extrema; primary reports preserve adaptive-step extrema",
+    "Original final-five-millisecond averages are retained; this adds a complete-cycle view"
+  ]
+}

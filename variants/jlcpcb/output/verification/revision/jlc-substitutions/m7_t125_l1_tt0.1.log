@@ -1,0 +1,23 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: m7 flasher clamp, 30 v rail, hot #89 lamp 18 ohms, wiring inductance sensitivity
+stdout Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                        30
+stdout load                                        30
+stdout drain                                       30
+stdout ctl                                          0
+stdout da                                          30
+stdout lwire#branch                       2.99753e-09
+stdout vmeasure#branch                   -2.46794e-12
+stdout vgate#branch                                 0
+stdout vrail#branch                      -3.00001e-09
+ Reference value :  1.56793e-03
+stdout No. of Data Rows : 40506
+stdout carrier_average     =  2.07372e-05 from=  0.00000e+00 to=  4.00000e-03
+stdout terminal_average    =  2.07904e-05 from=  0.00000e+00 to=  4.00000e-03
+stdout clamp_peak          =  3.08123e+01 at=  1.10018e-03
+stdout reverse_peak        =  3.00268e+01 at=  1.00052e-04

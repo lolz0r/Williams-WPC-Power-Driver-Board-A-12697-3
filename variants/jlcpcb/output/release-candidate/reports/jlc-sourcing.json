@@ -1,0 +1,653 @@
+{
+  "passed": true,
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "netlist_sha256": "d83a480ec2a1782bdbb1d6bddb01961f0359066e7ad5f34efe142b34f2f3b568",
+  "native_populated_electronic_references": 405,
+  "purchased_electronic_units": 435,
+  "smt_placements": 330,
+  "fuse_clips": 32,
+  "fuse_cartridges": 14,
+  "distinct_catalog_codes": 69,
+  "native_references_by_library": {
+    "Extended": 211,
+    "Basic": 194
+  },
+  "purchased_units_by_library": {
+    "Basic": 194,
+    "Extended": 241
+  },
+  "distinct_codes_by_library": {
+    "Extended": 54,
+    "Basic": 15
+  },
+  "excluded_native_refs": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "TP1",
+    "TP2",
+    "TP3",
+    "TP5",
+    "TP6",
+    "TP7",
+    "TP8",
+    "TP9",
+    "R198",
+    "TP4",
+    "D35",
+    "Q3",
+    "R202",
+    "R209",
+    "RLY1"
+  ],
+  "preorder_or_short_stock": [
+    {
+      "Designator": "C8 C32",
+      "Quantity": 2,
+      "Value": "2200uF 100V",
+      "MPN": "LLS2A222MELA",
+      "Manufacturer": "Nichicon",
+      "Footprint": "Capacitor_THT:CP_Radial_D25.0mm_P10.00mm_SnapIn",
+      "JLCPCB_part": "C1582025",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C1582025",
+      "Fetched_UTC": "2026-09-11T19:20:34.010752+00:00"
+    },
+    {
+      "Designator": "J120 J121",
+      "Quantity": 2,
+      "Value": "J120 G.I. strings 1-5 (backbox harness uses strings 2,3)",
+      "MPN": "26604110",
+      "Manufacturer": "MOLEX",
+      "Footprint": "Connector_Molex:Molex_KK-396_A-41791-0011_1x11_P3.96mm_Vertical",
+      "JLCPCB_part": "C17541501",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C17541501",
+      "Fetched_UTC": "2026-09-11T19:20:25.534412+00:00"
+    },
+    {
+      "Designator": "J107",
+      "Quantity": 1,
+      "Value": "J107 +50V (F103/F104/F105) and +20V (pins 5,6) to playfield",
+      "MPN": "0026604060",
+      "Manufacturer": "MOLEX",
+      "Footprint": "Connector_Molex:Molex_KK-396_A-41791-0006_1x06_P3.96mm_Vertical",
+      "JLCPCB_part": "C17656945",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C17656945",
+      "Fetched_UTC": "2026-09-11T20:02:35.083811+00:00"
+    },
+    {
+      "Designator": "C43",
+      "Quantity": 1,
+      "Value": "390pF",
+      "MPN": "C0805C391J5GACTU",
+      "Manufacturer": "KEMET",
+      "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "JLCPCB_part": "C2168930",
+      "Library": "Extended",
+      "Assembly": "SMT",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C2168930",
+      "Fetched_UTC": "2026-09-11T20:02:38.109271+00:00"
+    },
+    {
+      "Designator": "C37",
+      "Quantity": 1,
+      "Value": "470pF",
+      "MPN": "C0805C471J5GACTU",
+      "Manufacturer": "KEMET",
+      "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "JLCPCB_part": "C2170031",
+      "Library": "Extended",
+      "Assembly": "SMT",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C2170031",
+      "Fetched_UTC": "2026-09-11T20:02:37.667468+00:00"
+    },
+    {
+      "Designator": "D101 D102 D103 D104",
+      "Quantity": 4,
+      "Value": "STPS20M100ST",
+      "MPN": "STPS20M100ST",
+      "Manufacturer": "STMicroelectronics",
+      "Footprint": "wpc_cost:TO220_Schottky_AKA_5772",
+      "JLCPCB_part": "C222114",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C222114",
+      "Fetched_UTC": "2026-09-11T19:20:29.785728+00:00"
+    },
+    {
+      "Designator": "F101 F102 F103A F103B F104A F104B F105A F105B F106A F106B F107A F107B F108A F108B F109A F109B F110A F110B F111A F111B F112A F112B F113A F113B F114A F114B F115A F115B F116A F116B",
+      "Quantity": 32,
+      "Value": "no fuse (clips only)",
+      "MPN": "3517",
+      "Manufacturer": "Keystone",
+      "Footprint": "Fuse:Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+      "JLCPCB_part": "C3029536",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C3029536",
+      "Fetched_UTC": "2026-09-11T19:12:50.095133+00:00"
+    },
+    {
+      "Designator": "F115",
+      "Quantity": 1,
+      "Value": "3/4A S.B.",
+      "MPN": "0239.750MXP",
+      "Manufacturer": "Littelfuse",
+      "Footprint": "Fuse:Fuseholder_Clip-5x20mm_Keystone_3517_Inline_P23.11x6.76mm_D1.70mm_Horizontal",
+      "JLCPCB_part": "C3157012",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C3157012",
+      "Fetched_UTC": "2026-09-11T20:02:40.878526+00:00"
+    },
+    {
+      "Designator": "Q20 Q22 Q24 Q26 Q28 Q30 Q32 Q34 Q36 Q38 Q40 Q42 Q44 Q46 Q48 Q50 Q52 Q54 Q56 Q58 Q64 Q66 Q68 Q70 Q76 Q78 Q80 Q82",
+      "Quantity": 28,
+      "Value": "IPD90N10S4L06ATMA1",
+      "MPN": "IPD90N10S4L06ATMA1",
+      "Manufacturer": "Infineon Technologies",
+      "Footprint": "Package_TO_SOT_SMD:TO-252-2",
+      "JLCPCB_part": "C5440942",
+      "Library": "Extended",
+      "Assembly": "SMT",
+      "Stock_snapshot": 1,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C5440942",
+      "Fetched_UTC": "2026-09-11T19:20:31.973573+00:00"
+    },
+    {
+      "Designator": "J101 J109 J114",
+      "Quantity": 3,
+      "Value": "J101 xformer 9VAC (Red) / 13VAC (Blu-Wht)",
+      "MPN": "26604070",
+      "Manufacturer": "MOLEX",
+      "Footprint": "Connector_Molex:Molex_KK-396_A-41791-0007_1x07_P3.96mm_Vertical",
+      "JLCPCB_part": "C587091",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C587091",
+      "Fetched_UTC": "2026-09-11T20:05:11.750474+00:00"
+    },
+    {
+      "Designator": "C5 C6 C7 C11 C30",
+      "Quantity": 5,
+      "Value": "10000uF 35V",
+      "MPN": "B41252A7109M000",
+      "Manufacturer": "TDK",
+      "Footprint": "Capacitor_THT:CP_Radial_D26.0mm_P10.00mm_SnapIn",
+      "JLCPCB_part": "C6130373",
+      "Library": "Extended",
+      "Assembly": "Through-hole/manual",
+      "Stock_snapshot": 0,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C6130373",
+      "Fetched_UTC": "2026-09-11T19:12:48.794197+00:00"
+    },
+    {
+      "Designator": "D105 D106 D107 D108 D109 D110 D111 D112 D113 D114 D115 D116",
+      "Quantity": 12,
+      "Value": "STPS20M100S",
+      "MPN": "STPS20M100SG-TR",
+      "Manufacturer": "STMicroelectronics",
+      "Footprint": "wpc_cost:D2PAK_Schottky_AKA",
+      "JLCPCB_part": "C969989",
+      "Library": "Extended",
+      "Assembly": "SMT",
+      "Stock_snapshot": 2,
+      "Purchasing_status": "Preorder / replenish; confirm lead time and minimum order",
+      "Catalog_URL": "https://jlcpcb.com/partdetail/C969989",
+      "Fetched_UTC": "2026-09-11T19:20:27.944014+00:00"
+    }
+  ],
+  "catalog_archives": {
+    "C435891": {
+      "json_sha256": "171ac5a8b85388483e5867deae0bc38cfda0d90a5b966f8d163d1301a27002d7",
+      "html_sha256": "e886c93e8c85528bbed01ef540310eea5a674da88092011b0c6ef0a4181de9de",
+      "url": "https://jlcpcb.com/partdetail/C435891",
+      "fetched_utc": "2026-09-11T20:02:43.523179+00:00"
+    },
+    "C1579638": {
+      "json_sha256": "0232a1be7ffa95d26edc987d83025346be14aada0b0e7c4797629ad94126ba01",
+      "html_sha256": "ce84dd8b3ea28f7c14540219d2664c0aeab3822f6c428beb8220e107cddf3851",
+      "url": "https://jlcpcb.com/partdetail/C1579638",
+      "fetched_utc": "2026-09-11T19:12:51.389193+00:00"
+    },
+    "C6130373": {
+      "json_sha256": "eb24f037489f4f4439f56e270b60754d7305fe161a00908e3e9518ab6b860439",
+      "html_sha256": "e74a32dbeacb03ceead2dc8266c981e3bef2be206519596697d4c0a12ab63aef",
+      "url": "https://jlcpcb.com/partdetail/C6130373",
+      "fetched_utc": "2026-09-11T19:12:48.794197+00:00"
+    },
+    "C1582025": {
+      "json_sha256": "b7d5f087c95787cafd0c9f1b06d694c6f4ecbdba59a9202fbb95133c9f6fa442",
+      "html_sha256": "57f97f95b818f2d9768423584a7cf4a88b1ea42e0ab94273e65253081d2e4bed",
+      "url": "https://jlcpcb.com/partdetail/C1582025",
+      "fetched_utc": "2026-09-11T19:20:34.010752+00:00"
+    },
+    "C3844168": {
+      "json_sha256": "c935c13a64f4e9a60ed51d354d5390fd3be8d188fb6631991b0b12a328dfee87",
+      "html_sha256": "33f5b072febd5425f242bfef58ce58d7aa16491c1d33a394fb8d8b6780e6695f",
+      "url": "https://jlcpcb.com/partdetail/C3844168",
+      "fetched_utc": "2026-09-11T20:02:42.718340+00:00"
+    },
+    "C49678": {
+      "json_sha256": "a1b9db582f8bdd71af5994ebc0c32d58e13d233c84ccb84fb8335bf51720d010",
+      "html_sha256": "741d7a2ea17b0e4019ea90fb67b147ee461e534fe5abd572db2733351b07a0d1",
+      "url": "https://jlcpcb.com/partdetail/C49678",
+      "fetched_utc": "2026-09-11T19:22:15.072571+00:00"
+    },
+    "C1739": {
+      "json_sha256": "ac37f27c60c7c0596dcde4e18209cb2652fb93056f0284b4b5e2c1954d6a3d93",
+      "html_sha256": "db2cff8dc34d8d8097d19a384a28ed48951c97c0d7533f949fe924498206cd56",
+      "url": "https://jlcpcb.com/partdetail/C1739",
+      "fetched_utc": "2026-09-11T19:22:14.265006+00:00"
+    },
+    "C2170031": {
+      "json_sha256": "3d736b26fc9b9046d92f03b5462ff16879900cdd5b420277e741ba37cf26263f",
+      "html_sha256": "041860ea81caac25ebd010814e9067e2c5d037d8fcb127912603494121935a75",
+      "url": "https://jlcpcb.com/partdetail/C2170031",
+      "fetched_utc": "2026-09-11T20:02:37.667468+00:00"
+    },
+    "C2168930": {
+      "json_sha256": "a482114e4347764fbeb27ada83d54776281bdeb60800f9d273259bc309f9ad93",
+      "html_sha256": "a92fda38493c21ae74ea2d455d8d4abfcd8457e4d454c9c5ae499c9db9be9d39",
+      "url": "https://jlcpcb.com/partdetail/C2168930",
+      "fetched_utc": "2026-09-11T20:02:38.109271+00:00"
+    },
+    "C85100": {
+      "json_sha256": "0043bf51a4bfd3227b7cee3f81b6c48005d5238c49e8f118ec6a05ae5c975fa2",
+      "html_sha256": "87d60b285e7736b0a355aab53dd09b3a9c203cbaaa763f99920f894264b550cd",
+      "url": "https://jlcpcb.com/partdetail/C85100",
+      "fetched_utc": "2026-09-11T20:02:46.996598+00:00"
+    },
+    "C222114": {
+      "json_sha256": "e57ebee9d7c15a767156a17fc8a595777a238dae051d32cc4b268088706a7337",
+      "html_sha256": "6d354c73151c0edcf28bda099199c1a57cea5a90a5699a172a071f4c2bdb4359",
+      "url": "https://jlcpcb.com/partdetail/C222114",
+      "fetched_utc": "2026-09-11T19:20:29.785728+00:00"
+    },
+    "C969989": {
+      "json_sha256": "529a903308dc3ae0a53afaf89c163d0393a9c97883e1818a6a13b291dfa328d7",
+      "html_sha256": "2778fee1f853be8f35bc25ca786bcc64185fc172164e37bfec2b4b442c3af3b0",
+      "url": "https://jlcpcb.com/partdetail/C969989",
+      "fetched_utc": "2026-09-11T19:20:27.944014+00:00"
+    },
+    "C142824": {
+      "json_sha256": "2201c3f55e61fc3e50331d345b7ae4cd7cf453129e1e36c8892dc90c00070bdd",
+      "html_sha256": "cfa6df5c6ae44795eb7c179448e1cb689b25af3661cfc7c3d4b51383a4b3b402",
+      "url": "https://jlcpcb.com/partdetail/C142824",
+      "fetched_utc": "2026-09-11T20:02:26.613094+00:00"
+    },
+    "C3029536": {
+      "json_sha256": "87d7cfd201a085b7252e2e3ed97ec8aaee6ace6fa546a3eb6bfda6eb6ae7c93e",
+      "html_sha256": "b617dfe6dce5d63889180af1e18d17bab8f07aef554271289d3df1e30d686751",
+      "url": "https://jlcpcb.com/partdetail/C3029536",
+      "fetched_utc": "2026-09-11T19:12:50.095133+00:00"
+    },
+    "C151086": {
+      "json_sha256": "6b965467f513ae12899fb69fad6f01d66bd1fd1bee7ca71e211b52fb3b06c889",
+      "html_sha256": "01cf4c9426dfd605388c7d684bcd630f0fa3c02b103d2f128b8138cdd1c19182",
+      "url": "https://jlcpcb.com/partdetail/C151086",
+      "fetched_utc": "2026-09-11T20:02:27.581069+00:00"
+    },
+    "C3161084": {
+      "json_sha256": "d75ced5049a6c64d0e57b59e0baefd499f1473353d645cd658b4a6c981193184",
+      "html_sha256": "13c759186dd20f479fbe4f0eb49e1e53e2c1cf88eb4765a0aa64547d5a955793",
+      "url": "https://jlcpcb.com/partdetail/C3161084",
+      "fetched_utc": "2026-09-11T20:02:41.741871+00:00"
+    },
+    "C2936126": {
+      "json_sha256": "e20554cddf301398165b3ff81820588d196e75846238ee94899fa5bf577a569c",
+      "html_sha256": "6adf07109300e929f423563066cb54ea9cb23d044f3b1fd759904817145d7198",
+      "url": "https://jlcpcb.com/partdetail/C2936126",
+      "fetched_utc": "2026-09-11T20:02:40.156930+00:00"
+    },
+    "C3157012": {
+      "json_sha256": "05b83f9a14c65baa533959c2c034c6eaf901568975fe4c7a475b04d7610c41d0",
+      "html_sha256": "464406b231db30d236e4fc10db6c584ab83d43607f62cd81274a23f59f8706f3",
+      "url": "https://jlcpcb.com/partdetail/C3157012",
+      "fetched_utc": "2026-09-11T20:02:40.878526+00:00"
+    },
+    "C587091": {
+      "json_sha256": "7c653cfc31cf4857ae6f852081542c96039dd390b2ea5007864d6d0eb7125c3c",
+      "html_sha256": "9d540e7298ab797d5623ffa7b76168bf961fdde4be4b49bf7e45b3dee906072c",
+      "url": "https://jlcpcb.com/partdetail/C587091",
+      "fetched_utc": "2026-09-11T20:05:11.750474+00:00"
+    },
+    "C17420444": {
+      "json_sha256": "288f7ee30239e3d4005e3cbba230d9a47bfe2d7cd143cab65964a6d49de43139",
+      "html_sha256": "9e950b83a49b32888ac9960b38776acd636be686c4433f8ddaf37bcb7701f0ed",
+      "url": "https://jlcpcb.com/partdetail/C17420444",
+      "fetched_utc": "2026-09-11T20:02:32.872761+00:00"
+    },
+    "C240824": {
+      "json_sha256": "fed64c46477228eaf09da34e39d05d6f25ec659442fec6f36b8e93331c06aaec",
+      "html_sha256": "5d6334e595f846a138a142384890ad2823bddcf2117c07f6990ce23d19639def",
+      "url": "https://jlcpcb.com/partdetail/C240824",
+      "fetched_utc": "2026-09-11T20:05:09.640793+00:00"
+    },
+    "C505166": {
+      "json_sha256": "d6a544756959d003f1c128af348cfa5d9107654899eb4ef5a355d050a12cfd88",
+      "html_sha256": "5a8b97c6c4d2f2154a240d5d01d3d9a0597015bf100448e3f756c0c752b76906",
+      "url": "https://jlcpcb.com/partdetail/C505166",
+      "fetched_utc": "2026-09-11T20:05:10.769668+00:00"
+    },
+    "C17656945": {
+      "json_sha256": "69a969d81e36f26bf80948b2d3449307e69e221ce8f750a8885c5e34882a5e62",
+      "html_sha256": "400fe076ec5087efb86970d2de4310c13bd60cac59498dc55e602964130c9549",
+      "url": "https://jlcpcb.com/partdetail/C17656945",
+      "fetched_utc": "2026-09-11T20:02:35.083811+00:00"
+    },
+    "C240823": {
+      "json_sha256": "5a6c8a1bf15f29f066055f7d5a8e0bfd7538ebf03081041b48d23c3a0836e16e",
+      "html_sha256": "99294c634cfcc388ca79387fc04f4feffbff6c3ca68e87fd4ab0f4bb981feb6a",
+      "url": "https://jlcpcb.com/partdetail/C240823",
+      "fetched_utc": "2026-09-11T20:05:08.609067+00:00"
+    },
+    "C840531": {
+      "json_sha256": "02349dc979688ae882c37fbbe7aa4fa244c196a926ae3fdb6346f159f85b0e40",
+      "html_sha256": "cec7cee96d67e959a76a7ef46ffbefaaeff642ac5a75d83f987d5a06d9fac2f6",
+      "url": "https://jlcpcb.com/partdetail/C840531",
+      "fetched_utc": "2026-09-11T20:02:46.367656+00:00"
+    },
+    "C84256": {
+      "json_sha256": "81db2d7843e4dfd100257fcf9465451b91de86e6e52a95232cc952dbb2eed548",
+      "html_sha256": "9fa9828a9100f7d2dcc037f047fff8a7b25b0d0596685c9bfb99fcd1be5353d4",
+      "url": "https://jlcpcb.com/partdetail/C84256",
+      "fetched_utc": "2026-09-11T19:22:22.945232+00:00"
+    },
+    "C17710": {
+      "json_sha256": "d59bdf3a02e4b6022970015967e35613aac96d7c313a0645c58d3628ce8e9148",
+      "html_sha256": "9ee94b6ca6f3190bd97d851a49839440802e206191c98ea1d4acb3e3598ac1b9",
+      "url": "https://jlcpcb.com/partdetail/C17710",
+      "fetched_utc": "2026-09-11T19:22:21.959785+00:00"
+    },
+    "C17513": {
+      "json_sha256": "0305d6a39f6b38cdf98553b62861ba47aa4ab754584308dd348ef6d9d645768c",
+      "html_sha256": "41a8864cd2ff2b852f9a6ae7777a049a6989af2250cd08facbea94fffbbc348b",
+      "url": "https://jlcpcb.com/partdetail/C17513",
+      "fetched_utc": "2026-09-11T19:22:17.719552+00:00"
+    },
+    "C4310": {
+      "json_sha256": "b0eac90ea06f16058e6be8f488b035809c5fd1b974f473689ce4915fd21e02b2",
+      "html_sha256": "adcefdeff573016d083ba7948eb304e5f7c10db86ea16bf395e492799030d277",
+      "url": "https://jlcpcb.com/partdetail/C4310",
+      "fetched_utc": "2026-09-11T19:22:18.545094+00:00"
+    },
+    "C1882622": {
+      "json_sha256": "dc64780e770049966f3c012d9571d703fdb1099de69d0a1c1a639e53305b9b33",
+      "html_sha256": "bce0917312a19b0925c00e90a8a0295cb22aa605f205fe02dba5ed99ca09ef94",
+      "url": "https://jlcpcb.com/partdetail/C1882622",
+      "fetched_utc": "2026-09-11T20:02:36.908653+00:00"
+    },
+    "C274001": {
+      "json_sha256": "091d05214d5f4acf815589601dd96bf8d0f7d3ac3ce9c7e821047895802eee92",
+      "html_sha256": "542acd00a098cfcea90d17a0a8232f70fcc38a73e7e1946cb05a14956ae2940a",
+      "url": "https://jlcpcb.com/partdetail/C274001",
+      "fetched_utc": "2026-09-11T20:02:39.472939+00:00"
+    },
+    "C273956": {
+      "json_sha256": "ea39e6cf7964b01c7f85d7a80237a05d9717f5943265d7e1d65f82cf66e38a44",
+      "html_sha256": "9f0d23111fce8bcf87b07c74153b5ba8c2777669a28f8fa194297b2ec54a4a7c",
+      "url": "https://jlcpcb.com/partdetail/C273956",
+      "fetched_utc": "2026-09-11T20:20:49.201800+00:00"
+    },
+    "C137564": {
+      "json_sha256": "6bcb4da79c67ee12f8716643fcd4cba929ad9bc135baa4e62b576bc0a237e4d7",
+      "html_sha256": "23495896712be403c2d94fef08d2574106f90c613b26a1b113d515e8e3e44f46",
+      "url": "https://jlcpcb.com/partdetail/C137564",
+      "fetched_utc": "2026-09-11T20:02:26.173764+00:00"
+    },
+    "C865152": {
+      "json_sha256": "5c512060605fb9c40765e87238f13a43042a30fa75c545f24c077553dba93b22",
+      "html_sha256": "c1ff6aa3d8541f2c3191f5cdcd6142950c63b40910d8120f7b7e74b1d82dd74e",
+      "url": "https://jlcpcb.com/partdetail/C865152",
+      "fetched_utc": "2026-09-11T20:02:47.666877+00:00"
+    },
+    "C865367": {
+      "json_sha256": "dfec218f0ca258c92b57ffa2e6bb219f39457e31f36a6ee25c691dc2a7398b88",
+      "html_sha256": "6a64a93421fbb65276a561de72552537554fadba9fe94f216d603edd2bb13571",
+      "url": "https://jlcpcb.com/partdetail/C865367",
+      "fetched_utc": "2026-09-11T20:02:47.968969+00:00"
+    },
+    "C273830": {
+      "json_sha256": "2f430fdd11f5f698103929d92732f9d2c8059d30606cef90b7eb0eb260d0bcea",
+      "html_sha256": "2b595d0dda7c7789f6e863fad2107265fee06343c8e5834d63cd1b7c8882575b",
+      "url": "https://jlcpcb.com/partdetail/C273830",
+      "fetched_utc": "2026-09-11T20:02:38.774718+00:00"
+    },
+    "C483008": {
+      "json_sha256": "b92cc72e441902bab04ef0fd38a864a87884e3cbda1f2e709e75e1f677fb8a7d",
+      "html_sha256": "306a069891c76988710ff243161e38f6a395ed086c43eb92296044e3457323a1",
+      "url": "https://jlcpcb.com/partdetail/C483008",
+      "fetched_utc": "2026-09-11T20:02:44.492216+00:00"
+    },
+    "C4328": {
+      "json_sha256": "b83d8c543badd0568480545e550354152fdd8847b44f93d9c23f65fa9254173e",
+      "html_sha256": "3f0fd0254cab17839dccd51d2de84189a160b2ab3849ef1176d6b42f8fdb92cd",
+      "url": "https://jlcpcb.com/partdetail/C4328",
+      "fetched_utc": "2026-09-11T19:22:19.643649+00:00"
+    },
+    "C273850": {
+      "json_sha256": "a1b39f905513a9b26db0a66fe069e929fdbb3853b945df5615a730e08af385bc",
+      "html_sha256": "1ffa7e4d7897d94d926e169deb5aaf1b897cac3847702c56d901a057f75ff1b4",
+      "url": "https://jlcpcb.com/partdetail/C273850",
+      "fetched_utc": "2026-09-11T20:02:39.944741+00:00"
+    },
+    "C17604": {
+      "json_sha256": "b4b69f8d1c8ff061d5003a9bd8552643a67bea21b44cb424b5fdf8a130d9e853",
+      "html_sha256": "90f683608bcedef46f7657e6c27fdc73ab8edd9fdd7e38b912b705958a80e259",
+      "url": "https://jlcpcb.com/partdetail/C17604",
+      "fetched_utc": "2026-09-11T19:22:21.127968+00:00"
+    },
+    "C483155": {
+      "json_sha256": "5656bb48effbfb2f8dcb64679800ab681a0f6e3142602ce3045df472f2e322a4",
+      "html_sha256": "32b75e749dee29772435b3d3c1831669dac68aa1fcc533997952fd1a18ac3bb1",
+      "url": "https://jlcpcb.com/partdetail/C483155",
+      "fetched_utc": "2026-09-11T20:02:45.152939+00:00"
+    },
+    "C524806": {
+      "json_sha256": "00ebccadb35c46f830c26e32c4afbd1339185f242fd2102dc7ff268d7f98c7b2",
+      "html_sha256": "2e9ead5fd0693eabc9caa095b66674224980b38905b8c305b781be1e1e389d18",
+      "url": "https://jlcpcb.com/partdetail/C524806",
+      "fetched_utc": "2026-09-11T20:02:44.741990+00:00"
+    },
+    "C1710": {
+      "json_sha256": "8f5b416b888877707ffc3c03f6eb4a60eee2bb5d009beeb5f4149e3a987dfe5e",
+      "html_sha256": "96b0c34e5981f8e9fa83c6cb193f716263dd7a85ce45aa2c1bee3ea193cf1628",
+      "url": "https://jlcpcb.com/partdetail/C1710",
+      "fetched_utc": "2026-09-11T19:22:13.225917+00:00"
+    },
+    "C588986": {
+      "json_sha256": "1ccb88fd464cd851675156ef041b77c671fc0a32c7fd155a3c72cf0d921e8584",
+      "html_sha256": "0b0fd5aa0becac541917e2184b9564e9fe07d54fb0f10d4a5a0f956c37d01e6b",
+      "url": "https://jlcpcb.com/partdetail/C588986",
+      "fetched_utc": "2026-09-11T20:05:13.985221+00:00"
+    },
+    "C17502444": {
+      "json_sha256": "d89e5fdbceb49859d723896d14d3a73165f8c51216dacbf41aa838d3c7d8ea5e",
+      "html_sha256": "78df78881d5d910530725851cf78db3c517e9b5f78b1466f1f79c228476b05fc",
+      "url": "https://jlcpcb.com/partdetail/C17502444",
+      "fetched_utc": "2026-09-11T20:02:33.325422+00:00"
+    },
+    "C17414": {
+      "json_sha256": "084129f095ca34c334d3d56a81c1ba3820d75fce007f3b3da33011f4abd17c15",
+      "html_sha256": "d600825a9ac28679f258fd94885d62728d63f5021ab621c678a4cc4fb13885ad",
+      "url": "https://jlcpcb.com/partdetail/C17414",
+      "fetched_utc": "2026-09-11T19:22:16.584578+00:00"
+    },
+    "C17593": {
+      "json_sha256": "7f1c84381692ebc191080a78ad908e39c547c787779128a4d78ca79d7966797d",
+      "html_sha256": "e87820e46e7899a11732d41aa741cd034c4c98464bea4af27a1b6e13ea987534",
+      "url": "https://jlcpcb.com/partdetail/C17593",
+      "fetched_utc": "2026-09-11T19:22:20.432358+00:00"
+    },
+    "C17673": {
+      "json_sha256": "0dc004ec6914478e3eb954d481aa37131a16a09df8081d661b06ff8b8adc2b22",
+      "html_sha256": "20ce3b49f9ae6c7da2d4ed7546c82020a9298809265a6e053035a0d10d241dd7",
+      "url": "https://jlcpcb.com/partdetail/C17673",
+      "fetched_utc": "2026-09-11T20:02:36.421394+00:00"
+    },
+    "C7948": {
+      "json_sha256": "372b3aca01dd590aa2448e86ae7907d866177ce5fe242a9e03336f874140ae28",
+      "html_sha256": "e59dd8781f53bb33d35aa46969f782e658e5df69fb299af547513569d4ee0bc6",
+      "url": "https://jlcpcb.com/partdetail/C7948",
+      "fetched_utc": "2026-09-11T20:02:45.991294+00:00"
+    },
+    "C132264": {
+      "json_sha256": "408097bb60c1df86ae2c06c1e3dee6c7809575e1b2a9204b9cd0e9611d52d7d0",
+      "html_sha256": "eed633175d6543d0a1ea577481949afc0aa0474d542eb69032bf9e57ad942af9",
+      "url": "https://jlcpcb.com/partdetail/C132264",
+      "fetched_utc": "2026-09-11T19:22:25.862750+00:00"
+    },
+    "C460944": {
+      "json_sha256": "4661d360cbc748c7dfe52edb5f630f852384776ca9bd712e75105506cee13683",
+      "html_sha256": "fbdedf794d099ec5708bcf36564a34f8bfdf18ffe568a3415c083abcf8616d34",
+      "url": "https://jlcpcb.com/partdetail/C460944",
+      "fetched_utc": "2026-09-11T20:02:44.006202+00:00"
+    },
+    "C5440942": {
+      "json_sha256": "4c7dece3d4cf015140613232fed471f175e67511639348070cb5a5f4f149e1b9",
+      "html_sha256": "74352a628cb5b5850c0803c7ca35c3d4d3fd698aaeab7bf589585b4cacc164de",
+      "url": "https://jlcpcb.com/partdetail/C5440942",
+      "fetched_utc": "2026-09-11T19:20:31.973573+00:00"
+    },
+    "C17408": {
+      "json_sha256": "824ddffddc67c102d93f9c2a7ab7c3ccde0a6f83c1c8fe69b2b6090933be4817",
+      "html_sha256": "10d91a2e5e3094a411b902f86584de8618b9a43e926c417f1f2a256ea370f196",
+      "url": "https://jlcpcb.com/partdetail/C17408",
+      "fetched_utc": "2026-09-11T19:22:15.773296+00:00"
+    },
+    "C6788": {
+      "json_sha256": "94ff33ca75e2f72714f8c9e5d9ad6606b6d196edbd9421e20e09a01ac895a54e",
+      "html_sha256": "908efd5b9eb6f947df6f96837364bee594d8d0e9e6a0f639465f0f834e677f13",
+      "url": "https://jlcpcb.com/partdetail/C6788",
+      "fetched_utc": "2026-09-11T19:22:25.119974+00:00"
+    },
+    "C95872": {
+      "json_sha256": "9cfa5efbfc7c46dd0e019735b747d9f542f78fc0b725cf7749e2265bb49edc44",
+      "html_sha256": "f72b49222e9d4f9a41df45e41a7d1fe9f3d7754ba33daf3d743db992cfacaad5",
+      "url": "https://jlcpcb.com/partdetail/C95872",
+      "fetched_utc": "2026-09-11T20:07:20.976827+00:00"
+    },
+    "C17226055": {
+      "json_sha256": "a12d372bb9d7d6be5d933738c8ba6e06b44054c7dd8b30d027f486f6f690f9b0",
+      "html_sha256": "b20e1c0ed6862245b6abe0b566ba47acc323298f66f5b6a18590f153e7575744",
+      "url": "https://jlcpcb.com/partdetail/C17226055",
+      "fetched_utc": "2026-09-11T20:02:29.828856+00:00"
+    },
+    "C2624": {
+      "json_sha256": "93e60816c0cc84bde90fea77d8e1cd2177f57cee9a8522790196f76875e2360e",
+      "html_sha256": "12f255d148d33605c9f828ae968f4047365d711677f3d919dcbefe2deb1a5963",
+      "url": "https://jlcpcb.com/partdetail/C2624",
+      "fetched_utc": "2026-09-11T20:02:38.555649+00:00"
+    },
+    "C165895": {
+      "json_sha256": "de108bccc33df1615f477aaac5ed16283f56df3fa3101cfb0003873b5a65fdef",
+      "html_sha256": "4c7cb45809927931d04496026892900c1a9d4244080af66e991f405c147954d8",
+      "url": "https://jlcpcb.com/partdetail/C165895",
+      "fetched_utc": "2026-09-11T20:02:29.919502+00:00"
+    },
+    "C81598": {
+      "json_sha256": "e8dec3cfc00067e88c44e19609351de13baca86494612bf0e78367b604fa9654",
+      "html_sha256": "d6a91126734bf3566677898103e70eca10d1cac882d5af8be3b1d98d66869716",
+      "url": "https://jlcpcb.com/partdetail/C81598",
+      "fetched_utc": "2026-09-11T19:22:24.450967+00:00"
+    },
+    "C587032": {
+      "json_sha256": "21d3479244a9b79c4a80d4e576568b4b4f7b0dd0fb61c41100b95d55db27bdd5",
+      "html_sha256": "692357e85ef969673f9e345ecee29f8033383bf4bba8edc7ec0243df504c9b78",
+      "url": "https://jlcpcb.com/partdetail/C587032",
+      "fetched_utc": "2026-09-11T20:05:15.196070+00:00"
+    },
+    "C3007": {
+      "json_sha256": "f04f26de66279ddfd2393d5fb01fbdcfc1c415bfb3b2887450dd90f37845e218",
+      "html_sha256": "48c37fd71768b81c9f1ce595af9dd14bf19119a7b0714ff677a2ba2c05a1b239",
+      "url": "https://jlcpcb.com/partdetail/C3007",
+      "fetched_utc": "2026-09-11T20:02:40.368225+00:00"
+    },
+    "C705613": {
+      "json_sha256": "c9f8c80c7ecc61bf167cfea5d1961016738c27d2f2ef38242dc61df1d315bbb8",
+      "html_sha256": "dd33b1054f57a79dc9c9e5b010540a4585de0be1f7abd8a333185c34b18e515a",
+      "url": "https://jlcpcb.com/partdetail/C705613",
+      "fetched_utc": "2026-09-11T20:02:45.685208+00:00"
+    },
+    "C352961": {
+      "json_sha256": "9d362a9d7ec4340165e9efb1243680c3e2ef6236ced33fae521e2a46b91ce92e",
+      "html_sha256": "baf9bad40e4fe38341fd87d92cd699a502528faa81cfc408fe951a32427a49bb",
+      "url": "https://jlcpcb.com/partdetail/C352961",
+      "fetched_utc": "2026-09-11T20:02:42.582363+00:00"
+    },
+    "C7426778": {
+      "json_sha256": "6e1b2c15270e93fe008e0c0af7cd57fbc3fd827e55676a6052b1546b3a95690c",
+      "html_sha256": "c4995275bc92a0ba99c1d2362002f3342da36743e4e53a5553b77bd31f1825f9",
+      "url": "https://jlcpcb.com/partdetail/C7426778",
+      "fetched_utc": "2026-09-11T20:05:12.827226+00:00"
+    },
+    "C17541501": {
+      "json_sha256": "d33d0c78e0da9a90fa5d690615611e01d9ea39f086bba6e7d9b502b8c7721065",
+      "html_sha256": "d160ec605cbe5a723b74a5f6d7391ecd8c24f6b14e7a4346335dc8110ab8988e",
+      "url": "https://jlcpcb.com/partdetail/C17541501",
+      "fetched_utc": "2026-09-11T19:20:25.534412+00:00"
+    },
+    "C151826": {
+      "json_sha256": "ad4ec7ad5753507ee6f93c99159e8b59db86013877d5de7abb6776602e615887",
+      "html_sha256": "6714977aee312a4880828ba9e74ff0c0f71fa44822d20152a9c73537b603e699",
+      "url": "https://jlcpcb.com/partdetail/C151826",
+      "fetched_utc": "2026-09-11T20:02:28.129072+00:00"
+    },
+    "C39797": {
+      "json_sha256": "9f4112c3a157f8d8edee9ffc75a5303149f536d497033d49a63650a7c567a50f",
+      "html_sha256": "37bc6368eaffe8d22381865fd19a23fe0a6edfb23428db0258d8dcc9e30e6846",
+      "url": "https://jlcpcb.com/partdetail/C39797",
+      "fetched_utc": "2026-09-11T19:12:50.738951+00:00"
+    },
+    "C1882619": {
+      "json_sha256": "26ae937f131d34ab70376f333fe2a24fc67691b1c0b0ef39e903ac462e85279d",
+      "html_sha256": "05777305fbcec84b63b29e018e277d55e07b0870c77ba01d4ac44b797f627ff0",
+      "url": "https://jlcpcb.com/partdetail/C1882619",
+      "fetched_utc": "2026-09-11T20:02:36.823694+00:00"
+    },
+    "C189505": {
+      "json_sha256": "6b549eafa62cadd21d9fae41f34cd9caa006e23ba40ad1ebc89f00246b120d17",
+      "html_sha256": "e60877f8bb4d9aa9e8816c4c45eb23c6ff3ac81ac8c2654e5d0d8c2096cd6138",
+      "url": "https://jlcpcb.com/partdetail/C189505",
+      "fetched_utc": "2026-09-11T20:02:38.320377+00:00"
+    }
+  },
+  "limitations": [
+    "Public catalog snapshot, no reserved stock or assembly quote; preorders can carry minimum quantities and uncertain lead times",
+    "JLCPCB assembly engineering must approve component orientation, polarity, exposed-pad paste and stencil process in its actual library",
+    "SMT upload pair intentionally excludes through-hole parts and external hardware; separate manual lists include all 32 fuse clips",
+    "All SMT origins are at nominal package body centers; signed absolute coordinates follow exported Gerbers; rotations follow native KiCad convention",
+    "No consumables or mechanical hardware are required to be sourced at JLCPCB per user clarification"
+  ]
+}
