@@ -1,0 +1,51 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "5T 7A",
+    "componentLibraryType": "",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:11:03.489994+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 0,
+        "list": null,
+        "pageNum": 1,
+        "pageSize": 0,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 0,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": true,
+        "isLastPage": true,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 8,
+        "navigatepageNums": [],
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": null,
+      "brandList": null,
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "5T 7A"
+    },
+    "message": null
+  }
+}

@@ -1,0 +1,190 @@
+(footprint "TLC_TA_2410_Fuse"
+	(layer "F.Cu")
+	(descr "TLC TA time-lag 2410 ceramic fuse; soldered service replacement")
+	(property "Reference" "REF**"
+		(at 0 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "31441018-ddc5-43fa-8278-5d207afa1a63")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "7A T 125VAC"
+		(at 0 6 0)
+		(layer "F.Fab")
+		(uuid "bae6817f-a2a3-4261-bc57-583248b90442")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "29f33c40-4d4b-4a49-ae68-cf277a92685e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "7 A time-lag 125 VAC, 200 A breaking capacity, 139.419 A2s; soldered 2410 replaces scarce cartridge."
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "67963a37-ea99-43eb-993f-c9176982f956")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "TA7"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cf4912ee-7f3d-4240-957b-07605afb4a1f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sheet" "Power_Supply"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e4daddba-e939-4dfe-b47e-dd694f8d2997")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "TLC Electronic"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "69620d36-c7e4-48df-952d-777eb7f15db6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Link" "https://jlcpcb.com/partdetail/C3014110"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "594a1e17-ecc6-417d-9e8f-f2330de283be")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "67f48084-5a19-4f3f-8799-22a95f5945da")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price100" ""
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "30d0b955-3b72-4505-b190-3a5b404c5fcc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB Part" "C3014110"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9a243299-4b47-4e9f-b64c-d2112096a81c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB Library" "Extended"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b249baf2-ebb5-4324-9b97-f183b38d209c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -3.6 -1.8)
+		(end 3.6 1.8)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "1730e7fe-691d-4230-8cca-93b7a178a2cf")
+	)
+	(fp_rect
+		(start -3.1 -1.3)
+		(end 3.1 1.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "5a30a872-2682-495d-ab00-d1545b383fef")
+	)
+	(pad "1" smd rect
+		(at -2.75 0)
+		(size 2.5 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(pad "2" smd rect
+		(at 2.75 0)
+		(size 2.5 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/inventory/TLC_TA7.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

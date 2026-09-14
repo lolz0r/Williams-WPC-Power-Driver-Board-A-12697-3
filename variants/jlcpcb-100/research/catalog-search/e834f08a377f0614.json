@@ -1,0 +1,576 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "LGU1V123",
+    "componentLibraryType": "",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:34:47.043214+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 3,
+        "list": [
+          {
+            "componentId": 1672831,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Horn-Type Electrolytic Capacitors",
+            "erpComponentName": "12000uF ±20% 35V",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/horn-type-electrolytic-capacitors_nichicon-lgu1v123melc_C1582016.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 3.0077
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 3.0077
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 3.0077
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 1.1637
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.123
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.1035
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.063
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 1.121
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 2.8973
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 2.8973
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.0818
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 2.8973
+              }
+            ],
+            "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+            "secondSortAccessId": "72d0412698e045acbe7082d07c2e24b6",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "Nichicon-LGU1V123MELC/C1582016",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 200,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 3,
+            "minPurchaseNum": 3,
+            "initialPrice": 3.0077,
+            "componentCode": "C1582016",
+            "componentBrandEn": "Nichicon",
+            "componentModelEn": "LGU1V123MELC",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2205071600_Nichicon-LGU1V123MELC_C1582016.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8589038169241636864-C1582016.pdf?response-content-disposition=attachment%3B%20filename%3DC1582016.pdf%3B%20filename%2A%3DUTF-8%27%27C1582016.pdf&x-oss-date=20260914T043446Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rxLtHyuo9n0KOBcxfXpWk8QeFktvLvgDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qf5S7BYg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWmrn18BH26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIoxJHDqKWD5sagAGaOg6xDZEZHGhb2PmUnxr3%2FGwAaabD3nGYqg4Pmz51nK7WXSTqzNsKaP%2Bkt0EnT8xPU8UTUvr6kGgwP6PzrNVOzbfD1I1kImoCCOCm94zFrwLErmjaqqj0lCqUPu8jBjESUhIbt%2FNAurhMTf4wF5aCTA8SYz%2BpLCC7pDCHNj%2B9GSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYDekFWPFgajq1fAiiMnHY7Db%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=944b9c2928b37a8f81e35b5d15890effe06e69f5d66225de47569676c469eac9",
+            "dataManualOfficialLink": "",
+            "componentName": "Nichicon LGU1V123MELC",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "Plugin,D35xL30mm",
+            "describe": "-40℃~+105℃ 10mm 12000uF 3.68A@50kHz 3000hrs@105℃ 30mm 35V 35mm ±20% 插件,D35xL30mm Horn-Type Electrolytic Capacitors ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Operating Temperature",
+                "attribute_value_name": "-40℃~+105℃"
+              },
+              {
+                "attribute_name_en": "Lifetime",
+                "attribute_value_name": "3000hrs@105℃"
+              },
+              {
+                "attribute_name_en": "Equivalent Series Resistance(ESR)",
+                "attribute_value_name": "-"
+              },
+              {
+                "attribute_name_en": "Pin Spacing",
+                "attribute_value_name": "10mm"
+              },
+              {
+                "attribute_name_en": "Voltage Rating",
+                "attribute_value_name": "35V"
+              },
+              {
+                "attribute_name_en": "Height - Seated (Max)",
+                "attribute_value_name": "30mm"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±20%"
+              },
+              {
+                "attribute_name_en": "Polarity type",
+                "attribute_value_name": "有极性"
+              },
+              {
+                "attribute_name_en": "Capacitance",
+                "attribute_value_name": "12000uF"
+              },
+              {
+                "attribute_name_en": "Ripple Current",
+                "attribute_value_name": "3.68A@50kHz"
+              },
+              {
+                "attribute_name_en": "Diameter",
+                "attribute_value_name": "35mm"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Horn-Type Electrolytic Capacitors",
+            "secondSortName": "Capacitors",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>LGU1V123</span>MELC",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 1673490,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Horn-Type Electrolytic Capacitors",
+            "erpComponentName": "12000uF ±20% 35V",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/horn-type-electrolytic-capacitors_nichicon-lgu1v123mela_C1582675.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 2.7635
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 2.7635
+              },
+              {
+                "startNumber": 12,
+                "endNumber": 249,
+                "productPrice": 2.7635
+              },
+              {
+                "startNumber": 250,
+                "endNumber": 499,
+                "productPrice": 1.0693
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.0319
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.014
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 12,
+                "endNumber": 249,
+                "productPrice": 2.6621
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.9768
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 2.6621
+              },
+              {
+                "startNumber": 250,
+                "endNumber": 499,
+                "productPrice": 1.0301
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 2.6621
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.994
+              }
+            ],
+            "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+            "secondSortAccessId": "72d0412698e045acbe7082d07c2e24b6",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "Nichicon-LGU1V123MELA/C1582675",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 250,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 4,
+            "minPurchaseNum": 4,
+            "initialPrice": 2.7635,
+            "componentCode": "C1582675",
+            "componentBrandEn": "Nichicon",
+            "componentModelEn": "LGU1V123MELA",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2205071600_Nichicon-LGU1V123MELA_C1582675.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590909375978819584-C1582675.pdf?response-content-disposition=attachment%3B%20filename%3DC1582675.pdf%3B%20filename%2A%3DUTF-8%27%27C1582675.pdf&x-oss-date=20260914T043446Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rxLtHyuo9n0KOBcxfXpWk8QeFktvLvgDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qf5S7BYg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWmrn18BH26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIoxJHDqKWD5sagAGaOg6xDZEZHGhb2PmUnxr3%2FGwAaabD3nGYqg4Pmz51nK7WXSTqzNsKaP%2Bkt0EnT8xPU8UTUvr6kGgwP6PzrNVOzbfD1I1kImoCCOCm94zFrwLErmjaqqj0lCqUPu8jBjESUhIbt%2FNAurhMTf4wF5aCTA8SYz%2BpLCC7pDCHNj%2B9GSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYDekFWPFgajq1fAiiMnHY7Db%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=7667e5aacbf53ee01dc0658d2bb25da26558343d8cd63ad8f7bee9b9c27bd7b1",
+            "dataManualOfficialLink": "",
+            "componentName": "Nichicon LGU1V123MELA",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "Plugin,D25xL50mm",
+            "describe": "-40℃~+105℃ 10mm 12000uF 25mm 3.37A@120Hz 3000hrs@105℃ 35V 50mm ±20% 插件,D25xL50mm Horn-Type Electrolytic Capacitors ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Operating Temperature",
+                "attribute_value_name": "-40℃~+105℃"
+              },
+              {
+                "attribute_name_en": "Lifetime",
+                "attribute_value_name": "3000hrs@105℃"
+              },
+              {
+                "attribute_name_en": "Equivalent Series Resistance(ESR)",
+                "attribute_value_name": "-"
+              },
+              {
+                "attribute_name_en": "Pin Spacing",
+                "attribute_value_name": "10mm"
+              },
+              {
+                "attribute_name_en": "Voltage Rating",
+                "attribute_value_name": "35V"
+              },
+              {
+                "attribute_name_en": "Height - Seated (Max)",
+                "attribute_value_name": "50mm"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±20%"
+              },
+              {
+                "attribute_name_en": "Polarity type",
+                "attribute_value_name": "有极性"
+              },
+              {
+                "attribute_name_en": "Capacitance",
+                "attribute_value_name": "12000uF"
+              },
+              {
+                "attribute_name_en": "Ripple Current",
+                "attribute_value_name": "3.37A@120Hz"
+              },
+              {
+                "attribute_name_en": "Diameter",
+                "attribute_value_name": "25mm"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Horn-Type Electrolytic Capacitors",
+            "secondSortName": "Capacitors",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>LGU1V123</span>MELA",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 4290823,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Horn-Type Electrolytic Capacitors",
+            "erpComponentName": "12000uF ±20% 35V",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/horn-type-electrolytic-capacitors_nichicon-lgu1v123melb_C3722927.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 3.7482
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 3.7482
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 3.7482
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 1.4518
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.3997
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.3753
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.3248
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 1.3985
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 3.6106
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 3.6106
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.3483
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 3.6106
+              }
+            ],
+            "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+            "secondSortAccessId": "72d0412698e045acbe7082d07c2e24b6",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "Nichicon-LGU1V123MELB/C3722927",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 200,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 3,
+            "minPurchaseNum": 3,
+            "initialPrice": 3.7482,
+            "componentCode": "C3722927",
+            "componentBrandEn": "Nichicon",
+            "componentModelEn": "LGU1V123MELB",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404080930_Nichicon-LGU1V123MELB_C3722927.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8603129763808620544-C3722927.pdf?response-content-disposition=attachment%3B%20filename%3DC3722927.pdf%3B%20filename%2A%3DUTF-8%27%27C3722927.pdf&x-oss-date=20260914T043446Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5rxLtHyuo9n0KOBcxfXpWk8QeFktvLvgDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qf5S7BYg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWmrn18BH26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIoxJHDqKWD5sagAGaOg6xDZEZHGhb2PmUnxr3%2FGwAaabD3nGYqg4Pmz51nK7WXSTqzNsKaP%2Bkt0EnT8xPU8UTUvr6kGgwP6PzrNVOzbfD1I1kImoCCOCm94zFrwLErmjaqqj0lCqUPu8jBjESUhIbt%2FNAurhMTf4wF5aCTA8SYz%2BpLCC7pDCHNj%2B9GSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYDekFWPFgajq1fAiiMnHY7Db%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=fa65667f2b21a92e1be0a390b05cbf1965502e141d2feccb89cffc32427241e4",
+            "dataManualOfficialLink": "",
+            "componentName": "Nichicon LGU1V123MELB",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "Plugin,D30xL40mm",
+            "describe": "-40℃~+105℃ 10mm 12000uF 3.28A@120Hz 3000hrs@105℃ 30mm 35V 40mm ±20% 有极性 Plugin,D30xL40mm Horn-Type Electrolytic Capacitors ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Operating Temperature",
+                "attribute_value_name": "-40℃~+105℃"
+              },
+              {
+                "attribute_name_en": "Lifetime",
+                "attribute_value_name": "3000hrs@105℃"
+              },
+              {
+                "attribute_name_en": "Pin Spacing",
+                "attribute_value_name": "10mm"
+              },
+              {
+                "attribute_name_en": "Voltage Rating",
+                "attribute_value_name": "35V"
+              },
+              {
+                "attribute_name_en": "Height - Seated (Max)",
+                "attribute_value_name": "40mm"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±20%"
+              },
+              {
+                "attribute_name_en": "Polarity type",
+                "attribute_value_name": "有极性"
+              },
+              {
+                "attribute_name_en": "Capacitance",
+                "attribute_value_name": "12000uF"
+              },
+              {
+                "attribute_name_en": "Ripple Current",
+                "attribute_value_name": "3.28A@120Hz"
+              },
+              {
+                "attribute_name_en": "Diameter",
+                "attribute_value_name": "30mm"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Horn-Type Electrolytic Capacitors",
+            "secondSortName": "Capacitors",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>LGU1V123</span>MELB",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "LGU1V123"
+    },
+    "message": null
+  }
+}

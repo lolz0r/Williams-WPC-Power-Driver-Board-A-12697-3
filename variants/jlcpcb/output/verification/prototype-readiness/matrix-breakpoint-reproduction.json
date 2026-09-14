@@ -1,0 +1,50 @@
+{
+  "cases": [
+    {
+      "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/matrix_breakpoint_repro_default.cir",
+      "deck_sha256": "ebf732fb96f6837c519c9e362705e4b65999584fabeb692064baa61b940c92f9",
+      "elapsed_s": 39.57094916200003,
+      "wall_limit_s": 180,
+      "timed_out": false,
+      "worker_returncode": 0,
+      "execution_completed": true,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.0243895, timestep = 6.25e-19: trouble with node \"row0q\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "measurements": {
+        "sim_end": 0.02438948014411
+      },
+      "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+      "full_30ms_completed": false,
+      "name": "default"
+    },
+    {
+      "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/matrix_breakpoint_repro_minbreak1p.cir",
+      "deck_sha256": "608060ea1b0a11750e5c4b95b5c7c866525d9f168d2ac975ef6d68e20f96509b",
+      "elapsed_s": 37.96336836899991,
+      "wall_limit_s": 180,
+      "timed_out": false,
+      "worker_returncode": 0,
+      "execution_completed": true,
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.0243895, timestep = 6.25e-19: trouble with node \"row0q\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "measurements": {
+        "sim_end": 0.02438948014411
+      },
+      "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+      "full_30ms_completed": false,
+      "name": "minbreak1p"
+    }
+  ],
+  "diagnostic_only": true,
+  "pcb_changed": false,
+  "command_points_and_circuit_unchanged": true,
+  "original_minimum_distinct_breakpoint_interval_s": 1.9999999989472883e-08,
+  "requested_minbreak_s": 1e-12,
+  "base_sha256": "3cc9da17c9a810c52f301fc57da596eb91321ed1adbf1101ebd786bdf0f8ab6f",
+  "scope": "First 30 ms of full matrix, backward Euler at 0.5 us; only minbreak differs between runs. No power or component rating acceptance is asserted.",
+  "source": "https://raw.githubusercontent.com/ngspice/ngspice/master/src/spicelib/analysis/cktsopt.c"
+}

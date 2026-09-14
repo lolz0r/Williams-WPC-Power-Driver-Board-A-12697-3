@@ -1,0 +1,237 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "SS34",
+    "componentLibraryType": "base",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:01:31.802827+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 1,
+        "list": [
+          {
+            "componentId": 9178,
+            "componentLibraryType": "base",
+            "stockCount": 5004843,
+            "componentTypeEn": "Schottky Diodes",
+            "erpComponentName": "SS34",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/schottky-diodes_mdd-microdiode-semiconductor-ss34_C8678.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 199,
+                "productPrice": 0.0349
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 599,
+                "productPrice": 0.028
+              },
+              {
+                "startNumber": 600,
+                "endNumber": 4999,
+                "productPrice": 0.025
+              },
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.017
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 19999,
+                "productPrice": 0.016
+              },
+              {
+                "startNumber": 20000,
+                "endNumber": -1,
+                "productPrice": 0.0154
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 200,
+                "endNumber": 599,
+                "productPrice": 0.027
+              },
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.0164
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 199,
+                "productPrice": 0.0336
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 19999,
+                "productPrice": 0.0154
+              },
+              {
+                "startNumber": 20000,
+                "endNumber": -1,
+                "productPrice": 0.0149
+              },
+              {
+                "startNumber": 600,
+                "endNumber": 4999,
+                "productPrice": 0.024
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
+            "canPresaleNumber": 4843471,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "MDD_Microdiode_Semiconductor-SS34/C8678",
+            "leastPatchNumber": 5,
+            "lossNumber": 8,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": true,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 5000,
+            "shopCostPrice": 0.07816,
+            "preMinPurchaseNum": 320,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.0349,
+            "componentCode": "C8678",
+            "componentBrandEn": "MDD(Microdiode Semiconductor)",
+            "componentModelEn": "SS34",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8764712471263494144-C8678-front.jpg?x-oss-date=20260914T040131Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f470292ff23ead73e122f73c31f24eb3ec5d3e25c78a0d38eadb5295a418e48e",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2407101107_MDD-Microdiode-Semiconductor-SS34_C8678.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8586172667476496384-C8678.pdf?response-content-disposition=attachment%3B%20filename%3DC8678.pdf%3B%20filename%2A%3DUTF-8%27%27C8678.pdf&x-oss-date=20260914T040131Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=df60e96f75d531f0d19fb671efdc1ff5c9d8beb188eddd8871623e128b692c5f",
+            "dataManualOfficialLink": "",
+            "componentName": "MDD(Microdiode Semiconductor) SS34",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8764712472349954048-C8678-front.jpg?x-oss-date=20260914T040131Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d9b119ab0d1511bba39b94d33d4310c2085022a3003fb4d40c56f592f0619063",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "SMA(DO-214AC)",
+            "describe": "-55℃~+125℃ 3A 40V 500uA@40V 550mV@3A Independent SMA(DO-214AC) Schottky Diodes ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "550mV@3A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "40V"
+              },
+              {
+                "attribute_name_en": "Operating Junction Temperature Range",
+                "attribute_value_name": "-55℃~+125℃"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "Standalone"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "3A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "500uA@40V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Schottky Diodes",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>SS34</span>",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "SS34"
+    },
+    "message": null
+  }
+}

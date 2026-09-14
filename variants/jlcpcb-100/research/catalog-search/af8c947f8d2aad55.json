@@ -1,0 +1,541 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "STPS30SM60",
+    "componentLibraryType": "",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:11:07.739061+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 3,
+        "list": [
+          {
+            "componentId": 6869296,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Schottky Diodes",
+            "erpComponentName": "STPS30SM60CT",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/schottky-diodes_stmicroelectronics-stps30sm60ct_C5931931.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 1.9238
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 1.9238
+              },
+              {
+                "startNumber": 12,
+                "endNumber": 199,
+                "productPrice": 1.9238
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 0.7682
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.7422
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.7292
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.7024
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 0.74
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 1.8532
+              },
+              {
+                "startNumber": 12,
+                "endNumber": 199,
+                "productPrice": 1.8532
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 1.8532
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.715
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "STMicroelectronics-STPS30SM60CT/C5931931",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "0",
+            "noBuyReason": "This product is no longer manufactured.",
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 50,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 5,
+            "minPurchaseNum": 5,
+            "initialPrice": 1.9238,
+            "componentCode": "C5931931",
+            "componentBrandEn": "STMicroelectronics",
+            "componentModelEn": "STPS30SM60CT",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2309061527_STMicroelectronics-STPS30SM60CT_C5931931.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8602634225304813568-C5931931.pdf?response-content-disposition=attachment%3B%20filename%3DC5931931.pdf%3B%20filename%2A%3DUTF-8%27%27C5931931.pdf&x-oss-date=20260914T041107Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1085190abb498c02e627f05a5c2fa17ad911b7f64213173eb59d1a74679a7b29",
+            "dataManualOfficialLink": "",
+            "componentName": "ST STPS30SM60CT",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "TO-220",
+            "describe": "1 Pair Common Cathode 15A 60V 625mV@15A 65uA@60V TO-220 Schottky Diodes ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "625mV@15A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "60V"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "15A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "65uA@60V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Schottky Diodes",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>STPS30SM60</span>CT",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 7644862,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Schottky Diodes",
+            "erpComponentName": "STPS30SM60CR",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/schottky-diodes_stmicroelectronics-stps30sm60cr_C6689625.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 2.1353
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 2.1353
+              },
+              {
+                "startNumber": 12,
+                "endNumber": 199,
+                "productPrice": 2.1353
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 0.8529
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.8236
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.8105
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.7808
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 0.8216
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 2.057
+              },
+              {
+                "startNumber": 12,
+                "endNumber": 199,
+                "productPrice": 2.057
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 2.057
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.7933
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "STMicroelectronics-STPS30SM60CR/C6689625",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 50,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 5,
+            "minPurchaseNum": 5,
+            "initialPrice": 2.1353,
+            "componentCode": "C6689625",
+            "componentBrandEn": "STMicroelectronics",
+            "componentModelEn": "STPS30SM60CR",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2402040430_STMicroelectronics-STPS30SM60CR_C6689625.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8600785402030530560-C6689625.pdf?response-content-disposition=attachment%3B%20filename%3DC6689625.pdf%3B%20filename%2A%3DUTF-8%27%27C6689625.pdf&x-oss-date=20260914T041107Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=5fe4ec4c2149c0bdd4d20600344c4857bbf561e062838d96388114de521fe722",
+            "dataManualOfficialLink": "",
+            "componentName": "ST STPS30SM60CR",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "I2PAK",
+            "describe": "1 Pair Common Cathode 15A 60V 625mV@15A 65uA@60V I2PAK Schottky Diodes ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "625mV@15A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "60V"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "15A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "65uA@60V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Schottky Diodes",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>STPS30SM60</span>CR",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 3283803,
+            "componentLibraryType": "expand",
+            "stockCount": 18,
+            "componentTypeEn": "Schottky Diodes",
+            "erpComponentName": "STPS30SM60SG-TR",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/schottky-diodes_stmicroelectronics-stps30sm60sg-tr_C2935135.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 2.412
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 2.1418
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 99,
+                "productPrice": 1.9709
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 1.7984
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.7187
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.6845
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 1.7324
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 99,
+                "productPrice": 1.8986
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 2.3235
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.6227
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.6556
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 2.0632
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
+            "canPresaleNumber": 18,
+            "componentProductType": 0,
+            "mergedComponentCode": "",
+            "urlSuffix": "STMicroelectronics-STPS30SM60SGTR/C2935135",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": "",
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 1000,
+            "shopCostPrice": 5.5325,
+            "preMinPurchaseNum": 4,
+            "minPurchaseNum": 1,
+            "initialPrice": 2.412,
+            "componentCode": "C2935135",
+            "componentBrandEn": "STMicroelectronics",
+            "componentModelEn": "STPS30SM60SG-TR",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8584750498478510080-C2935135/C2935135-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T041107Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=acbdb6788e964228982d93328f26c5c7fa7c4e5064e27a27fa36195cfe15f491",
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121700_STMicroelectronics-STPS30SM60SG-TR_C2935135.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590215059289759744-C2935135.pdf?response-content-disposition=attachment%3B%20filename%3DC2935135.pdf%3B%20filename%2A%3DUTF-8%27%27C2935135.pdf&x-oss-date=20260914T041107Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=7d11b7b3abb0007f021f4dd9cdcce16205a36625aea34b28a12d2db543b2d99f",
+            "dataManualOfficialLink": "",
+            "componentName": "ST STPS30SM60SG-TR",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8584750499329818624-C2935135/C2935135-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T041107Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=3020f635288dc950b2106b491969d838e7ff4a1c7c9c1dc4fd342f03f4f38847",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "D2PAK",
+            "describe": "1 Independent 30A 30uA@60V 560mV@30A 600A 60V D2PAK Schottky Diodes ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "560mV@30A"
+              },
+              {
+                "attribute_name_en": "Non-Repetitive Peak Forward Surge Current",
+                "attribute_value_name": "600A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "60V"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Independent"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "30A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "30uA@60V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Schottky Diodes",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>STPS30SM60</span>SG-TR",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "STPS30SM60"
+    },
+    "message": null
+  }
+}

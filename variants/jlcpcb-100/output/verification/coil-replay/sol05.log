@@ -1,0 +1,69 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom raw-write replay channel 5; bus.csv
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                        86
+stdout cmd                                          0
+stdout gateinput                                    0
+stdout gate                                         0
+stdout drain                                       86
+stdout drainq                                      86
+stdout coil                                        86
+stdout diode                                       86
+stdout lcoil#branch                      -1.17158e-09
+stdout vdiode#branch                     -2.88952e-13
+stdout vsense#branch                      1.17187e-09
+stdout vcmd#branch                                  0
+stdout vrail#branch                      -1.17159e-09
+ Reference value :  0.00000e+00
+ Reference value :  2.87576e-01
+ Reference value :  5.75936e-01
+ Reference value :  8.69606e-01
+ Reference value :  1.15724e+00
+ Reference value :  1.45528e+00
+ Reference value :  1.74428e+00
+ Reference value :  2.03731e+00
+ Reference value :  2.32190e+00
+ Reference value :  2.61867e+00
+ Reference value :  2.90857e+00
+ Reference value :  3.20298e+00
+ Reference value :  3.49332e+00
+ Reference value :  3.77617e+00
+ Reference value :  4.06359e+00
+ Reference value :  4.35081e+00
+ Reference value :  4.64097e+00
+ Reference value :  4.92156e+00
+ Reference value :  5.21282e+00
+ Reference value :  5.50165e+00
+ Reference value :  5.79209e+00
+ Reference value :  6.08291e+00
+ Reference value :  6.37187e+00
+ Reference value :  6.65324e+00
+ Reference value :  6.93691e+00
+ Reference value :  7.21094e+00
+ Reference value :  7.48329e+00
+ Reference value :  7.75959e+00
+ Reference value :  8.02957e+00
+ Reference value :  8.29907e+00
+ Reference value :  8.56434e+00
+ Reference value :  8.84771e+00
+ Reference value :  9.13431e+00
+ Reference value :  9.41292e+00
+ Reference value :  9.68792e+00
+ Reference value :  9.96848e+00
+stdout No. of Data Rows : 1020285
+stderr doAnalyses: TRAN:  Timestep too small; time = 10.2013, timestep = 5.18673e-18: trouble with node "gateinput"
+stderr run simulation(s) aborted
+stdout sim_end = 1.020130485256e+01
+stdout vds_peak            =  8.76773e+01 at=  1.02000e+01
+stdout vgs_peak            =  4.45458e+00 at=  1.01353e+01
+stdout p_avg               =  8.86441e-02 from=  2.00000e-01 to=  1.02000e+01
+stdout id_avg              =  1.53180e-12 from=  2.00000e-01 to=  1.02000e+01
+stdout id_terminal_avg     =  8.50068e-11 from=  2.00000e-01 to=  1.02000e+01
+stdout i_peak              =  1.81162e+03 at=  1.02013e+01
+stdout coil_peak           =  2.25780e+01 at=  1.02000e+01
+stdout tj_repeating = 5.549593420000e+01

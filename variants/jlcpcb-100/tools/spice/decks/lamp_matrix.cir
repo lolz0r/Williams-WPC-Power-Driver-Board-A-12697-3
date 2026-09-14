@@ -1,0 +1,74 @@
+Cost-board lamp matrix: column IRFR5305 P-DPAK (TBD62083A sink, 1k/1.5k gate divider) + row IRLR024N DPAK with 0.22R sense and LM339 over-current shutdown
+.include ../models.lib
+VCC vcc 0 5
+V18 v18 0 18
+VCOL colin 0 PULSE(0 5 1m 50n 50n 2m 16m)
+XU19 colin ulnout TBD62083CH
+Rser ulnout cg 1k
+Rgs cg v18 1.5k
+XQC col cg v18 IRFR5305
+Blamp col row I = v(col,row) / (7 + 18*(1-exp(-max(time-1m,0)/15m)))
+Rlk1 col 0 100k
+Rlk2 row 0 100k
+VD d 0 PULSE(0 5 0.5m 50n 50n 100m 200m)
+VCLK clk 0 PULSE(0 5 0.9m 50n 50n 10u 16m)
+* 74HCT74 modelled as a discrete bistable (lca high = Q high = row enabled).  Clocked SET when clk AND d, clocked RESET when clk AND NOT d,
+* asynchronous RESET when clr_n low (comparator trip / blanking)
+Bdn d_n 0 V = 5 - v(d)
+Vls vls 0 4.6
+Rca vls lca 4.7k
+Rcb vls lcb 4.7k
+Rab lcb lba 10k
+Rbb lca lbb 10k
+Qa lca lba 0 QL
+Qb lcb lbb 0 QL
+Rclk clk s1b 10k
+Qs1 lba s1b lx QL
+Rdn d_n dn_b 10k
+Qp cp dn_b vcc QP
+Rcp cp 0 10k
+Rs2 cp s2b 10k
+Qs2 lx s2b 0 QL
+Rd2 d d2_b 10k
+Qp2 cp2 d2_b vcc QP
+Rcp2 cp2 0 10k
+Rs4 cp2 s4b 10k
+Qs4 ly s4b 0 QL
+Rclk2 clk s3b 10k
+Qs3 lbb s3b ly QL
+Rpre clr_n pre_b 10k
+Qpr crp pre_b vcc QP
+Rcrp crp 0 10k
+Rrb crp lrb 10k
+Qr lbb lrb 0 QL
+.model QL NPN(Is=1e-14 Bf=100 Cjc=2p)
+.model QP PNP(Is=1e-14 Bf=100 Cjc=2p)
+Eqn qn_a 0 VALUE = { 2.3*(1+tanh((v(lca)-1.5)*5)) }
+Rg qn_a g 100
+Rpd g 0 10k
+XQR row g e IRLR024N
+Vs e es 0
+Rs es 0 0.22
+R1K e s 1k
+Cs s 0 100n
+R162 vcc ref 1k
+D33 ref n1 D1N4148
+D34 n1 0 D1N4148
+XCMP ref s clr_n LM339
+R10K clr_n vcc 10k
+.tran 5u 40m
+.control
+run
+let irow = i(Vs)
+meas tran irow_normal MAX irow from=1m to=20m
+meas tran vsense_normal MAX v(s) from=1m to=20m
+meas tran vref AVG v(ref) from=1m to=20m
+let vcd = v(v18)-v(col)
+meas tran vcol_drop AVG vcd from=2m to=2.9m
+meas tran vrow_on AVG v(row) from=2m to=2.9m
+meas tran clr_min MIN v(clr_n) from=1m to=20m
+let vgsc = v(cg)-v(v18)
+meas tran vgs_col MIN vgsc from=1.5m to=2.9m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/lamp_matrix.csv v(col) v(row) irow v(s) v(clr_n) v(lca) v(cg)
+.endc
+.end

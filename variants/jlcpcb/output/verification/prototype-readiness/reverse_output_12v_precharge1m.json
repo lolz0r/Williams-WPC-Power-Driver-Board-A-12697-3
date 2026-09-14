@@ -1,0 +1,92 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/reverse_output_12v_precharge1m.cir",
+  "deck_sha256": "dd52e7887f13d1ce0e883d3bfbf9ffc3e7430a74f7e614264c09c47adf028ad7",
+  "elapsed_s": 0.9680536590001338,
+  "wall_limit_s": 180.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [
+    "stderr no such vector as 'i(vbypass)'",
+    "stderr meas tran bypass_peak max i(vbypass) failed!",
+    "stderr Error: RHS \"v(bypass,vinf)*i(vbypass)\" invalid",
+    "stderr no such vector as 'bypass_power'",
+    "stderr meas tran bypass_energy integ bypass_power failed!"
+  ],
+  "measurements": {
+    "sim_end": 0.001,
+    "output_peak": 11.4873,
+    "output_min": 0.363806,
+    "inductor_peak": 0.00109021,
+    "inductor_min": -9.31817,
+    "body_reverse_peak": 9.31817,
+    "input_min": 0.264683
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "output_peak": {
+      "value": 11.4873,
+      "min": 0,
+      "max": 12.6,
+      "passed": true
+    },
+    "output_min": {
+      "value": 0.363806,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 0.00109021,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -9.31817,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    },
+    "sim_end": {
+      "value": 0.001,
+      "min": 0.00099999,
+      "max": 0.00100001,
+      "passed": true
+    }
+  },
+  "passed": false,
+  "kind": "reverse",
+  "pcb_changed": false,
+  "candidate_only": true,
+  "changes": [
+    "Unbuilt candidate: B560C from vout to input rail; measure bypass current and energy",
+    "Transient ends at 0.001 seconds",
+    "Initial reverse-stress screen only; no recovery or complete-sequence claim"
+  ],
+  "arguments": {
+    "kind": "reverse",
+    "name": "reverse_output_12v_precharge1m",
+    "wall_seconds": 180.0,
+    "step_us": 1,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "12v",
+    "bypass": "output",
+    "stop_ms": 1.0,
+    "lamp_form": "current",
+    "gate_series_collapse": false,
+    "raw_reservoir_uf": null,
+    "compensation_nf": null,
+    "flasher_input": false,
+    "stress_only": true
+  },
+  "required_end_s": 0.001,
+  "base_deck_sha256": "90735c46f9ee71647bad548ea5f6e4bc25d11858c44735ab034e9e6a8695dc28",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

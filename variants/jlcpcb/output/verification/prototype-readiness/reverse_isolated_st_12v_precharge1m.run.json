@@ -1,0 +1,26 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/reverse_isolated_st_12v_precharge1m.cir",
+  "deck_sha256": "3041bc3a04a2ee918b93de1b7319647796807e8b1de5674502d5d878f7022749",
+  "elapsed_s": 26.284362875999932,
+  "wall_limit_s": 180.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [
+    "stderr no such vector as 'i(vbypass)'",
+    "stderr meas tran bypass_peak max i(vbypass) failed!",
+    "stderr Error: RHS \"v(bypass,vinf)*i(vbypass)\" invalid",
+    "stderr no such vector as 'bypass_power'",
+    "stderr meas tran bypass_energy integ bypass_power failed!"
+  ],
+  "measurements": {
+    "sim_end": 0.001,
+    "output_peak": 11.6243,
+    "output_min": 7.71135,
+    "inductor_peak": 0.0200291,
+    "inductor_min": -0.694868,
+    "body_reverse_peak": 0.694829,
+    "input_min": 2.25756e-07
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion"
+}

@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "checks": 1012,
+  "failures": [],
+  "netlist_sha256": "314bc2ff86e7b2f976bf7f1101e27020a82eb36d6d2596fda82369290f74a9d5",
+  "evidence": [
+    {
+      "report": "output/verification/prototype-readiness/buckboost-qualified-nominal/results.json",
+      "rail": "U20",
+      "sha256": "5384de4075c06960afc7d9783da7e77c26507d5c9dc256dc483638b12b2af66e",
+      "cases": 16
+    },
+    {
+      "report": "output/verification/prototype-readiness/buckboost-qualified-nominal/results.json",
+      "rail": "U21",
+      "sha256": "5384de4075c06960afc7d9783da7e77c26507d5c9dc256dc483638b12b2af66e",
+      "cases": 16
+    },
+    {
+      "report": "output/verification/prototype-readiness/buckboost-qualified-high/results.json",
+      "rail": "U20",
+      "sha256": "2caa6f9d241c9ed0799e2601d9c886080744faf54f3ade7bcca51033826b8e1d",
+      "cases": 16
+    },
+    {
+      "report": "output/verification/prototype-readiness/buckboost-qualified-high/results.json",
+      "rail": "U21",
+      "sha256": "2caa6f9d241c9ed0799e2601d9c886080744faf54f3ade7bcca51033826b8e1d",
+      "cases": 16
+    },
+    {
+      "report": "output/verification/prototype-readiness/buckboost-qualified-low/results.json",
+      "rail": "U20",
+      "sha256": "081f8a853858cd5c3de7dda0449e86cc1617736f7550d4eb01128171df92d35d",
+      "cases": 16
+    },
+    {
+      "report": "output/verification/prototype-readiness/buckboost-qualified-low/results.json",
+      "rail": "U21",
+      "sha256": "081f8a853858cd5c3de7dda0449e86cc1617736f7550d4eb01128171df92d35d",
+      "cases": 16
+    }
+  ],
+  "scope": "TI controller pin configuration and native passive topology; selected averaged decks and their explicit tolerance values; complete transient runs and CCM phase/gain margin screens.",
+  "limitations": [
+    "Engineering average model, not TI silicon switching-model validation",
+    "PFM, commutation/backfeed currents, EMI and short-circuit recovery need first-article measurement",
+    "Constant 2.5-ohm lamp load and winding resistance are stress assumptions; transformer/fuse qualification needs actual load data"
+  ]
+}

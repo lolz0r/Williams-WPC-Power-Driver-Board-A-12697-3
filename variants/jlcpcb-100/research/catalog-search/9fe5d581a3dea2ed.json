@@ -1,0 +1,364 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "DSSK40",
+    "componentLibraryType": "",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T05:45:57.523541+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 2,
+        "list": [
+          {
+            "componentId": 4326665,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Schottky Diodes",
+            "erpComponentName": "DSSK40-006B",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/schottky-diodes_littelfuse-ixys-dssk40-006b_C3759135.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 3.5854
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 3.5854
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 3.5854
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 1.3883
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.3395
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.3151
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 1.2668
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 1.3374
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 3.4539
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 3.4539
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 1.2903
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 3.4539
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "LittelfuseIXYS-DSSK40006B/C3759135",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "0",
+            "noBuyReason": "This product is no longer manufactured.",
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 30,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 3,
+            "minPurchaseNum": 3,
+            "initialPrice": 3.5854,
+            "componentCode": "C3759135",
+            "componentBrandEn": "Littelfuse/IXYS",
+            "componentModelEn": "DSSK40-006B",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401161534_Littelfuse-IXYS-DSSK40-006B_C3759135.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590474188181180416-C3759135.pdf?response-content-disposition=attachment%3B%20filename%3DC3759135.pdf%3B%20filename%2A%3DUTF-8%27%27C3759135.pdf&x-oss-date=20260914T054557Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfmNnqwT0pqlSmeAqTk%2FNO5drIvT2zz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbkjuxQg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkqpRton26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIvU0VWKKWD5sagAF7S2TcOzfR9Hs9U%2BBNW4CkK%2BctY5P3q8gosgEQ9PgQv6poGvLotvWh1NYmHiMOZBxpYjCEdSMfqM%2Fa6D5Eq2DnVRIpeBrndkS80yGobeAErn8GkJ%2F%2F1AusDa4s7rVmkK68qk672t7ZvxHGLCd6%2BJ%2BjtPXX1jh2vtvRYcyr5WXv6CAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfC9ss2eXNHA1M9j8aqCNx9%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=1a1401bdb70c98db6694df2bcfe649c69468ff303f289d9c61fa05b50cc536ce",
+            "dataManualOfficialLink": "",
+            "componentName": "Littelfuse/IXYS DSSK40-006B",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "TO-247AD",
+            "describe": "1 Pair Common Cathode 20A 20mA@60V 530mV@20A 60V TO-247AD Schottky Diodes ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "530mV@20A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "60V"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "20A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "20mA@60V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Schottky Diodes",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>DSSK40</span>-006B",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 20740977,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Schottky Diodes",
+            "erpComponentName": "DSSK40-0015B",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/schottky-diodes_littelfuse-ixys-dssk40-0015b_C19452648.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 5.4603
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 5.4603
+              },
+              {
+                "startNumber": 12,
+                "endNumber": 209,
+                "productPrice": 5.4603
+              },
+              {
+                "startNumber": 210,
+                "endNumber": 509,
+                "productPrice": 2.1793
+              },
+              {
+                "startNumber": 510,
+                "endNumber": 989,
+                "productPrice": 2.106
+              },
+              {
+                "startNumber": 990,
+                "endNumber": -1,
+                "productPrice": 2.0702
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 12,
+                "endNumber": 209,
+                "productPrice": 5.2599
+              },
+              {
+                "startNumber": 210,
+                "endNumber": 509,
+                "productPrice": 2.0993
+              },
+              {
+                "startNumber": 510,
+                "endNumber": 989,
+                "productPrice": 2.0287
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 11,
+                "productPrice": 5.2599
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 5.2599
+              },
+              {
+                "startNumber": 990,
+                "endNumber": -1,
+                "productPrice": 1.9943
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "LittelfuseIXYS-DSSK400015B/C19452648",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 30,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 2,
+            "minPurchaseNum": 2,
+            "initialPrice": 5.4603,
+            "componentCode": "C19452648",
+            "componentBrandEn": "Littelfuse/IXYS",
+            "componentModelEn": "DSSK40-0015B",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2312271041_Littelfuse-IXYS-DSSK40-0015B_C19452648.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8600744829177643008-C19452648.pdf?response-content-disposition=attachment%3B%20filename%3DC19452648.pdf%3B%20filename%2A%3DUTF-8%27%27C19452648.pdf&x-oss-date=20260914T054557Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfmNnqwT0pqlSmeAqTk%2FNO5drIvT2zz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbkjuxQg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkqpRton26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIvU0VWKKWD5sagAF7S2TcOzfR9Hs9U%2BBNW4CkK%2BctY5P3q8gosgEQ9PgQv6poGvLotvWh1NYmHiMOZBxpYjCEdSMfqM%2Fa6D5Eq2DnVRIpeBrndkS80yGobeAErn8GkJ%2F%2F1AusDa4s7rVmkK68qk672t7ZvxHGLCd6%2BJ%2BjtPXX1jh2vtvRYcyr5WXv6CAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfC9ss2eXNHA1M9j8aqCNx9%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=f212b2e749a12d4876a8a0d29dea6bf4d2e5043172c5a644ae66419b17360892",
+            "dataManualOfficialLink": "",
+            "componentName": "Littelfuse/IXYS DSSK40-0015B",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "TO-247AD",
+            "describe": "-55℃~+150℃ 1 Pair Common Cathode 10mA@15V 15V 20A 350A 430mV@20A TO-247AD Schottky Diodes ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "430mV@20A"
+              },
+              {
+                "attribute_name_en": "Non-Repetitive Peak Forward Surge Current",
+                "attribute_value_name": "350A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "15V"
+              },
+              {
+                "attribute_name_en": "Operating Junction Temperature Range",
+                "attribute_value_name": "-55℃~+150℃"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "20A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "10mA@15V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Schottky Diodes",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>DSSK40</span>-0015B",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "DSSK40"
+    },
+    "message": null
+  }
+}

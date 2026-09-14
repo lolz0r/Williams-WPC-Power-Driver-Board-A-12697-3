@@ -1,0 +1,934 @@
+{
+  "solver": "KLU/itl4=100",
+  "method": "gear",
+  "reltol": 0.002,
+  "max_step_us": 10.0,
+  "requested_channels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999",
+  "cases": [
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 3.0504,
+      "deck_sha256": "9b1e2edae38fce5b1ea675e15b23ad3e8953012b419163a7ade2e307b337a24c",
+      "channel": 1,
+      "window_s": [
+        4.215159,
+        14.215159
+      ],
+      "commanded_duty": 0.03549425000000026,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.4214,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.46916,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 107.8667018,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 3.04875,
+          "min": 0,
+          "max": 3,
+          "passed": false
+        },
+        "i_peak": {
+          "value": 3043.28,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 14.2304,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2193274121861,
+          "min": 10.2299999,
+          "max": 10.230000099999998,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.219327, timestep = 4.65418e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.0474412,
+      "deck_sha256": "9a2c6210f29eb3d023ed2a598e365cfabff4f53429fc0b9e6cf639676175d00f",
+      "channel": 2,
+      "window_s": [
+        3.806421499999999,
+        13.806421499999999
+      ],
+      "commanded_duty": 0.034731249999999256,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.4162,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45458,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 235.614856,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.0387779,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 14.5284,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "coil_peak": {
+          "value": 14.5286,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2032629863472,
+          "min": 10.2299999,
+          "max": 10.230000099999998,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.203263, timestep = 3.03416e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 8.50069e-11,
+      "deck_sha256": "d11c06e9923f9c6b5ee0d7d445e7ab315718c11832bd1d22a2fd908e1d3eb784",
+      "channel": 3,
+      "window_s": [
+        88.542872833,
+        98.542872833
+      ],
+      "commanded_duty": 0.006554450000000145,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 88.2531,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45458,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 55.5751299,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 1.5318e-12,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 373152.0,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 22.578,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.20001086662,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 10.2, timestep = 6.64891e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 8.50068e-11,
+      "deck_sha256": "9195f0fd05a2d2d3925b421c2357035fe7af4912fa209cefb762e373f8a1a4bc",
+      "channel": 4,
+      "window_s": [
+        171.626135333,
+        181.626135333
+      ],
+      "commanded_duty": 0.006553949999999986,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.7053,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45458,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 55.5746711,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 1.5318e-12,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 6213.62,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 22.578,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.20001362196,
+          "min": 10.229999899999989,
+          "max": 10.230000099999987,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 10.2, timestep = 2.70189e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 8.50068e-11,
+      "deck_sha256": "1699b7da10c5e9aa2b884cabd02c18708824ea1c26b2f2eb0c52007a9c93fc8a",
+      "channel": 5,
+      "window_s": [
+        141.642554333,
+        151.642554333
+      ],
+      "commanded_duty": 0.00646809999999789,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6773,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45458,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 55.4959342,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 1.5318e-12,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 1811.62,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 22.578,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 10.20130485256,
+          "min": 10.229999899999989,
+          "max": 10.230000099999987,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 10.2013, timestep = 5.18673e-18: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.00473886,
+      "deck_sha256": "66527a3981c8f3b4a4df0a700153166f72961e73c2e3b85c336720411e0625bf",
+      "channel": 6,
+      "window_s": [
+        78.944689833,
+        88.944689833
+      ],
+      "commanded_duty": 0.029493549999999404,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6777,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45458,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 923.85342,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.00429089,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 5167.42,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 22.578,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2983373086057,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.298337, timestep = 1.70801e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.00122597,
+      "deck_sha256": "a20eb3711984a4938d19aea5854edcef2df17a147e894f32aad8294a7931d552",
+      "channel": 9,
+      "window_s": [
+        77.786385333,
+        87.786385333
+      ],
+      "commanded_duty": 0.01940385000000049,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.246,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45076,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 180.320466,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.000961967,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 5307.26,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 8.82184,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2646919794021,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.264692, timestep = 6.55344e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.00470148,
+      "deck_sha256": "69c1e54f362f38a1661e1305c95e4dabdf2e920051341b20a3bec676d7db12c1",
+      "channel": 10,
+      "window_s": [
+        77.952272833,
+        87.952272833
+      ],
+      "commanded_duty": 0.019427650000000084,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2228,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45076,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 180.365106,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.00444187,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 1666.39,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 8.82184,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2655816794732,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.265582, timestep = 7.69198e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.000993393,
+      "deck_sha256": "cd64091c08628ca87af5f37443f19298439342b1e0d701fe14d1382484d19fbc",
+      "channel": 11,
+      "window_s": [
+        13.094160332999998,
+        23.094160332999998
+      ],
+      "commanded_duty": 0.012935900000000267,
+      "coil_ohm": 13.05,
+      "coil_H": 0.03,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.1547,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45103,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 122.877094,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        },
+        "id_avg": {
+          "value": 0.000797755,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 1017.72,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 6.5757,
+          "min": 0,
+          "max": 6.72183908045977,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2646968372008,
+          "min": 10.2299999,
+          "max": 10.230000099999998,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.264697, timestep = 8.16914e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.203977,
+      "deck_sha256": "5da1042dceac41fe18b1f2c7598481ae2112e47e5c7093ae055bd02967f42cc5",
+      "channel": 12,
+      "window_s": [
+        79.635729333,
+        89.635729333
+      ],
+      "commanded_duty": 0.019404049999999985,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2221,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45076,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 175.66222,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.203881,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 5145.05,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 8.82184,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2670884292811,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.267088, timestep = 3.73207e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.010713,
+      "deck_sha256": "689e5534f5696245e2a3c8a54b3f2995a2151262532929de73b4d257c7c40d34",
+      "channel": 13,
+      "window_s": [
+        78.453170333,
+        88.453170333
+      ],
+      "commanded_duty": 0.01931624999999997,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.3939,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45076,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 180.142898,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.0104535,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 348931.0,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 8.82184,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2644560135826,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.264456, timestep = 6.91819e-18: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.00171546,
+      "deck_sha256": "49856abbd0e04ee5f35f5b5275200b4f153a04524cb294a0a06254de20b1cb8d",
+      "channel": 14,
+      "window_s": [
+        79.478032833,
+        89.478032833
+      ],
+      "commanded_duty": 0.019372449999998764,
+      "coil_ohm": 9.72,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.7469,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45076,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 180.31315,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.00144902,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 274313.0,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 8.82184,
+          "min": 0,
+          "max": 9.02469135802469,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.264695086529,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.264695, timestep = 2.992e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.0383504,
+      "deck_sha256": "e5d4ec85159827b54b8363614c3926f629aa284a4e94e378f585e2e82097f6f3",
+      "channel": 15,
+      "window_s": [
+        72.675057833,
+        82.675057833
+      ],
+      "commanded_duty": 0.10146424999997805,
+      "coil_ohm": 8.64,
+      "coil_H": 0.025,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.2605,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45076,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 220.12924,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.038284,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 9364.06,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 9.9209,
+          "min": 0,
+          "max": 10.152777777777777,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.4074244975284,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.407424, timestep = 1.25e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    },
+    {
+      "dissipation_W": null,
+      "dissipation_tj_C": null,
+      "diode_terminal_forward_average_A": 0.0158733,
+      "deck_sha256": "7637cbdd275b33daadd0e2f53e51d832704fc9f792a3b690b36253827205e1c3",
+      "channel": 16,
+      "window_s": [
+        117.536016333,
+        127.536016333
+      ],
+      "commanded_duty": 0.0031912999999988757,
+      "coil_ohm": 3.7800000000000002,
+      "coil_H": 0.012,
+      "rail_V": 86,
+      "checks": {
+        "vds_peak": {
+          "value": 87.6812,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45458,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "tj_repeating": {
+          "value": 833.79842,
+          "min": 0,
+          "max": 125,
+          "passed": false
+        },
+        "id_avg": {
+          "value": 0.0144976,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "i_peak": {
+          "value": 772.411,
+          "min": 0,
+          "max": 80,
+          "passed": false
+        },
+        "coil_peak": {
+          "value": 22.5771,
+          "min": 0,
+          "max": 23.206349206349206,
+          "passed": true
+        },
+        "sim_end": {
+          "value": 0.2319376365455,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": false
+        }
+      },
+      "errors": [
+        "stderr doAnalyses: TRAN:  Timestep too small; time = 0.231938, timestep = 4.94355e-17: trouble with node \"gateinput\"",
+        "stderr run simulation(s) aborted"
+      ],
+      "passed": false
+    }
+  ],
+  "passed": false,
+  "limitations": [
+    "Integration method and maximum step recorded in report, 20 ns command transitions, strict PWL times and explicit end-time completion; no partial transient may pass",
+    "Forward diode rating uses carrier-conduction current after subtracting ngspice capcur; original positive terminal-current average is also reported. Electrical device and stored-charge model unchanged",
+    "Coil R/L approximations; 86 V high-line bound with 4.5 V gate and hot MOSFET fit",
+    "Commands assumed enabled; no credit for physical blanking",
+    "Temperature is steady repetition of worst 10 s window at 50 C ambient and 62 C/W, excludes mutual heating",
+    "Channels 17-28 motors/flashers excluded here; covered by generic decks only",
+    "No harness parasitics, avalanche SOA, fuse clearing or physical thermal correlation"
+  ]
+}

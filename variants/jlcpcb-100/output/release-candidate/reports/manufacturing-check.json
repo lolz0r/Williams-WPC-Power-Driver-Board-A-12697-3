@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "checks": 7909,
+  "failures": [],
+  "pcb_sha256": "5da9f686c5d4b9949137e88cba2a99f7099af9a4abc7d7cd42557282228b37f8",
+  "gerber_pad_instances": {
+    "F.Cu": 1427,
+    "In1.Cu": 401,
+    "In2.Cu": 401,
+    "B.Cu": 401
+  },
+  "copper_object_counts": {
+    "F.Cu": 9475,
+    "In1.Cu": 1816,
+    "In2.Cu": 3608,
+    "B.Cu": 5805
+  },
+  "drill_counts": {
+    "PTH": 1808,
+    "NPTH": 9
+  },
+  "outline_centerline_mm": [
+    449.1520000050002,
+    272.9100000100005
+  ],
+  "parser_warnings": [
+    "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/output/release-candidate/drill/wpc_power_driver_cost-NPTH.drl:14 \"G90\": G90 header statement found after end of header",
+    "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/output/release-candidate/drill/wpc_power_driver_cost-PTH.drl:44 \"G90\": G90 header statement found after end of header"
+  ],
+  "limitations": "X2 attributes/pad positions and drills checked independently; does not independently solve connectivity of every plotted copper region or replace fabricator DFM/electrical testing. Native KiCad DRC provides geometric connectivity checks."
+}

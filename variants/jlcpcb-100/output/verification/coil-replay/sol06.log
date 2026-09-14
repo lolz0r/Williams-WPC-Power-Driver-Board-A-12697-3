@@ -1,0 +1,35 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom raw-write replay channel 6; bus.csv
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout rail                                        86
+stdout cmd                                          0
+stdout gateinput                                    0
+stdout gate                                         0
+stdout drain                                       86
+stdout drainq                                      86
+stdout coil                                        86
+stdout diode                                       86
+stdout lcoil#branch                      -1.17158e-09
+stdout vdiode#branch                     -2.88952e-13
+stdout vsense#branch                      1.17187e-09
+stdout vcmd#branch                                  0
+stdout vrail#branch                      -1.17159e-09
+ Reference value :  0.00000e+00
+ Reference value :  2.77414e-01
+stdout No. of Data Rows : 30001
+stderr doAnalyses: TRAN:  Timestep too small; time = 0.298337, timestep = 1.70801e-17: trouble with node "gateinput"
+stderr run simulation(s) aborted
+stdout sim_end = 2.983373086057e-01
+stdout vds_peak            =  8.76777e+01 at=  2.98337e-01
+stdout vgs_peak            =  4.45458e+00 at=  2.00005e-01
+stdout p_avg               =  1.40944e+01 from=  2.00000e-01 to=  2.98337e-01
+stdout id_avg              =  4.29089e-03 from=  2.00000e-01 to=  2.98337e-01
+stdout id_terminal_avg     =  4.73886e-03 from=  2.00000e-01 to=  2.98337e-01
+stdout i_peak              =  5.16742e+03 at=  2.98337e-01
+stdout coil_peak           =  2.25780e+01 at=  2.98309e-01
+stdout tj_repeating = 9.238534200000e+02

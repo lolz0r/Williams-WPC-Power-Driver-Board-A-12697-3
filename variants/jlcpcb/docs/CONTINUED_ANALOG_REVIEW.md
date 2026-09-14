@@ -1,3 +1,5 @@
+> Historical JLC-2 investigation. For the current hardware and evidence, use [JLC-3 prototype report](PROTOTYPE_JLC3.md).
+
 # Continued analog review of JLC-2
 
 The native JLC-2 board and its manufacturing archives are unchanged. **Continue to hold an assembled prototype order.** This addendum resolves the selected coil replay's loss convergence and narrows the +12 V investigation. The lamp-matrix convergence and regulator findings still need disposition. The [previous report](PRESPIN_VERIFICATION.md) remains the record of the original tests, including failures.

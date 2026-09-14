@@ -1,0 +1,340 @@
+Bridge loss sensitivity: BR1 STPS20M100ST TO220 with individual Boyd 577202B00000G sinks. Other low-voltage bridges STPS20M100SG D2PAK. 50 C ambient. Electrical winding/load assumptions remain to be measured. D2PAK lumped temperatures are screening estimates; geometry thermal_mesh.py is the separate layout assessment.
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+* ---- 18a: BR1 +18V, everything on: all 64 lamps (2.5 ohm) + the JLC-3 +12V digital buck-boost at 0.75 A (as psu_maxload)
+V18a p18a q18a SIN(0 20.680000000000003 60)
+Rp18a p18a a18a 0.05
+Rq18a q18a b18a 0.05
+Vs18a a18a ab18a 0
+D118a ab18a dc18a DSCH20100
+D218a b18a dc18a DSCH20100
+D318a 0 ab18a DSCH20100
+D418a 0 b18a DSCH20100
+C18a dc18a 0 16000.0u
+Rl18a dc18a 0 2.5
+Bv12a v12a 0 V = 0.5*(1+tanh((v(dc18a)-8.5)*40)) * 12.0
+R12a v12a 0 16
+Bin12a dc18a 0 I = (v(v12a)*v(v12a)/16) / (0.88*max(v(dc18a),1))
+* ---- 18b: BR1 +18V, sustained design point 3.0 A DC (about half the lamps lit + the buck, or an LED-converted machine)
+V18b p18b q18b SIN(0 20.680000000000003 60)
+Rp18b p18b a18b 0.05
+Rq18b q18b b18b 0.05
+Vs18b a18b ab18b 0
+D118b ab18b dc18b DSCH20100
+D218b b18b dc18b DSCH20100
+D318b 0 ab18b DSCH20100
+D418b 0 b18b DSCH20100
+C18b dc18b 0 16000.0u
+Bl18b dc18b 0 I = (time > 60m) ? 3.0 : 0
+* ---- 18c: BR1 +18V, F114 rating 8 A DC (bound, informational)
+V18c p18c q18c SIN(0 20.680000000000003 60)
+Rp18c p18c a18c 0.05
+Rq18c q18c b18c 0.05
+Vs18c a18c ab18c 0
+D118c ab18c dc18c DSCH20100
+D218c b18c dc18c DSCH20100
+D318c 0 ab18c DSCH20100
+D418c 0 b18c DSCH20100
+C18c dc18c 0 16000.0u
+Bl18c dc18c 0 I = (time > 60m) ? 8.0 : 0
+* ---- 20a: BR4 +20V, sustained design point 2.5 A DC (flashers at ~50 % of the F111 rating during a lamp show)
+V20a p20a q20a SIN(0 24.860000000000003 60)
+Rp20a p20a a20a 0.05
+Rq20a q20a b20a 0.05
+Vs20a a20a ab20a 0
+D120a ab20a dc20a DSCH20100
+D220a b20a dc20a DSCH20100
+D320a 0 ab20a DSCH20100
+D420a 0 b20a DSCH20100
+C20a dc20a 0 8000.0u
+Bl20a dc20a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 20b: BR4 +20V, F111 rating 5 A DC (bound, informational)
+V20b p20b q20b SIN(0 24.860000000000003 60)
+Rp20b p20b a20b 0.05
+Rq20b q20b b20b 0.05
+Vs20b a20b ab20b 0
+D120b ab20b dc20b DSCH20100
+D220b b20b dc20b DSCH20100
+D320b 0 ab20b DSCH20100
+D420b 0 b20b DSCH20100
+C20b dc20b 0 8000.0u
+Bl20b dc20b 0 I = (time > 60m) ? 5.0 : 0
+* ---- 50a: BR3 +50V, sustained design point 3.0 A DC (a 14.5 ohm coil held 50 % of the time plus play; the flippers are rectified on the Fliptronic board from J104)
+V50a p50a q50a SIN(0 79.97000000000001 60)
+Rp50a p50a a50a 0.6
+Rq50a q50a b50a 0.6
+Vs50a a50a ab50a 0
+D150a ab50a dc50a DGBPC35
+D250a b50a dc50a DGBPC35
+D350a 0 ab50a DGBPC35
+D450a 0 b50a DGBPC35
+C50a dc50a 0 3520.0u
+R260a dc50a 0 7.5k
+Bl50a dc50a 0 I = (time > 60m) ? 3.0 : 0
+* ---- 50b: BR3 +50V, F112 rating 7 A DC (bound, informational)
+V50b p50b q50b SIN(0 79.97000000000001 60)
+Rp50b p50b a50b 0.6
+Rq50b q50b b50b 0.6
+Vs50b a50b ab50b 0
+D150b ab50b dc50b DGBPC35
+D250b b50b dc50b DGBPC35
+D350b 0 ab50b DGBPC35
+D450b 0 b50b DGBPC35
+C50b dc50b 0 3520.0u
+R260b dc50b 0 7.5k
+Bl50b dc50b 0 I = (time > 60m) ? 7.0 : 0
+* ---- 5a: BR2 +5V raw, +5V buck at its rated 3 A output (the converter limits this rail: F113 is never reached)
+V5a p5a q5a SIN(0 13.97 60)
+Rp5a p5a a5a 0.05
+Rq5a q5a b5a 0.05
+Vs5a a5a ab5a 0
+D15a ab5a dc5a DSCH20100
+D25a b5a dc5a DSCH20100
+D35a 0 ab5a DSCH20100
+D45a 0 b5a DSCH20100
+C5a dc5a 0 8000.0u
+Bv5a v5a 0 V = 0.5*(1+tanh((v(dc5a)-5.6)*40)) * min(5.10, max(0.97*v(dc5a) - 0.5, 0))
+R5a v5a 0 1.667
+Bin5a dc5a 0 I = (v(v5a)*v(v5a)/1.667) / (0.88*max(v(dc5a),1))
+* ---- 5b: BR2 +5V raw, +5V buck at the estimated real load 2.4 A (README: 2.2-2.6 A)
+V5b p5b q5b SIN(0 13.97 60)
+Rp5b p5b a5b 0.05
+Rq5b q5b b5b 0.05
+Vs5b a5b ab5b 0
+D15b ab5b dc5b DSCH20100
+D25b b5b dc5b DSCH20100
+D35b 0 ab5b DSCH20100
+D45b 0 b5b DSCH20100
+C5b dc5b 0 8000.0u
+Bv5b v5b 0 V = 0.5*(1+tanh((v(dc5b)-5.6)*40)) * min(5.10, max(0.97*v(dc5b) - 0.5, 0))
+R5b v5b 0 2.083
+Bin5b dc5b 0 I = (v(v5b)*v(v5b)/2.083) / (0.88*max(v(dc5b),1))
+* ---- 12a: BR5 +12V power, sustained design point 2.5 A DC (gun motors, optos, coin door, DMD - psu_12vu)
+V12a p12a q12a SIN(0 19.393 60)
+Rp12a p12a a12a 0.25
+Rq12a q12a b12a 0.25
+Vs12a a12a ab12a 0
+D112a ab12a dc12a DSCH20100
+D212a b12a dc12a DSCH20100
+D312a 0 ab12a DSCH20100
+D412a 0 b12a DSCH20100
+C12a dc12a 0 8000.0u
+Bl12a dc12a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 12b: BR5 +12V power, F116 rating 3 A DC (bound, informational)
+V12b p12b q12b SIN(0 19.393 60)
+Rp12b p12b a12b 0.25
+Rq12b q12b b12b 0.25
+Vs12b a12b ab12b 0
+D112b ab12b dc12b DSCH20100
+D212b b12b dc12b DSCH20100
+D312b 0 ab12b DSCH20100
+D412b 0 b12b DSCH20100
+C12b dc12b 0 8000.0u
+Bl12b dc12b 0 I = (time > 60m) ? 3.0 : 0
+.options reltol=0.002
+.tran 20u 300m uic
+.control
+run
+let i18a = i(Vs18a)
+let ia18a = abs(i18a)
+let pin18a = (v(a18a) - v(b18a)) * i18a
+let pout18a = v(dc18a) * ia18a
+meas tran iavg_18a AVG ia18a from=250m to=300m
+meas tran irms_18a RMS i18a from=250m to=300m
+meas tran pin_18a AVG pin18a from=250m to=300m
+meas tran pout_18a AVG pout18a from=250m to=300m
+meas tran vdc_18a AVG v(dc18a) from=250m to=300m
+let pmodel_18a = pin_18a - pout_18a
+let pd_18a = 0.425*iavg_18a/2 + 0.0088*irms_18a*irms_18a/2
+let pds_18a = 4*pd_18a
+let rthreq_18a = 60/pd_18a
+let tj_18a = 50 + (pd_18a+0.005*20.69)*32.2
+print pmodel_18a
+print pd_18a
+print pds_18a
+print rthreq_18a
+print tj_18a
+let i18b = i(Vs18b)
+let ia18b = abs(i18b)
+let pin18b = (v(a18b) - v(b18b)) * i18b
+let pout18b = v(dc18b) * ia18b
+meas tran iavg_18b AVG ia18b from=250m to=300m
+meas tran irms_18b RMS i18b from=250m to=300m
+meas tran pin_18b AVG pin18b from=250m to=300m
+meas tran pout_18b AVG pout18b from=250m to=300m
+meas tran vdc_18b AVG v(dc18b) from=250m to=300m
+let pmodel_18b = pin_18b - pout_18b
+let pd_18b = 0.425*iavg_18b/2 + 0.0088*irms_18b*irms_18b/2
+let pds_18b = 4*pd_18b
+let rthreq_18b = 60/pd_18b
+let tj_18b = 50 + (pd_18b+0.005*20.69)*32.2
+print pmodel_18b
+print pd_18b
+print pds_18b
+print rthreq_18b
+print tj_18b
+let i18c = i(Vs18c)
+let ia18c = abs(i18c)
+let pin18c = (v(a18c) - v(b18c)) * i18c
+let pout18c = v(dc18c) * ia18c
+meas tran iavg_18c AVG ia18c from=250m to=300m
+meas tran irms_18c RMS i18c from=250m to=300m
+meas tran pin_18c AVG pin18c from=250m to=300m
+meas tran pout_18c AVG pout18c from=250m to=300m
+meas tran vdc_18c AVG v(dc18c) from=250m to=300m
+let pmodel_18c = pin_18c - pout_18c
+let pd_18c = 0.425*iavg_18c/2 + 0.0088*irms_18c*irms_18c/2
+let pds_18c = 4*pd_18c
+let rthreq_18c = 60/pd_18c
+let tj_18c = 50 + (pd_18c+0.005*20.69)*32.2
+print pmodel_18c
+print pd_18c
+print pds_18c
+print rthreq_18c
+print tj_18c
+let i20a = i(Vs20a)
+let ia20a = abs(i20a)
+let pin20a = (v(a20a) - v(b20a)) * i20a
+let pout20a = v(dc20a) * ia20a
+meas tran iavg_20a AVG ia20a from=250m to=300m
+meas tran irms_20a RMS i20a from=250m to=300m
+meas tran pin_20a AVG pin20a from=250m to=300m
+meas tran pout_20a AVG pout20a from=250m to=300m
+meas tran vdc_20a AVG v(dc20a) from=250m to=300m
+let pmodel_20a = pin_20a - pout_20a
+let pd_20a = 0.425*iavg_20a/2 + 0.0088*irms_20a*irms_20a/2
+let pds_20a = 4*pd_20a
+let rthreq_20a = 60/pd_20a
+let tj_20a = 50 + pd_20a*36.0
+print pmodel_20a
+print pd_20a
+print pds_20a
+print rthreq_20a
+print tj_20a
+let i20b = i(Vs20b)
+let ia20b = abs(i20b)
+let pin20b = (v(a20b) - v(b20b)) * i20b
+let pout20b = v(dc20b) * ia20b
+meas tran iavg_20b AVG ia20b from=250m to=300m
+meas tran irms_20b RMS i20b from=250m to=300m
+meas tran pin_20b AVG pin20b from=250m to=300m
+meas tran pout_20b AVG pout20b from=250m to=300m
+meas tran vdc_20b AVG v(dc20b) from=250m to=300m
+let pmodel_20b = pin_20b - pout_20b
+let pd_20b = 0.425*iavg_20b/2 + 0.0088*irms_20b*irms_20b/2
+let pds_20b = 4*pd_20b
+let rthreq_20b = 60/pd_20b
+let tj_20b = 50 + pd_20b*36.0
+print pmodel_20b
+print pd_20b
+print pds_20b
+print rthreq_20b
+print tj_20b
+let i50a = i(Vs50a)
+let ia50a = abs(i50a)
+let pin50a = (v(a50a) - v(b50a)) * i50a
+let pout50a = v(dc50a) * ia50a
+meas tran iavg_50a AVG ia50a from=250m to=300m
+meas tran irms_50a RMS i50a from=250m to=300m
+meas tran pin_50a AVG pin50a from=250m to=300m
+meas tran pout_50a AVG pout50a from=250m to=300m
+meas tran vdc_50a AVG v(dc50a) from=250m to=300m
+let pmodel_50a = pin_50a - pout_50a
+let pds_50a = 2*(0.8*iavg_50a + 0.017*irms_50a*irms_50a)
+let tj_50a = 50 + pds_50a*11.8
+print pmodel_50a
+print pds_50a
+print tj_50a
+let i50b = i(Vs50b)
+let ia50b = abs(i50b)
+let pin50b = (v(a50b) - v(b50b)) * i50b
+let pout50b = v(dc50b) * ia50b
+meas tran iavg_50b AVG ia50b from=250m to=300m
+meas tran irms_50b RMS i50b from=250m to=300m
+meas tran pin_50b AVG pin50b from=250m to=300m
+meas tran pout_50b AVG pout50b from=250m to=300m
+meas tran vdc_50b AVG v(dc50b) from=250m to=300m
+let pmodel_50b = pin_50b - pout_50b
+let pds_50b = 2*(0.8*iavg_50b + 0.017*irms_50b*irms_50b)
+let tj_50b = 50 + pds_50b*11.8
+print pmodel_50b
+print pds_50b
+print tj_50b
+let i5a = i(Vs5a)
+let ia5a = abs(i5a)
+let pin5a = (v(a5a) - v(b5a)) * i5a
+let pout5a = v(dc5a) * ia5a
+meas tran iavg_5a AVG ia5a from=250m to=300m
+meas tran irms_5a RMS i5a from=250m to=300m
+meas tran pin_5a AVG pin5a from=250m to=300m
+meas tran pout_5a AVG pout5a from=250m to=300m
+meas tran vdc_5a AVG v(dc5a) from=250m to=300m
+let pmodel_5a = pin_5a - pout_5a
+let pd_5a = 0.425*iavg_5a/2 + 0.0088*irms_5a*irms_5a/2
+let pds_5a = 4*pd_5a
+let rthreq_5a = 60/pd_5a
+let tj_5a = 50 + pd_5a*41.0
+print pmodel_5a
+print pd_5a
+print pds_5a
+print rthreq_5a
+print tj_5a
+let i5b = i(Vs5b)
+let ia5b = abs(i5b)
+let pin5b = (v(a5b) - v(b5b)) * i5b
+let pout5b = v(dc5b) * ia5b
+meas tran iavg_5b AVG ia5b from=250m to=300m
+meas tran irms_5b RMS i5b from=250m to=300m
+meas tran pin_5b AVG pin5b from=250m to=300m
+meas tran pout_5b AVG pout5b from=250m to=300m
+meas tran vdc_5b AVG v(dc5b) from=250m to=300m
+let pmodel_5b = pin_5b - pout_5b
+let pd_5b = 0.425*iavg_5b/2 + 0.0088*irms_5b*irms_5b/2
+let pds_5b = 4*pd_5b
+let rthreq_5b = 60/pd_5b
+let tj_5b = 50 + pd_5b*41.0
+print pmodel_5b
+print pd_5b
+print pds_5b
+print rthreq_5b
+print tj_5b
+let i12a = i(Vs12a)
+let ia12a = abs(i12a)
+let pin12a = (v(a12a) - v(b12a)) * i12a
+let pout12a = v(dc12a) * ia12a
+meas tran iavg_12a AVG ia12a from=250m to=300m
+meas tran irms_12a RMS i12a from=250m to=300m
+meas tran pin_12a AVG pin12a from=250m to=300m
+meas tran pout_12a AVG pout12a from=250m to=300m
+meas tran vdc_12a AVG v(dc12a) from=250m to=300m
+let pmodel_12a = pin_12a - pout_12a
+let pd_12a = 0.425*iavg_12a/2 + 0.0088*irms_12a*irms_12a/2
+let pds_12a = 4*pd_12a
+let rthreq_12a = 60/pd_12a
+let tj_12a = 50 + pd_12a*41.0
+print pmodel_12a
+print pd_12a
+print pds_12a
+print rthreq_12a
+print tj_12a
+let i12b = i(Vs12b)
+let ia12b = abs(i12b)
+let pin12b = (v(a12b) - v(b12b)) * i12b
+let pout12b = v(dc12b) * ia12b
+meas tran iavg_12b AVG ia12b from=250m to=300m
+meas tran irms_12b RMS i12b from=250m to=300m
+meas tran pin_12b AVG pin12b from=250m to=300m
+meas tran pout_12b AVG pout12b from=250m to=300m
+meas tran vdc_12b AVG v(dc12b) from=250m to=300m
+let pmodel_12b = pin_12b - pout_12b
+let pd_12b = 0.425*iavg_12b/2 + 0.0088*irms_12b*irms_12b/2
+let pds_12b = 4*pd_12b
+let rthreq_12b = 60/pd_12b
+let tj_12b = 50 + pd_12b*41.0
+print pmodel_12b
+print pd_12b
+print pds_12b
+print rthreq_12b
+print tj_12b
+
+.endc
+.end

@@ -1,0 +1,28 @@
+High rail 50 Hz 0.9 line, 3 A continuous engineering load
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/tools/spice/models.lib
+Vsec a b SIN(0 65.43 50)
+Ra a aa .6
+Rb b bb .6
+Vf aa ab 0
+D1 ab dc DGBPC35
+D2 bb dc DGBPC35
+D3 0 ab DGBPC35
+D4 0 bb DGBPC35
+Resra dc ca 0.08
+Resrb dc cb 0.16
+C8 ca 0 2640u
+C32 cb 0 1760u
+Bload dc 0 I=ternary_fcn(time>.1,3,0)*tanh(v(dc))
+.save all @c8[i] @c32[i]
+.options method=gear reltol=.001 minbreak=1p klu
+.tran 10u 1 0 10u uic
+.control
+run
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran ripple_c8 RMS @c8[i] from=.8 to=1
+meas tran ripple_c32 RMS @c32[i] from=.8 to=1
+meas tran fuse_rms RMS i(Vf) from=.8 to=1
+meas tran cap_peak MAX v(dc)
+.endc
+.end

@@ -1,0 +1,215 @@
+Bridge loss sensitivity: BR1 STPS20M100ST TO220 with individual Boyd 577202B00000G sinks. Other low-voltage bridges STPS20M100SG D2PAK. 50 C ambient. Electrical winding/load assumptions remain to be measured. D2PAK lumped temperatures are screening estimates; geometry thermal_mesh.py is the separate layout assessment.
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/tools/spice/models.lib
+* ---- 18a: BR1 +18V, everything on: all 64 lamps (2.5 ohm) + the +12V digital buck at 0.75 A (as psu_maxload)
+V18a p18a q18a SIN(0 20.680000000000003 50)
+Rp18a p18a a18a 0.05
+Rq18a q18a b18a 0.05
+Vs18a a18a ab18a 0
+D118a ab18a dc18a J100MBR
+D218a b18a dc18a J100MBR
+D318a 0 ab18a J100MBR
+D418a 0 b18a J100MBR
+Resr18a_c6 dc18a r18a_c6 0.05
+Vc18a_c6 r18a_c6 c18a_c6 0
+C18a_c6 c18a_c6 0 4700.0u
+Resr18a_c60 dc18a r18a_c60 0.05
+Vc18a_c60 r18a_c60 c18a_c60 0
+C18a_c60 c18a_c60 0 4700.0u
+Resr18a_c7 dc18a r18a_c7 0.05
+Vc18a_c7 r18a_c7 c18a_c7 0
+C18a_c7 c18a_c7 0 4700.0u
+Resr18a_c61 dc18a r18a_c61 0.05
+Vc18a_c61 r18a_c61 c18a_c61 0
+C18a_c61 c18a_c61 0 4700.0u
+Rl18a dc18a 0 2.5
+Bv12a v12a 0 V = 0.5*(1+tanh((v(dc18a)-8.5)*40)) * 12.0
+R12a v12a 0 16
+Bin12a dc18a 0 I = (v(v12a)*v(v12a)/16) / (0.88*max(v(dc18a),1))
+* ---- 18b: BR1 +18V, sustained design point 3.0 A DC (about half the lamps lit + the buck, or an LED-converted machine)
+V18b p18b q18b SIN(0 20.680000000000003 50)
+Rp18b p18b a18b 0.05
+Rq18b q18b b18b 0.05
+Vs18b a18b ab18b 0
+D118b ab18b dc18b J100MBR
+D218b b18b dc18b J100MBR
+D318b 0 ab18b J100MBR
+D418b 0 b18b J100MBR
+Resr18b_c6 dc18b r18b_c6 0.05
+Vc18b_c6 r18b_c6 c18b_c6 0
+C18b_c6 c18b_c6 0 4700.0u
+Resr18b_c60 dc18b r18b_c60 0.05
+Vc18b_c60 r18b_c60 c18b_c60 0
+C18b_c60 c18b_c60 0 4700.0u
+Resr18b_c7 dc18b r18b_c7 0.05
+Vc18b_c7 r18b_c7 c18b_c7 0
+C18b_c7 c18b_c7 0 4700.0u
+Resr18b_c61 dc18b r18b_c61 0.05
+Vc18b_c61 r18b_c61 c18b_c61 0
+C18b_c61 c18b_c61 0 4700.0u
+Bl18b dc18b 0 I = (time > 60m) ? 3.0 : 0
+* ---- 18c: BR1 +18V, F114 rating 8 A DC (bound, informational)
+V18c p18c q18c SIN(0 20.680000000000003 50)
+Rp18c p18c a18c 0.05
+Rq18c q18c b18c 0.05
+Vs18c a18c ab18c 0
+D118c ab18c dc18c J100MBR
+D218c b18c dc18c J100MBR
+D318c 0 ab18c J100MBR
+D418c 0 b18c J100MBR
+C18c dc18c 0 20000u
+Bl18c dc18c 0 I = (time > 60m) ? 8.0 : 0
+* ---- 20a: BR4 +20V, sustained design point 2.5 A DC (flashers at ~50 % of the F111 rating during a lamp show)
+V20a p20a q20a SIN(0 24.860000000000003 50)
+Rp20a p20a a20a 0.05
+Rq20a q20a b20a 0.05
+Vs20a a20a ab20a 0
+D120a ab20a dc20a J100ON20H
+D220a b20a dc20a J100ON20H
+D320a 0 ab20a J100ON20H
+D420a 0 b20a J100ON20H
+Resr20a_c11 dc20a r20a_c11 0.05
+Vc20a_c11 r20a_c11 c20a_c11 0
+C20a_c11 c20a_c11 0 4700.0u
+Resr20a_c62 dc20a r20a_c62 0.05
+Vc20a_c62 r20a_c62 c20a_c62 0
+C20a_c62 c20a_c62 0 4700.0u
+Bl20a dc20a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 20b: BR4 +20V, F111 rating 5 A DC (bound, informational)
+V20b p20b q20b SIN(0 24.860000000000003 50)
+Rp20b p20b a20b 0.05
+Rq20b q20b b20b 0.05
+Vs20b a20b ab20b 0
+D120b ab20b dc20b J100ON20H
+D220b b20b dc20b J100ON20H
+D320b 0 ab20b J100ON20H
+D420b 0 b20b J100ON20H
+Resr20b_c11 dc20b r20b_c11 0.05
+Vc20b_c11 r20b_c11 c20b_c11 0
+C20b_c11 c20b_c11 0 4700.0u
+Resr20b_c62 dc20b r20b_c62 0.05
+Vc20b_c62 r20b_c62 c20b_c62 0
+C20b_c62 c20b_c62 0 4700.0u
+Bl20b dc20b 0 I = (time > 60m) ? 5.0 : 0
+* ---- 50a: BR3 +50V, sustained design point 3.0 A DC (a 14.5 ohm coil held 50 % of the time plus play; the flippers are rectified on the Fliptronic board from J104)
+V50a p50a q50a SIN(0 79.97000000000001 50)
+Rp50a p50a a50a 0.6
+Rq50a q50a b50a 0.6
+Vs50a a50a ab50a 0
+D150a ab50a dc50a DGBPC35
+D250a b50a dc50a DGBPC35
+D350a 0 ab50a DGBPC35
+D450a 0 b50a DGBPC35
+C50a dc50a 0 4400u
+R260a dc50a 0 7.5k
+Bl50a dc50a 0 I = (time > 60m) ? 3.0 : 0
+* ---- 50b: BR3 +50V, F112 rating 7 A DC (bound, informational)
+V50b p50b q50b SIN(0 79.97000000000001 50)
+Rp50b p50b a50b 0.6
+Rq50b q50b b50b 0.6
+Vs50b a50b ab50b 0
+D150b ab50b dc50b DGBPC35
+D250b b50b dc50b DGBPC35
+D350b 0 ab50b DGBPC35
+D450b 0 b50b DGBPC35
+C50b dc50b 0 4400u
+R260b dc50b 0 7.5k
+Bl50b dc50b 0 I = (time > 60m) ? 7.0 : 0
+* ---- 5a: BR2 +5V raw, +5V buck at its rated 3 A output (the converter limits this rail: F113 is never reached)
+V5a p5a q5a SIN(0 13.97 50)
+Rp5a p5a a5a 0.05
+Rq5a q5a b5a 0.05
+Vs5a a5a ab5a 0
+D15a ab5a dc5a J100ON20H
+D25a b5a dc5a J100ON20H
+D35a 0 ab5a J100ON20H
+D45a 0 b5a J100ON20H
+Resr5a_c5 dc5a r5a_c5 0.05
+Vc5a_c5 r5a_c5 c5a_c5 0
+C5a_c5 c5a_c5 0 4700.0u
+Resr5a_c59 dc5a r5a_c59 0.05
+Vc5a_c59 r5a_c59 c5a_c59 0
+C5a_c59 c5a_c59 0 4700.0u
+Bv5a v5a 0 V = 0.5*(1+tanh((v(dc5a)-5.6)*40)) * min(5.10, max(0.97*v(dc5a) - 0.5, 0))
+R5a v5a 0 1.667
+Bin5a dc5a 0 I = (v(v5a)*v(v5a)/1.667) / (0.88*max(v(dc5a),1))
+* ---- 5b: BR2 +5V raw, +5V buck at the estimated real load 2.4 A (README: 2.2-2.6 A)
+V5b p5b q5b SIN(0 13.97 50)
+Rp5b p5b a5b 0.05
+Rq5b q5b b5b 0.05
+Vs5b a5b ab5b 0
+D15b ab5b dc5b J100ON20H
+D25b b5b dc5b J100ON20H
+D35b 0 ab5b J100ON20H
+D45b 0 b5b J100ON20H
+C5b dc5b 0 10000u
+Bv5b v5b 0 V = 0.5*(1+tanh((v(dc5b)-5.6)*40)) * min(5.10, max(0.97*v(dc5b) - 0.5, 0))
+R5b v5b 0 2.083
+Bin5b dc5b 0 I = (v(v5b)*v(v5b)/2.083) / (0.88*max(v(dc5b),1))
+* ---- 12a: BR5 +12V power, sustained design point 2.5 A DC (gun motors, optos, coin door, DMD - psu_12vu)
+V12a p12a q12a SIN(0 19.393 50)
+Rp12a p12a a12a 0.25
+Rq12a q12a b12a 0.25
+Vs12a a12a ab12a 0
+D112a ab12a dc12a J100ON20H
+D212a b12a dc12a J100ON20H
+D312a 0 ab12a J100ON20H
+D412a 0 b12a J100ON20H
+Resr12a_c30 dc12a r12a_c30 0.05
+Vc12a_c30 r12a_c30 c12a_c30 0
+C12a_c30 c12a_c30 0 4700.0u
+Resr12a_c63 dc12a r12a_c63 0.05
+Vc12a_c63 r12a_c63 c12a_c63 0
+C12a_c63 c12a_c63 0 4700.0u
+Bl12a dc12a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 12b: BR5 +12V power, F116 rating 3 A DC (bound, informational)
+V12b p12b q12b SIN(0 19.393 50)
+Rp12b p12b a12b 0.25
+Rq12b q12b b12b 0.25
+Vs12b a12b ab12b 0
+D112b ab12b dc12b J100ON20H
+D212b b12b dc12b J100ON20H
+D312b 0 ab12b J100ON20H
+D412b 0 b12b J100ON20H
+C12b dc12b 0 10000u
+Bl12b dc12b 0 I = (time > 60m) ? 3.0 : 0
+
+.model J100ON20H D(Is=2e-7 N=1.05 Rs=.0045 Cjo=1400p Bv=100 Ibv=1m)
+
+.options reltol=0.002 method=gear klu itl4=100
+.tran 10u 1 0 10u uic
+.control
+run
+meas tran rms_18a_c6 RMS i(Vc18a_c6) from=800m to=1
+meas tran dc_18a_c6 AVG i(Vc18a_c6) from=800m to=1
+meas tran rms_18a_c60 RMS i(Vc18a_c60) from=800m to=1
+meas tran dc_18a_c60 AVG i(Vc18a_c60) from=800m to=1
+meas tran rms_18a_c7 RMS i(Vc18a_c7) from=800m to=1
+meas tran dc_18a_c7 AVG i(Vc18a_c7) from=800m to=1
+meas tran rms_18a_c61 RMS i(Vc18a_c61) from=800m to=1
+meas tran dc_18a_c61 AVG i(Vc18a_c61) from=800m to=1
+meas tran rms_18b_c6 RMS i(Vc18b_c6) from=800m to=1
+meas tran dc_18b_c6 AVG i(Vc18b_c6) from=800m to=1
+meas tran rms_18b_c60 RMS i(Vc18b_c60) from=800m to=1
+meas tran dc_18b_c60 AVG i(Vc18b_c60) from=800m to=1
+meas tran rms_18b_c7 RMS i(Vc18b_c7) from=800m to=1
+meas tran dc_18b_c7 AVG i(Vc18b_c7) from=800m to=1
+meas tran rms_18b_c61 RMS i(Vc18b_c61) from=800m to=1
+meas tran dc_18b_c61 AVG i(Vc18b_c61) from=800m to=1
+meas tran rms_20a_c11 RMS i(Vc20a_c11) from=800m to=1
+meas tran dc_20a_c11 AVG i(Vc20a_c11) from=800m to=1
+meas tran rms_20a_c62 RMS i(Vc20a_c62) from=800m to=1
+meas tran dc_20a_c62 AVG i(Vc20a_c62) from=800m to=1
+meas tran rms_20b_c11 RMS i(Vc20b_c11) from=800m to=1
+meas tran dc_20b_c11 AVG i(Vc20b_c11) from=800m to=1
+meas tran rms_20b_c62 RMS i(Vc20b_c62) from=800m to=1
+meas tran dc_20b_c62 AVG i(Vc20b_c62) from=800m to=1
+meas tran rms_5a_c5 RMS i(Vc5a_c5) from=800m to=1
+meas tran dc_5a_c5 AVG i(Vc5a_c5) from=800m to=1
+meas tran rms_5a_c59 RMS i(Vc5a_c59) from=800m to=1
+meas tran dc_5a_c59 AVG i(Vc5a_c59) from=800m to=1
+meas tran rms_12a_c30 RMS i(Vc12a_c30) from=800m to=1
+meas tran dc_12a_c30 AVG i(Vc12a_c30) from=800m to=1
+meas tran rms_12a_c63 RMS i(Vc12a_c63) from=800m to=1
+meas tran dc_12a_c63 AVG i(Vc12a_c63) from=800m to=1
+.endc
+.end

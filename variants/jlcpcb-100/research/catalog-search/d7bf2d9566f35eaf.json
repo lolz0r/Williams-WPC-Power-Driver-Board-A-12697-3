@@ -1,0 +1,192 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "0234007",
+    "componentLibraryType": "",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:31:19.859619+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 1,
+        "list": [
+          {
+            "componentId": 4081848,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Through Hole Resistors",
+            "erpComponentName": "4000MΩ ±1%",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/through-hole-resistors_ohmite-mox-400234007fe_C3515310.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 9.7243
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 9.7243
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 9.7243
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 3.7628
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 3.631
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 3.5659
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 3.435
+              },
+              {
+                "startNumber": 200,
+                "endNumber": 499,
+                "productPrice": 3.6247
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 199,
+                "productPrice": 9.3675
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 9.3675
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 3.4978
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 9.3675
+              }
+            ],
+            "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
+            "secondSortAccessId": "9ef82dc9906941e99c40ada887595824",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "Ohmite-MOX400234007FE/C3515310",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 1,
+            "shopCostPrice": 0.0,
+            "preMinPurchaseNum": 1,
+            "minPurchaseNum": 1,
+            "initialPrice": 9.7243,
+            "componentCode": "C3515310",
+            "componentBrandEn": "Ohmite",
+            "componentModelEn": "MOX-400234007FE",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": "",
+            "dataManualFileAccessId": "",
+            "dataManualFileAccessIdUrl": null,
+            "dataManualOfficialLink": "",
+            "componentName": "Ohmite MOX-400234007FE",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "-",
+            "describe": "4000MΩ ±1% - Through Hole Resistors",
+            "attributes": [
+              {
+                "attribute_name_en": "Resistance",
+                "attribute_value_name": "4000MΩ"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±1%"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Through Hole Resistors",
+            "secondSortName": "Resistors",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "MOX-<span class='lucene_highlight_class'>400234007</span>FE",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 0,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "0234007"
+    },
+    "message": null
+  }
+}

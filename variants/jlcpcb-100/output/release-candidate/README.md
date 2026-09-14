@@ -1,0 +1,13 @@
+# JLC-100 engineering prototype package
+
+For complete SMT and through-hole electronics assembly, upload `jlcpcb-assembly/BOM.csv` and `jlcpcb-assembly/CPL.csv` with `gerbers-and-drills.zip`. The matching pair contains all 440 electronic pieces per board (345 SMT plus 95 THT/inserted parts). Use `jlcpcb-assembly/PCBA-remark.txt` and `placement-map.csv` for separate fuse holders/cartridges and prepared connectors. Read `docs/JLCPCB_UPLOAD.md` before confirming the assembly preview. JLCPCB live import/assembly acceptance has not been tested here.
+
+The complete September 14 orientation audit changes 76 SMT and 18 further connector angles relative to the last uploaded CPL. U1=90°, U2/U3=270°, J110=180° (inward friction wall), J113 remains 90°. `jlcpcb-assembly/connector-orientation-guide.pdf` shows all 39 purchased headers, physical pin 1, tab/notch direction and removed key posts. `component-orientation-check.csv` covers all 440 entries / 69 purchased codes. `orientation-change-log.csv` records the exact delta. The corrected native connector models retain unused posts and remove only the explicit key post.
+
+Unresolved supplier data is explicitly flagged: 15 headers have conflicting pad/model orientations, ten C505166 headers lack 3D housings, three C592598 headers have no public library, D101–D104 have invalid supplier 3D frames, and BR3 requires native polarity/formed-lead placement. The assembler must resolve these against the native guide before manufacture. J120/J121/J126 also require selection of the matched C592598 row and manual preparation. See `docs/CONNECTOR_PREVIEW_REVIEW.md`.
+
+`bom/all-components.csv` is the human-readable complete assembly record, including external heatsinks/fasteners/paste. The 100-board purchasing list is `bom/jlc-electronics-purchase.csv`. These procurement records are not the upload BOM. Heatsinks and fasteners also appear in CAD assembly models; their procurement and fitting require a manual quotation. SMT-only exports remain available under `bom/jlc-smt-bom.csv` and `assembly/jlc-smt-cpl.csv`.
+
+Read `READINESS.json`, `docs/INVENTORY_AND_ASSEMBLY.md`, `docs/SPICE_SCOPE.md` and `reports/verification-manifest.json`. This package passes the recorded software checks; it is not qualified for an untested 100-board production run. Stock is a public dated snapshot, not a reservation. No order has been placed.
+
+The `cad/` project contains the actual selected parts, including all through-hole parts, individually annotated parallel capacitors, fuseholder fields and the two-piece J115. Library footprints/models are local. The accepted simulation reports retain their original run hashes and explicit engineering-model limitations.

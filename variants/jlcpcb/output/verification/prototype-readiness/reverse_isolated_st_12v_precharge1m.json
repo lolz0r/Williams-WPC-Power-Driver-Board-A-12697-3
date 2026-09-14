@@ -1,0 +1,95 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/reverse_isolated_st_12v_precharge1m.cir",
+  "deck_sha256": "3041bc3a04a2ee918b93de1b7319647796807e8b1de5674502d5d878f7022749",
+  "elapsed_s": 26.284362875999932,
+  "wall_limit_s": 180.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [
+    "stderr no such vector as 'i(vbypass)'",
+    "stderr meas tran bypass_peak max i(vbypass) failed!",
+    "stderr Error: RHS \"v(bypass,vinf)*i(vbypass)\" invalid",
+    "stderr no such vector as 'bypass_power'",
+    "stderr meas tran bypass_energy integ bypass_power failed!"
+  ],
+  "measurements": {
+    "sim_end": 0.001,
+    "output_peak": 11.6243,
+    "output_min": 7.71135,
+    "inductor_peak": 0.0200291,
+    "inductor_min": -0.694868,
+    "body_reverse_peak": 0.694829,
+    "input_min": 2.25756e-07
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "output_peak": {
+      "value": 11.6243,
+      "min": 0,
+      "max": 12.6,
+      "passed": true
+    },
+    "output_min": {
+      "value": 7.71135,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 0.0200291,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -0.694868,
+      "min": -1,
+      "max": 10,
+      "passed": true
+    },
+    "sim_end": {
+      "value": 0.001,
+      "min": 0.00099999,
+      "max": 0.00100001,
+      "passed": true
+    }
+  },
+  "passed": false,
+  "kind": "reverse",
+  "pcb_changed": false,
+  "candidate_only": true,
+  "changes": [
+    "Unbuilt candidate: DSCH20100 from vout to input rail; measure bypass current and energy",
+    "Added input blocking diode after the raw reservoir, before local 20 uF and U20/U21",
+    "Transient ends at 0.001 seconds",
+    "Initial reverse-stress screen only; no recovery or complete-sequence claim"
+  ],
+  "arguments": {
+    "kind": "reverse",
+    "name": "reverse_isolated_st_12v_precharge1m",
+    "wall_seconds": 180.0,
+    "step_us": 1,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "12v",
+    "bypass": "output",
+    "stop_ms": 1.0,
+    "lamp_form": "current",
+    "gate_series_collapse": false,
+    "raw_reservoir_uf": null,
+    "compensation_nf": null,
+    "flasher_input": false,
+    "stress_only": true,
+    "isolate_input": true,
+    "protection_model": "DSCH20100"
+  },
+  "required_end_s": 0.001,
+  "base_deck_sha256": "90735c46f9ee71647bad548ea5f6e4bc25d11858c44735ab034e9e6a8695dc28",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

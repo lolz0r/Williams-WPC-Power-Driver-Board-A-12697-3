@@ -1,0 +1,403 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "10uF 50V",
+    "componentLibraryType": "base",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:01:32.829134+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 2,
+        "list": [
+          {
+            "componentId": 14236,
+            "componentLibraryType": "base",
+            "stockCount": 3297641,
+            "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+            "erpComponentName": "10uF ±10% 50V",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_samsung-electro-mechanics-cl31a106kbhnnne_C13585.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 99,
+                "productPrice": 0.2658
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 299,
+                "productPrice": 0.203
+              },
+              {
+                "startNumber": 300,
+                "endNumber": 1999,
+                "productPrice": 0.1724
+              },
+              {
+                "startNumber": 2000,
+                "endNumber": 3999,
+                "productPrice": 0.1451
+              },
+              {
+                "startNumber": 4000,
+                "endNumber": 9999,
+                "productPrice": 0.1376
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": -1,
+                "productPrice": 0.133
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 10000,
+                "endNumber": -1,
+                "productPrice": 0.1281
+              },
+              {
+                "startNumber": 4000,
+                "endNumber": 9999,
+                "productPrice": 0.1325
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 99,
+                "productPrice": 0.2561
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 299,
+                "productPrice": 0.1956
+              },
+              {
+                "startNumber": 2000,
+                "endNumber": 3999,
+                "productPrice": 0.1397
+              },
+              {
+                "startNumber": 300,
+                "endNumber": 1999,
+                "productPrice": 0.1661
+              }
+            ],
+            "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+            "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
+            "canPresaleNumber": 2669389,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "14236-CL31A106KBHNNNE/C13585",
+            "leastPatchNumber": 5,
+            "lossNumber": 4,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": true,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 2000,
+            "shopCostPrice": 0.76951,
+            "preMinPurchaseNum": 34,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.2658,
+            "componentCode": "C13585",
+            "componentBrandEn": "Samsung Electro-Mechanics",
+            "componentModelEn": "CL31A106KBHNNNE",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552476927328862208-C13585-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040132Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d5af10da1f7413cf589ca8556b31647d452dd40e49384e23a6976f91ad206522",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL31A106KBHNNNE_C13585.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579707359431741440-C13585.pdf?response-content-disposition=attachment%3B%20filename%3DC13585.pdf%3B%20filename%2A%3DUTF-8%27%27C13585.pdf&x-oss-date=20260914T040132Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=384be9e3688dd0a3d551ec01e2cdc846c669b7d6f6353c38d4c3fe9c141d5cc1",
+            "dataManualOfficialLink": "",
+            "componentName": "Samsung Electro-Mechanics CL31A106KBHNNNE",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552476927991427073-C13585-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040132Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=67865b46e7124402a57147bc56d464732929e48bf6bd803e3e40a5d5b45e99fa",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "1206",
+            "describe": "10uF 50V X5R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+            "attributes": [
+              {
+                "attribute_value_name_high": "<span class='lucene_highlight_class'>50V</span>",
+                "attribute_name_en": "Voltage Rating",
+                "attribute_value_name": "50V"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±10%"
+              },
+              {
+                "attribute_value_name_high": "<span class='lucene_highlight_class'>10uF</span>",
+                "attribute_name_en": "Capacitance",
+                "attribute_value_name": "10uF"
+              },
+              {
+                "attribute_name_en": "Temperature Coefficient",
+                "attribute_value_name": "X5R"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+            "secondSortName": "Capacitors",
+            "componentBrandHigh": null,
+            "remarkHigh": "<span class='lucene_highlight_class'>10uF</span> <span class='lucene_highlight_class'>50V</span> X5R ±10% 1206 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+            "componentModelHigh": null,
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 439567,
+            "componentLibraryType": "base",
+            "stockCount": 1593754,
+            "componentTypeEn": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+            "erpComponentName": "10uF ±10% 50V",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/multilayer-ceramic-capacitors-mlcc-smd-smt_murata-electronics-grm21br61h106ke43l_C440198.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 49,
+                "productPrice": 0.2497
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 149,
+                "productPrice": 0.2154
+              },
+              {
+                "startNumber": 150,
+                "endNumber": 499,
+                "productPrice": 0.1988
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 2999,
+                "productPrice": 0.1838
+              },
+              {
+                "startNumber": 3000,
+                "endNumber": 5999,
+                "productPrice": 0.1757
+              },
+              {
+                "startNumber": 6000,
+                "endNumber": -1,
+                "productPrice": 0.1732
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 3000,
+                "endNumber": 5999,
+                "productPrice": 0.1692
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 149,
+                "productPrice": 0.2075
+              },
+              {
+                "startNumber": 6000,
+                "endNumber": -1,
+                "productPrice": 0.1668
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 2999,
+                "productPrice": 0.1771
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 49,
+                "productPrice": 0.2405
+              },
+              {
+                "startNumber": 150,
+                "endNumber": 499,
+                "productPrice": 0.1915
+              }
+            ],
+            "firstSortAccessId": "1a513feddccb44f5bf49e1f5b9e5ffdb",
+            "secondSortAccessId": "7e74f1d772c74e3d99bc4868d21962f2",
+            "canPresaleNumber": 1224807,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "439567-GRM21BR61H106KE43L/C440198",
+            "leastPatchNumber": 5,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": true,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 3000,
+            "shopCostPrice": 0.4205,
+            "preMinPurchaseNum": 36,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.2497,
+            "componentCode": "C440198",
+            "componentBrandEn": "Murata Electronics",
+            "componentModelEn": "GRM21BR61H106KE43L",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583023751760400384-C440198/C440198-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T040132Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d53b6eda2d2dd44f8c1f2e83f0a4384ad3f9aa1fd2e9782a13761b0c1cd566c9",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2411041759_Murata-Electronics-GRM21BR61H106KE43L_C440198.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588884955174330368-C440198.pdf?response-content-disposition=attachment%3B%20filename%3DC440198.pdf%3B%20filename%2A%3DUTF-8%27%27C440198.pdf&x-oss-date=20260914T040132Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=ee574a7ea6227163d7a80622cf09fc175c858757e530b29b2e3e2b5410ebb172",
+            "dataManualOfficialLink": "",
+            "componentName": "muRata GRM21BR61H106KE43L",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583023752674217984-C440198/C440198-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T040132Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=14955e42b927b9c91885a9b1246991b889c7fc9b56e9b7fd92475f3055ff6c03",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "0805",
+            "describe": "10uF 50V X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+            "attributes": [
+              {
+                "attribute_value_name_high": "<span class='lucene_highlight_class'>50V</span>",
+                "attribute_name_en": "Voltage Rating",
+                "attribute_value_name": "50V"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±10%"
+              },
+              {
+                "attribute_value_name_high": "<span class='lucene_highlight_class'>10uF</span>",
+                "attribute_name_en": "Capacitance",
+                "attribute_value_name": "10uF"
+              },
+              {
+                "attribute_name_en": "Temperature Coefficient",
+                "attribute_value_name": "X5R"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Multilayer Ceramic Capacitors MLCC - SMD/SMT",
+            "secondSortName": "Capacitors",
+            "componentBrandHigh": null,
+            "remarkHigh": "<span class='lucene_highlight_class'>10uF</span> <span class='lucene_highlight_class'>50V</span> X5R ±10% 0805 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+            "componentModelHigh": null,
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "10uF 50V"
+    },
+    "message": null
+  }
+}

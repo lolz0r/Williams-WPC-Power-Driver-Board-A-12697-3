@@ -1,0 +1,23 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/isolated_added_reservoir_startup.cir",
+  "deck_sha256": "f27f3770f30f4c26d5f68121206d5b2fff3b856a825fa863bdd17bce21c43388",
+  "elapsed_s": 764.539220616,
+  "wall_limit_s": 3600.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.03,
+    "output_peak": 12.6015,
+    "output_min": -1.72784e-08,
+    "inductor_peak": 4.62664,
+    "inductor_min": -0.000500926,
+    "isolation_diode_peak": 19.342,
+    "recovery_min": 11.8022,
+    "recovery_max": 12.6015,
+    "recovery_avg": 12.1185,
+    "headroom_min": 11.8873
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion"
+}

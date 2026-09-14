@@ -1,0 +1,691 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-13T22:32:32",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Library symbol issue",
+            "key": "lib_symbol_issues"
+        },
+        {
+            "description": "Footprint link issue",
+            "key": "footprint_link_issues"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71",
+            "violations": [
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x07' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J101 [Connector_Generic_Conn_01x07]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 0.5969
+                            },
+                            "uuid": "8a839fa3-83af-40bc-8c30-0faa617b622a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J102 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 1.1049
+                            },
+                            "uuid": "0cfb5212-7cd1-450e-90ab-ec7d0ad45e59"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J112 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 1.651
+                            },
+                            "uuid": "12da0049-a2eb-47b0-862d-12041dc5cdd6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J104 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 2.0447
+                            },
+                            "uuid": "65a51da2-94c9-438f-bb12-7383df581803"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x04' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J103 [Connector_Generic_Conn_01x04]",
+                            "pos": {
+                                "x": 0.5969,
+                                "y": 2.4003
+                            },
+                            "uuid": "8370e264-f9ac-435b-bcfb-d34654af673f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Device_D_Bridge_+-AA' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol BR3 [Device_D_Bridge_+-AA]",
+                            "pos": {
+                                "x": 1.8034,
+                                "y": 0.5969
+                            },
+                            "uuid": "38a7ebc9-370f-40e9-af34-aa550b0c6e91"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol C64 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 3.0099,
+                                "y": 3.9619
+                            },
+                            "uuid": "1bfc0c06-20bd-4b10-bd2b-3ed92faffef6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol pin or wire end off connection grid",
+                    "items": [
+                        {
+                            "description": "Symbol C65 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 3.2893,
+                                "y": 3.9619
+                            },
+                            "uuid": "42be7454-8bfe-405c-9911-517b245b7b86"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "endpoint_off_grid"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x06' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J107 [Connector_Generic_Conn_01x06]",
+                            "pos": {
+                                "x": 5.1943,
+                                "y": 2.6035
+                            },
+                            "uuid": "77a701a0-9ba9-4925-96ff-133d9ef57951"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J106 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 5.1943,
+                                "y": 2.9972
+                            },
+                            "uuid": "d8aaf63d-fb8a-4f4e-8279-032d5ef8390a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x07' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J114 [Connector_Generic_Conn_01x07]",
+                            "pos": {
+                                "x": 5.1943,
+                                "y": 3.4036
+                            },
+                            "uuid": "304800c9-ea05-4686-8005-5325211b6517"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x04' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J116 [Connector_Generic_Conn_01x04]",
+                            "pos": {
+                                "x": 5.1943,
+                                "y": 3.7973
+                            },
+                            "uuid": "6752380a-7c4a-4540-9762-09fa7506cce0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x04' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J117 [Connector_Generic_Conn_01x04]",
+                            "pos": {
+                                "x": 5.1943,
+                                "y": 4.1021
+                            },
+                            "uuid": "514a386f-9a8d-433f-9576-112a87becdd5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x04' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J118 [Connector_Generic_Conn_01x04]",
+                            "pos": {
+                                "x": 5.1943,
+                                "y": 4.3942
+                            },
+                            "uuid": "95ab1d0e-fe10-435e-9a01-30b3cd71a8b2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x03' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J108 [Connector_Generic_Conn_01x03]",
+                            "pos": {
+                                "x": 6.1976,
+                                "y": 2.6035
+                            },
+                            "uuid": "464f615f-73e2-4ad5-87c8-585f82251f65"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x07' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J109 [Connector_Generic_Conn_01x07]",
+                            "pos": {
+                                "x": 6.1976,
+                                "y": 2.9972
+                            },
+                            "uuid": "fa304a19-c1e7-4fb9-8f12-1cc0dcb1aea8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J110 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 6.1976,
+                                "y": 3.5052
+                            },
+                            "uuid": "380556e6-eded-4db4-b5ec-9c7d5736544c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J127 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 2.9972,
+                                "y": 1.905
+                            },
+                            "uuid": "4621befe-3fdb-46e7-93d7-20725e4a35c6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J129 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 1.905
+                            },
+                            "uuid": "94447559-f524-4a3a-b70a-4142335f805f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J128 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 2.2479
+                            },
+                            "uuid": "8cfe3ab5-aba9-4beb-84e2-9f34ea8c01aa"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J137 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 2.9972,
+                                "y": 1.9939
+                            },
+                            "uuid": "59b55413-5719-4ac2-8f39-a28d9f462e3a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J138 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 1.9939
+                            },
+                            "uuid": "22da0aa9-9f14-427a-a200-358025b52fcb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x03' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J136 [Connector_Generic_Conn_01x03]",
+                            "pos": {
+                                "x": 3.7211,
+                                "y": 1.6002
+                            },
+                            "uuid": "984e1013-ad41-4208-8c52-0ebd30fde72b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J111 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 3.8481,
+                                "y": 0.5969
+                            },
+                            "uuid": "a6686d40-9a9b-427c-b109-cd66439db44d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x13' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J126 [Connector_Generic_Conn_01x13]",
+                            "pos": {
+                                "x": 2.9972,
+                                "y": 1.8034
+                            },
+                            "uuid": "9f9957b7-2737-482e-a469-2adf970256f5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J125 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 1.8034
+                            },
+                            "uuid": "db134c79-944b-4382-819f-195f8c5d719b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J134 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 3.302,
+                                "y": 1.7018
+                            },
+                            "uuid": "eaf81eab-de02-476d-849f-147f45bb2cbe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J135 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 3.302,
+                                "y": 2.1971
+                            },
+                            "uuid": "9dc6ecf8-6179-4c5b-b7f7-bb061867cca5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J133 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 3.8481,
+                                "y": 2.1971
+                            },
+                            "uuid": "c1b0f876-bab7-419d-b67c-336fba41b4d0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J130 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 2.9972,
+                                "y": 1.9939
+                            },
+                            "uuid": "560581a6-a259-4fd4-8973-5d762612ce29"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J132 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 1.9939
+                            },
+                            "uuid": "0bbaa96d-0949-4766-9d21-2753d43591a2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J131 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 2.3495
+                            },
+                            "uuid": "893b8636-c1f7-4275-9f01-4db9b8cd31b8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x09' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J122 [Connector_Generic_Conn_01x09]",
+                            "pos": {
+                                "x": 2.9972,
+                                "y": 1.397
+                            },
+                            "uuid": "ea30d613-be7c-49c0-b059-a36756c11226"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J124 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 1.397
+                            },
+                            "uuid": "f31ecde9-3280-4f5a-9d2c-5fe0639a550c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J123 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 3.5941,
+                                "y": 1.905
+                            },
+                            "uuid": "0978555c-2463-42ed-b2f1-bda998f01ecd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x12' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J115 [Connector_Generic_Conn_01x12]",
+                            "pos": {
+                                "x": 2.9972,
+                                "y": 1.397
+                            },
+                            "uuid": "eae1295b-f5c4-4ccc-9302-7a8e75bfceeb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x11' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J120 [Connector_Generic_Conn_01x11]",
+                            "pos": {
+                                "x": 4.0005,
+                                "y": 1.397
+                            },
+                            "uuid": "48266c4c-0e75-4ddc-ad60-0bf0e258907a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x03' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J119 [Connector_Generic_Conn_01x03]",
+                            "pos": {
+                                "x": 4.0005,
+                                "y": 1.9939
+                            },
+                            "uuid": "414c4958-b8d0-4424-84ef-41ae9476dd52"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x05' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J105 [Connector_Generic_Conn_01x05]",
+                            "pos": {
+                                "x": 4.0005,
+                                "y": 2.4003
+                            },
+                            "uuid": "b0f523de-c483-491e-bed7-0db95dccaa01"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Connector_Generic_Conn_01x11' doesn't match copy in library 'wpc_symbols'",
+                    "items": [
+                        {
+                            "description": "Symbol J121 [Connector_Generic_Conn_01x11]",
+                            "pos": {
+                                "x": 4.8006,
+                                "y": 1.397
+                            },
+                            "uuid": "d54121c8-723d-489b-8cdc-b139434d55d5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/Power_Supply/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/39888a21-daf9-49e6-ab1b-e224dcbde01f",
+            "violations": []
+        },
+        {
+            "path": "/CPU_Interface/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/a6f1182f-23ad-473e-8643-0568779cf898",
+            "violations": []
+        },
+        {
+            "path": "/Sol_HighPower/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/5c6d19e1-7b8a-4e14-b45b-5ec398faa715",
+            "violations": []
+        },
+        {
+            "path": "/Sol_LowPower/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/78ace362-b785-407d-9c79-dc0e42cef027",
+            "violations": []
+        },
+        {
+            "path": "/Sol_Flashers/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/9644ffdd-1a77-4910-9f0a-f0fc7212ea5d",
+            "violations": []
+        },
+        {
+            "path": "/Sol_GeneralPurpose/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/743bc465-0c75-411b-a920-e52f246bad39",
+            "violations": []
+        },
+        {
+            "path": "/Lamp_Columns/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/ece849b1-594b-44c5-aea6-b8acaded1a7d",
+            "violations": []
+        },
+        {
+            "path": "/Lamp_Rows/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/cb725953-25d6-446e-8ef4-3e94f5260dfa",
+            "violations": []
+        },
+        {
+            "path": "/GI_Triacs/",
+            "uuid_path": "/2b557be6-13ca-4c4a-aba5-51d416db3b71/b402c634-3560-4cac-93f4-c53f7dbc37ea",
+            "violations": []
+        }
+    ],
+    "source": "wpc_power_driver_cost.kicad_sch"
+}

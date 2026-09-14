@@ -1,0 +1,1057 @@
+{
+  "passed": true,
+  "complete": true,
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999",
+  "max_step_us": 10.0,
+  "cases": [
+    {
+      "name": "sol17_r8_l4.7e-06_emf0",
+      "channel": 17,
+      "load": {
+        "resistance": 8,
+        "emi_H": 4.7e-06,
+        "bemf": 0
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.1124,
+        "vgs_peak": 4.45525,
+        "current_peak": 2.32896,
+        "current_avg": 1.87841,
+        "diode_average": 0.000114833,
+        "power_average": 0.123909,
+        "tj": 57.68239
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.1124,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45525,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 2.32896,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 0.000114833,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 57.68239,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "90c928a77b443223301a2f045ecf691ef9e3ae6a7fd9080ca2bd0fe55970295f"
+    },
+    {
+      "name": "sol17_r8_l4.7e-06_emf8",
+      "channel": 17,
+      "load": {
+        "resistance": 8,
+        "emi_H": 4.7e-06,
+        "bemf": 8
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.0088,
+        "vgs_peak": 4.4506,
+        "current_peak": 1.35386,
+        "current_avg": 1.09194,
+        "diode_average": 3.39944e-05,
+        "power_average": 0.0418295,
+        "tj": 52.59343
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.0088,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.4506,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.35386,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 3.39944e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 52.59343,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "dab0a7afa06446968201b051b74315ba7f4542dc01e0e700bebc8ff5a1b8cce0"
+    },
+    {
+      "name": "sol17_r8_l0.0047_emf0",
+      "channel": 17,
+      "load": {
+        "resistance": 8,
+        "emi_H": 0.0047,
+        "bemf": 0
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.1138,
+        "vgs_peak": 4.45152,
+        "current_peak": 2.32896,
+        "current_avg": 1.87814,
+        "diode_average": 0.000222667,
+        "power_average": 0.123883,
+        "tj": 57.68075
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.1138,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45152,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 2.32896,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 0.000222667,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 57.68075,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "63f745657de4b67619aa914daffdc55fd6ccd41a9588452260acbd8f741dc67e"
+    },
+    {
+      "name": "sol17_r8_l0.0047_emf8",
+      "channel": 17,
+      "load": {
+        "resistance": 8,
+        "emi_H": 0.0047,
+        "bemf": 8
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.0103,
+        "vgs_peak": 4.448,
+        "current_peak": 1.35386,
+        "current_avg": 1.09179,
+        "diode_average": 6.59488e-05,
+        "power_average": 0.0418206,
+        "tj": 52.59288
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.0103,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.448,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.35386,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 6.59488e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 52.59288,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "462310f10022c426d54ba7447b2099b1a98f1f9b58e6258df91013fdc3435269"
+    },
+    {
+      "name": "sol17_r16_l4.7e-06_emf0",
+      "channel": 17,
+      "load": {
+        "resistance": 16,
+        "emi_H": 4.7e-06,
+        "bemf": 0
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9883,
+        "vgs_peak": 4.4541,
+        "current_peak": 1.17928,
+        "current_avg": 0.951208,
+        "diode_average": 2.95211e-05,
+        "power_average": 0.0317348,
+        "tj": 51.96756
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9883,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.4541,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.17928,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 2.95211e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 51.96756,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "84b97e8cb7da4b8f2db3dac6da463ed8210fd574861d1d1ace6a66961a7082ee"
+    },
+    {
+      "name": "sol17_r16_l4.7e-06_emf8",
+      "channel": 17,
+      "load": {
+        "resistance": 16,
+        "emi_H": 4.7e-06,
+        "bemf": 8
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9231,
+        "vgs_peak": 4.45012,
+        "current_peak": 0.686344,
+        "current_avg": 0.553608,
+        "diode_average": 8.74615e-06,
+        "power_average": 0.0107443,
+        "tj": 50.66614
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9231,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45012,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 0.686344,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 8.74615e-06,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.66614,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "fd35a6bab81d890e826dbdebc2dc2db0addf5f9929158cbe7bef2192538664a6"
+    },
+    {
+      "name": "sol17_r16_l0.0047_emf0",
+      "channel": 17,
+      "load": {
+        "resistance": 16,
+        "emi_H": 0.0047,
+        "bemf": 0
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9898,
+        "vgs_peak": 4.4516,
+        "current_peak": 1.17928,
+        "current_avg": 0.95114,
+        "diode_average": 5.72664e-05,
+        "power_average": 0.0317314,
+        "tj": 51.96735
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9898,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.4516,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.17928,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 5.72664e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 51.96735,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "c1f647e051cf239f3b73e97ebd14dfc6068227bb60abe5766dce262c9567dc10"
+    },
+    {
+      "name": "sol17_r16_l0.0047_emf8",
+      "channel": 17,
+      "load": {
+        "resistance": 16,
+        "emi_H": 0.0047,
+        "bemf": 8
+      },
+      "window_s": [
+        82.579387333,
+        92.579387333
+      ],
+      "duty": 0.8066654999999997,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9249,
+        "vgs_peak": 4.44738,
+        "current_peak": 0.686344,
+        "current_avg": 0.553568,
+        "diode_average": 1.69785e-05,
+        "power_average": 0.0107431,
+        "tj": 50.66607
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9249,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44738,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 0.686344,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 1.69785e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.66607,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "a9370e49c2866afa788735363721ea3f078ac5798b7ca604bcbbd1e22069f75b"
+    },
+    {
+      "name": "sol18_r8_l4.7e-06_emf0",
+      "channel": 18,
+      "load": {
+        "resistance": 8,
+        "emi_H": 4.7e-06,
+        "bemf": 0
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.1124,
+        "vgs_peak": 4.45744,
+        "current_peak": 2.32896,
+        "current_avg": 1.89338,
+        "diode_average": 0.000114833,
+        "power_average": 0.124888,
+        "tj": 57.74304
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.1124,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45744,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 2.32896,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 0.000114833,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 57.74304,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "6a6d9a1b99dee1216a37de1f3edd0fc7997eb4f2fdc399a9507cd04d36891cc9"
+    },
+    {
+      "name": "sol18_r8_l4.7e-06_emf8",
+      "channel": 18,
+      "load": {
+        "resistance": 8,
+        "emi_H": 4.7e-06,
+        "bemf": 8
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.0088,
+        "vgs_peak": 4.45197,
+        "current_peak": 1.35386,
+        "current_avg": 1.10065,
+        "diode_average": 3.39944e-05,
+        "power_average": 0.0421597,
+        "tj": 52.6139
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.0088,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45197,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.35386,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 3.39944e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 52.6139,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "35814732f046220847aae477bb8cea1d793b48d22b8b6140544a07f25cd4a134"
+    },
+    {
+      "name": "sol18_r8_l0.0047_emf0",
+      "channel": 18,
+      "load": {
+        "resistance": 8,
+        "emi_H": 0.0047,
+        "bemf": 0
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.1137,
+        "vgs_peak": 4.45141,
+        "current_peak": 2.32896,
+        "current_avg": 1.89284,
+        "diode_average": 0.000222667,
+        "power_average": 0.124835,
+        "tj": 57.73976
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.1137,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45141,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 2.32896,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 0.000222667,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 57.73976,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "9b4b059645e7e9ffb69c220f28e9bed7be4cbbab01c1246eb587b1dad2faf18d"
+    },
+    {
+      "name": "sol18_r8_l0.0047_emf8",
+      "channel": 18,
+      "load": {
+        "resistance": 8,
+        "emi_H": 0.0047,
+        "bemf": 8
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.0103,
+        "vgs_peak": 4.44801,
+        "current_peak": 1.35386,
+        "current_avg": 1.10034,
+        "diode_average": 6.59488e-05,
+        "power_average": 0.0421419,
+        "tj": 52.6128
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.0103,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44801,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.35386,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 6.59488e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 52.6128,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "49984e356fabc2c1f985cc3f9ef6f93017147c2c018721ffae80b5dfd21d127f"
+    },
+    {
+      "name": "sol18_r16_l4.7e-06_emf0",
+      "channel": 18,
+      "load": {
+        "resistance": 16,
+        "emi_H": 4.7e-06,
+        "bemf": 0
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9883,
+        "vgs_peak": 4.45744,
+        "current_peak": 1.17928,
+        "current_avg": 0.958859,
+        "diode_average": 2.9521e-05,
+        "power_average": 0.0319888,
+        "tj": 51.98331
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9883,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45744,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.17928,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 2.9521e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 51.98331,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "8c07b5367f2df41a1931bce85e503002c5da6825181cd9d6099b549581c5839e"
+    },
+    {
+      "name": "sol18_r16_l4.7e-06_emf8",
+      "channel": 18,
+      "load": {
+        "resistance": 16,
+        "emi_H": 4.7e-06,
+        "bemf": 8
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9231,
+        "vgs_peak": 4.45195,
+        "current_peak": 0.686344,
+        "current_avg": 0.558061,
+        "diode_average": 8.74614e-06,
+        "power_average": 0.0108303,
+        "tj": 50.67148
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9231,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45195,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 0.686344,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 8.74614e-06,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.67148,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "d13fdc8558d838328841f1b7704c87004a5f81e74d8713e7d501caab23a085a2"
+    },
+    {
+      "name": "sol18_r16_l0.0047_emf0",
+      "channel": 18,
+      "load": {
+        "resistance": 16,
+        "emi_H": 0.0047,
+        "bemf": 0
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9898,
+        "vgs_peak": 4.45256,
+        "current_peak": 1.17928,
+        "current_avg": 0.958723,
+        "diode_average": 5.72663e-05,
+        "power_average": 0.031982,
+        "tj": 51.98289
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9898,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.45256,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 1.17928,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 5.72663e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 51.98289,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "a31a1eca58f20657d13055ca536efda732ec0dc34e0cdce21ecbe123599069ad"
+    },
+    {
+      "name": "sol18_r16_l0.0047_emf8",
+      "channel": 18,
+      "load": {
+        "resistance": 16,
+        "emi_H": 0.0047,
+        "bemf": 8
+      },
+      "window_s": [
+        77.100565333,
+        87.100565333
+      ],
+      "duty": 0.813215199999999,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9249,
+        "vgs_peak": 4.44769,
+        "current_peak": 0.686344,
+        "current_avg": 0.557982,
+        "diode_average": 1.69785e-05,
+        "power_average": 0.010828,
+        "tj": 50.67133
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9249,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.44769,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 0.686344,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 1.69785e-05,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.67133,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "ebc55232f6a085dcb791af97c9e572bf386d45b6091c1aea299fab3f252e218f"
+    }
+  ],
+  "limitations": [
+    "Worst 10 s commanded duty; latch output enabled, separate logic/blanking checks",
+    "Flashers: actual bulb counts from Williams printed 2-44, both #89 and #906 approximated by the same lower-resistance thermal envelope; not measured filament data",
+    "Flashers require proposed SOL21..28 cathode connection to +20 V on the PCB; original open-tieback board is not represented",
+    "Motors: manual 3-22 EMI series diode and two chokes included; 4.7 uH and 4.7 mH cover ambiguous drawing units, 10 mH motor and 8/16 ohm 0/8 V back EMF are sensitivities, not measured A-17562 values",
+    "8 ohm simultaneous stalled motors can exceed the shared 3 A rail fuse; passing device stress does not imply indefinite stall operation or prove fuse clearing",
+    "TI logic and MOSFET/M7 are approximate device fits; no avalanche/SOA/fuse-clearing or physical thermal claim"
+  ]
+}

@@ -1,0 +1,79 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom motor channel 18; sol18_r16_l4.7e-06_emf8
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout cmd                                          0
+stdout a                                            0
+stdout gate                                         0
+stdout drain                                  30.6667
+stdout dq                                     30.6667
+stdout clamprail                                   30
+stdout da                                     30.6667
+stdout raw                                         20
+stdout feed                                        20
+stdout motp                                        20
+stdout m1                                          20
+stdout m2                                          20
+stdout m3                                          12
+stdout m4                                          12
+stdout lminus#branch                     -3.01872e-09
+stdout lmotor#branch                      -3.0187e-09
+stdout lplus#branch                       -3.0187e-09
+stdout vbemf#branch                      -3.01872e-09
+stdout vraw#branch                         3.0187e-09
+stdout vdiode#branch                     -4.08012e-09
+stdout vclamp#branch                     -4.08016e-09
+stdout vsense#branch                      1.06146e-09
+stdout vcmd#branch                                  0
+ Reference value :  0.00000e+00
+ Reference value :  2.40438e-01
+ Reference value :  5.05528e-01
+ Reference value :  7.72758e-01
+ Reference value :  1.03822e+00
+ Reference value :  1.29643e+00
+ Reference value :  1.56421e+00
+ Reference value :  1.83061e+00
+ Reference value :  2.09087e+00
+ Reference value :  2.34792e+00
+ Reference value :  2.61572e+00
+ Reference value :  2.88109e+00
+ Reference value :  3.14638e+00
+ Reference value :  3.40301e+00
+ Reference value :  3.66531e+00
+ Reference value :  3.93093e+00
+ Reference value :  4.19705e+00
+ Reference value :  4.46067e+00
+ Reference value :  4.72866e+00
+ Reference value :  4.99357e+00
+ Reference value :  5.26582e+00
+ Reference value :  5.52962e+00
+ Reference value :  5.80099e+00
+ Reference value :  6.07725e+00
+ Reference value :  6.35072e+00
+ Reference value :  6.61493e+00
+ Reference value :  6.88191e+00
+ Reference value :  7.14680e+00
+ Reference value :  7.42181e+00
+ Reference value :  7.69484e+00
+ Reference value :  7.96940e+00
+ Reference value :  8.24607e+00
+ Reference value :  8.52289e+00
+ Reference value :  8.79559e+00
+ Reference value :  9.06343e+00
+ Reference value :  9.32270e+00
+ Reference value :  9.59371e+00
+ Reference value :  9.86406e+00
+ Reference value :  1.01303e+01
+stdout No. of Data Rows : 1023744
+stdout sim_end = 1.023000e+01
+stdout vds_peak            =  3.09231e+01 at=  7.02437e+00
+stdout vgs_peak            =  4.45195e+00 at=  2.00003e-01
+stdout current_peak        =  6.86344e-01 at=  7.02436e+00
+stdout current_avg         =  5.58061e-01 from=  2.00000e-01 to=  1.02000e+01
+stdout diode_average       =  8.74614e-06 from=  2.00000e-01 to=  1.02000e+01
+stdout power_average       =  1.08303e-02 from=  2.00000e-01 to=  1.02000e+01
+stdout tj = 5.067148e+01

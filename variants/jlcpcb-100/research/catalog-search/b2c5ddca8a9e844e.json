@@ -1,0 +1,398 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "5*20",
+    "componentLibraryType": "",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:04:53.895348+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 2,
+        "list": [
+          {
+            "componentId": 21748994,
+            "componentLibraryType": "expand",
+            "stockCount": 125,
+            "componentTypeEn": "Accessories - Inductors/Transformers",
+            "erpComponentName": "110Ω@100MHz 10.5x20x5.5磁环",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/accessories-inductors-transformers_xr-xrrh10-5-20-5-5_C20416535.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 49,
+                "productPrice": 0.0933
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 299,
+                "productPrice": 0.0738
+              },
+              {
+                "startNumber": 300,
+                "endNumber": 599,
+                "productPrice": 0.064
+              },
+              {
+                "startNumber": 600,
+                "endNumber": 2399,
+                "productPrice": 0.0567
+              },
+              {
+                "startNumber": 2400,
+                "endNumber": 5099,
+                "productPrice": 0.0508
+              },
+              {
+                "startNumber": 5100,
+                "endNumber": -1,
+                "productPrice": 0.0479
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 50,
+                "endNumber": 299,
+                "productPrice": 0.0711
+              },
+              {
+                "startNumber": 5100,
+                "endNumber": -1,
+                "productPrice": 0.0461
+              },
+              {
+                "startNumber": 600,
+                "endNumber": 2399,
+                "productPrice": 0.0546
+              },
+              {
+                "startNumber": 300,
+                "endNumber": 599,
+                "productPrice": 0.0617
+              },
+              {
+                "startNumber": 2400,
+                "endNumber": 5099,
+                "productPrice": 0.049
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 49,
+                "productPrice": 0.0899
+              }
+            ],
+            "firstSortAccessId": "85c6b138230a4e15a2194c0849a3d6ae",
+            "secondSortAccessId": "d6295853020a4a1eac2bcf2d9004c726",
+            "canPresaleNumber": 125,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "XR-XRRH10_5_20_55/C20416535",
+            "leastPatchNumber": 5,
+            "lossNumber": 5,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 300,
+            "shopCostPrice": 0.25,
+            "preMinPurchaseNum": 122,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.0933,
+            "componentCode": "C20416535",
+            "componentBrandEn": "XR",
+            "componentModelEn": "XRRH10.5*20*5.5",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8585282232096837632-C20416535/C20416535-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T040453Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e75a6cfea3aece2ba1fd498658c5c8da91ca7ac73f20778d03bc02b0a4630e8e",
+            "dataManualUrl": "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2401051809_XR-XRRH10-5-20-5-5_C20416535.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8590931040510681088-C20416535.pdf?response-content-disposition=attachment%3B%20filename%3DC20416535.pdf%3B%20filename%2A%3DUTF-8%27%27C20416535.pdf&x-oss-date=20260914T040453Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e8196f9336bf24453fcf67da93b905cdcaf427c403d1ce79b9927dee76e759a5",
+            "dataManualOfficialLink": "",
+            "componentName": "XR XRRH10.5*20*5.5",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8585282233061662720-C20416535/C20416535-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T040453Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=182cb7ca2547c0cc6e10292cd62249fe30e699487dff92c195a2bf651473ffd4",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "-",
+            "describe": "- Accessories - Inductors/Transformers ROHS",
+            "attributes": null,
+            "rankScore": null,
+            "firstSortName": "Accessories - Inductors/Transformers",
+            "secondSortName": "Inductors, Coils, Chokes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "XRRH10.<span class='lucene_highlight_class'>5*20*5</span>.5",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 58807016,
+            "componentLibraryType": "expand",
+            "stockCount": 60,
+            "componentTypeEn": "FFC Cable (Flexible Flat Cable)",
+            "erpComponentName": "0.5x20x50xB(3/3/4/4)(0.035x0.3)",
+            "componentSource": "shop",
+            "lcscGoodsUrl": null,
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 99,
+                "productPrice": 0.042
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 299,
+                "productPrice": 0.0334
+              },
+              {
+                "startNumber": 300,
+                "endNumber": 999,
+                "productPrice": 0.0292
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 4999,
+                "productPrice": 0.0259
+              },
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.0233
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": -1,
+                "productPrice": 0.022
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": 4999,
+                "productPrice": 0.025
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": -1,
+                "productPrice": 0.0212
+              },
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.0225
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 99,
+                "productPrice": 0.0405
+              },
+              {
+                "startNumber": 300,
+                "endNumber": 999,
+                "productPrice": 0.0281
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 299,
+                "productPrice": 0.0322
+              }
+            ],
+            "firstSortAccessId": null,
+            "secondSortAccessId": null,
+            "canPresaleNumber": 60,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "LX-0_5x20x50xB_3_3_4_4_0_035x0_3/C55113433",
+            "leastPatchNumber": 2,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 100,
+            "shopCostPrice": 0.11,
+            "preMinPurchaseNum": 100,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.042,
+            "componentCode": "C55113433",
+            "componentBrandEn": "LX",
+            "componentModelEn": "0.5x20x50xB(3/3/4/4)(0.035x0.3)",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8770269132199870464-C55113433-front.jpg?x-oss-date=20260914T040453Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=658c5d4a0a0c02205a8c33c3d15dfbf8f4ed8e3d9fbaeef9c1def3b9bbd28e21",
+            "dataManualUrl": null,
+            "dataManualFileAccessId": "",
+            "dataManualFileAccessIdUrl": null,
+            "dataManualOfficialLink": "",
+            "componentName": "LX 0.5x20x50xB(3/3/4/4)(0.035x0.3)",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8770269133252370432-C55113433-front.jpg?x-oss-date=20260914T040453Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=017154147461e6dac325ecdbf3f07eb26a5428d87a8e61eccfd457b4b6ed2091",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "P=0.5mm",
+            "describe": "P=0.5mm FFC Cable (Flexible Flat Cable) ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Total Length",
+                "attribute_value_name": "5cm"
+              },
+              {
+                "attribute_name_en": "Strip Length",
+                "attribute_value_name": "3mm、3mm"
+              },
+              {
+                "attribute_name_en": "With Reinforeing Tape",
+                "attribute_value_name": "双端补强"
+              },
+              {
+                "attribute_name_en": "Number of Pins",
+                "attribute_value_name": "20P"
+              },
+              {
+                "attribute_name_en": "Pitch",
+                "attribute_value_name": "0.5mm"
+              },
+              {
+                "attribute_name_en": "Reinforeing Tape Length",
+                "attribute_value_name": "4mm、4mm"
+              },
+              {
+                "attribute_name_en": "Insert Thickness",
+                "attribute_value_name": "0.3mm"
+              },
+              {
+                "attribute_name_en": "Contact Location",
+                "attribute_value_name": "Reverse"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "FFC Cable (Flexible Flat Cable)",
+            "secondSortName": "Connectors",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "0.<span class='lucene_highlight_class'>5x20x5</span>0xB(3/3/4/4)(0.035x0.3)",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "5*20"
+    },
+    "message": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/reverse_output_12v_precharge1m_v2.cir",
+  "deck_sha256": "15e21fd13135a67ec1784692681c45cb54691940c21e3fbff120c951452bb83b",
+  "elapsed_s": 0.967723979999846,
+  "wall_limit_s": 180.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.001,
+    "output_peak": 11.4873,
+    "output_min": 0.363806,
+    "inductor_peak": 0.00109021,
+    "inductor_min": -9.31817,
+    "body_reverse_peak": 9.31817,
+    "input_min": 0.264683,
+    "bypass_peak": 534.78,
+    "bypass_energy": 0.011016,
+    "bypass_i2t": 0.415245
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion"
+}

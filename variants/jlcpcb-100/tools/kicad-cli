@@ -1,0 +1,2 @@
+#!/bin/sh
+exec flatpak run --command=kicad-cli org.kicad.KiCad "$@"

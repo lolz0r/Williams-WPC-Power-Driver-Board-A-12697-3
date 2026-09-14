@@ -1,0 +1,428 @@
+                                                                                   CRSD082N10L2
+  华润微电子(重庆)有限公司                                              SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+
+  Features                                                                         Product Summary
+  • Uses CRM(CQ) advanced SkyMOS2 technology                             VDS                      100V
+  • Extremely low on-resistance RDS(on)                                  RDS(on)@10V typ          7.2mΩ
+  • Excellent QgxRDS(on) product(FOM)                                    RDS(on)@4.5V typ         9mΩ
+  • Qualified according to JEDEC criteria                                ID                       78A
+
+  Applications
+  • Synchronous Rectification for AC/DC Quick Charger
+  • Battery management
+  • UPS (Uninterrupible Power Supplies)                                    100% Avalanche Tested
+
+
+
+
+                                 CRSD082N10L2
+
+  Package Marking and Ordering Information
+
+          Part #           Marking            Package     Packing      Reel Size       Tape Width         Qty
+
+   CRSD082N10L2                 -             TO-252      Tape&Reel       N/A               N/A         2500pcs
+
+
+  Absolute Maximum Ratings
+  Parameter                                                             Symbol           Value           Unit
+  Drain-source voltage                                                    VDS               100           V
+  Continuous drain current
+   TC = 25°C (Silicon limit)                                                                78
+                                                                              ID                          A
+   TC = 25°C (Package limit)                                                                80
+   TC = 100°C (Silicon limit)                                                               50
+  Pulsed drain current (TC = 25°C, tp limited by Tjmax)                  ID pulse           313           A
+
+  Avalanche energy, single pulse (L=0.5mH, Rg=25Ω)                         EAS              121           mJ
+
+  Gate-Source voltage                                                     VGS              ±20            V
+  Power dissipation (TC = 25°C)                                            Ptot             101           W
+
+  Operating junction and storage temperature                            Tj , T stg     -55...+150         °C
+
+
+
+
+Rev 1.0                      ©China Resources Microelectronics (Chongqing) Limited                         Page 1
+                                                                            CRSD082N10L2
+  华润微电子(重庆)有限公司                                              SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+  Thermal Resistance
+  Parameter                                                            Symbol          Max           Unit
+  Thermal resistance, junction – case.                                   RthJC          1.24
+                                                                                                     °C/W
+  Thermal resistance, junction – ambient(min. footprint)                 RthJA          93.8
+
+
+  Electrical Characteristic (at Tj = 25 °C, unless otherwise specified)
+                                                     Value
+  Parameter                      Symbol                                   Unit      Test Condition
+                                            min.      typ.      max.
+
+  Static Characteristic
+  Drain-source breakdown
+                                  BVDSS      100       115        -         V       VGS=0V, ID=250uA
+  voltage
+
+  Gate threshold voltage         VGS(th )    1.4       1.8       2.2        V       VDS=VGS,ID=250uA
+
+                                                                                    VDS=80V,VGS=0V
+  Zero gate voltage drain
+                                   IDSS       -         -         1        µA        Tj=25°C
+  current
+                                              -         -        10                  Tj=125°C
+  Gate-source leakage
+                                   IGSS       -         -       ±100       nA       VGS=±20V,VDS=0V
+  current
+
+  Drain-source on-state                                7.2       8.6       mΩ        VGS=10V,ID=50A
+                                 RDS(on)
+  resistance                                  -        9.0      10.8       mΩ        VGS=4.5V,ID=50A
+
+  Transconductance                 gfs        -        91         -         S       VDS=5V,ID=50A
+
+  Dynamic Characteristic
+  Input Capacitance                Ciss       -       2626        -
+
+  Output Capacitance               Coss       -        457        -                 VGS=0V, VDS=50V,
+                                                                           pF
+                                                                                    f=1MHz
+  Reverse Transfer
+                                   Crss       -        38         -
+  Capacitance
+  Gate Total Charge                QG         -       44.5        -
+                                                                                    VGS=10V, VDS=50V,
+  Gate-Source charge               Qgs        -       10.4        -        nC
+                                                                                    ID=50A, f=1MHz
+  Gate-Drain charge                Qgd        -        6.8        -
+
+  Turn-on delay time              td(on)      -       10.3        -
+
+  Rise time                         tr        -        62         -                 VGS=10V, VDD=50V,
+                                                                           ns
+  Turn-off delay time             td(off)     -        30         -                 RG_ext=3.0Ω
+
+  Fall time                         tf        -        98         -
+                                                                                    VGS=0V, VDS=0V,
+  Gate resistance                  RG         -        1.1        -         Ω
+                                                                                    f=1MHz
+
+  Body Diode Characteristic
+
+Rev 1.0                     ©China Resources Microelectronics (Chongqing) Limited                      Page 2
+                                                                       CRSD082N10L2
+  华润微电子(重庆)有限公司                                         SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+                                                Value
+  Parameter                 Symbol                                   Unit      Test Condition
+                                       min.      typ.      max.
+  Body Diode Forward
+                              VSD        -       0.93       1.4        V       VGS=0V,ISD=50A
+  Voltage
+  Body Diode Reverse
+                               trr       -        64         -        ns
+  Recovery Time                                                                       IF=50A,
+  Body Diode Reverse                                                              dI/dt=100A/µs
+                              Qrr        -        101        -        nC
+  Recovery Charge
+
+
+
+
+Rev 1.0                ©China Resources Microelectronics (Chongqing) Limited                      Page 3
+                                                                                                                                                            CRSD082N10L2
+  华润微电子(重庆)有限公司                                                                                                                  SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+  Typical Performance Characteristics
+
+                              Fig 1: Output Characteristics                                                                          Fig 2: Transfer Characteristics
+                                                                                                                      100
+                  280                                  10V
+                                                                       7V 5V                                                                  VDS=5V
+                  240                                                                                                           80
+                                                                                    4.5V
+                  200
+                                                                                                                                60
+  ID (A)          160                                                               4V               ID (A)
+                                                                                                                                                                 125°C
+                  120                                                                                                           40
+                                                                                3.5V                                                                                               25°C
+                         80
+                                                                                                                                20
+                         40                                                     3V
+                                                                       2.5V
+                          0                                                                                                      0
+                               0              1          2               3               4     5                                      0            1         2              3               4         5
+                                                             VDS (V)                                                                                          VGS (V)
+
+
+                          Fig 3: Rds(on) vs Drain Current and                                                                        Fig 4: Rds(on) vs Gate Voltage
+                                     Gate Voltage                                                                               24
+                          10.0
+
+                                                               VGS=4.5V                                                                                                                     ID=50A
+                                                                                                                                20
+                              9.0
+
+
+
+
+                                                                                                      RDS(on) (mΩ)
+                                                                                                                                16
+
+
+    RDS(on) (mΩ)
+                              8.0
+                                                             VGS=10V                                                                                                                    125°C
+                              7.0                                                                                               12
+
+
+                                                                                                                                                                                            25°C
+                              6.0                                                                                                8
+
+
+
+                              5.0                                                                                                4
+
+
+
+                              4.0                                                                                                0
+
+                                     20                 30                     40              50                                     2                 4            6                  8             10
+                                                                                                                                                                 VGS (V)
+                                                              ID (A)
+
+                                Fig 5: Rds(on) vs. Temperature                                                                        Fig 6: Capacitance Characteristics
+                                                                                                                                10000
+                         2.4
+
+                         2.2
+                                         ID=50A                                                                                                                             Ciss
+
+
+
+
+                                                                                                         C - Capacitance (PF)
+                         2.0
+
+
+
+
+    RDS(on)_Normalized
+                                                                                                                                 1000
+                         1.8
+                                                         VGS=10V                                                                                                         Coss
+                         1.6
+
+                         1.4                                                                                                      100
+                                                                             VGS=4.5V
+                         1.2
+                                                                                                                                                 VGS=0V
+                         1.0                                                                                                                     f=1MHz                  Crss
+                                                                                                                                     10
+                         0.8
+                                                                                                                                          0        10       20        30           40           50    60
+                                    25            50         75          100             125   150
+                                            Tj - Junction Temperature (°C)                                                                                        VDS (V)
+
+
+
+Rev 1.0                                                        ©China Resources Microelectronics (Chongqing) Limited                                                                                 Page 4
+                                                                                                                                                       CRSD082N10L2
+  华润微电子(重庆)有限公司                                                                                                             SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+
+                                                                                                                           Fig 8: Body-diode Forward
+               Fig 7: Gate Charge Characteristics                                                                                Characteristics
+            10
+                                                                                                                          100
+                                VDS=50V
+                                ID=50A
+
+
+
+                                                                                                  IS - Diode Current(A)
+               8
+                                                                                                                           10
+
+  VGS (V)      6                                                                                                                              125˚C
+                                                                                                                            1
+                                                                                                                                                               25˚C
+               4
+
+
+                                                                                                                          0.1
+               2
+
+
+
+               0                                                                                                     0.01
+
+                    0               10         20                 30         40            50                                   0       0.2      0.4    0.6    0.8      1    1.2   1.4
+                                                    Qg (nC)                                                                              VSD - Diode Forward Voltage(V)
+
+
+
+               Fig 9: Power Dissipation                                                                                    Fig 10: Drain Current Derating
+                   120                                                                                                      90
+
+                                                                                                                            80
+                   100
+                                                                                                                            70
+
+                    80                                                                                                      60
+
+                                                                                                              ID (A)
+    Ptot (W)
+                                                                                                                            50
+                    60
+                                                                                                                            40
+
+                    40                                                                                                      30
+
+                                                                                                                            20                VGS≥10V
+                    20
+                                                                                                                            10
+
+                        0                                                                                                       0
+                            0         25       50            75        100        125      150                                      0    25        50     75    100    125   150   175
+                                      Tc - Case Temperature (°C)                                                                               Tc - Case Temperature (°C)
+
+
+               Fig 11: Safe Operating Area
+
+                                                                                    1us
+                            Limited by                                             10us
+               100          Rds(on)
+                                                                                   100us
+
+                                                                                   1ms
+      ID (A)
+                   10
+                                                                                   10ms
+
+
+                                                                                   DC
+                    1
+                                Single pulse
+                                Tc=25˚C
+               0.1
+                        0.1                    1                       10                   100
+                                                   VDS (V)
+
+
+
+
+Rev 1.0                                               ©China Resources Microelectronics (Chongqing) Limited                                                                        Page 5
+                                                                                                CRSD082N10L2
+  华润微电子(重庆)有限公司                                                                     SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+
+
+                     Fig 12: Max. Transient Thermal Impedance
+
+
+                       1
+                                 D=0.5
+                                  0.2
+                                  0.1
+                                  0.05
+
+
+     ZthJC (˚C/W)
+                      0.1
+                                  0.02
+                                  0.01
+
+                                Single pulse
+                     0.01
+
+                                                                                              Duty factor D=t1/t2
+                                                                                              TJM-TC=PDM*ZthJC(t)
+
+                    0.001
+                        1E-05                  0.0001            0.001                 0.01             0.1
+                                                                         tp (sec)
+
+
+
+
+Rev 1.0                                        ©China Resources Microelectronics (Chongqing) Limited                Page 6
+                                                                   CRSD082N10L2
+  华润微电子(重庆)有限公司                                    SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+  Test Circuit & Waveform
+
+
+
+
+Rev 1.0            ©China Resources Microelectronics (Chongqing) Limited         Page 7
+                                                                    CRSD082N10L2
+  华润微电子(重庆)有限公司                                    SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+  Package Outline: TO-252-3L
+
+
+
+
+                   Dimensions In Millimeters                 Dimensions In Inches
+          Symbol
+                    Min.                Max.                Min.                 Max.
+            A         2                  2.6                0.079                0.102
+            A1        0                 0.15                0.000                0.006
+            A2      0.76                1.36                0.030                0.054
+            b       0.61                0.85                0.024                0.033
+            b1      0.71                0.91                0.028                0.036
+            b2      5.04                5.64                0.198                0.222
+
+            c              0.508 TYP.                               0.02 TYP.
+            c1             0.508 TYP.                               0.02 TYP.
+            D        5.7                 6.3                0.224                0.248
+           D1         5                  5.6                0.197                0.220
+            E        6.3                 6.9                0.248                0.272
+            E1      4.55                5.15                0.179                0.203
+            e              2.286 TYP.                               0.09 TYP.
+            H       9.65                10.4                0.380                0.409
+            L        1.4                 1.7                0.055                0.067
+            L1              2.90 REF.                               0.114 REF.
+            L2      0.75                1.35                0.030                0.053
+            L3       0.6                 1.2                0.024                0.047
+            θ        0°                  10°                 0°                  10°
+            θ1       5°                  9°                  5°                   9°
+            θ2              25° REF.                                 25° REF.
+
+
+
+
+Rev 1.0            ©China Resources Microelectronics (Chongqing) Limited                 Page 8
+                                                                                    CRSD082N10L2
+  华润微电子(重庆)有限公司                                                   SkyMOS2 N-MOSFET 100V, 7.2mΩ, 78A
+
+
+
+
+  Revision History
+     Revison              Date           Major changes
+          1.0         2018-08-14         Release of formal version.
+
+
+
+  Disclaimer
+  Unless otherwise specified in the datasheet, the product is designed and qulified as a standard commercial
+  product and is not intended for use in applications that require extraordinary levels of quality and reliability,
+  such as automotive, aviation/aerospace and life-support devices or systems.
+
+
+  Any and all semicondutor products have certain probability to fail or malfunction, which may result in personal
+  injury, death or property damage. Customer are solely responsible for providing adequate safe measures
+  when design their systems.
+
+  CRM(CQ) reserves the right to improve product design, function and reliability without notice.
+
+
+
+
+Rev 1.0                       ©China Resources Microelectronics (Chongqing) Limited                              Page 9
+

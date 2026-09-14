@@ -1,0 +1,91 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/native_5v_precharge1m.cir",
+  "deck_sha256": "33cba16e0f24e1f903a2d718841137d0fc1793bec10f29b5419327986fac05dc",
+  "elapsed_s": 0.9180349929997647,
+  "wall_limit_s": 180.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.001,
+    "output_peak": 5.10404,
+    "output_min": -0.0355291,
+    "inductor_peak": 0.00159251,
+    "inductor_min": -19.7086,
+    "body_reverse_peak": 19.7086,
+    "input_min": 1.40519e-06
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "output_peak": {
+      "value": 5.10404,
+      "min": 0,
+      "max": 5.25,
+      "passed": true
+    },
+    "output_min": {
+      "value": -0.0355291,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 0.00159251,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -19.7086,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    },
+    "sim_end": {
+      "value": 0.001,
+      "min": 0.00099999,
+      "max": 0.00100001,
+      "passed": true
+    }
+  },
+  "passed": false,
+  "kind": "reverse",
+  "pcb_changed": false,
+  "candidate_only": false,
+  "changes": [
+    "Unmodified native regulator topology, precharged outputs",
+    "Transient ends at 0.001 seconds",
+    "Initial reverse-stress screen only; no recovery or complete-sequence claim"
+  ],
+  "arguments": {
+    "kind": "reverse",
+    "name": "native_5v_precharge1m",
+    "wall_seconds": 180.0,
+    "step_us": 1,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "5v",
+    "bypass": "none",
+    "stop_ms": 1.0,
+    "lamp_form": "current",
+    "gate_series_collapse": false,
+    "raw_reservoir_uf": null,
+    "compensation_nf": null,
+    "flasher_input": false,
+    "direct_input": false,
+    "scenario": "startup",
+    "load": 0.75,
+    "stress_only": true,
+    "isolate_input": false,
+    "protection_model": "DB560C"
+  },
+  "required_end_s": 0.001,
+  "base_deck_sha256": "32181d91ff982b36694c0745e4ac8bdc0c5b497bd7bbc94bfb3b4a3ce79b7e19",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

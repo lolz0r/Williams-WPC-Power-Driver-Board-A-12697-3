@@ -1,0 +1,10 @@
+(version 1)
+
+# The 36 V supply ICs require 0.2 mm fanout spacing; the manufacturer
+# land pattern itself uses pad-local 0.16 mm clearance at its four corners.
+# JLCPCB specifies >=0.16 mm spacing for 2 oz copper. Other net classes
+# retain their 0.2/0.3/0.4 mm rules. Short IC control fanouts use 0.2 mm
+# tracks; their currents are small. Main supply and switch paths are wider.
+(rule "Regulator IC fanout"
+    (condition "(A.Type == 'Track' || B.Type == 'Track') && ((A.intersectsCourtyard('U20') && B.intersectsCourtyard('U20')) || (A.intersectsCourtyard('U21') && B.intersectsCourtyard('U21')))")
+    (constraint clearance (min 0.2mm)))

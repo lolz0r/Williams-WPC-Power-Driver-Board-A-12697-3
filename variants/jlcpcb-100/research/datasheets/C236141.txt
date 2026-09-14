@@ -1,0 +1,339 @@
+MBRB20200CTG,
+SBRB20200CTT4G
+
+SWITCHMODE
+Power Rectifier
+Dual Schottky Rectifier
+                                                                                                     http://onsemi.com
+   This device uses the Schottky Barrier technology with a platinum
+barrier metal. This state−of−the−art device is designed for use in high
+frequency switching power supplies and converters with up to 48 V                            SCHOTTKY BARRIER
+outputs. They block up to 200 V and offer improved Schottky                                       RECTIFIER
+performance at frequencies from 250 kHz to 5.0 MHz.
+                                                                                              20 AMPERES, 200 V
+Features
+ 200 V Blocking Voltage
+ Low Forward Voltage Drop
+ Guardring for Stress Protection and High dv/dt Capability
+  (10,000 V/ms)
+ Dual Diode Construction − Terminals 1 and 3 Must be Connected for                                          D2PAK
+  Parallel Operation at Full Rating                                                                        CASE 418B
+ AEC−Q101 Qualified and PPAP Capable
+ SBRB Prefix for Automotive and Other Applications Requiring                                          1
+  Unique Site and Control Change Requirements                                                                                4
+ All Packages are Pb−Free*                                                                            3
+
+
+Mechanical Characteristics:                                                                        MARKING DIAGRAM
+ Case: Epoxy, Molded, Epoxy Meets UL 94 V−0
+ Weight: 1.7 Grams (Approximately)
+ Finish: All External Surfaces Corrosion Resistant and Terminal                                            AY WW
+  Leads are Readily Solderable                                                                              B20200G
+ Lead and Mounting Surface Temperature for Soldering                                                       AKA
+
+  Purposes: 260C Max. for 10 Seconds
+ Device Meets MSL1 Requirements
+ ESD Rating:                                                                                 A            = Assembly Location
+   Human Body Model = 3B                                                                     Y            = Year
+   Machine Model = C                                                                         WW           = Work Week
+                                                                                              B20200       = Device Code
+                                                                                              G            = Pb−Free Package
+                                                                                              AKA          = Diode Polarity
+
+
+                                                                                               ORDERING INFORMATION
+                                                                                    See detailed ordering and shipping information in the package
+                                                                                    dimensions section on page 2 of this data sheet.
+
+
+
+
+*For additional information on our Pb−Free strategy and soldering details, please
+ download the ON Semiconductor Soldering and Mounting Techniques
+ Reference Manual, SOLDERRM/D.
+
+
+ Semiconductor Components Industries, LLC, 2012                       1                                         Publication Order Number:
+January, 2012 − Rev. 7                                                                                                    MBRB20200CT/D
+                                         MBRB20200CTG, SBRB20200CTT4G
+
+MAXIMUM RATINGS (Per Leg)
+                                        Rating                                            Symbol            Value              Unit
+ Peak Repetitive Reverse Voltage                                                           VRRM              200                V
+ Working Peak Reverse Voltage                                                              VRWM
+ DC Blocking Voltage                                                                        VR
+ Average Rectified Forward Current                                                          IF(AV)                              A
+   (At Rated VR, TC = 134C)
+     Per Leg                                                                                                 10
+     Per Device                                                                                              20
+ Peak Repetitive Forward Current                                                            IFRM                                A
+   (At Rated VR, Square Wave, 20 kHz, TC = +137C)
+     Per Leg                                                                                                 20
+ Nonrepetitive Peak Surge Current                                                           IFSM                                A
+  (Surge Applied at Rated Load Conditions Halfwave, Single Phase, 60 Hz)                                     150
+
+ Peak Repetitive Reverse Surge Current (2.0 ms, 1.0 kHz)                                    IRRM             1.0                A
+ Storage Temperature Range                                                                  Tstg         −65 to +175            C
+ Operating Junction Temperature                                                              TJ          −65 to +150            C
+ Voltage Rate of Change (Rated VR)                                                          dv/dt          10,000              V/ms
+Stresses exceeding Maximum Ratings may damage the device. Maximum Ratings are stress ratings only. Functional operation above the
+Recommended Operating Conditions is not implied. Extended exposure to stresses above the Recommended Operating Conditions may affect
+device reliability.
+
+THERMAL CHARACTERISTICS (Per Leg)
+                                     Characteristic                                       Symbol            Value              Unit
+ Thermal Resistance, Junction−to−Case                                                       RqJC             2.0               C/W
+
+
+ELECTRICAL CHARACTERISTICS (Per Leg)
+                                     Characteristic                                       Symbol            Value              Unit
+ Maximum Instantaneous Forward Voltage (Note 1)                                              VF                                 V
+  (IF = 10 A, TC = 25C)                                                                                     0.9
+  (IF = 10 A, TC = 125C)                                                                                    0.8
+  (IF = 20 A, TC = 25C)                                                                                     1.0
+  (IF = 20 A, TC = 125C)                                                                                    0.9
+ Maximum Instantaneous Reverse Current (Note 1)                                              IR                                mA
+  (Rated dc Voltage, TC = 25C)                                                                              1.0
+  (Rated dc Voltage, TC = 125C)                                                                             50
+
+DYNAMIC CHARACTERISTICS (Per Leg)
+ Capacitance                                                                                 CT                                 pF
+  (VR = −5.0 V, TC = 25C, Frequency = 1.0 MHz)                                                              500
+1. Pulse Test: Pulse Width = 300 ms, Duty Cycle  2.0%.
+
+ ORDERING INFORMATION
+                   Device                                       Package                                     Shipping†
+  MBRB20200CTG                                                   D2PAK                                    50 Units / Rail
+                                                               (Pb−Free)
+
+  MBRB20200CTT4G                                                 D2PAK                               800 Units / Tape & Reel
+                                                               (Pb−Free)
+
+  SBRB20200CTT4G                                                 D2PAK                               800 Units / Tape & Reel
+                                                               (Pb−Free)
+†For information on tape and reel specifications, including part orientation and tape sizes, please refer to our Tape and Reel Packaging
+ Specifications Brochure, BRD8011/D.
+
+
+
+
+                                                           http://onsemi.com
+                                                                   2
+                                                                                                    MBRB20200CTG, SBRB20200CTT4G
+
+                                         100                                                                                                       10,000
+                                             70
+
+
+
+
+ IF, INSTANEOUS FORWARD CURRENT (AMP)
+                                                                                                                                                                                                                                        TJ = 150C
+                                             50
+                                                                                                                                                                  1,000
+                                                                                             TJ = 150C
+                                                                                                                                                                                                              TJ = 125C
+
+
+
+
+                                                                                                                                           IR , REVERSE CURRENT (  A)
+                                             20                                                                                                                                     100
+                                                                                                                                                                                                                          TJ = 100C
+                                                                                  TJ = 125C
+                                             10                                                                                                                                      10
+                                              7
+                                                                                                          TJ = 100C
+                                              5                                                                                                                                       1
+
+                                                                                                          TJ = 25C
+                                              2                                                                                                                                      0.1
+                                                                                                                                                                                                             TJ = 25C
+
+                                              1                                                                                                                                     0.01
+                                                        0.2              0.4         0.6        0.8                         1                                                              0   20       40       60       80   100     120        140   160        180 200
+                                                                        vF, INSTANTANEOUS VOLTAGE (V)                                                                                                             VR, REVERSE CURRENT (V)
+                                                        Figure 1. Typical Forward Voltage (Per Leg)                                                                                            Figure 2. Typical Reverse Current (Per Leg)
+
+
+
+
+ PF(AV), AVERAGE POWER DISSIPATION (WATTS)
+                                             40                                                                                                                                     25
+
+
+
+
+                                                                                                                                           IF(AV), AVERAGE FORWARD CURRENT (AMPS)
+                                                                   TJ = 125C
+                                                                                                                    SQUARE                                                                                                                        RATED VOLTAGE
+                                             36                                                                       WAVE                                                                                                                        RqJC = 2C/W
+                                             32                                                           10                                                                        20
+                                             28
+                                                                                                                                dc
+                                             24                       IPK                                                                                                           15
+                                                                                 = 20
+                                             20                       IAV                                                                                                                                          SQUARE              dc
+                                                                                                                                                                                                                   WAVE
+                                             16                                                                                                                                     10
+                                             12
+                                              8
+                                                                                                                                                                                     5
+                                              4
+                                              0
+                                                  0            5            10          15         20          25      30            35                                              0
+                                                                                                                                                                                         90     100           110     120     130     140                  150         160
+                                                                    IF(AV), AVERAGE FORWARD CURRENT (A)                                                                                                        TC, CASE TEMPERATURE (C)
+
+                                                               Figure 3. Forward Power Dissipation                                                                                                      Figure 4. Current Derating, Case
+
+                                             20                                                                                                                                     500
+
+
+
+
+IF(AV), AVERAGE FORWARD CURRENT (AMPS)
+                                                                                                          RqJA = 16C/W
+                                                                                                          RATED VOLTAGE
+                                                                                                                                                                                                                                                    TJ = 25C
+                                             16                                                                                                                                     400
+
+
+
+
+                                                                                                                                           C, CAPACITANCE (pF)
+                                                         dc
+                                             12                                                                                                                                     300
+
+                                                      SQUARE
+                                              8                                                                                                                                     200
+                                                      WAVE
+
+
+                                              4                                                                                                                                     100
+
+
+                                              0                                                                                                                                       0
+                                                  0           25        50      75     100     125                    150            175                                                   1        2                 5        10            20               50    70 100
+                                                                       TA, AMBIENT TEMPERATURE (C)                                                                                                              VR, REVERSE VOLTAGE (V)
+
+                                                               Figure 5. Current Derating, Ambient                                                                                              Figure 6. Typical Capacitance (Per Leg)
+
+
+
+
+                                                                                                                       http://onsemi.com
+                                                                                                                                       3
+                                        MBRB20200CTG, SBRB20200CTT4G
+
+                                                      PACKAGE DIMENSIONS
+
+
+                                                                 D2PAK 3
+                                                               CASE 418B−04
+                                                                 ISSUE K
+                                                                                                         NOTES:
+                                                              C                                           1. DIMENSIONING AND TOLERANCING
+                                                                                                             PER ANSI Y14.5M, 1982.
+                                                                          E                               2. CONTROLLING DIMENSION: INCH.
+                                                                                                          3. 418B−01 THRU 418B−03 OBSOLETE,
+                                                                              V                              NEW STANDARD 418B−04.
+              −B−
+                                                                               W
+                  4                                                                                                    INCHES      MILLIMETERS
+                                                                                                             DIM    MIN     MAX     MIN    MAX
+                                                                                                              A    0.340 0.380      8.64    9.65
+                                                                                                              B    0.380 0.405      9.65 10.29
+                                                                      A                                       C    0.160 0.190      4.06    4.83
+                                 S                                                                            D    0.020 0.035      0.51    0.89
+          1       2   3                                                                                       E    0.045 0.055      1.14    1.40
+                                                                                                              F    0.310 0.350      7.87    8.89
+                                                                                                              G      0.100 BSC       2.54 BSC
+ −T−                                                                                                          H    0.080   0.110    2.03    2.79
+                                                      K                                                       J    0.018 0.025      0.46    0.64
+SEATING                                                                       W                               K    0.090   0.110    2.29    2.79
+PLANE
+              G                                                           J                                   L    0.052 0.072      1.32    1.83
+                                                                                                              M    0.280 0.320      7.11    8.13
+                                                               H                                              N      0.197 REF       5.00 REF
+                          D 3 PL                                                                              P      0.079 REF       2.00 REF
+                                                                                                              R      0.039 REF       0.99 REF
+                              0.13 (0.005) M T B M                                                            S    0.575 0.625     14.60 15.88
+                                                                                                              V    0.045 0.055      1.14    1.40
+VARIABLE
+CONFIGURATION
+ZONE                                                       N                                     P
+                                        R                                     U
+                          L                                       L                                  L
+
+M                                      M                                      M
+
+
+
+
+          F                                       F                                   F
+
+       VIEW W−W                              VIEW W−W                              VIEW W−W
+           1                                     2                                     3
+
+                                                      SOLDERING FOOTPRINT*
+
+                                                                      10.49
+
+
+
+
+                                                                                       8.38
+
+
+                                                16.155
+
+
+
+                                                                                       2X
+                                                                                     3.504
+                                                      2X
+                                                      1.016
+                                                                      5.080
+                                                                      PITCH
+                                                                       DIMENSIONS: MILLIMETERS
+
+
+                                     *For additional information on our Pb−Free strategy and soldering
+                                      details, please download the ON Semiconductor Soldering and
+                                      Mounting Techniques Reference Manual, SOLDERRM/D.
+
+
+
+                                                              http://onsemi.com
+                                                                          4
+                                                        MBRB20200CTG, SBRB20200CTT4G
+
+
+
+
+ ON Semiconductor and             are registered trademarks of Semiconductor Components Industries, LLC (SCILLC). SCILLC reserves the right to make changes without further notice
+ to any products herein. SCILLC makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does SCILLC assume any liability
+ arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages.
+ “Typical” parameters which may be provided in SCILLC data sheets and/or specifications can and do vary in different applications and actual performance may vary over time. All
+ operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. SCILLC does not convey any license under its patent rights
+ nor the rights of others. SCILLC products are not designed, intended, or authorized for use as components in systems intended for surgical implant into the body, or other applications
+ intended to support or sustain life, or for any other application in which the failure of the SCILLC product could create a situation where personal injury or death may occur. Should
+ Buyer purchase or use SCILLC products for any such unintended or unauthorized application, Buyer shall indemnify and hold SCILLC and its officers, employees, subsidiaries, affiliates,
+ and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death
+ associated with such unintended or unauthorized use, even if such claim alleges that SCILLC was negligent regarding the design or manufacture of the part. SCILLC is an Equal
+ Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+PUBLICATION ORDERING INFORMATION
+LITERATURE FULFILLMENT:                                                 N. American Technical Support: 800−282−9855 Toll Free             ON Semiconductor Website: www.onsemi.com
+ Literature Distribution Center for ON Semiconductor                     USA/Canada
+ P.O. Box 5163, Denver, Colorado 80217 USA                              Europe, Middle East and Africa Technical Support:                 Order Literature: http://www.onsemi.com/orderlit
+ Phone: 303−675−2175 or 800−344−3860 Toll Free USA/Canada                Phone: 421 33 790 2910
+ Fax: 303−675−2176 or 800−344−3867 Toll Free USA/Canada                 Japan Customer Focus Center                                       For additional information, please contact your local
+ Email: orderlit@onsemi.com                                              Phone: 81−3−5817−1050                                            Sales Representative
+
+
+                                                                                http://onsemi.com                                                                  MBRB20200CT/D
+                                                                                              5
+

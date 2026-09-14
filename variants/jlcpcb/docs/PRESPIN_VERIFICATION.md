@@ -1,3 +1,5 @@
+> Historical JLC-2 investigation. For the current hardware and evidence, use [JLC-3 prototype report](PROTOTYPE_JLC3.md).
+
 # Continued pre-spin verification — JLC-2
 
 Subsequent results are in the [analog-review addendum](CONTINUED_ANALOG_REVIEW.md): the selected coil replay now has a completed convergence and energy-balance check. This page preserves the earlier review round, including its incomplete refinements. The regulator and lamp-matrix findings remain open.

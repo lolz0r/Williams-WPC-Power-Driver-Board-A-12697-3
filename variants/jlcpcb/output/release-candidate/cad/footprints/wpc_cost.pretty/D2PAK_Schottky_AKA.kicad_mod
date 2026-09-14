@@ -1,0 +1,393 @@
+(footprint "D2PAK_Schottky_AKA"
+	(version 20241229)
+	(generator pcbnew)
+	(layer "F.Cu")
+	(descr "TO-263/D2PAK/DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-3-1/")
+	(tags "D2PAK DDPAK TO-263 D2PAK-3 TO-263-3 SOT-404")
+	(property "Reference" "REF**"
+		(at 0 -6.65 0)
+		(layer "F.SilkS")
+		(uuid "27a87011-c7a7-42a5-ac63-2c61e6faf72f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D2PAK_Schottky_AKA"
+		(at 0 6.65 0)
+		(layer "F.Fab")
+		(uuid "41ac580a-6854-4551-a7b7-9093389aef96")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5fb4bfd1-374f-4cb6-9cc0-e8a091618739")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" "Schottky rectifier 100 V 20 A D2PAK - discrete bridge element +12V POWER, AC_B -> +"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42a384bf-c47d-4883-8d0f-83f184f6d330")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "package/TO_SOT/SMD"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "12203503-365c-4461-9a09-a3598a9fc0fe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "STPS20M100SG-TR"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f9742c71-597d-48d2-8d26-ce3fc83bd809")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "STMicroelectronics"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "20b90374-30b4-47fb-abb5-705f6bd92743")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Link" "https://jlcpcb.com/partdetail/STMicroelectronics-STPS20M100SGTR/C969989"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "7cea39c9-e564-4639-9477-472402df2059")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price" "1.58"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "9f384d0b-f89f-4770-95ee-20d774ac6601")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price100" "0.52"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f6d55444-8108-41ad-a494-eec0697b6141")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB Part" "C969989"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cadd1053-9478-4db5-8b0b-ea31641c35a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB Library" "Extended"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ccf30b44-7e32-4fa4-ab0e-bafe56013693")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.825 5.2)
+		(end -4.825 3.39)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e5e7a966-1702-457a-b15d-ed219a810910")
+	)
+	(fp_line
+		(start -3.46 5.2)
+		(end -4.825 5.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9fe02a88-d16a-4f8f-bdc8-34723544e070")
+	)
+	(fp_line
+		(start -4.825 -5.2)
+		(end -4.825 -3.39)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "32a9b50d-d3cd-447e-adb3-b32d6163472a")
+	)
+	(fp_line
+		(start -3.46 -5.2)
+		(end -4.825 -5.2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b8309a90-e334-4027-b912-56fd60231e6c")
+	)
+	(fp_poly
+		(pts
+			(xy -7.65 -3.35)
+			(xy -7.99 -3.82)
+			(xy -7.31 -3.82)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "9ecfa559-9708-4610-b8de-71efe0b4584d")
+	)
+	(fp_rect
+		(start -10.2 -5.65)
+		(end 6.45 5.65)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "38b870d3-f5cd-41e4-92dc-83a720a2d7fd")
+	)
+	(fp_line
+		(start 5.625 5)
+		(end 4.625 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6d791c90-a7a3-4ae3-ad9c-a645b28490a7")
+	)
+	(fp_line
+		(start -9.325 3.04)
+		(end -4.625 3.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fc14ef24-236e-4117-8976-afa7164de70a")
+	)
+	(fp_line
+		(start -9.325 2.04)
+		(end -9.325 3.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "75fc0279-2592-4321-87a0-004319148f7c")
+	)
+	(fp_line
+		(start -4.625 2.04)
+		(end -9.325 2.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e7eb3078-c142-4246-9160-42044074ab11")
+	)
+	(fp_line
+		(start -9.325 -2.04)
+		(end -4.625 -2.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "8ecd24fd-fe02-4460-81d7-17eb97ed5883")
+	)
+	(fp_line
+		(start -9.325 -3.04)
+		(end -9.325 -2.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "22a284ce-1ee5-4158-972c-7d2be41bbc0a")
+	)
+	(fp_line
+		(start -4.625 -3.04)
+		(end -9.325 -3.04)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a37b0656-6216-44be-a640-4e8e5ebd0653")
+	)
+	(fp_line
+		(start 4.625 -5)
+		(end 5.625 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "54197f6a-b5ce-4af5-83bb-35bb2c8d616d")
+	)
+	(fp_line
+		(start 5.625 -5)
+		(end 5.625 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "28adf826-8257-4bb0-a438-13a7c4f21631")
+	)
+	(fp_poly
+		(pts
+			(xy 4.625 -5)
+			(xy 4.625 5)
+			(xy -4.625 5)
+			(xy -4.625 -4)
+			(xy -3.625 -5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "37dcd289-8cb8-450e-a015-0989d1d76043")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3d9aa6d4-420b-4a09-86cc-ccfa8c0e11e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -0.925 -2.775 0)
+		(size 4.55 5.25)
+		(layers "F.Paste")
+		(roundrect_rratio 0.054945)
+		(uuid "25b0112b-3c61-48c5-bc79-61923fdaacef")
+	)
+	(pad "" smd roundrect
+		(at -0.925 2.775 0)
+		(size 4.55 5.25)
+		(layers "F.Paste")
+		(roundrect_rratio 0.054945)
+		(uuid "d819f0dd-6ab3-41e4-9b87-d66f0473ece0")
+	)
+	(pad "" smd roundrect
+		(at 3.925 -2.775 0)
+		(size 4.55 5.25)
+		(layers "F.Paste")
+		(roundrect_rratio 0.054945)
+		(uuid "21291a0b-847f-4797-907c-a4ab71c49564")
+	)
+	(pad "" smd roundrect
+		(at 3.925 2.775 0)
+		(size 4.55 5.25)
+		(layers "F.Paste")
+		(roundrect_rratio 0.054945)
+		(uuid "5bc2b519-2458-485c-85b6-1bf72870affb")
+	)
+	(pad "1" smd roundrect
+		(at 1.5 0 0)
+		(size 9.4 10.8)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.026596)
+		(zone_connect 2)
+		(uuid "a68e742e-54d3-4c12-b16d-c47009670eee")
+	)
+	(pad "2" smd roundrect
+		(at -7.65 -2.54 0)
+		(size 4.6 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.227273)
+		(uuid "014287e9-0794-4c02-ab06-214dad2f8ebf")
+	)
+	(pad "2" smd roundrect
+		(at -7.65 2.54 0)
+		(size 4.6 1.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.227273)
+		(uuid "7a80d075-24b8-4d44-a612-305f010ae8ce")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/kicad/Package_TO_SOT_SMD.3dshapes/TO-263-2.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

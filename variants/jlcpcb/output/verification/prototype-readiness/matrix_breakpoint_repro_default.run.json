@@ -1,0 +1,17 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/matrix_breakpoint_repro_default.cir",
+  "deck_sha256": "ebf732fb96f6837c519c9e362705e4b65999584fabeb692064baa61b940c92f9",
+  "elapsed_s": 39.57094916200003,
+  "wall_limit_s": 180,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [
+    "stderr doAnalyses: TRAN:  Timestep too small; time = 0.0243895, timestep = 6.25e-19: trouble with node \"row0q\"",
+    "stderr run simulation(s) aborted"
+  ],
+  "measurements": {
+    "sim_end": 0.02438948014411
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion"
+}

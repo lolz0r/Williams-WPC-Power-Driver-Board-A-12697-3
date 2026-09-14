@@ -83,6 +83,19 @@ def main():
     write(OUT/'bom/external-hardware.csv',hardware)
     report=dict(passed=True,pcb_sha256=sha(pcb),netlist_sha256=sha(net),native_populated_electronic_references=len(native),purchased_electronic_units=sum(r['Quantity'] for r in parts),smt_placements=len(smt),fuse_clips=len(clips),fuse_cartridges=14,distinct_catalog_codes=len(catalog),native_references_by_library=dict(Counter(r['Library'] for r in native.values())),purchased_units_by_library=dict(Counter({lib:sum(r['Quantity'] for r in parts if r['Library']==lib) for lib in ['Basic','Extended']})),distinct_codes_by_library=dict(Counter(r['Library'] for r in purchase)),excluded_native_refs=excluded,preorder_or_short_stock=[r for r in purchase if r['Stock_snapshot']<r['Quantity']],catalog_archives={code:dict(json_sha256=sha(CAT/(code+'.json')),html_sha256=sha(CAT/(code+'.html')),url=d['url'],fetched_utc=d['fetched_utc']) for code,d in catalog.items()},limitations=['Public catalog snapshot, no reserved stock or assembly quote; preorders can carry minimum quantities and uncertain lead times','JLCPCB assembly engineering must approve component orientation, polarity, exposed-pad paste and stencil process in its actual library','SMT upload pair intentionally excludes through-hole parts and external hardware; separate manual lists include all 32 fuse clips','All SMT origins are at nominal package body centers; signed absolute coordinates follow exported Gerbers; rotations follow native KiCad convention','No consumables or mechanical hardware are required to be sourced at JLCPCB per user clarification'])
     (OUT/'reports/jlc-sourcing.json').write_text(json.dumps(report,indent=2)+'\n')
+    links={'C5440942':'https://www.mouser.com/ProductDetail/Infineon-Technologies/IPD90N10S4L06ATMA1?qs=LxJ0xX%2FWJR62lwU%2FrihEDA%3D%3D',
+           'C969989':'https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100SG-TR/2122461'}
+    shortages=[dict(JLCPCB_part=r['JLCPCB_part'],MPN=r['MPN'],Quantity_per_board=r['Quantity'],JLC_public_stock_snapshot=r['Stock_snapshot'],Assembly=r['Assembly'],
+        Action='Source entire per-board quantity plus JLC attrition through Global Sourcing/consignment' if r['Assembly']=='SMT' else 'Procure exact part for through-hole/manual assembly',
+        Distributor_example=links.get(r['JLCPCB_part'],'')) for r in report['preorder_or_short_stock']]
+    write(OUT/'bom/procurement-shortfalls.csv',shortages,keys=['JLCPCB_part','MPN','Quantity_per_board','JLC_public_stock_snapshot','Assembly','Action','Distributor_example'])
+    procurement=dict(all_electronics_in_jlc_public_stock=not shortages,stock_reserved=False,shortfalls=shortages,sourcing_report_sha256=sha(OUT/'reports/jlc-sourcing.json'),
+        source='https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction',
+        notes=['Public snapshots retain their actual fetch dates; this export does not reserve inventory.',
+               'Use an exact-MPN Global Sourcing/consignment quote for short SMT parts; no silicon substitution is implicit.',
+               'JLC public inventory and Global Sourcing/consignment cannot be mixed for the same part code. Source the whole quantity plus attrition through one permitted channel.',
+               'Distributor links are sourcing options. Warehouse receipt and JLCPCB placement approval precede an assembly order.'])
+    (ROOT/'research/prototype-procurement.json').write_text(json.dumps(procurement,indent=2)+'\n')
     print({k:v for k,v in report.items() if k not in ['catalog_archives','excluded_native_refs','preorder_or_short_stock','limitations']})
     print('Preorder / stock shortage:',[(r['MPN'],r['Quantity'],r['Stock_snapshot']) for r in report['preorder_or_short_stock']])
 

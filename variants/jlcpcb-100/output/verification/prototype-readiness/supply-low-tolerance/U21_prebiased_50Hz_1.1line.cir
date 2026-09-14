@@ -1,0 +1,65 @@
+JLC-100 U21 prebiased; engineering averaged controller, not TI vendor model
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/tools/spice/models.lib
+Vsecondary sp sn SIN(0 20.680000000000003 50)
+Bsource acdrive sn V=v(sp,sn)*(time>25m)
+Rwind1 acdrive ap .05
+Rwind2 sn an .05
+D1 ap vin J100MBR
+D2 an vin J100MBR
+D3 0 ap J100MBR
+D4 0 an J100MBR
+Rreservoir vin storage .05
+Creservoir storage 0 0.01504
+Rcin vin cin .005
+Ccin cin 0 20u
+Rlamp vin 0 2.5
+Venable esrc 0 1
+Senable esrc enable vin 0 SUV
+.model SUV SW(Ron=1 Roff=1e12 Vt=8.9 Vh=0.325)
+Renable enable 0 1k
+Cenable enable 0 1n
+Css ss 0 1 IC=0
+Bsoft 0 ss I=ternary_fcn(v(enable)>.5,ternary_fcn(v(ss)<1.1904,1.1904/.0036,0),-v(ss)/10u)
+Rfbtop out fb 18000.0
+Rfbbottom fb 0 2000
+Berror 0 comp I=ternary_fcn(v(enable)>.5,min(max(0.000152*(v(ss)-v(fb)),-20u),60u),0)
+Bcompclamp comp 0 I=max(v(comp)-1.15,0)-max(.6-v(comp),0)+ternary_fcn(v(enable)<.5,(v(comp)-.6),0)
+Rcomp comp cc 42200
+Ccomp cc 0 3.3e-07 IC=.6
+Cpole comp 0 1e-09 IC=.6
+Rgain comp 0 1e9
+Bcommand command 0 V=min(max((v(comp)-.6)/.055,0),3.3)*v(enable)
+Rinner command il 1
+Cinner il 0 4u
+Bstage 0 reg I=min(max(v(il),0)*min(1,max(v(vin),0)/max(v(reg),.8)),1.5151515151515151)*v(enable)
+Binput vin 0 I=min(max(v(il),0)*min(1,max(v(vin),0)/max(v(reg),.8)),1.5151515151515151)*v(enable)*max(v(reg),0)/max(v(vin),3)/.9
+Rlocal reg clocal .005
+Clocal clocal 0 10u IC=12.0
+Rsense reg out 0.033
+Rbulk out cbulk 0.056
+Cbulk cbulk 0 0.000528 IC=12.0
+Bload out 0 I=.02*tanh(v(out)/.1)
+Routbleed out 0 100k
+.ic v(comp)=.6 v(cc)=.6 v(reg)=12.0 v(out)=12.0
+.options method=gear reltol=.0001 abstol=1n vntol=1u klu itl4=200 minbreak=1p
+.save v(vin) v(reg) v(out) v(il) v(comp) v(ss) v(enable) i(Bsource) @rsense[i]
+.tran 2u 120m 0 2u uic
+.control
+set numdgt=12
+run
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran output_peak MAX v(out)
+meas tran output_floor MIN v(out)
+meas tran settled_min MIN v(out) from=105m to=120m
+meas tran settled_max MAX v(out) from=105m to=120m
+meas tran step_min MIN v(out) from=24m to=65m
+meas tran step_max MAX v(out) from=24m to=65m
+meas tran input_min MIN v(vin) from=105m to=120m
+meas tran inductor_average_peak MAX v(il)
+meas tran inductor_average_min MIN v(il)
+meas tran shunt_current_peak MAX @rsense[i]
+meas tran shunt_current_min MIN @rsense[i]
+meas tran secondary_rms RMS i(Bsource) from=100m to=120m
+.endc
+.end

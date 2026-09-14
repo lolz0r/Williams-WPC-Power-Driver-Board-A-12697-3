@@ -1,0 +1,408 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2b557be6-13ca-4c4a-aba5-51d416db3b71")
+	(paper "A3")
+	(title_block
+		(title "WPC Power Driver Board - cost-optimised modern re-implementation")
+		(date "2026-09-11")
+		(rev "JLC-100")
+		(company "Modern re-implementation of the Williams A-12697-3 (same form factor)")
+	)
+	(lib_symbols)
+	(text "WPC POWER DRIVER BOARD - COST-OPTIMISED MODERN VERSION - functional replacement for Williams A-12697-3 (same outline, connectors, fuses).\nDPAK MOSFET solenoid/lamp drivers, TPS552872-Q1 buck-boost regulators for +5V/+12V, 4-quadrant insulated triacs, SMD passives, 5x20 mm cartridges plus SMT TA7 F112.\nSheets: Power_Supply, CPU_Interface, Sol_HighPower (1-8), Sol_LowPower (9-16), Sol_Flashers (17-24), Sol_GeneralPurpose (25-28),\nLamp_Columns, Lamp_Rows, GI_Triacs.  Every part carries Manufacturer / MPN / JLCPCB code and library / sourcing fields fields (see BOM).  See README.md."
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects
+			(font
+				(size 2.2 2.2)
+			)
+			(justify left top)
+		)
+		(uuid "c0eea2ec-ee3a-43b5-a1d9-fbe01f8dd482")
+	)
+	(sheet
+		(at 30 60)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "39888a21-daf9-49e6-ab1b-e224dcbde01f")
+		(property "Sheetname" "Power_Supply"
+			(at 30 59.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply.kicad_sch"
+			(at 30 100.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 140 60)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a6f1182f-23ad-473e-8643-0568779cf898")
+		(property "Sheetname" "CPU_Interface"
+			(at 140 59.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cpu_interface.kicad_sch"
+			(at 140 100.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 250 60)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "5c6d19e1-7b8a-4e14-b45b-5ec398faa715")
+		(property "Sheetname" "Sol_HighPower"
+			(at 250 59.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sol_highpower.kicad_sch"
+			(at 250 100.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 120)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "78ace362-b785-407d-9c79-dc0e42cef027")
+		(property "Sheetname" "Sol_LowPower"
+			(at 30 119.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sol_lowpower.kicad_sch"
+			(at 30 160.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 140 120)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "9644ffdd-1a77-4910-9f0a-f0fc7212ea5d")
+		(property "Sheetname" "Sol_Flashers"
+			(at 140 119.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sol_flashers.kicad_sch"
+			(at 140 160.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 250 120)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "743bc465-0c75-411b-a920-e52f246bad39")
+		(property "Sheetname" "Sol_GeneralPurpose"
+			(at 250 119.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sol_gp.kicad_sch"
+			(at 250 160.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 180)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ece849b1-594b-44c5-aea6-b8acaded1a7d")
+		(property "Sheetname" "Lamp_Columns"
+			(at 30 179.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "lamp_columns.kicad_sch"
+			(at 30 220.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 140 180)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "cb725953-25d6-446e-8ef4-3e94f5260dfa")
+		(property "Sheetname" "Lamp_Rows"
+			(at 140 179.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "lamp_rows.kicad_sch"
+			(at 140 220.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 250 180)
+		(size 90 40)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "b402c634-3560-4cac-93f4-c53f7dbc37ea")
+		(property "Sheetname" "GI_Triacs"
+			(at 250 179.3 0)
+			(effects
+				(font
+					(size 1.5 1.5)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "gi_triacs.kicad_sch"
+			(at 250 220.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "wpc_power_driver_cost"
+				(path "/2b557be6-13ca-4c4a-aba5-51d416db3b71"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

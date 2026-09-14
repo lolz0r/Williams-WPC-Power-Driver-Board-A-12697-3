@@ -1,0 +1,521 @@
+NTD6416ANL, NVD6416ANL
+
+N-Channel Power MOSFET
+100 V, 19 A, 74 mW
+Features
+• Low RDS(on)
+• High Current Capability                                                                               www.onsemi.com
+• 100% Avalanche Tested
+• NVD Prefix for Automotive and Other Applications Requiring                            V(BR)DSS             RDS(on) MAX            ID MAX
+  Unique Site and Control Change Requirements; AEC−Q101
+  Qualified and PPAP Capable                                                              100 V           74 mW @ 10 V                  19 A
+• These Devices are Pb−Free and are RoHS Compliant
+                                                                                                                D
+ MAXIMUM RATINGS (TJ = 25°C unless otherwise noted)
+                     Parameter                        Symbol     Value        Unit
+ Drain−to−Source Voltage                               VDSS       100          V                   G
+ Gate−to−Source Voltage − Continuous                   VGS        ±20          V
+                                                                                                                      S
+ Continuous Drain            Steady       TC = 25°C     ID        19           A
+ Current                      State
+                                         TC = 100°C               13                                                                      4
+
+ Power Dissipation           Steady       TC = 25°C     PD        71           W
+                                                                                                         4
+                              State
+
+ Pulsed Drain Current               tp = 10 ms          IDM       70           A                                            1
+                                                                                             1 2                                2
+ Operating and Storage Temperature Range              TJ, Tstg   −55 to        °C              3                                3
+                                                                 +175                        DPAK                             IPAK
+                                                                                           CASE 369AA                       CASE 369D
+ Source Current (Body Diode)                            IS        19           A
+                                                                                            STYLE 2                          STYLE 2
+ Single Pulse Drain−to−Source Avalanche                EAS        50          mJ
+ Energy (VDD = 50 Vdc, VGS = 10 Vdc,                                                               MARKING DIAGRAM
+ IL(pk) = 18.2 A, L = 0.3 mH, RG = 25 W)                                                           & PIN ASSIGNMENTS
+ Lead Temperature for Soldering                         TL        260          °C             4 Drain                           4 Drain
+ Purposes, 1/8″ from Case for 10 Seconds
+Stresses exceeding those listed in the Maximum Ratings table may damage the                   AYWW                              AYWW
+device. If any of these limits are exceeded, device functionality should not be               64                                64
+assumed, damage may occur and reliability may be affected.                                    16ANLG                            16ANLG
+                                                                                         1               3
+ THERMAL RESISTANCE RATINGS                                                           Gate       2       Source
+                                                                                               Drain                    1                 3
+                     Parameter                        Symbol     Max          Unit                                   Gate                 Source
+                                                                                                                                  2
+ Junction−to−Case (Drain) − Steady State               RqJC       2.1         °C/W
+                                                                                                                                Drain
+ Junction−to−Ambient − Steady State (Note 1)           RqJA       47
+                                                                                               A       = Assembly Location*
+1. Surface mounted on FR4 board using 1 sq in pad size,                                        Y       = Year
+   (Cu Area 1.127 sq in [2 oz] including traces).                                              WW      = Work Week
+                                                                                               6416ANL = Device Code
+                                                                                               G       = Pb−Free Package
+
+                                                                                      * The Assembly Location code (A) is front side
+                                                                                      optional. In cases where the Assembly Location is
+                                                                                      stamped in the package, the front side assembly
+                                                                                      code may be blank.
+
+                                                                                                ORDERING INFORMATION
+                                                                                     See detailed ordering and shipping information on page 5 of
+                                                                                     this data sheet.
+
+
+
+
+© Semiconductor Components Industries, LLC, 2016                          1                                         Publication Order Number:
+November, 2016 − Rev. 6                                                                                                       NTD6416ANL/D
+                                                  NTD6416ANL, NVD6416ANL
+
+ ELECTRICAL CHARACTERISTICS (TJ = 25°C unless otherwise noted)
+              Parameter                     Symbol                 Test Condition                  Min         Typ         Max        Unit
+ OFF CHARACTERISTICS
+  Drain−to−Source Breakdown Voltage        V(BR)DSS             VGS = 0 V, ID = 250 mA             100                                 V
+  Drain−to−Source Breakdown Voltage       V(BR)DSS/TJ                                                          120                  mV/°C
+    Temperature Coefficient
+  Zero Gate Voltage Drain Current             IDSS            VGS = 0 V,           TJ = 25°C                               1.0        mA
+                                                              VDS = 100 V         TJ = 125°C                                10
+  Gate−to−Source Leakage Current              IGSS             VDS = 0 V, VGS = ±20 V                                     ±100        nA
+ ON CHARACTERISTICS (Note 2)
+  Gate Threshold Voltage                    VGS(TH)            VGS = VDS, ID = 250 mA              1.0                     2.2         V
+  Negative Threshold Temperature           VGS(TH)/TJ                                                          5.4                  mV/°C
+    Coefficient
+  Drain−to−Source On−Resistance             RDS(on)             VGS = 4.5 V, ID = 10 A                          70          80        mW
+                                                                VGS = 10 V, ID = 10 A                           62          74
+                                                                VGS = 10 V, ID = 19 A                           68          74
+  Forward Transconductance                    gFS                VDS = 5 V, ID = 10 A                           18                     S
+ CHARGES, CAPACITANCES AND GATE RESISTANCE
+  Input Capacitance                           CISS                                                             700        1000        pF
+  Output Capacitance                         COSS        VGS = 0 V, f = 1.0 MHz, VDS = 25 V                    110
+  Reverse Transfer Capacitance               CRSS                                                               50
+  Total Gate Charge                         QG(TOT)                                                             25          40        nC
+  Threshold Gate Charge                      QG(TH)                                                            0.7
+  Gate−to−Source Charge                       QGS         VGS = 10 V, VDS = 80 V, ID = 19 A                    2.4
+  Gate−to−Drain Charge                        QGD                                                              9.6
+  Plateau Voltage                             VGP                                                              3.2                     V
+  Gate Resistance                              RG                                                              2.4                     W
+ SWITCHING CHARACTERISTICS (Note 3)
+  Turn−On Delay Time                          td(on)                                                           7.0                     ns
+  Rise Time                                     tr             VGS = 10 V, VDD = 80 V,                          16
+  Turn−Off Delay Time                         td(off)           ID = 19 A, RG = 6.1 W                           35
+  Fall Time                                     tf                                                              40
+ DRAIN−SOURCE DIODE CHARACTERISTICS
+  Forward Diode Voltage                       VSD                                  TJ = 25°C                   0.9         1.2         V
+                                                          VGS = 0 V, IS = 19 A
+                                                                                  TJ = 125°C                   0.72
+  Reverse Recovery Time                        tRR                                                              50                     ns
+  Charge Time                                  Ta            VGS = 0 V, dIS/dt = 100 A/ms,                      38
+  Discharge Time                               Tb                     IS = 19 A                                 14
+  Reverse Recovery Charge                     QRR                                                              112                    nC
+Product parametric performance is indicated in the Electrical Characteristics for the listed test conditions, unless otherwise noted. Product
+performance may not be indicated by the Electrical Characteristics if operated under different conditions.
+2. Pulse Test: Pulse Width ≤ 300 ms, Duty Cycle ≤ 2%.
+3. Switching characteristics are independent of operating junction temperatures.
+
+
+
+
+                                                           www.onsemi.com
+                                                                     2
+                                                                                               NTD6416ANL, NVD6416ANL
+
+                                                                                               TYPICAL CHARACTERISTICS
+
+
+                                           40                                                                                                                      40
+                                                     TJ = 25°C                                                                                                               VDS w 10 V
+                                                                                        10 V
+
+
+
+
+ID, DRAIN CURRENT (A)                                                                                                  ID, DRAIN CURRENT (A)
+                                           30                                                     4.5 V                                                            30
+
+                                                                                                   3.6 V
+                                           20                                                                                                                      20
+
+                                                                                                   3.2 V
+                                                                                                                                                                                             TJ = 125°C
+                                           10                                                      3.0 V                                                           10                                                    TJ = 25°C
+
+                                                                                                   2.8 V                                                                                                             TJ = −55°C
+                                                                                            VGS = 2.4 V
+                                            0                                                                                                                        0
+                                                 0          1        2      3        4                            5                                                      0         1        2       3       4                          5
+                                                         VDS, DRAIN−TO−SOURCE VOLTAGE (V)                                                                                        VGS, GATE−TO−SOURCE VOLTAGE (V)
+                                                         Figure 1. On−Region Characteristics                                                                                        Figure 2. Transfer Characteristics
+
+
+
+
+RDS(on), DRAIN−TO−SOURCE RESISTANCE (W)                                                                                RDS(on), DRAIN−TO−SOURCE RESISTANCE (W)
+                                          0.11                                                                                                                   0.080
+                                                                                                      ID = 19 A                                                              TJ = 25°C
+                                                                                                      TJ = 25°C
+                                                                                                                                                                 0.075
+                                           0.1
+
+                                                                                                                                                                 0.070           VGS = 4.5 V
+                                          0.09
+                                                                                                                                                                 0.065
+                                                                                                                                                                                      VGS = 10 V
+                                          0.08
+                                                                                                                                                                 0.060
+
+                                          0.07
+                                                                                                                                                                 0.055
+
+                                          0.06                                                                                                                   0.050
+                                                 2                   4             6              8               10                                                     2               6                10             14            18
+                                                          VGS, GATE−TO−SOURCE VOLTAGE (V)                                                                                                    ID, DRAIN CURRENT (A)
+                                                     Figure 3. On−Region versus Gate−To−Source                                                                           Figure 4. On−Region versus Drain Current and
+                                                                       Voltage                                                                                                      Gate−To−Source Voltage
+
+                                            3                                                                                                                    10000
+
+
+
+
+RDS(on), DRAIN−TO−SOURCE RESISTANCE
+                                                     VGS = 10 V                                                                                                              VGS = 0 V
+                                                      ID = 19 A
+                                           2.5
+                                                                                                                                                                                                    TJ = 150°C
+
+
+
+
+                                                                                                                       IDSS, LEAKAGE (nA)
+                                                                                                                                                                 1000
+                                            2
+
+
+                                           1.5                                                                                                                                                      TJ = 125°C
+
+
+
+
+             (NORMALIZED)
+                                                                                                                                                                   100
+
+                                            1
+
+
+                                           0.5                                                                                                                     10
+                                              −50       −25      0       25   50       75   100       125   150   175                                                10        20      30      40   50         60   70    80      90   100
+                                                              TJ, JUNCTION TEMPERTURE (°C)                                                                                       VDS, DRAIN−TO−SOURCE VOLTAGE (V)
+                                                       Figure 5. On−Resistance Variation with                                                                                Figure 6. Drian−to−Source Leakage Current
+                                                                    Temperature                                                                                                             versus Voltage
+
+
+
+
+                                                                                                            www.onsemi.com
+                                                                                                                       3
+                                                                              NTD6416ANL, NVD6416ANL
+
+                                                                                TYPICAL CHARACTERISTICS
+
+
+                                                                                                                                         10                                                                         100
+
+
+
+
+                                                                                                               VGS, GATE−TO−SOURCE VOLTAGE (V)                                                                           VDS, DRAIN−TO−SOURCE VOLTAGE (V)
+                        1400                                                           TJ = 25°C                                                                                        QT
+                                                                                       VGS = 0 V
+                        1200                                                                                                                      8                                                                 80
+
+
+
+
+C, CAPACITANCE (pF)
+                        1000
+                                                                                                                                                  6                                           VGS                   60
+                         800                                                                                                                                     VDS
+                                                                Ciss
+                         600                                                                                                                      4 Qgs                     Qgd                                     40
+
+                         400
+                                                                                                                                                  2                                                 VDS = 80 V      20
+                         200                                                                                                                                                                         ID = 19 A
+                                                                Coss
+                                   Crss                                                                                                                                                             TJ = 25°C
+                           0                                                                                                                      0                                                                 0
+                               0      10     20       30   40      50   60    70            80     90    100                                          0                5          10         15       20           25
+                                           VDS, DRAIN−TO−SOURCE VOLTAGE (V)                                                                                            Qg, TOTAL GATE CHARGE (nC)
+                                            Figure 7. Capacitance Variation                                                                                   Figure 8. Gate−to−Source Voltage and
+                                                                                                                                                          Drain−to−Source Voltage versus Total Charge
+                        1000                                                                                                                              20
+                                    VDS = 80 V                                                                                                                    TJ = 25°C
+                                     ID = 19 A                                                                                                                    VGS = 0 V
+
+
+
+
+                                                                                                                         IS, SOURCE CURRENT (A)
+                                    VGS = 10 V
+                                                                             td(off)                                                                      15
+                         100
+                                                                                             tf
+
+
+t, TIME (ns)
+                                                                                                                                                          10
+                                                                                       tr
+
+                          10
+                                                                                   td(on)                                                                  5
+
+
+
+                           1                                                                                                                               0
+                               1                                   10                                    100                                               0.5     0.55 0.60 0.65 0.70 0.75 0.80 0.85 0.90 0.95 1.0
+                                                  RG, GATE RESISTANCE (W)                                                                                                  VSD, SOURCE−TO−DRAIN VOLTAGE (V)
+                                   Figure 9. Resistive Switching Time Variation                                                                                   Figure 10. Diode Forward Voltage versus
+                                              versus Gate Resistance                                                                                                              Current
+
+                         100                                                                                                                              50
+
+
+
+
+                                                                                                                          EAS, SINGLE PULSE DRAIN−TO−
+                                                                                                                                                                                                          ID = 18.2 A
+                                                                                       10 mS
+                          10                                                                                                                              40
+
+
+
+
+ID, DRAIN CURRENT (A)
+                                                                                       100 mS
+                                                                                       1 mS
+                           1                                                           10 mS                                                              30
+                                                      VGS = 10 V                       dc
+                                                      SINGLE PULSE
+                                                      TC = 25°C                                                                                           20
+
+
+
+
+                                                                                                                         SOURCE AVALANCHE ENERGY (mJ)
+                         0.1
+
+
+                        0.01                          RDS(on) LIMIT                                                                                       10
+                                                      THERMAL LIMIT
+                                                      PACKAGE LIMIT
+                      0.001                                                                                                                                0
+                               0.1                1               10             100                    1000                                                25             50      75        100    125      150        175
+                                           VDS, DRAIN−TO−SOURCE VOLTAGE (V)                                                                                                VDS, DRAIN−TO−SOURCE VOLTAGE (V)
+                                     Figure 11. Maximum Rated Forward Biased                                                                                   Figure 12. Resistive Switching Time Variation
+                                                 Safe Operating Area                                                                                                      versus Gate Resistance
+
+
+
+
+                                                                                                  www.onsemi.com
+                                                                                                           4
+                                                  NTD6416ANL, NVD6416ANL
+
+                                                    TYPICAL CHARACTERISTICS
+
+
+              100
+                    50% Duty Cycle
+                    20%
+              10
+                    10%
+
+
+RqJA (°C/W)
+                     5%
+                     2%
+               1
+                     1%                                             P(pk)
+                                                                                                RqJA(t) = r(t) RqJA
+                                                                                                D CURVES APPLY FOR POWER
+                                                                                                PULSE TRAIN SHOWN
+              0.1
+                                                                            t1                  READ TIME AT t1
+                                                                             t2                 TJ(pk) − TC = P(pk) RqJA(t)
+                     SINGLE PULSE                                       DUTY CYCLE, D = t1/t2
+          0.01
+             0.000001        0.00001   0.0001     0.001      0.01           0.1           1            10            100         1000
+                                                          t, PULSE TIME (sec)
+
+                          Figure 13. Thermal Response (NTD6416ANL DPAK PCB Cu Area 720 mm2 PCB Cu thk 2 oz)
+
+
+
+
+   ORDERING INFORMATION
+                             Device                            Package                                      Shipping†
+    NTD6416ANLT4G                                               DPAK                                   2500 / Tape & Reel
+                                                              (Pb−Free)
+
+    NTD6416ANL−1G                                               IPAK                                      75 Units / Rail
+                                                              (Pb−Free)
+
+    NVD6416ANLT4G*                                              DPAK                                   2500 / Tape & Reel
+                                                              (Pb−Free)
+
+    NVD6416ANLT4G−VF01*                                         DPAK                                   2500 / Tape & Reel
+                                                              (Pb−Free)
+†For information on tape and reel specifications, including part orientation and tape sizes, please refer to our Tape and Reel Packaging
+ Specification Brochure, BRD8011/D.
+*NVD Prefix for Automotive and Other Applications Requiring Unique Site and Control Change Requirements; AEC−Q101 Qualified and PPAP
+ Capable.
+
+
+
+
+                                                          www.onsemi.com
+                                                                    5
+                                                      NTD6416ANL, NVD6416ANL
+
+                                                           PACKAGE DIMENSIONS
+
+
+                                                             DPAK (SINGLE GUAGE)
+                                                                 CASE 369AA
+                                                                    ISSUE B
+                                                                                                          NOTES:
+                                                               C                                           1. DIMENSIONING AND TOLERANCING PER ASME
+                           A                                                                                  Y14.5M, 1994.
+                                                                                                           2. CONTROLLING DIMENSION: INCHES.
+              E                                        A                                                   3. THERMAL PAD CONTOUR OPTIONAL WITHIN DI-
+                                                                                                              MENSIONS b3, L3 and Z.
+              b3               B                              c2                                           4. DIMENSIONS D AND E DO NOT INCLUDE MOLD
+                                                                                                              FLASH, PROTRUSIONS, OR BURRS. MOLD
+                                                                                                              FLASH, PROTRUSIONS, OR GATE BURRS SHALL
+                                                                                                              NOT EXCEED 0.006 INCHES PER SIDE.
+              4                                                                                            5. DIMENSIONS D AND E ARE DETERMINED AT THE
+L3                                                                                            Z               OUTERMOST EXTREMES OF THE PLASTIC BODY.
+                           D                                                                               6. DATUMS A AND B ARE DETERMINED AT DATUM
+                                          DETAIL A            H                                               PLANE H.
+          1   2    3
+                                                                                                                        INCHES      MILLIMETERS
+                                                                                                              DIM    MIN     MAX     MIN    MAX
+L4                                                                                                             A    0.086 0.094      2.18   2.38
+     b2                                                                                                       A1    0.000 0.005      0.00   0.13
+                       b                          c                                                            b    0.025 0.035      0.63   0.89
+                                                                                                              b2    0.030 0.045      0.76   1.14
+      e                        0.005 (0.13) M C                                     H                         b3    0.180 0.215      4.57   5.46
+                                                                                                               c    0.018 0.024      0.46   0.61
+                                                           GAUGE                                              c2    0.018 0.024      0.46   0.61
+                                                      L2 PLANE                              C SEATING
+                                                                                              PLANE            D    0.235 0.245      5.97   6.22
+                                                                                                               E    0.250 0.265      6.35   6.73
+                                                                                                               e      0.090 BSC       2.29 BSC
+                                                                                                               H    0.370 0.410      9.40 10.41
+                                                                   L                                           L    0.055 0.070      1.40   1.78
+                                                                               A1
+                                                                L1                                            L1      0.108 REF       2.74 REF
+                                                                                                              L2      0.020 BSC       0.51 BSC
+                                                              DETAIL A                                        L3    0.035 0.050      0.89   1.27
+                                                             ROTATED 905 CW                                   L4      −−− 0.040      −−−    1.01
+                                                                                                               Z    0.155     −−−    3.93    −−−
+                                                                                                             STYLE 2:
+                                                            SOLDERING FOOTPRINT*                              PIN 1. GATE
+                                                                                                                  2. DRAIN
+                                                             6.20               3.00                              3. SOURCE
+                                                                                                                  4. DRAIN
+                                                             0.244              0.118
+                                                                       2.58
+                                                                       0.102
+
+                                             5.80                                   1.60          6.17
+                                             0.228                                  0.063         0.243
+
+
+
+                                                                                        SCALE 3:1     ǒinches
+                                                                                                         mm Ǔ
+
+
+
+                                       *For additional information on our Pb−Free strategy and soldering
+                                        details, please download the ON Semiconductor Soldering and
+                                        Mounting Techniques Reference Manual, SOLDERRM/D.
+
+
+
+
+                                                                   www.onsemi.com
+                                                                          6
+                                                                 NTD6416ANL, NVD6416ANL
+
+                                                                        PACKAGE DIMENSIONS
+
+
+                                                                                        IPAK
+                                                                                     CASE 369D
+                                                                                      ISSUE C
+
+                               B                                    C                                                         NOTES:
+                                                                                                                               1. DIMENSIONING AND TOLERANCING PER
+             V                    R                                           E                                                   ANSI Y14.5M, 1982.
+                                                                                                                               2. CONTROLLING DIMENSION: INCH.
+
+                                                                                                                                              INCHES         MILLIMETERS
+                                  4                                                                                                 DIM     MIN     MAX       MIN    MAX
+                                                                                                                    Z                A     0.235 0.245        5.97   6.35
+                                            A                                                                                        B     0.250 0.265        6.35   6.73
+             S                                                                                                                       C     0.086 0.094        2.19   2.38
+                          1       2   3
+                                                                                                                                     D     0.027 0.035        0.69   0.88
+                                                                                                                                     E     0.018 0.023        0.46   0.58
+       −T−                                                                                                                           F     0.037 0.045        0.94   1.14
+      SEATING                                                                                                                        G       0.090 BSC         2.29 BSC
+      PLANE                                 K                                                                                        H     0.034 0.040        0.87   1.01
+                                                                                                                                     J     0.018 0.023        0.46   0.58
+                                                                                                                                     K     0.350 0.380        8.89   9.65
+                                                                                                                                     R     0.180 0.215        4.45   5.45
+                                                            J                                                                        S     0.025 0.040        0.63   1.01
+                 F                                                                                                                   V     0.035 0.050        0.89   1.27
+                                                                              H
+                                                                                                                                     Z     0.155     −−−      3.93    −−−
+                                             D 3 PL
+                                                                                                                                    STYLE 2:
+                              G                 0.13 (0.005) M T                                                                     PIN 1. GATE
+                                                                                                                                         2. DRAIN
+                                                                                                                                         3. SOURCE
+                                                                                                                                         4. DRAIN
+
+
+
+
+ ON Semiconductor and            are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries.
+ ON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent
+ coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein.
+ ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability
+ arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages.
+ Buyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards,
+ regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or
+ specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer
+ application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not
+ designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification
+ in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized
+ application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and
+ expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such
+ claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This
+ literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+PUBLICATION ORDERING INFORMATION
+LITERATURE FULFILLMENT:                                                 N. American Technical Support: 800−282−9855 Toll Free              ON Semiconductor Website: www.onsemi.com
+ Literature Distribution Center for ON Semiconductor                     USA/Canada
+ 19521 E. 32nd Pkwy, Aurora, Colorado 80011 USA                         Europe, Middle East and Africa Technical Support:                  Order Literature: http://www.onsemi.com/orderlit
+ Phone: 303−675−2175 or 800−344−3860 Toll Free USA/Canada                Phone: 421 33 790 2910
+ Fax: 303−675−2176 or 800−344−3867 Toll Free USA/Canada                 Japan Customer Focus Center                                        For additional information, please contact your local
+ Email: orderlit@onsemi.com                                              Phone: 81−3−5817−1050                                             Sales Representative
+
+ ◊                                                                                www.onsemi.com                                                                     NTD6416ANL/D
+                                                                                              7
+

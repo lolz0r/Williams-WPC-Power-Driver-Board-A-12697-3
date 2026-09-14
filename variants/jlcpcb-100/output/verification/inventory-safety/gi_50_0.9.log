@@ -1,0 +1,50 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: g.i. string cold start through f106 and the triac: 18 x #44 lamps (6.3 v / 0.25 a: 2.5 r cold -> 25 r hot, thermal tau ~60 ms) on the 6.8 vac winding at the sttng-measured 7.87 vac unloaded (11.1 v peak, 0.05 r per leg), f106 = littelfuse 239 5 a s.b. 5x20 mm (nominal melting i2t 302.8 a2s), bta16-600c (vt0 0.85 v / rd 25 mohm, itsm 160 a, i2t 128 a2s) in the return leg (mt1 to gnd_ref), gate held from the voltage peak at 4.17 ms (worst-case first firing, level 0 = full on). measures the inrush peak, the i2t through fuse and triac, the steady rms string current against the 5 a fuse and the triac dissipation.
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vcc                                          5
+stdout ac0                                          0
+stdout ac                                           0
+stdout acf                                         -0
+stdout mt2                                          0
+stdout xs.th                                        0
+stdout mt2i                                        -0
+stdout on                                           0
+stdout onr                                          0
+stdout latch                                        0
+stdout a                                  1.90676e-10
+stdout b                                  2.43111e-09
+stdout e                                    2.497e-12
+stdout eg                                   2.497e-12
+stdout g                                      2.2e-12
+stdout bon#branch                                   0
+stdout vmt#branch                                  -0
+stdout vg#branch                              1.1e-14
+stdout vl#branch                          4.76689e-12
+stdout vf106#branch                                -0
+stdout vac#branch                                   0
+stdout vcc#branch                        -1.00204e-11
+ Reference value :  5.74486e-02
+ Reference value :  1.33592e-01
+ Reference value :  2.10392e-01
+ Reference value :  2.87502e-01
+ Reference value :  3.61277e-01
+ Reference value :  4.39853e-01
+ Reference value :  5.17137e-01
+ Reference value :  5.95912e-01
+ Reference value :  6.72097e-01
+ Reference value :  7.49092e-01
+ Reference value :  8.26462e-01
+ Reference value :  9.05037e-01
+ Reference value :  9.83727e-01
+stdout No. of Data Rows : 204402
+stdout sim_end = 1.000000e+00
+stdout rms                 =  4.50727e+00 from=  8.00000e-01 to=  1.00000e+00
+stdout peak                =  3.04696e+01 at=  4.17003e-03
+stdout power               =  4.37616e+00 from=  8.00000e-01 to=  1.00000e+00
+stdout i2t                 =  2.87919e+00 from=  0.00000e+00 to=  3.00000e-02
+stdout tj = 1.107192e+02

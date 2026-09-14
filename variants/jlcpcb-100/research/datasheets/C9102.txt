@@ -1,0 +1,914 @@
+                                                                                 BTA08, BTB08, T810, T835
+
+                                             Snubberless™, logic level and standard 8 A Triacs
+
+                                                                                                             Datasheet − production data
+
+
+                                                                                      Description
+                                              A2                                      Available either in through-hole or surface-mount
+                                                                                      packages, the BTA08, BTB08, T810, T835 is
+                                        G                                             suitable for general purpose AC switching. It can
+                               A2             A1
+                                                                     A2
+                                                                                      be used as an ON/OFF function in applications
+                                                                                      such as static relays, heating regulation, induction
+                                                                                      motor starting circuits or for phase control
+                                                                                      operation in light dimmers and motor speed
+      A1
+                                            A1
+                                                                                      controllers, etc.
+        A2                                    A2
+             G      TO-220AB                       G    TO-220AB Insulated
+                                                                                      The Snubberless versions (BTABTB08_xxxxW
+                                                                                      and T8 series) are specially recommended for
+                                                                                      use on inductive loads, thanks to their high
+                                                                A2                    commutation performances.
+                                                                                      Logic level versions are designed to interface
+                                              A1 A2
+         A1
+           A2
+                                                                                      directly with low power drivers such as micro-
+                                                        G
+             G         IPAK                                 DPAK                      controller.
+                                                   A2                                 By using an internal ceramic pad, the BTA series
+                                                                                      provides voltage insulated tab (rated at 2500
+                                                                                      VRMS) complying with UL standards
+                          A1    A2                                                    (file ref.: E81734).
+                                              D²PAK
+                                    G
+
+
+
+
+Features
+• On-state rms current, IT(RMS) 8 A
+• Repetitive peak off-state voltage, VDRM/VRRM
+  600 to 800 V
+• Triggering gate current, IGT (Q1) 5 to 50 mA
+
+
+
+
+June 2014                                                                    DocID7472 Rev 8                                           1/18
+This is information on a product in full production.                                                                             www.st.com
+Characteristics                                                                                         BTA08, BTB08, T810, T835
+
+
+1                Characteristics
+
+                  Table 1. Absolute maximum ratings (Tj = 25 °C unless otherwise stated)
+ Symbol                                                Parameter                                                          Value      Unit
+
+                                                                  IPAK, DPAK,
+               On-state rms current                                                             Tc = 110 °C
+    IT(rms)                                                       TO-220AB                                                 8          A
+               (full sine wave)
+                                                                  TO-220ABIns.                  Tc = 100 °C
+
+               Non repetitive surge peak on-state                 F = 50 Hz                     t = 20 ms                  80
+     ITSM                                                                                                                             A
+               current (full cycle, Tj initial = 25 °C)           F = 60 Hz                     t = 16.7 ms                84
+       I²t     I²t value for fusing                                                             tp = 10 ms                 36        A ²s
+               Critical rate of rise of on-state current
+     dI/dt                                                        F = 120 Hz                    Tj = 125 °C                50        A/µs
+               IG = 2 x IGT, tr ≤ 100 ns
+     IGM       Peak gate current                                  tp = 20 µs                    Tj = 125 °C                4          A
+    PG(AV)     Average gate power dissipation                                                   Tj = 125 °C                1          W
+     Tstg      Storage junction temperature range                                                                   - 40 to + 150
+                                                                                                                                     °C
+      Tj       Operating junction temperature range                                                                 - 40 to + 150
+
+
+Table 2. Electrical characteristics (Tj = 25 °C, unless otherwise specified) Snubberless and logic
+                                          level (3 quadrants)
+                                                                                     T8                 BTA08 / BTB08
+Symbol             Test conditions              Quadrant                                                                            Unit
+                                                                           T810 T835              TW          SW    CW      BW
+
+  IGT (1)                                        I - II - III      MAX.        10         35       5          10    35         50   mA
+              VD = 12 V RL = 30 Ω
+    VGT                                          I - II - III      MAX.                                 1.3                          V
+              VD = VDRM RL = 3.3 k Ω
+    VGD                                          I - II - III      MIN.                                 0.2                          V
+              Tj = 125 °C
+    IH (2)    IT = 100 mA                                          MAX.        15         35       10         15    35         50   mA
+                                                    I - III                    25         50       10         25    50         70
+     IL       IG = 1.2 IGT                                         MAX.                                                             mA
+                                                      II                       30         60       15         30    60         80
+              VD = 67% VDRM gate open
+ dV/dt (2)                                                         MIN.        40         400      20         40    400     1000    V/µs
+              Tj = 125 °C
+              (dV/dt)c = 0.1 V/µs     Tj = 125 °C                              5.4         -      3.5         5.4    -          -
+ (dI/dt)c
+     (2)      (dV/dt)c = 10 V/µs      Tj = 125 °C                  MIN.        2.8         -      1.5     2.98       -          -   A/ms
+              Without snubber         Tj = 125 °C                               -         4.5      -           -    4.5         7
+
+
+
+
+2/18                                                          DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                                                                 Characteristics
+
+
+                                             Table 3. Standard (4 quadrants)
+                                                                                               BTA08 / BTB08
+ Symbol                         Test conditions                        Quadrant                                       Unit
+                                                                                                  C              B
+
+                                                                       I - II - III               25          50
+  IGT (1)                                                                               MAX.                          mA
+              VD = 12 V, R L = 33 Ω                                        IV                     50         100
+   VGT                                                                    ALL           MAX.           1.3             V
+   VGD        VD = VDRM, RL = 3.3 k Ω , Τj = 125 °Χ                       ALL           MIN.           0.2             V
+   IH   (2)
+              IT = 500 mA                                                               MAX.      25             50   mA
+                                                                       I - III - IV               40             50
+    IL        IG = 1.2 IGT                                                              MAX.                          mA
+                                                                            II                    80         100
+ dV/dt (2) VD = 67% VDRM gate open                                    Tj = 125 °C       MIN.    200          400      V/µs
+ (dV/dt)c
+    (2)       (dI/dt)c = 5.3 A/ms                                     Tj = 125 °C       MIN.      5              10   V/µs
+
+
+
+                                                 Table 4. Static characteristics
+ Symbol                                            Test conditions                                      Value         Unit
+
+ VTM (1)      ITM = 11 A, tp = 380 µs                                      Tj = 25 °C      MAX.         1.55           V
+  Vt0   (2)
+              Threshold voltage                                            Tj = 125 °C     MAX.         0.85           V
+        (2)   Dynamic resistance                                           Tj = 125 °C     MAX.          50           mΩ
+  Rd
+
+   IDRM                                                                    Tj = 25 °C                        5        µA
+              VDRM = VRRM                                                                  MAX.
+   IRRM                                                                    Tj = 125 °C                       1        mA
+1. minimum IGT is guaranteed at 5% of IGT max.
+2. for both polarities of A2 referenced to A1.
+
+
+                                                  Table 5. Thermal resistance
+ Symbol                                              Parameter                                          Value         Unit
+
+                                                         IPAK / D2PAK / DPAK / TO-220AB                  1.6
+  Rth(j-c)    Junction to case (AC)                                                                                   °C/W
+                                                         TO-220AB Insulated                              2.5
+                                        S = 1 cm²        D2PAK                                           45
+                                        S = 0.5 cm²      DPAK                                            70
+  Rth(j-a)    Junction to ambient                                                                                     °C/W
+                                                         TO-220AB / TO-220AB Insulated                   60
+                                                         IPAK                                            100
+
+
+
+                 S = Copper surface under tab.
+
+
+
+
+                                                        DocID7472 Rev 8                                                 3/18
+                                                                                                                               18
+Characteristics                                                                                                                                           BTA08, BTB08, T810, T835
+
+
+  Figure 1. Maximum power dissipation versus                                                                    Figure 2. RMS on-state current versus case
+        RMS on-state current (full cycle)                                                                                 temperature (full cycle)
+          P(W)                                                                                                      IT(RMS)(A)
+ 10                                                                                                            10
+  9                                                                                                             9                                                                                BTB / T8
+  8                                                                                                             8
+  7                                                                                                             7                                                                        BTA
+
+  6                                                                                                             6
+  5                                                                                                             5
+  4                                                                                                             4
+  3                                                                                                             3
+  2                                                                                                             2
+  1                                                                                                             1
+                                                      IT(RMS)(A)                                                                                           TC(°C)
+  0                                                                                                             0
+       0              1             2            3              4              5         6         7       8        0                25              50                    75            100                 125
+
+
+
+ Figure 3. RMS on-state current versus ambient                                                                           Figure 4. Relative variation of thermal
+            temperature (full cycle)                                                                                       impedance versus pulse duration
+           IT(RMS)(A)                                                                                                    K=[Zth/Rth]
+ 3.5                                                                                                           1E+0
+                                        printed circuit board FR4, copper thickness: 35 µm                                      Zth(j-c)
+ 3.0                             D2PAK                                                                                                                        DPAK/IPAK
+                               (S=1CM2)                                                                                                                         Zth(j-a)
+
+ 2.5
+                                                                                                               1E-1
+ 2.0                                                                                                                                                                        TO-220AB/D2PAK
+                                                                                                                                                                                 Zth(j-a)
+
+ 1.5                 DPAK
+                  (S=0.5CM2)
+                                                                                                               1E-2
+ 1.0
+
+ 0.5
+                                                          TC(°C)                                                                                                tp(s)
+ 0.0                                                                                                           1E-3
+           0                   25                    50                   75                 100         125            1E-3        1E-2         1E-1            1E+0             1E+1          1E+2        5E+2
+
+
+
+
+                    Figure 5. On-state characteristics                                                         Figure 6. Surge peak on-state current versus
+                           (maximum values)                                                                                  number of cycles
+            ITM(A)                                                                                                    ITSM(A)
+ 100                                                                                                           90
+                   Tj max.                       Tj = Tj max.
+                 Vto = 0.85V                                                                                   80
+                 Rd = 50 mΩ
+                                                                                                               70                                                                              t=20ms
+
+                                                                                                               60                                                                               One cycle
+                                                                                                                                                     Non repetitive
+                                                                                                               50                                    Tj initial=25°C
+  10
+                                            Tj = 25°C.
+                                                                                                               40                  Repetitive
+                                                                                                                                   TC=110°C
+                                                                                                               30
+
+                                                                                                               20
+
+                                                                                                               10
+                                                            VTM(V)                                                                                   Number of cycles
+      1                                                                                                         0
+           0.5        1.0        1.5       2.0            2.5       3.0            3.5   4.0       4.5   5.0        1                           10                              100                         1000
+
+
+
+
+4/18                                                                                               DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                                                                                                                                       Characteristics
+
+
+     Figure 7. Non-repetitive surge peak on-state                                                               Figure 8. Relative variation of gate trigger
+                current for a sinusoidal                                                                                          current
+
+               ITSM(A), I2t (A2s)                                                                                IGT,IH,IL[Tj] / IGT,IH,IL[Tj=25°C]
+ 1000                                                                                                     2.5
+                                                                                  Tj initial=25°C                                                         holding current and latching current
+                                                                                                                                                      versus junction temperature (typical values)
+                                                                                                          2.0
+                                                                                                                                    IGT
+                     dI/dt limitation:
+                                                                                       ITSM
+                         50A/µs                                                                           1.5
+                                  360°
+    100
+                                                                                                                          IH & IL
+                                                                                                          1.0
+                            α                                                           I2t
+
+
+                pulse with width tp < 10 ms and corresponding value of I2t                                0.5
+
+                                                                                      tp(ms)                                                                Tj(°C)
+     10                                                                                                   0.0
+          0.01                           0.10                     1.00                         10.00            -40       -20             0      20       40        60        80        100    120       140
+
+
+
+     Figure 9. Relative variation of critical rate of                                                     Figure 10. Relative variation of critical rate of
+      decrease of main current versus (dV/dt)c                                                              decrease of main current versus (dV/dt)c
+                    (typical values)                                                                                     (typical values)
+
+          (dI/dt)c [(dV/dt)c] / Specified (dI/dt)c                                                               (dI/dt)c [(dV/dt)c] / Specified (dI/dt)c
+ 2.2                                                                                                      2.0
+                                                     Snubberless and Logic level types                                                                                                  Standard types
+ 2.0            TW
+                                                                                                          1.8
+ 1.8
+                                                                                                          1.6
+ 1.6
+                                                                                                                                C
+ 1.4                                                                                                      1.4
+ 1.2                                                                     T835/CW/BW
+                                                                                                          1.2         B
+ 1.0
+ 0.8                                                                                                      1.0
+                                                                                       T810/SW
+ 0.6                                                                                                      0.8
+ 0.4
+ 0.2                                                                                                      0.6
+                                               (dV/dt)c (V/µs)                                                                                        (dV/dt)c (V/µs)
+ 0.0                                                                                                      0.4
+         0.1                             1.0                      10.0                         100.0            0.1                             1.0                       10.0                       100.0
+
+
+
+    Figure 11. Relative variation of critical rate of                                                     Figure 12. DPAK and D2PAK thermal resistance
+      decrease of main current versus junction                                                                      junction to ambient versus
+                     temperature                                                                                     copper surface under tab
+     (dI/dt)c [Tj] / (dI/dt)c [Tj specified]                                                                     Rth(j-a)(°C/W)
+6                                                                                                         100
+                                                                                                                                              printed circuit board FR4, copper thickness: 35 µm
+                                                                                                           90
+5
+                                                                                                           80
+                                                                                                           70
+4
+                                                                                                           60
+3                                                                                                          50                       DPAK
+
+                                                                                                           40
+2                                                                                                          30              D2PAK
+
+                                                                                                           20
+ 1
+                                                    Tj(°C)                                                 10                                               S(cm²)
+0                                                                                                           0
+     0                 25                      50            75             100                     125          0        4          8         12      16      20        24        28     32    36        40
+
+
+
+
+                                                                                        DocID7472 Rev 8                                                                                               5/18
+                                                                                                                                                                                                               18
+Package information                                                          BTA08, BTB08, T810, T835
+
+
+2          Package information
+
+           •   Epoxy meets UL94, V0
+           •   Lead-free package
+           •   Recommended torque: 0.4 to 0.6 N·m
+           In order to meet environmental requirements, ST offers these devices in different grades of
+           ECOPACK® packages, depending on their level of environmental compliance. ECOPACK®
+           specifications, grade definitions and product status are available at: www.st.com.
+           ECOPACK® is an ST trademark.
+
+                                     Figure 13. DPAK dimension definitions
+
+
+
+
+                                             A
+
+
+
+
+                               E
+
+                              b4
+                                                        c2                              E1
+
+                                                 L2
+
+
+
+                                                                               D1
+                                                                                    D
+                                             D
+                      H                                  A1
+                                    L4                                                   E1
+
+
+
+
+                                         b
+                               e1                               c
+
+
+
+
+                                                                    V2
+                                                               A2        L
+
+
+
+
+Note:     This package drawing may slightly differ from the physical package. However, all the
+          specified dimensions are guaranteed.
+
+
+
+
+6/18                                         DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                                            Package information
+
+
+                                     Table 6. DPAK dimension values
+                                                         Dimensions
+
+             Ref.                Millimeters                                       Inches
+
+                      Min.          Typ.           Max.              Min.           Typ.        Max.
+
+              A       2.18                         2.40             0.086                       0.094
+             A1       0.90                         1.10             0.035                       0.043
+             A2       0.03                         0.23             0.001                       0.009
+              b       0.64                         0.90             0.025                       0.035
+             b4       4.95                         5.46             0.195                       0.215
+              c       0.46                         0.61             0.018                       0.024
+             c2       0.46                         0.60             0.018                       0.023
+              D       5.97                         6.22             0.235                       0.244
+             D1       5.10                                          0.201
+              E       6.35                         6.73             0.250                       0.264
+             E1                     4.32                                            0.170
+             e1       4.40                         4.70             0.173                       0.185
+              H       9.35                        10.40             0.368                       0.409
+              L       1.00                         1.78             0.039                       0.070
+             L2                                    1.27                                         0.05
+             L4       0.60                         1.02             0.023                       0.040
+             V2        0°                           8°                0°                         8°
+
+
+                                Figure 14. Footprint (dimensions in mm)
+
+
+
+
+                                        6.7               3.0        3.0
+
+
+
+
+                                                                                            A
+                                                                                  5.094
+                       6.7
+
+
+
+
+                                                     B                      1.6
+                     The device must be positioned within
+                                                                0.05 A B
+
+
+
+
+                                        DocID7472 Rev 8                                                 7/18
+                                                                                                               18
+Package information                                                       BTA08, BTB08, T810, T835
+
+
+                                   Figure 15. IPAK dimension definitions
+
+
+
+
+                                               E                      A
+                                               b4                             c2
+                                                                 V1
+                                L2
+
+
+                                                             D
+                               C
+
+                                L1
+                                                                              H
+                                                                        A1
+                                                 b2
+                                           e                 L
+
+
+
+
+                                                 b                        c
+                                               e1
+
+
+
+
+Note:     This package drawing may slightly differ from the physical package. However, all the
+          specified dimensions are guaranteed.
+
+
+
+
+8/18                                     DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                           Package information
+
+
+                                 Table 7. IPAK dimension values
+                                                  Dimensions
+
+             Ref.            Millimeters                          Inches
+
+                      Min.      Typ.          Max.         Min.    Typ.       Max.
+
+              A       2.20                     2.40       0.086              0.094
+             A1       0.90                     1.10       0.035              0.043
+              b       0.64                     0.90       0.025              0.035
+             b2                                0.95                          0.037
+             b4       5.20                     5.43       0.204              0.213
+              c       0.45                     0.60       0.017              0.023
+             c2       0.46                     0.60       0.018              0.023
+              D        6                       6.20       0.236              0.244
+              E       6.40                     6.70       0.252              0.263
+              e                 2.28                              0.090
+             e1       4.40                     4.60       0.173              0.181
+              H                16.10                              0.634
+              L        9                       9.60       0.354              0.377
+             L1        0.8                     1.20       0.031              0.047
+             L2                 0.80           1.25               0.031      0.049
+             V1                 10°                                10°
+
+
+
+
+                                      DocID7472 Rev 8                                9/18
+                                                                                            18
+Package information                                                  BTA08, BTB08, T810, T835
+
+
+                       Figure 16. TO-220AB (NIns. & Ins. 20-up) dimension definitions
+
+
+
+
+                                          B                                    C
+
+                                       ØI                                b2
+
+                                                         L
+                                                                                    F
+
+
+                                                             A
+
+                      I4
+                            l3
+
+                                                    a1                        c2
+
+
+                            l2
+                                                             a2
+
+
+
+                                                                              M
+                                               b1                                  c1
+                                      e
+
+
+
+
+10/18                                     DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                                Package information
+
+
+                        Table 8. TO-220AB (NIns. & Ins. 20-up) dimension values
+                                                   Dimensions
+
+             Ref.               Millimeters                            Inches
+
+                      Min.         Typ.        Max.         Min.        Typ.       Max.
+
+              A       15.20                    15.90       0.598                  0.625
+             a1                    3.75                                0.147
+             a2       13.00                    14.00       0.511                  0.551
+              B       10.00                    10.40       0.393                  0.409
+             b1       0.61                      0.88       0.024                  0.034
+             b2       1.23                      1.32       0.048                  0.051
+              C       4.40                      4.60       0.173                  0.181
+             c1       0.49                      0.70       0.019                  0.027
+             c2       2.40                      2.72       0.094                  0.107
+              e       2.40                      2.70       0.094                  0.106
+              F       6.20                      6.60       0.244                  0.259
+              ØI      3.75                      3.85       0.147                  0.151
+              I4      15.80       16.40        16.80       0.622       0.646      0.661
+              L       2.65                      2.95       0.104                   0.116
+              l2      1.14                      1.70       0.044                  0.066
+              l3      1.14                      1.70       0.044                  0.066
+              M                    2.60                                0.102
+
+
+
+
+                                       DocID7472 Rev 8                                 11/18
+                                                                                               18
+Package information                                                 BTA08, BTB08, T810, T835
+
+
+                               Figure 17. D2PAK dimension definitions
+
+
+
+
+                                                                         A
+
+                                   E
+                                                            C2
+                          L2
+
+
+
+
+                                                                                  D
+                      L
+
+                          L3
+                                                     A1
+
+                                             B2
+                                                                C            R
+                                             B
+
+
+                                    G
+
+
+                                                                    A2
+                                                    2mm min.
+                                                    FLAT ZONE
+
+
+                                                                             V2
+
+
+
+
+12/18                                  DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                                    Package information
+
+
+                                 Table 9. D2PAK dimension values
+                                                       Dimensions
+
+             Ref.             Millimeters                                 Inches
+
+                      Min.       Typ.            Max.           Min.       Typ.           Max.
+
+              A       4.30                       4.60          0.169                      0.181
+             A1       2.49                       2.69          0.098                      0.106
+             A2       0.03                       0.23          0.001                      0.009
+              B       0.70                       0.93          0.027                      0.037
+             B2       1.25       1.40                          0.048       0.055
+              C       0.45                       0.60          0.017                      0.024
+             C2       1.21                       1.36          0.047                      0.054
+              D       8.95                       9.35          0.352                      0.368
+              E       10.00                     10.28          0.393                      0.405
+              G       4.88                       5.28          0.192                      0.208
+              L       15.00                     15.85          0.590                      0.624
+             L2       1.27                       1.40          0.050                      0.055
+             L3       1.40                       1.75          0.055                      0.069
+              R                  0.40                                      0.016
+             V2        0°                         8°                0°                     8°
+
+
+                              Figure 18. Footprint (dimensions in mm)
+
+
+                                               16.90
+
+
+
+
+                     10.30                                                         5.08
+
+                                                                         1.30
+
+
+
+                                                              3.70
+                                        8.90
+
+
+
+
+                                     DocID7472 Rev 8                                            13/18
+                                                                                                        18
+Ordering information                                                         BTA08, BTB08, T810, T835
+
+
+3          Ordering information
+
+                       Figure 19. Ordering information scheme (BTA08 and BTB08 series)
+
+
+
+                                                              BT A 08 - 600 BW (RG)
+
+                           Triac series
+                           Insulation
+                           A = insulated
+                           B = non insulated
+                           Current
+                           08 = 8A
+                           Voltage
+                           600 = 600V
+                           800 = 800V
+                           Sensitivity and type
+                           B = 50mA Standard         BW = 50mA Snubberless
+                           C = 25mA Standard         CW = 35mA Snubberless
+                           SW = 10mA Logic Level     TW = 5mA Logic Level
+                           Packing mode
+                           RG = Tube
+
+
+
+
+                              Figure 20. Ordering information scheme (T8 series)
+
+
+
+
+                                                                 T 8 10 - 600 B (-TR)
+
+                           Triac series
+                           Current
+                           8 = 8A
+                           Sensitivity
+                           10 = 10 mA
+                           35 = 35 mA
+                           Voltage
+                           600 = 600 V
+                           800 = 800 V
+                           Package
+                           B = DPAK
+                           H = IPAK
+                           G = D2PAK
+                           R = I2PAK
+                           Packing mode
+                           Blanck = Tube
+                           -TR = Tape and reel
+
+
+
+
+14/18                                          DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                                                       Ordering information
+
+
+                                                     Table 10. Product selector
+                                                         Voltage (xxx)
+                    Part Number                                               Sensitivity       Type          Package
+                                                    600 V            800 V
+
+           BTA/BTB08-xxxB                                X             X         50 mA        Standard       TO-220AB
+           BTA/BTB08-xxxBW                               X             X         50 mA      Snubberless      TO-220AB
+           BTA/BTB08-xxxC                                X             X         25 mA        Standard       TO-220AB
+           BTA/BTB08-xxxCW                               X             X         35 mA      Snubberless      TO-220AB
+           BTA/BTB08-xxxSW                               X             X         10 mA       Logic level     TO-220AB
+           BTA/BTB08-xxxTW                               X             X         5 mA        Logic Level     TO-220AB
+           T810-xxxG                                     X             X         10 mA       Logic Level       D2PAK
+           T810-xxxH                                     X             X         10 mA       Logic Level        IPAK
+           T835-xxxB                                     X             X         35 mA      Snubberless        DPAK
+           T835-xxxG                                     X             X         35 mA      Snubberless        D2PAK
+           T835-xxxH                                     X             X         35 mA      Snubberless         IPAK
+
+
+          BTB: non insulated TO-220AB package
+          xxx = voltage, y (y) = sensitivity, z = type
+
+                                                  Table 11. Ordering information
+                                                                                                             Delivery
+               Order code               Marking              Package         Weight         Base qty
+                                                                                                              mode
+
+           T810-600G                T810-600
+           T835-600G                T835-600
+                                                                                                               Tube
+           T810-800G                T810-800
+           T835-800G                T835-800
+                                                             D²PAK            1.5 g           50
+           T810-600G-TR             T810-600
+           T835-600G-TR             T835-600
+                                                                                                           Tape and reel
+           T810-800G-TR             T810-800
+           T835-800G-TR             T835-800
+           T835-600B                T835-600
+                                                              DPAK            0.3 g           75               Tube
+           T835-800B                T835-800
+           T810-600H                T810-600
+           T835-600H                T835-600
+                                                              IPAK            0.4 g           75               Tube
+           T810-800H                T810-800
+           T835-800H                T835-800
+
+
+
+
+                                                     DocID7472 Rev 8                                               15/18
+                                                                                                                           18
+Ordering information                                                   BTA08, BTB08, T810, T835
+
+
+                                      Table 11. Ordering information
+                                                                                      Delivery
+              Order code     Marking        Package       Weight         Base qty
+                                                                                       mode
+
+           BTA08-800SWRG   BTA08-800SW
+           BTB08-600SWRG BTB08-600SW
+           BTB08-800SWRG BTB08-800SW
+           BTA08-600SWRG   BTA08-600SW
+           BTA08-800CRG    BTA08-800C
+           BTB08-600CRG    BTB08-600C
+           BTB08-800CRG    BTB08-800C
+           BTA08-600CRG    BTA08-600C
+           BTA08-800CWRG BTA08-800CW
+           BTB08-600CWRG BTB08-600CW
+                                            TO-220AB       2.3 g           50 g         Tube
+           BTB08-800CWRG BTB08-800CW
+           BTA08-600CWRG BTA08-600CW
+           BTA08-800TWRG   BTA08-800TW
+           BTB08-600TWRG BTB08-600TW
+           BTB08-800TWRG BTB08-800TW
+           BTA08-600TWRG   BTA08-600TW
+           BTA08-800BRG    BTA08-800B
+           BTA08-800BWRG   BTA08-800BW
+           BTB08-600BRG    BTB08-600B
+           BTB08-600BWRG BTB08-600BW
+           BTB08-800BRG    BTB08-800B
+           BTB08-800BWRG BTB08-800BW
+                                            TO-220AB       2.3 g           50           Tube
+           BTA08-600BRG    BTA08-600B
+           BTA08-600BWRG   BTA08-600BW
+            T835-600B      T835-600
+                                              DPAK         0.3 g          2500      Tape and reel
+            T835-800B      T835-800
+
+
+
+
+16/18                                   DocID7472 Rev 8
+BTA08, BTB08, T810, T835                                                             Revision history
+
+
+4         Revision history
+
+                                      Table 12. Document revision history
+               Date        Revision                                Changes
+
+             Apr-2002        5A         Last update.
+                                        TO-220AB delivery mode changed from bulk to tube. ECOPACK
+            13-Feb-2006       6
+                                        statement added.
+            10-Mar-2010       7         Updated ECOPACK statement and Figure 20
+                                        Updated DPAK and IPAK package information and reformatted to
+            02-Jun-2014       8
+                                        current standard.
+
+
+
+
+                                          DocID7472 Rev 8                                         17/18
+                                                                                                          18
+                                                                                                         BTA08, BTB08, T810, T835
+
+
+
+
+                                                           Please Read Carefully:
+
+
+Information in this document is provided solely in connection with ST products. STMicroelectronics NV and its subsidiaries (“ST”) reserve the
+right to make changes, corrections, modifications or improvements, to this document, and the products and services described herein at any
+time, without notice.
+All ST products are sold pursuant to ST’s terms and conditions of sale.
+Purchasers are solely responsible for the choice, selection and use of the ST products and services described herein, and ST assumes no
+liability whatsoever relating to the choice, selection or use of the ST products and services described herein.
+No license, express or implied, by estoppel or otherwise, to any intellectual property rights is granted under this document. If any part of this
+document refers to any third party products or services it shall not be deemed a license grant by ST for the use of such third party products
+or services, or any intellectual property contained therein or considered as a warranty covering the use in any manner whatsoever of such
+third party products or services or any intellectual property contained therein.
+
+
+UNLESS OTHERWISE SET FORTH IN ST’S TERMS AND CONDITIONS OF SALE ST DISCLAIMS ANY EXPRESS OR IMPLIED
+WARRANTY WITH RESPECT TO THE USE AND/OR SALE OF ST PRODUCTS INCLUDING WITHOUT LIMITATION IMPLIED
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE (AND THEIR EQUIVALENTS UNDER THE LAWS
+OF ANY JURISDICTION), OR INFRINGEMENT OF ANY PATENT, COPYRIGHT OR OTHER INTELLECTUAL PROPERTY RIGHT.
+ST PRODUCTS ARE NOT DESIGNED OR AUTHORIZED FOR USE IN: (A) SAFETY CRITICAL APPLICATIONS SUCH AS LIFE
+SUPPORTING, ACTIVE IMPLANTED DEVICES OR SYSTEMS WITH PRODUCT FUNCTIONAL SAFETY REQUIREMENTS; (B)
+AERONAUTIC APPLICATIONS; (C) AUTOMOTIVE APPLICATIONS OR ENVIRONMENTS, AND/OR (D) AEROSPACE APPLICATIONS
+OR ENVIRONMENTS. WHERE ST PRODUCTS ARE NOT DESIGNED FOR SUCH USE, THE PURCHASER SHALL USE PRODUCTS AT
+PURCHASER’S SOLE RISK, EVEN IF ST HAS BEEN INFORMED IN WRITING OF SUCH USAGE, UNLESS A PRODUCT IS
+EXPRESSLY DESIGNATED BY ST AS BEING INTENDED FOR “AUTOMOTIVE, AUTOMOTIVE SAFETY OR MEDICAL” INDUSTRY
+DOMAINS ACCORDING TO ST PRODUCT DESIGN SPECIFICATIONS. PRODUCTS FORMALLY ESCC, QML OR JAN QUALIFIED ARE
+DEEMED SUITABLE FOR USE IN AEROSPACE BY THE CORRESPONDING GOVERNMENTAL AGENCY.
+
+
+Resale of ST products with provisions different from the statements and/or technical features set forth in this document shall immediately void
+any warranty granted by ST for the ST product or service described herein and shall not create or extend in any manner whatsoever, any
+liability of ST.
+                          ST and the ST logo are trademarks or registered trademarks of ST in various countries.
+                        Information in this document supersedes and replaces all information previously supplied.
+         The ST logo is a registered trademark of STMicroelectronics. All other names are the property of their respective owners.
+
+
+                                               © 2014 STMicroelectronics - All rights reserved
+
+
+                                                   STMicroelectronics group of companies
+ Australia - Belgium - Brazil - Canada - China - Czech Republic - Finland - France - Germany - Hong Kong - India - Israel - Italy - Japan -
+   Malaysia - Malta - Morocco - Philippines - Singapore - Spain - Sweden - Switzerland - United Kingdom - United States of America
+                                                                 www.st.com
+
+
+
+
+18/18                                                        DocID7472 Rev 8
+

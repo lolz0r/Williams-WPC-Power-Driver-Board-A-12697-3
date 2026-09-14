@@ -1,0 +1,347 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/matrix_gear_1us_abstol1n.cir",
+  "deck_sha256": "3021919e5a6480da1aff839700260ea97108147738ac8b07cd73683dcba5a57d",
+  "elapsed_s": 148.67761876500003,
+  "wall_limit_s": 600.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [
+    "stderr doAnalyses: TRAN:  Timestep too small; time = 0.2558, timestep = 1.25e-18: trouble with node \"vrow6#branch\"",
+    "stderr run simulation(s) aborted"
+  ],
+  "measurements": {
+    "sim_end": 0.25579998,
+    "col0_peak": 20.1371,
+    "row0_peak": 2.91429,
+    "row0_clear": 4.99995,
+    "col0_power": 0.209488,
+    "row0_power": 0.0450441,
+    "col0_tj": 73.043669,
+    "row0_tj": 54.9548521,
+    "col1_peak": 20.1873,
+    "row1_peak": 2.91429,
+    "row1_clear": 4.99995,
+    "col1_power": 0.20952,
+    "row1_power": 0.0450441,
+    "col1_tj": 73.047244,
+    "row1_tj": 54.9548521,
+    "col2_peak": 20.1877,
+    "row2_peak": 2.91429,
+    "row2_clear": 4.99995,
+    "col2_power": 0.209562,
+    "row2_power": 0.0450441,
+    "col2_tj": 73.051787,
+    "row2_tj": 54.9548521,
+    "col3_peak": 8.37132,
+    "row3_peak": 2.91429,
+    "row3_clear": 4.99995,
+    "col3_power": 0.210696,
+    "row3_power": 0.0450441,
+    "col3_tj": 73.176582,
+    "row3_tj": 54.9548521,
+    "col4_peak": 20.2345,
+    "row4_peak": 2.91429,
+    "row4_clear": 4.99995,
+    "col4_power": 0.232881,
+    "row4_power": 0.0450441,
+    "col4_tj": 75.616877,
+    "row4_tj": 54.9548521,
+    "col5_peak": 20.188,
+    "row5_peak": 2.91429,
+    "row5_clear": 4.99995,
+    "col5_power": 0.232324,
+    "row5_power": 0.0450441,
+    "col5_tj": 75.555596,
+    "row5_tj": 54.9548521,
+    "col6_peak": 18.0912,
+    "row6_peak": 3.71292,
+    "row6_clear": 4.99995,
+    "col6_power": 0.179061,
+    "row6_power": 0.039192,
+    "col6_tj": 69.696754,
+    "row6_tj": 54.3111211,
+    "col7_peak": 15.6636,
+    "row7_peak": 3.94233,
+    "row7_clear": 4.99995,
+    "col7_power": 0.180987,
+    "row7_power": 0.0399236,
+    "col7_tj": 69.908559,
+    "row7_tj": 54.3916004
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "sim_end": {
+      "value": 0.25579998,
+      "min": 0.36999990000000144,
+      "max": 0.37000010000000144,
+      "passed": false
+    },
+    "col0_peak": {
+      "value": 20.1371,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row0_peak": {
+      "value": 2.91429,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row0_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col0_tj": {
+      "value": 73.043669,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row0_tj": {
+      "value": 54.9548521,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col1_peak": {
+      "value": 20.1873,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row1_peak": {
+      "value": 2.91429,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row1_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col1_tj": {
+      "value": 73.047244,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row1_tj": {
+      "value": 54.9548521,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col2_peak": {
+      "value": 20.1877,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row2_peak": {
+      "value": 2.91429,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row2_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col2_tj": {
+      "value": 73.051787,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row2_tj": {
+      "value": 54.9548521,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col3_peak": {
+      "value": 8.37132,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row3_peak": {
+      "value": 2.91429,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row3_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col3_tj": {
+      "value": 73.176582,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row3_tj": {
+      "value": 54.9548521,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col4_peak": {
+      "value": 20.2345,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row4_peak": {
+      "value": 2.91429,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row4_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col4_tj": {
+      "value": 75.616877,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row4_tj": {
+      "value": 54.9548521,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col5_peak": {
+      "value": 20.188,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row5_peak": {
+      "value": 2.91429,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row5_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col5_tj": {
+      "value": 75.555596,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row5_tj": {
+      "value": 54.9548521,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col6_peak": {
+      "value": 18.0912,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row6_peak": {
+      "value": 3.71292,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row6_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col6_tj": {
+      "value": 69.696754,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row6_tj": {
+      "value": 54.3111211,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col7_peak": {
+      "value": 15.6636,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row7_peak": {
+      "value": 3.94233,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row7_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col7_tj": {
+      "value": 69.908559,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row7_tj": {
+      "value": 54.3916004,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    }
+  },
+  "passed": false,
+  "kind": "matrix",
+  "pcb_changed": false,
+  "candidate_only": false,
+  "changes": [
+    "Solver options/maxstep only; identical circuit and ROM PWL points"
+  ],
+  "arguments": {
+    "kind": "matrix",
+    "name": "matrix_gear_1us_abstol1n",
+    "wall_seconds": 600.0,
+    "step_us": 1.0,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "12v",
+    "bypass": "output",
+    "stop_ms": null
+  },
+  "required_end_s": 0.37,
+  "base_deck_sha256": "3cc9da17c9a810c52f301fc57da596eb91321ed1adbf1101ebd786bdf0f8ab6f",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

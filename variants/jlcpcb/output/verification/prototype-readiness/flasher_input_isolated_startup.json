@@ -1,0 +1,90 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/flasher_input_isolated_startup.cir",
+  "deck_sha256": "ff4975e76ff72932169873962d2a885a97c43b82cc08f5f6535e965db3cb5ea6",
+  "elapsed_s": 1049.189089334,
+  "wall_limit_s": 3600.0,
+  "timed_out": false,
+  "worker_returncode": -15,
+  "execution_completed": false,
+  "errors": [],
+  "measurements": {},
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "sim_end": {
+      "value": null,
+      "min": 0.029999989999999997,
+      "max": 0.03000001,
+      "passed": false
+    },
+    "output_peak": {
+      "value": null,
+      "min": 0,
+      "max": 12.6,
+      "passed": false
+    },
+    "output_min": {
+      "value": null,
+      "min": -0.3,
+      "max": 13,
+      "passed": false
+    },
+    "inductor_peak": {
+      "value": null,
+      "min": 0,
+      "max": 10,
+      "passed": false
+    },
+    "inductor_min": {
+      "value": null,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    },
+    "recovery_min": {
+      "value": null,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": false
+    },
+    "recovery_max": {
+      "value": null,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "kind": "isolated",
+  "pcb_changed": false,
+  "candidate_only": true,
+  "changes": [
+    "Unbuilt candidate: feed U21 through B560C from +20 V flasher rail",
+    "Keep C11 on flasher rail; add dedicated 10000 uF nominal regulator reservoir",
+    "Retain both C6/C7 on lamp rail; 2.5 A sustained flasher load assumption",
+    "16 V secondary at minus 10 percent, existing four-diode bridge, 0.1 ohm winding resistance"
+  ],
+  "arguments": {
+    "kind": "isolated",
+    "name": "flasher_input_isolated_startup",
+    "wall_seconds": 3600.0,
+    "step_us": 1,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "12v",
+    "bypass": "output",
+    "stop_ms": null,
+    "lamp_form": "current",
+    "gate_series_collapse": false,
+    "raw_reservoir_uf": null,
+    "compensation_nf": null,
+    "flasher_input": true
+  },
+  "required_end_s": 0.03,
+  "base_deck_sha256": "90ccd5b71b72696cf804b121a62df6cf0f4cba1ecb6085a8bffe1b6cc60d3583",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

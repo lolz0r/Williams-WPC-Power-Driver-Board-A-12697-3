@@ -1,0 +1,512 @@
+                                                                                                                                        MBRB20100CT
+                                                                                                            20A SCHOTTKY BARRIER RECTIFIER
+
+Product Summary                                                                         Features and Benefits
+MBRB20100CT (Per Leg)                                                                        Guard Ring Die Construction for Transient Protection
+                                     VF (Max) (V)           IR (Max) (mA)                    High Surge Current Capability
+    VRRM (V)         IO (A)
+                                      @ +25°C                 @ +25°C                        Low-Forward Voltage Drop
+      100              10               0.84                     0.1                         Lead-Free Finish; RoHS Compliant (Notes 1 & 2)
+                                                                                             Halogen and Antimony Free. “Green” Device (Note 3)
+                                                                                             For automotive applications requiring specific change
+                                                                                              control (i.e.: parts qualified to AEC-Q100/101/104/200,
+                                                                                              PPAP capable, and manufactured in IATF 16949 certified
+Description and Applications                                                                  facilities), please refer to the related automotive grade (Q-
+                                                                                              suffix) part. A listing can be found at
+This Schottky barrier rectifier is designed to meet the general                               https://www.diodes.com/products/automotive/automotive-
+requirements of commercial applications. It is ideally suited for use as:                     products/.
+                                                                                             This part is qualified to JEDEC standards (as references in
+     Polarity protection diodes                                                              AEC-Q) for High Reliability.
+     Re-circulating diodes                                                                   https://www.diodes.com/quality/product-definitions/
+     Switching diodes
+                                                                                        Mechanical Data
+                                                                                             Package: TO263AB
+                                                                                             Package Material: Molded Plastic, “Green” Molding Compound.
+                                                                                              UL Flammability Classification Rating 94V-0
+                                                                                             Moisture Sensitivity: Level 1 per J-STD-020
+                                                                                             Terminals: Finish - Matte Tin Annealed over Copper Leadframe.
+                                                                                              Solderable per MIL-STD-202, Method 208
+                                                                                             Polarity: See Below
+                                                                                             Weight: 1.6 grams (Approximate)
+
+
+
+
+                                TO263AB (D2PAK)                                                 Package Pin Out
+                                   Top View                                                      Configuration
+
+
+Ordering Information (Note 4)
+                                                                                                                                       Packing
+                    Part Number                                               Package
+                                                                                                                         Qty.                          Carrier
+                  MBRB20100CT                                           TO263AB (D2PAK)                                50 pieces                        Tube
+                 MBRB20100CT-13                                         TO263AB (D2PAK)                               800 pieces                        Reel
+Notes:      1. EU Directive 2002/95/EC (RoHS), 2011/65/EU (RoHS 2) & 2015/863/EU (RoHS 3) compliant. All applicable RoHS exemptions applied.
+            2. See https://www.diodes.com/quality/lead-free/ for more information about Diodes Incorporated’s definitions of Halogen- and Antimony-free, "Green" and
+               Lead-free.
+            3. Halogen- and Antimony-free "Green” products are defined as those which contain <900ppm bromine, <900ppm chlorine (<1500ppm total Br + Cl) and
+               <1000ppm antimony compounds.
+            4. For packaging details, go to our website at https://www.diodes.com/design/support/packaging/diodes-packaging/.
+
+
+Marking Information
+
+                                                                                   MBRB20100CT = Product Type Marking Code
+                                                                                   AB = Foundry and Assembly Code
+                                                                                   YYWW = Date Code Marking
+                                                                                   YY = Last Two Digits of Year (ex: 23 = 2023)
+                                                                                   WW = Week (01 to 53)
+
+
+
+
+MBRB20100CT                                                                 1 of 7                                                                            June 2023
+Document number: DS37071 Rev. 4 - 2                                     www.diodes.com                            © 2023 Copyright Diodes Incorporated. All Rights Reserved.
+                                                                                                                              MBRB20100CT
+
+Maximum Ratings (Per Leg) (@TA = +25°C, unless otherwise specified.)
+Single phase, half wave, 60Hz, resistive or inductive load.
+For capacitive load, derate current by 20%.
+                           Characteristic                                           Symbol               Value                               Unit
+Peak Repetitive Reverse Voltage                                                      VRRM
+Working Peak Reverse Voltage                                                         VRWM                 100                                  V
+DC Blocking Voltage                                                                   VRM
+Average Rectified Output Current                           (Per Leg)                                       10
+                                                                                       IO                                                      A
+                                                           (Total)                                         20
+Non-Repetitive Peak Forward Surge Current 8.3ms
+                                                                                     IFSM                 150                                  A
+Single Half Sine Wave Superimposed on Rated Load
+
+
+
+
+Thermal Characteristics (Per Leg)
+                           Characteristic                                           Symbol               Value                               Unit
+
+Typical Thermal Resistance, Junction to Case (Note 5)                                RθJC                     5                              °C/W
+
+
+Typical Thermal Resistance, Junction to Ambient (Note 5)                             RθJA                  20                                °C/W
+
+Operating and Storage Temperature Range                                             TJ, TSTG           -55 to +175                            °C
+
+
+
+
+Electrical Characteristics (Per Leg) (@TA = +25°C, unless otherwise specified.)
+                           Characteristic                                  Symbol       Min     Typ    Max           Unit             Test Condition
+                                                                                        —       0.79   0.84                    IF = 10A, TJ = +25°C
+Forward Voltage Drop                                                           VF                                      V
+                                                                                        —        —     0.72                    IF = 10A, TJ = +125°C
+                                                                                            —   —       0.1                    VR = 100V, TJ = +25°C
+Leakage Current (Note 6)                                                       IR                                    mA
+                                                                                            —   —       10                     VR = 100V, TJ = +125°C
+Notes:    5. Test with 2inch Al board.
+          6. Short duration pulse test used to minimize self-heating effect.
+
+
+
+
+MBRB20100CT                                                                  2 of 7                                                                 June 2023
+Document number: DS37071 Rev. 4 - 2                                      www.diodes.com                 © 2023 Copyright Diodes Incorporated. All Rights Reserved.
+                                                                                                                                                                                                                       MBRB20100CT
+
+
+
+
+                                                                                                                                IF , INSTANTANEOUS FORWARD CURRENT (A)
+                                                    10                                                                                                                     10
+                                                     9                                TJTj==175
+                                                                                            175°℃C                                                                                                                                 TA = 175°C
+                                                     8
+
+
+
+
+                 PD, POWER DISSIPATION (W)
+                                                                                                                                                                                                                                TA = 150°C
+                                                     7
+                                                                                                                                                                                                                       TA = 125°C
+                                                     6                                                                                                                        1
+
+                                                     5
+                                                                                                                                                                                                                      TA = 85°C
+                                                     4
+                                                                                                                                                                                                                  TA = 25°C
+                                                     3
+                                                                                                                                                                          0.1
+                                                     2
+
+                                                     1                                                                                                                                                             TA = -55°C
+
+                                                     0                                                                                                                   0.01
+                                                         0          2         4          6      8    10   12   14   16                                                            0        0.2      0.4        0.6       0 .8            1       1.2
+                                                                   I F(AV) AVERAGE FORWARD CURRENT (A)                                                                            V F, INSTANTANEOUS FORWARD VOLTAGE (V)
+                                                                        Figure1.
+                                                                        Figure 1 Forward
+                                                                                 Forward Power Dissipation                                                                               Figure
+                                                                                                                                                                                       Figure 2. 2Typical
+                                                                                                                                                                                                   TypicalForward
+                                                                                                                                                                                                          Forward Characteristics
+                                                                                                                                                                                                                  Characteristics
+
+
+
+
+        IR,I , I
+            INSTANTANEOUS
+
+
+                 NSTANTANSOUSLEAKAGE
+                              LEAKAGECURRENT
+                                                             100                                                                                                         15
+                                                                                                                                                                         14
+
+
+
+
+                                                                                                                                IF (AV), AVERAGE FORWARD CURRENT (A)
+                                                             10                                                                                                          13                                                     Note 5
+
+                                                                                                                                                                         12
+
+
+
+
+                                      CURRENT(mA)
+                                                                        T A = 175°C
+                                                               1                                                                                                         11
+                                                                        T A = 150°C                                                                                      10
+
+                                                             0.1                                                                                                          9
+                                                                        TA = 125°C
+                                                                                                                                                                          8
+                                                                                                                                                                          7
+                                                          0.01
+                                                                        T A = 85°C                                                                                        6
+                                                                                                                                                                          5
+                                                         0.001
+                                                                                                                                                                          4
+                                                                                                                                                                          3
+                                                     0.0001                                                                                                               2
+                                                                            T A = 25°C
+                             R
+                                                                                                                                                                          1
+                                                    0.00001
+                                                                                                                                                                          0
+                                                                0        20         40       60       80       100                                                        25          40  55 70 85 100 115 130 145 160 175
+                                                               VR,VR,
+                                                                   INSTANTANEOUS         REVERSEVOLTAGE(V)
+                                                                      INSTANTANSOUS REVERSE        VOLTAGE (V)                                                                            TA , AMBIENT TEMPERATURE (°C)
+                                                                   Figure 3. Typical
+                                                                      Figure.3         ReverseCharacteristics
+                                                                               Typical Reverse Characteristics                                                                         Figure
+                                                                                                                                                                                        Figure4.4Forward
+                                                                                                                                                                                                 ForwardCurrent
+                                                                                                                                                                                                         CurrentDerating
+                                                                                                                                                                                                                DeratingCurve
+                                                                                                                                                                                                                         Curve
+
+
+
+Note:                                                5. Test with 2inch Al board.
+
+
+
+
+MBRB20100CT                                                                                                             3 of 7                                                                                                                  June 2023
+Document number: DS37071 Rev. 4 - 2                                                                                 www.diodes.com                                                               © 2023 Copyright Diodes Incorporated. All Rights Reserved.
+                                                                                                                                      MBRB20100CT
+
+Package Outline Dimensions
+Please see http://www.diodes.com/package-outlines.html for the latest version.
+
+                                                                                           TO263AB (D2PAK)
+
+
+                                          E                                            A
+                                                                                                   c2
+                                                                                                                   TO263AB (D2PAK)
+               L1
+                                                                                                                Dim Min Max Typ
+                                                                          7°±1°
+                                                                                                                 A     4.07 4.82     -
+                                                                                                                A1     0.00 0.25     -
+                                                        D
+                                                                                                                 b     0.51 0.99     -
+                                                                                                       H         b2    1.15 1.77     -
+                                                                                                                 c     0.356 0.73    -
+               L2                                                                                                c2 1.143 1.65       -
+                                                                                                                 D     8.39 9.65     -
+                                                                                                                D1     6.55 6.95     -
+                                      e                                                                          e          2.54 TYP
+                                                   b                                                             E     9.66 10.66    -
+                                                                  S ee Detail B                    c
+                     b2                                                                                         E1     6.23 8.23     -
+                                                                                                                 H     14.61 15.87   -
+                                                                                                                 L     1.78 2.79     -
+                                 L3                                                                              L1       -  1.67    -
+                    Gauge P lane                                                  E1               D1            L2       -  1.77    -
+                                                                                                                 L3       -     -  0.254
+                                                       S eating
+           a                                           P lane                                                    a       0°    8°    -
+                             L                                                                                   All Dimensions in mm
+                                                   A1
+
+                                 D etailB
+
+
+
+
+                                                                                  TO263AB (D2PAK) (Type BR)
+
+
+                                              E                                            A
+                                                                                                           c2
+
+               L1
+                                                                                                                   TO263AB (D2PAK)
+                                                                                                                       (Type BR)
+                                                                                                                Dim     Min Max Typ
+                                                            D
+                                                                                                                 A     4.30 4.70    -
+                                                                                                           H     b     0.70 0.90    -
+                                                                                                                 b2    1.15 1.35    -
+               L2
+                                                                                                                  c    0.40 0.60    -
+                                                                                                                 c2    1.20 1.40    -
+                                                                                                   L             D     9.00 9.40    -
+                                                                                                                D1     7.96 8.36    -
+                                          e                                                                      E     9.80 10.20   -
+                                                        b                              c                        E1     7.85 8.05    -
+                      b2
+                                                                                                                  e    2.34 2.74
+                                                                                                                 H     15.00 15.87  -
+                                                                                                                 L     2.24 2.84    -
+                                                                                                                 L1    1.00 1.40    -
+                                              E1            D1                                                   L2    1.20 1.60    -
+                                                                                                                 All Dimensions in mm
+
+
+
+
+MBRB20100CT                                                                                        4 of 7                                                   June 2023
+Document number: DS37071 Rev. 4 - 2                                                            www.diodes.com   © 2023 Copyright Diodes Incorporated. All Rights Reserved.
+                                                                                                                                   MBRB20100CT
+
+
+Package Outline Dimensions (continued)
+Please see http://www.diodes.com/package-outlines.html for the latest version.
+
+
+                                                                                TO263AB (D2PAK) (Type TH)
+
+
+                                                                                       A
+                                          E
+                                                                                                 c2
+                                                                                                                 TO263AB (D2PAK)
+            L1                                                                                                      (Type TH)
+                                                                 01                                          Dim     Min Max Typ
+                  L4
+                                                                                                              A     4.40 4.70 4.57
+                                                           D                                                 A1     0.00 0.20 0.10
+                                              Ø                                            A2
+                                              1.
+                                              50
+                                                                                                             A2     2.59 2.79 2.69
+                                                                                                      H
+                                                                                                              b     0.77 0.90 0.813
+                                                                      01                         02           b2    1.20 1.36 1.27
+             L2
+                                                                                                               c    0.356 0.47 0.381
+                                                                                                              c2    1.22 1.32 1.27
+                                                                                                              D     8.60 8.80 8.70
+                                      e
+                                                                                                             D1     6.60 7.80 7.60
+                                                       b
+                                                                S ee Detail B                     c          D1a    5.33 6.53 6.33
+                  b2
+                                                                                E 1a
+                                                                                                             D1b    4.54 5.74 5.54
+                                                                                                               e         2.54 BSC
+                                                                                                              E     10.00 10.20 10.10
+                           L3                                                   E1                           E1     6.67 7.87 7.67
+           Gauge P lane
+                                                               D1                                            E1a    4.94 6.14 5.94
+                                                                                                D1b D1a
+                                                                                                             E1b    7.06 8.26 8.06
+                                                   S eating
+       0                                           P lane                                                     H     14.70 15.50 15.10
+                                                                                E 1b
+                       L                                                                                      L     2.00 2.60 2.30
+                                                  A1
+                                                                                                              L1    1.17 1.40 1.27
+                           D etailB
+                                                                                                              L2    1.45 1.70 1.55
+                                                                                                              L3         0.25 BSC
+                                                                                                              L4         2.50 REF
+                                                                                                               θ      0°    8°    5°
+                                                                                                              θ1      5°    9°    7°
+                                                                                                              θ2      1°    5°    3°
+                                                                                                              All Dimensions in mm
+
+
+
+
+MBRB20100CT                                                                                     5 of 7                                                   June 2023
+Document number: DS37071 Rev. 4 - 2                                                         www.diodes.com   © 2023 Copyright Diodes Incorporated. All Rights Reserved.
+                                                                                                                 MBRB20100CT
+
+Suggested Pad Layout
+Please see http://www.diodes.com/package-outlines.html for the latest version.
+
+                                                                 TO263AB (D2PAK)
+
+                                                X1
+
+
+
+
+                                                                 Y1                   Dimensions      Value (in mm)
+                                                                                          C               5.08
+                                                                                          X               1.10
+                                                                                          X1              10.41
+                                                                       Y2                 Y               3.50
+                                                                                          Y1              7.01
+                                           X
+                                                                                          Y2              15.99
+
+
+
+                                                            Y
+
+
+                                                   C
+
+
+
+                                                        TO263AB (D2PAK) (Type BR)
+
+
+                                               X1
+
+
+
+
+                                                                Y1                   Dimensions     Value (in mm)
+                                                                                         C              5.08
+                                                                                         X              1.10
+                                                                                         X1             10.41
+                                                                      Y2                 Y              3.50
+                                                                                         Y1             7.01
+                                       X                                                 Y2             15.99
+
+
+
+                                                        Y
+
+
+                                               C
+
+
+
+                                                        TO263AB (D2PAK) (Type TH)
+
+
+                                               X1
+
+
+
+
+                                                                                    Dimensions    Value (in mm)
+                                                                Y1                      C             5.08
+                                                                                        X             1.10
+                                                                                        X1            10.41
+                                                                                        Y             3.50
+                                                                      Y2
+                                                                                        Y1            7.01
+                                                                                        Y2            15.99
+                                       X
+
+
+
+                                                         Y
+
+
+                                               C
+
+
+MBRB20100CT                                                          6 of 7                                                            June 2023
+Document number: DS37071 Rev. 4 - 2                              www.diodes.com            © 2023 Copyright Diodes Incorporated. All Rights Reserved.
+                                                                                                                               MBRB20100CT
+
+
+                                                                IMPORTANT NOTICE
+
+1.      DIODES INCORPORATED (Diodes) AND ITS SUBSIDIARIES MAKE NO WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, WITH
+REGARDS TO ANY INFORMATION CONTAINED IN THIS DOCUMENT, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY
+RIGHTS (AND THEIR EQUIVALENTS UNDER THE LAWS OF ANY JURISDICTION).
+
+2.         The Information contained herein is for informational purpose only and is provided only to illustrate the operation of Diodes’ products
+described herein and application examples. Diodes does not assume any liability arising out of the application or use of this document or any
+product described herein. This document is intended for skilled and technically trained engineering customers and users who design with Diodes’
+products. Diodes’ products may be used to facilitate safety-related applications; however, in all instances customers and users are responsible for
+(a) selecting the appropriate Diodes products for their applications, (b) evaluating the suitability of Diodes’ products for their intended applications,
+(c) ensuring their applications, which incorporate Diodes’ products, comply the applicable legal and regulatory requirements as well as safety and
+functional-safety related standards, and (d) ensuring they design with appropriate safeguards (including testing, validation, quality control
+techniques, redundancy, malfunction prevention, and appropriate treatment for aging degradation) to minimize the risks associated with their
+applications.
+
+3.           Diodes assumes no liability for any application-related information, support, assistance or feedback that may be provided by Diodes
+from time to time. Any customer or user of this document or products described herein will assume all risks and liabilities associated with such
+use, and will hold Diodes and all companies whose products are represented herein or on Diodes’ websites, harmless against all damages and
+liabilities.
+
+4.         Products described herein may be covered by one or more United States, international or foreign patents and pending patent
+applications. Product names and markings noted herein may also be covered by one or more United States, international or foreign trademarks
+and trademark applications. Diodes does not convey any license under any of its intellectual property rights or the rights of any third parties
+(including third parties whose products and services may be described in this document or on Diodes’ website) under this document.
+
+5.         Diodes’    products   are      provided    subject   to    Diodes’     Standard       Terms      and     Conditions   of    Sale
+(https://www.diodes.com/about/company/terms-and-conditions/terms-and-conditions-of-sales/) or other applicable terms. This document does not
+alter or expand the applicable warranties provided by Diodes. Diodes does not warrant or accept any liability whatsoever in respect of any
+products purchased through unauthorized sales channel.
+
+6.        Diodes’ products and technology may not be used for or incorporated into any products or systems whose manufacture, use or sale is
+prohibited under any applicable laws and regulations. Should customers or users use Diodes’ products in contravention of any applicable laws or
+regulations, or for any unintended or unauthorized application, customers and users will (a) be solely responsible for any damages, losses or
+penalties arising in connection therewith or as a result thereof, and (b) indemnify and hold Diodes and its representatives and agents harmless
+against any and all claims, damages, expenses, and attorney fees arising out of, directly or indirectly, any claim relating to any noncompliance with
+the applicable laws and regulations, as well as any unintended or unauthorized application.
+
+7.          While efforts have been made to ensure the information contained in this document is accurate, complete and current, it may contain
+technical inaccuracies, omissions and typographical errors. Diodes does not warrant that information contained in this document is error-free and
+Diodes is under no obligation to update or otherwise correct this information. Notwithstanding the foregoing, Diodes reserves the right to make
+modifications, enhancements, improvements, corrections or other changes without further notice to this document and any product described
+herein. This document is written in English but may be translated into multiple languages for reference. Only the English version of this document
+is the final and determinative format released by Diodes.
+
+8.        Any unauthorized copying, modification, distribution, transmission, display or other use of this document (or any portion hereof) is
+prohibited. Diodes assumes no responsibility for any losses incurred by the customers or users or any third parties arising from any such
+unauthorized use.
+
+9. This Notice may be periodically updated with the most recent version available at https://www.diodes.com/about/company/terms-and-
+conditions/important-notice
+
+
+The Diodes logo is a registered trademark of Diodes Incorporated in the United States and other countries.
+All other trademarks are the property of their respective owners.
+© 2023 Diodes Incorporated. All Rights Reserved.
+
+www.diodes.com
+
+
+
+
+MBRB20100CT                                                           7 of 7                                                                         June 2023
+Document number: DS37071 Rev. 4 - 2                               www.diodes.com                         © 2023 Copyright Diodes Incorporated. All Rights Reserved.
+

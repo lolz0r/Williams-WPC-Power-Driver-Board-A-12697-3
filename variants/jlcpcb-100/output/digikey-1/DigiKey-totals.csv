@@ -1,0 +1,17 @@
+﻿Metric,Value,Unit,Notes
+Electronics priced subtotal,300.65,USD,68 of 69 required lines priced; includes unqualified candidates.
+Hardware priced subtotal,78.24,USD,8 of 8 required lines priced; includes unqualified candidates.
+Consumable priced subtotal,14.33,USD,1 of 1 required lines priced; includes unqualified candidates.
+Added accessory priced subtotal,12.38,USD,1 of 1 required lines priced; includes unqualified candidates.
+Board quantity,1,board,No production spare allowance.
+Priced parts allocated to one board,363.30,USD,Required quantities valued at applied purchase-tier prices; includes one complete thermal-paste syringe and added covers; excludes unresolved fuse.
+Minimum-purchase excess cost,42.30,USD,Extra fasteners required to reach published minimum price tiers.
+Priced purchase subtotal,405.60,USD,Estimate including candidates and minimum purchases; excludes unresolved fuse.
+Required procurement lines,79,lines,69 original electronic groups + 9 hardware/consumable groups + 1 added cover group.
+Priced procurement lines,78,lines,"Every priced line has DigiKey SKU, price tier, source URL and stock snapshot."
+Unpriced required lines,1,lines,F115: No DigiKey match verified for Reomax 0.75A ceramic time-delay 5x20mm fuse. Littelfuse 0239.750TXP was rejected: glass body and 35A breaking capacity versus original ceramic higher-interrupt specification. Keep required quantity visible; price is blank and complete BOM total cannot be stated.
+Priced stock shortfall lines,0,lines,Public cached snapshots; availability is not reserved.
+Lines requiring engineering review,29,lines,Candidates plus unresolved requirements; not qualified by the existing JLC variant's SPICE results.
+DNP or fabricated board features,23,positions,Visible at zero purchase quantity in BOM; excluded from pricing.
+Final complete BOM total,,USD,INCOMPLETE: F115 remains unpriced. Priced candidates also require engineering review.
+Excluded costs,,,"PCB fabrication, assembly labor, solder/process consumables other than specified thermal paste, freight, taxes, tariffs, fees and tooling."

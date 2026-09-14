@@ -1,0 +1,2752 @@
+{
+  "cases": [
+    {
+      "name": "native_f50_line0.9_esr0.02_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.4674,
+        "input_max": 13.7357,
+        "bridge_peak": 48.8825,
+        "bridge_i2t_start": 9.42565,
+        "bridge_power": 2.34135,
+        "rms_c6": 4.03455,
+        "rms_c7": 4.03455
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "89e860bc09afc0b28af6c0ee8676374d6ea248438d2c7384191c76b57f94a361"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.02_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.4674,
+        "input_max": 13.7357,
+        "bridge_peak": 108.382,
+        "bridge_i2t_start": 11.3911,
+        "bridge_power": 2.34053,
+        "rms_c6": 4.03455,
+        "rms_c7": 4.03455
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "ec475e3a7d9a5cbdb51562386028808c702828881b3fbaf77bde9ce7f18926e4"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.02_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.6601,
+        "input_max": 13.5517,
+        "bridge_peak": 53.3853,
+        "bridge_i2t_start": 11.568,
+        "bridge_power": 2.33123,
+        "rms_c6": 3.35792,
+        "rms_c7": 4.69581
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "582b543f2aa5124cf859b0842638936384be384648adf4ef41a9f950205b51b0"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.02_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.6601,
+        "input_max": 13.5517,
+        "bridge_peak": 105.997,
+        "bridge_i2t_start": 12.41,
+        "bridge_power": 2.33029,
+        "rms_c6": 3.35792,
+        "rms_c7": 4.69581
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "913039e0b23c67c3d843f625c8cfcd9b0b1622840370b90cc8e3ec68c49c380d"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.05_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.3357,
+        "input_max": 13.6614,
+        "bridge_peak": 47.0276,
+        "bridge_i2t_start": 8.90793,
+        "bridge_power": 2.29603,
+        "rms_c6": 3.90715,
+        "rms_c7": 3.90715
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "29e45ad040b5aced696203ee8102cba7400cbee856302c2705bdadeebeec71b2"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.05_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.3358,
+        "input_max": 13.6614,
+        "bridge_peak": 98.4622,
+        "bridge_i2t_start": 10.1909,
+        "bridge_power": 2.29516,
+        "rms_c6": 3.90715,
+        "rms_c7": 3.90715
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "a7eaca98d6b80b53582e556aa49cc76d573f419a47549de7af234edb9e297b63"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.05_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.3973,
+        "input_max": 13.5314,
+        "bridge_peak": 49.4756,
+        "bridge_i2t_start": 10.3151,
+        "bridge_power": 2.26081,
+        "rms_c6": 3.63202,
+        "rms_c7": 4.16466
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "ae41b7384dabffa4c86678b466cde652cda57ba95cffdd1ac1c1ad90f159c30c"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.05_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.3973,
+        "input_max": 13.5314,
+        "bridge_peak": 93.7416,
+        "bridge_i2t_start": 10.4523,
+        "bridge_power": 2.25983,
+        "rms_c6": 3.63202,
+        "rms_c7": 4.16466
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8fd041d8177c94777ec39a907296176d056a380ddac7cc52d6ebdf54b47a66ed"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.1_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.1093,
+        "input_max": 13.6108,
+        "bridge_peak": 44.2693,
+        "bridge_i2t_start": 8.14737,
+        "bridge_power": 2.23043,
+        "rms_c6": 3.71959,
+        "rms_c7": 3.71959
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "41a7983fecc078198e990fe0a2e86f9924a562b64fe6171c2c6b5b8eb06ce5b0"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.1_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.1093,
+        "input_max": 13.6108,
+        "bridge_peak": 85.616,
+        "bridge_i2t_start": 8.6518,
+        "bridge_power": 2.22951,
+        "rms_c6": 3.71959,
+        "rms_c7": 3.71959
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "16c7fda5c044e9a40a01ad2b8f894957df4a96d8f0b8e7ca8224e9b407e26471"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.1_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.0088,
+        "input_max": 13.5806,
+        "bridge_peak": 44.5442,
+        "bridge_i2t_start": 8.7776,
+        "bridge_power": 2.17554,
+        "rms_c6": 3.94184,
+        "rms_c7": 3.42671
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "7ccaa5cdd27fc355b4f777bc9bc9aad14d264595930f9753fe1cdfe4cf7eac5c"
+    },
+    {
+      "name": "native_f50_line0.9_esr0.1_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.0089,
+        "input_max": 13.5806,
+        "bridge_peak": 78.8896,
+        "bridge_i2t_start": 8.38068,
+        "bridge_power": 2.17474,
+        "rms_c6": 3.94184,
+        "rms_c7": 3.42671
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "1e63a9dacb355984aa29df3599af1216f2cec85ca96faac89e2f46aacf5bea30"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.02_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.3357,
+        "input_max": 17.0437,
+        "bridge_peak": 60.2217,
+        "bridge_i2t_start": 14.3619,
+        "bridge_power": 3.00682,
+        "rms_c6": 4.82596,
+        "rms_c7": 4.82596
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "d5f84e8c7597f1ddb1429b3ef469fdca093cab25cba6083afe2e7ad41ca74568"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.02_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.3357,
+        "input_max": 17.0437,
+        "bridge_peak": 134.159,
+        "bridge_i2t_start": 17.4338,
+        "bridge_power": 3.00548,
+        "rms_c6": 4.82596,
+        "rms_c7": 4.82596
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8c35eec76f61c4d1fe4bf9582d953e1c9592c10f0981d239af9aa037b148493d"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.02_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.5644,
+        "input_max": 16.824,
+        "bridge_peak": 65.8019,
+        "bridge_i2t_start": 17.6429,
+        "bridge_power": 2.99242,
+        "rms_c6": 4.01939,
+        "rms_c7": 5.61425
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b782bba7bcdbaa83e3adef79959528651185f1d094a51a5d3b6f952b53dbcaab"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.02_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.5644,
+        "input_max": 16.824,
+        "bridge_peak": 131.235,
+        "bridge_i2t_start": 18.9975,
+        "bridge_power": 2.99123,
+        "rms_c6": 4.01939,
+        "rms_c7": 5.61425
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "80388ce4d690bf0acd5179cd7c217ca9dec846353475b1be07a6848564306624"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.05_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.1778,
+        "input_max": 16.9551,
+        "bridge_peak": 57.9466,
+        "bridge_i2t_start": 13.5753,
+        "bridge_power": 2.94265,
+        "rms_c6": 4.67082,
+        "rms_c7": 4.67082
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "265c98ebd74cf94e8cadc3f7fd3c3a9c0730ffe51f5ec4ab9d5d80c073e1b641"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.05_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.1779,
+        "input_max": 16.9551,
+        "bridge_peak": 122.004,
+        "bridge_i2t_start": 15.5964,
+        "bridge_power": 2.94156,
+        "rms_c6": 4.67082,
+        "rms_c7": 4.67082
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b295d2891b78d0b14895536e28e64d4a2a2f99d63ff9f1818a57abaaa8ba0ebd"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.05_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.2519,
+        "input_max": 16.8013,
+        "bridge_peak": 60.996,
+        "bridge_i2t_start": 15.7347,
+        "bridge_power": 2.89332,
+        "rms_c6": 4.34715,
+        "rms_c7": 4.97112
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "7bdea6bd1a69cd2c5d2536167195593626c465cc407042c10873835559589a41"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.05_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.2519,
+        "input_max": 16.8013,
+        "bridge_peak": 116.224,
+        "bridge_i2t_start": 15.9985,
+        "bridge_power": 2.89207,
+        "rms_c6": 4.34715,
+        "rms_c7": 4.97112
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "bcac9f44e67d5af23fdb257c894e57b343520d61ba3823f502b9fc808c4b9007"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.1_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 13.9093,
+        "input_max": 16.8959,
+        "bridge_peak": 54.5613,
+        "bridge_i2t_start": 12.4189,
+        "bridge_power": 2.85034,
+        "rms_c6": 4.44247,
+        "rms_c7": 4.44247
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "9242f0b746afd354e871d6d628294603b8fdff42386d374532b4df3ca1939235"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.1_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 13.9093,
+        "input_max": 16.8959,
+        "bridge_peak": 106.283,
+        "bridge_i2t_start": 13.2402,
+        "bridge_power": 2.84917,
+        "rms_c6": 4.44247,
+        "rms_c7": 4.44247
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "29858d737b52227a6552bd973f7b34656009552b2b8e95cbc781cfca491b896c"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.1_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 13.7927,
+        "input_max": 16.8621,
+        "bridge_peak": 54.9278,
+        "bridge_i2t_start": 13.39,
+        "bridge_power": 2.77348,
+        "rms_c6": 4.71017,
+        "rms_c7": 4.08357
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "d458cd06649203e781bf60d4c9393acacd93c2c1088187475d5fe89198ee55c8"
+    },
+    {
+      "name": "native_f50_line1.1_esr0.1_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 13.7928,
+        "input_max": 16.8621,
+        "bridge_peak": 98.0386,
+        "bridge_i2t_start": 12.8247,
+        "bridge_power": 2.77247,
+        "rms_c6": 4.71017,
+        "rms_c7": 4.08357
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "974b12769ae34c8907d6668cc62b3f9b8a51dec9ea591599615b445a4d95c4b6"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.02_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.6941,
+        "input_max": 13.6047,
+        "bridge_peak": 53.6154,
+        "bridge_i2t_start": 9.55244,
+        "bridge_power": 2.35355,
+        "rms_c6": 4.0578,
+        "rms_c7": 4.0578
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "6f23249ba76b430791764a524573299f3578a2fac56cc5bd1d78dd132a5cb31a"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.02_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.6941,
+        "input_max": 13.6047,
+        "bridge_peak": 108.382,
+        "bridge_i2t_start": 10.6659,
+        "bridge_power": 2.3527,
+        "rms_c6": 4.0578,
+        "rms_c7": 4.0578
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "89708041b155f349e221ed16cd7be0e627131a90f233cec19dd5b1ab6f0cc17b"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.02_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.8312,
+        "input_max": 13.4468,
+        "bridge_peak": 57.8759,
+        "bridge_i2t_start": 11.5403,
+        "bridge_power": 2.33914,
+        "rms_c6": 3.42967,
+        "rms_c7": 4.67678
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "d2b71e6c7b55b3cd0aa758f57d15e865f596c3568846c05e9680f732ea99c26c"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.02_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.8312,
+        "input_max": 13.4468,
+        "bridge_peak": 105.997,
+        "bridge_i2t_start": 11.554,
+        "bridge_power": 2.33818,
+        "rms_c6": 3.42967,
+        "rms_c7": 4.67678
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "82c964c9845addad928285f001acf6b5abeba324758a424c2dcbde6cf503cf0a"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.05_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.5492,
+        "input_max": 13.5406,
+        "bridge_peak": 51.3344,
+        "bridge_i2t_start": 8.94863,
+        "bridge_power": 2.30658,
+        "rms_c6": 3.92731,
+        "rms_c7": 3.92731
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9078140278ed778164c259231a726d3e239b4056c336167461052924b9a937bf"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.05_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.5492,
+        "input_max": 13.5406,
+        "bridge_peak": 98.4622,
+        "bridge_i2t_start": 9.50737,
+        "bridge_power": 2.30568,
+        "rms_c6": 3.92731,
+        "rms_c7": 3.92731
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "225c2da4955571f1d1200db7bea274ffdfa85c88a6a33db16cf3439dc3b4b3ae"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.05_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.559,
+        "input_max": 13.4491,
+        "bridge_peak": 53.29,
+        "bridge_i2t_start": 10.1606,
+        "bridge_power": 2.26922,
+        "rms_c6": 3.79524,
+        "rms_c7": 4.06983
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "bbace616288391ede3613acf4ef3dc993ef676e05436197354d3e4af750b0d1b"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.05_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.559,
+        "input_max": 13.4491,
+        "bridge_peak": 93.7416,
+        "bridge_i2t_start": 9.71301,
+        "bridge_power": 2.26823,
+        "rms_c6": 3.79524,
+        "rms_c7": 4.06983
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "be5f3f669ce414de761c3f984a6469455f4479c177b732a51f62553639b6a06c"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.1_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.3069,
+        "input_max": 13.5134,
+        "bridge_peak": 47.9851,
+        "bridge_i2t_start": 8.07954,
+        "bridge_power": 2.23891,
+        "rms_c6": 3.73586,
+        "rms_c7": 3.73586
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "6976d39f09d5f152b9f08fa64e4e38d814896c7f2f9b2e80fa9baa3495f4b702"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.1_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.3069,
+        "input_max": 13.5134,
+        "bridge_peak": 85.616,
+        "bridge_i2t_start": 8.03182,
+        "bridge_power": 2.23796,
+        "rms_c6": 3.73586,
+        "rms_c7": 3.73586
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "6fe32cb28d43f3aa439b449e5f98375767f0dca77b3fe1b372ce9f135076fb35"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.1_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.1674,
+        "input_max": 13.5165,
+        "bridge_peak": 47.654,
+        "bridge_i2t_start": 8.5282,
+        "bridge_power": 2.18463,
+        "rms_c6": 4.11781,
+        "rms_c7": 3.28673
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "d8d1c50253e25479fe3bf44c93cd7e5a063774d40cc3324a283b3e6c0e67a814"
+    },
+    {
+      "name": "native_f60_line0.9_esr0.1_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 11.1674,
+        "input_max": 13.5165,
+        "bridge_peak": 78.8896,
+        "bridge_i2t_start": 7.77936,
+        "bridge_power": 2.18382,
+        "rms_c6": 4.11781,
+        "rms_c7": 3.28673
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "57f752672c9b50eac162878c8d835011855370c192d943ef04f72e521eabd550"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.02_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.6054,
+        "input_max": 16.8871,
+        "bridge_peak": 66.075,
+        "bridge_i2t_start": 14.5753,
+        "bridge_power": 3.02391,
+        "rms_c6": 4.85451,
+        "rms_c7": 4.85451
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "7e7f3dc49f9af163ff8d8e1af2eb62795c49bcf05a1d1317783e42bfff368ac2"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.02_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.6054,
+        "input_max": 16.8871,
+        "bridge_peak": 134.159,
+        "bridge_i2t_start": 16.3276,
+        "bridge_power": 3.02278,
+        "rms_c6": 4.85451,
+        "rms_c7": 4.85451
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "61ce06255a2231af7eff567d019ef3148607284beb1da6e3b0229f15100354a2"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.02_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.7682,
+        "input_max": 16.6987,
+        "bridge_peak": 71.3599,
+        "bridge_i2t_start": 17.6221,
+        "bridge_power": 3.0037,
+        "rms_c6": 4.10653,
+        "rms_c7": 5.59144
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "428dd35e9714da175e029eafe76dbacf957a35d25544d10ae5b483b202911f86"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.02_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.7682,
+        "input_max": 16.6987,
+        "bridge_peak": 131.235,
+        "bridge_i2t_start": 17.6904,
+        "bridge_power": 3.00244,
+        "rms_c6": 4.10653,
+        "rms_c7": 5.59144
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "80fbf9b07eee76ac4580682e9368a6b1f8dc2995369eb7516a1f8b1ff55c6905"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.05_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.4319,
+        "input_max": 16.8108,
+        "bridge_peak": 63.2744,
+        "bridge_i2t_start": 13.6571,
+        "bridge_power": 2.95771,
+        "rms_c6": 4.69559,
+        "rms_c7": 4.69559
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "582bdf66968136cd420b1450a9573b547fb6eafe0f5caa9b5f798f385b6f2562"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.05_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.4319,
+        "input_max": 16.8108,
+        "bridge_peak": 122.004,
+        "bridge_i2t_start": 14.5536,
+        "bridge_power": 2.95652,
+        "rms_c6": 4.69559,
+        "rms_c7": 4.69559
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "bd627448eb54b264690d6da128b2aa4604aa457914690125d0c21f592f523e06"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.05_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.4445,
+        "input_max": 16.7031,
+        "bridge_peak": 65.7178,
+        "bridge_i2t_start": 15.5192,
+        "bridge_power": 2.90531,
+        "rms_c6": 4.54311,
+        "rms_c7": 4.8577
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "d10c81b91a4dd4e9d11bb1a573c7509e060d8c4503c85eeccf205012f48c182a"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.05_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.4445,
+        "input_max": 16.7031,
+        "bridge_peak": 116.224,
+        "bridge_i2t_start": 14.8693,
+        "bridge_power": 2.90399,
+        "rms_c6": 4.54311,
+        "rms_c7": 4.8577
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "4a8258a5ae9d278c1fb64bfbefc939d8c338026674c82cfa873c6e45daca2e79"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.1_imb0_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.1442,
+        "input_max": 16.78,
+        "bridge_peak": 59.1597,
+        "bridge_i2t_start": 12.3345,
+        "bridge_power": 2.86245,
+        "rms_c6": 4.46248,
+        "rms_c7": 4.46248
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "548f36c7869e512fd2f36987d42e16e2d98275883fd7d4b19ef3a829b97f7bb0"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.1_imb0_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.1443,
+        "input_max": 16.78,
+        "bridge_peak": 106.283,
+        "bridge_i2t_start": 12.294,
+        "bridge_power": 2.86119,
+        "rms_c6": 4.46248,
+        "rms_c7": 4.46248
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "134ac122c6412339692acc8b1503e4c1e1c1897d81033ad381d9433dabf7e839"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.1_imb1_phase0",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 13.9811,
+        "input_max": 16.7857,
+        "bridge_peak": 58.7777,
+        "bridge_i2t_start": 13.0286,
+        "bridge_power": 2.78638,
+        "rms_c6": 4.92004,
+        "rms_c7": 3.91742
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "7b75b8bd152a3908de472c0c18c257ce6d3a71a77ed6039ac5e4f1733c8118b2"
+    },
+    {
+      "name": "native_f60_line1.1_esr0.1_imb1_phase90",
+      "topology": "native",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 13.9811,
+        "input_max": 16.7857,
+        "bridge_peak": 98.0386,
+        "bridge_i2t_start": 11.9065,
+        "bridge_power": 2.7853,
+        "rms_c6": 4.92004,
+        "rms_c7": 3.91742
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "cb8369c25036ba1f16902b8741995e97a26d70eed15ecdf3fdb9af86609881e5"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.02_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.3881,
+        "input_max": 13.1479,
+        "bridge_peak": 59.2115,
+        "bridge_i2t_start": 14.2777,
+        "bridge_power": 2.32208,
+        "rms_c6": 3.50673,
+        "rms_c7": 3.50673,
+        "rms_dedicated": 1.55749,
+        "isolate_peak": 18.862,
+        "isolate_power_avg": 0.366585
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "be63056d943e9f68d19918f85ed85a7b35bf58f5c6fd2f9b55f98d8ecbdb946b"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.02_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.3881,
+        "input_max": 13.1479,
+        "bridge_peak": 109.279,
+        "bridge_i2t_start": 14.5696,
+        "bridge_power": 2.32111,
+        "rms_c6": 3.50673,
+        "rms_c7": 3.50673,
+        "rms_dedicated": 1.55749,
+        "isolate_peak": 27.9083,
+        "isolate_power_avg": 0.366448
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "3f34641774d7694e0c482ae453ac3db43924cff079f0545cbc2ca4e82ff50738"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.02_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2622,
+        "input_max": 13.0094,
+        "bridge_peak": 62.4625,
+        "bridge_i2t_start": 16.2933,
+        "bridge_power": 2.32931,
+        "rms_c6": 2.89179,
+        "rms_c7": 4.02916,
+        "rms_dedicated": 1.48871,
+        "isolate_peak": 17.2449,
+        "isolate_power_avg": 0.36425
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "aa1e5c4948aa148720b6d658febf0a792a443ca269430c830b8d17e68d9d118a"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.02_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2621,
+        "input_max": 13.0094,
+        "bridge_peak": 107.641,
+        "bridge_i2t_start": 15.5646,
+        "bridge_power": 2.32845,
+        "rms_c6": 2.89179,
+        "rms_c7": 4.02916,
+        "rms_dedicated": 1.48871,
+        "isolate_peak": 25.9684,
+        "isolate_power_avg": 0.364148
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "e1b8fff4dcd2f78304c67179b21d915ff33d001035962c7b4ada2db664dc8176"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.05_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2713,
+        "input_max": 13.069,
+        "bridge_peak": 57.2826,
+        "bridge_i2t_start": 13.5634,
+        "bridge_power": 2.29055,
+        "rms_c6": 3.37458,
+        "rms_c7": 3.37458,
+        "rms_dedicated": 1.47268,
+        "isolate_peak": 18.0693,
+        "isolate_power_avg": 0.362186
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b98cf92e38225857fb5f76ad40edcd85dd6217a26881a069fb2d08d4825dd49b"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.05_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2713,
+        "input_max": 13.069,
+        "bridge_peak": 101.82,
+        "bridge_i2t_start": 13.4272,
+        "bridge_power": 2.28962,
+        "rms_c6": 3.37458,
+        "rms_c7": 3.37458,
+        "rms_dedicated": 1.47268,
+        "isolate_peak": 24.9737,
+        "isolate_power_avg": 0.362071
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b7687c5c9271f04fe8996f9bd7eb9d45c0f3d830d7201e0cd6eb5571331eecd9"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.05_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1822,
+        "input_max": 12.9712,
+        "bridge_peak": 59.0834,
+        "bridge_i2t_start": 14.9224,
+        "bridge_power": 2.27419,
+        "rms_c6": 3.10592,
+        "rms_c7": 3.55264,
+        "rms_dedicated": 1.43888,
+        "isolate_peak": 16.746,
+        "isolate_power_avg": 0.361861
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "86e620faa4f21c5764201fcfb8fdb75ae12d71de611d68aa4a8bc8066a17640d"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.05_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1822,
+        "input_max": 12.9712,
+        "bridge_peak": 99.0296,
+        "bridge_i2t_start": 13.8385,
+        "bridge_power": 2.2733,
+        "rms_c6": 3.10592,
+        "rms_c7": 3.55264,
+        "rms_dedicated": 1.43888,
+        "isolate_peak": 27.3609,
+        "isolate_power_avg": 0.361758
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "866118c506cbef354e6b1b327be92fee69aa959d0cbcaa26a0269e420cb059cb"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.1_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1173,
+        "input_max": 13.0171,
+        "bridge_peak": 54.3574,
+        "bridge_i2t_start": 12.5069,
+        "bridge_power": 2.24281,
+        "rms_c6": 3.19388,
+        "rms_c7": 3.19388,
+        "rms_dedicated": 1.38592,
+        "isolate_peak": 16.8663,
+        "isolate_power_avg": 0.358341
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "04d6604620a9ff1e4b0ea1be0b00a1d842971352dfbecd123f145b7e2b429958"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.1_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1173,
+        "input_max": 13.0171,
+        "bridge_peak": 91.9472,
+        "bridge_i2t_start": 11.864,
+        "bridge_power": 2.24181,
+        "rms_c6": 3.19388,
+        "rms_c7": 3.19388,
+        "rms_dedicated": 1.38592,
+        "isolate_peak": 24.031,
+        "isolate_power_avg": 0.358224
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b267a44f201e1ddb2b19003851ed5d990179056960e2920a5502da402f1ac54f"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.1_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.092,
+        "input_max": 12.9937,
+        "bridge_peak": 54.5638,
+        "bridge_i2t_start": 13.1416,
+        "bridge_power": 2.20194,
+        "rms_c6": 3.36488,
+        "rms_c7": 2.92228,
+        "rms_dedicated": 1.38915,
+        "isolate_peak": 16.2049,
+        "isolate_power_avg": 0.359202
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8972ab41a1c2151e57fc991f5206b3fab415be0185c74f18152ccef9b6c36c21"
+    },
+    {
+      "name": "added_f50_line0.9_esr0.1_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.092,
+        "input_max": 12.9937,
+        "bridge_peak": 88.0223,
+        "bridge_i2t_start": 11.8086,
+        "bridge_power": 2.20106,
+        "rms_c6": 3.36488,
+        "rms_c7": 2.92228,
+        "rms_dedicated": 1.38915,
+        "isolate_peak": 28.4699,
+        "isolate_power_avg": 0.359099
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "ea2f9ae22714ec6ca1feb3dfb47759ea929358635a8c029347d85ba0caf6b8f4"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.02_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.8377,
+        "input_max": 16.4724,
+        "bridge_peak": 73.0999,
+        "bridge_i2t_start": 21.8589,
+        "bridge_power": 2.97589,
+        "rms_c6": 4.43004,
+        "rms_c7": 4.43004,
+        "rms_dedicated": 1.39376,
+        "isolate_peak": 23.2891,
+        "isolate_power_avg": 0.287826
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "a37581804df3692048a90a5e3c33d0d4c10e43507b2dce8af8e6c3d2fabee159"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.02_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.8377,
+        "input_max": 16.4724,
+        "bridge_peak": 135.323,
+        "bridge_i2t_start": 22.3781,
+        "bridge_power": 2.97474,
+        "rms_c6": 4.43004,
+        "rms_c7": 4.43004,
+        "rms_dedicated": 1.39376,
+        "isolate_peak": 34.8435,
+        "isolate_power_avg": 0.287729
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "fecbd81c01c8a91c2c9a7877a3919fef4dd1fedb6d23834e5161bc30752b93ce"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.02_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.6633,
+        "input_max": 16.2911,
+        "bridge_peak": 77.1192,
+        "bridge_i2t_start": 24.9453,
+        "bridge_power": 2.97883,
+        "rms_c6": 3.66095,
+        "rms_c7": 5.09996,
+        "rms_dedicated": 1.33651,
+        "isolate_peak": 21.2928,
+        "isolate_power_avg": 0.286302
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "9e05fe546ee7de2d27fad17ca3de9dd0c9a12b961f391364c7e8ef1feb2b134a"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.02_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.6633,
+        "input_max": 16.2911,
+        "bridge_peak": 133.283,
+        "bridge_i2t_start": 23.9024,
+        "bridge_power": 2.97757,
+        "rms_c6": 3.66095,
+        "rms_c7": 5.09996,
+        "rms_dedicated": 1.33651,
+        "isolate_peak": 32.7069,
+        "isolate_power_avg": 0.286194
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "caae3fa27b6a402f461b5cf6f0f29252cd4f90d925cd16e08ca641ee828a515f"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.05_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.6986,
+        "input_max": 16.3749,
+        "bridge_peak": 70.7234,
+        "bridge_i2t_start": 20.7647,
+        "bridge_power": 2.92578,
+        "rms_c6": 4.25886,
+        "rms_c7": 4.25886,
+        "rms_dedicated": 1.30633,
+        "isolate_peak": 22.3175,
+        "isolate_power_avg": 0.283329
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8c20ffc8ad8ec3588fd78521a7a8a00ded953e997b61670a706edd41252eae4f"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.05_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.6986,
+        "input_max": 16.3749,
+        "bridge_peak": 126.083,
+        "bridge_i2t_start": 20.6223,
+        "bridge_power": 2.92455,
+        "rms_c6": 4.25886,
+        "rms_c7": 4.25886,
+        "rms_dedicated": 1.30633,
+        "isolate_peak": 31.3639,
+        "isolate_power_avg": 0.283227
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "69ff310e887ba76030dc97067ea11228eb95355cba74c7772e9531fc6d6c23da"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.05_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5768,
+        "input_max": 16.2458,
+        "bridge_peak": 72.9509,
+        "bridge_i2t_start": 22.8456,
+        "bridge_power": 2.89592,
+        "rms_c6": 3.92983,
+        "rms_c7": 4.48238,
+        "rms_dedicated": 1.27447,
+        "isolate_peak": 20.6844,
+        "isolate_power_avg": 0.282939
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b1692d631465885628713334cba8ca67f4739f477bb8cbd22b58b91ef2dd0808"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.05_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5767,
+        "input_max": 16.2458,
+        "bridge_peak": 122.665,
+        "bridge_i2t_start": 21.2525,
+        "bridge_power": 2.89478,
+        "rms_c6": 3.92983,
+        "rms_c7": 4.48238,
+        "rms_dedicated": 1.27447,
+        "isolate_peak": 34.7902,
+        "isolate_power_avg": 0.282843
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "1107a86ab8c8b47b2eca8d9a0fb986bde6dd427519de27d9e150afeac0ec7dee"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.1_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5335,
+        "input_max": 16.3124,
+        "bridge_peak": 67.1195,
+        "bridge_i2t_start": 19.1468,
+        "bridge_power": 2.8523,
+        "rms_c6": 4.02308,
+        "rms_c7": 4.02308,
+        "rms_dedicated": 1.21987,
+        "isolate_peak": 20.8504,
+        "isolate_power_avg": 0.279271
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "2f7882814b263b2089524fee3c3b83816c7b272e7dfea813dcfea594877e22da"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.1_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5334,
+        "input_max": 16.3124,
+        "bridge_peak": 113.869,
+        "bridge_i2t_start": 18.2193,
+        "bridge_power": 2.85097,
+        "rms_c6": 4.02308,
+        "rms_c7": 4.02308,
+        "rms_dedicated": 1.21987,
+        "isolate_peak": 30.3481,
+        "isolate_power_avg": 0.279163
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8c64302d32fe0150940a948f9e0de2db6ddfff5e68c984410c01f55345af23db"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.1_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5026,
+        "input_max": 16.2807,
+        "bridge_peak": 67.3791,
+        "bridge_i2t_start": 20.119,
+        "bridge_power": 2.791,
+        "rms_c6": 4.24381,
+        "rms_c7": 3.67513,
+        "rms_dedicated": 1.21813,
+        "isolate_peak": 20.0373,
+        "isolate_power_avg": 0.27962
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "52f25dd816e6c76a695d70db18ffe8edd253f68770717b79a77b5286420a9c17"
+    },
+    {
+      "name": "added_f50_line1.1_esr0.1_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5026,
+        "input_max": 16.2807,
+        "bridge_peak": 109.041,
+        "bridge_i2t_start": 18.1341,
+        "bridge_power": 2.78976,
+        "rms_c6": 4.24381,
+        "rms_c7": 3.67513,
+        "rms_dedicated": 1.21813,
+        "isolate_peak": 35.8123,
+        "isolate_power_avg": 0.279516
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "d68c54dad1036a8418248499e9450993ac86d04abc4740bdd0ebb942eea90a66"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.02_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.3988,
+        "input_max": 13.0339,
+        "bridge_peak": 63.871,
+        "bridge_i2t_start": 14.1705,
+        "bridge_power": 2.33844,
+        "rms_c6": 3.53824,
+        "rms_c7": 3.53824,
+        "rms_dedicated": 1.54189,
+        "isolate_peak": 20.4126,
+        "isolate_power_avg": 0.366594
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "4350a85bb63ee39a5bcd93bc1d300f457f10d6f0531bc5d3b0b61270ede92a0f"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.02_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.3988,
+        "input_max": 13.0339,
+        "bridge_peak": 109.279,
+        "bridge_i2t_start": 13.5398,
+        "bridge_power": 2.33742,
+        "rms_c6": 3.53824,
+        "rms_c7": 3.53824,
+        "rms_dedicated": 1.54189,
+        "isolate_peak": 27.7205,
+        "isolate_power_avg": 0.366461
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "31a2bf90f9c7dd9d5880f002629b029eac12cf80f9b491870e6182079f96904f"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.02_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2908,
+        "input_max": 12.9148,
+        "bridge_peak": 66.8943,
+        "bridge_i2t_start": 15.9934,
+        "bridge_power": 2.34006,
+        "rms_c6": 2.95646,
+        "rms_c7": 4.01661,
+        "rms_dedicated": 1.47469,
+        "isolate_peak": 18.5719,
+        "isolate_power_avg": 0.364015
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "ddd930641d818c2195aaab3d0cbf193205172bd0328bf0694a15c2d71776235f"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.02_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2908,
+        "input_max": 12.9148,
+        "bridge_peak": 107.641,
+        "bridge_i2t_start": 14.4335,
+        "bridge_power": 2.33901,
+        "rms_c6": 2.95646,
+        "rms_c7": 4.01661,
+        "rms_dedicated": 1.47469,
+        "isolate_peak": 25.8734,
+        "isolate_power_avg": 0.363889
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "d33621bcfbb0f58a606a3596768507c279833fcb7f5f34d22efb82dafc55b5e7"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.05_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2837,
+        "input_max": 12.9628,
+        "bridge_peak": 61.5985,
+        "bridge_i2t_start": 13.3843,
+        "bridge_power": 2.30528,
+        "rms_c6": 3.39474,
+        "rms_c7": 3.39474,
+        "rms_dedicated": 1.4516,
+        "isolate_peak": 19.4579,
+        "isolate_power_avg": 0.361746
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "3363f063f8427a95a1f06ff52e8f29726af8afa0ce2c28f28d98c71609f88549"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.05_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2837,
+        "input_max": 12.9628,
+        "bridge_peak": 101.82,
+        "bridge_i2t_start": 12.4602,
+        "bridge_power": 2.30442,
+        "rms_c6": 3.39474,
+        "rms_c7": 3.39474,
+        "rms_dedicated": 1.4516,
+        "isolate_peak": 24.8418,
+        "isolate_power_avg": 0.361651
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "a1e2fd6fcf206f7d7ef195ffcc77a82db22c4593f52ab2cd6b8f7cd80e7d9a25"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.05_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2193,
+        "input_max": 12.893,
+        "bridge_peak": 63.0323,
+        "bridge_i2t_start": 14.541,
+        "bridge_power": 2.28427,
+        "rms_c6": 3.2441,
+        "rms_c7": 3.47382,
+        "rms_dedicated": 1.42897,
+        "isolate_peak": 18.0858,
+        "isolate_power_avg": 0.361737
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "dac660d7fff15f8f9e09a27fc49b2c3b427c4d250e6167a4277f36d7d760cbdd"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.05_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.2193,
+        "input_max": 12.893,
+        "bridge_peak": 99.0296,
+        "bridge_i2t_start": 12.8313,
+        "bridge_power": 2.28325,
+        "rms_c6": 3.2441,
+        "rms_c7": 3.47382,
+        "rms_dedicated": 1.42897,
+        "isolate_peak": 27.3568,
+        "isolate_power_avg": 0.361619
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "de34cc77c8ae4d81858b63f277660263a8f0e6c23820039e972a5f7d22bd28a3"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.1_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1394,
+        "input_max": 12.9319,
+        "bridge_peak": 58.179,
+        "bridge_i2t_start": 12.2361,
+        "bridge_power": 2.25486,
+        "rms_c6": 3.20694,
+        "rms_c7": 3.20694,
+        "rms_dedicated": 1.36889,
+        "isolate_peak": 18.0403,
+        "isolate_power_avg": 0.358009
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "e304fbf0ed9b3b71cac943e9ad82f58907583a5ef1b32e749b3c04f51fbca14d"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.1_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1394,
+        "input_max": 12.9319,
+        "bridge_peak": 91.9472,
+        "bridge_i2t_start": 10.9875,
+        "bridge_power": 2.25393,
+        "rms_c6": 3.20694,
+        "rms_c7": 3.20694,
+        "rms_dedicated": 1.36889,
+        "isolate_peak": 24.031,
+        "isolate_power_avg": 0.35791
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "0dfc638404d7c48c0b4455480c7dc977b66795a8861d9dbf90ab94b9f1f7db88"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.1_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1336,
+        "input_max": 12.9323,
+        "bridge_peak": 57.9653,
+        "bridge_i2t_start": 12.7022,
+        "bridge_power": 2.21198,
+        "rms_c6": 3.51483,
+        "rms_c7": 2.80422,
+        "rms_dedicated": 1.38117,
+        "isolate_peak": 17.4861,
+        "isolate_power_avg": 0.359056
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "a32072c68665f33e793ecc751b84b0c83fe026f487ae1c7ab5684f219e2332e6"
+    },
+    {
+      "name": "added_f60_line0.9_esr0.1_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 12.1336,
+        "input_max": 12.9323,
+        "bridge_peak": 88.0223,
+        "bridge_i2t_start": 10.9532,
+        "bridge_power": 2.21114,
+        "rms_c6": 3.51483,
+        "rms_c7": 2.80422,
+        "rms_dedicated": 1.38117,
+        "isolate_peak": 28.4699,
+        "isolate_power_avg": 0.358965
+      },
+      "completed": true,
+      "checks": {
+        "headroom": false,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "62a9da9e6a79de33c506e728448965d9c8e7cfbcc8815c6238967881e37dfb9d"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.02_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7984,
+        "input_max": 16.331,
+        "bridge_peak": 78.8817,
+        "bridge_i2t_start": 21.7159,
+        "bridge_power": 2.9987,
+        "rms_c6": 4.46535,
+        "rms_c7": 4.46535,
+        "rms_dedicated": 1.37894,
+        "isolate_peak": 25.2144,
+        "isolate_power_avg": 0.288104
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "78fe586de8f3909b2a27fae8a3282caa25ea9f2756f9f7d0c43a6bd1a123388b"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.02_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7984,
+        "input_max": 16.331,
+        "bridge_peak": 135.323,
+        "bridge_i2t_start": 20.8,
+        "bridge_power": 2.99748,
+        "rms_c6": 4.46535,
+        "rms_c7": 4.46535,
+        "rms_dedicated": 1.37894,
+        "isolate_peak": 34.6285,
+        "isolate_power_avg": 0.288021
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "8ada3d54ff22a2577005e5493c7597636ac6958ac3db928fa67ea0274a01606d"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.02_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.649,
+        "input_max": 16.1748,
+        "bridge_peak": 82.6191,
+        "bridge_i2t_start": 24.5098,
+        "bridge_power": 2.99397,
+        "rms_c6": 3.74153,
+        "rms_c7": 5.08029,
+        "rms_dedicated": 1.32168,
+        "isolate_peak": 22.9407,
+        "isolate_power_avg": 0.286238
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "65098c1e384ac01f1a634b80ab65e929dbb0e4807151c35a047c7334e7c894be"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.02_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.649,
+        "input_max": 16.1748,
+        "bridge_peak": 133.283,
+        "bridge_i2t_start": 22.1688,
+        "bridge_power": 2.99281,
+        "rms_c6": 3.74153,
+        "rms_c7": 5.08029,
+        "rms_dedicated": 1.32168,
+        "isolate_peak": 32.6063,
+        "isolate_power_avg": 0.286149
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "6956c60729a8482399ab7125c041c1219db18e883adca1f2c1b0dd26c03f7fc8"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.05_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.6643,
+        "input_max": 16.2443,
+        "bridge_peak": 76.079,
+        "bridge_i2t_start": 20.512,
+        "bridge_power": 2.94628,
+        "rms_c6": 4.28105,
+        "rms_c7": 4.28105,
+        "rms_dedicated": 1.2872,
+        "isolate_peak": 24.0458,
+        "isolate_power_avg": 0.283271
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "7a891da19390027c2afd9dd1486ec92517f49116272a7029c9cc28f82a0ce214"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.05_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.6643,
+        "input_max": 16.2443,
+        "bridge_peak": 126.083,
+        "bridge_i2t_start": 19.1403,
+        "bridge_power": 2.94503,
+        "rms_c6": 4.28105,
+        "rms_c7": 4.28105,
+        "rms_dedicated": 1.2872,
+        "isolate_peak": 31.2244,
+        "isolate_power_avg": 0.283178
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "629bbe4353e80cc2f4b7c84361c26922ac67b549bde338e0f23c683e81e109a7"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.05_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5778,
+        "input_max": 16.1522,
+        "bridge_peak": 77.8526,
+        "bridge_i2t_start": 22.2856,
+        "bridge_power": 2.91093,
+        "rms_c6": 4.1037,
+        "rms_c7": 4.37998,
+        "rms_dedicated": 1.26348,
+        "isolate_peak": 22.3535,
+        "isolate_power_avg": 0.282964
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "646e0eff4158eec98c2b1d57f5a79d47acc67d41ace22d9def68639667f784ad"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.05_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5778,
+        "input_max": 16.1522,
+        "bridge_peak": 122.665,
+        "bridge_i2t_start": 19.7087,
+        "bridge_power": 2.90952,
+        "rms_c6": 4.1037,
+        "rms_c7": 4.37998,
+        "rms_dedicated": 1.26348,
+        "isolate_peak": 34.7902,
+        "isolate_power_avg": 0.282847
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "4bb32ba7fa568308489ccfaac89e154f6867c3ae70e98f55cc73db58c673f82f"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.1_imb0_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.517,
+        "input_max": 16.2083,
+        "bridge_peak": 71.8627,
+        "bridge_i2t_start": 18.7541,
+        "bridge_power": 2.86928,
+        "rms_c6": 4.03748,
+        "rms_c7": 4.03748,
+        "rms_dedicated": 1.20403,
+        "isolate_peak": 22.3188,
+        "isolate_power_avg": 0.279206
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9a52169907c6a812309971a243c3142fc37b9e61c7976ba592afaf0dc50dd67e"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.1_imb0_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.517,
+        "input_max": 16.2083,
+        "bridge_peak": 113.869,
+        "bridge_i2t_start": 16.8761,
+        "bridge_power": 2.86792,
+        "rms_c6": 4.03748,
+        "rms_c7": 4.03748,
+        "rms_dedicated": 1.20403,
+        "isolate_peak": 30.3481,
+        "isolate_power_avg": 0.279102
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "8d47ce9b8306bb7b1cd7209869edbcf74f306b7e21f2e0c1833e5ac96abe369e"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.1_imb1_phase0",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5142,
+        "input_max": 16.2083,
+        "bridge_peak": 71.603,
+        "bridge_i2t_start": 19.4699,
+        "bridge_power": 2.80587,
+        "rms_c6": 4.43072,
+        "rms_c7": 3.52576,
+        "rms_dedicated": 1.20977,
+        "isolate_peak": 21.6391,
+        "isolate_power_avg": 0.279637
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "57a7cc7a6e3172ff6108fdf7caab27605bc0eb036a7eeb87c5ab2cbe6a360e6a"
+    },
+    {
+      "name": "added_f60_line1.1_esr0.1_imb1_phase90",
+      "topology": "added",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5142,
+        "input_max": 16.2083,
+        "bridge_peak": 109.041,
+        "bridge_i2t_start": 16.8231,
+        "bridge_power": 2.80463,
+        "rms_c6": 4.43072,
+        "rms_c7": 3.52576,
+        "rms_dedicated": 1.20977,
+        "isolate_peak": 35.8123,
+        "isolate_power_avg": 0.279537
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "374043fee3fca0d711b2cea5b26416eb2764d6ba8bcec6d3cce55f8c68f1bf59"
+    }
+  ],
+  "completed": true,
+  "pcb_changed": false,
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "limitations": [
+    "Source-only constant-power load, not a controller or voltage-regulation pass",
+    "ESR/winding resistance/lamp load are explicit assumptions; no measured transformer model",
+    "Extra 10000 uF nominal reservoir and B560C isolation diode are unbuilt candidates",
+    "12.3 V is an engineering headroom screen, not a guaranteed dropout specification",
+    "Inrush and bridge power are reported without claiming fuse or transient SOA qualification",
+    "Ripple limits retain local capacitor ambient at or below 60 C"
+  ]
+}

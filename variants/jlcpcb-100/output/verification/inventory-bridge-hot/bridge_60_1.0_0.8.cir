@@ -1,0 +1,165 @@
+Bridge loss sensitivity: BR1 STPS20M100ST TO220 with individual Boyd 577202B00000G sinks. Other low-voltage bridges STPS20M100SG D2PAK. 50 C ambient. Electrical winding/load assumptions remain to be measured. D2PAK lumped temperatures are screening estimates; geometry thermal_mesh.py is the separate layout assessment.
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/tools/spice/models.lib
+* ---- 18a: BR1 +18V, everything on: all 64 lamps (2.5 ohm) + the +12V digital buck at 0.75 A (as psu_maxload)
+V18a p18a q18a SIN(0 18.8 60)
+Rp18a p18a a18a 0.05
+Rq18a q18a b18a 0.05
+Vs18a a18a ab18a 0
+D118a ab18a dc18a J100MBR
+D218a b18a dc18a J100MBR
+D318a 0 ab18a J100MBR
+D418a 0 b18a J100MBR
+C18a dc18a 0 15040.0u
+Rl18a dc18a 0 2.5
+Bv12a v12a 0 V = 0.5*(1+tanh((v(dc18a)-8.5)*40)) * 12.0
+R12a v12a 0 16
+Bin12a dc18a 0 I = (v(v12a)*v(v12a)/16) / (0.88*max(v(dc18a),1))
+* ---- 18b: BR1 +18V, sustained design point 3.0 A DC (about half the lamps lit + the buck, or an LED-converted machine)
+V18b p18b q18b SIN(0 18.8 60)
+Rp18b p18b a18b 0.05
+Rq18b q18b b18b 0.05
+Vs18b a18b ab18b 0
+D118b ab18b dc18b J100MBR
+D218b b18b dc18b J100MBR
+D318b 0 ab18b J100MBR
+D418b 0 b18b J100MBR
+C18b dc18b 0 15040.0u
+Bl18b dc18b 0 I = (time > 60m) ? 3.0 : 0
+* ---- 18c: BR1 +18V, F114 rating 8 A DC (bound, informational)
+V18c p18c q18c SIN(0 18.8 60)
+Rp18c p18c a18c 0.05
+Rq18c q18c b18c 0.05
+Vs18c a18c ab18c 0
+D118c ab18c dc18c J100MBR
+D218c b18c dc18c J100MBR
+D318c 0 ab18c J100MBR
+D418c 0 b18c J100MBR
+C18c dc18c 0 15040.0u
+Bl18c dc18c 0 I = (time > 60m) ? 8.0 : 0
+* ---- 20a: BR4 +20V, sustained design point 2.5 A DC (flashers at ~50 % of the F111 rating during a lamp show)
+V20a p20a q20a SIN(0 22.6 60)
+Rp20a p20a a20a 0.05
+Rq20a q20a b20a 0.05
+Vs20a a20a ab20a 0
+D120a ab20a dc20a J100MBR
+D220a b20a dc20a J100MBR
+D320a 0 ab20a J100MBR
+D420a 0 b20a J100MBR
+C20a dc20a 0 7520.0u
+Bl20a dc20a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 20b: BR4 +20V, F111 rating 5 A DC (bound, informational)
+V20b p20b q20b SIN(0 22.6 60)
+Rp20b p20b a20b 0.05
+Rq20b q20b b20b 0.05
+Vs20b a20b ab20b 0
+D120b ab20b dc20b J100MBR
+D220b b20b dc20b J100MBR
+D320b 0 ab20b J100MBR
+D420b 0 b20b J100MBR
+C20b dc20b 0 7520.0u
+Bl20b dc20b 0 I = (time > 60m) ? 5.0 : 0
+* ---- 50a: BR3 +50V, sustained design point 3.0 A DC (a 14.5 ohm coil held 50 % of the time plus play; the flippers are rectified on the Fliptronic board from J104)
+V50a p50a q50a SIN(0 72.7 60)
+Rp50a p50a a50a 0.6
+Rq50a q50a b50a 0.6
+Vs50a a50a ab50a 0
+D150a ab50a dc50a DGBPC35
+D250a b50a dc50a DGBPC35
+D350a 0 ab50a DGBPC35
+D450a 0 b50a DGBPC35
+C50a dc50a 0 3308.8u
+R260a dc50a 0 7.5k
+Bl50a dc50a 0 I = (time > 60m) ? 3.0 : 0
+* ---- 50b: BR3 +50V, F112 rating 7 A DC (bound, informational)
+V50b p50b q50b SIN(0 72.7 60)
+Rp50b p50b a50b 0.6
+Rq50b q50b b50b 0.6
+Vs50b a50b ab50b 0
+D150b ab50b dc50b DGBPC35
+D250b b50b dc50b DGBPC35
+D350b 0 ab50b DGBPC35
+D450b 0 b50b DGBPC35
+C50b dc50b 0 3308.8u
+R260b dc50b 0 7.5k
+Bl50b dc50b 0 I = (time > 60m) ? 7.0 : 0
+* ---- 5a: BR2 +5V raw, +5V buck at its rated 3 A output (the converter limits this rail: F113 is never reached)
+V5a p5a q5a SIN(0 12.7 60)
+Rp5a p5a a5a 0.05
+Rq5a q5a b5a 0.05
+Vs5a a5a ab5a 0
+D15a ab5a dc5a J100MBR
+D25a b5a dc5a J100MBR
+D35a 0 ab5a J100MBR
+D45a 0 b5a J100MBR
+C5a dc5a 0 7520.0u
+Bv5a v5a 0 V = 0.5*(1+tanh((v(dc5a)-5.6)*40)) * min(5.10, max(0.97*v(dc5a) - 0.5, 0))
+R5a v5a 0 1.667
+Bin5a dc5a 0 I = (v(v5a)*v(v5a)/1.667) / (0.88*max(v(dc5a),1))
+* ---- 5b: BR2 +5V raw, +5V buck at the estimated real load 2.4 A (README: 2.2-2.6 A)
+V5b p5b q5b SIN(0 12.7 60)
+Rp5b p5b a5b 0.05
+Rq5b q5b b5b 0.05
+Vs5b a5b ab5b 0
+D15b ab5b dc5b J100MBR
+D25b b5b dc5b J100MBR
+D35b 0 ab5b J100MBR
+D45b 0 b5b J100MBR
+C5b dc5b 0 7520.0u
+Bv5b v5b 0 V = 0.5*(1+tanh((v(dc5b)-5.6)*40)) * min(5.10, max(0.97*v(dc5b) - 0.5, 0))
+R5b v5b 0 2.083
+Bin5b dc5b 0 I = (v(v5b)*v(v5b)/2.083) / (0.88*max(v(dc5b),1))
+* ---- 12a: BR5 +12V power, sustained design point 2.5 A DC (gun motors, optos, coin door, DMD - psu_12vu)
+V12a p12a q12a SIN(0 17.63 60)
+Rp12a p12a a12a 0.25
+Rq12a q12a b12a 0.25
+Vs12a a12a ab12a 0
+D112a ab12a dc12a J100MBR
+D212a b12a dc12a J100MBR
+D312a 0 ab12a J100MBR
+D412a 0 b12a J100MBR
+C12a dc12a 0 7520.0u
+Bl12a dc12a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 12b: BR5 +12V power, F116 rating 3 A DC (bound, informational)
+V12b p12b q12b SIN(0 17.63 60)
+Rp12b p12b a12b 0.25
+Rq12b q12b b12b 0.25
+Vs12b a12b ab12b 0
+D112b ab12b dc12b J100MBR
+D212b b12b dc12b J100MBR
+D312b 0 ab12b J100MBR
+D412b 0 b12b J100MBR
+C12b dc12b 0 7520.0u
+Bl12b dc12b 0 I = (time > 60m) ? 3.0 : 0
+
+.options method=gear reltol=.001 minbreak=1p klu
+.tran 10u 1 0 10u uic
+.control
+run
+let sim_end=time[length(time)-1]
+print sim_end
+let i_18a=i(Vs18a)
+let ia_18a=abs(i_18a)
+meas tran iavg_18a AVG ia_18a from=.8 to=1
+meas tran irms_18a RMS i_18a from=.8 to=1
+let pd_18a=.50*1.1*iavg_18a/2+.005*(1.1*irms_18a)*(1.1*irms_18a)/2
+print pd_18a
+let i_5a=i(Vs5a)
+let ia_5a=abs(i_5a)
+meas tran iavg_5a AVG ia_5a from=.8 to=1
+meas tran irms_5a RMS i_5a from=.8 to=1
+let pd_5a=.60*iavg_5a/2+.013*irms_5a*irms_5a/2
+print pd_5a
+let i_20a=i(Vs20a)
+let ia_20a=abs(i_20a)
+meas tran iavg_20a AVG ia_20a from=.8 to=1
+meas tran irms_20a RMS i_20a from=.8 to=1
+let pd_20a=.60*iavg_20a/2+.013*irms_20a*irms_20a/2
+print pd_20a
+let i_12b=i(Vs12b)
+let ia_12b=abs(i_12b)
+meas tran iavg_12b AVG ia_12b from=.8 to=1
+meas tran irms_12b RMS i_12b from=.8 to=1
+let pd_12b=.60*iavg_12b/2+.013*irms_12b*irms_12b/2
+print pd_12b
+.endc
+.end

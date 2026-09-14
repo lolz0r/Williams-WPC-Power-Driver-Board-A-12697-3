@@ -1,0 +1,35 @@
+U21 reservoir candidate: native_f60_line0.9_esr0.02_imb0_phase90; 10 W constant-power regulator approximation
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+Vsecondary secp secn SIN(0 16.92 60 0 0 90)
+Rsec1 secp acp .05
+Rsec2 secn acn .05
+Dbridge1 acp raw DSCH20100
+Dbridge2 acn raw DSCH20100
+Dbridge3 0 acp DSCH20100
+Dbridge4 0 acn DSCH20100
+Rc6 raw c6_stored 0.02
+Cc6 c6_stored 0 8000u
+Rc7 raw c7_stored 0.02
+Cc7 c7_stored 0 8000u
+Rlamps raw 0 2.5
+Rbleed raw 0 5000
+Bbuck raw 0 I=10/max(v(raw),4.5)*min(max((time-20m)/10m,0),1)
+.save v(raw) v(raw) v(acp) @dbridge1[id] @dbridge2[id]  @cc6[i] @cc7[i]
+.options method=gear reltol=.0001 abstol=100n vntol=10u klu itl4=100
+.tran 10u .5 0 10u uic
+.control
+set numdgt=12
+run
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran input_min MIN v(raw) from=.4 to=.5
+meas tran input_max MAX v(raw) from=.4 to=.5
+meas tran bridge_peak MAX @dbridge1[id]
+let bridge_i2=@dbridge1[id]^2
+meas tran bridge_i2t_start INTEG bridge_i2 from=0 to=.03
+let bridge_p=v(acp,raw)*@dbridge1[id]
+meas tran bridge_power AVG bridge_p from=.4 to=.5
+meas tran rms_c6 RMS @cc6[i] from=.4 to=.5
+meas tran rms_c7 RMS @cc7[i] from=.4 to=.5
+.endc
+.end

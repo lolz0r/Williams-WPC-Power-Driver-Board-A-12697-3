@@ -1,0 +1,1075 @@
+{
+  "passed": true,
+  "complete": true,
+  "cases": [
+    {
+      "name": "gi1_phase0",
+      "channel": 1,
+      "phase_degrees": 0,
+      "window_s": [
+        40.163826333,
+        40.563826333
+      ],
+      "gate_command_duty": 1.0000000000000142,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "26fc28fb05619a03905f4abf90b77b7dfe4438d9e820853e08f1dd234c909db9"
+    },
+    {
+      "name": "gi1_phase90",
+      "channel": 1,
+      "phase_degrees": 90,
+      "window_s": [
+        40.163826333,
+        40.563826333
+      ],
+      "gate_command_duty": 1.0000000000000142,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "98c10ceeb284bc1b82e6dc2be917a2e118520cf07a883f57cbcaf40c7d54c9ff"
+    },
+    {
+      "name": "gi1_phase180",
+      "channel": 1,
+      "phase_degrees": 180,
+      "window_s": [
+        40.163826333,
+        40.563826333
+      ],
+      "gate_command_duty": 1.0000000000000142,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "8f282f49bbda4350f06869f9de837636d853955efe063f99a2997e928609c63b"
+    },
+    {
+      "name": "gi1_phase270",
+      "channel": 1,
+      "phase_degrees": 270,
+      "window_s": [
+        40.163826333,
+        40.563826333
+      ],
+      "gate_command_duty": 1.0000000000000142,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "8f37524dbf7e211e8bf1aee78a4c66c0fab5bb96848c45aa1c5cbe25074d7b92"
+    },
+    {
+      "name": "gi2_phase0",
+      "channel": 2,
+      "phase_degrees": 0,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "818a98c3235b0d33ffaff34435b6230d61f4b548127ed6251a6d12228713a0be"
+    },
+    {
+      "name": "gi2_phase90",
+      "channel": 2,
+      "phase_degrees": 90,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3773ce4fa29c745a5293bed0bdda22fc58c839fb59d5b84e16bb88378c964253"
+    },
+    {
+      "name": "gi2_phase180",
+      "channel": 2,
+      "phase_degrees": 180,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "19607bddf91fb3ae44b79e4b7e35a2e76a889724d4e9fdc58c3e38b0ecc94d71"
+    },
+    {
+      "name": "gi2_phase270",
+      "channel": 2,
+      "phase_degrees": 270,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "5487ea445f032cecb68cdc532157291dea80faeb7f57710c737efe04297793f4"
+    },
+    {
+      "name": "gi3_phase0",
+      "channel": 3,
+      "phase_degrees": 0,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3fe5485b0ef61f4949d905d38ebcd0eee39600c7b8a155da4f75bf7d81f1859e"
+    },
+    {
+      "name": "gi3_phase90",
+      "channel": 3,
+      "phase_degrees": 90,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "1d3b3c4bfc256b8633039f30ce63e85281ea1a01964ca1c1a5c41b9b915ddc89"
+    },
+    {
+      "name": "gi3_phase180",
+      "channel": 3,
+      "phase_degrees": 180,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3cbcfce56052a09596e19ded63b7370d6a5b849eae494bd9cea707ccf5c64864"
+    },
+    {
+      "name": "gi3_phase270",
+      "channel": 3,
+      "phase_degrees": 270,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "9ab62d498e18258cf48d65d5b60bda0802d63ecf4ea3ebf8cecda3e071474e84"
+    },
+    {
+      "name": "gi4_phase0",
+      "channel": 4,
+      "phase_degrees": 0,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "6fcafaacbefea4662f07ad8e876ded3aa09bc80d0f7fe347c8292190bc6d43e4"
+    },
+    {
+      "name": "gi4_phase90",
+      "channel": 4,
+      "phase_degrees": 90,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "9b78187a563506a87492245111f051a1672691c463b8ffd908f282af415d86bc"
+    },
+    {
+      "name": "gi4_phase180",
+      "channel": 4,
+      "phase_degrees": 180,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "0c1c77645fab31ca664c6a216bec22cad61295e7e14c69958f030fc9af31b08a"
+    },
+    {
+      "name": "gi4_phase270",
+      "channel": 4,
+      "phase_degrees": 270,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "5947aec16bcd4573fc0b157e6df00bf9f2106eeffb46ddc2c5881accf4df63c9"
+    },
+    {
+      "name": "gi5_phase0",
+      "channel": 5,
+      "phase_degrees": 0,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "7ece98cc7f17ba8984a0e94affdb73983901e5452ef01622603f865d69352af9"
+    },
+    {
+      "name": "gi5_phase90",
+      "channel": 5,
+      "phase_degrees": 90,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "c5e81b28a5690a06a409d3cc321877069cf64ff03f76b7057773657a77f2da36"
+    },
+    {
+      "name": "gi5_phase180",
+      "channel": 5,
+      "phase_degrees": 180,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 23.0288,
+        "rms_current": 4.55229,
+        "avg_power": 4.43913,
+        "inrush_i2t": 3.23839,
+        "tj": 111.5929
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 23.0288,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.55229,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 3.23839,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.5929,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "7931dccc84eb1713730837df3308cc35e3fa2e227dbe0f63a8f9818175a79de5"
+    },
+    {
+      "name": "gi5_phase270",
+      "channel": 5,
+      "phase_degrees": 270,
+      "window_s": [
+        10.766874833,
+        11.166874833
+      ],
+      "gate_command_duty": 1.0000000000000009,
+      "measurements": {
+        "sim_end": 0.52,
+        "peak_current": 6.56075,
+        "rms_current": 4.52933,
+        "avg_power": 4.41154,
+        "inrush_i2t": 0.360658,
+        "tj": 111.2101
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.52,
+          "min": 0.5199999000000001,
+          "max": 0.5200001,
+          "passed": true
+        },
+        "peak_current": {
+          "value": 6.56075,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "rms_current": {
+          "value": 4.52933,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "inrush_i2t": {
+          "value": 0.360658,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.2101,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "f2f4ad12cbfb93ffafd4d69ff77e8d21e17fa75eefffdebe8d9570306f2228ca"
+    }
+  ],
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999",
+  "limitations": [
+    "Worst 400 ms gate-command-duty window with 100 ms history; highest gate duty does not prove the hottest possible dimmer phase",
+    "All five strings use 18 #44 lamps as the existing engineering envelope; STTNG insert strings use #555, actual populations and thermal data must be measured",
+    "60 Hz ROM trace; four phase offsets sample emulator/physical zero-cross uncertainty, not exhaustive phase/timing corners",
+    "Approximate triac latch/holding-current model; real commutation, trigger quadrant, EMI and heatsink contact require bench testing",
+    "32 A2s is a device surge-screen bound over the initial 30 ms; no repetitive surge/fuse coordination qualification"
+  ]
+}

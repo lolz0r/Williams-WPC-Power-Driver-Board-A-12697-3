@@ -1,0 +1,20 @@
+stdout ******
+stdout ** ngspice-47 shared library
+stdout ** Creation Date: Fri Nov 11 11:11:11 UTC 2011
+stdout ******
+stdout Note: gnd in a subcircuit is not set to 0 automatically
+stdout Note: Compatibility modes selected: ps
+stdout Circuit: ti tps54360 transient model, 5v actual compensation, vin=15.34
+stdout Reducing trtol to 1 for xspice 'A' devices
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 4351
+stdout sim_end = 1.000000000000e-03
+stdout output_peak         =  5.10404e+00 at=  1.00000e-08
+stdout output_min          =  -3.55291e-02 at=  2.82803e-04
+stdout inductor_peak       =  1.59251e-03 at=  2.99240e-04
+stdout inductor_min        =  -1.97086e+01 at=  9.05177e-05
+stdout body_reverse_peak   =  1.97086e+01 at=  9.05177e-05
+stdout input_min           =  1.40519e-06 at=  1.00000e-08

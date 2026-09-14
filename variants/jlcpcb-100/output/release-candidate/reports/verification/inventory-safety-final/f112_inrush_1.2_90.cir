@@ -1,0 +1,23 @@
+F112 combined capacitor cold inrush bound; external 4400uF assumed
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/tools/spice/models.lib
+.model J100GBPC25 D(Is=3e-9 N=1.5 Rs=.0192 Cjo=180p Tt=4u BV=600 Ibv=10u)
+Vsec a b SIN(0 79.97000000000001 50 0 0 90)
+Rwind a aa 1.2
+Vf aa ab 0
+D1 ab dc J100GBPC25
+D2 b dc J100GBPC25
+D3 0 ab J100GBPC25
+D4 0 b J100GBPC25
+Csum dc 0 10080u
+.options method=gear reltol=.001 minbreak=1p klu
+.tran 2u .1 0 2u uic
+.control
+run
+let sim_end=time[length(time)-1]
+print sim_end
+let isq=i(Vf)*i(Vf)
+let iabs=abs(i(Vf))
+meas tran i2t INTEG isq from=0 to=.1
+meas tran peak MAX iabs
+.endc
+.end

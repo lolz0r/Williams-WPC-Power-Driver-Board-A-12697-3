@@ -1,0 +1,52 @@
+Held coils on the ~70 V rail through an IPD90N10S4L06 DPAK: (a) 100 % hold of a 14.5 ohm coil for 3 s (a "continuous duty" coil on the F103 branch), (b) FreeWPC-style PWM hold (SOL_DUTY_50 = 4 ms on / 4 ms off, 125 Hz) of an AE-26-1200 (10.8 ohm, 25 mH) with the S3M tie-back carrying the freewheel current; dissipation, diode current and junction-temperature estimate with the as-routed DPAK copper (tab pad only, no pour: datasheet minimum-footprint Rth(j-a) 62 C/W - board audit in docs/THERMAL_AND_PROTECTION.md)
+.include ../models.lib
+V50 v50 0 70
+* ---- (a) 100 % hold, 14.5 ohm / 30 mH
+VLa la 0 PULSE(0 4.6 1m 20n 20n 3 10)
+RLa la aa 40
+Rga aa ga 100
+Rpda ga 0 10k
+Vdra outa outad 0
+XQa outad ga 0 IPD90N10S4L06
+Vca v50 v50a 0
+Lca outa cla 30m
+Rca cla v50a 14.5
+Dfa outa v50 DS3M
+* ---- (b) PWM hold 50 %: 4 ms on / 4 ms off, 10.8 ohm / 25 mH
+VLb lb 0 PULSE(0 4.6 1m 20n 20n 4m 8m)
+RLb lb ab 40
+Rgb ab gb 100
+Rpdb gb 0 10k
+Vdrb outb outbd 0
+XQb outbd gb 0 IPD90N10S4L06
+Vcb v50 v50b 0
+Lcb outb clb 25m
+Rcb clb v50b 10.8
+Vdb outb dbk 0
+Dfb dbk v50 DS3M
+.tran 20u 3s
+.control
+run
+let ia = i(Vca)
+let ifa = i(Vdra)
+let pa = v(outad)*ifa
+let ib = i(Vcb)
+let ifb = i(Vdrb)
+let pb = v(outbd)*ifb
+let idb = i(Vdb)
+meas tran ia_hold AVG ia from=2 to=3
+meas tran pa_hold AVG pa from=2 to=3
+meas tran vds_hold AVG v(outad) from=2 to=3
+meas tran ib_avg AVG ib from=2 to=3
+meas tran ib_max MAX ib from=2 to=3
+meas tran ib_min MIN ib from=2 to=3
+meas tran pb_avg AVG pb from=2 to=3
+meas tran idb_avg AVG idb from=2 to=3
+meas tran idb_max MAX idb from=2 to=3
+let tj_rise_hold = pa_hold * 62
+let tj_rise_pwm = pb_avg * 62
+print tj_rise_hold
+print tj_rise_pwm
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/sol_hold.csv ia ib idb v(outb)
+.endc
+.end

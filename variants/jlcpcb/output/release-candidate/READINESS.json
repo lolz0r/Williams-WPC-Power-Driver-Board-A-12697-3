@@ -1,41 +1,117 @@
 {
-  "status": "ENGINEERING_REVIEW_CANDIDATE_WITH_OPEN_ANALOG_FINDINGS",
-  "revision": "JLC-2",
-  "electronic_redesign_complete": true,
-  "software_review_complete": false,
-  "expanded_checks_executed": true,
-  "all_simulation_checks_passed": false,
-  "normal_power_sequence_passed": false,
-  "numerical_convergence_established": false,
-  "fabrication_files_verified": true,
-  "prototype_recommendation": "Hold assembled prototype order pending disposition of the regulator and numerical findings in docs/PRESPIN_VERIFICATION.md",
-  "fab_ready": false,
+  "revision": "JLC-3",
+  "status": "READY_FOR_CONTROLLED_PROTOTYPE_BUILD",
+  "fab_ready": true,
+  "prototype_assembly_files_ready": true,
+  "assembly_stock_confirmed": false,
   "production_qualified": false,
+  "physical_qualification_performed": false,
+  "pcb_sha256": "62dd37754fc73f5f4225ce22c75ac9da5e02f6150b6568b755d26ca59e565284",
+  "netlist_sha256": "314bc2ff86e7b2f976bf7f1101e27020a82eb36d6d2596fda82369290f74a9d5",
   "electrical_errors": 0,
   "unconnected_items": 0,
   "schematic_parity_issues": 0,
-  "drc_warnings": 77,
-  "drc_warnings_reviewed": true,
-  "all_populated_electronics_jlcpcb_purchasable_snapshot": true,
-  "failed_or_inconclusive_regulator_cases": [
-    "12v_prebias",
-    "12v_uvlo",
-    "5v_prebias",
-    "5v_uvlo"
+  "erc_warnings": 0,
+  "drc_warnings": 105,
+  "drc_warnings_dispositioned": true,
+  "outline_mm": [
+    449.152,
+    272.91
   ],
-  "remaining_gates": [
-    "Regulator full-input sequence/backfeed findings and incomplete fine-step loss/matrix convergence; see prespin summary and continued report",
-    "First-article cabinet/harness/fastener/tolerance clearance and actual component fit",
-    "Loaded power, simultaneous thermal, faults, fuse clearing and protection/SOA measurements",
-    "JLCPCB procurement including twelve short-stock/preorder types; assembly orientation and fabricator DFM confirmation"
+  "stackup_finished_copper_um": [
+    70,
+    35,
+    35,
+    70
   ],
-  "physical_qualification": "No physical prototype, load or cabinet/harness was tested. See docs/VERIFICATION.md and first-article procedure.",
-  "prespin_failed_power_cases": [
-    "12v_loss_restart_0.75A_250n",
-    "12v_loss_restart_0.02A_250n",
-    "12v_loss_restart_2A_250n",
-    "5v_precharged_output_1A_250n",
-    "12v_precharged_output_0.75A_250n"
+  "smt_placements": 344,
+  "checks": {
+    "artifact_parity": {
+      "passed": true,
+      "report": "output/release-candidate/reports/artifact-parity.json",
+      "sha256": "22c47692f2b359ed176bd8f192761816002ed8ddd8c8e41697db7a303a4ed8be"
+    },
+    "manufacturing": {
+      "passed": true,
+      "report": "output/release-candidate/reports/manufacturing-check.json",
+      "sha256": "a556f427fd2714eddeeb3beff3d7a483f12b52954e372b74e6c5f007df257f5c"
+    },
+    "sourcing": {
+      "passed": true,
+      "report": "output/release-candidate/reports/jlc-sourcing.json",
+      "sha256": "fe4c46102acd298baaa2fef47adc39f11507bec4447b95339324faae33bb5f30"
+    },
+    "ryq_land_pattern": {
+      "passed": true,
+      "report": "output/release-candidate/reports/ryq-land-pattern.json",
+      "sha256": "a4863ebb03fa6fdce8e72ab5942d656ef1fdb7926294ca6647fda32bc8206839"
+    },
+    "source_audit": {
+      "passed": true,
+      "report": "output/verification/revision/source-audit.json",
+      "sha256": "9305dacb4d1bc8d853007000b33557e4cb99883afa20a0c0341361aff0dbd06f"
+    },
+    "interface": {
+      "passed": true,
+      "report": "output/verification/revision/interface.json",
+      "sha256": "0a899a810ced771afa6c0c6c8e8ec2c87514d8a1d97d37f7452a236152280f21"
+    },
+    "connector_keys": {
+      "passed": true,
+      "report": "output/verification/revision/connector-keys.json",
+      "sha256": "61b3b6c19710ca4cf6c4aa650d461ecfa727a1f3af505714c94401381041da5a"
+    },
+    "copper_topology": {
+      "passed": true,
+      "report": "output/verification/revision/copper-topology.json",
+      "sha256": "098e7f38bd89bebe1c5b7b8005cfc71a2b4ba5f7867717e070ffa9abde441722"
+    },
+    "drc_warning_review": {
+      "passed": true,
+      "report": "output/verification/revision/drc-warning-review.json",
+      "sha256": "e7998c78b3960b08b1db22f94cf0a0cca17fe610b7e7dfa8768abf3f7eb9696b"
+    },
+    "regulator_fixture_audit": {
+      "passed": true,
+      "report": "output/verification/prototype-readiness/regulator-fixture-audit.json",
+      "sha256": "1dde7fa5f72a89ddf49d470062fde5dd293789eb8ede1cdea867117270640b9a"
+    },
+    "simulation_summary": {
+      "passed": true,
+      "report": "output/verification/prototype-readiness/summary.json",
+      "sha256": "3b5332a3733d2eac461af5649cd0cc97e41ef2034efd8503c9e8f5b593bc3ba8"
+    },
+    "bridge_stress": {
+      "passed": true,
+      "report": "output/verification/prototype-readiness/bridge-corners/results.json",
+      "sha256": "0d5be908b079ae18c28215373a44b4ce1efe82f06bfd91616ef37dc11272562f"
+    },
+    "mechanical": {
+      "report": "output/verification/revision/mechanical.json",
+      "sha256": "7d7749c62219f07210bbc73a7a48bbecd6859992e3a06f62064d619496e737ec"
+    },
+    "thermal_mesh_gap": {
+      "report": "output/verification/revision/thermal_mesh_gap.json",
+      "sha256": "f834adc8c271718558ef87d7537ec04ebbb6a34bd128fd2007ae60f62548a2cb"
+    },
+    "copper_dc": {
+      "report": "output/verification/revision/copper_dc.json",
+      "sha256": "2bfc37a39ba5111a2a4f4b5e270ee1ed92351d86f30966e88dca275e07598c97"
+    },
+    "final-inputs": {
+      "report": "output/verification/revision/final-inputs.json",
+      "sha256": "037eca50ab162e4b9e13375e4aa76c4079f9615b0170ec8dd54cccf3b9f2c1b6"
+    }
+  },
+  "order_time_checks": [
+    "JLCPCB DFM/stackup acceptance, component stock and actual library orientation preview",
+    "Through-hole parts, connector keys, fuse clips and external hardware are separate assembly operations"
   ],
-  "prespin_summary_sha256": "76742e016574fab1ac04d3255487d5d3269065adf5a4fce649eb7b29f8146086"
+  "first_article_required": [
+    "Current-limited dummy-load startup/shutdown and prebias tests before attaching CPU/harness",
+    "Scope switching/PFM ripple, transient overshoot, loop gain and backfeed currents",
+    "Measure AC RMS fuse/transformer loading in real diagnostics/gameplay; do not increase specified fuses",
+    "Confirm harness/CPU voltage drop, STTNG cabinet fit and simultaneous thermal behavior"
+  ],
+  "limitations": "Engineering averaged supply simulations and geometry checks support building a test prototype. They do not establish silicon switching behavior, physical fuse/fault containment, production reliability or universal WPC compatibility."
 }

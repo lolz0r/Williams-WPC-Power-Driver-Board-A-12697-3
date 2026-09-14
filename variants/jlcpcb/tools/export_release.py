@@ -1,6 +1,6 @@
 """Portable, fail-fast KiCad manufacturing export with hashes and explicit readiness.
 Usage: python3 tools/export_release.py [--output output/release-candidate]
-Outputs remain a review candidate until every documented release gate is closed.
+Outputs await independent checks and tools/package_prototype.py before prototype fabrication.
 """
 import argparse
 import csv
@@ -74,8 +74,8 @@ def main():
   args=['pcb','render','--side','top' if rotation else side,'--quality','high','--width','2560','--height','1600','--background','opaque','-o',out/'3d'/f'{side}.png',pcb]
   if rotation:args[2:2]=['--perspective','--rotate',rotation,'--floor']
   run(args)
- (out/'FABRICATION.txt').write_text('ENGINEERING REVIEW CANDIDATE — consult READINESS.json before ordering.\n4 layers, Edge.Cuts nominal 449.152 x 272.910 mm, FR-4 Tg >=150 C, 1.6 mm nominal.\nF.Cu / B.Cu: 2 oz FINISHED (70 um). In1.Cu / In2.Cu: 1 oz (35 um).\nDielectric stack: 0.200 mm / 0.990 mm / 0.200 mm. Minimum finished PTH barrel copper 20 um.\nIn1 predominantly GND with an AC16_A route; In2 includes +5V plane and other routed signals.\nENIG; green LPI mask both sides; white silk; 100% bare-board electrical test against assembly/netlist.d356.\nAbsolute origin for Gerbers and Excellon. Separate plated and non-plated drill files.\nF.Paste/B.Paste are stencil data, not copper layers. See project docs for assembly and connector key pins.\n')
- readiness={'status':'REVIEW_CANDIDATE_NOT_RELEASED','fab_ready':False,'electrical_errors':0,'unconnected_items':0,'schematic_parity_issues':0,'drc_warnings':len(drc['violations']),'erc_warnings':len(ev),'remaining_gates':['Run tools/package_review.py to bind independent checks to this exact export','Regulator reverse-current / shutdown qualification','Simultaneous thermal, real loads, fuse/fault and cabinet/harness qualification','Fabricator DFM, procurement confirmation and first-article measurements'],'physical_qualification':'First-article cabinet fit, loaded supply/oscilloscope, fault/fuse and thermal measurements are not performed by software.'}
+ (out/'FABRICATION.txt').write_text('JLC-3 PROTOTYPE EXPORT — consult READINESS.json before ordering.\n4 layers, Edge.Cuts nominal 449.152 x 272.910 mm, FR-4 Tg >=150 C, 1.6 mm nominal.\nF.Cu / B.Cu: 2 oz FINISHED (70 um). In1.Cu / In2.Cu: 1 oz (35 um).\nDielectric stack: 0.200 mm / 0.990 mm / 0.200 mm. Minimum finished PTH barrel copper 20 um.\nIn1 predominantly GND with an AC16_A route; In2 includes +5V plane and other routed signals.\nENIG; green LPI mask both sides; white silk; 100% bare-board electrical test against assembly/netlist.d356.\nAbsolute origin for Gerbers and Excellon. Separate plated and non-plated drill files.\nF.Paste/B.Paste are stencil data, not copper layers. See project docs for assembly and connector key pins.\n')
+ readiness={'revision':'JLC-3','status':'AWAITING_INDEPENDENT_PROTOTYPE_CHECKS','fab_ready':False,'electrical_errors':0,'unconnected_items':0,'schematic_parity_issues':0,'drc_warnings':len(drc['violations']),'erc_warnings':len(ev),'remaining_gates':['Run tools/package_prototype.py to bind current independent checks to this exact export','JLC-3 supply-fixture and component-value audit','Simultaneous thermal, real loads, fuse/fault and cabinet/harness qualification','Fabricator DFM, procurement confirmation and first-article measurements'],'physical_qualification':'First-article cabinet fit, loaded supply/oscilloscope, fault/fuse and thermal measurements are not performed by software.'}
  (out/'READINESS.json').write_text(json.dumps(readiness,indent=2)+'\n')
  (out/'reports/commands.json').write_text(json.dumps(commands,indent=2)+'\n')
  with zipfile.ZipFile(out/'gerbers-and-drills.zip','w',zipfile.ZIP_DEFLATED) as z:

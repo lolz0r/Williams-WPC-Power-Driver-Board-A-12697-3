@@ -1,0 +1,50 @@
+ROM flasher channel 25; sol25
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/tools/spice/models.lib
+Vcmd cmd 0 PWL(
++ 0.000000000000 0.00
++ 9.754246980000 0.00
++ 9.754247000000 4.50
++ 9.792447980000 4.50
++ 9.792448000000 0.00
++ 10.161599480000 0.00
++ 10.161599500000 4.50
++ 10.199999980000 4.50
++ 10.200000000000 0.00
++ 10.200000020000 0.00
++ 10.230000000000 0.00
++ )
+Ro cmd a 40
+Rg a gate 100
+Rpd gate 0 10k
+Vsense drain dq 0
+XQ dq gate 0 J100_AOD66923
+Vclamp clamprail 0 30
+Vdiode drain da 0
+Dfly da clamprail DS3M
+Vlamp clamprail feed 0
+Rwire feed wire .1
+Lwire wire lp 100u
+Blamp lp drain I=2*v(lp,drain)/(1.8+16.2*max(v(theta),0))
+Bheat 0 theta I=(v(lp,drain)^2/(1.8+16.2*max(v(theta),0)))/(169/18)
+Ctheta theta 0 8m
+Rtheta theta 0 1
+.save v(drain) v(gate) i(Vsense) i(Vdiode) @dfly[capcur]
+.options reltol=.002 method=gear
+.tran 100u 10.230000000 0 10u
+.control
+run
+let pfet=v(drain)*i(Vsense)
+let carrier=i(Vdiode)-@dfly[capcur]
+let forward=(abs(carrier)+carrier)/2
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran vds_peak MAX v(drain)
+meas tran vgs_peak MAX v(gate)
+meas tran current_peak MAX i(Vsense)
+meas tran current_avg AVG i(Vsense) from=0.200000000 to=10.200000000
+meas tran diode_average AVG forward from=0.200000000 to=10.200000000
+meas tran power_average AVG pfet from=0.200000000 to=10.200000000
+let tj=50+power_average*62
+print tj
+.endc
+.end

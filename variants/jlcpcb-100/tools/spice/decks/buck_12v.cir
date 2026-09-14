@@ -1,0 +1,55 @@
+TPS54360B +12V buck (from the +18V lamp rail, as the original 7812), switching model: peak-current-mode (12 A/V, 4.5 A min current limit, 400 kHz), 10 uH, 2 x 330 uF + 10 uF, B560C; 13.5 V in (the +18V rail at full lamp load), 1 A -> 2 A load step at 10 ms; Rc 42.2k / Cc 100n / Cp 390p (fco = sqrt(fp_mod fsw/2) = 2.8 kHz)
+.include ../models.lib
+Vin vin 0 13.5
+Rin vin vinf 0.02
+Cin vinf 0 20u
+Vclk clk 0 PULSE(0 1 0 5n 5n 60n 2.5u)
+Vref ref 0 PWL(0 0 2m 0.8)
+Rfb1 vout fb 28k
+Rfb2 fb 0 2k
+Bea 0 comp I = 350u*(v(ref) - v(fb))
+Rc comp cc 42.2k
+Cc cc 0 100n
+Cp comp 0 390p
+Dcl1 comp vcl DCL
+Vcl vcl 0 2.6
+Dcl2 vcl0 comp DCL
+Vcl0 vcl0 0 -0.2
+.model DCL D(Is=1e-12 n=1 Rs=1)
+Bipk ipk 0 V = min(max((v(comp)-0.7)*12, 0), 4.5)
+Bst 0 st I = ((v(clk) > 0.5) ? 20m : 0) - ((i(Vsw) > v(ipk)) ? 40m : 0)
+Cst st 0 1n
+Dst1 st vone DCL
+Vone vone 0 1
+Dst2 0 st DCL
+Ssw vinf swa st 0 SWM
+.model SWM SW(Ron=0.12 Roff=1e7 Vt=0.5 Vh=0.05)
+Vsw swa sw 0
+Dcatch 0 sw DB560C
+L1 sw vout 10u
+Cout1 vout c1 330u
+Resr1 c1 0 0.045
+Cout2 vout c2 330u
+Resr2 c2 0 0.045
+Cc3 vout 0 10u
+Rl1 vout 0 12
+Sload vout ld ctl 0 SWL
+Rl2 ld 0 12
+Vctl ctl 0 PULSE(0 5 10m 1u 1u 2.5m 30m)
+.model SWL SW(Ron=0.01 Roff=1e9 Vt=2.5 Vh=0.1)
+.options reltol=0.005 abstol=1u vntol=1m method=gear
+.tran 20n 16m
+.control
+run
+let il = i(L1)
+let iload = i(Vin)
+meas tran vout_ss AVG v(vout) from=9m to=10m
+meas tran vout_ripple PP v(vout) from=9.9m to=10m
+meas tran vout_step_min MIN v(vout) from=10m to=11.5m
+meas tran vout_step_max MAX v(vout) from=12.5m to=14m
+meas tran il_peak MAX il from=10.1m to=12.5m
+meas tran vout_2a AVG v(vout) from=12m to=12.5m
+meas tran iin_2a AVG iload from=12m to=12.5m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/buck_12v.csv v(vout) il v(sw) v(comp)
+.endc
+.end

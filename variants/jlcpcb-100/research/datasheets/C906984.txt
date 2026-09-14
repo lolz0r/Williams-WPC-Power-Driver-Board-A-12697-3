@@ -1,0 +1,308 @@
+Bridge Rectifiers
+(Glass Passivated)
+
+GBPC 12, 15, 25, 35 SERIES
+Features
+• Integrally Molded Heat−Sink Provided Very Low Thermal
+  Resistance for Maximum Heat Dissipation                                          www.onsemi.com
+• Surge Overload Ratings from 300 A to 400 A
+• Isolated Voltage from Case to Lead over 2500 V
+• UL Certified, UL #E258596
+• Terminals Finish Material
+  ♦ Silver (Solderable per MIL−STD−202, Method 208 for the wire
+     type GBPC−W package)
+  ♦ Nickel for GBPC package
+                                                                           GBPC                        GBPC−W
+• Mounting Torque: 20 in−lbs Maximum                                     CASE 160AD                   CASE 160AD
+• These are Pb−Free Devices
+Suffix “W”                                                                         PIN ASSIGNMENT
+• Wire Lead Structure
+                                                                                                          –     ~
+                                                                                  ~–
+                                                                                   +~                     ~
+                                                                                                                  +
+
+                                                                             GBPC                       GBPC−W
+
+
+
+                                                                             ORDERING INFORMATION
+                                                                  See detailed ordering and shipping information on page 4 of
+                                                                  this data sheet.
+
+
+
+
+© Semiconductor Components Industries, LLC, 2020       1                                      Publication Order Number:
+July, 2020 − Rev. 2                                                                                        GBPC3510/D
+                                                 GBPC 12, 15, 25, 35 SERIES
+
+                                                          SPECIFICATIONS
+
+
+ ABSOLUTE MAXIMUM RATINGS (TA = 25°C, unless otherwise specified.) (Note 1)
+                                                                                                    Value
+
+    Symbol                            Parameter                            005        01    02        04        06          08   10     Units
+     VRRM        Maximum Repetitive Reverse Voltage                         50     100      200      400        600      800     1000    V
+     VRMS        Maximum RMS Bridge Input Voltage                           35        70    140      280        420      560     700     V
+       VR        DC Reverse Voltage (Rated VR)                              50     100      200      400        600      800     1000    V
+     IF(AV)      Average Rectified          GBPC12                                                    12                                 A
+                 Forward Current at
+                 TC = 55_C                  GBPC15                                                    15
+                                            GBPC25                                                    25
+                                            GBPC35                                                    35
+      IFSM       Non−Repetitive Peak        GBPC12, 15, 25                                           300                                 A
+                 Forward Surge Current
+
+                 8.3 ms Single              GBPC35                                                   400                                 A
+                 Half−Sine−Wave
+
+     TSTG        Storage Temperature Range                                                        −55 to +150                            _C
+       TJ        Operating Junction Temperature                                                   −55 to +150                            _C
+Stresses exceeding those listed in the Maximum Ratings table may damage the device. If any of these limits are exceeded, device functionality
+should not be assumed, damage may occur and reliability may be affected.
+1. These ratings are limiting values above which the serviceability of any semiconductor device may by impaired.
+
+
+THERMAL CHARACTERISTICS (TA = 25°C, unless otherwise specified.)
+    Symbol                            Parameter                                                     Value                               Unit
+       PD        Power Dissipation                                                                   83.3                                W
+
+      RθJC       Thermal Resistance, Junction to Case (Note 2)                                        1.5                               _C/W
+2. With Heatsink.
+
+
+ ELECTRICAL CHARACTERISTICS (TA = 25°C, unless otherwise specified.)
+    Symbol                            Parameter                               Test Conditions                         Value             Unit
+       VF        Forward Voltage Drop, per bridge                         6.0 A            GBPC12                1.1 (Max)               V
+                                                                          7.5 A            GBPC15
+                                                                          12.5 A           GBPC25
+                                                                          17.5 A           GBPC35
+       IR        Reverse Current, per element at Rated VR                 TA = 25_C                              5.0 (Max)               mA
+
+                                                                          TA = 125_C                             500 (Max)               mA
+
+       I2t       Rating for Fusing t < 8.35 ms                            GBPC12, 15, 25                              375               A2Sec
+                                                                          GBPC35                                      660               A2Sec
+       CT        Total Capacitance, per leg VR = 4.0 V, f = 1.0 MHz       GBPC12, 15, 25                              180                pF
+                                                                          GBPC35                                      200                pF
+Product parametric performance is indicated in the Electrical Characteristics for the listed test conditions, unless otherwise noted. Product
+performance may not be indicated by the Electrical Characteristics if operated under different conditions.
+
+
+
+
+                                                           www.onsemi.com
+                                                                      2
+                                                                             GBPC 12, 15, 25, 35 SERIES
+
+                                                                    TYPICAL PERFORMANCE CHARACTERISTICS
+
+
+                                   40                                                                                                      400
+                                             GBPC35                         Single phase
+                                                                            half wave
+
+
+Average Rectified Forward
+                                                                            60 Hz
+
+
+                                                                                                       Peak Forward Surge
+                                   30                                                                                                      200
+                                             GBPC25                         Resistive or                                                                                             GBPC35
+                                                                            Inductive load
+                                                                                                                                                     GBPC12−GBPC25
+                                                                            lengths                                                        100
+                                   20
+
+
+
+     Current, IF (A)
+                                                                                                         Current, IFSM (A)
+                                             GBPC15
+
+                                                                                                                                            50
+                                   10        GBPC12
+
+
+                                    0                                                                                                       20
+                                        0       25      50     75    100    125    150       175                                                 1       2        5            10        20         50         100
+                                                        Case Temperature (5C)                                                                                  Number of Cycles at 60 Hz
+
+                                            Figure 1. Forward Current Derating Curve                                                                  Figure 2. Non−Repetitive Surge Current
+
+
+
+                                  200                                                                                                      100
+                                                               GBPC35
+                                  100
+
+
+
+
+                                                                                                                Reverse Current, IR (mA)
+                                                                                                                                                             TA = 125°C
+
+
+
+
+        Forward Current, IF (A)
+                                               GBPC25
+                                                                    GBPC12−GBPC15                                                          10
+                                  10
+
+
+
+
+                                                                                                                                            1
+                                   1
+                                                                     TA = 25°C
+                                                                                                                                                             TA = 25°C
+                                                                     Pulse Width = 300 ms
+                                                                     2% Duty Cycle
+                                  0.1                                                                                                      0.1
+                                     0.6        0.8     1     1.2    1.4    1.6    1.8       2                                                   0      20       40       60        80        100        120   140
+                                                        Forward Voltage, VF (V)                                                                  Percent of Rated Peak Reverse Voltage (per leg) (%)
+
+                                            Figure 3. Forward Voltage Characteristics                                                            Figure 4. Reverse Current vs. Reverse Voltage
+
+
+
+
+                                                                                         www.onsemi.com
+                                                                                                   3
+                         GBPC 12, 15, 25, 35 SERIES
+
+ORDERING INFORMATION
+     Part Number         Marking                     Package     Packing Method
+
+      GBPC12005        GBPC12005                     GBPC 4L          Bulk
+                                                     (Pb−Free)
+      GBPC1201          GBPC1201
+      GBPC1202          GBPC1202
+      GBPC1204          GBPC1204
+      GBPC1206          GBPC1206
+      GBPC1208          GBPC1208
+      GBPC1210          GBPC1210
+      GBPC15005        GBPC15005
+      GBPC1501          GBPC1501
+      GBPC1502          GBPC1502
+      GBPC1504          GBPC1504
+      GBPC1506          GBPC1506
+      GBPC1508          GBPC1508
+      GBPC1510          GBPC1510
+      GBPC25005        GBPC25005
+      GBPC2501          GBPC2501
+      GBPC2502          GBPC2502
+      GBPC2504          GBPC2504
+      GBPC2506          GBPC2506
+      GBPC2508          GBPC2508
+      GBPC2510          GBPC2510
+      GBPC35005        GBPC35005
+      GBPC3501          GBPC3501
+      GBPC3502          GBPC3502
+      GBPC3504          GBPC3504
+      GBPC3506          GBPC3506
+      GBPC3508          GBPC3508
+      GBPC3510          GBPC3510
+
+     GBPC1201W         GBPC1201W                    GBPC−W 4L
+                                                     (Pb−Free)
+     GBPC1202W         GBPC1202W
+     GBPC1204W         GBPC1204W
+     GBPC1206W         GBPC1206W
+     GBPC1208W         GBPC1208W
+     GBPC1210W         GBPC1210W
+     GBPC15005W        GBPC15005W
+     GBPC1501W         GBPC1501W
+     GBPC1502W         GBPC1502W
+     GBPC1504W         GBPC1504W
+     GBPC1506W         GBPC1506W
+     GBPC1508W         GBPC1508W
+
+
+
+
+                                   www.onsemi.com
+                                         4
+                                    GBPC 12, 15, 25, 35 SERIES
+
+ORDERING INFORMATION (continued)
+      Part Number                   Marking                     Package     Packing Method
+
+      GBPC1510W                    GBPC1510W                   GBPC−W 4L         Bulk
+                                                                (Pb−Free)
+      GBPC25005W               GBPC25005W
+      GBPC2501W                    GBPC2501W
+      GBPC2502W                    GBPC2502W
+      GBPC2504W                    GBPC2504W
+      GBPC2506W                    GBPC2506W
+      GBPC2508W                    GBPC2508W
+      GBPC2510W                    GBPC2510W
+      GBPC35005W               GBPC35005W
+      GBPC3501W                    GBPC3501W
+      GBPC3502W                    GBPC3502W
+      GBPC3504W                    GBPC3504W
+      GBPC3506W                    GBPC3506W
+      GBPC3508W                    GBPC3508W
+      GBPC3510W                    GBPC3510W
+
+
+
+
+                                              www.onsemi.com
+                                                    5
+MECHANICAL CASE OUTLINE
+PACKAGE DIMENSIONS
+
+
+                                                                              GBPC4 28.75X28.75
+                                                                                CASE 160AD
+                                                                                  ISSUE A
+                                                                                                                                                               DATE 19 MAR 2019
+
+
+
+
+                                                                                         Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+ DOCUMENT NUMBER:                          98AON13489G                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+             DESCRIPTION:                  GBPC4 28.75X28.75                                                                                                          PAGE 1 OF 1
+
+ ON Semiconductor and              are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries.
+ ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding
+ the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically
+ disclaims any and all liability, including without limitation special, consequential or incidental damages. ON Semiconductor does not convey any license under its patent rights nor the
+ rights of others.
+
+
+© Semiconductor Components Industries, LLC, 2018                                                                                                                      www.onsemi.com
+ ON Semiconductor and            are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries.
+ ON Semiconductor owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property. A listing of ON Semiconductor’s product/patent
+ coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. ON Semiconductor reserves the right to make changes without further notice to any products herein.
+ ON Semiconductor makes no warranty, representation or guarantee regarding the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability
+ arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages.
+ Buyer is responsible for its products and applications using ON Semiconductor products, including compliance with all laws, regulations and safety requirements or standards,
+ regardless of any support or applications information provided by ON Semiconductor. “Typical” parameters which may be provided in ON Semiconductor data sheets and/or
+ specifications can and do vary in different applications and actual performance may vary over time. All operating parameters, including “Typicals” must be validated for each customer
+ application by customer’s technical experts. ON Semiconductor does not convey any license under its patent rights nor the rights of others. ON Semiconductor products are not
+ designed, intended, or authorized for use as a critical component in life support systems or any FDA Class 3 medical devices or medical devices with a same or similar classification
+ in a foreign jurisdiction or any devices intended for implantation in the human body. Should Buyer purchase or use ON Semiconductor products for any such unintended or unauthorized
+ application, Buyer shall indemnify and hold ON Semiconductor and its officers, employees, subsidiaries, affiliates, and distributors harmless against all claims, costs, damages, and
+ expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death associated with such unintended or unauthorized use, even if such
+ claim alleges that ON Semiconductor was negligent regarding the design or manufacture of the part. ON Semiconductor is an Equal Opportunity/Affirmative Action Employer. This
+ literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+PUBLICATION ORDERING INFORMATION
+LITERATURE FULFILLMENT:                               TECHNICAL SUPPORT
+Email Requests to: orderlit@onsemi.com                North American Technical Support:                          Europe, Middle East and Africa Technical Support:
+                                                      Voice Mail: 1 800−282−9855 Toll Free USA/Canada            Phone: 00421 33 790 2910
+ON Semiconductor Website: www.onsemi.com              Phone: 011 421 33 790 2910                                 For additional information, please contact your local Sales Representative
+
+
+◊                                                                               www.onsemi.com
+                                                                                              1
+

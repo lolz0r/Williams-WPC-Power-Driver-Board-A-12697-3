@@ -1,0 +1,74 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: rom gi 2, ac relative phase 90; 18 #44 envelope
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Initial Transient Solution
+stdout --------------------------
+stdout Node                                   Voltage
+stdout ----                                   -------
+stdout vcc                                          5
+stdout ac0                                       11.1
+stdout ac                                     10.6382
+stdout acf                                    10.6382
+stdout mt2                                    1.08089
+stdout xs.th                                  1.54466
+stdout mt2i                                   1.08089
+stdout on                                           1
+stdout onr                                          1
+stdout latch                                      4.5
+stdout a                                      4.45186
+stdout b                                      3.88619
+stdout e                                      3.10346
+stdout eg                                     3.10346
+stdout g                                      1.24236
+stdout bon#branch                                   0
+stdout vmt#branch                             4.61772
+stdout vg#branch                            0.0689299
+stdout vl#branch                          -0.00120356
+stdout vf106#branch                           4.61772
+stdout vac#branch                            -4.61772
+stdout vcc#branch                           -0.068115
+ Reference value :  3.73920e-03
+ Reference value :  2.49552e-02
+ Reference value :  3.70559e-02
+ Reference value :  4.84292e-02
+ Reference value :  5.97599e-02
+ Reference value :  7.10413e-02
+ Reference value :  8.59739e-02
+ Reference value :  1.08162e-01
+ Reference value :  1.20389e-01
+ Reference value :  1.31574e-01
+ Reference value :  1.42835e-01
+ Reference value :  1.54144e-01
+ Reference value :  1.65335e-01
+ Reference value :  1.76951e-01
+ Reference value :  1.97401e-01
+ Reference value :  2.16600e-01
+ Reference value :  2.28725e-01
+ Reference value :  2.39780e-01
+ Reference value :  2.50979e-01
+ Reference value :  2.62309e-01
+ Reference value :  2.86646e-01
+ Reference value :  3.01663e-01
+ Reference value :  3.13216e-01
+ Reference value :  3.24479e-01
+ Reference value :  3.35562e-01
+ Reference value :  3.46781e-01
+ Reference value :  3.58044e-01
+ Reference value :  3.71619e-01
+ Reference value :  3.94740e-01
+ Reference value :  4.11658e-01
+ Reference value :  4.23707e-01
+ Reference value :  4.35424e-01
+ Reference value :  4.47083e-01
+ Reference value :  4.60428e-01
+ Reference value :  4.79582e-01
+ Reference value :  4.96219e-01
+ Reference value :  5.07998e-01
+stdout No. of Data Rows : 261114
+stdout sim_end = 5.200000e-01
+stdout peak_current        =  6.56075e+00 at=  4.99903e-01
+stdout rms_current         =  4.52933e+00 from=  1.00000e-01 to=  5.00000e-01
+stdout avg_power           =  4.41154e+00 from=  1.00000e-01 to=  5.00000e-01
+stdout inrush_i2t          =  3.60658e-01 from=  0.00000e+00 to=  3.00000e-02
+stdout tj = 1.112101e+02

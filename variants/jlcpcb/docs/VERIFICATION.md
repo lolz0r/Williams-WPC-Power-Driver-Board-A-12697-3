@@ -1,3 +1,5 @@
+> Current revision: JLC-3. See [prototype changes and current evidence](PROTOTYPE_JLC3.md); historical regulator results below describe the superseded JLC-2 circuit. Use the current exported BOM.
+
 # JLC-2 verification
 
 Fresh Linux verification uses KiCad 10.0.6, ngspice 47, the supplied STTNG L7 ROM and the final routed JLC-2 native source. Exact inputs and report hashes are bound by `output/release-candidate/reports/verification-manifest.json`. No previous Mac run is presented as fresh evidence.

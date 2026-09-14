@@ -1,0 +1,104 @@
+{
+  "all_electronics_in_jlc_public_stock": false,
+  "stock_reserved": false,
+  "shortfalls": [
+    {
+      "JLCPCB_part": "C1582025",
+      "MPN": "LLS2A222MELA",
+      "Quantity_per_board": 2,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C17541501",
+      "MPN": "26604110",
+      "Quantity_per_board": 2,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C17656945",
+      "MPN": "0026604060",
+      "Quantity_per_board": 1,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C222114",
+      "MPN": "STPS20M100ST",
+      "Quantity_per_board": 4,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C3029536",
+      "MPN": "3517",
+      "Quantity_per_board": 32,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C3157012",
+      "MPN": "0239.750MXP",
+      "Quantity_per_board": 1,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C5440942",
+      "MPN": "IPD90N10S4L06ATMA1",
+      "Quantity_per_board": 28,
+      "JLC_public_stock_snapshot": 1,
+      "Assembly": "SMT",
+      "Action": "Source entire per-board quantity plus JLC attrition through Global Sourcing/consignment",
+      "Distributor_example": "https://www.mouser.com/ProductDetail/Infineon-Technologies/IPD90N10S4L06ATMA1?qs=LxJ0xX%2FWJR62lwU%2FrihEDA%3D%3D"
+    },
+    {
+      "JLCPCB_part": "C587091",
+      "MPN": "26604070",
+      "Quantity_per_board": 3,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C6130373",
+      "MPN": "B41252A7109M000",
+      "Quantity_per_board": 5,
+      "JLC_public_stock_snapshot": 0,
+      "Assembly": "Through-hole/manual",
+      "Action": "Procure exact part for through-hole/manual assembly",
+      "Distributor_example": ""
+    },
+    {
+      "JLCPCB_part": "C969989",
+      "MPN": "STPS20M100SG-TR",
+      "Quantity_per_board": 12,
+      "JLC_public_stock_snapshot": 2,
+      "Assembly": "SMT",
+      "Action": "Source entire per-board quantity plus JLC attrition through Global Sourcing/consignment",
+      "Distributor_example": "https://www.digikey.com/en/products/detail/stmicroelectronics/STPS20M100SG-TR/2122461"
+    }
+  ],
+  "sourcing_report_sha256": "fe4c46102acd298baaa2fef47adc39f11507bec4447b95339324faae33bb5f30",
+  "source": "https://jlcpcb.com/help/article/pcba-parts-sourcing-instruction",
+  "notes": [
+    "Public snapshots retain their actual fetch dates; this export does not reserve inventory.",
+    "Use an exact-MPN Global Sourcing/consignment quote for short SMT parts; no silicon substitution is implicit.",
+    "JLC public inventory and Global Sourcing/consignment cannot be mixed for the same part code. Source the whole quantity plus attrition through one permitted channel.",
+    "Distributor links are sourcing options. Warehouse receipt and JLCPCB placement approval precede an assembly order."
+  ]
+}

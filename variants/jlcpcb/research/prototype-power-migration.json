@@ -1,0 +1,1105 @@
+{
+  "revision": "JLC-3",
+  "removed_refs": [
+    "D36",
+    "D37"
+  ],
+  "parts": {
+    "U20": {
+      "properties": {
+        "Reference": "U20",
+        "Value": "TPS552892RYQR",
+        "Footprint": "wpc_cost:TI_RYQ0021B_5x3mm",
+        "Datasheet": "",
+        "Description": "36 V synchronous buck-boost; PFM; internal VCC; output current limit; JLC-3",
+        "MPN": "TPS552892RYQR",
+        "Manufacturer": "Texas Instruments",
+        "Link": "https://jlcpcb.com/partdetail/C19272254",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C19272254",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_EN",
+        "2": "GND",
+        "3": null,
+        "4": null,
+        "5": "GND",
+        "6": "/Power_Supply/U20_RT",
+        "7": "/Power_Supply/+5V_RAW",
+        "8": "/Power_Supply/U20_SW1",
+        "9": "GND",
+        "10": "/Power_Supply/U20_SW2",
+        "11": "/Power_Supply/U20_REG",
+        "12": "/Power_Supply/U20_REG",
+        "13": "+5V",
+        "14": "/Power_Supply/U20_FB",
+        "15": "/Power_Supply/U20_COMP",
+        "16": null,
+        "17": "GND",
+        "18": "/Power_Supply/U20_VCC",
+        "19": "/Power_Supply/U20_BOOT2",
+        "20": "/Power_Supply/U20_BOOT1",
+        "21": null
+      },
+      "template": "U20",
+      "uuid": "1e66972d-fb3a-41b8-a3d1-301ab46f0509"
+    },
+    "C33": {
+      "properties": {
+        "Reference": "C33",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/+5V_RAW",
+        "2": "GND"
+      },
+      "template": "C33",
+      "uuid": "a3f1a599-0752-4fca-831c-6f918bbd1c42"
+    },
+    "C34": {
+      "properties": {
+        "Reference": "C34",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/+5V_RAW",
+        "2": "GND"
+      },
+      "template": "C33",
+      "uuid": "a3f1a599-0752-4fca-831c-6f918bbd1c42"
+    },
+    "C49": {
+      "properties": {
+        "Reference": "C49",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/+5V_RAW",
+        "2": "GND"
+      },
+      "template": "C33",
+      "uuid": "06fbda99-9681-4f04-8e9f-888e80febf5c"
+    },
+    "C50": {
+      "properties": {
+        "Reference": "C50",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/+5V_RAW",
+        "2": "GND"
+      },
+      "template": "C33",
+      "uuid": "5f1737c0-69ec-4128-b115-f4adfacb606f"
+    },
+    "C38": {
+      "properties": {
+        "Reference": "C38",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R local output bypass, before current sense",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_REG",
+        "2": "GND"
+      },
+      "template": "C38",
+      "uuid": "907369b5-842d-41bd-b86f-68b42778bb15"
+    },
+    "C51": {
+      "properties": {
+        "Reference": "C51",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R local output bypass, before current sense",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_REG",
+        "2": "GND"
+      },
+      "template": "C38",
+      "uuid": "c139fde6-c47c-4e70-86cb-b58a47234d85"
+    },
+    "C4": {
+      "properties": {
+        "Reference": "C4",
+        "Value": "330uF",
+        "Footprint": "wpc_cost:CP_Radial_D8.0mm_P5.00mm",
+        "Datasheet": "",
+        "Description": "Output capacitor 330 uF 25 V low ESR",
+        "MPN": "EEU-FR1E331B",
+        "Manufacturer": "PANASONIC",
+        "Link": "https://jlcpcb.com/partdetail/PANASONIC-EEUFR1E331B/C1579638",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C1579638",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "template": "C4",
+      "uuid": "93517839-ddf6-4723-adaa-df070fda4f6d"
+    },
+    "C9": {
+      "properties": {
+        "Reference": "C9",
+        "Value": "330uF",
+        "Footprint": "wpc_cost:CP_Radial_D8.0mm_P5.00mm",
+        "Datasheet": "",
+        "Description": "Output capacitor 330 uF 25 V low ESR",
+        "MPN": "EEU-FR1E331B",
+        "Manufacturer": "PANASONIC",
+        "Link": "https://jlcpcb.com/partdetail/PANASONIC-EEUFR1E331B/C1579638",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C1579638",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+5V",
+        "2": "GND"
+      },
+      "template": "C9",
+      "uuid": "5c325426-b49c-4590-b9a0-a19fbe95db7a"
+    },
+    "C35": {
+      "properties": {
+        "Reference": "C35",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_BOOT1",
+        "2": "/Power_Supply/U20_SW1"
+      },
+      "template": "C35",
+      "uuid": "bf6ed69e-ba80-4445-b68b-2499186296a4"
+    },
+    "C45": {
+      "properties": {
+        "Reference": "C45",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_BOOT2",
+        "2": "/Power_Supply/U20_SW2"
+      },
+      "template": "C35",
+      "uuid": "fb25e442-9d3f-4e0e-a436-f7badd2a38b6"
+    },
+    "C47": {
+      "properties": {
+        "Reference": "C47",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/+5V_RAW",
+        "2": "GND"
+      },
+      "template": "C35",
+      "uuid": "8ee539f7-2239-44a0-90da-7b4a4a0df01a"
+    },
+    "C48": {
+      "properties": {
+        "Reference": "C48",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_REG",
+        "2": "GND"
+      },
+      "template": "C35",
+      "uuid": "4270a2b9-4180-4367-9c8f-09b6d7692c46"
+    },
+    "C46": {
+      "properties": {
+        "Reference": "C46",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R on internal 5.2 V VCC; >4.7 uF effective",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_VCC",
+        "2": "GND"
+      },
+      "template": "C33",
+      "uuid": "1a0b93e8-173a-4c41-94d7-d4d432ddce95"
+    },
+    "R261": {
+      "properties": {
+        "Reference": "R261",
+        "Value": "118K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 UVLO upper resistor; 1.23 V EN reference, 5 uA hysteresis",
+        "MPN": "RC0805FR-07118KL",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/YAGEO-RC0805FR07118KL/C274001",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C274001",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/+5V_RAW",
+        "2": "/Power_Supply/U20_EN"
+      },
+      "template": "R261",
+      "uuid": "6957db07-610e-420e-9ceb-add3fe63c99e"
+    },
+    "R262": {
+      "properties": {
+        "Reference": "R262",
+        "Value": "29.4K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 UVLO lower resistor",
+        "MPN": "RC0805FR-0729K4L",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/YAGEO-RC0805FR0729K4L/C273956",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C273956",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_EN",
+        "2": "GND"
+      },
+      "template": "R262",
+      "uuid": "e92c0b56-f91a-4a45-9369-36b89e247ec2"
+    },
+    "R263": {
+      "properties": {
+        "Reference": "R263",
+        "Value": "49.9K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "395 kHz nominal, TI equation 3",
+        "MPN": "0805W8F4992T5E",
+        "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "Link": "https://jlcpcb.com/partdetail/C17719",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C17719",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_RT",
+        "2": "GND"
+      },
+      "template": "R263",
+      "uuid": "0862a9b3-b834-4848-8399-a21d7ca75b25"
+    },
+    "R264": {
+      "properties": {
+        "Reference": "R264",
+        "Value": "6.65K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Feedback upper resistor; 1.2 V reference; sense after output shunt",
+        "MPN": "RT0805BRD076K65L",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C865625",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C865625",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+5V",
+        "2": "/Power_Supply/U20_FB"
+      },
+      "template": "R264",
+      "uuid": "6a6ddb06-b8b1-4bdc-9df0-6244c4605bb7"
+    },
+    "R265": {
+      "properties": {
+        "Reference": "R265",
+        "Value": "2.1K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "0.1% feedback lower resistor",
+        "MPN": "RT0805BRD072K1L",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/YAGEO-RT0805BRD072K1L/C865367",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C865367",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_FB",
+        "2": "GND"
+      },
+      "template": "R265",
+      "uuid": "49b62258-e4d1-4c81-9a87-56e6553c1de0"
+    },
+    "R266": {
+      "properties": {
+        "Reference": "R266",
+        "Value": "33.2K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Outer voltage-loop compensation resistor",
+        "MPN": "0805W8F3322T5E",
+        "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "Link": "https://jlcpcb.com/partdetail/C37252",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C37252",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_COMP",
+        "2": "/Power_Supply/U20_CC"
+      },
+      "template": "R266",
+      "uuid": "7987d9d7-d556-4e63-ab01-cda49f9cc788"
+    },
+    "C36": {
+      "properties": {
+        "Reference": "C36",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 compensation series capacitor; TI equation 25",
+        "MPN": "CC0805KRX7R9BB104",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C49678",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C49678",
+        "JLCPCB Library": "Basic"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_CC",
+        "2": "GND"
+      },
+      "template": "C36",
+      "uuid": "964928e1-f4c0-43b3-b166-6581a9783ff3"
+    },
+    "C37": {
+      "properties": {
+        "Reference": "C37",
+        "Value": "680pF",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 compensation high-frequency pole capacitor; C0G; TI equation 26",
+        "MPN": "CC0805JRNPO9BN681",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C107121",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C107121",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_COMP",
+        "2": "GND"
+      },
+      "template": "C37",
+      "uuid": "e31528d9-d1b9-4b9e-bf78-97a7ac39e11e"
+    },
+    "L1": {
+      "properties": {
+        "Reference": "L1",
+        "Value": "10uH",
+        "Footprint": "Inductor_SMD:L_Bourns_SRP1245A",
+        "Datasheet": "",
+        "Description": "10 uH buck-boost inductor; 15.5 A saturation rating",
+        "MPN": "SRP1265A-100M",
+        "Manufacturer": "BOURNS",
+        "Link": "https://jlcpcb.com/partdetail/BOURNS-SRP1265A100M/C840531",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C840531",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_SW1",
+        "2": "/Power_Supply/U20_SW2"
+      },
+      "template": "L1",
+      "uuid": "95bc0fe1-dde2-4879-a33d-a7a01590c18e"
+    },
+    "R326": {
+      "properties": {
+        "Reference": "R326",
+        "Value": "13m",
+        "Footprint": "Resistor_SMD:R_2512_6332Metric",
+        "Datasheet": "",
+        "Description": "1 W, 1% output-current shunt; Kelvin ISP/ISN routing",
+        "MPN": "RL2512FK-070R013L",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C705606",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C705606",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U20_REG",
+        "2": "+5V"
+      },
+      "template": "R261",
+      "uuid": "ce0612c1-8e79-43c7-8687-3c402d0f52cf"
+    },
+    "U21": {
+      "properties": {
+        "Reference": "U21",
+        "Value": "TPS552892RYQR",
+        "Footprint": "wpc_cost:TI_RYQ0021B_5x3mm",
+        "Datasheet": "",
+        "Description": "36 V synchronous buck-boost; PFM; internal VCC; output current limit; JLC-3",
+        "MPN": "TPS552892RYQR",
+        "Manufacturer": "Texas Instruments",
+        "Link": "https://jlcpcb.com/partdetail/C19272254",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C19272254",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_EN",
+        "2": "GND",
+        "3": null,
+        "4": null,
+        "5": "GND",
+        "6": "/Power_Supply/U21_RT",
+        "7": "+18V",
+        "8": "/Power_Supply/U21_SW1",
+        "9": "GND",
+        "10": "/Power_Supply/U21_SW2",
+        "11": "/Power_Supply/U21_REG",
+        "12": "/Power_Supply/U21_REG",
+        "13": "+12V",
+        "14": "/Power_Supply/U21_FB",
+        "15": "/Power_Supply/U21_COMP",
+        "16": null,
+        "17": "GND",
+        "18": "/Power_Supply/U21_VCC",
+        "19": "/Power_Supply/U21_BOOT2",
+        "20": "/Power_Supply/U21_BOOT1",
+        "21": null
+      },
+      "template": "U21",
+      "uuid": "fabfeb00-5f6b-44d7-a72e-535ce0f3bdbb"
+    },
+    "C39": {
+      "properties": {
+        "Reference": "C39",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+18V",
+        "2": "GND"
+      },
+      "template": "C39",
+      "uuid": "e1c53fa7-5499-4bc2-8c19-2cc96b2a7cd4"
+    },
+    "C40": {
+      "properties": {
+        "Reference": "C40",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+18V",
+        "2": "GND"
+      },
+      "template": "C39",
+      "uuid": "e1c53fa7-5499-4bc2-8c19-2cc96b2a7cd4"
+    },
+    "C56": {
+      "properties": {
+        "Reference": "C56",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+18V",
+        "2": "GND"
+      },
+      "template": "C39",
+      "uuid": "1bf1e5f2-eb1c-458f-a6b2-db7f67a5ca55"
+    },
+    "C57": {
+      "properties": {
+        "Reference": "C57",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R input bypass; four parallel capacitors",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+18V",
+        "2": "GND"
+      },
+      "template": "C39",
+      "uuid": "25f4372c-2187-47b1-aaf3-3d39fd9baf56"
+    },
+    "C44": {
+      "properties": {
+        "Reference": "C44",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R local output bypass, before current sense",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_REG",
+        "2": "GND"
+      },
+      "template": "C44",
+      "uuid": "fdaeb1db-9974-420a-ab9c-a3d52ed5740a"
+    },
+    "C58": {
+      "properties": {
+        "Reference": "C58",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R local output bypass, before current sense",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_REG",
+        "2": "GND"
+      },
+      "template": "C44",
+      "uuid": "373b3553-1439-4ed3-95ba-ffeae07ca27e"
+    },
+    "C2": {
+      "properties": {
+        "Reference": "C2",
+        "Value": "330uF",
+        "Footprint": "wpc_cost:CP_Radial_D8.0mm_P5.00mm",
+        "Datasheet": "",
+        "Description": "Output capacitor 330 uF 25 V low ESR",
+        "MPN": "EEU-FR1E331B",
+        "Manufacturer": "PANASONIC",
+        "Link": "https://jlcpcb.com/partdetail/PANASONIC-EEUFR1E331B/C1579638",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C1579638",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+12V",
+        "2": "GND"
+      },
+      "template": "C2",
+      "uuid": "ce6ef84a-d163-4ae6-99d7-23aa4f254b73"
+    },
+    "C12": {
+      "properties": {
+        "Reference": "C12",
+        "Value": "330uF",
+        "Footprint": "wpc_cost:CP_Radial_D8.0mm_P5.00mm",
+        "Datasheet": "",
+        "Description": "Output capacitor 330 uF 25 V low ESR",
+        "MPN": "EEU-FR1E331B",
+        "Manufacturer": "PANASONIC",
+        "Link": "https://jlcpcb.com/partdetail/PANASONIC-EEUFR1E331B/C1579638",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C1579638",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+12V",
+        "2": "GND"
+      },
+      "template": "C12",
+      "uuid": "9a6041f3-de3e-4207-936b-40aac0c6a574"
+    },
+    "C41": {
+      "properties": {
+        "Reference": "C41",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_BOOT1",
+        "2": "/Power_Supply/U21_SW1"
+      },
+      "template": "C41",
+      "uuid": "be83ab4f-552a-4ef7-9697-e9263bdea0b7"
+    },
+    "C52": {
+      "properties": {
+        "Reference": "C52",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_BOOT2",
+        "2": "/Power_Supply/U21_SW2"
+      },
+      "template": "C41",
+      "uuid": "1f4ec3ca-e7ad-4dfe-86a2-ad5d4d66edd0"
+    },
+    "C54": {
+      "properties": {
+        "Reference": "C54",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+18V",
+        "2": "GND"
+      },
+      "template": "C41",
+      "uuid": "1286be97-122c-4aeb-98e6-0de517e500d5"
+    },
+    "C55": {
+      "properties": {
+        "Reference": "C55",
+        "Value": "100nF",
+        "Footprint": "Capacitor_SMD:C_0402_1005Metric",
+        "Datasheet": "",
+        "Description": "100 nF 50 V X7R; short local bootstrap / high-frequency loop",
+        "MPN": "GRM155R71H104KE14D",
+        "Manufacturer": "Murata Electronics",
+        "Link": "https://jlcpcb.com/partdetail/C77020",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C77020",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_REG",
+        "2": "GND"
+      },
+      "template": "C41",
+      "uuid": "4e1c2c89-2a29-4b55-8696-8b74a5e83df3"
+    },
+    "C53": {
+      "properties": {
+        "Reference": "C53",
+        "Value": "10uF",
+        "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+        "Datasheet": "",
+        "Description": "10 uF 50 V X7R on internal 5.2 V VCC; >4.7 uF effective",
+        "MPN": "CL32B106KBJNNWE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/4412651-CL32B106KBJNNWE/C3844168",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C3844168",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_VCC",
+        "2": "GND"
+      },
+      "template": "C39",
+      "uuid": "721fa26e-88a7-4025-b0d2-b43b76b39e7d"
+    },
+    "R267": {
+      "properties": {
+        "Reference": "R267",
+        "Value": "130K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 UVLO upper resistor; 1.23 V EN reference, 5 uA hysteresis",
+        "MPN": "RC0805FR-07130KL",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/YAGEO-RC0805FR07130KL/C483008",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C483008",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+18V",
+        "2": "/Power_Supply/U21_EN"
+      },
+      "template": "R267",
+      "uuid": "9b4b9df2-9352-40c1-940a-b1eeedb566b5"
+    },
+    "R268": {
+      "properties": {
+        "Reference": "R268",
+        "Value": "20K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 UVLO lower resistor",
+        "MPN": "0805W8F2002T5E",
+        "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "Link": "https://jlcpcb.com/partdetail/4735-0805W8F2002T5E/C4328",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C4328",
+        "JLCPCB Library": "Basic"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_EN",
+        "2": "GND"
+      },
+      "template": "R268",
+      "uuid": "c9009dbe-1b0c-44e8-9791-f93a5013211a"
+    },
+    "R269": {
+      "properties": {
+        "Reference": "R269",
+        "Value": "49.9K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "395 kHz nominal, TI equation 3",
+        "MPN": "0805W8F4992T5E",
+        "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "Link": "https://jlcpcb.com/partdetail/C17719",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C17719",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_RT",
+        "2": "GND"
+      },
+      "template": "R269",
+      "uuid": "cd69da1a-36ba-405f-878d-60a04938d7aa"
+    },
+    "R270": {
+      "properties": {
+        "Reference": "R270",
+        "Value": "18K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Feedback upper resistor; 1.2 V reference; sense after output shunt",
+        "MPN": "RT0805BRD0718KL",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C706223",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C706223",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "+12V",
+        "2": "/Power_Supply/U21_FB"
+      },
+      "template": "R270",
+      "uuid": "eac92b49-ab55-4ce9-b5db-1dd162802702"
+    },
+    "R271": {
+      "properties": {
+        "Reference": "R271",
+        "Value": "2K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "0.1% feedback lower resistor",
+        "MPN": "RT0805BRD072KL",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C865384",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C865384",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_FB",
+        "2": "GND"
+      },
+      "template": "R271",
+      "uuid": "b96e4fb2-5271-4d89-be45-4979d2f2cade"
+    },
+    "R272": {
+      "properties": {
+        "Reference": "R272",
+        "Value": "42.2K",
+        "Footprint": "Resistor_SMD:R_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "Outer voltage-loop compensation resistor",
+        "MPN": "0805W8F4222T5E",
+        "Manufacturer": "UNI-ROYAL(Uniroyal Elec)",
+        "Link": "https://jlcpcb.com/partdetail/C17686",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C17686",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_COMP",
+        "2": "/Power_Supply/U21_CC"
+      },
+      "template": "R272",
+      "uuid": "7174b3b9-c765-4e9a-b170-94e0f4451dea"
+    },
+    "C42": {
+      "properties": {
+        "Reference": "C42",
+        "Value": "330nF",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 compensation series capacitor; TI equation 25",
+        "MPN": "CL21B334KBFNNNE",
+        "Manufacturer": "Samsung Electro-Mechanics",
+        "Link": "https://jlcpcb.com/partdetail/C73142",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C73142",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_CC",
+        "2": "GND"
+      },
+      "template": "C42",
+      "uuid": "a402cefc-de2b-4cfc-95d8-5389046418ce"
+    },
+    "C43": {
+      "properties": {
+        "Reference": "C43",
+        "Value": "1nF",
+        "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+        "Datasheet": "",
+        "Description": "TPS552892 compensation high-frequency pole capacitor; C0G; TI equation 26",
+        "MPN": "CC0805JRNPO9BN102",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C62774",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C62774",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_COMP",
+        "2": "GND"
+      },
+      "template": "C43",
+      "uuid": "f691643a-34e5-4a69-aecc-b501fc6ce798"
+    },
+    "L2": {
+      "properties": {
+        "Reference": "L2",
+        "Value": "10uH",
+        "Footprint": "Inductor_SMD:L_Bourns_SRP1245A",
+        "Datasheet": "",
+        "Description": "10 uH buck-boost inductor; 15.5 A saturation rating",
+        "MPN": "SRP1265A-100M",
+        "Manufacturer": "BOURNS",
+        "Link": "https://jlcpcb.com/partdetail/BOURNS-SRP1265A100M/C840531",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C840531",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_SW1",
+        "2": "/Power_Supply/U21_SW2"
+      },
+      "template": "L2",
+      "uuid": "eb51bf6c-4fa2-40eb-a767-1e1e5acd1a7f"
+    },
+    "R327": {
+      "properties": {
+        "Reference": "R327",
+        "Value": "33m",
+        "Footprint": "Resistor_SMD:R_2512_6332Metric",
+        "Datasheet": "",
+        "Description": "1 W, 1% output-current shunt; Kelvin ISP/ISN routing",
+        "MPN": "RL2512FK-070R033L",
+        "Manufacturer": "YAGEO",
+        "Link": "https://jlcpcb.com/partdetail/C705608",
+        "Price": "",
+        "Price100": "",
+        "JLCPCB Part": "C705608",
+        "JLCPCB Library": "Extended"
+      },
+      "nets": {
+        "1": "/Power_Supply/U21_REG",
+        "2": "+12V"
+      },
+      "template": "R267",
+      "uuid": "f3fac51c-3314-4bc0-98e7-c39f12f94774"
+    }
+  },
+  "pin_source": "https://www.ti.com/lit/ds/symlink/tps552892.pdf",
+  "land_source": "TI RYQ0021B 4228792/A, land pattern and stencil; center pin 9 has 0.33 mm central width"
+}

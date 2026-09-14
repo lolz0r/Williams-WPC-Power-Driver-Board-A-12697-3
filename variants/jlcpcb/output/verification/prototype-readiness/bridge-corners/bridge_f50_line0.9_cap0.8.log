@@ -1,0 +1,116 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: bridge loss sensitivity: br1 stps20m100st to220 with individual boyd 577202b00000g sinks. other low-voltage bridges stps20m100sg d2pak. 50 c ambient. electrical winding/load assumptions remain to be measured. d2pak lumped temperatures are screening estimates; geometry thermal_mesh.py is the separate layout assessment.
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using SPARSE 1.3 as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  6.96443e-02
+ Reference value :  1.68841e-01
+ Reference value :  2.72912e-01
+stdout No. of Data Rows : 15064
+stdout iavg_18a            =  5.88232e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_18a            =  1.01498e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_18a             =  8.42964e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_18a            =  7.47677e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_18a             =  1.26801e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_18a = 9.528700e+00
+stdout pd_18a = 1.703273e+00
+stdout pds_18a = 6.813090e+00
+stdout rthreq_18a = 3.522631e+01
+stdout tj_18a = 1.081765e+02
+stdout iavg_18b            =  3.00053e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_18b            =  5.80566e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_18b             =  4.58724e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_18b            =  4.17705e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_18b             =  1.39211e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_18b = 4.101900e+00
+stdout pd_18b = 7.859174e-01
+stdout pds_18b = 3.143670e+00
+stdout rthreq_18b = 7.634390e+01
+stdout tj_18b = 7.863763e+01
+stdout iavg_18c            =  8.00141e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_18c            =  1.31190e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_18c             =  1.09775e+02 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_18c            =  9.55601e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_18c             =  1.19429e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_18c = 1.421494e+01
+stdout pd_18c = 2.457571e+00
+stdout pds_18c = 9.830285e+00
+stdout rthreq_18c = 2.441435e+01
+stdout tj_18c = 1.324649e+02
+stdout iavg_20a            =  2.50044e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_20a            =  5.09677e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_20a             =  4.65849e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_20a            =  4.32544e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_20a             =  1.72987e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_20a = 3.330520e+00
+stdout pd_20a = 6.456430e-01
+stdout pds_20a = 2.582572e+00
+stdout rthreq_20a = 9.293061e+01
+stdout tj_20a = 7.324315e+01
+stdout iavg_20b            =  5.00088e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_20b            =  9.02974e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_20b             =  8.75261e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_20b            =  7.96654e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_20b             =  1.59304e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_20b = 7.860660e+00
+stdout pd_20b = 1.421447e+00
+stdout pds_20b = 5.685787e+00
+stdout rthreq_20b = 4.221052e+01
+stdout tj_20b = 1.011721e+02
+stdout iavg_50a            =  3.00793e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_50a            =  5.04751e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_50a             =  1.56912e+02 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_50a            =  1.48328e+02 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_50a             =  4.93123e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_50a = 8.583800e+00
+stdout pds_50a = 5.678924e+00
+stdout tj_50a = 1.170113e+02
+stdout iavg_50b            =  7.00740e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_50b            =  1.01660e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_50b             =  2.95748e+02 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_50b            =  2.70932e+02 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_50b             =  3.86636e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_50b = 2.481660e+01
+stdout pds_50b = 1.472568e+01
+stdout tj_50b = 2.237630e+02
+stdout iavg_5a             =  1.96851e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_5a             =  3.77126e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_5a              =  2.00897e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_5a             =  1.77337e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_5a              =  9.03996e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_5a = 2.356040e+00
+stdout pd_5a = 4.808860e-01
+stdout pds_5a = 1.923544e+00
+stdout rthreq_5a = 1.247697e+02
+stdout tj_5a = 6.971633e+01
+stdout iavg_5b             =  1.53159e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_5b             =  3.05727e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_5b              =  1.59485e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_5b             =  1.41920e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_5b              =  9.28564e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_5b = 1.756420e+00
+stdout pd_5b = 3.665889e-01
+stdout pds_5b = 1.466355e+00
+stdout rthreq_5b = 1.636711e+02
+stdout tj_5b = 6.503014e+01
+stdout iavg_12a            =  2.50044e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_12a            =  3.94166e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_12a             =  2.94819e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_12a            =  2.66007e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_12a             =  1.06384e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_12a = 2.881230e+00
+stdout pd_12a = 5.997052e-01
+stdout pds_12a = 2.398821e+00
+stdout rthreq_12a = 1.000492e+02
+stdout tj_12a = 7.458791e+01
+stdout iavg_12b            =  3.00053e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout irms_12b            =  4.58510e+00 from=  2.40000e-01 to=  3.00000e-01
+stdout pin_12b             =  3.38018e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pout_12b            =  3.02381e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout vdc_12b             =  1.00776e+01 from=  2.40000e-01 to=  3.00000e-01
+stdout pmodel_12b = 3.563670e+00
+stdout pd_12b = 7.301145e-01
+stdout pds_12b = 2.920458e+00
+stdout rthreq_12b = 8.217889e+01
+stdout tj_12b = 7.993469e+01

@@ -1,0 +1,68 @@
+TI TPS54360 transient model, 12v actual compensation, Vin=20.69
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/.scratch/vendor-models/SLVMCT7/TPS54360_PSPICE_TRANS/TPS54360_TRANS.LIB
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/tools/spice/models.lib
+
+Cin buck_input 0 20u
+XU boot comp en 0 sw rt buck_input fb 0 TPS54360_TRANS
+Ren1 buck_input en 130k
+Ren2 en 0 20k
+Rrt rt 0 240k
+Cboot boot sw 100n
+Rfb1 vout fb 28k
+Rfb2 fb 0 2k
+Rc comp cc 42.2k
+Cc cc 0 100n
+Cp comp 0 390p
+Dcatch 0 sw DB560C
+L1 sw linductor 10u
+Rdcr linductor vout .025
+Cout1 vout c1 330u
+Resr1 c1 0 .045
+Cout2 vout c2 330u
+Resr2 c2 0 .045
+Cc3 vout 0 10u
+Rload vout 0 16
+
+
+* AC secondary, winding resistance, four Schottky diodes and reservoir.
+Bsecondary secp secn V=16.92*sin(2*3.141592653589793*60*time)
+Rsec1 secp acp .05
+Rsec2 secn acn .05
+Dbridge1 acp vinf DSCH20100
+Dbridge2 acn vinf DSCH20100
+Dbridge3 0 acp DSCH20100
+Dbridge4 0 acn DSCH20100
+Creservoir stored 0 8000u
+Rreservoir stored vinf .05
+Rrawbleed vinf 0 5000
+Rlamps vinf 0 2.5
+
+
+* Hypothetical C7 input hold-up; B560C is already a selected board part.
+Disolate vinf buck_input DB560C
+Rdedicated buck_input dedicated_stored .05
+Cdedicated dedicated_stored 0 8000u
+
+.save v(vout) v(vinf) v(buck_input) v(en) v(comp) i(L1) @disolate[id]
+.options reltol=.005 abstol=1u vntol=1m method=gear klu itl4=100
+.tran 1u 0.03 0 250n
+.control
+set numdgt=12
+run
+let sim_end=time[length(time)-1]
+print sim_end
+meas tran output_peak MAX v(vout)
+meas tran output_min MIN v(vout)
+meas tran inductor_peak MAX i(L1)
+meas tran inductor_min MIN i(L1)
+meas tran isolation_diode_peak MAX @disolate[id]
+meas tran recovery_min MIN v(vout) from=0.0216666666667 to=0.03
+meas tran recovery_max MAX v(vout) from=0.0216666666667 to=0.03
+meas tran recovery_avg AVG v(vout) from=0.0216666666667 to=0.03
+meas tran headroom_min MIN v(buck_input) from=0.0216666666667 to=0.03
+set wr_singlescale
+set wr_vecnames
+linearize v(vout) v(vinf) v(buck_input) v(comp) i(L1)
+wrdata /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/isolated_startup_extended.csv v(vout) v(vinf) v(buck_input) v(comp) i(L1)
+.endc
+.end

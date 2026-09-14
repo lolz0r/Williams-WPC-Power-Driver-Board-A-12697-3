@@ -1,0 +1,95 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/isolated_startup_extended.cir",
+  "deck_sha256": "1729c5adb1861a6356be42cd1671831b3e62171908ff8a64ebba498f2f709d8f",
+  "elapsed_s": 1257.537413894,
+  "wall_limit_s": 3600.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.03,
+    "output_peak": 12.5185,
+    "output_min": -1.72784e-08,
+    "inductor_peak": 4.78615,
+    "inductor_min": -0.000518598,
+    "isolation_diode_peak": 23.4439,
+    "recovery_min": 12.0277,
+    "recovery_max": 12.1916,
+    "recovery_avg": 12.0804,
+    "headroom_min": 12.4435
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "sim_end": {
+      "value": 0.03,
+      "min": 0.029999989999999997,
+      "max": 0.03000001,
+      "passed": true
+    },
+    "output_peak": {
+      "value": 12.5185,
+      "min": 0,
+      "max": 12.6,
+      "passed": true
+    },
+    "output_min": {
+      "value": -1.72784e-08,
+      "min": -0.3,
+      "max": 13,
+      "passed": true
+    },
+    "inductor_peak": {
+      "value": 4.78615,
+      "min": 0,
+      "max": 10,
+      "passed": true
+    },
+    "inductor_min": {
+      "value": -0.000518598,
+      "min": -1,
+      "max": 10,
+      "passed": true
+    },
+    "recovery_min": {
+      "value": 12.0277,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": true
+    },
+    "recovery_max": {
+      "value": 12.1916,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "kind": "isolated",
+  "pcb_changed": false,
+  "candidate_only": true,
+  "changes": [
+    "Unbuilt candidate: move C7 behind added B560C input diode",
+    "U21 input divider and local input capacitors follow isolated input",
+    "Native board remains unchanged; original TI model retained"
+  ],
+  "arguments": {
+    "kind": "isolated",
+    "name": "isolated_startup_extended",
+    "wall_seconds": 3600.0,
+    "step_us": 1,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "12v",
+    "bypass": "output",
+    "stop_ms": null
+  },
+  "required_end_s": 0.03,
+  "base_deck_sha256": "90ccd5b71b72696cf804b121a62df6cf0f4cba1ecb6085a8bffe1b6cc60d3583",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

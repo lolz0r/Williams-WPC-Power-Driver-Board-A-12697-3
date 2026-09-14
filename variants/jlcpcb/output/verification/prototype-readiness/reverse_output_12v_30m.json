@@ -1,0 +1,77 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/reverse_output_12v_30m.cir",
+  "deck_sha256": "d6703305fbbb8c1f0954e656a5da674efa7b3b321c2000ff60a134887aef9c6a",
+  "elapsed_s": 900.033381559,
+  "wall_limit_s": 900.0,
+  "timed_out": true,
+  "worker_returncode": -15,
+  "execution_completed": false,
+  "errors": [],
+  "measurements": {},
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "output_peak": {
+      "value": null,
+      "min": 0,
+      "max": 12.6,
+      "passed": false
+    },
+    "output_min": {
+      "value": null,
+      "min": -0.3,
+      "max": 13,
+      "passed": false
+    },
+    "inductor_peak": {
+      "value": null,
+      "min": 0,
+      "max": 10,
+      "passed": false
+    },
+    "inductor_min": {
+      "value": null,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    },
+    "recovery": {
+      "value": null,
+      "min": 11.4,
+      "max": 12.6,
+      "passed": false
+    },
+    "sim_end": {
+      "value": null,
+      "min": 0.029999989999999997,
+      "max": 0.03000001,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "kind": "reverse",
+  "pcb_changed": false,
+  "candidate_only": true,
+  "changes": [
+    "Unbuilt candidate: B560C from vout to input rail; measure bypass current and energy",
+    "Transient ends at 0.03 seconds"
+  ],
+  "arguments": {
+    "kind": "reverse",
+    "name": "reverse_output_12v_30m",
+    "wall_seconds": 900.0,
+    "step_us": 1,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "12v",
+    "bypass": "output",
+    "stop_ms": 30.0
+  },
+  "required_end_s": 0.03,
+  "base_deck_sha256": "90735c46f9ee71647bad548ea5f6e4bc25d11858c44735ab034e9e6a8695dc28",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

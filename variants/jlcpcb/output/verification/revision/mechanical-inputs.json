@@ -68,6 +68,35 @@
     ]
   },
   {
+    "ref": "L2",
+    "value": "10uH",
+    "x": 143.0,
+    "y": 79.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/Bourns_SRP1265A_envelope.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R82",
     "value": "100",
     "x": 244.108,
@@ -155,6 +184,35 @@
     ]
   },
   {
+    "ref": "C37",
+    "value": "680pF",
+    "x": 283.0,
+    "y": 65.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "J115",
     "value": "J115 G.I. 6.3VAC from transformer: 2-6 string hot ends (one fuse each), 7/8/10/11/12 winding return ends (triac MT1), 1 = GND REF",
     "x": 7.61,
@@ -165,6 +223,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/Molex_KK396_12_envelope_key09.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C50",
+    "value": "10uF",
+    "x": 261.0,
+    "y": 46.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -310,35 +397,6 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "C34",
-    "value": "10uF",
-    "x": 272.108,
-    "y": 56.95,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -745,6 +803,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C43",
+    "value": "1nF",
+    "x": 157.0,
+    "y": 75.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -1245,6 +1332,35 @@
     ]
   },
   {
+    "ref": "C56",
+    "value": "10uF",
+    "x": 135.0,
+    "y": 61.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "F116",
     "value": "3A S.B.",
     "x": 57.255,
@@ -1342,10 +1458,97 @@
     "models": []
   },
   {
+    "ref": "C55",
+    "value": "100nF",
+    "x": 143.52,
+    "y": 64.35,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R264",
+    "value": "6.65K",
+    "x": 276.0,
+    "y": 61.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R188",
     "value": "1.5K",
     "x": 428.615,
     "y": 216.772,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R268",
+    "value": "20K",
+    "x": 133.0,
+    "y": 70.5,
     "angle": 0.0,
     "bottom": false,
     "dnp": false,
@@ -1381,6 +1584,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "U21",
+    "value": "TPS552892RYQR",
+    "x": 143.0,
+    "y": 68.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/TI_RYQ0021B_envelope.step",
         "offset": [
           0.0,
           0.0,
@@ -1820,35 +2052,6 @@
     ]
   },
   {
-    "ref": "C35",
-    "value": "100nF",
-    "x": 282.922,
-    "y": 71.254,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
     "ref": "R138",
     "value": "10K",
     "x": 311.422,
@@ -1859,35 +2062,6 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "L2",
-    "value": "10uH",
-    "x": 127.602,
-    "y": 77.287,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/Bourns_SRP1265A_envelope.step",
         "offset": [
           0.0,
           0.0,
@@ -2168,16 +2342,16 @@
     ]
   },
   {
-    "ref": "R271",
-    "value": "2K",
-    "x": 140.18,
-    "y": 88.024,
-    "angle": -90.0,
+    "ref": "U20",
+    "value": "TPS552892RYQR",
+    "x": 269.0,
+    "y": 58.0,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "path": "${KIPRJMOD}/models/TI_RYQ0021B_envelope.step",
         "offset": [
           0.0,
           0.0,
@@ -2410,11 +2584,11 @@
     ]
   },
   {
-    "ref": "C44",
+    "ref": "C38",
     "value": "10uF",
-    "x": 117.497,
-    "y": 77.971,
-    "angle": -90.0,
+    "x": 271.8,
+    "y": 51.5,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
@@ -2480,35 +2654,6 @@
         "path": "${KIPRJMOD}/models/kicad/Fuse.3dshapes/Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.step",
         "offset": [
           0.3,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "C40",
-    "value": "10uF",
-    "x": 143.052,
-    "y": 67.063,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
-        "offset": [
-          0.0,
           0.0,
           0.0
         ],
@@ -3174,16 +3319,16 @@
     ]
   },
   {
-    "ref": "J118",
-    "value": "J118 +12V power (unregulated) / GND / +5V to playfield boards (optos, gun motors)",
-    "x": 47.267,
-    "y": 247.713,
-    "angle": 180.0,
+    "ref": "C54",
+    "value": "100nF",
+    "x": 142.48,
+    "y": 65.45,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/Molex_KK396_04_envelope_key01.step",
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -3203,16 +3348,16 @@
     ]
   },
   {
-    "ref": "R263",
-    "value": "240K",
-    "x": 259.604,
-    "y": 56.465,
-    "angle": 0.0,
+    "ref": "J118",
+    "value": "J118 +12V power (unregulated) / GND / +5V to playfield boards (optos, gun motors)",
+    "x": 47.267,
+    "y": 247.713,
+    "angle": 180.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "path": "${KIPRJMOD}/models/Molex_KK396_04_envelope_key01.step",
         "offset": [
           0.0,
           0.0,
@@ -3406,64 +3551,6 @@
     ]
   },
   {
-    "ref": "R268",
-    "value": "20K",
-    "x": 158.027,
-    "y": 69.578,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "R267",
-    "value": "130K",
-    "x": 155.701,
-    "y": 65.386,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
     "ref": "H2",
     "value": "M4",
     "x": 442.602,
@@ -3486,6 +3573,35 @@
         "path": "${KIPRJMOD}/models/kicad/Fuse.3dshapes/Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.step",
         "offset": [
           0.3,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C45",
+    "value": "100nF",
+    "x": 271.6,
+    "y": 61.2,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "offset": [
+          0.0,
           0.0,
           0.0
         ],
@@ -3677,6 +3793,35 @@
     ]
   },
   {
+    "ref": "C46",
+    "value": "10uF",
+    "x": 276.0,
+    "y": 58.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "D116",
     "value": "STPS20M100S",
     "x": 30.4,
@@ -3745,35 +3890,6 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Package_TO_SOT_SMD.3dshapes/TO-263-2.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "C38",
-    "value": "10uF",
-    "x": 243.061,
-    "y": 71.414,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -3880,6 +3996,35 @@
     ]
   },
   {
+    "ref": "C52",
+    "value": "100nF",
+    "x": 145.6,
+    "y": 71.2,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "U5",
     "value": "74HCT574",
     "x": 260.539,
@@ -3914,6 +4059,35 @@
     "x": 19.0,
     "y": 97.0,
     "angle": -90.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R271",
+    "value": "2K",
+    "x": 154.0,
+    "y": 71.0,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
@@ -3977,6 +4151,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C57",
+    "value": "10uF",
+    "x": 135.0,
+    "y": 56.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -4322,6 +4525,35 @@
     ]
   },
   {
+    "ref": "C42",
+    "value": "330nF",
+    "x": 153.0,
+    "y": 79.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R177",
     "value": "1K",
     "x": 406.819,
@@ -4361,6 +4593,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R326",
+    "value": "13m",
+    "x": 278.0,
+    "y": 44.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -4471,6 +4732,35 @@
     "value": "1K",
     "x": 406.819,
     "y": 221.709,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R266",
+    "value": "33.2K",
+    "x": 279.0,
+    "y": 65.0,
     "angle": 0.0,
     "bottom": false,
     "dnp": false,
@@ -4641,35 +4931,6 @@
     ]
   },
   {
-    "ref": "C33",
-    "value": "10uF",
-    "x": 278.723,
-    "y": 57.842,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
     "ref": "D7",
     "value": "S3M-13-F",
     "x": 163.382,
@@ -4732,35 +4993,6 @@
     "value": "100nF",
     "x": 337.175,
     "y": 172.686,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "C37",
-    "value": "470pF",
-    "x": 262.642,
-    "y": 70.181,
     "angle": -90.0,
     "bottom": false,
     "dnp": false,
@@ -4874,35 +5106,6 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "C36",
-    "value": "33nF",
-    "x": 263.552,
-    "y": 75.631,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -5104,6 +5307,64 @@
     "bottom": false,
     "dnp": false,
     "models": []
+  },
+  {
+    "ref": "C39",
+    "value": "10uF",
+    "x": 140.2,
+    "y": 61.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R265",
+    "value": "2.1K",
+    "x": 280.0,
+    "y": 61.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
   },
   {
     "ref": "C9",
@@ -6039,6 +6300,35 @@
     ]
   },
   {
+    "ref": "C47",
+    "value": "100nF",
+    "x": 268.48,
+    "y": 55.45,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "Q20",
     "value": "IPD90N10S4L06ATMA1",
     "x": 164.435,
@@ -6107,35 +6397,6 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/Molex_KK396_07_envelope_key06.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "R262",
-    "value": "29.4K",
-    "x": 260.75,
-    "y": 52.515,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -6718,9 +6979,9 @@
   {
     "ref": "C2",
     "value": "330uF",
-    "x": 133.484,
-    "y": 60.186,
-    "angle": -90.0,
+    "x": 122.5,
+    "y": 58.7,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
@@ -6919,16 +7180,16 @@
     ]
   },
   {
-    "ref": "C39",
-    "value": "10uF",
-    "x": 149.702,
-    "y": 67.063,
+    "ref": "R272",
+    "value": "42.2K",
+    "x": 153.0,
+    "y": 75.0,
     "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -6948,16 +7209,16 @@
     ]
   },
   {
-    "ref": "U21",
-    "value": "TPS54360BDDAR",
-    "x": 151.547,
-    "y": 74.741,
-    "angle": -90.0,
+    "ref": "R269",
+    "value": "49.9K",
+    "x": 132.0,
+    "y": 75.0,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/kicad/Package_SO.3dshapes/HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm.step",
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -7045,6 +7306,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Package_TO_SOT_SMD.3dshapes/TO-263-2.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R270",
+    "value": "18K",
+    "x": 150.0,
+    "y": 71.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -7267,6 +7557,35 @@
     ]
   },
   {
+    "ref": "C44",
+    "value": "10uF",
+    "x": 145.8,
+    "y": 61.5,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R127",
     "value": "100",
     "x": 286.861,
@@ -7470,69 +7789,11 @@
     ]
   },
   {
-    "ref": "L1",
-    "value": "10uH",
-    "x": 253.161,
-    "y": 66.787,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/Bourns_SRP1265A_envelope.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
     "ref": "R190",
     "value": "1.5K",
     "x": 428.615,
     "y": 233.593,
     "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "R272",
-    "value": "42.2K",
-    "x": 135.852,
-    "y": 88.822,
-    "angle": -90.0,
     "bottom": false,
     "dnp": false,
     "models": [
@@ -7963,35 +8224,6 @@
     ]
   },
   {
-    "ref": "U20",
-    "value": "TPS54360BDDAR",
-    "x": 277.142,
-    "y": 65.218,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Package_SO.3dshapes/HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
     "ref": "D3",
     "value": "M7",
     "x": 220.385,
@@ -8137,6 +8369,35 @@
     ]
   },
   {
+    "ref": "R267",
+    "value": "130K",
+    "x": 137.0,
+    "y": 70.5,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R66",
     "value": "100",
     "x": 220.385,
@@ -8176,6 +8437,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C49",
+    "value": "10uF",
+    "x": 261.0,
+    "y": 51.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -8589,35 +8879,6 @@
     ]
   },
   {
-    "ref": "C42",
-    "value": "100nF",
-    "x": 137.084,
-    "y": 82.594,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
     "ref": "H8",
     "value": "M4",
     "x": 6.55,
@@ -8783,16 +9044,45 @@
     "models": []
   },
   {
-    "ref": "R270",
-    "value": "28K",
-    "x": 149.881,
-    "y": 83.828,
-    "angle": -90.0,
+    "ref": "L1",
+    "value": "10uH",
+    "x": 269.0,
+    "y": 69.0,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "path": "${KIPRJMOD}/models/Bourns_SRP1265A_envelope.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C33",
+    "value": "10uF",
+    "x": 266.2,
+    "y": 51.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -8986,6 +9276,35 @@
     ]
   },
   {
+    "ref": "C35",
+    "value": "100nF",
+    "x": 266.4,
+    "y": 61.2,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R189",
     "value": "1K",
     "x": 428.615,
@@ -9102,16 +9421,16 @@
     ]
   },
   {
-    "ref": "C43",
-    "value": "390pF",
-    "x": 118.08,
-    "y": 84.021,
-    "angle": -90.0,
+    "ref": "R327",
+    "value": "33m",
+    "x": 152.0,
+    "y": 54.0,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_2512_6332Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -9259,35 +9578,6 @@
     "x": 286.861,
     "y": 166.129,
     "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "R265",
-    "value": "2.1K",
-    "x": 271.455,
-    "y": 74.148,
-    "angle": -90.0,
     "bottom": false,
     "dnp": false,
     "models": [
@@ -9612,6 +9902,35 @@
     ]
   },
   {
+    "ref": "C41",
+    "value": "100nF",
+    "x": 140.4,
+    "y": 71.2,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R4",
     "value": "10K",
     "x": 69.052,
@@ -9675,64 +9994,6 @@
     "x": 265.904,
     "y": 209.023,
     "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Diode_SMD.3dshapes/D_SMC.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "R269",
-    "value": "240K",
-    "x": 158.032,
-    "y": 73.769,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "D36",
-    "value": "B560C",
-    "x": 269.002,
-    "y": 65.508,
-    "angle": -90.0,
     "bottom": false,
     "dnp": false,
     "models": [
@@ -9826,6 +10087,35 @@
     "value": "1.5K",
     "x": 341.063,
     "y": 43.625,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "R262",
+    "value": "29.4K",
+    "x": 259.0,
+    "y": 60.5,
     "angle": 0.0,
     "bottom": false,
     "dnp": false,
@@ -10460,35 +10750,6 @@
     ]
   },
   {
-    "ref": "D37",
-    "value": "B560C",
-    "x": 143.444,
-    "y": 78.264,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Diode_SMD.3dshapes/D_SMC.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
     "ref": "R156",
     "value": "1K",
     "x": 349.624,
@@ -10634,6 +10895,35 @@
     ]
   },
   {
+    "ref": "C58",
+    "value": "10uF",
+    "x": 145.8,
+    "y": 56.5,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "Q36",
     "value": "IPD90N10S4L06ATMA1",
     "x": 221.438,
@@ -10673,6 +10963,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Diode_SMD.3dshapes/D_SMC.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C48",
+    "value": "100nF",
+    "x": 269.52,
+    "y": 54.35,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -10779,6 +11098,35 @@
     ]
   },
   {
+    "ref": "R263",
+    "value": "49.9K",
+    "x": 258.0,
+    "y": 65.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "U9",
     "value": "74HCT240",
     "x": 336.358,
@@ -10789,6 +11137,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Package_SO.3dshapes/SOIC-20W_7.5x12.8mm_P1.27mm.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C34",
+    "value": "10uF",
+    "x": 266.2,
+    "y": 46.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -10849,35 +11226,6 @@
         "path": "${KIPRJMOD}/models/kicad/Fuse.3dshapes/Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.step",
         "offset": [
           0.3,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "C41",
-    "value": "100nF",
-    "x": 153.813,
-    "y": 82.241,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
-        "offset": [
-          0.0,
           0.0,
           0.0
         ],
@@ -11369,6 +11717,35 @@
     ]
   },
   {
+    "ref": "C36",
+    "value": "100nF",
+    "x": 279.0,
+    "y": 69.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "D27",
     "value": "S3M-13-F",
     "x": 286.861,
@@ -11437,6 +11814,35 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
+    "ref": "C51",
+    "value": "10uF",
+    "x": 271.8,
+    "y": 46.5,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -11589,35 +11995,6 @@
       },
       {
         "path": "${KIPRJMOD}/models/M3x12_TO220_hardware_envelope.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "R261",
-    "value": "118K",
-    "x": 266.078,
-    "y": 57.608,
-    "angle": 0.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -12160,6 +12537,35 @@
     ]
   },
   {
+    "ref": "C53",
+    "value": "10uF",
+    "x": 150.0,
+    "y": 68.0,
+    "angle": 0.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "R174",
     "value": "0.22R",
     "x": 385.201,
@@ -12247,16 +12653,16 @@
     ]
   },
   {
-    "ref": "R266",
-    "value": "33.2K",
-    "x": 267.505,
-    "y": 74.115,
-    "angle": -90.0,
+    "ref": "J126",
+    "value": "J126 Sol 17-24 drive (playfield flashers) + tie-back cathodes of sol 21-24 on pins 10-13 (A-12697 D9-D12; N/C on STTNG)",
+    "x": 222.936,
+    "y": 265.3,
+    "angle": 180.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
+        "path": "${KIPRJMOD}/models/Molex_KK396_13_envelope_key09.step",
         "offset": [
           0.0,
           0.0,
@@ -12276,16 +12682,16 @@
     ]
   },
   {
-    "ref": "J126",
-    "value": "J126 Sol 17-24 drive (playfield flashers) + tie-back cathodes of sol 21-24 on pins 10-13 (A-12697 D9-D12; N/C on STTNG)",
-    "x": 222.936,
-    "y": 265.3,
-    "angle": 180.0,
+    "ref": "R261",
+    "value": "118K",
+    "x": 263.0,
+    "y": 60.5,
+    "angle": 0.0,
     "bottom": false,
     "dnp": false,
     "models": [
       {
-        "path": "${KIPRJMOD}/models/Molex_KK396_13_envelope_key09.step",
+        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,
@@ -12334,6 +12740,35 @@
     ]
   },
   {
+    "ref": "C40",
+    "value": "10uF",
+    "x": 140.2,
+    "y": 56.5,
+    "angle": 180.0,
+    "bottom": false,
+    "dnp": false,
+    "models": [
+      {
+        "path": "${KIPRJMOD}/models/kicad/Capacitor_SMD.3dshapes/C_1210_3225Metric.step",
+        "offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    ]
+  },
+  {
     "ref": "TP8",
     "value": "TP8 +18V",
     "x": 411.43,
@@ -12354,35 +12789,6 @@
     "models": [
       {
         "path": "${KIPRJMOD}/models/kicad/Diode_SMD.3dshapes/D_SMC.step",
-        "offset": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "rotation": [
-          0.0,
-          0.0,
-          0.0
-        ],
-        "scale": [
-          1.0,
-          1.0,
-          1.0
-        ]
-      }
-    ]
-  },
-  {
-    "ref": "R264",
-    "value": "11.3K",
-    "x": 275.378,
-    "y": 73.769,
-    "angle": -90.0,
-    "bottom": false,
-    "dnp": false,
-    "models": [
-      {
-        "path": "${KIPRJMOD}/models/kicad/Resistor_SMD.3dshapes/R_0805_2012Metric.step",
         "offset": [
           0.0,
           0.0,

@@ -1,0 +1,83 @@
+Cost-board power supplies in the machine: +18V = 13.3VAC / GBJ1510 / 2 x 10000uF at 2.8 A lamps (5 ohm) + the +12V digital buck (1 A) ; +5V = 9VAC / GBU8J / 10000uF -> TPS54360B buck (averaged: eta 0.88, Dmax 0.97) at 3 A ; +20V = 16VAC / GBJ1510 / 10000uF with a 4 A flasher burst (flashers only) ; "+50V" = 51.4VAC (72.7 V peak, 0.6 ohm per leg) / GBPC3510 / 2 x 2200uF with an AE-23-800 (4.2 ohm) 40 ms pulse at 120 ms (the 4400 uF need ~6 cycles to charge through the 1.2 ohm winding)
+.include ../models.lib
+* ---- +18V lamp supply (13.3VAC = 18.8 V peak, GBJ1510, 2 x 10000uF): 5 ohm lamp-matrix load + +12V digital buck U21 at 1 A (12 W, eta 0.88, dropout Vout = 0.97 Vin - 0.5)
+V13 l1 l2 SIN(0 18.8 60)
+Rl1 l1 la 0.05
+Rl2 l2 lb 0.05
+DL1 la v18 DSCH20100
+DL2 lb v18 DSCH20100
+DL3 0 la DSCH20100
+DL4 0 lb DSCH20100
+C6 v18 0 10000u
+C7 v18 0 10000u
+Rl18 v18 0 5
+Bv12 v12 0 V = min(12.0, max(0.97*v(v18) - 0.5, 0))
+R12 v12 0 12
+Bin12 v18 0 I = (v(v12)*v(v12)/12) / (0.88*max(v(v18),1))
+* ---- +5V: 9VAC -> BR2 (GBU8J) -> C5 10000uF -> buck U20 (3 A load = 1.667 ohm)
+V9 s1 s2 SIN(0 12.7 60)
+Rs1 s1 sa 0.05
+Rs2 s2 sb 0.05
+DS1 sa vraw DSCH20100
+DS2 sb vraw DSCH20100
+DS3 0 sa DSCH20100
+DS4 0 sb DSCH20100
+C5 vraw 0 10000u
+Bv5 v5 0 V = min(5.10, max(0.97*v(vraw) - 0.5, 0))
+R5 v5 0 1.667
+Bin5 vraw 0 I = (v(v5)*v(v5)/1.667) / (0.88*max(v(vraw),1))
+* ---- +20V flasher supply (16VAC, GBJ1510, 10000uF): flashers only now; 4 A flasher burst 40..140 ms
+V16 f1 f2 SIN(0 22.6 60)
+Rf1 f1 fa 0.05
+Rf2 f2 fb 0.05
+DF1 fa v20 DSCH20100
+DF2 fb v20 DSCH20100
+DF3 0 fa DSCH20100
+DF4 0 fb DSCH20100
+C11 v20 0 10000u
+Rled20 v20 0 5k
+Sfl v20 fln ctl2 0 SWS
+Rflash fln 0 5
+Vctl2 ctl2 0 PULSE(0 5 40m 1u 1u 100m 300m)
+* ---- "+50V" solenoid supply: 51.4VAC nominal (72.7 V peak; the STTNG transformer measured 55.2 VAC unloaded), 0.6 ohm per leg (7 % regulation), GBPC3510, 2 x 2200uF/100V, 7.5k bleeder ; AE-23-800 (4.2 ohm, 12 mH) pulsed 40 ms at t=60 ms
+V51 h1 h2 SIN(0 72.7 60)
+Rh1 h1 ha 0.6
+Rh2 h2 hb 0.6
+DH1 ha v50 DGBPC35
+DH2 hb v50 DGBPC35
+DH3 0 ha DGBPC35
+DH4 0 hb DGBPC35
+C8 v50 0 2200u
+C32 v50 0 2200u
+R260 v50 0 7.5k
+Ssol v50 coil ctl 0 SWS
+Vctl ctl 0 PULSE(0 5 120m 1u 1u 40m 400m)
+.model SWS SW(Ron=0.02 Roff=1e9 Vt=2.5 Vh=0.1)
+Lcoil coil cn 12m
+Rcoil cn 0 4.2
+Dfb2 coil v50 DS3M
+.tran 20u 210m uic
+.control
+run
+meas tran v18_avg AVG v(v18) from=80m to=120m
+meas tran v18_ripple PP v(v18) from=80m to=120m
+meas tran vin5_min MIN v(vraw) from=80m to=120m
+meas tran v5_min MIN v(v5) from=80m to=120m
+meas tran v5_max MAX v(v5) from=80m to=120m
+* +5 V at the CPU board: up to 3 A through ~20 mOhm of board copper + 30-60 mOhm of harness (80 mOhm worst) - MC34064 reset threshold 4.70 V max
+let v5_cpu_worst = v5_min - 3*0.08
+print v5_cpu_worst
+meas tran v50_idle AVG v(v50) from=100m to=120m
+meas tran v50_max MAX v(v50) from=100m to=120m
+meas tran v50_avg_pulse AVG v(v50) from=130m to=159m
+meas tran v50_min_pulse MIN v(v50) from=130m to=159m
+let icoil = i(Lcoil)
+meas tran icoil_max MAX icoil from=120m to=160m
+meas tran v20_min MIN v(v20) from=80m to=140m
+meas tran v12_min MIN v(v12) from=80m to=140m
+meas tran v12_max MAX v(v12) from=80m to=140m
+meas tran vin5_ripple PP v(vraw) from=80m to=120m
+meas tran v20_ripple PP v(v20) from=80m to=120m
+wrdata /home/lolz0r/tng/wpc_power_driver_cost/output/spice/psu.csv v(v18) v(vraw) v(v5) v(v50) icoil v(v20) v(v12)
+.endc
+.end

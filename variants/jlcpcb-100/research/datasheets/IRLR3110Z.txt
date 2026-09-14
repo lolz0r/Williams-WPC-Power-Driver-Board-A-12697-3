@@ -1,0 +1,705 @@
+                                                                                                         PD - 97175B
+
+                                                                                    IRLR3110ZPbF
+                                                                                    IRLU3110ZPbF
+Features
+l    Advanced Process Technology                                             HEXFET® Power MOSFET
+l    Ultra Low On-Resistance                                                       D
+l    175°C Operating Temperature
+l    Fast Switching                                                                               VDSS = 100V
+l    Repetitive Avalanche Allowed up to Tjmax
+Description                                                              G                       RDS(on) = 14mΩ
+Specifically designed for Industrial applications,
+this HEXFET® Power MOSFET utilizes the latest                                      S
+processing techniques to achieve extremely low
+on-resistance per silicon area. Additional features
+of this design are a 175°C junction operating
+temperature, fast switching speed and improved
+repetitive avalanche rating . These features com-
+bine to make this design an extremely efficient and
+reliable device for use in Industrial applications
+and a wide variety of other applications.                                         D-Pak        I-Pak
+                                                                              IRLR3110ZPbF IRLU3110ZPbF
+
+Absolute Maximum Ratings
+                                              Parameter                                Max.                    Units
+ID @ TC = 25°C Continuous Drain Current, VGS @ 10V (Silicon Limited)                        63
+ID @ TC = 100°C Continuous Drain Current, VGS @ 10V (Silicon Limited)                       45                   A
+ID @ TC = 25°C Continuous Drain Current, VGS @ 10V (Package Limited)                        42
+IDM             Pulsed Drain Current          c                                            250
+PD @TC = 25°C Power Dissipation                                                            140                  W
+                          Linear Derating Factor                                      0.95                     W/°C
+VGS                       Gate-to-Source Voltage                                       ±16                      V
+EAS (Thermally limited)   Single Pulse Avalanche Energyd                               110                      mJ
+EAS (Tested )             Single Pulse Avalanche Energy Tested Value h                 140
+IAR                       Avalanche Currentc                                See Fig.12a, 12b, 15, 16           A
+EAR                       Repetitive Avalanche Energyg                                                          mJ
+TJ                        Operating Junction and                                    -55 to + 175
+TSTG                      Storage Temperature Range                                                             °C
+                          Reflow Soldering Temperature, for 10 seconds                  300
+                          Mounting Torque, 6-32 or M3 screw                            y
+                                                                                10 lbf in (1.1N m)y
+Thermal Resistance
+                                              Parameter                      Typ.                     Max.     Units
+RθJC                      Junction-to-Casej                                  –––                      1.05
+RθJA                      Junction-to-Ambient (PCB mount)   ij               –––                       40      °C/W
+RθJA                      Junction-to-Ambient j                              –––                      110
+
+HEXFET® is a registered trademark of International Rectifier.
+www.irf.com                                                                                                          1
+                                                                                                              11/30/09
+IRLR/U3110ZPbF
+
+Electrical Characteristics @ TJ = 25°C (unless otherwise specified)
+                            Parameter                   Min. Typ. Max. Units                       Conditions
+V(BR)DSS        Drain-to-Source Breakdown Voltage       100     –––     –––       V VGS = 0V, ID = 250µA
+∆V(BR)DSS/∆TJ   Breakdown Voltage Temp. Coefficient     –––    0.077    –––     V/°C Reference to 25°C, ID = 1mA
+RDS(on)         Static Drain-to-Source On-Resistance    –––      11      14     mΩ VGS = 10V, ID = 38A        e
+                                                        –––      12      16          VGS = 4.5V, ID = 32A     e
+VGS(th)         Gate Threshold Voltage                  1.0     –––      2.5      V VDS = VGS, ID = 100µA
+gfs             Forward Transconductance                 52     –––     –––       S VDS = 25V, ID = 38A
+IDSS            Drain-to-Source Leakage Current         –––     –––      20      µA VDS = 100V, VGS = 0V
+                                                        –––     –––     250          VDS = 100V, VGS = 0V, TJ = 125°C
+IGSS            Gate-to-Source Forward Leakage          –––     –––     200      nA VGS = 16V
+                Gate-to-Source Reverse Leakage          –––     –––     -200         VGS = -16V
+Qg              Total Gate Charge                       –––      34      48          ID = 38A
+Qgs             Gate-to-Source Charge                   –––      10     –––      nC VDS = 50V
+Qgd             Gate-to-Drain ("Miller") Charge         –––      15     –––          VGS = 4.5V     e
+td(on)          Turn-On Delay Time                      –––      24     –––          VDD = 50V
+tr              Rise Time                               –––     110     –––          ID = 38A
+td(off)         Turn-Off Delay Time                     –––      33     –––      ns RG = 3.7Ω
+tf              Fall Time                               –––      48     –––          VGS = 4.5V     e
+LD              Internal Drain Inductance               –––     4.5     –––          Between lead,                 D
+
+
+                                                                                 nH    6mm (0.25in.)
+LS              Internal Source Inductance              –––      7.5    –––            from package
+                                                                                                                   G
+
+
+
+                                                                                       and center of die contact     S
+
+Ciss            Input Capacitance                       –––     3980    –––            VGS = 0V
+Coss            Output Capacitance                      –––     310     –––            VDS = 25V
+Crss            Reverse Transfer Capacitance            –––     130     –––      pF    ƒ = 1.0MHz
+Coss            Output Capacitance                      –––     1820    –––            VGS = 0V, VDS = 1.0V, ƒ = 1.0MHz
+Coss            Output Capacitance                      –––     170     –––            VGS = 0V, VDS = 80V, ƒ = 1.0MHz
+Coss eff.       Effective Output Capacitance            –––     320     –––            VGS = 0V, VDS = 0V to 80V       f
+Source-Drain Ratings and Characteristics
+                     Parameter                          Min. Typ. Max. Units                       Conditions
+IS              Continuous Source Current               –––     –––      63            MOSFET symbol                       D
+
+
+
+                (Body Diode)                                                      A    showing the
+ISM             Pulsed Source Current                   –––     –––     250            integral reverse       G
+
+
+                (Body Diode)c                                                         p-n junction diode.           S
+
+
+VSD             Diode Forward Voltage                   –––     –––      1.3      V    TJ = 25°C, IS = 38A, VGS = 0V       e
+trr             Reverse Recovery Time                   –––      34      51      ns    TJ = 25°C, IF = 38A, VDD = 50V
+Qrr             Reverse Recovery Charge                 –––      42      63      nC    di/dt = 100A/µs    e
+ton             Forward Turn-On Time                   Intrinsic turn-on time is negligible (turn-on is dominated by LS+LD)
+
+
+
+
+  2                                                                                                       www.irf.com
+                                                                                                                                                                                IRLR/U3110ZPbF
+
+                                  1000                                                                                                             1000
+                                                                                              VGS                                                                                                                    VGS
+                                                                                    TOP       15V                                                                                                         TOP        15V
+                                                                                              10V                                                                                                                    10V
+                                                                                              8.0V                                                                                                                   8.0V
+                                        100
+
+
+
+
+ID, Drain-to-Source Current (A)                                                                                                    ID, Drain-to-Source Current (A)
+                                                                                              4.5V                                                                                                                   4.5V
+                                                                                              3.5V                                                                                                                   3.5V
+                                                                                              3.0V                                                                                                                   3.0V
+                                                                                              2.7V                                                             100                                                   2.7V
+                                                                                    BOTTOM    2.5V                                                                                                        BOTTOM     2.5V
+                                         10
+
+
+
+                                         1
+                                                                                                                                                                     10
+                                                                                                                                                                                           2.5V
+                                        0.1                 2.5V
+                                                                        ≤60µs PULSE WIDTH                                                                                                         ≤60µs PULSE WIDTH
+                                                                        Tj = 25°C                                                                                                                 Tj = 175°C
+                                    0.01                                                                                                                              1
+                                              0.1           1           10           100          1000                                                                    0.1        1            10           100     1000
+                                                    V DS, Drain-to-Source Voltage (V)                                                                                            V DS, Drain-to-Source Voltage (V)
+
+
+                                         Fig 1. Typical Output Characteristics                                                                                       Fig 2. Typical Output Characteristics
+
+
+
+
+                                  1000                                                                                                                          150
+                                                                                                                                                                                                   T J = 25°C
+
+
+
+
+                                                                                                         Gfs, Forward Transconductance (S)
+                                                                                                                                                                125
+
+
+
+
+      ID, Drain-to-Source Current (Α)
+                                        100                                   T J = 175°C
+                                                                                                                                                                100
+
+
+                                        10                                                                                                                           75                                T J = 175°C
+
+
+                                                                                                                                                                     50
+                                                           T J = 25°C
+                                         1
+                                                                                                                                                                     25                           V DS = 10V
+                                                                        VDS = 25V
+                                                                        ≤60µs PULSE WIDTH                                                                                                         300µs PULSE WIDTH
+                                        0.1                                                                                                                           0
+                                              0     2       4      6    8    10      12      14    16                                                                      0             25              50                 75
+                                                                                                                                                                                  ID,Drain-to-Source Current (A)
+                                                        VGS, Gate-to-Source Voltage (V)
+
+                                        Fig 3. Typical Transfer Characteristics                                                                                      Fig 4. Typical Forward Transconductance
+                                                                                                                                                                                 vs. Drain Current
+              www.irf.com                                                                                                                                                                                               3
+                 IRLR/U3110ZPbF
+
+                   100000                                                                                                                                 5.0
+                                                    VGS = 0V,      f = 1 MHZ
+                                                                                                                                                                    ID= 38A
+                                                    C iss = C gs + C gd, C ds SHORTED
+                                                    C rss = C gd
+
+
+
+
+                                                                                               VGS, Gate-to-Source Voltage (V)
+                                                    C oss = C ds + C gd
+                                                                                                                                                          4.0
+                               10000                                                                                                                                                    VDS= 80V
+                                                                                                                                                                                        VDS= 50V
+
+
+
+
+C, Capacitance(pF)
+                                                             Ciss
+                                                                                                                                                          3.0
+
+                                   1000
+                                                              Coss
+                                                                                                                                                          2.0
+                                                             Crss
+                                       100
+                                                                                                                                                          1.0
+
+
+
+                                       10                                                                                                                 0.0
+                                              1                      10                  100                                                                    0             10           20        30      40
+                                                   VDS, Drain-to-Source Voltage (V)                                                                                        QG Total Gate Charge (nC)
+
+
+                                             Fig 5. Typical Capacitance vs.                                                                                     Fig 6. Typical Gate Charge vs.
+                                                 Drain-to-Source Voltage                                                                                            Gate-to-Source Voltage
+
+
+
+                                   1000                                                                                                 1000
+                                                                                                                                                                                  OPERATION IN THIS AREA
+                                                                                                                                                                                  LIMITED BY R DS(on)
+
+
+
+
+  ISD, Reverse Drain Current (A)                                                                                        ID, Drain-to-Source Current (A)
+                                                         T J = 175°C
+                                       100
+                                                                                                                                                   100                                     100µsec
+
+
+                                                                     T J = 25°C                                                                                                            1msec
+                                        10
+
+                                                                                                                                                                                  10msec
+                                                                                                                                                          10                       DC
+                                         1
+                                                                                                                                                                    Tc = 25°C
+                                                                                                                                                                    Tj = 175°C
+                                                                              VGS = 0V
+                                                                                                                                                                    Single Pulse
+                                       0.1                                                                                                                 1
+                                             0.0 0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8                                                                            0             1            10        100    1000
+                                                   VSD, Source-to-Drain Voltage (V)                                                                                     VDS, Drain-to-Source Voltage (V)
+
+
+
+                                             Fig 7. Typical Source-Drain Diode                                                                             Fig 8. Maximum Safe Operating Area
+                                                      Forward Voltage
+                                   4                                                                                                                                                               www.irf.com
+                                                                                                                                                         IRLR/U3110ZPbF
+
+                                       70                                                                                                       3.0
+                                                                                                                                                         ID = 63A
+
+
+
+
+                                                                                                      RDS(on) , Drain-to-Source On Resistance
+                                       60                            Limited By Package                                                                  VGS = 10V
+                                                                                                                                                2.5
+                                       50
+
+
+
+
+ID, Drain Current (A)
+                                                                                                                                                2.0
+                                       40
+
+                                       30
+
+
+
+
+                                                                                                                  (Normalized)
+                                                                                                                                                1.5
+
+                                       20
+                                                                                                                                                1.0
+                                       10
+
+                                        0                                                                                                       0.5
+                                              25     50       75    100     125   150       175                                                       -60 -40 -20 0 20 40 60 80 100120140160180
+                                                        T C , Case Temperature (°C)                                                                                 T J , Junction Temperature (°C)
+
+
+                                            Fig 9. Maximum Drain Current vs.                                                                      Fig 10. Normalized On-Resistance
+                                                    Case Temperature                                                                                       vs. Temperature
+
+
+
+                                        10
+
+
+
+
+        Thermal Response ( Z thJC )
+                                         1
+                                                   D = 0.50
+
+                                                      0.20
+                                                      0.10                                                                                        R1           R2
+                                        0.1                                                                                                         R1          R2                  Ri (°C/W) τi (sec)
+                                                      0.05                                             τJ
+                                                                                                                 τJ
+                                                                                                                                                                       τC
+                                                                                                                                                                                     0.383    0.000267
+                                                                                                                                                                            τ
+                                                                                                                  τ1                                      τ2
+                                                      0.02                                                                      τ1                             τ2                    0.667       0.003916
+                                                      0.01
+                                       0.01                                                                                  Ci= τi/Ri
+                                                                                                                               Ci i/Ri
+                                                                   SINGLE PULSE                                                                                                 Notes:
+                                                                   ( THERMAL RESPONSE )                                                                                         1. Duty Factor D = t1/t2
+                                                                                                                                                                                2. Peak Tj = P dm x Zthjc + Tc
+                                      0.001
+                                            1E-006                 1E-005                 0.0001                                                      0.001                             0.01                     0.1
+
+                                                                                      t1 , Rectangular Pulse Duration (sec)
+
+
+
+                                                   Fig 11. Maximum Effective Transient Thermal Impedance, Junction-to-Case
+
+               www.irf.com                                                                                                                                                                                   5
+IRLR/U3110ZPbF
+
+                                                                                                                     300
+                                                      15V
+
+
+
+
+                                                                          EAS , Single Pulse Avalanche Energy (mJ)
+                                                                                                                                                                     ID
+                                                                                                                                                              TOP    4.4A
+                                                                                                                     250
+                                     L                      DRIVER                                                                                                   6.5A
+                    VDS
+                                                                                                                                                              BOTTOM 38A
+                                                                                                                     200
+                RG              D.U.T                          +
+                                                                 V
+                                                               - DD
+                               IAS                                    A                                              150
+                20V
+                V GS
+                          tp         0.01Ω
+
+                                                                                                                     100
+Fig 12a. Unclamped Inductive Test Circuit
+                                          V(BR)DSS
+                                                                                                                      50
+                          tp
+
+
+                                                                                                                       0
+                                                                                                                            25      50         75     100     125       150   175
+                                                                                                                                 Starting T J , Junction Temperature (°C)
+
+        I AS
+                                                                                                                            Fig 12c. Maximum Avalanche Energy
+    Fig 12b. Unclamped Inductive Waveforms
+                                                                                                                                      vs. Drain Current
+                                         QG
+
+        10 V
+                     QGS                 QGD                                                                          3.0
+
+
+
+
+                                                                          VGS(th) Gate threshold Voltage (V)
+               VG                                                                                                     2.5
+
+
+                                                                                                                      2.0
+                                         Charge
+    Fig 13a. Basic Gate Charge Waveform                                                                               1.5        ID = 100µA
+                                                                                                                                 ID = 250µA
+                                                                                                                      1.0        ID = 1.0mA
+                                                                                                                                 ID = 1.0A
+
+                                                  L                                                                   0.5
+                                                                VCC
+                                           DUT
+0                                                                                                                     0.0
+                       1K                                                                                                   -75 -50 -25 0        25 50 75 100 125 150 175 200
+                                                                                                                                             T J , Temperature ( °C )
+
+
+
+
+    Fig 13b. Gate Charge Test Circuit                                                                                Fig 14. Threshold Voltage vs. Temperature
+    6                                                                                                                                                            www.irf.com
+                                                                                                          IRLR/U3110ZPbF
+
+                              100
+
+
+                                                                                                      Allowed avalanche Current vs avalanche
+                                      Duty Cycle = Single Pulse
+                                                                                                      pulsewidth, tav, assuming ∆ Tj = 150°C and
+                                                                                                      Tstart =25°C (Single Pulse)
+                                                        0.01
+
+
+
+
+   Avalanche Current (A)
+                               10
+                                                        0.05
+                                                        0.10
+
+
+                                      Allowed avalanche Current vs avalanche
+                               1
+                                      pulsewidth, tav, assuming ∆Τ j = 25°C and
+                                      Tstart = 150°C.
+
+
+
+
+                              0.1
+                               1.0E-06                  1.0E-05               1.0E-04                  1.0E-03                1.0E-02               1.0E-01
+                                                                                          tav (sec)
+
+                                                               Fig 15. Typical Avalanche Current vs.Pulsewidth
+
+
+
+
+                              150                                                         Notes on Repetitive Avalanche Curves , Figures 15, 16:
+                                                   TOP      Single Pulse                  (For further info, see AN-1005 at www.irf.com)
+                                                   BOTTOM 1% Duty Cycle                   1. Avalanche failures assumption:
+                              125                  ID = 38A                                  Purely a thermal phenomenon and failure occurs at a
+
+
+
+
+EAR , Avalanche Energy (mJ)
+                                                                                             temperature far in excess of T jmax. This is validated for
+                                                                                              every part type.
+                              100                                                         2. Safe operation in Avalanche is allowed as long as
+                                                                                              neither Tjmax nor Iav (max) is exceeded.
+                                                                                          3. Equation below based on circuit and waveforms shown in
+                               75                                                            Figures 12a, 12b.
+                                                                                          4. PD (ave) = Average power dissipation per single
+                                                                                              avalanche pulse.
+                               50
+                                                                                          5. BV = Rated breakdown voltage (1.3 factor accounts for
+                                                                                             voltage increase during avalanche).
+                               25                                                         6. Iav = Allowable avalanche current.
+                                                                                          7. ∆T = Allowable rise in junction temperature, not to exceed
+                                                                                             Tjmax (assumed as 25°C in Figure 15, 16).
+                                0                                                            tav = Average time in avalanche.
+                                    25      50     75      100      125   150       175      D = Duty cycle in avalanche = tav ·f
+                                                                                             ZthJC(D, tav ) = Transient thermal resistance, see figure 11)
+                                         Starting T J , Junction Temperature (°C)
+                                                                                                        PD (ave) = 1/2 ( 1.3·BV·Iav) = DT/ ZthJC
+                                    Fig 16. Maximum Avalanche Energy                                             Iav = 2DT/ [1.3·BV·Zth]
+                                             vs. Temperature                                                     EAS (AR) = PD (ave)·tav
+ www.irf.com                                                                                                                                         7
+IRLR/U3110ZPbF
+
+                                                                                    Driver Gate Drive
+                                                                                                                                    P.W.
+         D.U.T                                                                              P.W.
+                                                                                                        Period                D=
+                                                                                                                                   Period
+                 +
+
+
+                 
+                                                                                                                                                  *
+                                                                                                                                            VGS=10V
+                            Circuit Layout Considerations
+                             • Low Stray Inductance
+                             • Ground Plane
+                 -           • Low Leakage Inductance                               D.U.T. ISD Waveform
+                                Current Transformer
+    +
+                                                                      Reverse
+                                                                     Recovery                        Body Diode Forward
+                                         -      +                    Current                               Current
+                                                                                                                    di/dt
+    -
+                                                                                    D.U.T. VDS Waveform
+                                                                                                           Diode Recovery
+                                                                                                               dv/dt
+                                                                                                                                            VDD
+
+    RG               • dv/dt controlled by RG             VDD       Re-Applied
+                     • Driver same type as D.U.T.             +     Voltage                           Body Diode    Forward Drop
+                     • I SD controlled by Duty Factor "D"     -                     Inductor Curent
+                     • D.U.T. - Device Under Test
+
+                                                                                                      Ripple ≤ 5%                           ISD
+
+
+                                                                                  * VGS = 5V for Logic Level Devices
+
+                 Fig 17. Peak Diode Recovery dv/dt Test Circuit for N-Channel
+                                 HEXFET® Power MOSFETs
+
+
+                                                                                    RD
+                                                             V DS
+
+                                                     VGS
+                                                                            D.U.T.
+                                                RG
+                                                                                                        +
+                                                                                                        -VDD
+
+                                                     10V
+                                                Pulse Width ≤ 1 µs
+                                                Duty Factor ≤ 0.1 %
+
+
+
+                                   Fig 18a. Switching Time Test Circuit
+
+                                    VDS
+                                    90%
+
+
+
+
+                                    10%
+                                    VGS
+                                               td(on)   tr                       t d(off)   tf
+
+
+                                   Fig 18b. Switching Time Waveforms
+
+8                                                                                                                                  www.irf.com
+                                                                                             IRLR/U3110ZPbF
+D-Pak (TO-252AA) Package Outline
+
+
+
+
+D-Pak (TO-252AA) Part Marking Information
+          (;$03/( 7+,6,6$1,5)5
+                                                                                                 3$57180%(5
+                   :,7+$66(0%/<                            ,17(51$7,21$/
+                   /27&2'(                              5(&7,),(5           ,5)5        '$7(&2'(
+                   $66(0%/('21::                     /2*2                  $       <($5 
+                   ,17+($66(0%/</,1($                                                  :((.
+                                                                                                 /,1($
+          1RWH3LQDVVHPEO\OLQHSRVLWLRQ                   $66(0%/<
+                LQGLFDWHV/HDG)UHH                           /27&2'(
+
+
+
+                          25
+                                                                                   3$57180%(5
+                                                ,17(51$7,21$/
+                                                  5(&7,),(5          ,5)5       '$7(&2'(
+                                                    /2*2                           3 '(6,*1$7(6/($')5((
+                                                                                       352'8&7 237,21$/
+                                                                          
+                                                                                   <($5 
+                                                    $66(0%/<                       :((.
+                                                    /27&2'(
+                                                                                   $ $66(0%/<6,7(&2'(
+
+
+
+Note: For the most current drawing please refer to IR website at http://www.irf.com/package/
+www.irf.com                                                                                                      9
+IRLR/U3110ZPbF
+I-Pak (TO-251AA) Package Outline
+
+
+
+
+I-Pak (TO-251AA) Part Marking Information
+                         (;$03/( 7+,6,6$1,5)8                                                    3$57180%(5
+                                                                          ,17(51$7,21$/
+                                  :,7+$66(0%/<                                                          '$7(&2'(
+                                                                            5(&7,),(5       ,5)8
+                                  /27&2'(
+                                                                              /2*2              $     <($5 
+                                  $66(0%/('21::                                           :((.
+                                  ,17+($66(0%/</,1($
+                                                                                                         /,1($
+                                                                              $66(0%/<
+                                                                              /27&2'(
+                         1RWH3LQDVVHPEO\OLQHSRVLWLRQ
+                                LQGLFDWHV/HDG)UHH
+
+
+
+
+                                            25
+                                                                                          3$57180%(5
+                                                        ,17(51$7,21$/
+                                                          5(&7,),(5             ,5)8   '$7(&2'(
+                                                            /2*2                          3 '(6,*1$7(6/($')5((
+                                                                                          352'8&7 237,21$/
+                                                                                          <($5 
+                                                               $66(0%/<
+                                                               /27&2'(                   :((.
+                                                                                          $ $66(0%/<6,7(&2'(
+
+
+
+
+Note: For the most current drawing please refer to IR website at http://www.irf.com/package/
+10                                                                                                                       www.irf.com
+                                                                                                 IRLR/U3110ZPbF
+D-Pak (TO-252AA) Tape & Reel Information
+Dimensions are shown in millimeters (inches)
+                                          TR                                             TRR     TRL
+
+
+
+                                                     16.3 ( .641 )                                          16.3 ( .641 )
+                                                     15.7 ( .619 )                                          15.7 ( .619 )
+
+
+
+                12.1 ( .476 )                                             8.1 ( .318 )
+                                               FEED DIRECTION                                          FEED DIRECTION
+                11.9 ( .469 )                                             7.9 ( .312 )
+
+                NOTES :
+                1. CONTROLLING DIMENSION : MILLIMETER.
+                2. ALL DIMENSIONS ARE SHOWN IN MILLIMETERS ( INCHES ).
+                3. OUTLINE CONFORMS TO EIA-481 & EIA-541.
+
+
+
+
+                                13 INCH
+
+
+
+
+                                                                                         16 mm
+                 NOTES :
+                 1. OUTLINE CONFORMS TO EIA-481.
+
+
+Notes:
+ Repetitive rating; pulse width limited by               Limited by TJmax , see Fig.12a, 12b, 15, 16 for typical repetitive
+  max. junction temperature. (See fig. 11).                avalanche performance.
+ Limited by TJmax, starting TJ = 25°C, L = 0.16mH      This value determined from sample failure population. 100%
+  RG = 25Ω, IAS = 38A, VGS =10V. Part not                tested to this value in production.
+   recommended for use above this value.                When mounted on 1" square PCB (FR-4 or G-10 Material).
+ Pulse width ≤ 1.0ms; duty cycle ≤ 2%.                 Rθ is measured at TJ approximately 90°C.
+ Coss eff. is a fixed capacitance that gives the same
+  charging time as Coss while VDS is rising from 0 to
+ 80% VDSS .
+
+                                                                       Data and specifications subject to change without notice.
+                                                                     This product has been designed for the Industrial market.
+                                                                       Qualification Standards can be found on IR’s Web site.
+
+
+
+
+    IR WORLD HEADQUARTERS: 233 Kansas St., El Segundo, California 90245, USA Tel: (310) 252-7105
+                                                                        TAC Fax: (310) 252-7903
+                                      Visit us at www.irf.com for sales contact information.11/09
+www.irf.com                                                                                                                 11
+IMPORTANT NOTICE
+The information given in this document shall in no    For further information on the product, technology,
+event be regarded as a guarantee of conditions or     delivery terms and conditions and prices please
+characteristics (“Beschaffenheitsgarantie”) .         contact your nearest Infineon Technologies office
+                                                      (www.infineon.com).
+With respect to any examples, hints or any typical
+values stated herein and/or any information
+regarding the application of the product, Infineon    WARNINGS
+Technologies hereby disclaims any and all             Due to technical requirements products may
+warranties and liabilities of any kind, including     contain dangerous substances. For information on
+without limitation warranties of non-infringement     the types in question please contact your nearest
+of intellectual property rights of any third party.   Infineon Technologies office.
+In addition, any information given in this document   Except as otherwise explicitly approved by Infineon
+is subject to customer’s compliance with its          Technologies in a written document signed by
+obligations stated in this document and any           authorized      representatives     of     Infineon
+applicable legal requirements, norms and              Technologies, Infineon Technologies’ products may
+standards concerning customer’s products and any      not be used in any applications where a failure of
+use of the product of Infineon Technologies in        the product or any consequences of the use thereof
+customer’s applications.                              can reasonably be expected to result in personal
+                                                      injury.
+The data contained in this document is exclusively
+intended for technically trained staff. It is the
+responsibility of customer’s technical departments
+to evaluate the suitability of the product for the
+intended application and the completeness of the
+product information given in this document with
+respect to such application.
+

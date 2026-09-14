@@ -5,8 +5,10 @@ conservative candidate screening; native DRC checks the actual glyph strokes aft
 import json
 import math
 import pcbnew
+import argparse
+p=argparse.ArgumentParser();p.add_argument("--report",default="output/verification/revision/drc-current.json");a=p.parse_args()
 b=pcbnew.LoadBoard('wpc_power_driver_cost.kicad_pcb')
-report=json.load(open('output/verification/revision/drc-current.json'))
+report=json.load(open(a.report))
 ids={i['uuid'] for v in report['violations'] if v['type'] in ('silk_overlap','silk_over_copper') for i in v['items']}
 items=list(b.Drawings());pads=[]
 for f in b.GetFootprints():

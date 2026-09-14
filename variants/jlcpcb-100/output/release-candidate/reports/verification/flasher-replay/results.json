@@ -1,0 +1,620 @@
+{
+  "passed": true,
+  "complete": true,
+  "trace_sha256": "6d1b2d6aadc50dcdce135733df3f3d02a19ff5905dad7643cbd98270ba020f08",
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999",
+  "max_step_us": 10.0,
+  "cases": [
+    {
+      "name": "sol20",
+      "channel": 20,
+      "load": {
+        "lamps": 1,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        35.068729833,
+        45.068729833
+      ],
+      "duty": 0.007567549999999557,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.85,
+        "vgs_peak": 4.48885,
+        "current_peak": 9.07195,
+        "current_avg": 0.00643607,
+        "diode_average": 1.36759e-07,
+        "power_average": 0.000200399,
+        "tj": 50.01242
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.85,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.48885,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 9.07195,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 1.36759e-07,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.01242,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "9514d794b999839bc0f0940a544423a769f16fc0d691d432ea33c431a1eb8620"
+    },
+    {
+      "name": "sol21",
+      "channel": 21,
+      "load": {
+        "lamps": 2,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        34.810680833,
+        44.810680833
+      ],
+      "duty": 0.004180799999999607,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.946,
+        "vgs_peak": 4.49038,
+        "current_peak": 15.7236,
+        "current_avg": 0.00703337,
+        "diode_average": 2.46672e-12,
+        "power_average": 0.000424149,
+        "tj": 50.0263
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.946,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.49038,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 15.7236,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 2.46672e-12,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.0263,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "672778e3f9b4f0668535f943f940914695624f1f9846e568575abb250fc92007"
+    },
+    {
+      "name": "sol22",
+      "channel": 22,
+      "load": {
+        "lamps": 2,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        35.002009333,
+        45.002009333
+      ],
+      "duty": 0.007528799999999336,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.946,
+        "vgs_peak": 4.49038,
+        "current_peak": 15.7236,
+        "current_avg": 0.0128277,
+        "diode_average": 5.87479e-07,
+        "power_average": 0.000798489,
+        "tj": 50.04951
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.946,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.49038,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 15.7236,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 5.87479e-07,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.04951,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "bf810283600a84a2b580d9d3986404d632c81fe8a8ebde02f01ca605d1461f8d"
+    },
+    {
+      "name": "sol23",
+      "channel": 23,
+      "load": {
+        "lamps": 4,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        34.868887333,
+        44.868887333
+      ],
+      "duty": 0.006805100000000408,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 31.0992,
+        "vgs_peak": 4.48135,
+        "current_peak": 26.7295,
+        "current_avg": 0.0235509,
+        "diode_average": 2.47626e-06,
+        "power_average": 0.00301622,
+        "tj": 50.18701
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 31.0992,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.48135,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 26.7295,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 2.47626e-06,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.18701,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "d00791df34b96a33f98645bc210e94213168d45e790154253d8269ded18c928b"
+    },
+    {
+      "name": "sol24",
+      "channel": 24,
+      "load": {
+        "lamps": 1,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        44.533216333,
+        54.533216333
+      ],
+      "duty": 0.14219335000000086,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.8513,
+        "vgs_peak": 4.49222,
+        "current_peak": 9.07805,
+        "current_avg": 0.125124,
+        "diode_average": 6.57342e-06,
+        "power_average": 0.00421357,
+        "tj": 50.26124
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.8513,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.49222,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 9.07805,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 6.57342e-06,
+          "min": 0,
+          "max": 1,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.26124,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "6ecf34885a8869351f14c5b47d28f9c61a49de4a7e35b37d775a6084b4fa2a9e"
+    },
+    {
+      "name": "sol25",
+      "channel": 25,
+      "load": {
+        "lamps": 2,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        34.926231333,
+        44.926231333
+      ],
+      "duty": 0.007660149999999533,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.8669,
+        "vgs_peak": 4.48784,
+        "current_peak": 15.7186,
+        "current_avg": 0.0130231,
+        "diode_average": 5.9048e-07,
+        "power_average": 0.000806723,
+        "tj": 50.05002
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.8669,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.48784,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 15.7186,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 5.9048e-07,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.05002,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3189b17dce73507e9f34fac2cd67da0aee625525c7be10c32bace905ea1a2f19"
+    },
+    {
+      "name": "sol26",
+      "channel": 26,
+      "load": {
+        "lamps": 3,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        34.935609333,
+        44.935609333
+      ],
+      "duty": 0.007550150000000144,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9113,
+        "vgs_peak": 4.4834,
+        "current_peak": 21.508,
+        "current_avg": 0.019308,
+        "diode_average": 1.38296e-06,
+        "power_average": 0.00179998,
+        "tj": 50.1116
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9113,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.4834,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 21.508,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 1.38296e-06,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.1116,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "fab9fa9666889ad5b18ff0964e52d6e266b730390694afd70865250be2eba9bc"
+    },
+    {
+      "name": "sol27",
+      "channel": 27,
+      "load": {
+        "lamps": 3,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        34.859832333,
+        44.859832333
+      ],
+      "duty": 0.0074470999999995515,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9113,
+        "vgs_peak": 4.4834,
+        "current_peak": 21.508,
+        "current_avg": 0.019078,
+        "diode_average": 1.38319e-06,
+        "power_average": 0.00178544,
+        "tj": 50.1107
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9113,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.4834,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 21.508,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 1.38319e-06,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.1107,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "876796e7ca22f18d1fe11d196c87f8f03a03c0b364a3197f26166650679033d1"
+    },
+    {
+      "name": "sol28",
+      "channel": 28,
+      "load": {
+        "lamps": 3,
+        "hot_ohm": 18,
+        "cold_ohm": 1.8,
+        "thermal_tau_s": 0.008,
+        "wire_uH": 100
+      },
+      "window_s": [
+        35.052345333,
+        45.052345333
+      ],
+      "duty": 0.0078114499999998085,
+      "measurements": {
+        "sim_end": 10.23,
+        "vds_peak": 30.9113,
+        "vgs_peak": 4.4834,
+        "current_peak": 21.508,
+        "current_avg": 0.0198912,
+        "diode_average": 1.38293e-06,
+        "power_average": 0.00183685,
+        "tj": 50.11388
+      },
+      "checks": {
+        "sim_end": {
+          "value": 10.23,
+          "min": 10.229999900000003,
+          "max": 10.230000100000002,
+          "passed": true
+        },
+        "vds_peak": {
+          "value": 30.9113,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        },
+        "vgs_peak": {
+          "value": 4.4834,
+          "min": 0,
+          "max": 15,
+          "passed": true
+        },
+        "current_peak": {
+          "value": 21.508,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "diode_average": {
+          "value": 1.38293e-06,
+          "min": 0,
+          "max": 3,
+          "passed": true
+        },
+        "tj": {
+          "value": 50.11388,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "2805ce4a77865c480b3c2562ac8409543d85b6d7bfd45c16fedc3960f0d86209"
+    }
+  ],
+  "limitations": [
+    "Worst 10 s commanded duty; latch output enabled, separate logic/blanking checks",
+    "Flashers: actual bulb counts from Williams printed 2-44, both #89 and #906 approximated by the same lower-resistance thermal envelope; not measured filament data",
+    "Flashers require proposed SOL21..28 cathode connection to +20 V on the PCB; original open-tieback board is not represented",
+    "Motors: manual 3-22 EMI series diode and two chokes included; 4.7 uH and 4.7 mH cover ambiguous drawing units, 10 mH motor and 8/16 ohm 0/8 V back EMF are sensitivities, not measured A-17562 values",
+    "8 ohm simultaneous stalled motors can exceed the shared 3 A rail fuse; passing device stress does not imply indefinite stall operation or prove fuse clearing",
+    "TI logic and MOSFET/M7 are approximate device fits; no avalanche/SOA/fuse-clearing or physical thermal claim"
+  ]
+}

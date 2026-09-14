@@ -1,0 +1,348 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/matrix_minbreak1p_trap_0.5us.cir",
+  "deck_sha256": "a80eab92bd38b238233bec833f94515e8f410f635c9830b410f924aa20558063",
+  "elapsed_s": 461.7584741410001,
+  "wall_limit_s": 900.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.37,
+    "col0_peak": 20.1362,
+    "row0_peak": 2.91286,
+    "row0_clear": 4.99995,
+    "col0_power": 0.217481,
+    "row0_power": 0.0450734,
+    "col0_tj": 73.92291,
+    "row0_tj": 54.9580762,
+    "col1_peak": 20.1866,
+    "row1_peak": 2.91286,
+    "row1_clear": 4.99995,
+    "col1_power": 0.217551,
+    "row1_power": 0.0450734,
+    "col1_tj": 73.930599,
+    "row1_tj": 54.9580762,
+    "col2_peak": 20.1866,
+    "row2_peak": 2.91286,
+    "row2_clear": 4.99995,
+    "col2_power": 0.217572,
+    "row2_power": 0.0450734,
+    "col2_tj": 73.932942,
+    "row2_tj": 54.9580762,
+    "col3_peak": 8.37182,
+    "row3_peak": 2.91286,
+    "row3_clear": 4.99995,
+    "col3_power": 0.218259,
+    "row3_power": 0.0450734,
+    "col3_tj": 74.008457,
+    "row3_tj": 54.9580762,
+    "col4_peak": 20.2305,
+    "row4_peak": 2.91286,
+    "row4_clear": 4.99995,
+    "col4_power": 0.232098,
+    "row4_power": 0.0450734,
+    "col4_tj": 75.530802,
+    "row4_tj": 54.9580762,
+    "col5_peak": 20.1866,
+    "row5_peak": 2.91286,
+    "row5_clear": 4.99995,
+    "col5_power": 0.231454,
+    "row5_power": 0.0450734,
+    "col5_tj": 75.459973,
+    "row5_tj": 54.9580762,
+    "col6_peak": 18.0868,
+    "row6_peak": 3.69029,
+    "row6_clear": 4.99995,
+    "col6_power": 0.167458,
+    "row6_power": 0.0395602,
+    "col6_tj": 68.420347,
+    "row6_tj": 54.3516264,
+    "col7_peak": 15.6373,
+    "row7_peak": 3.93909,
+    "row7_clear": 4.99995,
+    "col7_power": 0.165652,
+    "row7_power": 0.0396389,
+    "col7_tj": 68.221709,
+    "row7_tj": 54.3602757
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "sim_end": {
+      "value": 0.37,
+      "min": 0.36999990000000144,
+      "max": 0.37000010000000144,
+      "passed": true
+    },
+    "col0_peak": {
+      "value": 20.1362,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row0_peak": {
+      "value": 2.91286,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row0_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col0_tj": {
+      "value": 73.92291,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row0_tj": {
+      "value": 54.9580762,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col1_peak": {
+      "value": 20.1866,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row1_peak": {
+      "value": 2.91286,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row1_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col1_tj": {
+      "value": 73.930599,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row1_tj": {
+      "value": 54.9580762,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col2_peak": {
+      "value": 20.1866,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row2_peak": {
+      "value": 2.91286,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row2_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col2_tj": {
+      "value": 73.932942,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row2_tj": {
+      "value": 54.9580762,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col3_peak": {
+      "value": 8.37182,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row3_peak": {
+      "value": 2.91286,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row3_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col3_tj": {
+      "value": 74.008457,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row3_tj": {
+      "value": 54.9580762,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col4_peak": {
+      "value": 20.2305,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row4_peak": {
+      "value": 2.91286,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row4_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col4_tj": {
+      "value": 75.530802,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row4_tj": {
+      "value": 54.9580762,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col5_peak": {
+      "value": 20.1866,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row5_peak": {
+      "value": 2.91286,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row5_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col5_tj": {
+      "value": 75.459973,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row5_tj": {
+      "value": 54.9580762,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col6_peak": {
+      "value": 18.0868,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row6_peak": {
+      "value": 3.69029,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row6_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col6_tj": {
+      "value": 68.420347,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row6_tj": {
+      "value": 54.3516264,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "col7_peak": {
+      "value": 15.6373,
+      "min": 0,
+      "max": 31,
+      "passed": true
+    },
+    "row7_peak": {
+      "value": 3.93909,
+      "min": 0,
+      "max": 8,
+      "passed": true
+    },
+    "row7_clear": {
+      "value": 4.99995,
+      "min": 2.4,
+      "max": 5.1,
+      "passed": true
+    },
+    "col7_tj": {
+      "value": 68.221709,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    },
+    "row7_tj": {
+      "value": 54.3602757,
+      "min": 0,
+      "max": 125,
+      "passed": true
+    }
+  },
+  "passed": true,
+  "kind": "matrix",
+  "pcb_changed": false,
+  "candidate_only": false,
+  "changes": [
+    "Solver options/maxstep only; identical circuit and ROM PWL points"
+  ],
+  "arguments": {
+    "kind": "matrix",
+    "name": "matrix_minbreak1p_trap_0.5us",
+    "wall_seconds": 900.0,
+    "step_us": 0.5,
+    "options": "method=trap reltol=.002 klu itl4=500 minbreak=1p",
+    "rail": "12v",
+    "bypass": "output",
+    "stop_ms": null,
+    "lamp_form": "current",
+    "gate_series_collapse": false,
+    "raw_reservoir_uf": null,
+    "compensation_nf": null
+  },
+  "required_end_s": 0.37,
+  "base_deck_sha256": "3cc9da17c9a810c52f301fc57da596eb91321ed1adbf1101ebd786bdf0f8ab6f",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

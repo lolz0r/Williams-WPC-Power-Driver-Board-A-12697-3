@@ -1,0 +1,739 @@
+MBR20H100CTG,
+MBRB20H100CTG,
+MBRF20H100CTG,
+NRVBB20H100CTT4G
+
+Switch-mode
+Power Rectifier                                                                      www.onsemi.com
+
+100 V, 20 A                                                                SCHOTTKY BARRIER
+                                                                               RECTIFIER
+Features and Benefits                                                    20 AMPERES, 100 VOLTS
+• Low Forward Voltage: 0.64 V @ 125°C
+• Low Power Loss/High Efficiency                                                      1
+• High Surge Capacity                                                                                         2, 4
+• 175°C Operating Junction Temperature                                                3
+• 20 A Total (10 A Per Diode Leg)
+• Guard−Ring for Stress Protection                                                    4
+
+• NRVBB Prefix for Automotive and Other Applications Requiring
+  Unique Site and Control Change Requirements; AEC−Q101
+  Qualified and PPAP Capable
+• These Devices are Pb−Free and are RoHS Compliant
+Applications
+• Power Supply − Output Rectification                                    1
+                                                                             2
+                                                                                                              1
+                                                                                                                  2
+• Power Management                                                               3                                    3
+
+• Instrumentation                                                         TO−220                      TO−220 FULLPAKt
+                                                                         CASE 221A                       CASE 221D
+Mechanical Characteristics:                                               STYLE 6                         STYLE 3
+
+• Case: Epoxy, Molded
+• Epoxy Meets UL 94 V−0 @ 0.125 in                                                                        4
+• Weight (Approximately):                                                              1
+  1.9 Grams (TO−220)                                                                       2
+  1.7 Grams (D2PAK)                                                                            3
+• Finish: All External Surfaces Corrosion Resistant and Terminal                            D2PAK 3
+  Leads are Readily Solderable                                                             CASE 418B
+• Lead Temperature for Soldering Purposes:                                                  STYLE 3
+  260°C Max. for 10 Seconds
+                                                                         DEVICE MARKING INFORMATION
+                                                                   See general marking information in the device marking
+                                                                   section on page 2 of this data sheet.
+
+
+
+                                                                                 ORDERING INFORMATION
+                                                                   See detailed ordering and shipping information in the package
+                                                                   dimensions section on page 3 of this data sheet.
+
+
+
+
+© Semiconductor Components Industries, LLC, 2015           1                                       Publication Order Number:
+January, 2015 − Rev. 12                                                                                     MBR20H100CT/D
+        MBR20H100CTG, MBRB20H100CTG, MBRF20H100CTG, NRVBB20H100CTT4G
+
+
+
+                                                                                                       AYWW
+                                                                 AYWW                                 B20H100G
+                                AYWW                            B20H100G                                AKA
+                               B20H100G                           AKA
+                                 AKA
+
+
+
+
+                                TO−220                      TO−220 FULLPAK                             D2PAK 3
+
+                                                      A       = Assembly Location
+                                                      Y       = Year
+                                                      WW      = Work Week
+                                                      B20H100 = Device Code
+                                                      G       = Pb−Free Device
+                                                      AKA     = Polarity Designator
+
+                                                      Figure 1. Marking Diagrams
+
+
+
+MAXIMUM RATINGS (Per Diode Leg)
+                                         Rating                                               Symbol             Value            Unit
+ Peak Repetitive Reverse Voltage                                                               VRRM               100              V
+ Working Peak Reverse Voltage                                                                  VRWM
+ DC Blocking Voltage‘                                                                           VR
+ Average Rectified Forward Current                                                             IF(AV)                              A
+   (Rated VR) TC = 162°C                                                                                          10
+
+ Peak Repetitive Forward Current                                                               IFRM                                A
+   (Rated VR, Square Wave, 20 kHz) TC = 160°C                                                                     20
+
+ Nonrepetitive Peak Surge Current                                                              IFSM                                A
+   (Surge applied at rated load conditions halfwave, single phase, 60 Hz)                                         250
+
+ Operating Junction Temperature (Note 1)                                                         TJ              +175              °C
+ Storage Temperature                                                                            Tstg         *65 to +175           °C
+ Voltage Rate of Change (Rated VR)                                                             dv/dt             10,000           V/ms
+ Controlled Avalanche Energy (see test conditions in Figures 11 and 12)                       WAVAL               200             mJ
+ ESD Ratings:                                                                                                                      V
+   Machine Model = C                                                                                             > 400
+   Human Body Model = 3B                                                                                         > 8000
+
+Stresses exceeding those listed in the Maximum Ratings table may damage the device. If any of these limits are exceeded, device functionality
+should not be assumed, damage may occur and reliability may be affected.
+1. The heat generated must be less than the thermal conductivity from Junction−to−Ambient: dPD/dTJ < 1/RqJA.
+
+
+THERMAL CHARACTERISTICS
+                                     Characteristic                                           Symbol             Value            Unit
+ Maximum Thermal Resistance                                                                                                      °C/W
+  (MBR20H100CTG, MBRB20H100CTG and NRVBB20H100CTT4G)
+     Junction−to−Case                                                                          RqJC               2.0
+     Junction−to−Ambient                                                                       RqJA               60
+  (MBRF20H100CTG)
+     Junction−to−Case                                                                          RqJC               2.5
+Product parametric performance is indicated in the Electrical Characteristics for the listed test conditions, unless otherwise noted. Product
+performance may not be indicated by the Electrical Characteristics if operated under different conditions.
+
+
+
+
+                                                           www.onsemi.com
+                                                                     2
+        MBR20H100CTG, MBRB20H100CTG, MBRF20H100CTG, NRVBB20H100CTT4G
+
+ELECTRICAL CHARACTERISTICS (Per Diode Leg)
+                                     Characteristic                                           Symbol            Value             Unit
+ Maximum Instantaneous Forward Voltage (Note 2)                                                  vF                                V
+  (IF = 10 A, TC = 25°C)                                                                                         0.77
+  (IF = 10 A, TC = 125°C)                                                                                        0.64
+  (IF = 20 A, TC = 25°C)                                                                                         0.88
+  (IF = 20 A, TC = 125°C)                                                                                        0.73
+ Maximum Instantaneous Reverse Current (Note 2)                                                  iR                               mA
+  (Rated DC Voltage, TC = 125°C)                                                                                 6.0
+  (Rated DC Voltage, TC = 25°C)                                                                                0.0045
+Product parametric performance is indicated in the Electrical Characteristics for the listed test conditions, unless otherwise noted. Product
+performance may not be indicated by the Electrical Characteristics if operated under different conditions.
+2. Pulse Test: Pulse Width = 300 ms, Duty Cycle ≤ 2.0%.
+
+
+ ORDERING INFORMATION
+           Device Order Number                                   Package                                        Shipping†
+ MBR20H100CTG                                                     TO−220                                      50 Units / Rail
+                                                                 (Pb−Free)
+
+ MBRF20H100CTG                                                   TO−220FP                                     50 Units / Rail
+                                                                 (Pb−Free)
+
+ MBRB20H100CTT4G                                                  D2PAK 3                                   800 / Tape & Reel
+                                                                 (Pb−Free)
+
+ NRVBB20H100CTT4G*                                                D2PAK 3                                   800 / Tape & Reel
+                                                                 (Pb−Free)
+†For information on tape and reel specifications, including part orientation and tape sizes, please refer to our Tape and Reel Packaging
+ Specification Brochure, BRD8011/D.
+*NRVBB Prefix for Automotive and Other Applications Requiring Unique Site and Control Change Requirements; AEC−Q101 Qualified and
+ PPAP Capable.
+
+
+
+
+                                                           www.onsemi.com
+                                                                     3
+                                                   MBR20H100CTG, MBRB20H100CTG, MBRF20H100CTG, NRVBB20H100CTT4G
+
+
+
+
+  IF, INSTANTANEOUS FORWARD CURRENT (AMPS)                                                                                             IF, INSTANTANEOUS FORWARD CURRENT (AMPS)
+                                             100                                                                                                                                  100
+
+
+
+                                                                        TJ = 150°C                                                                                                                           TJ = 150°C
+                                             10                                                                                                                                   10
+                                                            TJ = 125°C                                                                                                                          TJ = 125°C
+
+
+                                                                                 TJ = 25°C                                                                                                                              TJ = 25°C
+                                              1                                                                                                                                    1
+
+
+
+
+                                             0.1                                                                                                                                  0.1
+                                                   0       0.2          0.4      0.6         0.8         1.0      1.2                                                                   0       0.2        0.4         0.6         0.8        1.0   1.2
+                                                       VF, INSTANTANEOUS FORWARD VOLTAGE (VOLTS)                                                                                            VF, INSTANTANEOUS FORWARD VOLTAGE (VOLTS)
+
+
+                                                            Figure 1. Typical Forward Voltage                                                                                                   Figure 2. Maximum Forward Voltage
+
+
+
+
+                                                                                                                        IR, MAXIMUM REVERSE CURRENT (AMPS)
+                           1.0E−01                                                                                                    1.0E−01
+                                                                                                                                                                                                                  TJ = 150°C
+
+
+
+
+IR, REVERSE CURRENT (AMPS)
+                           1.0E−02                                                                                                    1.0E−02
+                                                                                 TJ = 150°C
+                           1.0E−03                                                                                                    1.0E−03                                                                         TJ = 125°C
+                                                                                 TJ = 125°C
+                           1.0E−04                                                                                                    1.0E−04
+
+                           1.0E−05                                                                                                    1.0E−05
+                                                                                                                                                                                                                      TJ = 25°C
+                           1.0E−06                                                   TJ = 25°C                                        1.0E−06
+
+                           1.0E−07                                                                                                    1.0E−07
+
+                           1.0E−08                                                                                                    1.0E−08
+                                  0                               20            40          60            80        100                      0                                                        20         40           60              80    100
+                                                                   VR, REVERSE VOLTAGE (VOLTS)                                                                                                        VR, REVERSE VOLTAGE (VOLTS)
+
+                                                                 Figure 3. Typical Reverse Current                                                                                               Figure 4. Maximum Reverse Current
+
+
+
+
+   IF, AVERAGE FORWARD CURRENT (AMPS)
+                                             20                                                                                                                                    16
+
+
+
+
+                                                                                                                        PFO, AVERAGE POWER DISSIPATION
+                                                                                dc                                                                                                 14
+
+                                             15                                                                                                                                    12
+                                                                                                                                                                                                                 SQUARE                  DC
+                                                                        SQUARE WAVE                                                                                                10
+
+                                             10                                                                                                                                     8
+
+
+
+
+                                                                                                                                    (WATTS)
+                                                                                                                                                                                    6
+
+                                              5                                                                                                                                     4
+
+                                                                                                                                                                                    2
+
+                                               0                                                                                                                                    0
+                                               100        110     120     130    140       150     160    170     180                                                                   0             5          10           15              20    25
+                                                                  TC, CASE TEMPERATURE (°C)                                                                                                    IO, AVERAGE FORWARD CURRENT (AMPS)
+
+                                                                  Figure 5. Current Derating                                                                                                    Figure 6. Forward Power Dissipation
+
+
+                                                                                                               www.onsemi.com
+                                                                                                                        4
+                                        MBR20H100CTG, MBRB20H100CTG, MBRF20H100CTG, NRVBB20H100CTT4G
+
+                                                                                      10000
+                                                                                                                                      TJ = 25°C
+
+
+
+
+                                                                C, CAPACITANCE (pF)
+                                                                                       1000
+
+
+
+
+                                                                                        100
+
+
+
+
+                                                                                        10
+                                                                                              0    20         40           60         80          100
+                                                                                                    VR, REVERSE VOLTAGE (VOLTS)
+
+                                                                                                          Figure 7. Capacitance
+
+
+
+                                     100
+
+
+
+
+R(t), TRANSIENT THERMAL RESISTANCE
+                                            D = 0.5
+
+                                      10
+                                             0.2
+                                             0.1
+
+                                       1    0.05
+
+
+                                            0.01                                                                                                             P(pk)
+
+                                      0.1                                                                                                                              t1
+                                                                                                                                                                            t2
+                                                       SINGLE PULSE                                                                                           DUTY CYCLE, D = t1/t2
+                                     0.01
+                                      0.000001        0.00001                          0.0001     0.001         0.01            0.1          1          10            100             1000
+                                                                                                               t1, TIME (sec)
+                                                   Figure 8. Thermal Response Junction−to−Ambient for MBR20H100CT, MBRB20H100CT
+                                                                                and NRVBB20H100CTT4G
+
+
+
+
+R(t), TRANSIENT THERMAL RESISTANCE
+                                      10
+
+
+
+                                            D = 0.5
+                                       1
+
+                                            0.2
+                                             0.1
+                                            0.05                                                                                                             P(pk)
+                                      0.1
+                                            0.01                                                                                                                       t1
+                                                                                                                                                                            t2
+                                                                                                                                                              DUTY CYCLE, D = t1/t2
+                                                 SINGLE PULSE
+                                     0.01
+                                      0.000001        0.00001                          0.0001     0.001         0.01            0.1          1          10            100             1000
+                                                                                                               t1, TIME (sec)
+                                                      Figure 9. Thermal Response Junction−to−Case for MBR20H100CT, MBRB20H100CT
+                                                                                 and NRVBB20H100CTT4G
+
+
+
+
+                                                                                                            www.onsemi.com
+                                                                                                                       5
+                                         MBR20H100CTG, MBRB20H100CTG, MBRF20H100CTG, NRVBB20H100CTT4G
+
+                                       10
+
+
+
+
+R(t), TRANSIENT THERMAL RESISTANCE
+                                             D = 0.5
+                                        1
+                                             0.2
+                                              0.1
+                                             0.05
+                                       0.1
+                                             0.01
+                                                                                                                                                 P(pk)
+
+                                      0.01                                                                                                                      t1
+                                             SINGLE PULSE                                                                                                            t2
+                                                                                                                                                  DUTY CYCLE, D = t1/t2
+                                     0.001
+                                       0.000001         0.00001         0.0001        0.001       0.01            0.1          1            10              100                      1000
+                                                                                                 t1, TIME (sec)
+                                                                  Figure 10. Thermal Response Junction−to−Case for MBRF20H100CT
+
+
+
+                                                                         +VDD
+
+
+                                                                   IL    10 mH COIL
+
+                                                                                          VD                                                             BVDUT
+
+                                              MERCURY                      ID
+                                               SWITCH
+
+                                                                                                                                   IL                      ID
+                                                                         DUT
+                                                       S1
+                                                                                                                                                                               VDD
+
+                                                                                                                    t0                           t1                       t2         t
+
+
+
+                                                            Figure 11. Test Circuit                                      Figure 12. Current−Voltage Waveforms
+
+   The unclamped inductive switching circuit shown in                                                        elements are small Equation (1) approximates the total
+Figure 11 was used to demonstrate the controlled avalanche                                                   energy transferred to the diode. It can be seen from this
+capability of this device. A mercury switch was used instead                                                 equation that if the VDD voltage is low compared to the
+of an electronic switch to simulate a noisy environment                                                      breakdown voltage of the device, the amount of energy
+when the switch was being opened.                                                                            contributed by the supply during breakdown is small and the
+   When S1 is closed at t0 the current in the inductor IL ramps                                              total energy can be assumed to be nearly equal to the energy
+up linearly; and energy is stored in the coil. At t1 the switch                                              stored in the coil during the time when S1 was closed,
+is opened and the voltage across the diode under test begins                                                 Equation (2).
+to rise rapidly, due to di/dt effects, when this induced voltage
+reaches the breakdown voltage of the diode, it is clamped at                                                        EQUATION (1):
+
+                                                                                                                                        ǒ                  Ǔ
+BVDUT and the diode begins to conduct the full load current                                                                            BV
+                                                                                                                                2        DUT
+which now starts to decay linearly through the diode, and                                                          W     [ 1 LI LPK
+goes to zero at t2.
+                                                                                                                    AVAL   2        BV    °V
+                                                                                                                                      DUT DD
+   By solving the loop equation at the point in time when S1
+is opened; and calculating the energy that is transferred to
+the diode it can be shown that the total energy transferred is                                                      EQUATION (2):
+equal to the energy stored in the inductor plus a finite amount
+                                                                                                                                2
+of energy from the VDD power supply while the diode is in                                                          W     [ 1 LI LPK
+                                                                                                                    AVAL   2
+breakdown (from t1 to t2) minus any losses due to finite
+component resistances. Assuming the component resistive
+
+FULLPAK is a trademark of Semiconductor Components Industries, LLC.
+
+                                                                                               www.onsemi.com
+                                                                                                         6
+MECHANICAL CASE OUTLINE
+PACKAGE DIMENSIONS
+
+
+                                                                                      TO−220
+                                                                                     CASE 221A
+                                                                                     ISSUE AK
+                                                                                                                                                                 DATE 13 JAN 2022
+
+
+
+
+SCALE 1:1
+
+
+
+
+                              STYLE 1:                             STYLE 2:                         STYLE 3:                        STYLE 4:
+                                PIN 1.   BASE                        PIN 1.   BASE                    PIN 1.   CATHODE                PIN 1.   MAIN TERMINAL 1
+                                    2.   COLLECTOR                       2.   EMITTER                     2.   ANODE                      2.   MAIN TERMINAL 2
+                                    3.   EMITTER                         3.   COLLECTOR                   3.   GATE                       3.   GATE
+                                    4.   COLLECTOR                       4.   EMITTER                     4.   ANODE                      4.   MAIN TERMINAL 2
+
+                              STYLE 5:                             STYLE 6:                         STYLE 7:                        STYLE 8:
+                                PIN 1.   GATE                        PIN 1.   ANODE                   PIN 1.   CATHODE                PIN 1.   CATHODE
+                                    2.   DRAIN                           2.   CATHODE                     2.   ANODE                      2.   ANODE
+                                    3.   SOURCE                          3.   ANODE                       3.   CATHODE                    3.   EXTERNAL TRIP/DELAY
+                                    4.   DRAIN                           4.   CATHODE                     4.   ANODE                      4.   ANODE
+
+                              STYLE 9:                             STYLE 10:                        STYLE 11:                       STYLE 12:
+                                PIN 1.   GATE                        PIN 1. GATE                      PIN 1. DRAIN                    PIN 1. MAIN TERMINAL 1
+                                    2.   COLLECTOR                       2. SOURCE                        2. SOURCE                       2. MAIN TERMINAL 2
+                                    3.   EMITTER                         3. DRAIN                         3. GATE                         3. GATE
+                                    4.   COLLECTOR                       4. SOURCE                        4. SOURCE                       4. NOT CONNECTED
+
+
+
+
+                                                                                         Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+ DOCUMENT NUMBER:                          98ASB42148B                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+             DESCRIPTION:                  TO−220                                                                                                                      PAGE 1 OF 1
+
+ onsemi and               are trademarks of Semiconductor Components Industries, LLC dba onsemi or its subsidiaries in the United States and/or other countries. onsemi reserves
+ the right to make changes without further notice to any products herein. onsemi makes no warranty, representation or guarantee regarding the suitability of its products for any particular
+ purpose, nor does onsemi assume any liability arising out of the application or use of any product or circuit, and specifically disclaims any and all liability, including without limitation
+ special, consequential or incidental damages. onsemi does not convey any license under its patent rights nor the rights of others.
+
+
+
+© Semiconductor Components Industries, LLC, 2019                                                                                                                       www.onsemi.com
+MECHANICAL CASE OUTLINE
+PACKAGE DIMENSIONS
+
+
+                                                                               TO−220 FULLPAK
+                                                                                CASE 221D−03
+                                                                                   ISSUE K
+                                                                                                                                                                DATE 27 FEB 2009
+
+                                                                                                                              NOTES:
+                                                                                             −T− SEATING
+                                                                                                 PLANE                         1. DIMENSIONING AND TOLERANCING PER ANSI
+                                                                                                                                  Y14.5M, 1982.
+                                              −B−                                        C                                     2. CONTROLLING DIMENSION: INCH
+                                  F                                                                                            3. 221D-01 THRU 221D-02 OBSOLETE, NEW
+                                                                                                   S                              STANDARD 221D-03.
+
+                                      Q                                            U                                                          INCHES       MILLIMETERS
+  SCALE 1:1                                                                                                                         DIM    MIN     MAX      MIN     MAX
+                                A                                                                                                    A    0.617    0.635   15.67    16.12
+                                                                                                                                     B    0.392    0.419    9.96    10.63
+                                              1 2 3                                                                                  C    0.177    0.193    4.50     4.90
+                                                                                                                                     D    0.024    0.039    0.60     1.00
+                                       H                                                                                             F    0.116    0.129    2.95     3.28
+                                K                            −Y−                                                                     G      0.100 BSC         2.54 BSC
+                                                                                                                                     H    0.118    0.135    3.00     3.43
+                                                                                                                                     J    0.018    0.025    0.45     0.63
+                                                                                                                                     K    0.503    0.541   12.78    13.73
+                                                           G                                   J                                     L    0.048    0.058    1.23     1.47
+                                                                                                                                     N      0.200 BSC         5.08 BSC
+                                                           N                                       R                                 Q    0.122    0.138    3.10     3.50
+                                                           L                                                                         R    0.099    0.117    2.51     2.96
+                                                                                                                                     S    0.092    0.113    2.34     2.87
+                                                      D 3 PL                                                                         U    0.239    0.271    6.06     6.88
+
+                                                       0.25 (0.010) M B        M    Y
+                                                                                                                                  MARKING
+                                                                                                                                  DIAGRAMS
+
+ STYLE 1:              STYLE 2:                    STYLE 3:
+   PIN 1. GATE           PIN 1. BASE                 PIN 1. ANODE
+       2. DRAIN              2. COLLECTOR                2. CATHODE
+       3. SOURCE             3. EMITTER                  3. ANODE
+
+ STYLE 4:                STYLE 5:                 STYLE 6:                                                  xxxxxxG                                             AYWW
+   PIN 1. CATHODE          PIN 1. CATHODE           PIN 1. MT 1
+                                                                                                             AYWW                                              xxxxxxG
+                               2. ANODE                 2. MT 2
+       2. ANODE
+       3. CATHODE              3. GATE                  3. GATE                                                                                                  AKA
+
+
+
+
+                                                                                                             Bipolar                                           Rectifier
+
+                                                                                             xxxxxx      = Specific Device Code                  A             = Assembly Location
+                                                                                             G           = Pb−Free Package                       Y             = Year
+                                                                                             A           = Assembly Location                     WW            = Work Week
+                                                                                             Y           = Year                                  xxxxxx        = Device Code
+                                                                                             WW          = Work Week                             G             = Pb−Free Package
+                                                                                                                                                 AKA           = Polarity Designator
+
+
+
+
+                                                                                         Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+ DOCUMENT NUMBER:                          98ASB42514B                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+             DESCRIPTION:                  TO−220 FULLPAK                                                                                                             PAGE 1 OF 1
+
+ ON Semiconductor and              are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries.
+ ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding
+ the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically
+ disclaims any and all liability, including without limitation special, consequential or incidental damages. ON Semiconductor does not convey any license under its patent rights nor the
+ rights of others.
+
+
+© Semiconductor Components Industries, LLC, 2019                                                                                                                      www.onsemi.com
+MECHANICAL CASE OUTLINE
+PACKAGE DIMENSIONS
+
+
+                                                                                    D2PAK 3
+                                                                                  CASE 418B−04
+                                                                                    ISSUE L
+                                                                                                                                                                 DATE 17 FEB 2015
+
+   SCALE 1:1                                                                                                                      NOTES:
+                                                                           C                                                       1. DIMENSIONING AND TOLERANCING
+                                                                                                                                      PER ANSI Y14.5M, 1982.
+                                                                                       E                                           2. CONTROLLING DIMENSION: INCH.
+                                                                                                                                   3. 418B−01 THRU 418B−03 OBSOLETE,
+                                                                                           V
+                      −B−                                                                                                             NEW STANDARD 418B−04.
+                                                                                            W
+                          4                                                                                                                       INCHES         MILLIMETERS
+                                                                                                                                        DIM    MIN     MAX        MIN    MAX
+                                                                                                                                         A    0.340 0.380         8.64    9.65
+                                                                                                                                         B    0.380 0.405         9.65 10.29
+                                                                                   A                                                     C    0.160 0.190         4.06    4.83
+                                          S                                                                                              D    0.020 0.035         0.51    0.89
+                  1       2   3                                                                                                          E    0.045 0.055         1.14    1.40
+                                                                                                                                         F    0.310 0.350         7.87    8.89
+                                                                                                                                         G      0.100 BSC          2.54 BSC
+     −T−                                                                                                                                 H    0.080   0.110       2.03    2.79
+                                                                  K                                                                      J    0.018 0.025         0.46    0.64
+    SEATING                                                                                W                                             K    0.090   0.110       2.29    2.79
+    PLANE
+                      G                                                                J                                                 L    0.052 0.072         1.32    1.83
+                                                                                                                                         M    0.280 0.320         7.11    8.13
+                                                                             H                                                           N      0.197 REF          5.00 REF
+                                    D 3 PL                                                                                               P      0.079 REF          2.00 REF
+                                                                                                                                         R      0.039 REF          0.99 REF
+                                     0.13 (0.005) M T B M                                                                                S    0.575 0.625        14.60 15.88
+                                                                                                                                         V    0.045 0.055         1.14    1.40
+
+
+                                     VARIABLE
+                                     CONFIGURATION
+                                     ZONE                                                                  N                                             P
+                                                                                   R                                          U
+                                                                      L                                          L                                           L
+
+                                      M                                           M                                          M
+
+
+
+
+                                                     F                                            F                                           F
+
+                                              VIEW W−W                                     VIEW W−W                                  VIEW W−W
+                                                  1                                            2                                         3
+
+
+
+                      STYLE 1:                 STYLE 2:               STYLE 3:               STYLE 4:                  STYLE 5:        STYLE 6:
+                       PIN 1. BASE              PIN 1. GATE            PIN 1. ANODE           PIN 1. GATE               PIN 1. CATHODE  PIN 1. NO CONNECT
+                           2. COLLECTOR             2. DRAIN               2. CATHODE             2. COLLECTOR              2. ANODE        2. CATHODE
+                           3. EMITTER               3. SOURCE              3. ANODE               3. EMITTER                3. CATHODE      3. ANODE
+                           4. COLLECTOR             4. DRAIN               4. CATHODE             4. COLLECTOR              4. ANODE        4. CATHODE
+
+
+
+
+                                           MARKING INFORMATION AND FOOTPRINT ON PAGE 2
+
+
+
+
+                                                                                        Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+DOCUMENT NUMBER:                          98ASB42761B                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+            DESCRIPTION:                   D2PAK 3                                                                                                                   PAGE 1 OF 2
+
+ ON Semiconductor and              are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries.
+ ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding
+ the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically
+ disclaims any and all liability, including without limitation special, consequential or incidental damages. ON Semiconductor does not convey any license under its patent rights nor the
+ rights of others.
+
+
+© Semiconductor Components Industries, LLC, 2019                                                                                                                      www.onsemi.com
+                                                                                    D2PAK 3
+                                                                                  CASE 418B−04
+                                                                                    ISSUE L
+                                                                                                                                                                DATE 17 FEB 2015
+                                                                                 GENERIC
+                                                                             MARKING DIAGRAM*
+
+
+                                                                   xx                                              AYWW
+                                                            xxxxxxxxx                  xxxxxxxxG
+                                                                                                                 xxxxxxxxG
+                                                           AWLYWWG                       AYWW
+                                                                                                                 AKA
+
+
+
+
+                                                                 IC                     Standard                   Rectifier
+
+                                                                       xx           = Specific Device Code
+                                                                       A            = Assembly Location
+                                                                       WL           = Wafer Lot
+                                                                       Y            = Year
+                                                                       WW           = Work Week
+                                                                       G            = Pb−Free Package
+                                                                       AKA          = Polarity Indicator
+
+                                                                *This information is generic. Please refer to
+                                                                 device data sheet for actual part marking.
+                                                                 Pb−Free indicator, “G” or microdot “ G”,
+                                                                 may or may not be present.
+
+
+                                                                        SOLDERING FOOTPRINT*
+
+                                                                                          10.49
+
+
+
+
+                                                                                                                 8.38
+
+
+                                                                 16.155
+
+
+
+                                                                                                                 2X
+                                                                                                              3.504
+                                                                        2X
+                                                                       1.016
+                                                                                         5.080
+                                                                                         PITCH
+                                                                                           DIMENSIONS: MILLIMETERS
+
+
+                                                  *For additional information on our Pb−Free strategy and soldering
+                                                   details, please download the ON Semiconductor Soldering and
+                                                   Mounting Techniques Reference Manual, SOLDERRM/D.
+
+
+
+
+                                                                                         Electronic versions are uncontrolled except when accessed directly from the Document Repository.
+ DOCUMENT NUMBER:                          98ASB42761B                                   Printed versions are uncontrolled except when stamped “CONTROLLED COPY” in red.
+
+             DESCRIPTION:                   D2PAK 3                                                                                                                   PAGE 2 OF 2
+
+ ON Semiconductor and              are trademarks of Semiconductor Components Industries, LLC dba ON Semiconductor or its subsidiaries in the United States and/or other countries.
+ ON Semiconductor reserves the right to make changes without further notice to any products herein. ON Semiconductor makes no warranty, representation or guarantee regarding
+ the suitability of its products for any particular purpose, nor does ON Semiconductor assume any liability arising out of the application or use of any product or circuit, and specifically
+ disclaims any and all liability, including without limitation special, consequential or incidental damages. ON Semiconductor does not convey any license under its patent rights nor the
+ rights of others.
+
+
+© Semiconductor Components Industries, LLC, 2019                                                                                                                      www.onsemi.com
+ onsemi,                , and other names, marks, and brands are registered and/or common law trademarks of Semiconductor Components Industries, LLC dba “onsemi” or its affiliates
+ and/or subsidiaries in the United States and/or other countries. onsemi owns the rights to a number of patents, trademarks, copyrights, trade secrets, and other intellectual property.
+ A listing of onsemi’s product/patent coverage may be accessed at www.onsemi.com/site/pdf/Patent−Marking.pdf. onsemi reserves the right to make changes at any time to any
+ products or information herein, without notice. The information herein is provided “as−is” and onsemi makes no warranty, representation or guarantee regarding the accuracy of the
+ information, product features, availability, functionality, or suitability of its products for any particular purpose, nor does onsemi assume any liability arising out of the application or use
+ of any product or circuit, and specifically disclaims any and all liability, including without limitation special, consequential or incidental damages. Buyer is responsible for its products
+ and applications using onsemi products, including compliance with all laws, regulations and safety requirements or standards, regardless of any support or applications information
+ provided by onsemi. “Typical” parameters which may be provided in onsemi data sheets and/or specifications can and do vary in different applications and actual performance may
+ vary over time. All operating parameters, including “Typicals” must be validated for each customer application by customer’s technical experts. onsemi does not convey any license
+ under any of its intellectual property rights nor the rights of others. onsemi products are not designed, intended, or authorized for use as a critical component in life support systems
+ or any FDA Class 3 medical devices or medical devices with a same or similar classification in a foreign jurisdiction or any devices intended for implantation in the human body. Should
+ Buyer purchase or use onsemi products for any such unintended or unauthorized application, Buyer shall indemnify and hold onsemi and its officers, employees, subsidiaries, affiliates,
+ and distributors harmless against all claims, costs, damages, and expenses, and reasonable attorney fees arising out of, directly or indirectly, any claim of personal injury or death
+ associated with such unintended or unauthorized use, even if such claim alleges that onsemi was negligent regarding the design or manufacture of the part. onsemi is an Equal
+ Opportunity/Affirmative Action Employer. This literature is subject to all applicable copyright laws and is not for resale in any manner.
+
+
+PUBLICATION ORDERING INFORMATION
+LITERATURE FULFILLMENT:                                TECHNICAL SUPPORT
+Email Requests to: orderlit@onsemi.com                 North American Technical Support:                           Europe, Middle East and Africa Technical Support:
+                                                       Voice Mail: 1 800−282−9855 Toll Free USA/Canada             Phone: 00421 33 790 2910
+onsemi Website: www.onsemi.com                         Phone: 011 421 33 790 2910                                  For additional information, please contact your local Sales Representative
+
+
+◊
+

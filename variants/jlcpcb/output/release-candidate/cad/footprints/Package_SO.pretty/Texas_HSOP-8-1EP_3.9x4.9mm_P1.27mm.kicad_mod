@@ -1,0 +1,365 @@
+(footprint "Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm"
+	(version 20241229)
+	(generator pcbnew)
+	(layer "F.Cu")
+	(descr "Texas Instruments HSOP 9, 1.27mm pitch, 3.9x4.9mm body, exposed pad, DDA0008J (http://www.ti.com/lit/ds/symlink/tps5430.pdf)")
+	(tags "HSOP 1.27")
+	(property "Reference" "REF**"
+		(at 0 -3.5 0)
+		(layer "F.SilkS")
+		(uuid "06dd9b04-8086-4822-8b4d-1cf71db70271")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Texas_HSOP-8-1EP_3.9x4.9mm_P1.27mm"
+		(at 0 3.5 0)
+		(layer "F.Fab")
+		(uuid "08e981c6-5963-45d5-898c-5d99d205001e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6285843-194f-4849-a1a0-9672ab560faf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "+12.0 V 2 A buck converter"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "73ba090c-7a66-4d13-a1a1-371d558ae553")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "TPS54360BDDAR"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dabf54c1-f1e8-4cb4-94cd-e21a5c259e6f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Sheet" "Power_Supply"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6b96aee-9bd5-4c4f-a3ff-eb25d3cd325c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "Texas Instruments"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f8b6f41c-745f-4461-8b35-1bd4508aad0c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Link" "https://jlcpcb.com/partdetail/TexasInstruments-TPS54360BDDAR/C524806"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "689663a0-e539-4096-8c47-7ea0051ca2f2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price" "4.52"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "888b435f-938e-4085-9ae4-41bda487edcc")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Price100" "3.05"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "e1ec06ec-f42c-48d4-a4e5-4fbd51cc0b9e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB Part" "C524806"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "c2745d1a-20b9-4f4a-adfe-595f7d30911c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "JLCPCB Library" "Extended"
+		(at 0 0 90)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "2664a590-c50e-44dd-9f76-920a73f9c3d8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.075 2.575)
+		(end 2.075 2.575)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "93a4dc26-8d95-4451-b95f-67dbab60c8e9")
+	)
+	(fp_line
+		(start -2.075 -2.575)
+		(end 2.075 -2.575)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d09681ee-6c09-4c5a-9ae2-cd14977f9247")
+	)
+	(fp_poly
+		(pts
+			(xy -2.675 -2.475)
+			(xy -2.915 -2.805)
+			(xy -2.435 -2.805)
+			(xy -2.675 -2.475)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "68780b1c-9d77-429c-84c8-ce25eb808674")
+	)
+	(fp_line
+		(start -3.75 2.75)
+		(end 3.75 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7c9df19b-0644-4963-855d-237853ff3f9f")
+	)
+	(fp_line
+		(start -3.75 -2.75)
+		(end -3.75 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "c4a8aac9-eca3-473b-8bec-5f5b725c9ea3")
+	)
+	(fp_line
+		(start -3.75 -2.75)
+		(end 3.75 -2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0abfe51a-9571-463e-838b-c6fc29eb367c")
+	)
+	(fp_line
+		(start 3.75 -2.75)
+		(end 3.75 2.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8795ef52-8530-4e65-8b11-d2393f8d0b5c")
+	)
+	(fp_line
+		(start -1.95 2.45)
+		(end -1.95 -1.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "36d3ac0f-51e5-401e-af17-01729d60c312")
+	)
+	(fp_line
+		(start 1.95 2.45)
+		(end -1.95 2.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c659cf9c-6a64-4a24-98be-a9f4343f0fde")
+	)
+	(fp_line
+		(start -1.95 -1.45)
+		(end -0.95 -2.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5e4a8d8a-85b6-4a7f-98dd-2e1325288bb0")
+	)
+	(fp_line
+		(start -0.95 -2.45)
+		(end 1.95 -2.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7d5c8677-3713-4248-9545-47dc64741e1b")
+	)
+	(fp_line
+		(start 1.95 -2.45)
+		(end 1.95 2.45)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a1a0bcaf-c473-4647-ba2c-a9b2637bd529")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "dce0eccd-7849-4572-815e-4c016b91fc2b")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.135)
+			)
+		)
+	)
+	(pad "" smd rect
+		(at 0 0 0)
+		(size 2.6 3.1)
+		(layers "F.Mask")
+		(uuid "43bf9bca-74c8-4f26-9027-790f2fbf9c55")
+	)
+	(pad "" smd rect
+		(at 0 0 0)
+		(size 2.6 3.1)
+		(layers "F.Paste")
+		(uuid "b9f33d01-9f27-4fa8-9819-491cf4f9f74d")
+	)
+	(pad "1" smd rect
+		(at -2.7 -1.905 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e155e4f8-07b5-4e0c-aeab-1bf68a4b1dce")
+	)
+	(pad "2" smd rect
+		(at -2.7 -0.635 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6d9c5580-6483-4a67-ba33-0784485e3b72")
+	)
+	(pad "3" smd rect
+		(at -2.7 0.635 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "29b6b7af-4e38-4923-95d4-ed7b67626bf1")
+	)
+	(pad "4" smd rect
+		(at -2.7 1.905 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ef1d165f-780f-49e2-9264-d256049a3a64")
+	)
+	(pad "5" smd rect
+		(at 2.7 1.905 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "27992ad1-ea54-4fac-bc2b-62f2f92d4ee1")
+	)
+	(pad "6" smd rect
+		(at 2.7 0.635 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "21264133-f468-4bfc-b93c-14ec3b9a40cc")
+	)
+	(pad "7" smd rect
+		(at 2.7 -0.635 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2b683c38-5388-4ce7-84c1-b4231c34d052")
+	)
+	(pad "8" smd rect
+		(at 2.7 -1.905 0)
+		(size 1.55 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9aab3173-0d35-4968-a181-3f7053f3f5a3")
+	)
+	(pad "9" smd rect
+		(at 0 0 0)
+		(size 2.95 4.9)
+		(layers "F.Cu")
+		(uuid "b094c154-8852-4c4a-97eb-5be05c396eff")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/kicad/Package_SO.3dshapes/HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

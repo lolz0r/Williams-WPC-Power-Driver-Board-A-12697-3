@@ -1,0 +1,622 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "33K",
+    "componentLibraryType": "base",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:01:33.555406+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 3,
+        "list": [
+          {
+            "componentId": 4623,
+            "componentLibraryType": "base",
+            "stockCount": 3212676,
+            "componentTypeEn": "Chip Resistor - Surface Mount",
+            "erpComponentName": "厚膜电阻 33kΩ ±1% 100mW",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0603waf3302t5e_C4216.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 999,
+                "productPrice": 0.0026
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 4999,
+                "productPrice": 0.002
+              },
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.0017
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 49999,
+                "productPrice": 0.0015
+              },
+              {
+                "startNumber": 50000,
+                "endNumber": 50199,
+                "productPrice": 0.0014
+              },
+              {
+                "startNumber": 50200,
+                "endNumber": -1,
+                "productPrice": 0.0014
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.0016
+              },
+              {
+                "startNumber": 50000,
+                "endNumber": 50199,
+                "productPrice": 0.0013
+              },
+              {
+                "startNumber": 50200,
+                "endNumber": -1,
+                "productPrice": 0.0013
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 999,
+                "productPrice": 0.0025
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 49999,
+                "productPrice": 0.0015
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 4999,
+                "productPrice": 0.0019
+              }
+            ],
+            "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
+            "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
+            "canPresaleNumber": 3063521,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "4623-0603WAF3302T5E/C4216",
+            "leastPatchNumber": 20,
+            "lossNumber": 10,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": true,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 5000,
+            "shopCostPrice": 0.0053,
+            "preMinPurchaseNum": 4478,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.0026,
+            "componentCode": "C4216",
+            "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+            "componentModelEn": "0603WAF3302T5E",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552463337272332288-C4216-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=7d9ffb1d048132fbe2196aeac53077ec1cd5e3985c0c27e7f046127b79972ecf",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010230_UNI-ROYAL-Uniroyal-Elec-0603WAF3302T5E_C4216.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706078415802368-C4216.pdf?response-content-disposition=attachment%3B%20filename%3DC4216.pdf%3B%20filename%2A%3DUTF-8%27%27C4216.pdf&x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=c515ca9e782a6c61cab907f0f0f36d9dbf62a2bc6bb01d4b0122c62aadb0e8c7",
+            "dataManualOfficialLink": "",
+            "componentName": "UNI-ROYAL 0603WAF3302T5E",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552463337892818944-C4216-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4e28f43930f64311b1fb752d42746128b8261f5daf90587bbc481b1abc5da669",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "0603",
+            "describe": "-55℃~+155℃ 100mW 33kΩ 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+            "attributes": [
+              {
+                "attribute_value_name_high": "<span class='lucene_highlight_class'>33kΩ</span>",
+                "attribute_name_en": "Resistance",
+                "attribute_value_name": "33kΩ"
+              },
+              {
+                "attribute_name_en": "Operating Temperature",
+                "attribute_value_name": "-55℃~+155℃"
+              },
+              {
+                "attribute_name_en": "Power(Watts)",
+                "attribute_value_name": "100mW"
+              },
+              {
+                "attribute_name_en": "Type",
+                "attribute_value_name": "Thick Film Resistor"
+              },
+              {
+                "attribute_name_en": "Voltage-Supply(Max)",
+                "attribute_value_name": "75V"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±1%"
+              },
+              {
+                "attribute_name_en": "Temperature Coefficient",
+                "attribute_value_name": "±100ppm/℃"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Chip Resistor - Surface Mount",
+            "secondSortName": "Resistors",
+            "componentBrandHigh": null,
+            "remarkHigh": "-55℃~+155℃ 100mW <span class='lucene_highlight_class'>33kΩ</span> 75V Thick Film Resistor ±1% ±100ppm/℃ 0603 Chip Resistor - Surface Mount ROHS",
+            "componentModelHigh": null,
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 18321,
+            "componentLibraryType": "base",
+            "stockCount": 575553,
+            "componentTypeEn": "Chip Resistor - Surface Mount",
+            "erpComponentName": "厚膜电阻 33kΩ ±1% 125mW",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0805w8f3302t5e_C17633.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 999,
+                "productPrice": 0.0047
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 4999,
+                "productPrice": 0.0038
+              },
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.0033
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 49999,
+                "productPrice": 0.003
+              },
+              {
+                "startNumber": 50000,
+                "endNumber": 50199,
+                "productPrice": 0.0028
+              },
+              {
+                "startNumber": 50200,
+                "endNumber": -1,
+                "productPrice": 0.0028
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 5000,
+                "endNumber": 9999,
+                "productPrice": 0.0031
+              },
+              {
+                "startNumber": 50000,
+                "endNumber": 50199,
+                "productPrice": 0.0027
+              },
+              {
+                "startNumber": 50200,
+                "endNumber": -1,
+                "productPrice": 0.0027
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 999,
+                "productPrice": 0.0045
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 49999,
+                "productPrice": 0.0029
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 4999,
+                "productPrice": 0.0036
+              }
+            ],
+            "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
+            "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
+            "canPresaleNumber": 526858,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "18321-0805W8F3302T5E/C17633",
+            "leastPatchNumber": 20,
+            "lossNumber": 10,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": true,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 5000,
+            "shopCostPrice": 0.00829,
+            "preMinPurchaseNum": 2357,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.0047,
+            "componentCode": "C17633",
+            "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+            "componentModelEn": "0805W8F3302T5E",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552469515125608448-C17633-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=fa41525a841413d250a90d23c8a6e6401acff9c1ad6caec85b2f7468e2a975ea",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311830_UNI-ROYAL-Uniroyal-Elec-0805W8F3302T5E_C17633.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706572601556992-C17633.pdf?response-content-disposition=attachment%3B%20filename%3DC17633.pdf%3B%20filename%2A%3DUTF-8%27%27C17633.pdf&x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=cddda54ebd6851b23b9451bec88d420ed75fdd8d9067b5b8315f7da9a2ec0748",
+            "dataManualOfficialLink": "",
+            "componentName": "UNI-ROYAL 0805W8F3302T5E",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552469515758678016-C17633-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=3b23517c3112de24002c6890a7653fe0cbd68e87e228ecc6f4c392458c4fc8a6",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "0805",
+            "describe": "-55℃~+155℃ 125mW 150V 33kΩ Thick Film Resistor ±1% ±100ppm/℃ 0805 Chip Resistor - Surface Mount ROHS",
+            "attributes": [
+              {
+                "attribute_value_name_high": "<span class='lucene_highlight_class'>33kΩ</span>",
+                "attribute_name_en": "Resistance",
+                "attribute_value_name": "33kΩ"
+              },
+              {
+                "attribute_name_en": "Operating Temperature",
+                "attribute_value_name": "-55℃~+155℃"
+              },
+              {
+                "attribute_name_en": "Power(Watts)",
+                "attribute_value_name": "125mW"
+              },
+              {
+                "attribute_name_en": "Type",
+                "attribute_value_name": "Thick Film Resistor"
+              },
+              {
+                "attribute_name_en": "Voltage-Supply(Max)",
+                "attribute_value_name": "150V"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±1%"
+              },
+              {
+                "attribute_name_en": "Temperature Coefficient",
+                "attribute_value_name": "±100ppm/℃"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Chip Resistor - Surface Mount",
+            "secondSortName": "Resistors",
+            "componentBrandHigh": null,
+            "remarkHigh": "-55℃~+155℃ 125mW 150V <span class='lucene_highlight_class'>33kΩ</span> Thick Film Resistor ±1% ±100ppm/℃ 0805 Chip Resistor - Surface Mount ROHS",
+            "componentModelHigh": null,
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 26522,
+            "componentLibraryType": "base",
+            "stockCount": 1445063,
+            "componentTypeEn": "Chip Resistor - Surface Mount",
+            "erpComponentName": "厚膜电阻 33kΩ ±1% 62.5mW",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/chip-resistor-surface-mount_uni-royal-uniroyal-elec-0402wgf3302tce_C25779.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 999,
+                "productPrice": 0.0092
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 2999,
+                "productPrice": 0.008
+              },
+              {
+                "startNumber": 3000,
+                "endNumber": 9999,
+                "productPrice": 0.0074
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 49999,
+                "productPrice": 0.007
+              },
+              {
+                "startNumber": 50000,
+                "endNumber": 99999,
+                "productPrice": 0.0065
+              },
+              {
+                "startNumber": 100000,
+                "endNumber": -1,
+                "productPrice": 0.0063
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 999,
+                "productPrice": 0.0089
+              },
+              {
+                "startNumber": 10000,
+                "endNumber": 49999,
+                "productPrice": 0.0067
+              },
+              {
+                "startNumber": 50000,
+                "endNumber": 99999,
+                "productPrice": 0.0063
+              },
+              {
+                "startNumber": 3000,
+                "endNumber": 9999,
+                "productPrice": 0.0071
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 2999,
+                "productPrice": 0.0077
+              },
+              {
+                "startNumber": 100000,
+                "endNumber": -1,
+                "productPrice": 0.0061
+              }
+            ],
+            "firstSortAccessId": "b97df1fd049743c0a0330513eac35a72",
+            "secondSortAccessId": "a49341812cad4b0bafa2ddd547a82bd4",
+            "canPresaleNumber": 1300963,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "26522-0402WGF3302TCE/C25779",
+            "leastPatchNumber": 20,
+            "lossNumber": 10,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": true,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 10000,
+            "shopCostPrice": 0.01368,
+            "preMinPurchaseNum": 974,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.0092,
+            "componentCode": "C25779",
+            "componentBrandEn": "UNI-ROYAL(Uniroyal Elec)",
+            "componentModelEn": "0402WGF3302TCE",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552462642640793600-C25779-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=358181bd60a0fdd849e59cfa1bbc4ca93fa815334739b592b28daf17510adec1",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF3302TCE_C25779.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8579706021423464448-C25779.pdf?response-content-disposition=attachment%3B%20filename%3DC25779.pdf%3B%20filename%2A%3DUTF-8%27%27C25779.pdf&x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=35b549890f7845cec20bc3835ac1e4a79c32578ecccf3caa06c4119678aa9c27",
+            "dataManualOfficialLink": "",
+            "componentName": "UNI-ROYAL 0402WGF3302TCE",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552462643219742720-C25779-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040133Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=bec6931d7df49d01309649d39d4d52e0ce624cbff7c0a18acf0f9c36f4f63ac0",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "0402",
+            "describe": "-55℃~+155℃ 33kΩ 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
+            "attributes": [
+              {
+                "attribute_value_name_high": "<span class='lucene_highlight_class'>33kΩ</span>",
+                "attribute_name_en": "Resistance",
+                "attribute_value_name": "33kΩ"
+              },
+              {
+                "attribute_name_en": "Operating Temperature",
+                "attribute_value_name": "-55℃~+155℃"
+              },
+              {
+                "attribute_name_en": "Power(Watts)",
+                "attribute_value_name": "62.5mW"
+              },
+              {
+                "attribute_name_en": "Type",
+                "attribute_value_name": "Thick Film Resistor"
+              },
+              {
+                "attribute_name_en": "Voltage-Supply(Max)",
+                "attribute_value_name": "50V"
+              },
+              {
+                "attribute_name_en": "Tolerance",
+                "attribute_value_name": "±1%"
+              },
+              {
+                "attribute_name_en": "Temperature Coefficient",
+                "attribute_value_name": "±100ppm/℃"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Chip Resistor - Surface Mount",
+            "secondSortName": "Resistors",
+            "componentBrandHigh": null,
+            "remarkHigh": "-55℃~+155℃ <span class='lucene_highlight_class'>33kΩ</span> 50V 62.5mW Thick Film Resistor ±1% ±100ppm/℃ 0402 Chip Resistor - Surface Mount ROHS",
+            "componentModelHigh": null,
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "33K"
+    },
+    "message": null
+  }
+}

@@ -1,0 +1,17 @@
+stdout Note: No compatibility mode selected!
+stdout Circuit: high rail 50 hz 0.9 line, 3 a continuous engineering load
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+ Reference value :  2.50986e-01
+ Reference value :  5.51136e-01
+ Reference value :  8.49219e-01
+stdout No. of Data Rows : 100988
+stdout sim_end = 1.000000e+00
+stderr out of interval
+stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!
+stderr out of interval
+stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!
+stdout fuse_rms            =  5.00767e+00 from=  8.00000e-01 to=  1.00000e+00
+stdout cap_peak            =  6.18436e+01 at=  9.55699e-02

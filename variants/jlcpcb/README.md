@@ -1,3 +1,55 @@
+# JLC-3 prototype revision
+
+> **WARNING: These are unverified, experimental boards. Use at your own risk.**
+> No physical board has been validated or qualified for production. Simulation
+> and CAD checks do not establish safe operation; errors can damage connected
+> equipment. Complete independent review and first-article testing before use.
+
+This is the earlier JLC-3 prototype. The separate [JLC-100 variant](../jlcpcb-100/README.md)
+contains the later 100-board inventory selection and combined SMT/through-hole
+BOM/CPL. See the [repository overview](../../README.md) for all variants and the
+[one-board DigiKey proposal](../jlcpcb-100/output/digikey-1/README.md) for separate pricing.
+Use files from one variant together; this directory's SMT pair is not the
+JLC-100 mixed-assembly pair.
+
+The current board uses TPS552892 buck-boost supplies and a reworked regulator layout.
+See [prototype build and verification](docs/PROTOTYPE_JLC3.md) and
+[release status](docs/RELEASE_STATUS.md).
+
+Use these matching current exports:
+
+- [Complete JLC-3 prototype package](output/wpc-sttng-JLC-3-prototype.zip)
+- [Gerbers and drills](output/release-candidate/gerbers-and-drills.zip)
+- [JLCPCB SMT BOM](output/release-candidate/bom/jlc-smt-bom.csv)
+- [JLCPCB SMT centroids / CPL](output/release-candidate/assembly/jlc-smt-cpl.csv)
+- [Through-hole/manual parts](output/release-candidate/bom/jlc-through-hole-manual.csv)
+- [Complete components BOM](output/release-candidate/bom/all-components.csv),
+  [electronics purchase BOM](output/release-candidate/bom/jlc-electronics-purchase.csv)
+  and [external heatsinks/fasteners/paste](output/release-candidate/bom/external-hardware.csv)
+
+`READINESS.json` and `SHA256.json` identify the exact validated output.
+Older JLC-1/JLC-2 archives are historical. The original project at the repository root remains preserved.
+
+
+For JLC-3 export/verification, run `tools/export_release.py`,
+`tools/export_jlc_bom.py`, `tools/verify_release.py`,
+`tools/verify_variant_source.py`, `tools/verify_regulator_fixtures.py`,
+`tools/summarize_prototype.py`, `tools/verify_ryq.py`, then
+`tools/package_prototype.py` with the project dependencies installed.
+The simulator evidence is retained under `output/verification/prototype-readiness`.
+Old generator and packaging commands in the historical section below describe JLC-2.
+
+JLCPCB assembly needs the [flagged short-stock parts](output/release-candidate/bom/procurement-shortfalls.csv)
+sourced before assembly. The bare-board fabrication package is complete.
+
+---
+
+## Historical JLC-2 notes
+
+The following describes the previous revision. Links into `output/release-candidate/`
+now resolve to the current JLC-3 export; use the dated JLC-2 archives for the older
+snapshot. Historical quantities and component choices below do not describe JLC-100.
+
 # WPC power/driver board — JLC-2
 
 **JLCPCB electronics redesign, 2026-09-11. Engineering review candidate; not production qualified.**

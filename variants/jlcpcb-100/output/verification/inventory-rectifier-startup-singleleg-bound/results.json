@@ -1,0 +1,196 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "name": "f50_phase0_r1",
+      "passed": true,
+      "checks": {
+        "5a": {
+          "peak_A": 35.114,
+          "integrated_50ms_A2s": 4.46809,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 63.6953,
+          "integrated_50ms_A2s": 12.7726,
+          "passed": true
+        },
+        "12b": {
+          "peak_A": 23.6559,
+          "integrated_50ms_A2s": 2.75004,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "b6d8207eb4336caf00fde63b0790cb9ed0fccecade4e6f4f4a82bc0b389ac414"
+    },
+    {
+      "name": "f50_phase0_r0.5",
+      "passed": true,
+      "checks": {
+        "5a": {
+          "peak_A": 40.7113,
+          "integrated_50ms_A2s": 5.32931,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 73.6057,
+          "integrated_50ms_A2s": 15.3029,
+          "passed": true
+        },
+        "12b": {
+          "peak_A": 35.02,
+          "integrated_50ms_A2s": 4.73556,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "1434dac18559d1aa46d43afb105c134789305a611148e9f3a483c64246656c77"
+    },
+    {
+      "name": "f50_phase90_r1",
+      "passed": true,
+      "checks": {
+        "5a": {
+          "peak_A": 118.111,
+          "integrated_50ms_A2s": 8.75606,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 217.717,
+          "integrated_50ms_A2s": 26.8792,
+          "passed": true
+        },
+        "12b": {
+          "peak_A": 36.0734,
+          "integrated_50ms_A2s": 3.03704,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "07932f231edb350db56a9bb45ce8f65e7e9e5c212d201f438ea2a42423947211"
+    },
+    {
+      "name": "f50_phase90_r0.5",
+      "passed": false,
+      "checks": {
+        "5a": {
+          "peak_A": 217.647,
+          "integrated_50ms_A2s": 16.0799,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 401.666,
+          "integrated_50ms_A2s": 51.7043,
+          "passed": false
+        },
+        "12b": {
+          "peak_A": 70.7522,
+          "integrated_50ms_A2s": 6.2432,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "6fd0338f8643b62ae489e425ee63d8ef2df4641e2e6af4c3c2e22adaead86c69"
+    },
+    {
+      "name": "f60_phase0_r1",
+      "passed": true,
+      "checks": {
+        "5a": {
+          "peak_A": 39.7281,
+          "integrated_50ms_A2s": 4.89728,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 72.1492,
+          "integrated_50ms_A2s": 14.1789,
+          "passed": true
+        },
+        "12b": {
+          "peak_A": 25.076,
+          "integrated_50ms_A2s": 2.80338,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "ae4bf43ee3704ed887bbd5383e2ff337d00298bf7da270056e0c51460e68477b"
+    },
+    {
+      "name": "f60_phase0_r0.5",
+      "passed": true,
+      "checks": {
+        "5a": {
+          "peak_A": 47.0737,
+          "integrated_50ms_A2s": 6.02161,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 85.2063,
+          "integrated_50ms_A2s": 17.5922,
+          "passed": true
+        },
+        "12b": {
+          "peak_A": 38.1931,
+          "integrated_50ms_A2s": 4.96955,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "b983e67badbf0a0ab9d1147535a67f2ef225c511539fd7428177310273a6a179"
+    },
+    {
+      "name": "f60_phase90_r1",
+      "passed": true,
+      "checks": {
+        "5a": {
+          "peak_A": 118.111,
+          "integrated_50ms_A2s": 8.65046,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 217.717,
+          "integrated_50ms_A2s": 26.4552,
+          "passed": true
+        },
+        "12b": {
+          "peak_A": 36.0734,
+          "integrated_50ms_A2s": 3.01465,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "cedec5fa90521be4afc56c36ece66f3589cb4b66a5228eb99219eb3e11f5fe22"
+    },
+    {
+      "name": "f60_phase90_r0.5",
+      "passed": false,
+      "checks": {
+        "5a": {
+          "peak_A": 217.647,
+          "integrated_50ms_A2s": 15.9302,
+          "passed": true
+        },
+        "20a": {
+          "peak_A": 401.666,
+          "integrated_50ms_A2s": 51.1453,
+          "passed": false
+        },
+        "12b": {
+          "peak_A": 70.7522,
+          "integrated_50ms_A2s": 6.15509,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "deck_sha256": "1a996cea7f67f4d08a1458e052ad2f430b6b07ad843affc3456da6c89082a84e"
+    }
+  ],
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999",
+  "limits": "250A per leg surge; compare entire package AC peak conservatively without claiming surge-current doubling from parallel legs. Integrated50ms current squared screened below single-leg250A8.3ms half-sine equivalent259.375A2s; waveform comparison is engineering screening, not a vendor repetitive/fault guarantee.",
+  "limitations": [
+    "Unmeasured transformer resistance:5/20V bridges0.05..0.1ohm loop,12VU0.25..0.5ohm. +10% line, +20% bulk capacitance;0/90degree energization.",
+    "No mains fault/transformer/fuse coordination qualification."
+  ],
+  "datasheet": "research/datasheets/C235758.pdf"
+}

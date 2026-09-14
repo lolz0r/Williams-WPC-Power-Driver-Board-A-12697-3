@@ -1,0 +1,257 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "MMBT3904",
+    "componentLibraryType": "base",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T04:01:31.023543+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 1,
+        "list": [
+          {
+            "componentId": 21237,
+            "componentLibraryType": "base",
+            "stockCount": 319399,
+            "componentTypeEn": "Bipolar (BJT)",
+            "erpComponentName": "MMBT3904(RANGE:100-300)",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/bipolar-bjt_jiangsu-changjing-electronics-technology-co-ltd-mmbt3904-range-100-300_C20526.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 499,
+                "productPrice": 0.0116
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 2999,
+                "productPrice": 0.0092
+              },
+              {
+                "startNumber": 3000,
+                "endNumber": 5999,
+                "productPrice": 0.0081
+              },
+              {
+                "startNumber": 6000,
+                "endNumber": 23999,
+                "productPrice": 0.0073
+              },
+              {
+                "startNumber": 24000,
+                "endNumber": 50999,
+                "productPrice": 0.007
+              },
+              {
+                "startNumber": 51000,
+                "endNumber": -1,
+                "productPrice": 0.0068
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 3000,
+                "endNumber": 5999,
+                "productPrice": 0.0078
+              },
+              {
+                "startNumber": 24000,
+                "endNumber": 50999,
+                "productPrice": 0.0068
+              },
+              {
+                "startNumber": 51000,
+                "endNumber": -1,
+                "productPrice": 0.0066
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 2999,
+                "productPrice": 0.0088
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 499,
+                "productPrice": 0.0111
+              },
+              {
+                "startNumber": 6000,
+                "endNumber": 23999,
+                "productPrice": 0.0071
+              }
+            ],
+            "firstSortAccessId": "af6f8457ec9d400e9ccbfa9dd9889152",
+            "secondSortAccessId": "eb236c3d27fb4f13b45ad9b82c131bc6",
+            "canPresaleNumber": 238828,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "21237-MMBT3904_RANGE_100_300/C20526",
+            "leastPatchNumber": 10,
+            "lossNumber": 5,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": true,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 3000,
+            "shopCostPrice": 0.02703,
+            "preMinPurchaseNum": 974,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.0116,
+            "componentCode": "C20526",
+            "componentBrandEn": "Jiangsu Changjing Electronics Technology Co., Ltd.",
+            "componentModelEn": "MMBT3904(RANGE:100-300)",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552894384036470784-C20526-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040130Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=a51082f05d5a0c4e7eb8faf2d65f641a217cca4b5f89f4b1b62346a62688c269",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2207041900_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--MMBT3904-RANGE-100-300_C20526.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8552894390264741888-C20526.pdf?response-content-disposition=attachment%3B%20filename%3DC20526.pdf%3B%20filename%2A%3DUTF-8%27%27C20526.pdf&x-oss-date=20260914T040130Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5mNfveAu7J0jvGNZFPUjTQte%2FtmnJzYhjz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qYEZlhEg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWoooSuR726HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIZUTjz6KWD5sagAGXLMy8x2SeCNwW55srVfD5rISV2yH%2Fmevl5BJeV7%2F3mN3uSnRyHxyeUWDr7tzN3lhWQ6oAo%2BMJXXfeXpKaKXG98PgEUPCyh%2FC%2Bhseb2sWw9dCJfaK1mpkO3rQjGvJL225iMLem1TjuyNrccqce9QTNIZ%2Fidf%2FWitAWOMlBbJKQMSAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZ85M4VmU93ffuei4xwtJsYsd%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=9099d08a1b47c95317a1453b77c6b4c666947ca9e93d927b442a6e7a01531f56",
+            "dataManualOfficialLink": "",
+            "componentName": "JSCJ MMBT3904(RANGE:100-300)",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8552894384745308160-C20526-%25E6%25AD%25A3%25E9%259D%25A2.jpg?x-oss-date=20260914T040130Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5rsGur4l7xCzvOlZUGFgHFnS%2FlLur3nqDz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qeV38BEg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jfdnbvZE0b1XWDBpHa8L7owNxGKEu%2F4YKU4%2Bm06Tmw%2FPbtwot8T%2FfwKj%2BDQnSVCQzu85JLti%2BzpV3xwHu5ch3ARqAAW6YdsHsF5MM8d%2B78uEVpdqd9leKuxQsCmw4YZbLa%2FWKa5JKDNY7AVxRs1QDrO79dVxOahh5DV6GL19bK1XG%2BNPps%2BGd22NwIKBy4Lqlg8ljqc19NTGhohJodJ6IiUh%2B1u6yIBVU3blfGVQ9ezOlMq%2FFhW76GM7cn93SeD88QHcdIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NYYQPLzccy1Ngg4dq2GvgUxLJ%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=b5db3cef329516987981f91358596fd4661405023adc5d881551c5b12da8fc6b",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "SOT-23",
+            "describe": "-55℃~+150℃ 1 NPN 100 100nA 200mA 200mW 300MHz 300mV 40V 6V NPN SOT-23 Bipolar (BJT) ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Operating Temperature",
+                "attribute_value_name": "-55℃~+150℃"
+              },
+              {
+                "attribute_name_en": "Transition frequency(fT)",
+                "attribute_value_name": "300MHz"
+              },
+              {
+                "attribute_name_en": "Collector - Emitter Voltage VCEO",
+                "attribute_value_name": "40V"
+              },
+              {
+                "attribute_name_en": "Number",
+                "attribute_value_name": "1 NPN"
+              },
+              {
+                "attribute_name_en": "DC Current Gain",
+                "attribute_value_name": "100"
+              },
+              {
+                "attribute_name_en": "Current - Collector(Ic)",
+                "attribute_value_name": "200mA"
+              },
+              {
+                "attribute_name_en": "Vce Saturation(VCE(sat))",
+                "attribute_value_name": "300mV"
+              },
+              {
+                "attribute_name_en": "Emitter-Base Voltage(Vebo)",
+                "attribute_value_name": "6V"
+              },
+              {
+                "attribute_name_en": "Pd - Power Dissipation",
+                "attribute_value_name": "200mW"
+              },
+              {
+                "attribute_name_en": "type",
+                "attribute_value_name": "NPN"
+              },
+              {
+                "attribute_name_en": "Current - Collector Cutoff",
+                "attribute_value_name": "100nA"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Bipolar (BJT)",
+            "secondSortName": "Transistors/Thyristors",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>MMBT3904</span>(RANGE:100-300)",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "MMBT3904"
+    },
+    "message": null
+  }
+}

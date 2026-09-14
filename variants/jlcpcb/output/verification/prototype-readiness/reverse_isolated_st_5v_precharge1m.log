@@ -1,0 +1,26 @@
+stdout ******
+stdout ** ngspice-47 shared library
+stdout ** Creation Date: Fri Nov 11 11:11:11 UTC 2011
+stdout ******
+stdout Note: gnd in a subcircuit is not set to 0 automatically
+stdout Note: Compatibility modes selected: ps
+stdout Circuit: ti tps54360 transient model, 5v actual compensation, vin=15.34
+stdout Reducing trtol to 1 for xspice 'A' devices
+stdout Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+stdout Using KLU as Direct Linear Solver
+stdout Operating point simulation skipped by 'uic',
+stdout now using transient initial conditions.
+stdout No. of Data Rows : 4599
+stdout sim_end = 1.000000000000e-03
+stdout output_peak         =  4.92728e+00 at=  6.45104e-06
+stdout output_min          =  3.36946e+00 at=  2.80511e-07
+stdout inductor_peak       =  6.63247e-04 at=  3.78852e-05
+stdout inductor_min        =  -4.94717e-01 at=  1.57010e-05
+stdout body_reverse_peak   =  4.94711e-01 at=  1.57010e-05
+stdout input_min           =  2.52445e-07 at=  3.78307e-05
+stderr no such vector as 'i(vbypass)'
+stderr meas tran bypass_peak max i(vbypass) failed!
+stderr Warning from checkvalid: vector bypass is not available or has zero length.
+stderr Error: RHS "v(bypass,vinf)*i(vbypass)" invalid
+stderr no such vector as 'bypass_power'
+stderr meas tran bypass_energy integ bypass_power failed!

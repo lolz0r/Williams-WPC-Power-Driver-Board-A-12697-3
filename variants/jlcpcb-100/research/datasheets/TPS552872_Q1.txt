@@ -1,0 +1,2263 @@
+                                                                                                                                                                                 TPS552872-Q1
+                                                                                                                                                                          SLVSHF9 – AUGUST 2023
+
+      TPS552872-Q1, Automotive, 36-V, 4-A, Fully Integrated Buck-boost Converter
+
+1 Features                                                             3 Description
+•   AEC-Q100 qualified:
+                                                                       The TPS552872-Q1 is a synchronous buck-boost
+    – Device temperature grade 1: –40°C to +125°C                      converter that is optimized for converting battery
+       ambient operating temperature range                             voltage or adapter voltage into power supply rails. The
+•   Wide input and output voltage range                                TPS552872-Q1 integrates four MOSFET switches
+    – Wide input voltage range: 3.0 V to 36 V                          providing a compact solution for a variety of
+    – Programmable output voltage range: 0.8 V to                      applications. The TPS552872-Q1 has up to 36V input
+       22 V                                                            voltage capability. When working in boost mode, the
+    – ±1% reference voltage accuracy                                   TPS552872-Q1 can deliver 30 W from a 12-V input. It
+    – Adjustable output voltage compensation for                       is capable of delivering 25 W from 9-V input voltage.
+       voltage droop over the cable
+    – ±5% accurate output current monitoring                           The TPS552872-Q1 employs an average current-
+•   High efficiency over entire load range                             mode control scheme. The switching frequency is
+    – 96.7% efficiency at VIN = 12 V, VOUT = 20 V and                  programmable from 200 kHz to 2.2 MHz by an
+       IOUT = 1.5 A                                                    external resistor and can be synchronized to an
+    – 98.3% efficiency at VIN = 12 V, VOUT = 12 V and                  external clock. The TPS552872-Q1 also provides
+       IOUT = 2 A                                                      optional spread spectrum to minimize peak EMI.
+    – Programmable PFM and FPWM mode at light                          The TPS552872-Q1 offers output over-voltage
+       load                                                            protection, average inductor current limit, cycle-by-
+•   Avoid frequency interference and crosstalk                         cycle peak current limit, output short circuit protection.
+    – Optional clock synchronization                                   The TPS552872-Q1 also ensures safe operating
+    – Programmable switching frequency from 200                        with optional output current limit and hiccup-mode
+       kHz to 2.2 MHz                                                  protection in sustained overload conditions.
+•   EMI mitigation
+                                                                       The TPS552872-Q1 can use a small inductor and
+    – Optional programmable spread spectrum                            small capacitors with high switching frequency. It is
+    – Lead-less package                                                available in a 3.0-mm × 5.0-mm QFN package.
+•   Rich protection features
+    – Output overvoltage protection                                                                                          Device Information
+                                                                                                                                                              (1)
+    – Hiccup mode for output short-circuit protection                        PART NUMBER                                                 PACKAGE                                BODY SIZE
+    – Thermal shutdown protection                                            TPS552872-Q1                                                  VQFN-HR                          3.0 mm × 5.0 mm
+    – 4 A average inductor current limit
+                                                                       (1)             For all available packages, see the orderable addendum at
+•   Small solution size                                                                the end of the data sheet.
+    – Maximum switching frequency up to 2.2 MHz                                                                                            L1
+
+    – 3.0-mm × 5.0-mm HotRod™ QFN package                                                                                                4.7µH
+
+
+
+
+2 Applications
+                                                                                                                               C4                        C5
+
+
+                                                                                                                             BOOT1 SW1           SW2 BOOT2
+                                                                              VIN = 3V to 36V
+                                                                                                                                                                                              R4   VOUT = 0.8V to 22V
+                                                                                                                                                              VOUT
+•   Advanced driver assistance system (ADAS)
+                                                                                                                 VIN
+                                                                                       C1
+                                                                                                                 VCC                                                           C2
+                                                                                                                                                              PGND            4 x 22µF
+
+•   Wireless Charger
+                                                                                                            C3
+                                                                                                                 AGND
+                                                                                                                                                               ISP
+
+
+•   Automotive infotainment and cluster
+                                                                                                       ON                                                                                                   R1
+                                                                                                                 EN/UVLO                                       ISN
+                                                                                  OFF                                               TPS552872-Q1
+                                                                                                                 PG
+                                                                                                                                                                FB
+
+•   Automotive rear light                                                          Internal Vcc
+
+                                                                        External Vcc
+                                                                                                                 CC
+                                                                                                                 EXTVCC                                       COMP
+
+                                                                                                                 DITH/SYNC                                    MODE                                          R2
+                                                                                                                                                                                         R3
+                                                                                                       C8                                                                       C7
+                                                                                                                 FSW                                           CDC
+                                                                                                                                                                     R2                  C6
+                                                                                                  R5
+
+
+
+
+                                                                                                                 Typical Application Circuit
+
+
+
+
+     An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+     intellectual property matters and other important disclaimers. PRODUCTION DATA.
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                                                                www.ti.com
+
+
+                                                                        Table of Contents
+1 Features............................................................................1         7.4 Device Functional Modes..........................................20
+2 Applications..................................................................... 1         8 Application and Implementation.................................. 21
+3 Description.......................................................................1           8.1 Application Information............................................. 21
+4 Revision History.............................................................. 2              8.2 Typical Application.................................................... 21
+5 Pin Configuration and Functions...................................3                           8.3 Power Supply Recommendations.............................29
+6 Specifications.................................................................. 5            8.4 Layout....................................................................... 29
+  6.1 Absolute Maximum Ratings........................................ 5                      9 Device and Documentation Support............................31
+  6.2 ESD Ratings............................................................... 5              9.1 Device Support......................................................... 31
+  6.3 Recommended Operating Conditions.........................5                                9.2 Receiving Notification of Documentation Updates....31
+  6.4 Thermal Information....................................................6                  9.3 Support Resources................................................... 31
+  6.5 Electrical Characteristics.............................................6                  9.4 Trademarks............................................................... 31
+  6.6 Typical Characteristics................................................ 9                 9.5 Electrostatic Discharge Caution................................31
+7 Detailed Description......................................................13                  9.6 Glossary....................................................................31
+  7.1 Overview................................................................... 13          10 Mechanical, Packaging, and Orderable
+  7.2 Functional Block Diagram......................................... 14                      Information.................................................................... 31
+  7.3 Feature Description...................................................14
+
+
+
+4 Revision History
+                          DATE                                                     REVISION                                                      NOTES
+                     August 2023                                                          *                                                  Initial release
+
+
+
+
+2       Submit Document Feedback                                                                                             Copyright © 2023 Texas Instruments Incorporated
+
+                                                                  Product Folder Links: TPS552872-Q1
+                                                                                                                                           TPS552872-Q1
+www.ti.com                                                                                                                            SLVSHF9 – AUGUST 2023
+
+
+5 Pin Configuration and Functions
+
+
+                                            21 EXTVCC   20 BOOT1                                           19 BOOT2   18 VCC
+
+
+                         EN/UVLO        1                                                                                   17 AGND
+
+                            MODE        2                                                                                   16 CDC
+
+                                PG      3                                                                                   15 COMP
+
+                                 CC     4                                                                                   14 FB
+
+                                            5           6            7      8       9       10      11     12         13
+
+                                                                    VIN
+                                                                                    PGND
+                                                                                                           ISP        ISN
+                                                                            SW1             SW2
+
+                                            DITH/SYNC
+                                                        FSW                                         VOUT
+
+
+
+                            Figure 5-1. 21-pin VQFN-HR, RYQ Package (Transparent Top View)
+
+                                                                     Table 5-1. Pin Functions
+            PIN
+                                  I/O                                                         DESCRIPTION
+ NO.           NAME
+                                             Enable logic input and programmable input voltage undervoltage lockout (UVLO) input. Logic high
+                                             level enables the device. Logic low level disables the device and turns it into shutdown mode.
+ 1            EN/UVLO              I
+                                             After the voltage at the EN/UVLO pin is above the logic high voltage of 1.15 V, this pin acts as
+                                             programmable UVLO input with 1.23-V internal reference.
+ 2             MODE                I         Mode selection pin in light load condition. When it is connected to logic high voltage, the device
+                                             works in forced PWM mode. When it is connected to logic low voltage, the device works in auto PFM
+                                             mode. This pin can not be float in application.
+                                             Power good indication open drain output. When the output voltage is above 95% of the setting output
+ 3                PG              O          voltage, this pin outputs high impedance. When the output voltage is below 90% of the setting output
+                                             voltage, this pin outputs low level
+                                             Constant current output indication open drain output. When output current limit is triggered, this pin
+ 4                CC              O
+                                             outputs low level.
+                                             Dithering frequency setting and synchronous clock input. Use a capacitor between this pin and
+                                             ground to set the dithering frequency. When this pin is short to ground or pulled above 1.2 V, there
+ 5          DITH/SYNC              I
+                                             is no dithering function. An external clock can be applied at this pin to synchronize the switching
+                                             frequency.
+ 6              FSW                I         The switching frequency is programmed by a resistor between this pin and the AGND pin.
+ 7                VIN           PWR          Input of the buck-boost converter.
+                                PWR          The switching node pin of the buck side. It is connected to the drain of the internal buck low-side
+ 8              SW1
+                                             power MOSFET and the source of internal buck high-side power MOSFET.
+ 9             PGND             PWR          Power ground of the IC.
+                                             The switching node pin of the boost side. It is connected to the drain of the internal boost low-side
+ 10             SW2             PWR
+                                             power MOSFET and the source of internal boost high-side power MOSFET.
+ 11             VOUT            PWR          Output of the buck-boost converter.
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                                             Submit Document Feedback     3
+
+                                                                   Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                              www.ti.com
+
+                                            Table 5-1. Pin Functions (continued)
+              PIN
+                              I/O                                                DESCRIPTION
+    NO.         NAME
+                                     Positive input of the current sense amplifier. An optional current sense resistor connected between
+                                     the ISP pin and the ISN pin can limit the output current. If the sensed voltage reaches the current
+    12              ISP        I     limit, a slow constant current control loop becomes active and starts to regulate the voltage between
+                                     the ISP pin and the ISN pin. Connecting the ISP pin and the ISN pin together with the VOUT pin can
+                                     disable the output current limit function.
+                                     Negative input of the current sense amplifier. An optional current sense resistor connected between
+                                     the ISP pin and the ISN pin can limit the output current. If the sensed voltage reaches the current
+    13              ISN        I     limit, a slow constant current control loop becomes active and starts to regulate the voltage between
+                                     the ISP pin and the ISN pin. Connecting the ISP pin and the ISN pin together with the VOUT pin can
+                                     disable the output current limit function.
+    14              FB         I     Connect to the center of a resistor divider to program the output voltage
+                                     Output of the internal error amplifier. Connect the loop compensation network between this pin and
+    15          COMP           O
+                                     the AGND pin.
+                                     Voltage output proportional to the sensed voltage between the ISP pin and the ISN pin. Use a
+    16           CDC           O     resistor between this pin and AGND to increase the output voltage to compensate voltage droop
+                                     across the cable caused by the cable resistance.
+    17          AGND           -     Signal ground of the IC.
+                                     Output of the internal regulator. A ceramic capacitor of more than 4.7 μF is required between this pin
+    18           VCC           O
+                                     and the AGND pin.
+                                     Power supply for high-side MOSFET gate driver in boost side. A ceramic capacitor of 0.1 µF must be
+    19          BOOT2          O
+                                     connected between this pin and the SW2 pin.
+                                     Power supply for high-side MOSFET gate driver in buck side. A ceramic capacitor of 0.1 µF must be
+    20          BOOT1          O
+                                     connected between this pin and the SW1 pin.
+                                     Select the internal LDO or external 5V for VCC. When it is connected to logic high voltage or is left
+    21         EXTVCC          I     floating, select the internal LDO. When it is connected to logic low voltage, select the external 5V for
+                                     VCC.
+
+
+
+
+4         Submit Document Feedback                                                                Copyright © 2023 Texas Instruments Incorporated
+
+                                                 Product Folder Links: TPS552872-Q1
+                                                                                                                                 TPS552872-Q1
+www.ti.com                                                                                                               SLVSHF9 – AUGUST 2023
+
+
+6 Specifications
+6.1 Absolute Maximum Ratings
+over operating junction temperature range (unless otherwise noted)(1)
+                                                                                                       MIN               MAX          UNIT
+                    VIN, SW1                                                                           –0.3                42          V
+                    BOOT1                                                                         SW1–0.3               SW1+6          V
+                    VCC, PG, CC, FSW, COMP, FB, MODE, CDC, DITH/SYNC,
+                                                                                                       –0.3                 6          V
+                    EXTVCC
+ Voltage range
+ at terminals (2)   VOUT, SW2, ISP, ISN                                                                –0.3                25          V
+                    EN                                                                                 -0.3                20          V
+                    BOOT2                                                                         SW2–0.3               SW2+6          V
+                    PG, CC, FSW, COMP, FB, MODE, CDC, DITH/SYNC, EXTVCC                                –0.3         VCC+0.3            V
+ TJ                 Operating Junction, TJ   (3)                                                       –40                150          °C
+ Tstg               Storage temperature                                                                –65                150          °C
+
+(1)     Operation outside the Absolute Maximum Ratings may cause permanent device damage. Absolute Maximum Ratings do not imply
+        functional operation of the device at these or any other conditions beyond those listed under Recommended Operating Conditions.
+        If used outside the Recommended Operating Conditions but within the Absolute Maximum Ratings, the device may not be fully
+        functional, and this may affect device reliability, functionality, performance, and shorten the device lifetime.
+(2)     All voltage values are with respect to network ground terminal.
+(3)     High junction temperatures degrade operating lifetimes. Operating lifetime is de-rated for junction temperatures greater than 125°C.
+
+
+6.2 ESD Ratings
+                                                                                                                         VALUE         UNIT
+                                                                  Human-body model (HBM), per AEC Q100-002(1)            ±2000
+ V(ESD)        Electrostatic discharge                            Charged-device model (CDM), per AEC                                       V
+                                                                                                                          ±500
+                                                                  Q100-011, all pins(2)
+                                                                  Charged-device model (CDM), per AEC
+ V(ESD)        Electrostatic discharge                                                                                    ±750              V
+                                                                  Q100-011, corner pins(2)
+
+(1)     Level listed above is the passing level per ANSI, ESDA, and JEDEC JS-001. JEDEC document JEP155 states that 500-V HBM allows
+        safe manufacturing with a standard ESD control process. Manufacturing with less than 500-V HBM is possible with the necessary
+        precautions.
+(2)     Level listed above is the passing level per EIA-JEDEC JESD22-C101. JEDEC document JEP157 states that 250-V CDM allows
+        safe manufacturing with a standard ESD control process. Manufacturing with less than 250-V CDM is possible with the necessary
+        precautions.
+
+
+6.3 Recommended Operating Conditions
+over operating junction temperature range (unless otherwise noted)
+                                                                                                    MIN         NOM          MAX       UNIT
+ VIN           Input voltage range                                                                   3.0                         36         V
+ VOUT          Output voltage range                                                                  0.8                         22         V
+ L             Effective inductance range                                                              1          4.7            10        µH
+ CIN           Effective input capacitance range                                                     4.7           22                      µF
+ COUT          Effective output capacitance range                                                    10           100        1000          µF
+ TJ            Operating junction temperature(1)                                                    –40                         150        °C
+
+(1)     High junction temperatures degrade operating lifetimes. Operating lifetime is de-rated for junction temperatures greater than 125°C.
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                               Submit Document Feedback          5
+
+                                                     Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                                       www.ti.com
+
+6.4 Thermal Information
+                                                                                      RYQ (VQFN)                     RYQ (VQFN)
+                             THERMAL METRIC(1)                                           21 PINS                      21 PINS                 UNIT
+                                                                                        Standard                       EVM (2)
+    RθJA            Junction-to-ambient thermal resistance                                 43.4                         27.5                  °C/W
+    RθJC(top)       Junction-to-case (top) thermal resistance                              22.3                         N/A                   °C/W
+    RθJB            Junction-to-board thermal resistance                                   7.4                          N/A                   °C/W
+    ΨJT             Junction-to-top characterization parameter                             0.7                           0.7                  °C/W
+    YJB             Junction-to-board characterization parameter                           7.2                          11.1                  °C/W
+    RθJC(bot)       Junction-to-case (bottom) thermal resistance                           N/A                          N/A                   °C/W
+
+(1)         For more information about traditional and new thermal metrics, see the Semiconductor and IC Package Thermal Metrics application
+            report.
+(2)         Measured on TPS552872EVM-029, 4-layer, 2-oz/1-oz/1-oz/2-oz copper 91-mmx66-mm PCB.
+
+
+6.5 Electrical Characteristics
+TJ = -40°C to 125°C, VIN = 12 V and VOUT = 20 V. Typical values are at TJ = 25°C, unless otherwise noted.
+                          PARAMETER                                       TEST CONDITIONS                     MIN       TYP       MAX         UNIT
+    POWER SUPPLY
+    VIN              Input voltage range                                                                       3.0                   36         V
+                                                                VIN rising                                     2.8        2.9       3.0         V
+    VVIN_UVLO        Under voltage lockout threshold
+                                                                VIN falling                                    2.6      2.65        2.7         V
+                                                                IC enabled, no load, no switching. VIN
+                                                                = 3.0V to 24V, VOUT = 0.8V, VFB =
+                     Quiescent current into VIN pin                                                                      760        860        µA
+                                                                VREF + 0.1V, RFSW=100kΩ, Tj up to
+    IQ                                                          125°C
+                                                                IC enabled, no load, no switching, VIN
+                     Quiescent current into VOUT pin            = 3.0V, VOUT = 3V to 20V, VFB = VREF                     760        860        µA
+                                                                + 0.1V, RFSW=100kΩ, Tj up to 125°C
+                                                                IC disabled, VIN = 3.0V to 14V, Tj up to
+    ISD              Shutdown current into VIN pin                                                                        0.8         3        µA
+                                                                125°C, EXTVCC pin floating
+    VCC              Internal regulator output                  IVCC = 50mA, VIN = 8V, VOUT = 20V            5.05         5.2      5.45         V
+    EN/UVLO
+    VEN_H            EN Logic high threshold                    VCC = 3.0V to 5.5V                                                 1.15         V
+    VEN_L            EN Logic low threshold                     VCC = 3.0V to 5.5V                             0.4                              V
+    VEN_HYS          Enable threshold hysteresis                VCC = 3.0V to 5.5V                           0.04                               V
+                     UVLO rising threshold at the EN/UVLO
+    VUVLO                                                 VCC = 3.0V to 5.5V                                 1.20       1.23       1.26         V
+                     pin
+    VUVLO_HYS        UVLO threshold hysteresis                  VCC = 3.0V to 5.5V                                        10                   mV
+    IUVLO            Sourcing current at the EN/UVLO pin        VUVLO = 1.3V                                   4.4          5       5.6        µA
+    OUTPUT
+    VOUT             Output voltage range                                                                      0.8                   22         V
+                     Output overvoltage protection
+    VOVP                                                                                                     22.5       23.5       24.5         V
+                     threshold
+    VOVP_HYS         Over voltage protection hysteresis                                                                     1                   V
+    IFB_LKG          Leakage current at FB pin                  Tj up to 125°C                                                      100        nA
+                                                                IC disabled, VOUT = 20V, VSW2 = 0V, Tj
+    IVOUT_LKG        Leakage current into VOUT pin                                                                          1        20        µA
+                                                                up to 125°C
+    REFERENCE VOLTAGE
+    VREF             Reference voltage at the FB pin                                                        1.188         1.2     1.212         V
+    POWER SWITCH
+
+
+
+6           Submit Document Feedback                                                                       Copyright © 2023 Texas Instruments Incorporated
+
+                                                           Product Folder Links: TPS552872-Q1
+                                                                                                                            TPS552872-Q1
+www.ti.com                                                                                                             SLVSHF9 – AUGUST 2023
+
+TJ = -40°C to 125°C, VIN = 12 V and VOUT = 20 V. Typical values are at TJ = 25°C, unless otherwise noted.
+                      PARAMETER                                      TEST CONDITIONS                 MIN        TYP      MAX      UNIT
+                 Low-side MOSFET on resistance on
+                                                            VOUT = 20V, VCC=5.2V                                 22                mΩ
+                 buck side
+                 High-side MOSFET on resistance on
+                                                            VOUT = 20V, VCC=5.2V                                 14                mΩ
+                 buck side
+ RDS(on)
+                 Low-side MOSFET on resistance on
+                                                            VOUT = 20V, VCC=5.2V                                 11                mΩ
+                 boost side
+                 High-side MOSFET on resistance on
+                                                            VOUT = 20V, VCC=5.2V                                 11                mΩ
+                 boost side
+ INTERNAL CLOCK
+                                                            RFSW =100k                                180       200       220      kHz
+ fSW             Switching frequency
+                                                            RFSW =8.4k                               2000      2200      2400      kHz
+ tOFF_min        Min. off time                              Boost mode                                           90       145      ns
+ tON_min         Min. on time                               Buck mode                                            90       130      ns
+ VFSW            Voltage at FSW pin                                                                               1                 V
+ CURRENT LIMIT
+                                                            TPS552872-Q1, VIN = 8V, VOUT = 20V,
+ ILIM_AVG        Average inductor current limit                                                       3.3         4       4.7       A
+                                                            FSW = 400kHz, VCC = 5.2V
+                                                            TPS552872-Q1, VIN = 8V, VOUT = 20V,
+ ILIM_PK_H       Peak inductor current limit at high side                                                        6.5                A
+                                                            FSW = 400kHz
+                                                            TPS552872-Q1, VIN = 8V, VOUT = 20V,
+ ILIM_PK_L       Peak inductor current limit at low side                                                          6                 A
+                                                            FSW = 400kHz
+                 Current loop regulation voltage
+ VSNS                                                                                                  48        50        52      mV
+                 between ISP and ISN pin
+ CABLE VOLTAGE DROP COMPENSATION
+                                                            RCDC = 20kΩ or floating, VISP – VISN =
+                                                                                                     0.95         1      1.05       V
+                                                            50mV
+ VCDC            Voltage at the CDC pin
+                                                            RCDC = 20kΩ or floating, VISP – VISN =
+                                                                                                                 40        75      mV
+                                                            2mV
+                                                            External output feedback, RCDC =
+                                                                                                     7.23        7.5     7.87      µA
+                                                            20kΩ, VISP – VISN = 50mV
+                                                            External output feedback, RCDC =
+ IFB_CDC         FB pin sinking current                                                                           0       0.3      µA
+                                                            20kΩ, VISP – VISN = 0mV
+                                                            External output feedback, RCDC =
+                                                                                                                  0       0.3      µA
+                                                            floating, VISP – VISN = 50mV
+ ERROR AMPLIFIER
+                                                            VFB = VREF + 400mV, VCOMP=1.5V,
+ ISINK           COMP pin sink current                                                                           20                µA
+                                                            VCC=5V
+                                                            VFB = VREF - 400mV, VCOMP=1.5V,
+ ISOURCE         COMP pin source current                                                                         60                µA
+                                                            VCC=5V
+ VCCLPH          High clamp voltage at the COMP pin         FPWM mode, VOUT = 1.8V to 22V                       1.15                V
+ VCCLPL          Low clamp voltage at the COMP pin          FPWM mode                                            0.6                V
+ GEA             Error amplifier transconductance                                                               190               µA/V
+ SOFT START
+ tSS             Soft-start time                                                                      2.5        3.6        5      ms
+ SPREAD SPECTRUM
+                                                            VDITH/SYNC = 1.0V; RFSW=49.9kΩ;
+ IDITH_CHG       Dithering charge current                                                                         2                µA
+                                                            voltage rising from 0.9V
+                                                            VDITH/SYNC = 1.0V; RFSW=49.9kΩ;
+ IDITH_DIS       Dithering discharge current                                                                      2                µA
+                                                            voltage falling from 1.1V
+ VDITH_H         Dither high threshold                                                                          1.07                V
+ VDITH_L         Dither low threshold                                                                           0.93                V
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                             Submit Document Feedback      7
+
+                                                      Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                        www.ti.com
+
+TJ = -40°C to 125°C, VIN = 12 V and VOUT = 20 V. Typical values are at TJ = 25°C, unless otherwise noted.
+                       PARAMETER                                      TEST CONDITIONS          MIN       TYP       MAX         UNIT
+    SYNCHRONOUS CLOCK
+    VSNYC_H        Sync clock high voltage threshold                                                                 1.2         V
+    VSYNC_L        Sync clock low voltage threshold                                             0.4                              V
+    tSYNC_MIN      Minimum sync clock pulse width                                               50                              ns
+    HICCUP
+    tHICCUP        Hiccup off time                                                                         76                   ms
+    MODE
+    VMODE          MODE logic high threshold              VCC = 3V to 5.5V                                           1.2         V
+    VMODE          MODE logic low threshold               VCC = 3V to 5.5V                      0.4                              V
+    EXTVCC
+    VEXTVCC        EXTVCC Logic high threshold            VCC = 3V to 5.5V                                           1.2         V
+    VEXTVCC        EXTVCC Logic Low threshold             VCC = 3V to 5.5V                      0.4                              V
+    Power Good
+                   Leakage current into PG pin when
+    IPG_H                                                 VPG = 5V                                                   100        nA
+                   outputting high impedance
+    VPG_L          Output low voltage range of the PG pin Sinking 4mA current                              0.1       0.2         V
+    Current Limit Indication
+                   Leakage current into CC pin when
+    ICC_H                                                 VCC = 5 V                                                  100        nA
+                   outputting high impedance
+    VCC_L          Output low voltage range of the CC pin Sinking 4-mA current                             0.1       0.2         V
+    PROTECTION
+    TSD            Thermal shutdown threshold             TJ rising                                       175                   °C
+    TSD_HYS        Thermal shutdown hysteresis            TJ falling below Tsd                             20                   °C
+
+
+
+
+8           Submit Document Feedback                                                        Copyright © 2023 Texas Instruments Incorporated
+
+                                                       Product Folder Links: TPS552872-Q1
+                                                                                                                                                   TPS552872-Q1
+www.ti.com                                                                                                                                  SLVSHF9 – AUGUST 2023
+
+
+6.6 Typical Characteristics
+VIN = 12 V, TA = 25°C, unless otherwise noted.
+
+                      100                                                                             100
+                       90                                                                              90
+                       80                                                                              80
+                       70                                                                              70
+
+
+
+
+     Efficiency (%)                                                                  Efficiency (%)
+                       60                                                                              60
+                       50                                                                              50
+                       40                                                                              40
+                       30                                                                              30
+                                                                     VIN = 5 V                                                                       VIN = 5 V
+                       20                                            VIN = 9 V                         20                                            VIN = 9 V
+                       10                                            VIN = 12 V                        10                                            VIN = 12 V
+                                                                     VIN = 20 V                                                                      VIN = 20 V
+                        0                                                                               0
+                       0.0001     0.001       0.01     0.05    0.2 0.5 1   2 3 45                      0.0001     0.001       0.01     0.05    0.2 0.5 1   2 3 45
+                                            Output Current (A)                                                              Output Current (A)
+                            Figure 6-1. Efficiency vs Output Current,                                       Figure 6-2. Efficiency vs Output Current,
+                                VOUT = 5 V, fSW = 400 kHz, FPWM                                                  VOUT = 5 V, fSW = 400 kHz, PFM
+                      100                                                                             100
+                       90                                                                              90
+                       80                                                                              80
+                       70                                                                              70
+
+
+
+
+     Efficiency (%)                                                                  Efficiency (%)
+                       60                                                                              60
+                       50                                                                              50
+                       40                                                                              40
+                       30                                                                              30
+                                                                     VIN = 5 V                                                                       VIN = 5 V
+                       20                                            VIN = 9 V                         20                                            VIN = 9 V
+                       10                                            VIN = 12 V                        10                                            VIN = 12 V
+                                                                     VIN = 20 V                                                                      VIN = 20 V
+                        0                                                                               0
+                       0.0001     0.001       0.01     0.05    0.2 0.5 1   2 3 45                      0.0001     0.001       0.01     0.05    0.2 0.5 1   2 3 45
+                                            Output Current (A)                                                              Output Current (A)
+                            Figure 6-3. Efficiency vs Output Current,                                       Figure 6-4. Efficiency vs Output Current,
+                                VOUT = 9 V, fSW = 400 kHz, FPWM                                                  VOUT = 9 V, fSW = 400 kHz, PFM
+                      100                                                                             100
+                       90                                                                              90
+                       80                                                                              80
+                       70                                                                              70
+
+
+
+
+     Efficiency (%)                                                                  Efficiency (%)
+                       60                                                                              60
+                       50                                                                              50
+                       40                                                                              40
+                       30                                                                              30
+                                                                     VIN = 5 V                                                                       VIN = 5 V
+                       20                                            VIN = 9 V                         20                                            VIN = 9 V
+                       10                                            VIN = 12 V                        10                                            VIN = 12 V
+                                                                     VIN = 20 V                                                                      VIN = 20 V
+                        0                                                                               0
+                       0.0001     0.001       0.01     0.05    0.2 0.5 1   2 3 45                      0.0001     0.001       0.01     0.05    0.2 0.5 1   2 3 45
+                                            Output Current (A)                                                              Output Current (A)
+                            Figure 6-5. Efficiency vs Output Current,                                       Figure 6-6. Efficiency vs Output Current,
+                               VOUT = 12 V, fSW = 400 kHz, FPWM                                                 VOUT = 12 V, fSW = 400 kHz, PFM
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                                                  Submit Document Feedback           9
+
+                                                                 Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                                                        www.ti.com
+
+6.6 Typical Characteristics (continued)
+                      100                                                                             100
+                       90                                                                              90
+                       80                                                                              80
+                       70                                                                              70
+
+
+
+
+     Efficiency (%)                                                                  Efficiency (%)
+                       60                                                                              60
+                       50                                                                              50
+                       40                                                                              40
+                       30                                                                              30
+                                                                     VIN = 5 V                                                                           VIN = 5 V
+                       20                                            VIN = 9 V                         20                                                VIN = 9 V
+                       10                                            VIN = 12 V                        10                                                VIN = 12 V
+                                                                     VIN = 20 V                                                                          VIN = 20 V
+                        0                                                                               0
+                       0.0001      0.001      0.01     0.05    0.2 0.5 1   2 3 45                      0.0001      0.001        0.01     0.05    0.2 0.5 1    2 3 45
+                                            Output Current (A)                                                                Output Current (A)
+                            Figure 6-7. Efficiency vs Output Current,                                       Figure 6-8. Efficiency vs Output Current,
+                               VOUT = 15 V, fSW = 400 kHz, FPWM                                                 VOUT = 15 V, fSW = 400 kHz, PFM
+                      100                                                                             100
+                       90                                                                              90
+                       80                                                                              80
+                       70                                                                              70
+
+
+
+
+     Efficiency (%)                                                                  Efficiency (%)
+                       60                                                                              60
+                       50                                                                              50
+                       40                                                                              40
+                       30                                                                              30
+                       20                                            VIN = 9 V                         20                                                VIN = 9 V
+                       10                                            VIN = 12 V                        10                                                VIN = 12 V
+                                                                     VIN = 20 V                                                                          VIN = 20 V
+                        0                                                                               0
+                       0.0001      0.001      0.01     0.05    0.2 0.5 1   2 3 45                      0.0001      0.001        0.01     0.05    0.2 0.5 1    2 3 45
+                                            Output Current (A)                                                                Output Current (A)
+                            Figure 6-9. Efficiency vs Output Current,                                       Figure 6-10. Efficiency vs Output Current,
+                               VOUT = 20 V, fSW = 400 kHz, FPWM                                                  VOUT = 20 V, fSW = 400 kHz, PFM
+                      100                                                                             100
+                       90                                                                              90
+                       80                                                                              80
+                       70                                                                              70
+
+
+
+
+     Efficiency (%)                                                                  Efficiency (%)
+                       60                                                                              60
+                       50                                                                              50
+                       40                                                                              40
+                       30                                                                              30
+                                                                     VIN = 5 V                                                                           VIN = 5 V
+                       20                                            VIN = 9 V                         20                                                VIN = 9 V
+                       10                                            VIN = 12 V                        10                                                VIN = 12 V
+                                                                     VIN = 18 V                                                                          VIN = 18 V
+                        0                                                                               0
+                       0.0001      0.001      0.01     0.05    0.2 0.5 1   2 3 45                      0.0001      0.001        0.01     0.05    0.2 0.5 1    2 3 45
+                                            Output Current (A)                                                                Output Current (A)
+                            Figure 6-11. Efficiency vs Output Current,                                      Figure 6-12. Efficiency vs Output Current,
+                                 VOUT = 9 V, fSW = 2 MHz, FPWM                                                    VOUT = 9 V, fSW = 2 MHz, PFM
+
+
+
+
+10                Submit Document Feedback                                                                                 Copyright © 2023 Texas Instruments Incorporated
+
+                                                                 Product Folder Links: TPS552872-Q1
+                                                                                                                                                                                                         TPS552872-Q1
+www.ti.com                                                                                                                                                                                     SLVSHF9 – AUGUST 2023
+
+
+6.6 Typical Characteristics (continued)
+                          100                                                                                                               100
+                           90                                                                                                                90
+                           80                                                                                                                80
+                           70                                                                                                                70
+
+
+
+
+         Efficiency (%)                                                                                               Efficiency (%)
+                           60                                                                                                                60
+                           50                                                                                                                50
+                           40                                                                                                                40
+                           30                                                                                                                30
+                                                                                     VIN = 5 V                                                                                                               VIN = 5 V
+                           20                                                        VIN = 9 V                                               20                                                              VIN = 9 V
+                           10                                                        VIN = 12 V                                              10                                                              VIN = 12 V
+                                                                                     VIN = 18 V                                                                                                              VIN = 18 V
+                            0                                                                                                                 0
+                           0.0001            0.001      0.01     0.05    0.2 0.5 1          2 3 45                                           0.0001           0.001           0.01     0.05    0.2 0.5 1          2 3 45
+                                                      Output Current (A)                                                                                                    Output Current (A)
+                                    Figure 6-13. Efficiency vs Output Current,                                                                        Figure 6-14. Efficiency vs Output Current,
+                                         VOUT = 12 V, fSW = 2 MHz, FPWM                                                                                     VOUT = 12 V, fSW = 2 MHz, PFM
+                          100                                                                                                          2400
+
+                           98                                                                                                          2200
+                                                                                                                                       2000
+                           96
+                                                                                                                                       1800
+                           94                                                                                                          1600
+
+
+
+
+        Efficiency (%)                                                                                  Frequency (kHz)
+                           92                                                                                                          1400
+                                                                                                                                       1200
+                           90
+                                                                                                                                       1000
+                           88
+                                                                                                                                            800
+                           86                                                                                                               600
+                           84                                                                                                               400
+                                                                                 fSW = 400 kHz                                              200
+                           82
+                                                                                 fSW = 2 MHz                                                 0
+                           80                                                                                                                     0     10    20      30     40    50    60       70     80      90       100
+                                8       10      12    14        16      18      20     22      24                                                                            Resistance (k)
+                                                              VIN (V)
+                                                                                                                               Figure 6-16. Switching Frequency vs Setting Resistance
+                                    Figure 6-15. Efficiency vs Input Voltage,
+                                         VOUT = 12 V, IOUT = 2A, FPWM
+                   1.218                                                                                                                    760
+
+                                                                                                                                            750
+                   1.212
+                                                                                                                                            740
+
+
+
+
+                                                                                                                   Quiescent Current (A)
+                   1.206
+                                                                                                                                            730
+
+   VREF (V)               1.2                                                                                                               720
+
+                   1.194                                                                                                                    710
+
+                                                                                                                                            700
+                   1.188
+                                                                                                                                            690                                Into VIN, VIN = 24 V, VOUT = 3 V
+                   1.182                                                                                                                                                       Into VOUT, VIN = 3.1 V, VOUT = 20 V
+                       -40             -20     0     20      40    60      80    100    120       140                                       680
+                                                          Temperature (C)                                                                    -40       -20     0      20      40    60      80        100    120     140
+                                                                                                                                                                            Temperature (°C)
+    Figure 6-17. Reference Voltage vs Temperature (VREF = 1.2 V)
+                                                                                                                                              Figure 6-18. Quiescent Current vs Temperature
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                                                                                                  Submit Document Feedback                       11
+
+                                                                                Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                                                                                               www.ti.com
+
+6.6 Typical Characteristics (continued)
+                                 1.2                                                                                                      1.237
+                                                                                                                                    1.2365
+                                 1.1
+                                                                                                                                          1.236
+                                  1
+
+
+
+
+     Shutdown Current (A)
+                                                                                                          UVLO Threshold (V)
+                                                                                                                                    1.2355
+                                 0.9                                                                                                      1.235
+                                                                                                                                    1.2345
+                                 0.8
+                                                                                                                                          1.234
+                                 0.7
+                                                                                                                                    1.2335
+                                 0.6                                                                                                      1.233
+
+                                 0.5                                                                                                1.2325
+                                                                                                                                          1.232
+                                 0.4                                                                                                          -40   -20    0     20      40    60      80   100     120   140
+                                   -40       -20    0       20      40    60      80   100    120   140                                                               Temperature (°C)
+                                                                 Temperature (°C)
+                                                                                                          Figure 6-20. ENABLE/UVLO Rising Threshold vs Temperature
+                                       Figure 6-19. Shutdown Current vs Temperature
+                                 2500                                                                                                     0.8
+
+
+                                 2000                                                                                                     0.7
+
+
+
+
+     Switching Frequency (kHz)
+                                                                                                                                          0.6
+
+
+
+
+                                                                                                                        CDC Voltage (V)
+                                 1500
+
+                                                                                                                                          0.5
+                                 1000
+                                                                                             2200 kHz
+                                                                                             200kHz                                       0.4
+                                  500
+                                                                                                                                          0.3
+
+                                       0
+                                       -40    -20       0   20      40    60      80   100    120   140                                   0.2
+                                                                 Temperature (°C)                                                               1    1.5        2          2.5         3      3.5         4
+                                   Figure 6-21. Switching Frequency vs Temperature                                                                                  Output Current (A)
+                                                                                                              Figure 6-22. CDC Voltage vs Output Current with RSENSE = 10
+                                                                                                                                          mΩ
+
+
+
+
+12                               Submit Document Feedback                                                                                                      Copyright © 2023 Texas Instruments Incorporated
+
+                                                                                       Product Folder Links: TPS552872-Q1
+                                                                                                      TPS552872-Q1
+www.ti.com                                                                                      SLVSHF9 – AUGUST 2023
+
+
+7 Detailed Description
+7.1 Overview
+The TPS552872-Q1 is a 4-A buck-boost DC-to-DC converter with the four MOSFETs integrated. The
+TPS552872-Q1 can operate over a wide range of 3.0-V to 36-V input voltage and an output voltage of 0.8
+V to 22 V. It can transition among buck mode, buck-boost mode, and boost mode smoothly according to the
+input voltage and the set output voltage. The TPS552872-Q1 operates in buck mode when the input voltage is
+greater than the output voltage and in boost mode when the input voltage is less than the output voltage. When
+the input voltage is close to the output voltage, the TPS552872-Q1 operates in one-cycle buck and one-cycle
+boost mode alternately.
+The TPS552872-Q1 uses an average current mode control scheme. Current mode control provides simplified
+loop compensation, rapid response to the load transients, and inherent line voltage rejection. An error amplifier
+compares the feedback voltage with the internal reference voltage. The output of the error amplifier determines
+the average inductor current.
+An internal oscillator can be configured to operate over a wide range of frequency from 200 kHz to 2.2 MHz. The
+internal oscillator can also synchronize to an external clock applied to the DITH/SYNC pin. To minimize EMI, the
+TPS552872-Q1 can dither the switching frequency at ±7% of the set frequency.
+The TPS552872-Q1 works in fixed-frequency PWM mode at moderate to heavy load currents. In light load
+condition, the TPS552872-Q1 can be configured to automatically transition to PFM mode or be forced in PWM
+mode.
+The TPS552872-Q1 provides average inductor current limit of 4 A typically. In addition, it provides cycle-by-cycle
+peak inductor current limit during transient to protect the device against overcurrent condition beyond the
+capability of the device.
+A precision voltage threshold of 1.23 V with 5-µA sourcing current at the EN/UVLO pin supports programmable
+input undervoltage lockout (UVLO) with hysteresis. The output overvoltage protection (OVP) feature turns off the
+high-side FETs to prevent damage to the devices powered by the TPS552872-Q1.
+The device provides hiccup mode option to reduce the heating in the power components when output short
+circuit happens. The TPS552872-Q1 turns off for 76 ms and restarts at soft start-up.
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                        Submit Document Feedback   13
+
+                                                  Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                                                       www.ti.com
+
+7.2 Functional Block Diagram
+                                                                           L1
+
+
+                                                     C4                               C5
+                                SW1                  BOOT1             BOOT2                   SW2
+                                                                                                                                                      R4         VOUT
+ VIN                                                                                                                               VOUT
+                      VIN
+                                                           VCC
+                                                                                                                                      C2
+                 C1                                                                                           Current
+                                                                                                               Sense
+
+                                             VIN VOUT                                                                              CDC
+                                                                                                                        I-V
+
+                  EXTVCC         VCC                                                                                                  R2
+                                SELECT         LDO                                                            I_limit
+                                                                   Buck-Boost
+                                                                                                                                   ISP
+                      VCC                                           Control
+                                                                                                                                   ISN
+                                                                                                                 Iref                                             R1
+            C3
+                                                                                                                                     FB
+                                                                                 Gm
+                                                                                                      Gm
+                                                                                   BOOST                                                                          R2
+                                                                                   BUCK
+                                                                                                                                   COMP
+                   MODE
+
+                                                                                                       Vref                                            R3
+                       PG                                                                     DAC
+
+                       CC
+                                                                   Logic Core                                                                           C6
+                 EN/UVLO
+                                                                                                       Iref                        PGND
+                                      VSYNC/DITH                                              DAC
+                                      1.0V
+                                                                                                                                   AGND
+                                                     VCC                                   VIN UVLO        VIN
+                      FSW
+                                                                                           VOUT OVP     VOUT
+                                                           fMOD
+       R5
+                                                                                           Thermal
+
+                                                                     DITH/SYNC
+
+                                                                      C7
+
+
+
+7.3 Feature Description
+7.3.1 VCC Power Supply
+An internal LDO to supply the TPS552872-Q1 outputs regulated 5.2-V voltage at the VCC pin. When VIN is less
+than VOUT, the internal LDO selects the power supply source by comparing VIN to a rising threshold of 6.2 V
+with 0.3-V hysteresis. When VIN is higher than 6.2 V, the supply for LDO is VIN. When VIN is lower than 5.9 V,
+the supply for LDO is VOUT. When VOUT is less than VIN, the internal LDO selects the power supply source by
+comparing VOUT to a rising threshold of 6.2 V with 0.3-V hysteresis. When VOUT is higher than 6.2 V, the supply
+for LDO is VOUT. When VOUT is lower than 5.9 V, the supply for LDO is VIN. Table 7-1 shows the supply source
+selection for the internal LDO.
+                                     Table 7-1. VCC Power Supply Logic
+                      VIN                                              VOUT                                                    INPUT for VCC LDO
+
+                  VIN > 6.2 V                                        VOUT > VIN                                                            VIN
+
+                  VIN < 5.9 V                                        VOUT > VIN                                                           VOUT
+
+                  VIN > VOUT                                        VOUT > 6.2 V                                                          VOUT
+
+                  VIN > VOUT                                        VOUT < 5.9 V                                                           VIN
+
+
+
+14      Submit Document Feedback                                                                                         Copyright © 2023 Texas Instruments Incorporated
+
+                                                                  Product Folder Links: TPS552872-Q1
+                                                                                                                        TPS552872-Q1
+www.ti.com                                                                                                        SLVSHF9 – AUGUST 2023
+
+
+7.3.2 EXTVCC Power Supply
+To minimize the power dissipation of the internal LDO when both input voltage and output voltage are high, an
+external 5-V power source can be applied at the VCC pin to supply the TPS552872-Q1. The external 5-V power
+supply must have at least 100-mA output current capability and must be within the 4.75-V to 5.5-V regulation
+range. When the EXTVCC pin is connected to logic low, the device selects the external power supply to supply
+the device through VCC pin. When the EXTVCC pin is connected to logic high or is left floating, the device
+selects internal LDO.
+7.3.3 Input Undervoltage Lockout
+When the input voltage is below 2.6 V, the TPS552872-Q1 is disabled. When the input voltage is above 3 V, the
+TPS552872-Q1 can be enabled by pulling the EN pin to a high voltage above 1.3 V.
+7.3.4 Enable and Programmable UVLO
+The TPS552872-Q1 has a dual function enable and undervoltage lockout (UVLO) circuit. When the input voltage
+at the VIN pin is above the input UVLO rising threshold of 3 V and the EN/UVLO pin is pulled above 1.15 V but
+less than the enable UVLO threshold of 1.23 V, the TPS552872-Q1 is enabled but still in standby mode. The
+TPS552872-Q1 starts to detect the MODE pin logic status.
+The EN/UVLO pin has an accurate UVLO voltage threshold to support programmable input undervoltage lockout
+with hysteresis. When the EN/UVLO pin voltage is greater than the UVLO threshold of 1.23 V, the TPS552872-
+Q1 is enabled for switching operation. A hysteresis current IUVLO_HYS is sourced out of the EN/UVLO pin to
+provide hysteresis that prevents on/off chattering in the presence of noise with a slowly changing input voltage.
+By using resistor divider as shown in Figure 7-1, the turnon threshold is calculated using Equation 1.
+
+                                           R1
+      8+0(78.1 _10) = 878.1 × (1 +            )
+                                           42                                                                                  (1)
+
+where
+•    VUVLO is the UVLO threshold of 1.23 V at the EN/UVLO pin
+The hysteresis between the UVLO turnon threshold and turnoff threshold is set by the upper resistor in the
+EN/UVLO resistor divider and is given by the Equation 2.
+
+      ¿8+0(78.1 ) = +78.1 _*;5 × 41                                                                                            (2)
+
+where
+•    IUVLO_HYS is the sourcing current from the EN/UVLO pin when the voltage at the EN/UVLO pin is above
+     VUVLO
+
+                                         VIN
+                                                                            IUVLO_HYS
+
+
+                                               R1
+                                                     EN/UVLO
+
+
+                                    R2                                                          Enable
+                                                    C1
+
+                                                                              UVLO Comparator
+                                                                 1.23V
+
+
+
+
+                      Figure 7-1. Programmable UVLO With Resistor Divider at the EN/UVLO Pin
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                          Submit Document Feedback    15
+
+                                                     Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                       www.ti.com
+
+Using an NMOSFET together with a resistor divider can implement both logic enable and programmable UVLO
+as shown in Figure 7-2. The EN logic high level must be greater than enable threshold plus the Vth of the
+NMOSFET Q1. The Q1 also eliminates the leakage current from VIN to ground through the UVLO resistor
+divider during shutdown mode.
+                                       VIN
+
+
+
+                                             R1
+                                                                              IUVLO_HYS
+
+
+                        EN
+                                                      EN/UVLO
+
+
+                                  R2                                                              Enable
+                                                     C1
+
+                                                                                UVLO Comparator
+                                                                  1.23V
+
+
+
+
+                                 Figure 7-2. Logic Enable and Programmable UVLO
+
+7.3.5 Soft Start
+When the input voltage is above the UVLO threshold and the voltage at the EN/UVLO pin is above the enable
+UVLO threshold, the TPS552872-Q1 starts to ramp up the output voltage by ramping an internal reference
+voltage from 0 V to 1.2V within typical 3.6 ms.
+7.3.6 Shutdown
+When the EN/UVLO pin voltage is pulled below 0.4 V, the TPS552872-Q1 is in shutdown mode, and all functions
+are disabled.
+7.3.7 Switching Frequency
+The TPS552872-Q1 uses a fixed frequency average current control scheme. The switching frequency is
+between 200 kHz and 2.2 MHz set by placing a resistor at the FSW pin. An internal amplifier holds this pin
+at a fixed voltage of 1 V. The setting resistance is between maximum of 100 kΩ and minimum of 8.4 kΩ. Use
+Equation 3 to calculate the resistance by a given switching frequency.
+
+         fSW = 0.05 × 1000
+                      RFSW + 35 (MHz)                                                                                           (3)
+
+
+where
+•    RFSW is the resistance at the FSW pin (Ω)
+For noise-sensitive applications, the TPS552872-Q1 can be synchronized to an external clock signal applied
+to the DITH/SYNC pin. The duty cycle of the external clock is recommended in the range of 30% to 70%. A
+resistor also must be connected to the FSW pin when the TPS552872-Q1 is switching by the external clock. The
+external clock frequency at the DITH/SYNC pin must have lower than 0.4-V low level voltage and must be within
+±30% of the corresponding frequency set by the resistor. Figure 7-3 is a recommended configuration.
+
+
+
+
+16    Submit Document Feedback                                                             Copyright © 2023 Texas Instruments Incorporated
+
+                                                  Product Folder Links: TPS552872-Q1
+                                                                                                                TPS552872-Q1
+www.ti.com                                                                                                SLVSHF9 – AUGUST 2023
+
+
+
+
+                                                  External Clock               DITH/SYNC
+
+
+
+
+                                                                               FSW
+
+
+                                                                     RFSW
+
+
+
+
+                                                  Figure 7-3. External Clock Configuration
+
+7.3.8 Switching Frequency Dithering
+The TPS552872-Q1 provides an optional switching frequency dithering that is enabled by connecting a capacitor
+from the DITH/SYNC pin to ground. Figure 7-4 illustrates the dithering circuit. By charging and discharging the
+capacitor, a triangular waveform centered at 1 V is generated at the DITH/SYNC pin. The triangular waveform
+modulates the oscillator frequency by ±7% of the nominal frequency set by the resistance at the FSW pin. The
+capacitance at the DITH/SYNC pin sets the modulation frequency. A small capacitance modulates the oscillator
+frequency at a fast rate than a large capacitance. For the dithering circuit to effectively reduce peak EMI, the
+modulation rate normally is below 1 kHz. Equation 4 calculates the capacitance required to set the modulation
+frequency, FMOD.
+
+                            1
+      %&+6* =                             (()
+                 2.8 × 4(59 × (/1&                                                                                     (4)
+
+where
+•    RFSW is the switching frequency setting resistance (Ω) at the FSW pin
+•    FMOD is the modulation frequency (Hz) of the dithering
+Connecting the DITH/SYNC pin below 0.4 V or above 1.2 V disables switching frequency dithering. The dithering
+function also is disabled when an external synchronous clock is used.
+
+
+
+                                                                   1.07V
+                                                                   1.0V              DITH/SYNC
+                                                                   0.93V
+                                                                            CDITH
+                                                   FMOD
+
+
+                                                                                     FSW
+
+
+                                                                            RFSW
+
+
+
+
+                                              Figure 7-4. Switching Frequency Dithering
+
+7.3.9 Inductor Current Limit
+The TPS552872-Q1 implements both peak current and average inductor current limit. The average current mode
+control loop uses the current sense information at the high-side MOSFET of the boost leg to clamp the maximum
+average inductor current to 4 A (typical).
+Besides the average current limit, a peak current limit protection is implemented during transient to protect the
+device against over current condition beyond the capability of the device.
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                  Submit Document Feedback    17
+
+                                                           Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                   www.ti.com
+
+7.3.10 Internal Charge Path
+Each of the two high-side MOSFET drivers is biased from its floating bootstrap capacitor, which is normally
+re-charged by V CC through both the external and internal bootstrap diodes when the low-side MOSFET is turned
+on. When the TPS552872-Q1 operates exclusively in the buck or boost regions, one of the high-side MOSFETs
+is constantly on. An internal charge path, from VOUT and BOOT2 to BOOT1 or from VIN and BOOT1 to BOOT2,
+charges the bootstrap capacitor to VCC so that the high-side MOSFET remains on.
+7.3.11 Output Voltage Setting
+TPS552872-Q1 output voltage is configured with feedback resistors as shown in Figure 7-5, use Equation 5 to
+calculate the output voltage with the reference voltage at the FB pin.
+
+                          4($_72
+     V176 = 84'( × (1 +          )
+                          4($_$6                                                                                            (5)
+
+
+                                                                           RSNS
+                                                                                           VOUT
+                                                       VOUT
+
+
+                                                         ISP
+                                                                                       RFB_UP
+
+                                                         ISN
+
+
+                                                         FB
+
+                                                                                       RFB_BT
+
+
+
+
+                                            Figure 7-5. Output Voltage Setting
+
+TI recommends using 100 kΩ for the up resistor RFB_UP. The reference voltage VREF is 1.2 V.
+7.3.12 Output Current Monitoring and Cable Voltage Droop Compensation
+The TPS552872-Q1 outputs a voltage at the CDC pin proportional to the sensed voltage across a output current
+sensing resistor between the ISP pin and the ISN pin. Equation 6 shows the exact voltage at the CDC pin related
+to the sensed output current.
+
+     V%&% = 20 × (8+52 F 8+50 )                                                                                             (6)
+
+To compensate the voltage droop across a cable from the output of the USB port to its powered device, the
+TPS552872-Q1 can lift its output voltage in proportion to the load current by placing a resistor between the CDC
+pin and AGND pin.
+The output voltage rises in proportion to the current sourcing from the CDC pin through the resistor at the CDC
+pin. It is recommended to use 100-kΩ resistance for the up resistor of the feedback resistor divider. Equation 7
+shows the output voltage rise related to the sensed output current, the resistance at the CDC pin, and the up
+resistor of the output voltage feedback resistor divider.
+
+                                  8+52 F 8+50
+     V176_%&% = 3 × 4($_72 × (                )
+                                     4%&%                                                                                   (7)
+
+where
+•    RFB_UP is the up resistor of the resistor divider between the output and the FB pin
+•    RCDC is the resistor at the CDC pin
+When RFB_UP is 100 kΩ, the output voltage rise versus the sensed output current and the resistor at the CDC
+pin is shown in Figure 7-6.
+
+18    Submit Document Feedback                                                         Copyright © 2023 Texas Instruments Incorporated
+
+                                                  Product Folder Links: TPS552872-Q1
+                                                                                                                           TPS552872-Q1
+www.ti.com                                                                                                           SLVSHF9 – AUGUST 2023
+
+                                    VOUT_CDC(V)
+
+
+                                    0.8                            RCDC=20K
+                                                                                             0.75V
+                                    0.7
+                                    0.6
+
+                                    0.5                                  RCDC=30K            0.5V
+                                    0.4
+
+                                    0.3                                  RCDC=75K
+                                                                                             0.2V
+                                    0.2
+                                                                        RCDC=150K
+                                    0.1                                                      0.1V
+                                                                        RCDC=floating                VISP ± VISN
+                                                                                                        (mV)
+                                                  10      20       30         40        50
+
+
+                                     Figure 7-6. Output Voltage Rise versus Output Current
+
+7.3.13 Output Current Limit
+The output current limit is programmable by placing a current sensing resistor between the ISP pin and ISN pin.
+The voltage limit between the ISP pin and the ISN pin is set to 50 mV. Thus a smaller resistance gets higher
+current limit and a bigger resistance gets lower current limit.
+Connecting the ISP and the ISN pin together to the VOUT pin disables the output current limit because the
+sensed voltage is always zero.
+7.3.14 Overvoltage Protection
+The TPS552872-Q1 has output overvoltage protection. When the output voltage at the VOUT pin is detected
+above 23.5 V typically, the TPS552872-Q1 turns off two high-side FETs and turns on two low-side FETs until its
+output voltage drops the hysteresis value lower than the output overvoltage protection threshold. This function
+prevents overvoltage on the output and secures the circuits connected to the output from excessive overvoltage.
+7.3.15 Output Short Circuit Protection
+In addition to the average inductor current limit, the TPS552872-Q1 implements the output short-circuit
+protection by entering hiccup mode. After soft start-up time of 3.6 ms, the TPS552872-Q1 monitors the average
+inductor current and output voltage. Whenever the output short circuit happens, causing the average inductor
+current hitting the set limit and the output voltage below 0.8 V for 2 ms, the TPS552872-Q1 shuts down the
+switching for 76 ms (typical) and then repeats the soft start for 3.6 ms. The hiccup mode helps reduce the total
+power dissipation on the TPS552872-Q1 in the output short-circuit or overcurrent condition.
+7.3.16 Power Good
+The TPS552872-Q1 integrates a power-good function. The power-good output consists of an open-drain NMOS,
+requiring an external pullup resistor connect to a suitable voltage supply like VCC. The PG pin goes high after
+VOUT reaches 95% of the target output voltage. When the output voltage drops below 90% of the target output
+voltage, the PG pin goes low.
+7.3.17 Constant Current Output Indication
+The TPS552872-Q1 integrates a constant current output indication function. It consists of an open-drain NMOS,
+requiring an external pullup resistor connect to a suitable voltage supply like VCC. The CC pin goes low with a
+128-μs delay time after the voltage between the ISP pin and the ISN pin reaches to 50 mV.
+7.3.18 Thermal Shutdown
+The TPS552872-Q1 is protected by a thermal shutdown circuit that shuts down the device when the internal
+junction temperature exceeds 175°C (typical). The internal soft-start circuit is reset when thermal shutdown is
+triggered. The converter automatically restarts when the junction temperature drops below the thermal shutdown
+hysteresis of 20°C below the thermal shutdown threshold.
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                             Submit Document Feedback   19
+
+                                                       Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                             www.ti.com
+
+7.4 Device Functional Modes
+In light load condition, the TPS552872-Q1 can work in PFM or forced PWM mode to meet different application
+requirements. PFM mode decreases switching frequency to reduce the switching loss thus it gets high efficiency
+at light load condition. The FPWM mode keeps the switching frequency unchanged to avoid undesired low
+switching frequency but the efficiency becomes lower than that of PFM mode.
+7.4.1 PWM Mode
+When the MODE pin is connected to logic high, the TPS552872-Q1 works in FPWM mode and the switching
+frequency is unchanged in light load condition. When the load current decreases, the output of the internal error
+amplifier decreases as well to reduce the average inductor current down to deliver less power from input to
+output. When the output current further reduces, the current through the inductor decreases to zero during the
+switch-off time. The high-side N-MOSFET is not turned off even if the current through the MOSFET is zero.
+Thus, the inductor current changes its direction after it runs to zero. The power flow is from output side to input
+side. The efficiency is low in this condition. However, with the fixed switching frequency, there is no audible noise
+or other problems that might be caused by low switching frequency in light load condition.
+7.4.2 Power Save Mode
+The TPS552872-Q1 improves the efficiency at light load condition with PFM mode. When the MODE pin is
+connected to logic low, the TPS552872-Q1 can work in PFM mode at light load condition. When the TPS552872-
+Q1 operates at light load condition, the output of the internal error amplifier decreases to make the inductor
+peak current down to deliver less power to the load. When the output current further reduces, the current
+through the inductor will decrease to zero during the switch-off time. When the TPS552872-Q1 works in buck
+mode, once the inductor current becomes zero, the low-side switch of the buck side is turned off to prevent the
+reverse current from output to ground. When the TPS552872-Q1 works in boost mode, once the inductor current
+becomes zero, the high side-switch of the boost side is turned off to prevent the reverse current from output to
+input. The TPS552872-Q1 resumes switching until the output voltage drops. Thus PFM mode reduces switching
+cycles and eliminates the power loss by the reverse inductor current to get high efficiency in light load condition.
+
+
+
+
+20    Submit Document Feedback                                                   Copyright © 2023 Texas Instruments Incorporated
+
+                                          Product Folder Links: TPS552872-Q1
+                                                                                                                        TPS552872-Q1
+www.ti.com                                                                                                     SLVSHF9 – AUGUST 2023
+
+
+8 Application and Implementation
+                                                                          Note
+       Information in the following applications sections is not part of the TI component specification,
+       and TI does not warrant its accuracy or completeness. TI’s customers are responsible for
+       determining suitability of components for their purposes, as well as validating and testing their design
+       implementation to confirm system functionality.
+
+8.1 Application Information
+The TPS552872-Q1 can operate over a wide range of 3.0 V to 36 V input voltage and output 0.8 V to 22 V. It can
+transition among buck mode, buck-boost mode, and boost mode smoothly according to the input voltage and
+the setting output voltage. The TPS552872-Q1 operates in buck mode when the input voltage is greater than
+the output voltage and in boost mode when the input voltage is less than the output voltage. When the input
+voltage is close to the output voltage, the TPS552872-Q1 operates in one-cycle buck and one-cycle boost mode
+alternately. The switching frequency is set by an external resistor. To reduce the switching power loss in high
+power conditions, it is recommended to set the switching frequency below 500 kHz.
+8.2 Typical Application
+                                                                  L1
+
+
+
+                                                       C4                         C5
+
+
+                                                     BOOT1 SW1          SW2 BOOT2
+       VIN = 9V to 18V
+                                                                                                                   R4      VOUT = 12V
+                                         VIN                                           VOUT
+               C1
+                                         VCC                                                        C2
+                                                                                       PGND        4 x 22µF
+                                    C3
+                                         AGND
+                                                                                        ISP
+                               ON                                                                                               R1
+                                         EN/UVLO                                        ISN
+          OFF                                               TPS552872-Q1
+                                         PG
+                                                                                         FB
+           Internal Vcc                  CC
+                                         EXTVCC                                        COMP
+External Vcc
+                                         DITH/SYNC                                     MODE                                     R2
+                                                                                                              R3
+                               C8                                                                    C7
+                                         FSW                                            CDC
+                                                                                              R2              C6
+                          R5
+
+
+
+                                     Figure 8-1. 12-V Power Supply With 9-V to 18-V Input Voltage
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                    Submit Document Feedback          21
+
+                                                            Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                       www.ti.com
+
+8.2.1 Design Requirements
+The design parameters are listed in Table 8-1:
+                                            Table 8-1. Design Parameters
+                PARAMETERS                                                        VALUES
+                  Input voltage                                               9 V to 18 V
+                  Output voltage                                                   12 V
+              Output current limit                                                 2A
+             Output voltage ripple                                                ±50 mV
+          Operating mode at light load                                            FPWM
+
+
+8.2.2 Detailed Design Procedure
+8.2.2.1 Switching Frequency
+The switching frequency of the TPS552872-Q1 is set by a resistor at the FSW pin. Use Equation 3 to calculate
+the resistance for the desired frequency. To achieve a smaller total solution size, a 1% standard resistor of 9.3
+kΩ is selected for 2-MHz switching frequency for this application.
+8.2.2.2 Output Voltage Setting
+The output voltage is set by an external resistor divider (R1, R2 in the Figure 8-1 circuit diagram). When the
+output voltage is regulated, the typical voltage at the FB pin is VREF. The value of R2 is then calculated as
+Equation 8:
+
+                      R1
+           R2 =     VOUT                                                                                                        (8)
+                    VREF − 1
+
+8.2.2.3 Inductor Selection
+Since the selection of the inductor affects steady state operation, transient behavior, and loop stability, the
+inductor is the most important component in power regulator design. There are three important inductor
+specifications: inductance, saturation current, and DC resistance.
+The TPS552872-Q1 is designed to work with inductor values between 1 µH and 10 µH. The inductor selection
+is based on consideration of both buck and boost modes of operation. For 2 MHz switching frequency, a 1uH or
+2.2uH inductor is recommended. For 400kHz switching frequency, a 4.7uH inductor is recommended.
+For buck mode, the inductor selection is based on limiting the peak-to-peak current ripple to the maximum
+inductor current at the maximum input voltage. In CCM, Equation 9 shows the relationship between the
+inductance and the inductor ripple current.
+
+          kVIN(MAX) -VOUT o×VOUT
+     L=
+          ¨IL(P-P) ×fSW ×VIN:MAX;                                                                                               (9)
+
+where
+•    VIN(MAX) is the maximum input voltage
+•    VOUT is the output voltage
+•    ΔIL(P-P) is the peak to peak ripple current of the inductor
+•    fSW is the switching frequency
+For a certain inductor, the inductor ripple current achieves maximum value when VOUT equals half of
+the maximum input voltage. Choosing higher inductance gets smaller inductor current ripple while smaller
+inductance gets larger inductor current ripple.
+
+
+
+
+22     Submit Document Feedback                                                            Copyright © 2023 Texas Instruments Incorporated
+
+                                             Product Folder Links: TPS552872-Q1
+                                                                                                      TPS552872-Q1
+www.ti.com                                                                                      SLVSHF9 – AUGUST 2023
+
+For boost mode, the inductor selection is based on limiting the peak-to-peak current ripple to the maximum
+inductor current at the maximum output voltage. In CCM, Equation 10 shows the relationship between the
+inductance and the inductor ripple current.
+
+            VIN ×kVOUT(MAX) -VIN o
+      L=
+           ¨IL(P-P) ×fSW ×VOUT(MAX)                                                                         (10)
+
+where
+•    VIN is the input voltage
+•    VOUT(MAX) is the maximum output voltage
+•    ΔIL(P-P) is the peak to peak ripple current of the inductor
+•    fSW is the switching frequency
+For a certain inductor, the inductor ripple current achieves maximum value when VIN equals to the half of
+the maximum output voltage. Choosing higher inductance gets smaller inductor current ripple while smaller
+inductance gets larger inductor current ripple.
+In buck mode, the inductor DC current equals to the output current. In boost mode, the inductor DC current can
+be calculated with Equation 11.
+
+                 VOUT ×IOUT
+      IL(DC) =
+                   VIN ×                                                                                    (11)
+
+where
+•    VOUT is the output voltage
+•    IOUT is the output current
+•    VIN is the input voltage
+•    η is the power conversion efficiency
+For a given maximum output current of the buck-boost converter TPS552872-Q1, the maximum inductor DC
+current happens at the minimum input voltage and maximum output voltage. Set the inductor current limit of the
+TPS552872-Q1 higher than the calculated maximum inductor DC current to make sure the TPS552872-Q1 has
+the desired output current capability.
+In boost mode, the inductor ripple current is calculated with Equation 12.
+
+                   VIN ×:VOUT-VIN ;
+      ¨IL(P-P) =
+                    L×fSW ×VOUT                                                                             (12)
+
+where
+•    ΔIL(P-P) is the inductor ripple current
+•    L is the inductor value
+•    fSW is the switching frequency
+•    VOUT is the output voltage
+•    VIN is the input voltage
+Therefore, the inductor peak current is calculated with Equation 13.
+
+                         ¨IL(P-P)
+      IL(P) = IL(DC) +
+                            2                                                                               (13)
+
+Normally, it is advisable to work with an inductor peak-to-peak current of less than 40% of the average inductor
+current for maximum output current. A smaller ripple from a larger valued inductor reduces the magnetic
+hysteresis losses in the inductor and EMI, but in the same way, load transient response time is increased. The
+selected inductor must have higher saturation current than the calculated peak current.
+
+
+Copyright © 2023 Texas Instruments Incorporated                                        Submit Document Feedback    23
+
+                                                  Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                          www.ti.com
+
+The conversion efficiency is dependent on the resistance of its current path. The switching loss associated with
+the switching MOSFETs, and the inductor core loss. Therefore, the overall efficiency is affected by the inductor
+DC resistance (DCR), equivalent series resistance (ESR) at the switching frequency, and the core loss. Table
+8-2 lists recommended inductors for the TPS552872-Q1. In this application example, switching frequency is 2
+MHz and the Coilcraft inductor XGL5030-102 is selected for its small size, high saturation current, and small
+DCR.
+                                                  Table 8-2. Recommended Inductors
+                                                     DCR           SATURATION
+         PART NUMBER                 L (µH)       (MAXIMUM)       CURRENT / HEAT          SIZE (L x W x H mm)           VENDOR(1)
+                                                     (mΩ)       RATING CURRENT (A)
+        XGL5030-102MEC                 1             5.8                14/17.8              5.5 × 5.3 × 3.1              Coilcraft
+           74438367010                 1             11.5             13.1/11.85             5.4 × 5.4 × 3.1                 WE
+        XGL6060-472MEC                4.7            10.1              10.2/16.6             6.7 × 6.5 × 6.1              Coilcraft
+
+(1)    See the Third-party Products disclaimer.
+
+8.2.2.4 Input Capacitor
+In buck mode, the input capacitor supplies high ripple current. The RMS current in the input capacitors is given
+by Equation 14.
+
+                         VOUT ×:VIN -VOUT ;
+      ICIN:RMS; = IOUT ×¨
+                             VIN ×VIN
+                                                                                                                                  (14)
+
+where
+•     ICIN(RMS) is the RMS current through the input capacitor
+•     IOUT is the output current
+The maximum RMS current occurs at the output voltage is half of the input voltage, which gives ICIN(RMS) = IOUT /
+2. Ceramic capacitors are recommended for their low ESR and high ripple current capability. A total of 20 µF
+effective capacitance is a good starting point for this application. Add a 0.1-μF/0402 package ceramic capacitor
+and place it close to VIN pin and GND pin to suppress high frequency noise.
+8.2.2.5 Output Capacitor
+In boost mode, the output capacitor conducts high ripple current. The output capacitor RMS ripple current is
+given by Equation 15, where the minimum input voltage and the maximum output voltage correspond to the
+maximum capacitor current.
+
+                          VOUT
+      ICOUT:RMS; = IOUT ×¨     -1
+                           VIN
+                                                                                                                                  (15)
+
+where
+•     ICOUT(RMS) is the RMS current through the output capacitor
+•     IOUT is the output current
+In this example, the maximum output ripple RMS current is 1.15 A.
+The ESR of the output capacitor causes an output voltage ripple given by Equation 16 in boost mode.
+
+                       IOUT ×VOUT
+      VRIPPLE(ESR) =              ×RCOUT
+                           VIN                                                                                                    (16)
+
+where
+•     RCOUT is the ESR of the output capacitance
+
+24     Submit Document Feedback                                                               Copyright © 2023 Texas Instruments Incorporated
+
+                                                     Product Folder Links: TPS552872-Q1
+                                                                                                      TPS552872-Q1
+www.ti.com                                                                                      SLVSHF9 – AUGUST 2023
+
+The capacitance also causes a capacitive output voltage ripple given by Equation 17 in boost mode. When input
+voltage reaches the minimum value and the output voltage reaches the maximum value, there is the largest
+output voltage ripple caused by the capacitance.
+
+                                    VIN
+                         IOUT × l1-     p
+                                   VOUT
+      VRIPPLE(CAP) =
+                             COUT ×fSW                                                                      (17)
+
+Typically, a combination of ceramic capacitors and bulk electrolytic capacitors is needed to provide low ESR,
+high ripple current, and small output voltage ripple. From the required output voltage ripple, use Equation 16 and
+Equation 17 to calculate the minimum required effective capacitance of the COUT.
+Add a 0.1-μF/0402 package ceramic capacitor and place it close to VOUT pin and GND pin to suppress high
+frequency noise.
+8.2.2.6 Output Current Limit
+The output current limit is implemented by putting a current sense resistor between the ISP and ISN pins. The
+value of the limit voltage between the ISP and ISN pins is 50 mV. The current sense resistor between the ISP
+and ISN pins should be selected to ensure that the output current limit is set high enough for output. The output
+current limit setting resistor is given by Equation 18.
+
+                  VSNS
+      RSNS =
+                IOUT_LIMIT                                                                                  (18)
+
+where
+•    VSNS is the current limit setting voltage between the ISP and ISN pins
+•    IOUT_LIMIT is the desired output current limit
+For this application, a 20 mΩ current sense resistor is selected and output current limit is set at 2.5A typically.
+Because the power dissipation is large, make sure the current sense resistor has enough power dissipation
+capability with large package.
+8.2.2.7 Loop Stability
+The TPS552872-Q1 uses average current control scheme. The inner current loop uses internal compensation
+and requires the inductor value must be larger than 1.2/fSW. The outer voltage loop requires an external
+compensation. The COMP pin is the output of the internal voltage error amplifier. An external compensation
+network comprised of resistor and ceramic capacitors is connected to the COMP pin.
+The TPS552872-Q1 operates in buck mode or boost mode. Therefore, both buck and boost operating modes
+require loop compensations. The restrictive one of both compensations is selected as the overall compensation
+from a loop stability point of view. Typically for a converter designed either work in buck mode or boost mode, the
+boost mode compensation design is more restrictive due to the presence of a right half plane zero (RHPZ).
+The power stage in boost mode can be modeled by Equation 19.
+
+                                    s                s
+                RLOAD ×:1-D; l1+ 2N×fESRZ p × l1- 2N×fRHPZ p
+      GPS (s) =             ×                 s
+                 2×RSENSE             1+
+                                           2N×fP                                                            (19)
+
+where
+•    RLOAD is the output load resistance
+•    D is the switching duty cycle in boost mode
+•    RSENSE is the equivalent internal current sense resistor, which is 0.055 Ω
+The power stage has two zeros and one pole generated by the output capacitor and load resistance. Use
+Equation 20 to Equation 22 to calculate them.
+
+Copyright © 2023 Texas Instruments Incorporated                                        Submit Document Feedback    25
+
+                                                  Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                               www.ti.com
+
+                  2
+     fP =
+            2N×RLOAD ×COUT                                                                                            (20)
+
+                        1
+     fESRZ =
+               2N×RCOUT ×COUT                                                                                         (21)
+
+               RLOAD ×:1-D;2
+     fRHPZ =
+                   2N×L                                                                                               (22)
+
+The internal transconductance amplifier together with the compensation network at the COMP pin constitutes the
+control portion of the loop. The transfer function of the control portion is shown by Equation 23.
+
+                                                    s
+              GEA ×REA ×VREF              l1+             p
+                                                 2N×fCOMZ
+     GC (s) =                ×
+                                         s                   s
+                   VOUT        l1+              p × l1 +           p
+                                     2N×f COMP1          2N×fCOMP2                                                    (23)
+
+where
+•    GEA is the transconductance of the error amplifier
+•    REA is the output resistance of the error amplifier
+•    VREF is the reference voltage input to the error amplifier
+•    VOUT is the output voltage
+•    fCOMP1 and fCOMP2 are the pole’s frequency of the compensation network
+•    fCOMZ is the zero’s frequency of the compensation network
+The total open-loop gain is the product of GPS(s) and GC(s). The next step is to choose the loop crossover
+frequency, fC, at which the total open-loop gain is 1, namely 0 dB. The higher in frequency that the loop gain
+stays above 0 dB before crossing over, the faster the loop response. It is generally accepted that the loop gain
+cross over 0 dB at the frequency no higher than the lower of either 1/10 of the switching frequency, fSW or 1/5 of
+the RHPZ frequency, fRHPZ.
+Then, set the value of RC, CC, and CP by Equation 24 to Equation 26.
+
+            2N×VOUT ×RSENSE ×COUT ×fC
+     RC =
+                :1-D;×VREF ×GEA                                                                                       (24)
+
+where
+•    fC is the selected crossover frequency
+
+            RLOAD ×COUT
+     CC =
+               2×RC                                                                                                   (25)
+
+            RCOUT ×COUT
+     CP =
+                RC                                                                                                    (26)
+
+If the calculated CP is less than 10 pF, it can be left open.
+Designing the loop for greater than 45° of phase margin and greater than 10-dB gain margin eliminates output
+voltage ringing during the line and load transient.
+
+
+
+
+26    Submit Document Feedback                                                     Copyright © 2023 Texas Instruments Incorporated
+
+                                              Product Folder Links: TPS552872-Q1
+                                                                                                            TPS552872-Q1
+www.ti.com                                                                                            SLVSHF9 – AUGUST 2023
+
+
+8.2.3 Application Curves
+Typical condition VIN = 9 V to 18 V, VOUT = 12 V, FSW = 2 MHz, temperature = 25°C, unless otherwise noted
+
+
+
+
+      VOUT                                                             VOUT
+
+
+
+
+      SW1                                                              SW1
+
+
+
+      SW2                                                              SW2
+
+
+
+       iL                                                               iL
+
+
+
+
+     Figure 8-2. Switching Waveforms in VIN = 16 V,                   Figure 8-3. Switching Waveforms in VIN = 16 V,
+              VOUT = 12 V, IO = 2 A, FPWM                                       VOUT = 12 V, IO = 0 A, PFM
+
+
+
+      VOUT
+                                                                       VOUT
+
+
+
+                                                                       SW1
+      SW1
+
+
+                                                                       SW2
+      SW2
+
+
+
+       iL                                                               iL
+
+
+
+
+     Figure 8-4. Switching Waveforms in VIN = 12 V,                   Figure 8-5. Switching Waveforms in VIN = 12 V,
+              VOUT = 12 V, IO = 2 A, FPWM                                       VOUT = 12 V, IO = 0 A, PFM
+
+
+
+       VOUT
+                                                                       VOUT
+
+
+      SW1
+                                                                       SW1
+
+      SW2
+                                                                       SW2
+
+
+
+       iL                                                               iL
+
+
+
+
+  Figure 8-6. Switching Waveforms in VIN = 9 V, VOUT                Figure 8-7. Switching Waveforms in VIN = 9 V, VOUT
+                = 12 V, IO = 2 A, FPWM                                             = 12 V, IO = 0 A, PFM
+
+
+Copyright © 2023 Texas Instruments Incorporated                                              Submit Document Feedback   27
+
+                                                  Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                           www.ti.com
+
+
+
+
+       VOUT                                                    VOUT
+
+
+
+
+        iL                                                      iL
+
+
+
+
+     Figure 8-8. Start-up Waveforms in VIN = 16 V, VOUT       Figure 8-9. Shutdown Waveforms in VIN = 16 V,
+                 = 12 V, RLOAD = 6 Ω, FPWM                           VOUT = 12 V, RLOAD = 6 Ω, FPWM
+
+
+
+
+       VIN                                                     VOUT
+
+
+
+       VOUT
+
+
+
+
+        iL                                                     IOUT
+
+
+
+
+  Figure 8-10. Line Transient Waveforms in VIN = 9 V Figure 8-11. Load Transient Waveforms in VIN = 16
+ to 20 V, VOUT = 12 V, IO = 2 A with 200-μs Slew Rate, V, VOUT = 12 V, IO = 0 A to 2 A with 20-μs Slew Rate,
+                         FPWM                                                  FPWM
+
+
+                                   VIN
+
+
+
+                                   VOUT
+
+
+
+
+                                   IOUT
+
+
+
+
+      Figure 8-12. Output Current Limit Waveforms in VIN = 16 V, VOUT = 12 V, RLOAD = 3 Ω, RSNS = 20 mΩ,
+                                                   FPWM
+
+
+
+
+28      Submit Document Feedback                                               Copyright © 2023 Texas Instruments Incorporated
+
+                                          Product Folder Links: TPS552872-Q1
+                                                                                                      TPS552872-Q1
+www.ti.com                                                                                      SLVSHF9 – AUGUST 2023
+
+
+8.3 Power Supply Recommendations
+The device is designed to operate from an input voltage supply range between 3.0 V to 36 V. This input supply
+must be well regulated. If the input supply is located more than a few inches from the converter, additional
+bulk capacitance can be required in addition to the ceramic bypass capacitors. A typical choice is an aluminum
+electrolytic capacitor with a value of 100 μF.
+8.4 Layout
+8.4.1 Layout Guidelines
+As for all switching power supplies, especially those running at high switching frequency and high currents,
+layout is an important design step. If layout is not carefully done, the regulator can suffer from instability and
+noise problems.
+1. Place the 0.1-μF small package (0402) ceramic capacitors close to the VIN/VOUT pins to minimize high
+   frequency current loops. This improves the radiation of high-frequency noise (EMI) and efficiency.
+2. Use multiple GND vias near PGND pin to connect the PGND to the internal ground plane. This also
+   improves thermal performance.
+3. Minimize the SW1 and SW2 loop areas as these are high dv/dt nodes. Use a ground plane under the
+   switching regulator to minimize interplane coupling.
+4. Use Kelvin connections to RSENSE for the current sense signals ISP and ISN and run lines in parallel from
+   the RSENSE terminals to the IC pins. Place the filter capacitor for the current sense signal as close to the IC
+   pins as possible.
+5. Place the BOOT1 bootstrap capacitor close to the IC and connect directly to the BOOT1 to SW1 pins. Place
+   the BOOT2 bootstrap capacitor close to the IC and connect directly to the BOOT2 and SW2 pins.
+6. Place the VCC capacitor close to the IC with wide and short trace. The GND terminal of the VCC capacitor
+   should be directly connected with PGND plane through three to four vias.
+7. Isolate the power ground from the analog ground. The PGND plane and AGND plane are connected at the
+   terminal of the VCC capacitor. Thus the noise caused by the MOSFET driver and parasitic inductance does
+   not interface with the AGND and internal control circuit.
+8. Place the compensation components as close to the COMP pin as possible. Keep the compensation
+   components, feedback components, and other sensitive analog circuitry far away from the power
+   components, switching nodes SW1 and SW2, and high-current trace to prevent noise coupling into the
+   analog signals.
+9. To improve thermal performance, it is recommended to use thermal vias beneath the TPS552872-Q1
+   connecting the VIN pin to a large VIN area, and the VOUT pin to a large VOUT area separately.
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                        Submit Document Feedback   29
+
+                                                  Product Folder Links: TPS552872-Q1
+TPS552872-Q1
+SLVSHF9 – AUGUST 2023                                                                                                 www.ti.com
+
+8.4.2 Layout Example
+
+
+
+
+                                                                                     PGND
+
+
+                                 21   20                           19   18
+
+                             1                                           17         AGND
+
+                             2                                           16
+
+           AGND
+                             3                                           15
+                             4                                           14
+                                 5    6    7   8    9    10   11   12   13
+
+
+
+
+                  VIN
+                                                                                                     VOUT
+
+                                               PGND
+                             trace on bottom layer
+
+                             AGND plane on an inner layer
+         The first inner layer is the PGND plane
+                                               Figure 8-13. Layout Example
+
+30    Submit Document Feedback                                                       Copyright © 2023 Texas Instruments Incorporated
+
+                                               Product Folder Links: TPS552872-Q1
+                                                                                                                           TPS552872-Q1
+www.ti.com                                                                                                          SLVSHF9 – AUGUST 2023
+
+
+9 Device and Documentation Support
+9.1 Device Support
+9.1.1 Third-Party Products Disclaimer
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+9.2 Receiving Notification of Documentation Updates
+To receive notification of documentation updates, navigate to the device product folder on ti.com. Click on
+Subscribe to updates to register and receive a weekly digest of any product information that has changed. For
+change details, review the revision history included in any revised document.
+9.3 Support Resources
+TI E2E™ support forums are an engineer's go-to source for fast, verified answers and design help — straight
+from the experts. Search existing answers or ask your own question to get the quick design help you need.
+Linked content is provided "AS IS" by the respective contributors. They do not constitute TI specifications and do
+not necessarily reflect TI's views; see TI's Terms of Use.
+9.4 Trademarks
+HotRod™ and TI E2E™ are trademarks of Texas Instruments.
+All trademarks are the property of their respective owners.
+9.5 Electrostatic Discharge Caution
+                    This integrated circuit can be damaged by ESD. Texas Instruments recommends that all integrated circuits be handled
+                    with appropriate precautions. Failure to observe proper handling and installation procedures can cause damage.
+                    ESD damage can range from subtle performance degradation to complete device failure. Precision integrated circuits may
+                    be more susceptible to damage because very small parametric changes could cause the device not to meet its published
+                    specifications.
+
+
+9.6 Glossary
+ TI Glossary             This glossary lists and explains terms, acronyms, and definitions.
+
+10 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical, packaging, and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+Copyright © 2023 Texas Instruments Incorporated                                                          Submit Document Feedback         31
+
+                                                    Product Folder Links: TPS552872-Q1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                    9-Nov-2025
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins      Package qty | Carrier        RoHS             Lead finish/              MSL rating/               Op temp (°C)          Part marking
+                                        (1)            (2)                                                             (3)            Ball material             Peak reflow                                           (6)
+                                                                                                                                            (4)                      (5)
+
+      TPS552872QWRYQRQ1               Active      Production     VQFN-HR (RYQ) | 21      3000 | LARGE T&R             Yes                NIPDAU           Level-2-260C-1 YEAR              -40 to 125              52872Q
+      TPS552872QWRYQRQ1.A             Active      Production     VQFN-HR (RYQ) | 21      3000 | LARGE T&R             Yes                NIPDAU           Level-2-260C-1 YEAR              -40 to 125              52872Q
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+OTHER QUALIFIED VERSIONS OF TPS552872-Q1 :
+
+• Catalog : TPS552872
+
+
+
+                                                                                                          Addendum-Page 1
+                                                                     PACKAGE OPTION ADDENDUM
+
+   www.ti.com                                                                          9-Nov-2025
+
+
+
+
+NOTE: Qualified Version Definitions:
+
+       • Catalog - TI's standard catalog product
+
+
+
+
+                                                   Addendum-Page 2
+                                                                  GENERIC PACKAGE VIEW
+RYQ 21                                                                     VQFN - 1 mm max height
+5 x 3, 0.5 mm pitch                                                         PLASTIC QUAD FLATPACK - NO LEAD
+
+
+
+
+               This image is a representation of the package family, actual package may vary.
+                             Refer to the product data sheet for package details.
+
+
+
+
+                                                                                                   4228970/A
+
+
+
+
+                                                    www.ti.com
+                                                                                                                             PACKAGE OUTLINE
+RYQ0021B                                                                   SCALE 3.000
+                                                                                                                         VQFN - 1.0 mm max height
+                                                                                                                             PLASTIC QUAD FLATPACK - NO LEAD
+
+
+
+
+                                                                    5.1                                        B
+                              A
+                                                                    4.9
+
+
+
+
+         PIN 1 INDEX AREA                                                                                     3.1
+                                                                                                              2.9
+
+                                                                                                                                                       (0.1) MIN
+
+
+
+
+                                                                                                                                     (0.13)
+                                                                                                                                   SECTION A-A
+                                                                                                                                      SCALE:30X
+
+
+                                                                                                                    C
+                     1 MAX
+
+                                                                                                                             SEATING PLANE
+                     0.05
+                     0.00                                                                                                0.08 C
+
+                                                                 2X 4.08
+                                                                 SYMM
+                                  0.3
+                            16X
+                                  0.2                     0.38                                                                                     (0.2) TYP
+                                                          0.28                                                 SEE TERMINAL
+                                            5                                                       13
+                                                                                                               DETAIL
+                 18X 0.5
+                                        4                                                       A         14 A
+
+                       2X                                                                                                         (0.16)
+                                                                                                              SYMM                  TYP
+                       1.5
+                                                                                                                    (2.35)
+                                                                                                         17
+                                    1
+
+
+                                                21   20                                    19    18
+                         0.5                                                                                             0.55
+                      12X                                                                                           4X
+                         0.3                              2X 0.54                                                        0.35
+              0.1     C A B                                                                                                0.1     C A B
+                                                          PIN 1 ID
+                                                          (OPTIONAL)                               0.3                     0.05
+              0.05                                                                              5X
+                                                                                                   0.2
+                                                                                                     0.1      C A B
+                                                                                                     0.05
+                                                                                                                                                  4228792/A 07/2022
+
+NOTES:
+
+1. All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+   per ASME Y14.5M.
+2. This drawing is subject to change without notice.
+3. The package thermal pad must be soldered to the printed circuit board for thermal and mechanical performance.
+
+
+
+
+                                                                                         www.ti.com
+                                                                                        EXAMPLE BOARD LAYOUT
+ RYQ0021B                                                                                          VQFN - 1.0 mm max height
+                                                                                                         PLASTIC QUAD FLATPACK - NO LEAD
+
+
+
+
+                                                                  SYMM
+
+
+                                                                                2X (0.54)
+                (R0.05) TYP
+                                      21                                                          18
+
+
+               12X (0.6)
+
+
+              21X (0.25)    1                                                                                 17
+                                                                                                                                          5X
+                                                                                                                                         (3.4)
+                                                                                                                SYMM             (2.8)
+                                                                                                                           (2.75)
+                                                                                                                      (2.35)
+
+               18X (0.5)
+                                                                                                              14
+                            4
+
+
+                   4X (0.65)
+
+                                     5                                                              13
+                                                     (0.33)
+
+                                                                 2X (4.08)
+
+
+                                                                    4.8
+
+                                                    LAND PATTERN EXAMPLE
+                                                                SCALE:18X
+
+
+
+
+                               0.07 MAX                                                 0.07 MIN
+                           ALL AROUND                                               ALL AROUND
+
+                                                                                                                 SOLDER MASK
+                                                      METAL                                                      OPENING
+
+
+                                                      SOLDER MASK                                                  METAL UNDER
+                                                      OPENING                                                      SOLDER MASK
+
+                                NON SOLDER MASK
+                                                                                              SOLDER MASK
+                                    DEFINED
+                                                                                                DEFINED
+                                  (PREFERRED)
+
+                                                              SOLDER MASK DETAILS
+                                                                                                                             4228792/A 07/2022
+
+NOTES: (continued)
+
+4. This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+   number SLUA271 (www.ti.com/lit/slua271).
+5. Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+   on this view. It is recommended that vias under paste be filled, plugged or tented.
+
+
+
+
+                                                                          www.ti.com
+                                                                               EXAMPLE STENCIL DESIGN
+RYQ0021B                                                                                   VQFN - 1.0 mm max height
+                                                                                               PLASTIC QUAD FLATPACK - NO LEAD
+
+
+
+
+                                                                 SYMM
+
+
+                                                                               2X (0.54)
+                                   21                                                           18
+
+
+             16X (0.6)
+
+
+            30X (0.25)    1                                                                                  17
+                                                                                                                                  (2.8)
+                                                                                                                             (2.75)
+                SYMM                                                                                                     (2.4)
+                                                                                                                  15X
+                                                                                                                   (1)
+
+              18X (0.5)
+                                        METAL                                                                14
+                          4
+                                        TYP
+
+
+                4X (0.65)
+
+                                  5                                                                13
+                                                       (0.33)
+
+                                                                2X (4.08)
+
+                                                                  (4.8)
+
+
+                                                    SOLDER PASTE EXAMPLE
+                                                  BASED ON 0.125 mm THICK STENCIL
+
+                                                PIN 7,8, 10 & 11 SOLDER COVERAGE = 88%
+                                                     PIN 9 SOLDER COVERAGE = 64%
+                                                                 SCALE:20X
+
+
+
+
+                                                                                                                    4228792/A 07/2022
+
+NOTES: (continued)
+
+6. Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+  design recommendations.
+
+
+
+
+                                                                  www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2025, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

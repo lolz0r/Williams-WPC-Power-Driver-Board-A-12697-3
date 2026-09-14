@@ -1,0 +1,809 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "gi_50_0.9",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.50727,
+        "peak": 30.4696,
+        "power": 4.37616,
+        "i2t": 2.87919,
+        "tj": 110.7192
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 30.4696,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 2.87919,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.50727,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 110.7192,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "6f059a0493bf272d036849e761a37e02b34a309fbfb582051d1a6e23533006bd"
+    },
+    {
+      "name": "gi_50_1.1",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.56519,
+        "peak": 37.8944,
+        "power": 4.46235,
+        "i2t": 3.2645,
+        "tj": 111.9151
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 37.8944,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 3.2645,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.56519,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.9151,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "5aa90707b7ed9373a98ba5dc11ac3375eebedf3701ef7bc0ba4a418c78795bdb"
+    },
+    {
+      "name": "gi_60_0.9",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.50731,
+        "peak": 31.6384,
+        "power": 4.3761,
+        "i2t": 2.88866,
+        "tj": 110.7183
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 31.6384,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 2.88866,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.50731,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 110.7183,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "01cbcfa2daecf7812d051f2278cc42ded623b6211d8a46a1dcf8dec527e2283e"
+    },
+    {
+      "name": "gi_60_1.1",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.56523,
+        "peak": 39.323,
+        "power": 4.46229,
+        "i2t": 3.27668,
+        "tj": 111.9142
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 39.323,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 3.27668,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.56523,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.9142,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "29e811e921c491e8d38b07d199652d15b0a44ab67581b1fdf83e7c8bd83aa1f8"
+    },
+    {
+      "name": "gate_low_drive",
+      "measurements": {
+        "gate_current": 0.05503907
+      },
+      "checks": {
+        "gate_current": {
+          "value": 0.05503907,
+          "min": 0.05,
+          "max": 0.2,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "c41f327564c502dda12206456c7ce51c96d90b5a7d3013da977e63a51e241b2f"
+    },
+    {
+      "name": "highrail_50_0.9_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.02193,
+        "ripple_c32": 1.02193,
+        "ripple_c64": 1.02193,
+        "ripple_c65": 1.02193,
+        "fuse_rms": 5.07045,
+        "cap_peak": 62.5861
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.02193,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 1.02193,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 1.02193,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 1.02193,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.07045,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 62.5861,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "d4c4ae8029aaba8622fa08af1af43efcf7f1c698ebf99e4c026a7614cf843872"
+    },
+    {
+      "name": "highrail_50_0.9_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.361,
+        "ripple_c32": 0.904759,
+        "ripple_c64": 0.904759,
+        "ripple_c65": 0.904759,
+        "fuse_rms": 5.06014,
+        "cap_peak": 62.8011
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.361,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 0.904759,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 0.904759,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 0.904759,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.06014,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 62.8011,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "58edd0dc9278e85992a75574d76b0dca4dc8c88ddec6c22a386ecab48f17b45f"
+    },
+    {
+      "name": "highrail_50_1.1_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.07662,
+        "ripple_c32": 1.07662,
+        "ripple_c64": 1.07662,
+        "ripple_c65": 1.07662,
+        "fuse_rms": 5.24841,
+        "cap_peak": 76.818
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.07662,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 1.07662,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 1.07662,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 1.07662,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.24841,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 76.818,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "b376c0959ec7bbab682272bfe5be9ad6e104e75cbe5b2d937fddc43548a55c3a"
+    },
+    {
+      "name": "highrail_50_1.1_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.43439,
+        "ripple_c32": 0.95327,
+        "ripple_c64": 0.95327,
+        "ripple_c65": 0.95327,
+        "fuse_rms": 5.238,
+        "cap_peak": 77.0783
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.43439,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 0.95327,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 0.95327,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 0.95327,
+          "min": 0,
+          "max": 1.818,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.238,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 77.0783,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "485787b2c5ca5347359cadbc0f2d784d16b0c4d310306f70f50e11c920b71091"
+    },
+    {
+      "name": "highrail_60_0.9_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.02272,
+        "ripple_c32": 1.02272,
+        "ripple_c64": 1.02272,
+        "ripple_c65": 1.02272,
+        "fuse_rms": 5.073,
+        "cap_peak": 62.5823
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.02272,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 1.02272,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 1.02272,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 1.02272,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.073,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 62.5823,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "40597046bb64f8b91b44ad3c6bdac5357b7ae97c59416453058b696e268c5e05"
+    },
+    {
+      "name": "highrail_60_0.9_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.36341,
+        "ripple_c32": 0.905285,
+        "ripple_c64": 0.905285,
+        "ripple_c65": 0.905285,
+        "fuse_rms": 5.06323,
+        "cap_peak": 62.798
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.36341,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 0.905285,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 0.905285,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 0.905285,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.06323,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 62.798,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "41d0571d1ed7abe27ec675bc5850dcc406f4cf2f8217bff0625a56817bcbe2b9"
+    },
+    {
+      "name": "highrail_60_1.1_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.07731,
+        "ripple_c32": 1.07731,
+        "ripple_c64": 1.07731,
+        "ripple_c65": 1.07731,
+        "fuse_rms": 5.2507,
+        "cap_peak": 76.8135
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.07731,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 1.07731,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 1.07731,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 1.07731,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.2507,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 76.8135,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "be578276c2ac89e2db2f6b3c44873037d39c113e797a97b9b51e2f097ed9970a"
+    },
+    {
+      "name": "highrail_60_1.1_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "ripple_c8": 1.43682,
+        "ripple_c32": 0.953643,
+        "ripple_c64": 0.953643,
+        "ripple_c65": 0.953643,
+        "fuse_rms": 5.24078,
+        "cap_peak": 77.0745
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": 1.43682,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c32": {
+          "value": 0.953643,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c64": {
+          "value": 0.953643,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "ripple_c65": {
+          "value": 0.953643,
+          "min": 0,
+          "max": 2.02,
+          "passed": true
+        },
+        "fuse_rms": {
+          "value": 5.24078,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 77.0745,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "2b085cd981e7f69013ce059477d7382d184b3077634083d900c9c819365a4bf7"
+    },
+    {
+      "name": "f112_inrush_0.6_0",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 35.8877,
+        "peak": 82.7756
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 35.8877,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 82.7756,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "bd62c892012638849cb54c7ca8b7c26c453310c3b019926145978ae4a9a67341"
+    },
+    {
+      "name": "f112_inrush_0.6_90",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 39.0454,
+        "peak": 122.941
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 39.0454,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 122.941,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "1af214321d848c5ff3173183cd88203a13396ec7bdb22d58149ad6fad8a5d6e1"
+    },
+    {
+      "name": "f112_inrush_1.2_0",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 19.1905,
+        "peak": 50.5416
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 19.1905,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 50.5416,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "827f2e375db6ce1b729b234330a1d91248bc064e74219cc66e0359b33509fa42"
+    },
+    {
+      "name": "f112_inrush_1.2_90",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 19.6858,
+        "peak": 63.4182
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 19.6858,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 63.4182,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "2385e30417512ec852a0c585f3c6d43fa0aa8a3fac69abb1ae9632b73f4677f1"
+    }
+  ],
+  "limitations": [
+    "F112 139.419 A2s is TYPICAL pre-arcing, not a guaranteed repetitive endurance allowance; physical cold/hot/fault tests remain required.",
+    "External Fliptronic reservoir 4400uF and winding0.6..1.2ohm are assumptions. Prospective symmetrical current at worst56.55Vrms/.6ohm=94.3A is below200A fuse interruption rating only within this assumed bound.",
+    "Highrail 3A sustained DC and all-GI lamp envelopes are engineering load bounds. Actual duty/population/transformer regulation unknown.",
+    "BTA08 gate model does not validate real commutation or quadrant timing. 50mA IGT maximum is screened at low drive."
+  ],
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999"
+}

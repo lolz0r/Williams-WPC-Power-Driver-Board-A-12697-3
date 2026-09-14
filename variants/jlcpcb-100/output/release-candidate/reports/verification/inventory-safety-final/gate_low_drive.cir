@@ -1,0 +1,16 @@
+GI low-drive trigger bound
+Vout out 0 4.4
+Rhct out bsrc 40
+Rb bsrc b 493.5
+Rpd b 0 10000
+Bbe b e V=.95
+Bgain 0 e I=75*i(Bbe)
+Rg e gate 28.35
+Vgate gate 0 1.3
+.op
+.control
+run
+let gate_current=i(Vgate)
+print gate_current
+.endc
+.end

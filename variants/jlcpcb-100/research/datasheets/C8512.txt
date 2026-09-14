@@ -1,0 +1,204 @@
+                                           JIANGSU CHANGJIANG ELECTRONICS TECHNOLOGY CO.,LTD
+
+
+                                             SOT-23 Plastic-Encapsulate Transistors
+
+                                                                                                                    SOT-23
+
+      MMBT2222A                                 TRANSISTOR (NPN)
+
+                                                                                                                    1. BASE
+ FEATURES
+                                                                                                                    2.EMITTER
+ z Epitaxial planar die construction
+                                                                                                                    3.COLLECTOR
+ z Complementary PNP Type available(MMBT2907A)
+
+
+MAXIMUM RATINGS (Ta=25℃ unless otherwise noted)
+Symbol                 Parameter                 Value                                                       Unit
+ VCBO  Collector-Base Voltage                      75                                                         V
+ VCEO  Collector-Emitter Voltage                   40                                                         V
+ VEBO  Emitter-Base Voltage                         6                                                         V
+   IC  Collector Current -Continuous              600                                                         mA
+  PC   Collector Dissipation                      300                                                        mW
+ RΘJA  Thermal Resistance, Junction to Ambient    417                                                         ℃/W
+   TJ  Junction Temperature                       150                                                         ℃
+  Tstg Storage Temperature                     -55~+150                                                       ℃
+
+ELECTRICAL CHARACTERISTICS (Ta=25℃ unless otherwise specified)
+
+          Pa        rameter                                           Symbol               T est conditions             Min         Typ   Max      Unit
+
+ Collector-base breakdown voltage                                     V(BR)CBO            IC= 10μA, IE=0                 75                         V
+                                                                                      *
+ Collector-emitter breakdown voltage                                  V(BR)CEO            IC= 10mA, IB=0                 40                         V
+ Emitter-base breakdown voltage                                       V(BR)EBO            IE=10μA, IC=0                   6                         V
+ Collector cut-off current                                               ICBO             VCB=60V, IE=0                                   0.01     μA
+ Collector cut-off current                                               ICEX             VCE=30V,VBE(off)=3V                             0.01     μA
+ Emitter cut-off current                                                 IEBO             VEB= 3V, IC=0                                   0.1      μA
+                                                                                  *
+                                                                        hFE(1)            VCE=10V, IC= 150mA            100               300
+ DC current gain                                                        hFE(2)            VCE=10V, IC= 0.1mA             40
+                                                                                  *
+                                                                        hFE(3)            VCE=10V, IC= 500mA             42
+                                                                                      *   IC=500 mA, IB= 50mA                              1
+ Collector-emitter saturation voltage                                  VCE(sat)                                                                     V
+                                                                                          IC=150 mA, IB=15mA                              0.3
+                                                                                      *   IC=500 mA, IB= 50mA                             2.0
+ Base-emitter saturation voltage                                       VBE(sat)                                                                     V
+                                                                                          IC=150 mA, IB=15mA                              1.2
+                                                                                          VCE=20V, IC= 20mA,
+ Transition frequency                                                        fT                                         300                        MHz
+                                                                                          f=100MHz
+ Delay time                                                                  td           VCC=30V, VBE(off)=-0.5V                         10       ns
+ Rise time                                                                   tr           IC=150mA , IB1= 15mA                            25       ns
+ Storage time                                                                tS           VCC=30V, IC=150mA                               225      ns
+ Fall time                                                                   tf           IB1=-IB2=15mA                                   60       ns
+*pulse test: Pulse Width ≤300μs, Duty Cycle≤ 2.0%.
+
+CLASSIFICATION OF hFE(1)
+               RANK                                                      L                                                      H
+               RANGE                                               100–200                                                    200–300
+            MARKING 13
+
+                                                                                                                                                 C,Jan,2014
+                   Typical Characterisitics                                                                                                                                                                     MMBT2222A
+                                                                       Static Characteristic                                                                                                                    hFE          —— IC
+                                         0.25                                                                                                                                        500
+                                                    COMMON EMITTER                                                             1mA                                                                                                               COMMON EMITTER
+                                                    Ta=25℃                                                                                                                                                                                       VCE=10V
+                                                                                                                               0.9mA
+                                         0.20                                                                                  0.8mA                                                 400
+            (A)
+                                                                                                                               0.7mA                               hFE
+            IC                                                                                                                                                                                                                    Ta=100℃
+                                         0.15                                                                                  0.6mA                                                 300
+
+
+
+
+            COLLECTOR CURRENT
+                                                                                                                                                                   DC CURRENT GAIN
+                                                                                                                               0.5mA
+
+                                         0.10                                                                                                                                        200                                          Ta=25℃
+                                                                                                                               0.4mA
+
+                                                                                                                               0.3mA
+                                         0.05                                                                                                                                        100
+                                                                                                                               0.2mA
+
+                                                                                                                           IB=0.1mA
+                                         0.00                                                                                                                                         0
+                                                0          2             4               6              8                 10           12                                              0.1           1                            10                         100                 600
+                                                           COLLECTOR-EMITTER VOLTAGE                         VCE    (V)                                                                             COLLECTOR CURRENT                       IC        (mA)
+
+                                                                             VCEsat     ——         IC                                                                                                               VBEsat        —— IC
+                                          0.5                                                                                                                                        1.2
+                                                    β=10
+
+
+                                          0.4
+
+
+
+
+COLLECTOR-EMITTER SATURATION
+                                                                                                                                              BASE-EMITTER SATURATION
+                                                                                                                                                                                                                             Ta=25℃
+                                                                                                                                                                                     0.8
+                                          0.3
+
+
+                                                                                                                                                                                                                                  Ta=100℃
+
+
+
+
+     VOLTAGE VCEsat (V)
+                                                                                                                                                 VOLTAGE VBEsat (V)
+                                          0.2
+                                                                                                    Ta=100℃                                                                          0.4
+
+
+                                          0.1
+                                                                                                                          Ta=25℃
+
+                                                                                                                                                                                                                                                                          β=10
+                                          0.0                                                                                                                                        0.0
+                                                1                            10                              100                       600                                                 1                   10                                     100                        600
+                                                                     COLLECTOR CURRENT             IC       (mA)                                                                                    COLLECTOR CURRENT                       IC        (mA)
+
+                                                                                  IC    —— VBE                                                                                                             Cob/ Cib          —— VCB/ VEB
+                                         600                                                                                                                                         100
+                                                    COMMON EMITTER                                                                                                                                                                                                 f=1MHz
+                                                    VCE=10V                                                                                                                                                                                                        IE=0/ IC=0
+
+                                                                                                                                                                                                         Cib                                                       Ta=25℃
+                                         100
+                     (mA)
+                     IC                                                                                                                                              (pF)
+                                                                              Ta=100℃
+
+
+
+
+                     COLLECTOR CURRENT
+                                                                                                                                                                     C
+                                          10                                                                                                                                                             Cob
+                                                                                                                                                                                     10
+
+
+
+
+                                                                                                                                                                     CAPACITANCE
+                                                                                                        Ta=25℃
+
+
+
+                                           1
+
+
+
+
+                                          0.1                                                                                                                                         1
+                                             0.0               0.2                0.4        0.6                    0.8                1.0                                             0.1                             1                                             10          20
+                                                                     BASE-EMMITER VOLTAGE VBE (V)                                                                                                        REVERSE VOLTAGE                    V     (V)
+
+
+                                                                                   fT   —— IC                                                                                                                   Pc         ——          Ta
+                                         500                                                                                                                                         400
+                                                                                                            COMMON EMITTER
+                                                                                                            VCE=20V f=200MHz
+                                                                                                            Ta=25℃
+        (MHz)
+
+
+
+
+                                                                                                                                             COLLECTOR POWER DISSIPATION
+                                                                                                                                                                                     300
+
+        fT
+
+
+
+
+        TRANSTION FREQUENCY
+                                                                                                                                                                                     200
+
+
+
+
+                                                                                                                                                        Pc (mW)
+                                                                                                                                                                                     100
+
+
+
+
+                                         100                                                                                                                                          0
+                                            10                                                                                         80                                                  0   25          50                75                 100            125               150
+                                                                     COLLECTOR CURRENT              IC       (mA)                                                                                   AMBIENT TEMPERATURE                         Ta     (℃)
+                                                                                                                                                                                                                                                                   C,Jan,2014
+

@@ -1,0 +1,79 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/reverse_output_5v_30m.cir",
+  "deck_sha256": "7956f5bf559f765dc7aa5637db1784a0779446567722c12661c76273f65c4150",
+  "elapsed_s": 960.457898037,
+  "wall_limit_s": 1800.0,
+  "timed_out": false,
+  "worker_returncode": -15,
+  "execution_completed": false,
+  "errors": [],
+  "measurements": {},
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion",
+  "checks": {
+    "output_peak": {
+      "value": null,
+      "min": 0,
+      "max": 5.25,
+      "passed": false
+    },
+    "output_min": {
+      "value": null,
+      "min": -0.3,
+      "max": 13,
+      "passed": false
+    },
+    "inductor_peak": {
+      "value": null,
+      "min": 0,
+      "max": 10,
+      "passed": false
+    },
+    "inductor_min": {
+      "value": null,
+      "min": -1,
+      "max": 10,
+      "passed": false
+    },
+    "recovery": {
+      "value": null,
+      "min": 4.95,
+      "max": 5.2,
+      "passed": false
+    },
+    "sim_end": {
+      "value": null,
+      "min": 0.029999989999999997,
+      "max": 0.03000001,
+      "passed": false
+    }
+  },
+  "passed": false,
+  "kind": "reverse",
+  "pcb_changed": false,
+  "candidate_only": true,
+  "changes": [
+    "Unbuilt candidate: B560C from vout to input rail; measure bypass current and energy",
+    "Transient ends at 0.03 seconds"
+  ],
+  "arguments": {
+    "kind": "reverse",
+    "name": "reverse_output_5v_30m",
+    "wall_seconds": 1800.0,
+    "step_us": 1,
+    "options": "method=gear reltol=.002 abstol=1n vntol=10u klu itl4=500",
+    "rail": "5v",
+    "bypass": "output",
+    "stop_ms": 30.0,
+    "lamp_form": "current",
+    "gate_series_collapse": false
+  },
+  "required_end_s": 0.03,
+  "base_deck_sha256": "32181d91ff982b36694c0745e4ac8bdc0c5b497bd7bbc94bfb3b4a3ce79b7e19",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "limitations": [
+    "Typical/approximate device models; no hardware, SOA, thermal or assembly qualification",
+    "A failed or partial transient cannot establish full-window convergence",
+    "Candidate circuitry is not present in current CAD or purchasing/manufacturing files"
+  ]
+}

@@ -1,0 +1,883 @@
+{
+  "source": "https://jlcpcb.com/api/overseas-pcb-order/v1/shoppingCart/smtGood/selectSmtComponentList/v2",
+  "request": {
+    "currentPage": 1,
+    "pageSize": 1000,
+    "searchType": 2,
+    "keyword": "SBR20100",
+    "componentLibraryType": "",
+    "preferredComponentFlag": false,
+    "stockFlag": false,
+    "componentAttributes": [],
+    "searchSource": "search"
+  },
+  "fetched_utc": "2026-09-14T05:55:40.313296+00:00",
+  "response": {
+    "code": 200,
+    "data": {
+      "componentPageInfo": {
+        "total": 5,
+        "list": [
+          {
+            "componentId": 503767,
+            "componentLibraryType": "expand",
+            "stockCount": 127,
+            "componentTypeEn": "Schottky Diodes",
+            "erpComponentName": "SBR20100CT",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/schottky-diodes_smc-sangdest-microelectronicstronic-nanjing-sbr20100ct_C493155.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.5876
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 49,
+                "productPrice": 0.4655
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 99,
+                "productPrice": 0.4134
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.3483
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.319
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.3011
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.566
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 99,
+                "productPrice": 0.3983
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 49,
+                "productPrice": 0.4484
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.3356
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.2901
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.3073
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "8c33c764fe0c4284aa9a8a0e84b8be11",
+            "canPresaleNumber": 127,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "503767-SBR20100CT/C493155",
+            "leastPatchNumber": 2,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 50,
+            "shopCostPrice": 1.4872,
+            "preMinPurchaseNum": 20,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.5876,
+            "componentCode": "C493155",
+            "componentBrandEn": "SMC(Sangdest Microelectronicstronic (Nanjing))",
+            "componentModelEn": "SBR20100CT",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583283055109296128-C493155/C493155-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=04bf3d66efc385233f75d95525f1dedd46febcee972663cf0856fe7c040f0a8d",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2003121815_SMC-Sangdest-Microelectronicstronic--Nanjing-SBR20100CT_C493155.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588892797944672256-C493155.pdf?response-content-disposition=attachment%3B%20filename%3DC493155.pdf%3B%20filename%2A%3DUTF-8%27%27C493155.pdf&x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfmNnqwT0pqlSmeAqTk%2FNO5drIvT2zz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbkjuxQg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkqpRton26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIvU0VWKKWD5sagAF7S2TcOzfR9Hs9U%2BBNW4CkK%2BctY5P3q8gosgEQ9PgQv6poGvLotvWh1NYmHiMOZBxpYjCEdSMfqM%2Fa6D5Eq2DnVRIpeBrndkS80yGobeAErn8GkJ%2F%2F1AusDa4s7rVmkK68qk672t7ZvxHGLCd6%2BJ%2BjtPXX1jh2vtvRYcyr5WXv6CAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfC9ss2eXNHA1M9j8aqCNx9%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=083bd6bb16d5f89a4973e40f552c273415cda806fb70e82f26599b3e0b40b79c",
+            "dataManualOfficialLink": "",
+            "componentName": "SMC SBR20100CT",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583283055943421952-C493155/C493155-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=270059b6810429feb25e181e40ba53481b2424d5231c5e8198e8bbcd8689e88e",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "TO-220AB-3",
+            "describe": "-55℃~+150℃ 1 Pair Common Cathode 100V 10A 150A 1mA@100V 820mV@10A TO-220AB-3 Schottky Diodes ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "820mV@10A"
+              },
+              {
+                "attribute_name_en": "Non-Repetitive Peak Forward Surge Current",
+                "attribute_value_name": "150A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "100V"
+              },
+              {
+                "attribute_name_en": "Operating Junction Temperature Range",
+                "attribute_value_name": "-55℃~+150℃"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "10A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "1mA@100V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Schottky Diodes",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>SBR20100</span>CT",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 521764,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "Super Barrier Rectifiers (SBR)",
+            "erpComponentName": "SBR20100CT",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/super-barrier-rectifiers-sbr_diodes-incorporated-sbr20100ct_C507838.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.9294
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 0.9163
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 99,
+                "productPrice": 0.9082
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.8984
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.8984
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.8984
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.8655
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 29,
+                "productPrice": 0.8827
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.8655
+              },
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.8952
+              },
+              {
+                "startNumber": 30,
+                "endNumber": 99,
+                "productPrice": 0.8749
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.8655
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "ded67615479248939bade225d460e621",
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "DiodesIncorporated-SBR20100CT/C507838",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 50,
+            "shopCostPrice": 2.1278,
+            "preMinPurchaseNum": 10,
+            "minPurchaseNum": 10,
+            "initialPrice": 0.9163,
+            "componentCode": "C507838",
+            "componentBrandEn": "Diodes Incorporated",
+            "componentModelEn": "SBR20100CT",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583283035252920320-C507838/C507838-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=5154b18bc7f2e5160f977619bb639bb71fa845a4ecd30c30560437090ccf3698",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Diodes-Incorporated-SBR20100CT_C507838.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588892801186058240-C507838.pdf?response-content-disposition=attachment%3B%20filename%3DC507838.pdf%3B%20filename%2A%3DUTF-8%27%27C507838.pdf&x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfmNnqwT0pqlSmeAqTk%2FNO5drIvT2zz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbkjuxQg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkqpRton26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIvU0VWKKWD5sagAF7S2TcOzfR9Hs9U%2BBNW4CkK%2BctY5P3q8gosgEQ9PgQv6poGvLotvWh1NYmHiMOZBxpYjCEdSMfqM%2Fa6D5Eq2DnVRIpeBrndkS80yGobeAErn8GkJ%2F%2F1AusDa4s7rVmkK68qk672t7ZvxHGLCd6%2BJ%2BjtPXX1jh2vtvRYcyr5WXv6CAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfC9ss2eXNHA1M9j8aqCNx9%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=e95cd0b7da23572d18cf1fbe6bd58616d98762c41f432c3f51e5872c62a758d1",
+            "dataManualOfficialLink": "",
+            "componentName": "DIODES SBR20100CT",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583283036166737920-C507838/C507838-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=ad0e5920e2e1c02b4e327e2e1afa8844fd85c9786d1a400ccfbd0ae47e24a006",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "TO-220AB-3",
+            "describe": "1 Pair Common Cathode 100V 100uA@100V 10A 820mV@10A TO-220AB-3 Super Barrier Rectifiers (SBR) ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "820mV@10A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "100V"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "10A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "100uA@100V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Super Barrier Rectifiers (SBR)",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>SBR20100</span>CT",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 57969416,
+            "componentLibraryType": "expand",
+            "stockCount": 0,
+            "componentTypeEn": "SMT",
+            "erpComponentName": "【邮寄专用】SBR20100T5",
+            "componentSource": "shop",
+            "lcscGoodsUrl": null,
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 99,
+                "productPrice": 0.0396
+              },
+              {
+                "startNumber": 100,
+                "endNumber": -1,
+                "productPrice": 0.0204
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 99,
+                "productPrice": 0.0381
+              },
+              {
+                "startNumber": 100,
+                "endNumber": -1,
+                "productPrice": 0.0196
+              }
+            ],
+            "firstSortAccessId": null,
+            "secondSortAccessId": null,
+            "canPresaleNumber": 0,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "JLCPCBAssembly-SBR20100T5/C9900270397",
+            "leastPatchNumber": 2,
+            "lossNumber": 0,
+            "isBuyComponent": "0",
+            "noBuyReason": "This product is no longer manufactured.",
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 2500,
+            "shopCostPrice": 0.1,
+            "preMinPurchaseNum": 439,
+            "minPurchaseNum": 439,
+            "initialPrice": 0.0204,
+            "componentCode": "C9900270397",
+            "componentBrandEn": "JLCPCB Assembly",
+            "componentModelEn": "SBR20100T5",
+            "componentImageUrl": null,
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": null,
+            "dataManualUrl": null,
+            "dataManualFileAccessId": "",
+            "dataManualFileAccessIdUrl": null,
+            "dataManualOfficialLink": "",
+            "componentName": "JIALICHUANG SMT SBR20100T5",
+            "minImage": null,
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": null,
+            "imageList": null,
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "TO-252-2",
+            "describe": "TO-252-2 SMT ROHS",
+            "attributes": null,
+            "rankScore": null,
+            "firstSortName": "SMT",
+            "secondSortName": "Others",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>SBR20100</span>T5",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 521765,
+            "componentLibraryType": "expand",
+            "stockCount": 1,
+            "componentTypeEn": "Super Barrier Rectifiers (SBR)",
+            "erpComponentName": "SBR20100CTFP",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/super-barrier-rectifiers-sbr_diodes-incorporated-sbr20100ctfp_C507839.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.9294
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 49,
+                "productPrice": 0.7568
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 99,
+                "productPrice": 0.6706
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.5859
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.5355
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 1999,
+                "productPrice": 0.5078
+              },
+              {
+                "startNumber": 2000,
+                "endNumber": 3999,
+                "productPrice": 0.5029
+              },
+              {
+                "startNumber": 4000,
+                "endNumber": -1,
+                "productPrice": 0.4981
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.8952
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 49,
+                "productPrice": 0.7291
+              },
+              {
+                "startNumber": 4000,
+                "endNumber": -1,
+                "productPrice": 0.4798
+              },
+              {
+                "startNumber": 2000,
+                "endNumber": 3999,
+                "productPrice": 0.4845
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.5158
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": 1999,
+                "productPrice": 0.4892
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 99,
+                "productPrice": 0.646
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.5644
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "ded67615479248939bade225d460e621",
+            "canPresaleNumber": 1,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "DiodesIncorporated-SBR20100CTFP/C507839",
+            "leastPatchNumber": 0,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 50,
+            "shopCostPrice": 2.446,
+            "preMinPurchaseNum": 12,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.9294,
+            "componentCode": "C507839",
+            "componentBrandEn": "Diodes Incorporated",
+            "componentModelEn": "SBR20100CTFP",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583074306783907840-C507839/C507839-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=eaaaa6bbd724809d142a5de750b78847c9f689ffe0342167639e77cd4abc04d3",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Diodes-Incorporated-SBR20100CTFP_C507839.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588889262972407808-C507839.pdf?response-content-disposition=attachment%3B%20filename%3DC507839.pdf%3B%20filename%2A%3DUTF-8%27%27C507839.pdf&x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfmNnqwT0pqlSmeAqTk%2FNO5drIvT2zz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbkjuxQg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkqpRton26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIvU0VWKKWD5sagAF7S2TcOzfR9Hs9U%2BBNW4CkK%2BctY5P3q8gosgEQ9PgQv6poGvLotvWh1NYmHiMOZBxpYjCEdSMfqM%2Fa6D5Eq2DnVRIpeBrndkS80yGobeAErn8GkJ%2F%2F1AusDa4s7rVmkK68qk672t7ZvxHGLCd6%2BJ%2BjtPXX1jh2vtvRYcyr5WXv6CAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfC9ss2eXNHA1M9j8aqCNx9%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=80d37aacb82602286397e09ff7b29392a311cb479328278e1338fc66e7622493",
+            "dataManualOfficialLink": "",
+            "componentName": "DIODES SBR20100CTFP",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583074307635621888-C507839/C507839-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=b973bbee0d126d28bcb32df530af299859e6d394ed26a847076ce552094673bb",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "ITO-220AB-3",
+            "describe": "-65℃~+175℃ 1 Pair Common Cathode 100V 100uA@100V 10A 150A 820mV@10A ITO-220AB-3 Super Barrier Rectifiers (SBR) ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "820mV@10A"
+              },
+              {
+                "attribute_name_en": "Non-Repetitive Peak Forward Surge Current",
+                "attribute_value_name": "150A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "100V"
+              },
+              {
+                "attribute_name_en": "Operating Junction Temperature Range",
+                "attribute_value_name": "-65℃~+175℃"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "10A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "100uA@100V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Super Barrier Rectifiers (SBR)",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>SBR20100</span>CTFP",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          },
+          {
+            "componentId": 832976,
+            "componentLibraryType": "expand",
+            "stockCount": 80,
+            "componentTypeEn": "Super Barrier Rectifiers (SBR)",
+            "erpComponentName": "SBR20100CT-G",
+            "componentSource": "shop",
+            "lcscGoodsUrl": "https://www.lcsc.com/product-detail/super-barrier-rectifiers-sbr_diodes-incorporated-sbr20100ct-g_C780893.html",
+            "componentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.7715
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 49,
+                "productPrice": 0.625
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 99,
+                "productPrice": 0.5534
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.4802
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.4378
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.4151
+              }
+            ],
+            "buyComponentPrices": [
+              {
+                "startNumber": 1,
+                "endNumber": 9,
+                "productPrice": 0.7432
+              },
+              {
+                "startNumber": 50,
+                "endNumber": 99,
+                "productPrice": 0.5331
+              },
+              {
+                "startNumber": 10,
+                "endNumber": 49,
+                "productPrice": 0.6021
+              },
+              {
+                "startNumber": 100,
+                "endNumber": 499,
+                "productPrice": 0.4625
+              },
+              {
+                "startNumber": 500,
+                "endNumber": 999,
+                "productPrice": 0.4218
+              },
+              {
+                "startNumber": 1000,
+                "endNumber": -1,
+                "productPrice": 0.3998
+              }
+            ],
+            "firstSortAccessId": "2dc9a747be3d4be78948b03a3063559a",
+            "secondSortAccessId": "ded67615479248939bade225d460e621",
+            "canPresaleNumber": 80,
+            "componentProductType": 0,
+            "mergedComponentCode": null,
+            "urlSuffix": "DiodesIncorporated-SBR20100CTG/C780893",
+            "leastPatchNumber": 2,
+            "lossNumber": 0,
+            "isBuyComponent": "1",
+            "noBuyReason": null,
+            "componentAlternativesCode": null,
+            "replaceUrlSuffix": null,
+            "preferredComponentFlag": false,
+            "allowPostFlag": true,
+            "score": null,
+            "idleFlag": null,
+            "estimateDate": null,
+            "fullReelPrice": null,
+            "encapsulationNumber": 50,
+            "shopCostPrice": 2.07,
+            "preMinPurchaseNum": 15,
+            "minPurchaseNum": 1,
+            "initialPrice": 0.7715,
+            "componentCode": "C780893",
+            "componentBrandEn": "Diodes Incorporated",
+            "componentModelEn": "SBR20100CT-G",
+            "componentImageUrl": "",
+            "productBigImageAccessId": null,
+            "productBigImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583284960618270720-C780893/C780893-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=7543ecb231551daaa9243e94c5c13b1f75580945d1fb69ae25a4d06656fad5ab",
+            "dataManualUrl": "https://www.lcsc.com/datasheet/lcsc_datasheet_2009081538_Diodes-Incorporated-SBR20100CT-G_C780893.pdf",
+            "dataManualFileAccessId": null,
+            "dataManualFileAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtDataManualFile/8588893054543126528-C780893.pdf?response-content-disposition=attachment%3B%20filename%3DC780893.pdf%3B%20filename%2A%3DUTF-8%27%27C780893.pdf&x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAISgAN1q6Ft5B2yfSjIr5nXLfmNnqwT0pqlSmeAqTk%2FNO5drIvT2zz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qbkjuxQg557b16cNrbH4M4H6aXeirtuwDsz9SNTCALjPD3nPii50x5bjaDymRCbLGJaViJlhHLN1Ow6jdmhpCctxLAlvo9NgFxm3D%2Fu2NQPwiWf9FVdhvhEG6Vly8qOi2MaRmFy8yFTx0b0SvJ%2BjYMrmPctoN9JnSdC5mfdzau3a1TJ84gRD0a5wkaVA1zbDs5bfISEIuUzebreLqY03dV4mOvdqIcMe8qigz88fk%2FfIioH6xyxKOexoSCnFTOiiupCcQLPyao9jLu6iayqViY7QaIOTqQohZmkAMwVOasAsI3Ngh4zF97Qt0cVNkXO9gWfLI8DtuMleWkqpRton26HD0eS19jklBdzSlusJRAJJUVBflCeKEaRNSAd3WGhEfM2%2BBt4QT30w5N2u00S8OSMIvU0VWKKWD5sagAF7S2TcOzfR9Hs9U%2BBNW4CkK%2BctY5P3q8gosgEQ9PgQv6poGvLotvWh1NYmHiMOZBxpYjCEdSMfqM%2Fa6D5Eq2DnVRIpeBrndkS80yGobeAErn8GkJ%2F%2F1AusDa4s7rVmkK68qk672t7ZvxHGLCd6%2BJ%2BjtPXX1jh2vtvRYcyr5WXv6CAA&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NZbfC9ss2eXNHA1M9j8aqCNx9%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=4eb3c2a11d17afa83501720406f9916b102c1301d5689b9dba3cebdd5e2b008a",
+            "dataManualOfficialLink": "",
+            "componentName": "DIODES SBR20100CT-G",
+            "minImage": "",
+            "minImageAccessId": null,
+            "minImageAccessIdUrl": "https://jlc-prod-smt.oss-eu-central-1.aliyuncs.com/smtComponentImageFile/8583284961541152768-C780893/C780893-%E6%AD%A3%E9%9D%A2.jpg?x-oss-date=20260914T055540Z&x-oss-expires=1800&x-oss-security-token=CAIShQN1q6Ft5B2yfSjIr5qMLcvjjopUgrGSUh70gXltb%2Bluu5CcgTz2IHhMdHJsAOodtv0%2FmmhT6PkclqRLcbhpcmfjV%2BZHzLB8qctrhRUg557b16cNrbH4M4b6aXeirie7AYjQSNfaZY3iCTTtnTNyxr3XbCirW0ffX7SClZ9gaKZwPGy%2FdiEUK9pKAQFgpcQGT12zU8ygKRn3mGHdIVN1sw5n8wNF5L%2B439eX52iE7gXzwfRHoJ%2FqcNr2LZtuOJw6S82y0Kltc7aGyytMwB9P7KBwgapY2DLOsdyzAl1cpFekS7OOq4UycVAiNvBjSvEY86jG%2BKcm6rCJpePe0A1QOOxZaSPbSb27zdHMcOHTbY5hJe2nYi6WionfaMGu7Vx6exQBPQZNYMEmLHthExElRiFUukYafacxCO3KaN9msMleufIdpz1jzUIAldepOPxvbRyttiPolYmEQys9nA2HPOZPOGcveBhcDI2%2BdqYIFzsV8sDL0GOfKGsOhx84sZX9d%2BF55ch3ARqAAUbGOly3yS2kCB9gCJk1vi9cW0PEAko7gPWlKEee05bc3ds0%2FgIrDFc45dd1mvQ0XAJl4jervPEHhq3iCQZEDnEqAuYK3ece%2FySaqLEfmv7KRTswRIKEEFwxaCZfejB1APQcCoy7M%2BWvyy7yw%2FK4ciIx8xcz3d%2BPlbaomKD5YmCzIAA%3D&x-oss-signature-version=OSS4-HMAC-SHA256&x-oss-credential=STS.NY9fqWcUu5syP8Eey8cfBTU7c%2F20260914%2Feu-central-1%2Foss%2Faliyun_v4_request&x-oss-signature=d6784f3e8def55db40c8fba581c5eb81ad72c16644e04e3d35065aae77d3393e",
+            "imageList": [
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              },
+              {
+                "productImage": null,
+                "productImageAccessId": null,
+                "productBigImage": null,
+                "productBigImageAccessId": null,
+                "fileType": null
+              }
+            ],
+            "manufacturerBlackFlag": null,
+            "componentNameEn": null,
+            "componentSpecificationEn": "TO-220",
+            "describe": "-65℃~+175℃ 1 Pair Common Cathode 100V 100uA@100V 10A 150A 820mV@10A TO-220 Super Barrier Rectifiers (SBR) ROHS",
+            "attributes": [
+              {
+                "attribute_name_en": "Voltage - Forward(Vf@If)",
+                "attribute_value_name": "820mV@10A"
+              },
+              {
+                "attribute_name_en": "Non-Repetitive Peak Forward Surge Current",
+                "attribute_value_name": "150A"
+              },
+              {
+                "attribute_name_en": "Voltage - DC Reverse(Vr)",
+                "attribute_value_name": "100V"
+              },
+              {
+                "attribute_name_en": "Operating Junction Temperature Range",
+                "attribute_value_name": "-65℃~+175℃"
+              },
+              {
+                "attribute_name_en": "Diode Configuration",
+                "attribute_value_name": "1 Pair Common Cathode"
+              },
+              {
+                "attribute_name_en": "Current - Rectified",
+                "attribute_value_name": "10A"
+              },
+              {
+                "attribute_name_en": "Reverse Leakage Current (Ir)",
+                "attribute_value_name": "100uA@100V"
+              }
+            ],
+            "rankScore": null,
+            "firstSortName": "Super Barrier Rectifiers (SBR)",
+            "secondSortName": "Diodes",
+            "componentBrandHigh": null,
+            "remarkHigh": null,
+            "componentModelHigh": "<span class='lucene_highlight_class'>SBR20100</span>CT-G",
+            "componentCodeHigh": null,
+            "componentSpecificationHigh": null,
+            "rohsFlag": 1,
+            "shopShowPriceFlag": true,
+            "shopShowForeignPriceFlag": true,
+            "shopRealPriceFlag": true,
+            "assemblyComponentFlag": false,
+            "rohsFileId": null,
+            "rohsUrl": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 1000,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 1,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "sortAndCountVoList": null,
+      "presaleTypeList": [],
+      "brandList": [],
+      "basePart": null,
+      "preferredPart": null,
+      "economicPart": null,
+      "standardPart": null,
+      "dataSheetPart": null,
+      "photo": null,
+      "queryString": "SBR20100"
+    },
+    "message": null
+  }
+}

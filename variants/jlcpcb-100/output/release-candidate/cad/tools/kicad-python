@@ -1,0 +1,2 @@
+#!/bin/sh
+exec flatpak run --command=python3 org.kicad.KiCad "$@"

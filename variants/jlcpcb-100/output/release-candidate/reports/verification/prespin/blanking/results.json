@@ -1,0 +1,655 @@
+{
+  "passed": true,
+  "complete": true,
+  "cases": [
+    {
+      "name": "blank_4.5V_0.8Vth_50Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3352,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.0525775,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.23694e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 8.97935e-06,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.17579e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 4.49902,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "d535a0a842d3e96b6b494a642cdf808ddf6d04435c45e9141b6c196317362e48"
+    },
+    {
+      "name": "blank_4.5V_0.8Vth_60Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3352,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.0525775,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.23695e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 1.1078e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.17602e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 4.49902,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "261ad9ebd7d4a171961e258470ccaf31ff96d3d210dd596cab3ae451057f19e7"
+    },
+    {
+      "name": "blank_4.5V_2Vth_50Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3352,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.0527186,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.24762e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 8.98006e-06,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.17583e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 4.49911,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3226891a6209fc6dff5621551643888a9e74c5ae3e3c1c22b029ec3496b1b1f3"
+    },
+    {
+      "name": "blank_4.5V_2Vth_60Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3352,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.0526992,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.21991e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 1.10781e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.17589e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 4.49911,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "8e28819f863e600046942fbf95532692180a0709896da1b4380d16b3facee4d8"
+    },
+    {
+      "name": "blank_5.2V_0.8Vth_50Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3477,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.052809,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.26032e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 8.97985e-06,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.1759e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 5.19888,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "067c796df2924140bcbf8aa980a4b710262ce7a36f7f3b733e585f71b38d6b0b"
+    },
+    {
+      "name": "blank_5.2V_0.8Vth_60Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3477,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.0527381,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.24347e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 1.1078e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.17578e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 5.19888,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "dda2023c0f8f48cb54b132cab69ad5e693a9b925f40926bb805b74fc3b395e33"
+    },
+    {
+      "name": "blank_5.2V_2Vth_50Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3477,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.05279,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.24278e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 8.97915e-06,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.17595e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 5.19843,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "ae8eeb7261dfcf6b8924439c8a7c7937258f6424dad1c85c8159022fbd8112c4"
+    },
+    {
+      "name": "blank_5.2V_2Vth_60Hz",
+      "checks": {
+        "sim_end": {
+          "value": 0.04,
+          "min": 0.03999999,
+          "max": 0.04000001,
+          "passed": true
+        },
+        "fet_on": {
+          "value": 20.3477,
+          "min": 1,
+          "max": 80,
+          "passed": true
+        },
+        "col_on": {
+          "value": 7.41994,
+          "min": 1,
+          "max": 20,
+          "passed": true
+        },
+        "gi_on": {
+          "value": 7.65517,
+          "min": 1,
+          "max": 15,
+          "passed": true
+        },
+        "gate_off": {
+          "value": 0.0527932,
+          "min": 0,
+          "max": 0.8,
+          "passed": true
+        },
+        "fet_off": {
+          "value": 9.21991e-05,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_off": {
+          "value": 1.60011e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_off": {
+          "value": 1.1078e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "fet_restart": {
+          "value": 1.17342e-09,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "col_restart": {
+          "value": 1.6001e-10,
+          "min": 0,
+          "max": 0.01,
+          "passed": true
+        },
+        "gi_restart": {
+          "value": 1.11e-05,
+          "min": 0,
+          "max": 0.001,
+          "passed": true
+        },
+        "blank_high": {
+          "value": 5.19843,
+          "min": 4.4,
+          "max": 5.3,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "e24260e4b76177797b006b5520f0483a6c75cb3cb28891f4a808322eb5c87f5d"
+    }
+  ],
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999",
+  "limitations": [
+    "External BLANKING asserted by fixture, does not verify CPU watchdog generation",
+    "Full 4.5 or 5.2 V supply; HCT partial-power or power-off behavior remains unqualified",
+    "280 pF lumped BLANKING load: 200 pF ribbon plus 80 pF input allowance",
+    "Threshold extremes .8 and 2 V model guaranteed TTL bands; not measured threshold distribution",
+    "Gate-driver/triac models are approximate; GI may continue to next AC current zero",
+    "Writes of zero at 25 ms and release of BLANKING at 30 ms are explicit firmware-order assumptions"
+  ]
+}

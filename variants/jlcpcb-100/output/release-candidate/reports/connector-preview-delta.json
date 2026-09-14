@@ -1,0 +1,109 @@
+{
+  "passed": true,
+  "design_sha256": {
+    "wpc_power_driver_cost.kicad_pcb": "5da9f686c5d4b9949137e88cba2a99f7099af9a4abc7d7cd42557282228b37f8",
+    "tools/spice/models.lib": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999",
+    "gi_triacs.kicad_sch": "530a022dd0b7a7cc09dcfdd328db7f39230c828e18f6467fb12a3f9970660c3c",
+    "power_supply.kicad_sch": "e8e752db200076eb68d4090d312d16c57d59b26a340f2795d4cb31c71a78c9d9",
+    "sol_flashers.kicad_sch": "84bbb4fbed371881c7432924b23ebba37bb0b5bed12023207457eccf5d5e78cd",
+    "cpu_interface.kicad_sch": "1bee6428751abdb957d820091edb5a73e87d098dd07423bc08ca085ab7fa99cf",
+    "sol_highpower.kicad_sch": "5db4f16ecbab86ed0fb8c5c8517ad6cece16ed222db6406c1cff6648d57c8ebc",
+    "lamp_columns.kicad_sch": "f2d5b78ea7231abd31e007410a6e6693369c3ab662de4b7687c6ba1e22a0fd4b",
+    "sol_lowpower.kicad_sch": "73ac880691d46ad086ff3359c754af305b25ba825a193143e859f22be15d67fb",
+    "sol_gp.kicad_sch": "e5d46f15f38eac1d3636c9e75a53ff3c6020aa94fb082267cb00f33b24b708a7",
+    "wpc_power_driver_cost.kicad_sch": "d78b7625c22f17d52e7f598f1b7a04aa7bcf8ff6a12e192f0ee96c8c7608ed1d",
+    "lamp_rows.kicad_sch": "89746cf88df55cf7713778f16763fc40861c44f2c52204300ad9d281cff1b601",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-B_Mask.gbs": "f5ab0a2370cc989ef8e0689324cdf51d159823b9b408f7e95c7f49883ef9ffcf",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-F_Mask.gts": "0d236830618dfcb5bf1de37bc0a832bc8948f5a9d731f8d5adb36ab498501249",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-F_Paste.gtp": "e52f7e03a339cc8aa4936aeb897662aca214e21fd2dc0c301a370ba4b690148b",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-B_Silkscreen.gbo": "6988145782cfe97ccde5818fded57c748cb8e9c9f98548d7ce2054450f2d51ad",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-F_Silkscreen.gto": "ab04d52e270a3d926ae2e628534a06417d06b939f512baef5b101aab94e65987",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-In2_Cu.g2": "1e06704ee1da1372fa0be8869ac3aa12deb25b043f6d8ab68798de85d6d1fb38",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-B_Paste.gbp": "a630180500a4f2c1b3e0051bc3254067b44375282c967d3b5a7e285600a6481c",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-job.gbrjob": "9aea7e33edcdbaa8d435f5c5204b15eeb35204f40012e312d7feba417d50c406",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-B_Cu.gbl": "34e5ad5e34468533df56da6d492f578c981a0dfb40dff60c24e3f32450dd7a18",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-In1_Cu.g1": "ff76fbc5a0655ef65d438e750bd00ee446f32b8873132eb579d349beb48334f4",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-Edge_Cuts.gm1": "286142fb1331d601189ca1b8e2b210db97f6b873185b363c03a14cbb8baa32fc",
+    "output/release-candidate/gerbers/wpc_power_driver_cost-F_Cu.gtl": "6dfeecbfdb671382961eec311e4840048e87ef73bc9346767ffdda6244412d7b",
+    "output/release-candidate/drill/wpc_power_driver_cost-PTH-drl_map.gbr": "4351aa4431d0bf23ffe0d4fdde18a43fcfd3d66be6706e05b3624cc647062213",
+    "output/release-candidate/drill/wpc_power_driver_cost-PTH.drl": "cb36379a3a65255de2dcc6ee1dfd9c0bc10e32183364141e12b8967c46dd1514",
+    "output/release-candidate/drill/wpc_power_driver_cost-NPTH.drl": "f682c9944c42616c355ca740ba96b4ad87a1bd29fba0ef67c5ba6c96607e1bb8",
+    "output/release-candidate/drill/wpc_power_driver_cost-NPTH-drl_map.gbr": "75bfc1b25a30a89676a265e4f6d49fa5a8ecf49616cc5620d06cd16214053cdd"
+  },
+  "bom_sha256": "5dba925b9a76d849004bd8bf6d78dc8197ebdc27d01251b7f97011a7191d2e28",
+  "cpl_sha256": "00315b3dad8e4153917597001ab1ffa4dca85a9f477dee9aa6ce0a9d472e9eb6",
+  "cpl_only_changes": [
+    {
+      "reference": "J104",
+      "before": 0.0,
+      "after": 180.0
+    },
+    {
+      "reference": "J105",
+      "before": 0.0,
+      "after": 180.0
+    },
+    {
+      "reference": "J106",
+      "before": 0.0,
+      "after": 180.0
+    },
+    {
+      "reference": "J112",
+      "before": 0.0,
+      "after": 180.0
+    },
+    {
+      "reference": "J113",
+      "before": 180.0,
+      "after": 90.0
+    },
+    {
+      "reference": "J123",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J124",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J128",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J129",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J131",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J132",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J133",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J134",
+      "before": 180.0,
+      "after": 0.0
+    },
+    {
+      "reference": "J135",
+      "before": 180.0,
+      "after": 0.0
+    }
+  ],
+  "spice_rerun": false,
+  "reason": "Only upload library rotations and assembly documentation changed; native electrical design and models unchanged."
+}

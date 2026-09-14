@@ -1,0 +1,23 @@
+{
+  "deck": "/home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb/output/verification/prototype-readiness/isolated_startup_extended.cir",
+  "deck_sha256": "1729c5adb1861a6356be42cd1671831b3e62171908ff8a64ebba498f2f709d8f",
+  "elapsed_s": 1257.537413894,
+  "wall_limit_s": 3600.0,
+  "timed_out": false,
+  "worker_returncode": 0,
+  "execution_completed": true,
+  "errors": [],
+  "measurements": {
+    "sim_end": 0.03,
+    "output_peak": 12.5185,
+    "output_min": -1.72784e-08,
+    "inductor_peak": 4.78615,
+    "inductor_min": -0.000518598,
+    "isolation_diode_peak": 23.4439,
+    "recovery_min": 12.0277,
+    "recovery_max": 12.1916,
+    "recovery_avg": 12.0804,
+    "headroom_min": 12.4435
+  },
+  "timeout_meaning": "Runtime limit; no electrical or numerical-convergence conclusion"
+}

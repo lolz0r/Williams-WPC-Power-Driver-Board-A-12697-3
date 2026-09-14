@@ -1,0 +1,721 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "name": "gi_50_0.9",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.50727,
+        "peak": 30.4696,
+        "power": 4.37616,
+        "i2t": 2.87919,
+        "tj": 110.7192
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 30.4696,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 2.87919,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.50727,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 110.7192,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "6f059a0493bf272d036849e761a37e02b34a309fbfb582051d1a6e23533006bd"
+    },
+    {
+      "name": "gi_50_1.1",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.56519,
+        "peak": 37.8944,
+        "power": 4.46235,
+        "i2t": 3.2645,
+        "tj": 111.9151
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 37.8944,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 3.2645,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.56519,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.9151,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "5aa90707b7ed9373a98ba5dc11ac3375eebedf3701ef7bc0ba4a418c78795bdb"
+    },
+    {
+      "name": "gi_60_0.9",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.50731,
+        "peak": 31.6384,
+        "power": 4.3761,
+        "i2t": 2.88866,
+        "tj": 110.7183
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 31.6384,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 2.88866,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.50731,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 110.7183,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "01cbcfa2daecf7812d051f2278cc42ded623b6211d8a46a1dcf8dec527e2283e"
+    },
+    {
+      "name": "gi_60_1.1",
+      "measurements": {
+        "sim_end": 1.0,
+        "rms": 4.56523,
+        "peak": 39.323,
+        "power": 4.46229,
+        "i2t": 3.27668,
+        "tj": 111.9142
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "peak": {
+          "value": 39.323,
+          "min": 0,
+          "max": 80,
+          "passed": true
+        },
+        "i2t": {
+          "value": 3.27668,
+          "min": 0,
+          "max": 32,
+          "passed": true
+        },
+        "rms": {
+          "value": 4.56523,
+          "min": 0,
+          "max": 5,
+          "passed": true
+        },
+        "tj": {
+          "value": 111.9142,
+          "min": 0,
+          "max": 125,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "29e811e921c491e8d38b07d199652d15b0a44ab67581b1fdf83e7c8bd83aa1f8"
+    },
+    {
+      "name": "gate_low_drive",
+      "measurements": {
+        "gate_current": 0.05503907
+      },
+      "checks": {
+        "gate_current": {
+          "value": 0.05503907,
+          "min": 0.05,
+          "max": 0.2,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "c41f327564c502dda12206456c7ce51c96d90b5a7d3013da977e63a51e241b2f"
+    },
+    {
+      "name": "highrail_50_0.9_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.01659,
+        "cap_peak": 61.867
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.01659,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 61.867,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "6251724289cb3b50a8d705df4b6b8deb71ae65c3176d73cccbb8a25f62389e58"
+    },
+    {
+      "name": "highrail_50_0.9_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.00767,
+        "cap_peak": 61.8436
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.00767,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 61.8436,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "9747e5a9289e400a7d98d5dfec5b9787be8cd7d9e12a71f0cb0b43d78836620b"
+    },
+    {
+      "name": "highrail_50_1.1_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.19267,
+        "cap_peak": 76.0076
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.19267,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 76.0076,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "b16eed12b5432df7e2802f70ac9a439de6121503d40d625fc09fdc570fc82ae9"
+    },
+    {
+      "name": "highrail_50_1.1_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.18345,
+        "cap_peak": 75.9792
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.061,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.18345,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 75.9792,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "da7ec3a772cfefcc51b7414e1d86a32fc94a247e260a5a86674e046f4065fbe3"
+    },
+    {
+      "name": "highrail_60_0.9_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.01852,
+        "cap_peak": 61.8644
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.01852,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 61.8644,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "e77ce1e1245f7e962842579a6c4c7e19c0190b43566c2f44a55b59e4db3d80f9"
+    },
+    {
+      "name": "highrail_60_0.9_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.00959,
+        "cap_peak": 61.8422
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.00959,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 61.8422,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "67d7d8cc7787138e6a8fb005636052c7f2de1dcb176b14cc2ccdd0398f3683e8"
+    },
+    {
+      "name": "highrail_60_1.1_False",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.19439,
+        "cap_peak": 76.0044
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.19439,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 76.0044,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "1a9adc7ef050ba52d1fc1df6f48b6400ebeee10bfe761cdbe45fdbb3c8244e86"
+    },
+    {
+      "name": "highrail_60_1.1_True",
+      "measurements": {
+        "sim_end": 1.0,
+        "fuse_rms": 5.18518,
+        "cap_peak": 75.9775
+      },
+      "checks": {
+        "sim_end": {
+          "value": 1.0,
+          "min": 0.99999,
+          "max": 1.00001,
+          "passed": true
+        },
+        "ripple_c8": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "ripple_c32": {
+          "value": null,
+          "min": 0,
+          "max": 2.29,
+          "passed": false
+        },
+        "fuse_rms": {
+          "value": 5.18518,
+          "min": 0,
+          "max": 7,
+          "passed": true
+        },
+        "cap_peak": {
+          "value": 75.9775,
+          "min": 0,
+          "max": 90,
+          "passed": true
+        }
+      },
+      "errors": [
+        "stderr out of interval",
+        "stderr meas tran ripple_c8 rms @c8[i] from=.8 to=1 failed!",
+        "stderr out of interval",
+        "stderr meas tran ripple_c32 rms @c32[i] from=.8 to=1 failed!"
+      ],
+      "passed": false,
+      "deck_sha256": "bebdf7b9e15a3ddede1e2598c6a27ce531d7f06d4747d49e3ab9726634ec361f"
+    },
+    {
+      "name": "f112_inrush_0.6_0",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 34.4085,
+        "peak": 78.4352
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 34.4085,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 78.4352,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "abbf0a50e34bd277c59208035bc7c6a3eee73a25fc6f660d8da4c9d7312decb9"
+    },
+    {
+      "name": "f112_inrush_0.6_90",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 36.754,
+        "peak": 111.717
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 36.754,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 111.717,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "3a548dea0b57872fc5500aad61552f5efbf4d8eb05dbb1cafbe7884a52ded120"
+    },
+    {
+      "name": "f112_inrush_1.2_0",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 18.9931,
+        "peak": 48.8177
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 18.9931,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 48.8177,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "1b021f8e5e700f87868c4561a9edc57871f742124d3e231c136a7e2c16189161"
+    },
+    {
+      "name": "f112_inrush_1.2_90",
+      "measurements": {
+        "sim_end": 0.1,
+        "i2t": 19.3995,
+        "peak": 60.1988
+      },
+      "checks": {
+        "sim_end": {
+          "value": 0.1,
+          "min": 0.09999,
+          "max": 0.10001,
+          "passed": true
+        },
+        "i2t": {
+          "value": 19.3995,
+          "min": 0,
+          "max": 139.419,
+          "passed": true
+        },
+        "peak": {
+          "value": 60.1988,
+          "min": 0,
+          "max": 300,
+          "passed": true
+        }
+      },
+      "errors": [],
+      "passed": true,
+      "deck_sha256": "9aef55d3a41098c5dab5939f4e43ec2ba6509bb2899036be4226e3388a2fb1da"
+    }
+  ],
+  "limitations": [
+    "F112 139.419 A2s is TYPICAL pre-arcing, not a guaranteed repetitive endurance allowance; physical cold/hot/fault tests remain required.",
+    "External Fliptronic reservoir 4400uF and winding0.6..1.2ohm are assumptions. Prospective symmetrical current at worst56.55Vrms/.6ohm=94.3A is below200A fuse interruption rating only within this assumed bound.",
+    "Highrail 3A sustained DC and all-GI lamp envelopes are engineering load bounds. Actual duty/population/transformer regulation unknown.",
+    "BTA08 gate model does not validate real commutation or quadrant timing. 50mA IGT maximum is screened at low drive."
+  ],
+  "model_sha256": "ec7904b81571efb659270979f7c4af1487040933ae9fab82799a63600ee89999"
+}

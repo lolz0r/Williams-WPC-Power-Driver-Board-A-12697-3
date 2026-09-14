@@ -1,0 +1,255 @@
+Bridge loss sensitivity: BR1 STPS20M100ST TO220 with individual Boyd 577202B00000G sinks. Other low-voltage bridges STPS20M100SG D2PAK. 50 C ambient. Electrical winding/load assumptions remain to be measured. D2PAK lumped temperatures are screening estimates; geometry thermal_mesh.py is the separate layout assessment.
+.include /home/lolz0r/repros/wpc_power_driver_cost/variants/jlcpcb-100/tools/spice/models.lib
+* ---- 18a: BR1 +18V, everything on: all 64 lamps (2.5 ohm) + the +12V digital buck at 0.75 A (as psu_maxload)
+V18a p18a q18a SIN(0 20.680000000000003 50 0 0 90)
+Rp18a p18a a18a 0.05
+Rq18a q18a b18a 0.05
+Vs18a a18a ab18a 0
+D118a ab18a dc18a J100MBR
+D218a b18a dc18a J100MBR
+D318a 0 ab18a J100MBR
+D418a 0 b18a J100MBR
+C18a dc18a 0 22560.0u
+Rl18a dc18a 0 2.5
+Bv12a v12a 0 V = 0.5*(1+tanh((v(dc18a)-8.5)*40)) * 12.0
+R12a v12a 0 16
+Bin12a dc18a 0 I = (v(v12a)*v(v12a)/16) / (0.88*max(v(dc18a),1))
+* ---- 18b: BR1 +18V, sustained design point 3.0 A DC (about half the lamps lit + the buck, or an LED-converted machine)
+V18b p18b q18b SIN(0 20.680000000000003 50 0 0 90)
+Rp18b p18b a18b 0.05
+Rq18b q18b b18b 0.05
+Vs18b a18b ab18b 0
+D118b ab18b dc18b J100MBR
+D218b b18b dc18b J100MBR
+D318b 0 ab18b J100MBR
+D418b 0 b18b J100MBR
+C18b dc18b 0 22560.0u
+Bl18b dc18b 0 I = (time > 60m) ? 3.0 : 0
+* ---- 18c: BR1 +18V, F114 rating 8 A DC (bound, informational)
+V18c p18c q18c SIN(0 20.680000000000003 50 0 0 90)
+Rp18c p18c a18c 0.05
+Rq18c q18c b18c 0.05
+Vs18c a18c ab18c 0
+D118c ab18c dc18c J100MBR
+D218c b18c dc18c J100MBR
+D318c 0 ab18c J100MBR
+D418c 0 b18c J100MBR
+C18c dc18c 0 22560.0u
+Bl18c dc18c 0 I = (time > 60m) ? 8.0 : 0
+* ---- 20a: BR4 +20V, sustained design point 2.5 A DC (flashers at ~50 % of the F111 rating during a lamp show)
+V20a p20a q20a SIN(0 24.860000000000003 50 0 0 90)
+Rp20a p20a a20a 0.05
+Rq20a q20a b20a 0.05
+Vs20a a20a ab20a 0
+D120aa ab20a xaD120a J100ONLEG_A
+VD120aa xaD120a dc20a 0
+D120ab ab20a xbD120a J100ONLEG_B
+VD120ab xbD120a dc20a 0
+D220aa b20a xaD220a J100ONLEG_A
+VD220aa xaD220a dc20a 0
+D220ab b20a xbD220a J100ONLEG_B
+VD220ab xbD220a dc20a 0
+D320aa 0 xaD320a J100ONLEG_A
+VD320aa xaD320a ab20a 0
+D320ab 0 xbD320a J100ONLEG_B
+VD320ab xbD320a ab20a 0
+D420aa 0 xaD420a J100ONLEG_A
+VD420aa xaD420a b20a 0
+D420ab 0 xbD420a J100ONLEG_B
+VD420ab xbD420a b20a 0
+C20a dc20a 0 11280.0u
+Bl20a dc20a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 20b: BR4 +20V, F111 rating 5 A DC (bound, informational)
+V20b p20b q20b SIN(0 24.860000000000003 50 0 0 90)
+Rp20b p20b a20b 0.05
+Rq20b q20b b20b 0.05
+Vs20b a20b ab20b 0
+D120ba ab20b xaD120b J100ONLEG_A
+VD120ba xaD120b dc20b 0
+D120bb ab20b xbD120b J100ONLEG_B
+VD120bb xbD120b dc20b 0
+D220ba b20b xaD220b J100ONLEG_A
+VD220ba xaD220b dc20b 0
+D220bb b20b xbD220b J100ONLEG_B
+VD220bb xbD220b dc20b 0
+D320ba 0 xaD320b J100ONLEG_A
+VD320ba xaD320b ab20b 0
+D320bb 0 xbD320b J100ONLEG_B
+VD320bb xbD320b ab20b 0
+D420ba 0 xaD420b J100ONLEG_A
+VD420ba xaD420b b20b 0
+D420bb 0 xbD420b J100ONLEG_B
+VD420bb xbD420b b20b 0
+C20b dc20b 0 11280.0u
+Bl20b dc20b 0 I = (time > 60m) ? 5.0 : 0
+* ---- 50a: BR3 +50V, sustained design point 3.0 A DC (a 14.5 ohm coil held 50 % of the time plus play; the flippers are rectified on the Fliptronic board from J104)
+V50a p50a q50a SIN(0 79.97000000000001 50 0 0 90)
+Rp50a p50a a50a 0.6
+Rq50a q50a b50a 0.6
+Vs50a a50a ab50a 0
+D150a ab50a dc50a DGBPC35
+D250a b50a dc50a DGBPC35
+D350a 0 ab50a DGBPC35
+D450a 0 b50a DGBPC35
+C50a dc50a 0 4963.2u
+R260a dc50a 0 7.5k
+Bl50a dc50a 0 I = (time > 60m) ? 3.0 : 0
+* ---- 50b: BR3 +50V, F112 rating 7 A DC (bound, informational)
+V50b p50b q50b SIN(0 79.97000000000001 50 0 0 90)
+Rp50b p50b a50b 0.6
+Rq50b q50b b50b 0.6
+Vs50b a50b ab50b 0
+D150b ab50b dc50b DGBPC35
+D250b b50b dc50b DGBPC35
+D350b 0 ab50b DGBPC35
+D450b 0 b50b DGBPC35
+C50b dc50b 0 4963.2u
+R260b dc50b 0 7.5k
+Bl50b dc50b 0 I = (time > 60m) ? 7.0 : 0
+* ---- 5a: BR2 +5V raw, +5V buck at its rated 3 A output (the converter limits this rail: F113 is never reached)
+V5a p5a q5a SIN(0 13.97 50 0 0 90)
+Rp5a p5a a5a 0.05
+Rq5a q5a b5a 0.05
+Vs5a a5a ab5a 0
+D15aa ab5a xaD15a J100ONLEG_A
+VD15aa xaD15a dc5a 0
+D15ab ab5a xbD15a J100ONLEG_B
+VD15ab xbD15a dc5a 0
+D25aa b5a xaD25a J100ONLEG_A
+VD25aa xaD25a dc5a 0
+D25ab b5a xbD25a J100ONLEG_B
+VD25ab xbD25a dc5a 0
+D35aa 0 xaD35a J100ONLEG_A
+VD35aa xaD35a ab5a 0
+D35ab 0 xbD35a J100ONLEG_B
+VD35ab xbD35a ab5a 0
+D45aa 0 xaD45a J100ONLEG_A
+VD45aa xaD45a b5a 0
+D45ab 0 xbD45a J100ONLEG_B
+VD45ab xbD45a b5a 0
+C5a dc5a 0 11280.0u
+Bv5a v5a 0 V = 0.5*(1+tanh((v(dc5a)-5.6)*40)) * min(5.10, max(0.97*v(dc5a) - 0.5, 0))
+R5a v5a 0 1.667
+Bin5a dc5a 0 I = (v(v5a)*v(v5a)/1.667) / (0.88*max(v(dc5a),1))
+* ---- 5b: BR2 +5V raw, +5V buck at the estimated real load 2.4 A (README: 2.2-2.6 A)
+V5b p5b q5b SIN(0 13.97 50 0 0 90)
+Rp5b p5b a5b 0.05
+Rq5b q5b b5b 0.05
+Vs5b a5b ab5b 0
+D15ba ab5b xaD15b J100ONLEG_A
+VD15ba xaD15b dc5b 0
+D15bb ab5b xbD15b J100ONLEG_B
+VD15bb xbD15b dc5b 0
+D25ba b5b xaD25b J100ONLEG_A
+VD25ba xaD25b dc5b 0
+D25bb b5b xbD25b J100ONLEG_B
+VD25bb xbD25b dc5b 0
+D35ba 0 xaD35b J100ONLEG_A
+VD35ba xaD35b ab5b 0
+D35bb 0 xbD35b J100ONLEG_B
+VD35bb xbD35b ab5b 0
+D45ba 0 xaD45b J100ONLEG_A
+VD45ba xaD45b b5b 0
+D45bb 0 xbD45b J100ONLEG_B
+VD45bb xbD45b b5b 0
+C5b dc5b 0 11280.0u
+Bv5b v5b 0 V = 0.5*(1+tanh((v(dc5b)-5.6)*40)) * min(5.10, max(0.97*v(dc5b) - 0.5, 0))
+R5b v5b 0 2.083
+Bin5b dc5b 0 I = (v(v5b)*v(v5b)/2.083) / (0.88*max(v(dc5b),1))
+* ---- 12a: BR5 +12V power, sustained design point 2.5 A DC (gun motors, optos, coin door, DMD - psu_12vu)
+V12a p12a q12a SIN(0 19.393 50 0 0 90)
+Rp12a p12a a12a 0.25
+Rq12a q12a b12a 0.25
+Vs12a a12a ab12a 0
+D112aa ab12a xaD112a J100ONLEG_A
+VD112aa xaD112a dc12a 0
+D112ab ab12a xbD112a J100ONLEG_B
+VD112ab xbD112a dc12a 0
+D212aa b12a xaD212a J100ONLEG_A
+VD212aa xaD212a dc12a 0
+D212ab b12a xbD212a J100ONLEG_B
+VD212ab xbD212a dc12a 0
+D312aa 0 xaD312a J100ONLEG_A
+VD312aa xaD312a ab12a 0
+D312ab 0 xbD312a J100ONLEG_B
+VD312ab xbD312a ab12a 0
+D412aa 0 xaD412a J100ONLEG_A
+VD412aa xaD412a b12a 0
+D412ab 0 xbD412a J100ONLEG_B
+VD412ab xbD412a b12a 0
+C12a dc12a 0 11280.0u
+Bl12a dc12a 0 I = (time > 60m) ? 2.5 : 0
+* ---- 12b: BR5 +12V power, F116 rating 3 A DC (bound, informational)
+V12b p12b q12b SIN(0 19.393 50 0 0 90)
+Rp12b p12b a12b 0.25
+Rq12b q12b b12b 0.25
+Vs12b a12b ab12b 0
+D112ba ab12b xaD112b J100ONLEG_A
+VD112ba xaD112b dc12b 0
+D112bb ab12b xbD112b J100ONLEG_B
+VD112bb xbD112b dc12b 0
+D212ba b12b xaD212b J100ONLEG_A
+VD212ba xaD212b dc12b 0
+D212bb b12b xbD212b J100ONLEG_B
+VD212bb xbD212b dc12b 0
+D312ba 0 xaD312b J100ONLEG_A
+VD312ba xaD312b ab12b 0
+D312bb 0 xbD312b J100ONLEG_B
+VD312bb xbD312b ab12b 0
+D412ba 0 xaD412b J100ONLEG_A
+VD412ba xaD412b b12b 0
+D412bb 0 xbD412b J100ONLEG_B
+VD412bb xbD412b b12b 0
+C12b dc12b 0 11280.0u
+Bl12b dc12b 0 I = (time > 60m) ? 3.0 : 0
+
+.model J100ON20H D(Is=2e-7 N=1.05 Rs=.0045 Cjo=1400p Bv=100 Ibv=1m)
+
+
+.model J100ONLEG_A D(Is=1e-7 N=1.05 Rs=.0072 Cjo=700p Bv=100 Ibv=1m)
+.model J100ONLEG_B D(Is=1e-8 N=1.05 Rs=.0108 Cjo=700p Bv=100 Ibv=1m)
+
+.options method=gear reltol=.001 minbreak=1p klu
+.tran 1u 50m 0 1u uic
+.control
+run
+let sim_end=time[length(time)-1]
+print sim_end
+let ia_5a=abs(i(Vs5a))
+let i2_5a=ia_5a*ia_5a
+meas tran peak_5a MAX ia_5a from=0 to=50m
+meas tran i2t_5a INTEG i2_5a from=0 to=50m
+let ia_20a=abs(i(Vs20a))
+let i2_20a=ia_20a*ia_20a
+meas tran peak_20a MAX ia_20a from=0 to=50m
+meas tran i2t_20a INTEG i2_20a from=0 to=50m
+let ia_12b=abs(i(Vs12b))
+let i2_12b=ia_12b*ia_12b
+meas tran peak_12b MAX ia_12b from=0 to=50m
+meas tran i2t_12b INTEG i2_12b from=0 to=50m
+let il_5a_a=abs(i(VD15aa))
+let il2_5a_a=il_5a_a*il_5a_a
+meas tran legpeak_5a_a MAX il_5a_a from=0 to=50m
+meas tran legi2t_5a_a INTEG il2_5a_a from=0 to=50m
+let il_5a_b=abs(i(VD15ab))
+let il2_5a_b=il_5a_b*il_5a_b
+meas tran legpeak_5a_b MAX il_5a_b from=0 to=50m
+meas tran legi2t_5a_b INTEG il2_5a_b from=0 to=50m
+let il_20a_a=abs(i(VD120aa))
+let il2_20a_a=il_20a_a*il_20a_a
+meas tran legpeak_20a_a MAX il_20a_a from=0 to=50m
+meas tran legi2t_20a_a INTEG il2_20a_a from=0 to=50m
+let il_20a_b=abs(i(VD120ab))
+let il2_20a_b=il_20a_b*il_20a_b
+meas tran legpeak_20a_b MAX il_20a_b from=0 to=50m
+meas tran legi2t_20a_b INTEG il2_20a_b from=0 to=50m
+let il_12b_a=abs(i(VD112ba))
+let il2_12b_a=il_12b_a*il_12b_a
+meas tran legpeak_12b_a MAX il_12b_a from=0 to=50m
+meas tran legi2t_12b_a INTEG il2_12b_a from=0 to=50m
+let il_12b_b=abs(i(VD112bb))
+let il2_12b_b=il_12b_b*il_12b_b
+meas tran legpeak_12b_b MAX il_12b_b from=0 to=50m
+meas tran legi2t_12b_b INTEG il2_12b_b from=0 to=50m
+.endc
+.end

@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "rails": {
+    "U20": {
+      "transient_cases": 48,
+      "all_passed": true,
+      "peak_output_V": 5.22601,
+      "settled_min_V": 4.92521,
+      "settled_max_V": 5.07663,
+      "load_step_min_V": 4.82806,
+      "minimum_phase_margin_deg": 68.36937793312974,
+      "minimum_gain_margin_dB": 20.04376353365702
+    },
+    "U21": {
+      "transient_cases": 48,
+      "all_passed": true,
+      "peak_output_V": 12.57,
+      "settled_min_V": 11.7239,
+      "settled_max_V": 12.4888,
+      "load_step_min_V": 11.8245,
+      "minimum_phase_margin_deg": 70.16041785035445,
+      "minimum_gain_margin_dB": 24.631687661583307
+    }
+  },
+  "matrix": [
+    {
+      "report": "output/verification/prototype-readiness/matrix_minbreak1p_1us.json",
+      "sha256": "a54563e5c371ffb2c95b976fc72e927778bf20346fe1f7a20309a34cb6fd1e46",
+      "checks": 41,
+      "completed_s": 0.37,
+      "peak_column_junction_C": 75.533277
+    },
+    {
+      "report": "output/verification/prototype-readiness/matrix_minbreak1p_0.5us.json",
+      "sha256": "b52892e1a5d6d8a7600d4f2dd112e30752deae2908196c8cc3a252305f294a68",
+      "checks": 41,
+      "completed_s": 0.37,
+      "peak_column_junction_C": 75.532276
+    },
+    {
+      "report": "output/verification/prototype-readiness/matrix_minbreak1p_trap_0.5us.json",
+      "sha256": "7868da3dfa4993c0df564d7115180f0d7e6a982a47430d7482fd7958369cdd0b",
+      "checks": 41,
+      "completed_s": 0.37,
+      "peak_column_junction_C": 75.530802
+    },
+    {
+      "report": "output/verification/prototype-readiness/replay-matrix/matrix_20.69V_1us.json",
+      "sha256": "c21ce7c7ae4ef993de4439fca8e12b109b3c70402f06589b079666b789d0fbeb",
+      "checks": 41,
+      "completed_s": 0.37,
+      "peak_column_junction_C": 75.53328
+    }
+  ],
+  "evidence_sha256": {
+    "output/verification/prototype-readiness/buckboost-qualified-nominal/results.json": "5384de4075c06960afc7d9783da7e77c26507d5c9dc256dc483638b12b2af66e",
+    "output/verification/prototype-readiness/buckboost-qualified-high/results.json": "2caa6f9d241c9ed0799e2601d9c886080744faf54f3ade7bcca51033826b8e1d",
+    "output/verification/prototype-readiness/buckboost-qualified-low/results.json": "081f8a853858cd5c3de7dda0449e86cc1617736f7550d4eb01128171df92d35d"
+  },
+  "scope": "96 averaged supply transient screens, CCM loop sensitivities, and four completed 370 ms ROM-trace matrix runs. Native topology/value audits bind current hardware separately.",
+  "limitations": [
+    "No physical qualification has been performed",
+    "Supply model is averaged and the public TI switching model is encrypted",
+    "The matrix driver circuit is unchanged; its prior PCB hash identifies the time of the run, not an extracted whole-board simulation",
+    "Fuses/transformer, harness losses, cabinet thermal conditions, PFM and backfeed behavior require prototype measurements"
+  ]
+}

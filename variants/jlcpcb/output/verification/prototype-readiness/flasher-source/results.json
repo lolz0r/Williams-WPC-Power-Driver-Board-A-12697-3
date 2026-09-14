@@ -1,0 +1,2703 @@
+{
+  "cases": [
+    {
+      "name": "flasher_only_f50_line0.9_esr0.02_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.0312,
+        "input_max": 18.2985,
+        "bridge_peak": 38.6159,
+        "secondary_rms": 5.00185,
+        "bridge_i2t_start": 5.01436,
+        "bridge_power": 0.823355,
+        "rms_c11": 4.33026
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "6d3bd003d01962677263b14d9872011a2c34e7e60a72fef2af29c8eb3bf7bc8c"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.02_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.0312,
+        "input_max": 18.2985,
+        "bridge_peak": 123.748,
+        "secondary_rms": 5.00185,
+        "bridge_i2t_start": 8.84202,
+        "bridge_power": 0.82294,
+        "rms_c11": 4.33026
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "c7f0336c4736cabdd87a476cc15abb7aebd3161f3f8b28a86231d5d0f4c19180"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.02_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.5227,
+        "input_max": 18.0722,
+        "bridge_peak": 49.5259,
+        "secondary_rms": 5.03327,
+        "bridge_i2t_start": 8.66053,
+        "bridge_power": 0.826694,
+        "rms_c11": 4.3665
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "89dee9090971caf6a650cb5eaee10836749bbba7d7b954f56ef55c5272451f8f"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.02_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.5228,
+        "input_max": 18.0722,
+        "bridge_peak": 123.751,
+        "secondary_rms": 5.03327,
+        "bridge_i2t_start": 12.0558,
+        "bridge_power": 0.826219,
+        "rms_c11": 4.3665
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "0890c004dbce0ce987cd6211789e68bbd5252df045e3906a6d36a1549b37f76d"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.05_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.8422,
+        "input_max": 18.2065,
+        "bridge_peak": 36.6698,
+        "secondary_rms": 4.8726,
+        "bridge_i2t_start": 4.68868,
+        "bridge_power": 0.809966,
+        "rms_c11": 4.18028
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "911d3d77b721c8d5a9e440a265bbeb22771aa89c49511a3bab0138b7cd8f92d7"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.05_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.8422,
+        "input_max": 18.2065,
+        "bridge_peak": 104.543,
+        "secondary_rms": 4.8726,
+        "bridge_i2t_start": 7.29837,
+        "bridge_power": 0.809569,
+        "rms_c11": 4.18028
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "965866ab5b3cf8b3a54f9947bd08f5a3f21590ee75f942f6239cf3f106b06011"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.05_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.308,
+        "input_max": 18.0085,
+        "bridge_peak": 46.2613,
+        "secondary_rms": 4.89731,
+        "bridge_i2t_start": 7.85279,
+        "bridge_power": 0.812542,
+        "rms_c11": 4.20906
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "2cc9a831319a95ca80b1d02c8592710b305c623217ccf50891efede249c8f781"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.05_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.308,
+        "input_max": 18.0085,
+        "bridge_peak": 104.545,
+        "secondary_rms": 4.89731,
+        "bridge_i2t_start": 9.81392,
+        "bridge_power": 0.812098,
+        "rms_c11": 4.20906
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "9d35c902245f1857054e876944b5f398372ec84696341d59e874425ccb9bf7b4"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.1_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5299,
+        "input_max": 18.1463,
+        "bridge_peak": 33.8266,
+        "secondary_rms": 4.69856,
+        "bridge_i2t_start": 4.20117,
+        "bridge_power": 0.792328,
+        "rms_c11": 3.97605
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "507134fda6463ccb59ad8a3bc0c6661d12086d3575bb35044c695a2f14a2779d"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.1_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5299,
+        "input_max": 18.1463,
+        "bridge_peak": 82.7006,
+        "secondary_rms": 4.69856,
+        "bridge_i2t_start": 5.60403,
+        "bridge_power": 0.791975,
+        "rms_c11": 3.97605
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "9b1576b10e4ddc44d6253707e839c6d6c6382d52f396a73441aebfa18e95be11"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.1_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.9636,
+        "input_max": 18.0043,
+        "bridge_peak": 41.6996,
+        "secondary_rms": 4.71636,
+        "bridge_i2t_start": 6.73495,
+        "bridge_power": 0.794137,
+        "rms_c11": 3.99707
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "6e32f69f5bb03643c54092fa19f613807cddaeada9b950b08e75220eac939900"
+    },
+    {
+      "name": "flasher_only_f50_line0.9_esr0.1_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.9637,
+        "input_max": 18.0043,
+        "bridge_peak": 82.702,
+        "secondary_rms": 4.71636,
+        "bridge_i2t_start": 7.3984,
+        "bridge_power": 0.79375,
+        "rms_c11": 3.99706
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "659f76b4257b6a1381ceb1e0f9cc5eec880a802f43392e46bd9e34c6ed25cc08"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.02_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.3775,
+        "input_max": 22.7099,
+        "bridge_peak": 47.0118,
+        "secondary_rms": 5.18654,
+        "bridge_i2t_start": 7.33419,
+        "bridge_power": 0.843138,
+        "rms_c11": 4.54186
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "21c7f407846341513ff9d8c25c21c7ad89332381e51ad6a85dd6d231c42a09f8"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.02_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.3774,
+        "input_max": 22.7099,
+        "bridge_peak": 153.629,
+        "secondary_rms": 5.18654,
+        "bridge_i2t_start": 13.2814,
+        "bridge_power": 0.842585,
+        "rms_c11": 4.54186
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8c3d5b52213fceff682513f053758df29626a7eef606347ed7d33b61f343e484"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.02_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.8775,
+        "input_max": 22.472,
+        "bridge_peak": 60.5024,
+        "secondary_rms": 5.21489,
+        "bridge_i2t_start": 12.8363,
+        "bridge_power": 0.846231,
+        "rms_c11": 4.57419
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "aeb1b6bb62ba3d93f8ef738a5e0b0822b0e3d41b86b8c8a5907293d3ada805db"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.02_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.8775,
+        "input_max": 22.472,
+        "bridge_peak": 153.633,
+        "secondary_rms": 5.21489,
+        "bridge_i2t_start": 18.1603,
+        "bridge_power": 0.845597,
+        "rms_c11": 4.57419
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "5470bf940b22199d18a5fca8f137908fd6e4772ce111cb02bfbae76f90bd1d91"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.05_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.1674,
+        "input_max": 22.6124,
+        "bridge_peak": 44.6134,
+        "secondary_rms": 5.05093,
+        "bridge_i2t_start": 6.84412,
+        "bridge_power": 0.828773,
+        "rms_c11": 4.38635
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "7cb4882e66c58ef461daf1639297ed48e08161aa3024af0d3510501ede05ea05"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.05_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.1673,
+        "input_max": 22.6124,
+        "bridge_peak": 128.378,
+        "secondary_rms": 5.05093,
+        "bridge_i2t_start": 10.9262,
+        "bridge_power": 0.828284,
+        "rms_c11": 4.38635
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "05849f294e12a2c387a910304cbf34265f459a9545c2046f0155cf3f00e80b92"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.05_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.6428,
+        "input_max": 22.4073,
+        "bridge_peak": 56.4771,
+        "secondary_rms": 5.07319,
+        "bridge_i2t_start": 11.6125,
+        "bridge_power": 0.831155,
+        "rms_c11": 4.41195
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "20f84a5084f1dc15d8734cbdfa95922978697ca19f57c4baa3ac065b557b8798"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.05_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.6428,
+        "input_max": 22.4073,
+        "bridge_peak": 128.381,
+        "secondary_rms": 5.07319,
+        "bridge_i2t_start": 14.7359,
+        "bridge_power": 0.830615,
+        "rms_c11": 4.41195
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "0cbc832b0ce85b6c5f7d070374d96beaf5a04412217d43b222e3b512fa8bfdc6"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.1_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.8237,
+        "input_max": 22.5537,
+        "bridge_peak": 41.1168,
+        "secondary_rms": 4.86893,
+        "bridge_i2t_start": 6.11348,
+        "bridge_power": 0.809849,
+        "rms_c11": 4.17547
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "c0dc58521953e61163dac9f81ff05a5bab67c77aa3a2de3c65cb9ec2197e384f"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.1_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.8236,
+        "input_max": 22.5537,
+        "bridge_peak": 101.806,
+        "secondary_rms": 4.86893,
+        "bridge_i2t_start": 8.34467,
+        "bridge_power": 0.809396,
+        "rms_c11": 4.17547
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "093de3d02aa6078e5c120b53b4d58d2a5b9331ef26d66df9c1123eb0c5b73421"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.1_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.2683,
+        "input_max": 22.4097,
+        "bridge_peak": 50.8608,
+        "secondary_rms": 4.88493,
+        "bridge_i2t_start": 9.92461,
+        "bridge_power": 0.811516,
+        "rms_c11": 4.19411
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "f1b912bd8e4ee2a6d723b4e9d9ecee00f8e0c00fc833eabe2b68a33c00d87977"
+    },
+    {
+      "name": "flasher_only_f50_line1.1_esr0.1_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.2683,
+        "input_max": 22.4097,
+        "bridge_peak": 101.808,
+        "secondary_rms": 4.88493,
+        "bridge_i2t_start": 11.0509,
+        "bridge_power": 0.811028,
+        "rms_c11": 4.19411
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "f8422368febc9b41434e40cdea69b8268ec7ed2d9fc03286a4d9c340ca6bfc1e"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.02_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.2821,
+        "input_max": 18.1908,
+        "bridge_peak": 43.3561,
+        "secondary_rms": 5.01901,
+        "bridge_i2t_start": 5.37057,
+        "bridge_power": 0.825168,
+        "rms_c11": 4.35006
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "80ea947efcca56c8ee81488110c52f95073fb22ea4367a9c2d2257d72146229e"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.02_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.2821,
+        "input_max": 18.1908,
+        "bridge_peak": 123.748,
+        "secondary_rms": 5.01901,
+        "bridge_i2t_start": 8.49844,
+        "bridge_power": 0.824731,
+        "rms_c11": 4.35006
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "4adf6ce5b1b9a8eccec31f36c45de74d5dda24553bc01b7d9fcde7d2bf23a3f5"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.02_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.6768,
+        "input_max": 17.9875,
+        "bridge_peak": 54.7927,
+        "secondary_rms": 5.0411,
+        "bridge_i2t_start": 9.07941,
+        "bridge_power": 0.827519,
+        "rms_c11": 4.37552
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "6c72866c792384b65dc89f8836b491bf574de349e7f6d22065365624d565beb1"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.02_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.6768,
+        "input_max": 17.9875,
+        "bridge_peak": 123.751,
+        "secondary_rms": 5.0411,
+        "bridge_i2t_start": 11.4457,
+        "bridge_power": 0.827037,
+        "rms_c11": 4.37552
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "c98b05fb86bade7a301564acc07c19acf0a76dcf2706745ad7f2645debf7fbc8"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.05_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.0797,
+        "input_max": 18.1095,
+        "bridge_peak": 40.8748,
+        "secondary_rms": 4.88612,
+        "bridge_i2t_start": 4.95571,
+        "bridge_power": 0.811352,
+        "rms_c11": 4.19603
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "089521512285494a200f133970de5b42613bd53dc7ed72eed82fd16fa24d7753"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.05_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.0797,
+        "input_max": 18.1095,
+        "bridge_peak": 104.543,
+        "secondary_rms": 4.88612,
+        "bridge_i2t_start": 6.97114,
+        "bridge_power": 0.810953,
+        "rms_c11": 4.19603
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "4aa9d79ae8b22ede8eedac6602872787218fe779757f71d371354f6bb47177e4"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.05_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.4544,
+        "input_max": 17.9408,
+        "bridge_peak": 50.7843,
+        "secondary_rms": 4.90345,
+        "bridge_i2t_start": 8.11008,
+        "bridge_power": 0.813161,
+        "rms_c11": 4.21619
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "06a9ebe68a42ef9e4d7fe9e45362c195a216a516a888cc918150c4c87a75bdaf"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.05_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.4544,
+        "input_max": 17.9408,
+        "bridge_peak": 104.545,
+        "secondary_rms": 4.90345,
+        "bridge_i2t_start": 9.26237,
+        "bridge_power": 0.812727,
+        "rms_c11": 4.21619
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "1c2c9f88cf7729a523ab7939f1f4d21a78225c1223a951497bafaee669028f45"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.1_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7508,
+        "input_max": 18.0738,
+        "bridge_peak": 37.3215,
+        "secondary_rms": 4.70831,
+        "bridge_i2t_start": 4.35608,
+        "bridge_power": 0.793325,
+        "rms_c11": 3.98757
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "55b3db54df1f1875fa80f4b550c4479d12df20f7a1118a8c921b28773afeda3f"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.1_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7508,
+        "input_max": 18.0738,
+        "bridge_peak": 82.7006,
+        "secondary_rms": 4.70831,
+        "bridge_i2t_start": 5.30731,
+        "bridge_power": 0.792948,
+        "rms_c11": 3.98757
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "f3f429e9edd63ad3f38dc61b6d8f325c2640e2071d43412e4cf17a52fa79973e"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.1_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.1006,
+        "input_max": 17.9613,
+        "bridge_peak": 45.2931,
+        "secondary_rms": 4.72077,
+        "bridge_i2t_start": 6.81526,
+        "bridge_power": 0.794591,
+        "rms_c11": 4.00226
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "cf17434a2f3745ae379785cf35a24a530c6156a8da642743115234b9439eb531"
+    },
+    {
+      "name": "flasher_only_f60_line0.9_esr0.1_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.1007,
+        "input_max": 17.9613,
+        "bridge_peak": 82.702,
+        "secondary_rms": 4.72077,
+        "bridge_i2t_start": 6.93344,
+        "bridge_power": 0.79419,
+        "rms_c11": 4.00226
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "b53bac2c3be070e8ac82f5c953b4703439eb75c1504212c6157d7a53e34c0463"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.02_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.6327,
+        "input_max": 22.5961,
+        "bridge_peak": 52.8711,
+        "secondary_rms": 5.20204,
+        "bridge_i2t_start": 7.90795,
+        "bridge_power": 0.844826,
+        "rms_c11": 4.55954
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "65081037095bdc8b46ef0c1ec1564e6ed652bb0257db0fb58308f92f7b712af3"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.02_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.6327,
+        "input_max": 22.5961,
+        "bridge_peak": 153.629,
+        "secondary_rms": 5.20204,
+        "bridge_i2t_start": 12.7835,
+        "bridge_power": 0.844233,
+        "rms_c11": 4.55954
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "4dc56e26c54e409acc590d80dcfe001166eb93c9b6c5b13ea8d2ed63ee6109ac"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.02_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 21.0343,
+        "input_max": 22.384,
+        "bridge_peak": 67.021,
+        "secondary_rms": 5.22194,
+        "bridge_i2t_start": 13.5146,
+        "bridge_power": 0.847,
+        "rms_c11": 4.58222
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "b5cf677cf41189b5ec7f7cbce9a4016489fb310e52fc657c100ce473a990f410"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.02_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 21.0343,
+        "input_max": 22.384,
+        "bridge_peak": 153.633,
+        "secondary_rms": 5.22194,
+        "bridge_i2t_start": 17.2569,
+        "bridge_power": 0.846345,
+        "rms_c11": 4.58222
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9814ab0be67ffb1de781689fcd9b827ef7937a33af881ff0df7a71a5f53e097b"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.05_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.4098,
+        "input_max": 22.5114,
+        "bridge_peak": 49.8126,
+        "secondary_rms": 5.06312,
+        "bridge_i2t_start": 7.28152,
+        "bridge_power": 0.830076,
+        "rms_c11": 4.40037
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9e24382ed103a5d8c250edd399e10790c3544ab8cfb591770f2589fb8b000bd3"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.05_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.4098,
+        "input_max": 22.5114,
+        "bridge_peak": 128.378,
+        "secondary_rms": 5.06312,
+        "bridge_i2t_start": 10.4521,
+        "bridge_power": 0.829561,
+        "rms_c11": 4.40037
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "07a475ca699eff396b736fe4a9fd89dea63a4cd4cc78b1cc09248135d259939c"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.05_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.7924,
+        "input_max": 22.3383,
+        "bridge_peak": 62.0767,
+        "secondary_rms": 5.0787,
+        "bridge_i2t_start": 12.0429,
+        "bridge_power": 0.831745,
+        "rms_c11": 4.41829
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "09a3634ad420878b3bafcff93663988b65f587fb5e910d57014a8111861fb968"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.05_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.7924,
+        "input_max": 22.3383,
+        "bridge_peak": 128.381,
+        "secondary_rms": 5.0787,
+        "bridge_i2t_start": 13.9205,
+        "bridge_power": 0.831193,
+        "rms_c11": 4.41829
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "6772dbc64295f9a721d5b5acec58cabf7eb5f87b43b6db68cf059c89ce2e5968"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.1_imb0_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.05,
+        "input_max": 22.4798,
+        "bridge_peak": 45.4407,
+        "secondary_rms": 4.8777,
+        "bridge_i2t_start": 6.37937,
+        "bridge_power": 0.810763,
+        "rms_c11": 4.18569
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "3fb819c339d528b32e9f017c95d8e6dbb69894a471e93b14cafea20034604651"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.1_imb0_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.05,
+        "input_max": 22.4798,
+        "bridge_peak": 101.806,
+        "secondary_rms": 4.8777,
+        "bridge_i2t_start": 7.91547,
+        "bridge_power": 0.810291,
+        "rms_c11": 4.18569
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "a3572fa7dcee5d44de4b19c9e537523d7fc0bb3919c3a1de1269dbea6d208833"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.1_imb1_phase0",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.4088,
+        "input_max": 22.3668,
+        "bridge_peak": 55.3124,
+        "secondary_rms": 4.88888,
+        "bridge_i2t_start": 10.0834,
+        "bridge_power": 0.811928,
+        "rms_c11": 4.19871
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "f2acc2d5506c69ff65b680e57c7fe9a8ae055f5b1bdaae616560cac715dcd223"
+    },
+    {
+      "name": "flasher_only_f60_line1.1_esr0.1_imb1_phase90",
+      "topology": "flasher_only",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.4088,
+        "input_max": 22.3668,
+        "bridge_peak": 101.808,
+        "secondary_rms": 4.88888,
+        "bridge_i2t_start": 10.3661,
+        "bridge_power": 0.811432,
+        "rms_c11": 4.19871
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": true
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "90f13efcb7ba9f3d63a8a5232174125f2c49170c74cd221f358a20a0042081db"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.02_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.4285,
+        "input_max": 18.1558,
+        "bridge_peak": 38.6159,
+        "secondary_rms": 5.97206,
+        "bridge_i2t_start": 5.02723,
+        "bridge_power": 1.06785,
+        "rms_c11": 5.10875
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8150ffb4376b0ca6b1deccbe6ee8690eb50afb8cd9aeb8815f5f28c377f0018d"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.02_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.4286,
+        "input_max": 18.1558,
+        "bridge_peak": 123.748,
+        "secondary_rms": 5.97206,
+        "bridge_i2t_start": 8.8421,
+        "bridge_power": 1.06736,
+        "rms_c11": 5.10875
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b7124b8f68c35ad14ea31e48c127b246f0bd7ec37b39c6299f48e7943df99e84"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.02_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.0312,
+        "input_max": 17.8922,
+        "bridge_peak": 49.5259,
+        "secondary_rms": 6.00495,
+        "bridge_i2t_start": 8.67281,
+        "bridge_power": 1.07063,
+        "rms_c11": 5.1507
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "483989179cd7a1ef8fd5350907aa88c77d5028e14ae40d3787e4386d6400f6d7"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.02_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.0312,
+        "input_max": 17.8922,
+        "bridge_peak": 123.751,
+        "secondary_rms": 6.00495,
+        "bridge_i2t_start": 12.0559,
+        "bridge_power": 1.07006,
+        "rms_c11": 5.1507
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "600f7e5b1ac8028ad65bbf053e266fe90d6a8fd5b76f4832d1437129ada9315b"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.05_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.21,
+        "input_max": 18.0487,
+        "bridge_peak": 36.6698,
+        "secondary_rms": 5.82716,
+        "bridge_i2t_start": 4.70168,
+        "bridge_power": 1.05157,
+        "rms_c11": 4.93994
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "4557aecd25684139950f251235216024fcd6551492c71d2b5bf101005778bd17"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.05_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.2099,
+        "input_max": 18.0486,
+        "bridge_peak": 104.543,
+        "secondary_rms": 5.82716,
+        "bridge_i2t_start": 7.29851,
+        "bridge_power": 1.0511,
+        "rms_c11": 4.93994
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "79b4ce852c86ef8082c9db516796c785f28298c9f73ff02b535b619e76ff99b5"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.05_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7813,
+        "input_max": 17.814,
+        "bridge_peak": 46.2613,
+        "secondary_rms": 5.85225,
+        "bridge_i2t_start": 7.86579,
+        "bridge_power": 1.05344,
+        "rms_c11": 4.9728
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "380fc32f7f6470b2a58e8cebf2d1e45429ca319ee547cdd85a1a7655f1b525e1"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.05_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7812,
+        "input_max": 17.814,
+        "bridge_peak": 104.545,
+        "secondary_rms": 5.85225,
+        "bridge_i2t_start": 9.81415,
+        "bridge_power": 1.05291,
+        "rms_c11": 4.9728
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "435dca0273559f2b3ef9d5a2c40938cc945d8dd33c11824b0112e03208eb0213"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.1_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.8437,
+        "input_max": 17.9713,
+        "bridge_peak": 33.8266,
+        "secondary_rms": 5.63314,
+        "bridge_i2t_start": 4.21449,
+        "bridge_power": 1.03067,
+        "rms_c11": 4.7109
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "e9af0f58f68684a1b4e2187d47a320f3bab347023390ac6777cf016998146447"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.1_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 14.8436,
+        "input_max": 17.9713,
+        "bridge_peak": 82.7006,
+        "secondary_rms": 5.63314,
+        "bridge_i2t_start": 5.60428,
+        "bridge_power": 1.03025,
+        "rms_c11": 4.7109
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "485804446b1ac28c0665571f97edad30253e7ae7277ca545329eb10fbba19357"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.1_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.3762,
+        "input_max": 17.7988,
+        "bridge_peak": 41.6996,
+        "secondary_rms": 5.65032,
+        "bridge_i2t_start": 6.74922,
+        "bridge_power": 1.03168,
+        "rms_c11": 4.73438
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8656dec0a5303bc48e7c496cb90cf4ea11bf9abf52e9577629683ab257e6ed5e"
+    },
+    {
+      "name": "flasher_with_u21_f50_line0.9_esr0.1_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.3764,
+        "input_max": 17.7988,
+        "bridge_peak": 82.702,
+        "secondary_rms": 5.65032,
+        "bridge_i2t_start": 7.39883,
+        "bridge_power": 1.03122,
+        "rms_c11": 4.73438
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "2f97cd1f3ed225762a3eb5cca25837d15fa4eda5ffb4dbaaab3bbe3a8c93a34d"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.02_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.8727,
+        "input_max": 22.5859,
+        "bridge_peak": 47.0118,
+        "secondary_rms": 5.98557,
+        "bridge_i2t_start": 7.34491,
+        "bridge_power": 1.0415,
+        "rms_c11": 5.19604
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "2c5e4658e9428f42ab8bb3590d1e388e09356eb144f05a44e2fba97eaf3000e2"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.02_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.8727,
+        "input_max": 22.5859,
+        "bridge_peak": 153.629,
+        "secondary_rms": 5.98557,
+        "bridge_i2t_start": 13.2814,
+        "bridge_power": 1.04087,
+        "rms_c11": 5.19604
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "1e33e029d310228c1bc01aec9ba55ef8db594f4d7dffe4080043021f131ade4c"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.02_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.4631,
+        "input_max": 22.3156,
+        "bridge_peak": 60.5024,
+        "secondary_rms": 6.01608,
+        "bridge_i2t_start": 12.8467,
+        "bridge_power": 1.04451,
+        "rms_c11": 5.2331
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "6aa8142de0e39c8c7dd9a6348e71336832821957ec07be2d8def5eaa39aa3dfa"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.02_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.4631,
+        "input_max": 22.3156,
+        "bridge_peak": 153.633,
+        "secondary_rms": 6.01608,
+        "bridge_i2t_start": 18.1604,
+        "bridge_power": 1.04378,
+        "rms_c11": 5.2331
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "ae3a06e09107467dd9292a4eea5e3b6f8993e2bed602ed752eb446ff0e71f7bf"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.05_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.637,
+        "input_max": 22.4749,
+        "bridge_peak": 44.6134,
+        "secondary_rms": 5.83586,
+        "bridge_i2t_start": 6.85497,
+        "bridge_power": 1.02436,
+        "rms_c11": 5.02365
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "4a4b52eba3758b9eb445d084367f47159d6e2fb65132526a2f5dd7c3c39d4dc1"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.05_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.6368,
+        "input_max": 22.4749,
+        "bridge_peak": 128.378,
+        "secondary_rms": 5.83586,
+        "bridge_i2t_start": 10.9263,
+        "bridge_power": 1.02379,
+        "rms_c11": 5.02365
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b5b2f250e7f8194356f8c84478c79020881ba671b1850d82ee30bb5c05882326"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.05_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.1982,
+        "input_max": 22.2385,
+        "bridge_peak": 56.4771,
+        "secondary_rms": 5.85936,
+        "bridge_i2t_start": 11.6236,
+        "bridge_power": 1.02652,
+        "rms_c11": 5.05273
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "c55dd0dd2a13077d3e23aad29af55e5569336a672d4e8525047c2bd74eca183e"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.05_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.1982,
+        "input_max": 22.2385,
+        "bridge_peak": 128.381,
+        "secondary_rms": 5.85936,
+        "bridge_i2t_start": 14.7361,
+        "bridge_power": 1.0259,
+        "rms_c11": 5.05273
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "e47c8f1e34e643e05a9161a157a8668104cd2ea480789e6251325b0fa0680e5d"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.1_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.2474,
+        "input_max": 22.4017,
+        "bridge_peak": 41.1168,
+        "secondary_rms": 5.63564,
+        "bridge_i2t_start": 6.12463,
+        "bridge_power": 1.00213,
+        "rms_c11": 4.79042
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "8dba0fbea04f31f1697413304842fa7d1badb0425f28641f82a2600c5ee53957"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.1_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.2475,
+        "input_max": 22.4017,
+        "bridge_peak": 101.806,
+        "secondary_rms": 5.63564,
+        "bridge_i2t_start": 8.34487,
+        "bridge_power": 1.00161,
+        "rms_c11": 4.79042
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "b8e72be238d61cde2284aa02848e7013530dd73cadf8541a2ec7f1893ddb7c07"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.1_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.7727,
+        "input_max": 22.2323,
+        "bridge_peak": 50.8608,
+        "secondary_rms": 5.65202,
+        "bridge_i2t_start": 9.93694,
+        "bridge_power": 1.00347,
+        "rms_c11": 4.81129
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "51b0bc7cc8ac361f05520cff1e8123def17e0f658dad3fcdd0fbc403db33b938"
+    },
+    {
+      "name": "flasher_with_u21_f50_line1.1_esr0.1_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 50,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.7727,
+        "input_max": 22.2323,
+        "bridge_peak": 101.808,
+        "secondary_rms": 5.65202,
+        "bridge_i2t_start": 11.0512,
+        "bridge_power": 1.00291,
+        "rms_c11": 4.81129
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.101,
+      "deck_sha256": "2a20015bfedf1bfa5b9cbf3c916319b21c02b354edd755555f2a75b16eb9d8cd"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.02_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7367,
+        "input_max": 18.0311,
+        "bridge_peak": 43.3561,
+        "secondary_rms": 5.99003,
+        "bridge_i2t_start": 5.37107,
+        "bridge_power": 1.06935,
+        "rms_c11": 5.13168
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "b6ec4c976ce19f50d5d8ebef605ad1ebc1274784e47ce72033074f28d48e3ec4"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.02_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.7367,
+        "input_max": 18.0311,
+        "bridge_peak": 123.748,
+        "secondary_rms": 5.99003,
+        "bridge_i2t_start": 8.49844,
+        "bridge_power": 1.06884,
+        "rms_c11": 5.13168
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "718031224626b22a54eae7a155b50e26b93d8bc247490157df1b12fc708a5606"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.02_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.2194,
+        "input_max": 17.7923,
+        "bridge_peak": 54.7927,
+        "secondary_rms": 6.01315,
+        "bridge_i2t_start": 9.07996,
+        "bridge_power": 1.07131,
+        "rms_c11": 5.16114
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "3fe4d47daa604fede173ae873666e094e9a27a17a64309cbfaf6bb53fbc8ab3e"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.02_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 16.2194,
+        "input_max": 17.7923,
+        "bridge_peak": 123.751,
+        "secondary_rms": 6.01315,
+        "bridge_i2t_start": 11.4457,
+        "bridge_power": 1.07073,
+        "rms_c11": 5.16114
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "a85602fbf0c7286e3a72be17d8b7919777e7606d477340552ca0ac0fd6247c4c"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.05_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5017,
+        "input_max": 17.9344,
+        "bridge_peak": 40.8748,
+        "secondary_rms": 5.84089,
+        "bridge_i2t_start": 4.95635,
+        "bridge_power": 1.05256,
+        "rms_c11": 4.95793
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "33f33c844a767288895143a0cda6337b17297932088fb12334dca62d06567962"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.05_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5017,
+        "input_max": 17.9344,
+        "bridge_peak": 104.543,
+        "secondary_rms": 5.84089,
+        "bridge_i2t_start": 6.97114,
+        "bridge_power": 1.05209,
+        "rms_c11": 4.95793
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "ad619a82a887e960cd40fa7d4e1f708cacbf35498b2c93892c6b3f4a2e58a663"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.05_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.96,
+        "input_max": 17.7324,
+        "bridge_peak": 50.7843,
+        "secondary_rms": 5.85848,
+        "bridge_i2t_start": 8.11087,
+        "bridge_power": 1.05388,
+        "rms_c11": 4.98094
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "207fea14ee7c091012249487c56f90113198148c64e3f5b8a3fb9e8c8c32d6d7"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.05_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.96,
+        "input_max": 17.7324,
+        "bridge_peak": 104.545,
+        "secondary_rms": 5.85848,
+        "bridge_i2t_start": 9.26237,
+        "bridge_power": 1.05336,
+        "rms_c11": 4.98094
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "5151b26da3cca3f99008f97af1f89b288d6409f15c4580226c53dae4400fe0fd"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.1_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.1153,
+        "input_max": 17.8838,
+        "bridge_peak": 37.3215,
+        "secondary_rms": 5.64255,
+        "bridge_i2t_start": 4.35693,
+        "bridge_power": 1.03123,
+        "rms_c11": 4.72377
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "ccdba1e8b157b99390fdea1c655d286f28d992bba8e622169354b1ca293cf5c6"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.1_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.1153,
+        "input_max": 17.8838,
+        "bridge_peak": 82.7006,
+        "secondary_rms": 5.64255,
+        "bridge_i2t_start": 5.30731,
+        "bridge_power": 1.03078,
+        "rms_c11": 4.72377
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "995c8af050d1585f4290913189ee11ff99f0b6f4092abafc50d9d71c4830c677"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.1_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5438,
+        "input_max": 17.7457,
+        "bridge_peak": 45.2931,
+        "secondary_rms": 5.65457,
+        "bridge_i2t_start": 6.8164,
+        "bridge_power": 1.03194,
+        "rms_c11": 4.74017
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9d483b7f04b00ffbdb7c5a34a8934551bcd84f48cf56f668d8873ebe2b293d1f"
+    },
+    {
+      "name": "flasher_with_u21_f60_line0.9_esr0.1_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 0.9,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 15.5437,
+        "input_max": 17.7457,
+        "bridge_peak": 82.702,
+        "secondary_rms": 5.65457,
+        "bridge_i2t_start": 6.93344,
+        "bridge_power": 1.03146,
+        "rms_c11": 4.74017
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "a243f6c5b566bfbb4bc5ca65c25720eb713808f547a7ea6c9af0bd8d2516cef8"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.02_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.1744,
+        "input_max": 22.4572,
+        "bridge_peak": 52.8711,
+        "secondary_rms": 6.00225,
+        "bridge_i2t_start": 7.90836,
+        "bridge_power": 1.04314,
+        "rms_c11": 5.21632
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "3b3e5df890ba996bef8bad624c9ded1afcb5875add014c31610d55b11fbba3c8"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.02_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.1744,
+        "input_max": 22.4572,
+        "bridge_peak": 153.629,
+        "secondary_rms": 6.00225,
+        "bridge_i2t_start": 12.7835,
+        "bridge_power": 1.04246,
+        "rms_c11": 5.21632
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9b74d8edb7c50ad4ff78e078c6c18536a04b36188244881139be0fcc0af909ba"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.02_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.6477,
+        "input_max": 22.2146,
+        "bridge_peak": 67.021,
+        "secondary_rms": 6.02367,
+        "bridge_i2t_start": 13.5151,
+        "bridge_power": 1.04526,
+        "rms_c11": 5.24231
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "8cc13520ee79ffc447b148ead63446e49d50041f2375ff430759ec43780a6796"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.02_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.02,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.6477,
+        "input_max": 22.2146,
+        "bridge_peak": 153.633,
+        "secondary_rms": 6.02367,
+        "bridge_i2t_start": 17.2569,
+        "bridge_power": 1.0445,
+        "rms_c11": 5.24231
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9814d61ad571714bf92ae268eed564aeb65b5542aff6460db2ee71ed76ff9610"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.05_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.9234,
+        "input_max": 22.359,
+        "bridge_peak": 49.8126,
+        "secondary_rms": 5.84873,
+        "bridge_i2t_start": 7.28205,
+        "bridge_power": 1.02554,
+        "rms_c11": 5.03958
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "2cd79e9d6b5f42a3e3544b190b12e3db627981d9bc827693d3c399f19664bdec"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.05_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.9234,
+        "input_max": 22.359,
+        "bridge_peak": 128.378,
+        "secondary_rms": 5.84873,
+        "bridge_i2t_start": 10.4521,
+        "bridge_power": 1.02494,
+        "rms_c11": 5.03958
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "1f57552b07158bae6e4857f6c6c9f5bce5f68b1cac38bfc2ac67fb22e644369b"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.05_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.3743,
+        "input_max": 22.1579,
+        "bridge_peak": 62.0767,
+        "secondary_rms": 5.86518,
+        "bridge_i2t_start": 12.0436,
+        "bridge_power": 1.02706,
+        "rms_c11": 5.05993
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "6b75f2e3eab4e6b2cdf43dbb8b77f9979f4d8e94ae83780381eecc19d0abad25"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.05_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.05,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 20.3743,
+        "input_max": 22.1579,
+        "bridge_peak": 128.381,
+        "secondary_rms": 5.86518,
+        "bridge_i2t_start": 13.9205,
+        "bridge_power": 1.02642,
+        "rms_c11": 5.05993
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "9ecd578a36885ba16eff6108d78fac10f84fcc5fbbaf3048cf406a66283df306"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.1_imb0_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.5152,
+        "input_max": 22.3152,
+        "bridge_peak": 45.4407,
+        "secondary_rms": 5.64462,
+        "bridge_i2t_start": 6.38009,
+        "bridge_power": 1.00287,
+        "rms_c11": 4.80187
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "ab08a04ef5d73b46a01c0a13e1bcdb8740b0f3eb6d6f4f669f20b1204950c7cb"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.1_imb0_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": false,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.5152,
+        "input_max": 22.3152,
+        "bridge_peak": 101.806,
+        "secondary_rms": 5.64462,
+        "bridge_i2t_start": 7.91547,
+        "bridge_power": 1.00232,
+        "rms_c11": 4.80187
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "57f315d123e14bd2c8f4815b252b89c1bbc47261c282dfbe9a046f9b6246d4b6"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.1_imb1_phase0",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 0,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.9383,
+        "input_max": 22.1812,
+        "bridge_peak": 55.3124,
+        "secondary_rms": 5.65606,
+        "bridge_i2t_start": 10.0844,
+        "bridge_power": 1.00381,
+        "rms_c11": 4.81644
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "510076567e45ded2942fe35d6471ee44a2e3747b0c4d20b28eccd216ce537b9f"
+    },
+    {
+      "name": "flasher_with_u21_f60_line1.1_esr0.1_imb1_phase90",
+      "topology": "flasher_with_u21",
+      "frequency_Hz": 60,
+      "line_scale": 1.1,
+      "ESR_ohm": 0.1,
+      "capacitance_ESR_imbalance": true,
+      "start_phase_deg": 90,
+      "measurements": {
+        "sim_end": 0.5,
+        "input_min": 19.9383,
+        "input_max": 22.1812,
+        "bridge_peak": 101.808,
+        "secondary_rms": 5.65606,
+        "bridge_i2t_start": 10.3661,
+        "bridge_power": 1.00323,
+        "rms_c11": 4.81644
+      },
+      "completed": true,
+      "checks": {
+        "headroom": true,
+        "capacitor_ripple": true,
+        "secondary_below_5A_fuse_rating": false
+      },
+      "errors": [],
+      "capacitor_ripple_limit_A": 7.89,
+      "deck_sha256": "7102c9ba59507ec674efb2bd28bb7a12937b30b05453b97f4e31ab484e100e1f"
+    }
+  ],
+  "completed": true,
+  "pcb_changed": false,
+  "models_sha256": "4b4dc112f8c162a8ba225922e9d4f59ab5f4936be3afce17745cfb3b4136dcfd",
+  "pcb_sha256": "5afdf84d9bd267220aaa867f964622771d14b582d7a94e0bdca882a5982d7bc4",
+  "limitations": [
+    "Source-only comparison of native +20 V supply and unbuilt U21 reassignment",
+    "One C11 capacitor at +/-20 percent, not two-capacitor imbalance",
+    "2.5 A passive bounded flasher-current envelope and 10 W approximate regulator input",
+    "A 5 A RMS fuse-rating check alone does not qualify fuse derating, inrush, clearing or thermal behavior",
+    "No new component or native CAD change; transformer and ESR remain assumptions"
+  ]
+}
